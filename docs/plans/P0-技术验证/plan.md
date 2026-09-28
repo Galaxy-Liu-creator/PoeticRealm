@@ -37,10 +37,10 @@
 
 ### T2 · 全局时钟、种子随机与调试入口（9/28–9/29）
 
-- [ ] `src/utils/random.ts`：`createRng(seed: number): () => number`（mulberry32）
-- [ ] `src/engine/Clock.ts` + `Engine.ts`：renderer、主循环、resize；时钟 `time` / `pause()` / `play()` / `seek(t)` / `step(dt)`；`onUpdate(fn: (t, dt) => void)`
-- [ ] `src/engine/Debug.ts`：`parseDebugParams(search)` → `{ scene?, t?, q?, debug }`；`window.__POETIC__ = { seek, step, state }`；空格暂停；`?debug` 时动态加载 lil-gui
-- [ ] vitest：同种子同序列；`seek` / `step` 后时间正确；URL 解析边界
+- [x] `src/utils/random.ts`：`createRng(seed: number): () => number`（mulberry32）
+- [x] `src/engine/Clock.ts` + `Engine.ts`：renderer、主循环、resize；时钟 `time` / `pause()` / `play()` / `seek(t)` / `step(dt)`；`onUpdate(fn: (t, dt) => void)`
+- [x] `src/engine/Debug.ts`：`parseDebugParams(search)` → `{ scene?, t?, q?, debug }`；`window.__POETIC__ = { seek, step, state }`；空格暂停；`?debug` 时动态加载 lil-gui
+- [x] vitest：同种子同序列；`seek` / `step` 后时间正确；URL 解析边界
 
 ### T3 · Blender 灰模与制作端脚本（9/29）
 
@@ -118,3 +118,4 @@
 |---|---|---|---|
 | 9/28 | T1 | 另装 `@types/node`、`pngjs`（tools 读写 PNG）；`tools/shoot.mjs` 提前到 T1 写出基础版 | 各任务验收都要截图 |
 | 9/28 | T1 | vite 8 用 rolldown/oxc，vite-plugin-glsl 无需 esbuild；vitest 配置写在 `vite.config.ts`（`vitest/config`） | 版本现状 |
+| 9/28 | T2 | 时钟拆为 `engine/Clock.ts`、URL 解析拆为 `engine/debugParams.ts`（纯函数，可在 node 下测试）；`Quality.ts` 提前写出初始档位 | 可测试性；后续任务要按档位取分辨率 |

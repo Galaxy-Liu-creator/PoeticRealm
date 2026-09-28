@@ -30,10 +30,10 @@
 
 ### T1 · 工程初始化（9/28）
 
-- [ ] `package.json`：three 精确锁定（不带 `^`）；gsap、lil-gui、typescript、vite、vite-plugin-glsl、vitest、playwright、@gltf-transform/core、@gltf-transform/functions、meshoptimizer；脚本 `dev` / `build` / `preview` / `test` / `check:contract`
-- [ ] `vite.config.ts`（`base: './'`，GLSL `#include`）、`tsconfig.json`（strict）、`index.html`、`src/main.ts`
-- [ ] 验收：`npm run dev` 出现画布；`npm run build` 通过；`npm test` 能跑
-- [ ] CREDITS 登记 three.js、GSAP、lil-gui
+- [x] `package.json`：three 精确锁定（不带 `^`）；gsap、lil-gui、typescript、vite、vite-plugin-glsl、vitest、playwright、@gltf-transform/core、@gltf-transform/functions、meshoptimizer；脚本 `dev` / `build` / `preview` / `test` / `check:contract`
+- [x] `vite.config.ts`（`base: './'`，GLSL `#include`）、`tsconfig.json`（strict）、`index.html`、`src/main.ts`
+- [x] 验收：`npm run dev` 出现画布；`npm run build` 通过；`npm test` 能跑
+- [x] CREDITS 登记 three.js、GSAP、lil-gui
 
 ### T2 · 全局时钟、种子随机与调试入口（9/28–9/29）
 
@@ -116,3 +116,5 @@
 
 | 日期 | 任务 | 偏差 | 原因 |
 |---|---|---|---|
+| 9/28 | T1 | 另装 `@types/node`、`pngjs`（tools 读写 PNG）；`tools/shoot.mjs` 提前到 T1 写出基础版 | 各任务验收都要截图 |
+| 9/28 | T1 | vite 8 用 rolldown/oxc，vite-plugin-glsl 无需 esbuild；vitest 配置写在 `vite.config.ts`（`vitest/config`） | 版本现状 |

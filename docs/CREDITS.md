@@ -9,6 +9,9 @@
 
 | 名称 | 版本 | 来源 | 许可 | 用途 | 备注 |
 |---|---|---|---|---|---|
+| three.js | 0.186.1 | https://github.com/mrdoob/three.js | MIT | 渲染 | 含 GLTFLoader、EffectComposer、MeshSurfaceSampler 等 examples 模块；Meshopt 解码器（MIT，zeux/meshoptimizer）随 three 分发 |
+| GSAP | 3.15.0 | https://gsap.com | GSAP Standard "No Charge" License | 分镜动画编排 | 2024 年起全部插件免费，允许商用；许可禁止用于与 Webflow 竞争的产品，本项目不涉及 |
+| lil-gui | 0.21.0 | https://github.com/georgealways/lil-gui | MIT | `?debug` 参数面板 | 仅调试模式动态加载 |
 
 ## 字体
 

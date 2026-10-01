@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - T01 中央燃纸入境分镜审批板</title>
+<!-- Google Fonts: Noto Serif SC & Public Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            qingdai: "#183236",
+            "qingdai-dark": "#0F2124",
+            qinghui: "#DDE3DA",
+            yuanshan: "#365C55",
+            cinnabar: "#9F493D",
+            "cinnabar-glow": "#D05A49",
+            parchment: "#F7F6F2",
+            "parchment-deep": "#EFECE6",
+            "parchment-border": "#DFDAD0",
+            charcoal: "#232628"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            headline: ["'Noto Serif SC'", "Noto Serif", "serif"],
+            display: ["'Noto Serif SC'", "Noto Serif", "serif"],
+            body: ["'Public Sans'", "'Noto Serif SC'", "sans-serif"],
+            label: ["'Public Sans'", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .vertical-rl {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+    .burnt-edge-glow-1 {
+      box-shadow: 0 0 4px 1px rgba(255, 122, 48, 0.45), inset 0 0 6px 2px rgba(44, 26, 20, 0.95);
+    }
+    .burnt-edge-glow-2 {
+      box-shadow: 0 0 6px 1.5px rgba(255, 140, 60, 0.5), inset 0 0 10px 4px rgba(35, 18, 12, 0.98);
+    }
+    /* Clip path simulation for natural organic paper burn */
+    .clip-hole-sm {
+      clip-path: polygon(44% 40%, 53% 36%, 60% 43%, 62% 54%, 55% 63%, 46% 65%, 39% 56%, 40% 46%);
+    }
+    .clip-hole-md {
+      clip-path: polygon(28% 22%, 48% 18%, 70% 26%, 82% 45%, 78% 68%, 62% 82%, 36% 84%, 22% 70%, 19% 45%);
+    }
+    .clip-hole-lg {
+      clip-path: polygon(10% 8%, 52% 4%, 92% 10%, 96% 54%, 92% 92%, 48% 95%, 8% 88%, 4% 46%);
+    }
+    /* Grain texture simulation */
+    .paper-texture {
+      background-image: radial-gradient(#183236 0.5px, transparent 0.5px), radial-gradient(#183236 0.5px, #F7F6F2 0.5px);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+      background-opacity: 0.03;
+    }
+  </style>
+</head>
+<body class="bg-parchment text-qingdai font-body antialiased min-h-screen selection:bg-yuanshan selection:text-white flex flex-col justify-between">
+<!-- ================= TOP APP BAR (Shared Component Anchor) ================= -->
+<header class="bg-qingdai text-parchment border-b border-qingdai-dark/40 sticky top-0 z-50 shadow-sm">
+<div class="max-w-[1440px] mx-auto px-8 h-16 flex items-center justify-between">
+<!-- Left: Back Navigation & Brand Title -->
+<div class="flex items-center space-x-6">
+<a class="flex items-center space-x-1.5 text-xs text-qinghui/80 hover:text-white transition-colors duration-200" href="#overview">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span class="font-display tracking-wider">返回总览</span>
+</a>
+<div class="h-4 w-px bg-qinghui/20"></div>
+<div class="flex items-baseline space-x-3">
+<span class="font-headline font-semibold text-lg tracking-widest text-parchment">诗境·一卷山河</span>
+<span class="text-[11px] font-mono tracking-wider px-2 py-0.5 rounded bg-yuanshan/60 text-qinghui border border-yuanshan">
+            入境转场规范 · T01 燃纸分镜
+          </span>
+</div>
+</div>
+<!-- Right: Navigation Links from Shared Components JSON -->
+<nav class="flex items-center space-x-8">
+<a class="text-sm font-display tracking-wider text-qinghui/70 hover:text-parchment transition-colors duration-200" href="#">诗词总览</a>
+<a class="text-sm font-display tracking-wider text-qinghui/70 hover:text-parchment transition-colors duration-200" href="#">我的收藏</a>
+<a class="text-sm font-display tracking-wider text-qinghui/70 hover:text-parchment transition-colors duration-200" href="#">个人中心</a>
+<div class="h-4 w-px bg-qinghui/20 ml-2"></div>
+<div class="flex items-center space-x-2 text-xs text-qinghui/60 font-mono">
+<span class="w-2 h-2 rounded-full bg-cinnabar-glow animate-pulse"></span>
+<span>评审状态: 待审定</span>
+</div>
+</nav>
+</div>
+</header>
+<!-- ================= MAIN REVIEW BOARD CONTAINER ================= -->
+<main class="w-full max-w-[1440px] mx-auto px-8 py-8 flex-1 flex flex-col justify-start">
+<!-- Board Overview Header -->
+<section class="mb-7 pb-6 border-b border-parchment-border flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="max-w-4xl space-y-2">
+<div class="flex items-center space-x-3">
+<h1 class="text-2xl font-headline font-bold tracking-widest text-qingdai flex items-center gap-3">
+            中央燃纸入境 · 交互分镜规范
+          </h1>
+<span class="bg-cinnabar text-white text-[11px] font-medium px-2 py-0.5 tracking-wider rounded">
+            转场动效审批 · T01
+          </span>
+<span class="text-xs text-yuanshan font-mono border border-yuanshan/30 px-2 py-0.5 rounded">
+            PROPOSAL V1.2
+          </span>
+</div>
+<p class="text-xs leading-relaxed text-qingdai/75 font-headline tracking-wide text-justify">
+          以宣纸自然微温受灼、边缘碳化剥蚀为意象，破纸见境。自首页总览向《枫桥夜泊》平滑过渡，非爆炸或火灾，重在文人画卷之纸墨物性与空间层递。
+        </p>
+</div>
+<!-- Specifications metadata pill -->
+<div class="bg-parchment-deep border border-parchment-border/80 px-4 py-2.5 rounded flex items-center space-x-4 text-xs font-mono text-qingdai/80 shrink-0">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-sm text-yuanshan">timer</span>
+<span>时长: <strong class="text-qingdai font-semibold">1200ms</strong></span>
+</div>
+<span class="text-parchment-border">|</span>
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-sm text-yuanshan">show_chart</span>
+<span>缓动: <span class="text-qingdai">cubic-bezier(0.22, 1, 0.36, 1)</span></span>
+</div>
+<span class="text-parchment-border">|</span>
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-sm text-yuanshan">tune</span>
+<span>着色器/Canvas撕纸蒙版</span>
+</div>
+</div>
+</section>
+<!-- ================= STORYBOARD SEQUENCE (5 FRAMES) ================= -->
+<section class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-xs font-mono font-semibold tracking-wider text-yuanshan flex items-center space-x-2">
+<span class="material-symbols-outlined text-base">view_carousel</span>
+<span>SEQUENCE CHRONOLOGY (0% - 100% TIMELINE)</span>
+</h2>
+<span class="text-[11px] font-mono text-qingdai/50">WIDESCREEN 16:10 ASPECT RATIO · DISCRETE STATE CAPTURE</span>
+</div>
+<!-- 5-Column Grid -->
+<div class="grid grid-cols-5 gap-3.5">
+<!-- FRAME 01 [ 0% ] -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm hover:border-yuanshan/50 transition-all">
+<div class="px-3 py-2 bg-parchment-deep/70 border-b border-parchment-border flex items-center justify-between">
+<span class="font-mono text-xs font-semibold text-qingdai">Frame 01</span>
+<span class="font-mono text-[10px] px-1.5 py-0.2 rounded bg-qingdai/10 text-qingdai font-medium">0% · 0ms</span>
+</div>
+<!-- Viewport 16:10 preview -->
+<div class="relative aspect-[16/10] bg-qinghui overflow-hidden border-b border-parchment-border select-none">
+<!-- Simulated S01 Desktop UI inside frame -->
+<div class="absolute inset-0 flex flex-col bg-[#EBECE7]">
+<!-- Mock Mini Header -->
+<div class="h-4 bg-qingdai flex items-center justify-between px-2 text-[6px] text-parchment">
+<span class="font-headline scale-75 origin-left">诗境·一卷山河</span>
+<span class="opacity-50 scale-75 origin-right">诗词总览</span>
+</div>
+<!-- Mock Hero Banner with mountains -->
+<div class="h-10 bg-gradient-to-b from-[#2B4E4A] to-[#DDE3DA] p-1 flex items-center justify-between relative overflow-hidden">
+<div class="vertical-rl text-[6px] text-white/90 font-headline leading-tight">
+                  循诗入境·展卷见山河
+                </div>
+<div class="w-12 h-6 opacity-30 bg-contain bg-no-repeat bg-right" style="background-image: radial-gradient(ellipse at bottom, #183236 30%, transparent 70%);"></div>
+</div>
+<!-- 3 Cards in S01 -->
+<div class="flex-1 p-1.5 grid grid-cols-3 gap-1 items-stretch">
+<!-- Card 1: Fengqiao (Target) -->
+<div class="bg-white/90 border border-yuanshan/30 rounded-sm p-1 flex flex-col justify-between shadow-xs relative ring-1 ring-yuanshan/40">
+<div class="flex justify-between items-start">
+<span class="text-[6px] font-headline font-semibold text-qingdai">枫桥夜泊</span>
+<span class="w-1 h-1 rounded-full bg-cinnabar"></span>
+</div>
+<div class="vertical-rl text-[5px] text-qingdai/70 font-headline self-center leading-none tracking-tighter">
+                    月落乌啼霜满天
+                  </div>
+<div class="bg-yuanshan text-[5px] text-white text-center py-0.5 rounded-xs tracking-tighter font-mono">
+                    入境 ↗
+                  </div>
+</div>
+<!-- Card 2: Jiangxue -->
+<div class="bg-white/60 border border-parchment-border rounded-sm p-1 flex flex-col justify-between">
+<span class="text-[6px] font-headline text-qingdai/70">江雪</span>
+<div class="vertical-rl text-[5px] text-qingdai/50 font-headline self-center leading-none">
+                    孤舟蓑笠翁
+                  </div>
+<div class="bg-parchment-deep text-[5px] text-qingdai/60 text-center py-0.5 rounded-xs">
+                    静览
+                  </div>
+</div>
+<!-- Card 3: Baidi -->
+<div class="bg-white/60 border border-parchment-border rounded-sm p-1 flex flex-col justify-between">
+<span class="text-[6px] font-headline text-qingdai/70">早发白帝城</span>
+<div class="vertical-rl text-[5px] text-qingdai/50 font-headline self-center leading-none">
+                    两岸猿声啼不住
+                  </div>
+<div class="bg-parchment-deep text-[5px] text-qingdai/60 text-center py-0.5 rounded-xs">
+                    静览
+                  </div>
+</div>
+</div>
+</div>
+<!-- Intact paper stamp -->
+<div class="absolute bottom-1 right-1 bg-white/80 border border-parchment-border text-[7px] font-mono px-1 py-0.2 rounded text-qingdai/60">
+              纸面完整 · 待触发
+            </div>
+</div>
+<!-- Annotation -->
+<div class="p-3 bg-white flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xs font-headline font-semibold text-qingdai mb-1">静观总览 · 原生画卷</h3>
+<p class="text-[11px] leading-relaxed text-qingdai/70 font-headline">
+                S01 首页原生稳定态。青黛题头与青灰绢底三卡网格完好。用户点击「枫桥夜泊·入境」瞬间起意。
+              </p>
+</div>
+<div class="mt-2.5 pt-2 border-t border-parchment-border/60 text-[10px] font-mono text-yuanshan flex items-center justify-between">
+<span>阶段: 触发初始态</span>
+<span class="text-qingdai/50">热源温度 0℃</span>
+</div>
+</div>
+</div>
+<!-- FRAME 02 [ 25% ] -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm hover:border-cinnabar/50 transition-all">
+<div class="px-3 py-2 bg-parchment-deep/70 border-b border-parchment-border flex items-center justify-between">
+<span class="font-mono text-xs font-semibold text-qingdai">Frame 02</span>
+<span class="font-mono text-[10px] px-1.5 py-0.2 rounded bg-cinnabar/15 text-cinnabar font-medium">25% · 300ms</span>
+</div>
+<!-- Viewport 16:10 preview -->
+<div class="relative aspect-[16/10] bg-[#0F2124] overflow-hidden border-b border-parchment-border select-none">
+<!-- Background Layer: Revealed Target Scene (S02 Fengqiao Night) -->
+<img alt="S02 枫桥夜泊夜江幽境透出" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- Foreground Layer: Burnt Homepage with Hole (Organic shape using CSS clip) -->
+<div class="absolute inset-0 pointer-events-none">
+<!-- Homepage paper overlay (inverted via mask simulation: outer paper with central opening) -->
+<div class="absolute inset-0 bg-[#E8E7DF] opacity-95">
+<div class="h-4 bg-qingdai opacity-80"></div>
+<div class="p-2 opacity-50 flex justify-center text-[7px] font-headline text-qingdai">诗境·一卷山河</div>
+</div>
+<!-- Hole cutout cut into paper (Simulated with absolute positioned aperture container) -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-12 rounded-[45%_55%_60%_40%/50%_45%_55%_50%] border border-[#FF7A30]/80 burnt-edge-glow-1 shadow-2xl relative overflow-hidden backdrop-brightness-125">
+<!-- The hole exposes the background directly -->
+<div class="absolute inset-0 -m-8">
+<!-- Reveals deep image through hole -->
+</div>
+<!-- Carbonized Charcoal rim line -->
+<div class="absolute inset-0 border-[2px] border-[#2C1A14] rounded-inherit pointer-events-none opacity-90"></div>
+<!-- Subtle micro glow sparks -->
+<div class="absolute bottom-1 right-2 w-0.5 h-0.5 bg-[#FFB347] rounded-full animate-ping"></div>
+</div>
+</div>
+</div>
+<!-- Stage overlay indicator -->
+<div class="absolute bottom-1 right-1 bg-qingdai/90 border border-cinnabar/40 text-[7px] font-mono px-1 py-0.2 rounded text-parchment">
+              焦边 1.8px · 见微光
+            </div>
+</div>
+<!-- Annotation -->
+<div class="p-3 bg-white flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xs font-headline font-semibold text-qingdai mb-1">微温初灼 · 中央开口</h3>
+<p class="text-[11px] leading-relaxed text-qingdai/70 font-headline">
+                中央出现不规则自然碳化裂孔。2px 炭焦深棕边缘伴随 &lt;1.5px 极细微温火光线，透视幽蓝夜水与孤舟灯晕。
+              </p>
+</div>
+<div class="mt-2.5 pt-2 border-t border-parchment-border/60 text-[10px] font-mono text-cinnabar flex items-center justify-between">
+<span>阶段: 灼痕破孔</span>
+<span class="text-qingdai/50">碳化外扩 R=18px</span>
+</div>
+</div>
+</div>
+<!-- FRAME 03 [ 50% ] -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm hover:border-cinnabar/50 transition-all ring-1 ring-cinnabar/20">
+<div class="px-3 py-2 bg-cinnabar/10 border-b border-parchment-border flex items-center justify-between">
+<span class="font-mono text-xs font-semibold text-cinnabar">Frame 03 (Peak)</span>
+<span class="font-mono text-[10px] px-1.5 py-0.2 rounded bg-cinnabar text-white font-medium">50% · 600ms</span>
+</div>
+<!-- Viewport 16:10 preview -->
+<div class="relative aspect-[16/10] bg-qingdai overflow-hidden border-b border-parchment-border select-none">
+<!-- Background: Fengqiao night landscape covering wide center -->
+<img alt="枫桥夜泊山水全貌与岸边渔火展卷" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- Burnt paper fragments surrounding the 50% radial hole -->
+<div class="absolute inset-0 pointer-events-none">
+<!-- Top Left Paper Corner -->
+<div class="absolute top-0 left-0 w-24 h-16 bg-[#EBECE7] shadow-xl border-b-2 border-r-2 border-[#24140E]" style="clip-path: polygon(0 0, 100% 0, 75% 45%, 45% 75%, 0 100%);">
+<div class="p-1 opacity-40 text-[5px] font-headline text-qingdai">诗境·一卷山河</div>
+<div class="absolute bottom-0 right-0 w-full h-full border-b border-r border-[#FF8C38]/70 pointer-events-none"></div>
+</div>
+<!-- Bottom Right Paper Corner -->
+<div class="absolute bottom-0 right-0 w-28 h-18 bg-[#DFDAD0] shadow-xl border-t-2 border-l-2 border-[#24140E]" style="clip-path: polygon(100% 100%, 0 100%, 35% 65%, 65% 35%, 100% 0);">
+<div class="absolute inset-0 border-t border-l border-[#FF8C38]/70 pointer-events-none"></div>
+</div>
+<!-- Charcoal Ember Specks (Physical Literati Aesthetic, Not magic fireworks) -->
+<div class="absolute top-1/3 left-1/4 w-1 h-1 bg-[#2C1A14] rounded-full shadow-xs"></div>
+<div class="absolute bottom-1/3 right-1/3 w-0.5 h-0.5 bg-[#FF9D42] rounded-full opacity-80"></div>
+<div class="absolute top-1/2 right-1/4 w-0.5 h-0.5 bg-[#2C1A14] rounded-full"></div>
+</div>
+<div class="absolute bottom-1 right-1 bg-qingdai/90 border border-cinnabar/60 text-[7px] font-mono px-1 py-0.2 rounded text-parchment">
+              径向展开 52% · 墨性层递
+            </div>
+</div>
+<!-- Annotation -->
+<div class="p-3 bg-white flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xs font-headline font-semibold text-qingdai mb-1">纸墨蔓延 · 径向展开</h3>
+<p class="text-[11px] leading-relaxed text-qingdai/70 font-headline">
+                破口沿宣纸纤维非均匀撕裂扩散。夜泊冷色江流、古刹塔影与暖温焦边形成鲜明画境明暗对比。
+              </p>
+</div>
+<div class="mt-2.5 pt-2 border-t border-parchment-border/60 text-[10px] font-mono text-cinnabar flex items-center justify-between">
+<span>阶段: 外扩揭幕</span>
+<span class="text-qingdai/50">透境面积 55%</span>
+</div>
+</div>
+</div>
+<!-- FRAME 04 [ 75% ] -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm hover:border-yuanshan/50 transition-all">
+<div class="px-3 py-2 bg-parchment-deep/70 border-b border-parchment-border flex items-center justify-between">
+<span class="font-mono text-xs font-semibold text-qingdai">Frame 04</span>
+<span class="font-mono text-[10px] px-1.5 py-0.2 rounded bg-yuanshan/15 text-yuanshan font-medium">75% · 900ms</span>
+</div>
+<!-- Viewport 16:10 preview -->
+<div class="relative aspect-[16/10] bg-qingdai overflow-hidden border-b border-parchment-border select-none">
+<!-- Background: 85%+ Landscape Visible -->
+<img alt="枫桥夜泊全景接近完全展现，纸屑向四隅消褪" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- Faint peripheral burnt residue only at corners -->
+<div class="absolute inset-0 pointer-events-none">
+<!-- Top right corner dissolving wisp -->
+<div class="absolute top-0 right-0 w-10 h-8 bg-gradient-to-bl from-[#2C1A14]/70 via-transparent to-transparent opacity-60"></div>
+<!-- Bottom left corner dissolving -->
+<div class="absolute bottom-0 left-0 w-8 h-8 bg-gradient-to-tr from-[#2C1A14]/60 via-transparent to-transparent opacity-50"></div>
+</div>
+<!-- Fading in typography of S02: Fengqiao Poem Lines (Opacity ~50%) -->
+<div class="absolute top-2 left-3 flex flex-row-reverse space-x-1.5 space-x-reverse opacity-60">
+<div class="vertical-rl text-[7px] font-headline text-parchment tracking-widest bg-qingdai/40 px-0.5 py-1 backdrop-blur-xs">
+                月落乌啼霜满天
+              </div>
+<div class="vertical-rl text-[7px] font-headline text-parchment tracking-widest bg-qingdai/40 px-0.5 py-1 backdrop-blur-xs">
+                江枫渔火对愁眠
+              </div>
+</div>
+<div class="absolute bottom-1 right-1 bg-qingdai/90 border border-yuanshan/50 text-[7px] font-mono px-1 py-0.2 rounded text-parchment">
+              残纸溶解 · 诗意渐凝
+            </div>
+</div>
+<!-- Annotation -->
+<div class="p-3 bg-white flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xs font-headline font-semibold text-qingdai mb-1">江天尽染 · 纸屑消褪</h3>
+<p class="text-[11px] leading-relaxed text-qingdai/70 font-headline">
+                夜水与寒山寺钟声意境覆盖 85% 以上画幅。火星碳边彻底熄灭，残纸淡入虚空，左上方题诗渐显。
+              </p>
+</div>
+<div class="mt-2.5 pt-2 border-t border-parchment-border/60 text-[10px] font-mono text-yuanshan flex items-center justify-between">
+<span>阶段: 火缘退出</span>
+<span class="text-qingdai/50">诗文透明度 60%</span>
+</div>
+</div>
+</div>
+<!-- FRAME 05 [ 100% ] -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm hover:border-yuanshan/60 transition-all ring-1 ring-yuanshan/30">
+<div class="px-3 py-2 bg-yuanshan/10 border-b border-parchment-border flex items-center justify-between">
+<span class="font-mono text-xs font-semibold text-yuanshan">Frame 05</span>
+<span class="font-mono text-[10px] px-1.5 py-0.2 rounded bg-yuanshan text-white font-medium">100% · 1200ms</span>
+</div>
+<!-- Viewport 16:10 preview -->
+<div class="relative aspect-[16/10] bg-qingdai overflow-hidden border-b border-parchment-border select-none">
+<!-- Pure Final Target State: S02 Fengqiao Night Mooring -->
+<img alt="枫桥夜泊最终沉浸交互态，无火无烟，静谧画境" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- Subtle dark gradient vignette for readable text UI -->
+<div class="absolute inset-0 bg-gradient-to-r from-qingdai/75 via-qingdai/20 to-transparent"></div>
+<!-- Complete pristine vertical typography -->
+<div class="absolute top-2.5 left-3 flex flex-row-reverse space-x-1.5 space-x-reverse">
+<!-- Title & Dynasty Tag -->
+<div class="flex flex-col items-center mr-1">
+<span class="vertical-rl text-[8px] font-headline font-semibold text-white tracking-widest drop-shadow-sm">枫桥夜泊</span>
+<span class="vertical-rl text-[5px] font-headline text-qinghui/80 mt-1 scale-90">唐 · 张继</span>
+</div>
+<!-- Vertical Poem Lines -->
+<div class="vertical-rl text-[6px] font-headline text-parchment/90 tracking-widest border-r border-white/20 pr-0.5">
+                月落乌啼霜满天
+              </div>
+<div class="vertical-rl text-[6px] font-headline text-parchment/90 tracking-widest border-r border-white/20 pr-0.5">
+                江枫渔火对愁眠
+              </div>
+<div class="vertical-rl text-[6px] font-headline text-parchment/90 tracking-widest border-r border-white/20 pr-0.5">
+                姑苏城外寒山寺
+              </div>
+<div class="vertical-rl text-[6px] font-headline text-parchment/90 tracking-widest">
+                夜半钟声到客船
+              </div>
+</div>
+<!-- Bottom Left Secondary Action '收藏本诗' from Navigation Specs -->
+<div class="absolute bottom-2 left-3 flex items-center space-x-1 bg-qingdai/80 border border-parchment/20 px-1.5 py-0.5 rounded text-[6px] text-parchment">
+<span class="material-symbols-outlined text-[8px] text-cinnabar" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span>收藏本诗</span>
+</div>
+<div class="absolute bottom-1 right-1 bg-yuanshan text-[7px] font-mono px-1 py-0.2 rounded text-white shadow-xs">
+              动效归零 · 稳定交互态
+            </div>
+</div>
+<!-- Annotation -->
+<div class="p-3 bg-white flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-xs font-headline font-semibold text-qingdai mb-1">入境圆满 · 枫桥夜泊</h3>
+<p class="text-[11px] leading-relaxed text-qingdai/70 font-headline">
+                过渡完全结束，无余火杂烟。落定为沉浸式古韵夜读态，垂直排版右起，顶栏自适为有返回机制。
+              </p>
+</div>
+<div class="mt-2.5 pt-2 border-t border-parchment-border/60 text-[10px] font-mono text-yuanshan flex items-center justify-between">
+<span>阶段: 意境落定</span>
+<span class="text-qingdai/50">进入可交互模式</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= TECHNICAL SPECIFICATION & COMPLIANCE SECTION ================= -->
+<section class="bg-parchment-deep border border-parchment-border rounded p-6 mb-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Spec Column 1: Voronoi Paper Physics -->
+<div class="space-y-2">
+<div class="flex items-center space-x-2 text-qingdai font-headline font-semibold text-sm">
+<span class="material-symbols-outlined text-base text-cinnabar">grain</span>
+<h3>物理材质与着色器规则</h3>
+</div>
+<p class="text-xs text-qingdai/75 leading-relaxed font-headline text-justify">
+            纸面侵蚀边缘采用双层 Voronoi 胞元噪波与分形 Perlin 边界混合算法，模拟宣纸内部非均匀纵横纤维阻抗；燃烧色阶仅保留阶跃带（暗炭褐 <code class="text-[11px] font-mono bg-white px-1 py-0.2 rounded">#2C1A14</code> 至微火暖橙 <code class="text-[11px] font-mono bg-white px-1 py-0.2 rounded">#FF7A30</code>），严禁金红激光或游戏炫光。
+          </p>
+</div>
+<!-- Spec Column 2: Accessibility & Fallback -->
+<div class="space-y-2">
+<div class="flex items-center space-x-2 text-qingdai font-headline font-semibold text-sm">
+<span class="material-symbols-outlined text-base text-yuanshan">accessibility_new</span>
+<h3>无障碍与性能降级策略</h3>
+</div>
+<p class="text-xs text-qingdai/75 leading-relaxed font-headline text-justify">
+            当系统检测到 <code class="text-[11px] font-mono bg-white px-1 py-0.2 rounded">prefers-reduced-motion: reduce</code>、移动端节电模式或 GPU 帧率低于 45fps 时，系统自动旁路燃纸着色器，无缝退化为 300ms 绢纸淡入淡出（Cross-fade），绝不产生强光闪烁。
+          </p>
+</div>
+<!-- Spec Column 3: Audio & Interaction Binding -->
+<div class="space-y-2">
+<div class="flex items-center space-x-2 text-qingdai font-headline font-semibold text-sm">
+<span class="material-symbols-outlined text-base text-qingdai">volume_up</span>
+<h3>视听联合触发规范</h3>
+</div>
+<p class="text-xs text-qingdai/75 leading-relaxed font-headline text-justify">
+            300ms 时中央起孔伴随真实宣纸极微弱干裂碳化声（-24dB 软白噪衰减）；600ms 外扩至峰值；900ms 纸屑消褪，姑苏夜半远钟低频（120Hz）渐入，形成视听一致的心流空间转换。
+          </p>
+</div>
+</div>
+<!-- Sign-off & Actions Bar -->
+<div class="mt-6 pt-5 border-t border-parchment-border flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center space-x-4 text-xs font-mono text-qingdai/70">
+<div class="flex items-center space-x-1.5">
+<span class="w-2 h-2 rounded-full bg-yuanshan"></span>
+<span>着色器开销: &lt; 1.2MB 显存</span>
+</div>
+<div class="flex items-center space-x-1.5">
+<span class="w-2 h-2 rounded-full bg-yuanshan"></span>
+<span>合规性: WCAG 2.1 AA 减弱动效通过</span>
+</div>
+</div>
+<div class="flex items-center space-x-3 w-full sm:w-auto justify-end">
+<button class="px-4 py-2 text-xs font-display tracking-wider border border-parchment-border bg-white text-qingdai hover:bg-parchment rounded transition-colors flex items-center space-x-1.5" type="button">
+<span class="material-symbols-outlined text-sm">data_object</span>
+<span>导出动效参数 JSON</span>
+</button>
+<button class="px-5 py-2 text-xs font-display tracking-wider bg-qingdai text-parchment hover:bg-qingdai-dark rounded transition-colors flex items-center space-x-1.5 shadow-sm border border-qingdai" type="button">
+<span class="material-symbols-outlined text-sm text-cinnabar-glow" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>通过转场动效审批</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER (Shared Component Anchor) ================= -->
+<footer class="bg-parchment border-t border-parchment-border py-6">
+<div class="max-w-[1440px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center text-xs opacity-75 space-y-3 md:space-y-0">
+<div class="font-headline tracking-widest text-qingdai text-xs">
+        © 诗境·一卷山河 · 循诗入境 展卷见山河
+      </div>
+<div class="flex items-center space-x-6 text-qingdai/80">
+<a class="hover:text-yuanshan transition-colors duration-200" href="#">山河卷志</a>
+<a class="hover:text-yuanshan transition-colors duration-200" href="#">书法典藏</a>
+<a class="hover:text-yuanshan transition-colors duration-200" href="#">关于诗境</a>
+</div>
+</div>
+</footer>
+</body></html>

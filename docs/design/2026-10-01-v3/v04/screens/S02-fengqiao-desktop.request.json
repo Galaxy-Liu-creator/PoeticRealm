@@ -1,0 +1,12 @@
+{
+  "name": "edit_screens",
+  "arguments": {
+    "projectId": "11329297360365535924",
+    "selectedScreenIds": [
+      "15b04f3406a049baa891eba1fc1456c5"
+    ],
+    "deviceType": "DESKTOP",
+    "modelId": "GEMINI_3_8_FLASH",
+    "prompt": "对 S02 枫桥诗境做必要纠错，保留蓝灰夜江、舟、桥、寺、字体配色与轻巧顶栏。新建修订画板，标题保留S02。当前截图四句错误串成一根超长列、诗名逆序，正文伸出屏幕。\n正确布局：诗名横排精确“枫桥夜泊”、唐·张继在左上；其下四句分别四个独立竖列，从右往左“月落乌啼霜满天”“江枫渔火对愁眠”“姑苏城外寒山寺”“夜半钟声到客船”。诗块约340px宽、300px高，全28字完整可见不盖舟寺。\n请在代码/布局上精确执行：外层writing-mode:horizontal-tb; display:flex; flex-direction:row-reverse; gap:24px; align-items:flex-start。四句每个独立节点自己writing-mode:vertical-rl; text-orientation:upright; white-space:nowrap; font-size:24px; height:260px。不要把外层设为竖排，否则 flex 方向映射错误。标题是正常横排，不能读成“泊夜桥枫”。\n顶栏保留返回总览、行书品牌“诗境·一卷山河”、我的收藏、收藏本诗、个人中心、声音关闭。删除姑苏卷和所有虚构干支年月，删除山河卷志/书法典藏等未授权页脚。注释/译文默认收起，仅留小入口，不显示430px玻璃面板。声音默认关闭，非页面真实播放，不标声音已启。不另造诗词或新功能。生成实际一张纠错画板，逐字检查，保持已认可青黛写实风格。"
+  }
+}

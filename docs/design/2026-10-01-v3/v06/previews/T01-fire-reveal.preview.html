@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - T01 中央燃纸入境分镜 (纯粹视觉版)</title>
+<!-- Google Fonts: Noto Serif SC, Ma Shan Zheng (行楷/行书韵味) & Public Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            qingdai: "#183236",
+            "qingdai-dark": "#0F2124",
+            qinghui: "#DDE3DA",
+            "qinghui-paper": "#EAEFE9",
+            yuanshan: "#365C55",
+            cinnabar: "#9F493D",
+            "cinnabar-glow": "#D05A49",
+            parchment: "#F5F3EF",
+            "parchment-deep": "#ECE7DF",
+            "parchment-border": "#D8D2C6",
+            charcoal: "#232628"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            headline: ["'Noto Serif SC'", "serif"],
+            calligraphy: ["'Ma Shan Zheng'", "'Noto Serif SC'", "cursive", "serif"],
+            body: ["'Noto Serif SC'", "'Public Sans'", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .vertical-rl {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+    .burnt-edge-sm {
+      box-shadow: 0 0 3px 1px rgba(255, 122, 48, 0.55), inset 0 0 5px 2px #2C1A14;
+    }
+    .burnt-edge-md {
+      box-shadow: 0 0 5px 1.5px rgba(255, 122, 48, 0.45), inset 0 0 8px 3px #2C1A14;
+    }
+    .burnt-edge-sm > div:first-child,
+    .burnt-edge-md > div:first-child { border-radius: inherit; }
+  </style>
+</head>
+<body class="bg-qinghui-paper text-qingdai font-body antialiased min-h-screen selection:bg-yuanshan selection:text-white flex flex-col justify-between">
+<!-- ================= 顶栏 APP BAR ================= -->
+<header class="bg-[#183236] text-white border-b border-[#0F2124] sticky top-0 z-50 shadow-sm">
+<div class="max-w-[1536px] mx-auto px-8 h-16 flex items-center justify-between">
+<!-- 品牌行书标 -->
+<div class="flex items-center space-x-3">
+<span class="font-calligraphy text-2xl tracking-widest text-[#F7F6F2] drop-shadow-xs">诗境·一卷山河</span>
+</div>
+<!-- 右侧导航（仅保留要求的三项） -->
+<nav class="flex items-center space-x-8">
+<a class="text-sm font-headline tracking-wider text-white/90 hover:text-white transition-colors duration-200" href="#">诗词总览</a>
+<a class="text-sm font-headline tracking-wider text-white/70 hover:text-white transition-colors duration-200" href="#">我的收藏</a>
+<a class="text-sm font-headline tracking-wider text-white/70 hover:text-white transition-colors duration-200" href="#">个人中心</a>
+</nav>
+</div>
+</header>
+<!-- ================= 主画板内容 ================= -->
+<main class="w-full max-w-[1536px] mx-auto px-8 py-8 flex-1 flex flex-col justify-start">
+<!-- 主标题与诗意说明区域 -->
+<section class="mb-7 pb-5 border-b border-parchment-border flex flex-col md:flex-row md:items-baseline justify-between gap-4">
+<div class="max-w-4xl space-y-2">
+<div class="flex items-center space-x-3">
+<h1 class="text-2xl font-headline font-bold tracking-widest text-qingdai">
+            中央燃纸入境
+          </h1>
+<span class="bg-cinnabar text-white text-xs px-2.5 py-0.5 tracking-wider rounded font-headline">
+            视觉分镜 · 待审阅
+          </span>
+</div>
+<p class="text-xs leading-relaxed text-qingdai/80 font-headline tracking-wide">
+          以宣纸自然微温受灼、破纸见境为意象，由首页诗词总览平滑过渡至《枫桥夜泊》全景诗境。纯粹视觉时序演进示意。
+        </p>
+</div>
+</section>
+<!-- ================= 横向五联等比 16:10 视觉分镜网格 ================= -->
+<section class="w-full mb-8">
+<div class="grid grid-cols-5 gap-4">
+<!-- 帧 01 · 0% (源画卷) -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm overflow-hidden">
+<div class="px-3 py-2 bg-parchment-deep/80 border-b border-parchment-border flex items-center justify-between">
+<span class="font-headline text-xs font-semibold text-qingdai">帧 01</span>
+<span class="font-headline text-[11px] text-yuanshan font-medium">0%</span>
+</div>
+<!-- 16:10 缩图：完整真实首页 S01 总览稳定态 -->
+<div class="relative aspect-[16/10] bg-[#E8EAE6] overflow-hidden select-none flex flex-col">
+<!-- 缩略顶栏 -->
+<div class="h-4 bg-[#183236] px-2 flex items-center justify-between text-[6px] text-white">
+<span class="font-calligraphy">诗境·一卷山河</span>
+<span class="opacity-60 scale-90">诗词总览</span>
+</div>
+<!-- 缩略横幅山河淡青长卷 -->
+<div class="h-8 bg-cover bg-center relative overflow-hidden" style="background-image: url('../../v02/assets/overview-landscape.jpg');">
+<div class="absolute inset-0 bg-[#365C55]/25 flex items-center px-2">
+<span class="font-headline text-[6px] text-white tracking-widest bg-qingdai/40 px-1 py-0.5 rounded-xs">循诗入境·展卷见山河</span>
+</div>
+</div>
+<!-- 3张写实风景诗卡（枫桥夜泊、江雪、早发白帝城） -->
+<div class="flex-1 p-1.5 grid grid-cols-3 gap-1.5 items-stretch bg-[#F2F4F0]">
+<!-- 诗卡 1: 枫桥夜泊 (待点击态，带入境按钮) -->
+<div class="bg-white border border-yuanshan/60 rounded-xs overflow-hidden flex flex-col justify-between shadow-xs ring-1 ring-yuanshan/30">
+<div class="h-9 relative overflow-hidden">
+<img alt="枫桥夜泊" class="w-full h-full object-cover" src="../../v02/assets/fengqiao-cover.jpg"/>
+<span class="absolute top-0.5 left-1 font-headline text-[5px] text-white font-semibold drop-shadow-xs">枫桥夜泊</span>
+</div>
+<div class="p-0.5 text-center bg-yuanshan text-white text-[5px] font-headline tracking-tighter">
+                  入境 ↗
+                </div>
+</div>
+<!-- 诗卡 2: 江雪 (写实水墨寒江) -->
+<div class="bg-white border border-parchment-border rounded-xs overflow-hidden flex flex-col justify-between shadow-xs">
+<div class="h-9 relative overflow-hidden bg-slate-300">
+<img alt="江雪" class="w-full h-full object-cover" src="../../v02/assets/jiangxue-cover.jpg"/>
+<span class="absolute top-0.5 left-1 font-headline text-[5px] text-white font-semibold drop-shadow-xs">江雪</span>
+</div>
+<div class="p-0.5 text-center bg-parchment-deep text-qingdai/70 text-[5px] font-headline tracking-tighter">
+                  静览
+                </div>
+</div>
+<!-- 诗卡 3: 早发白帝城 (写实三峡水色) -->
+<div class="bg-white border border-parchment-border rounded-xs overflow-hidden flex flex-col justify-between shadow-xs">
+<div class="h-9 relative overflow-hidden bg-slate-200">
+<img alt="早发白帝城" class="w-full h-full object-cover" src="../../v02/assets/baidicheng-cover.jpg"/>
+<span class="absolute top-0.5 left-1 font-headline text-[5px] text-white font-semibold drop-shadow-xs">早发白帝城</span>
+</div>
+<div class="p-0.5 text-center bg-parchment-deep text-qingdai/70 text-[5px] font-headline tracking-tighter">
+                  静览
+                </div>
+</div>
+</div>
+</div>
+<!-- 极简中文描述 -->
+<div class="p-3 bg-white flex-1 border-t border-parchment-border flex items-center">
+<p class="text-xs leading-relaxed text-qingdai/80 font-headline">
+              01 · 首页原生画卷稳定态，三卷写实诗卡静候入境。
+            </p>
+</div>
+</div>
+<!-- 帧 02 · 25% (微温初灼) -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm overflow-hidden">
+<div class="px-3 py-2 bg-parchment-deep/80 border-b border-parchment-border flex items-center justify-between">
+<span class="font-headline text-xs font-semibold text-qingdai">帧 02</span>
+<span class="font-headline text-[11px] text-cinnabar font-medium">25%</span>
+</div>
+<!-- 16:10 缩图：中央自然炭化小孔，透出枫桥夜泊底层夜色孤舟 -->
+<div class="relative aspect-[16/10] bg-[#0F2124] overflow-hidden select-none">
+<!-- 底层：枫桥夜泊真实江流与孤舟暖灯景致 -->
+<img alt="枫桥夜泊夜江幽境" class="absolute inset-0 w-full h-full object-cover scale-110" src="../../v03/assets/S02-fengqiao-cover.jpg"/>
+<!-- 表层：首页宣纸遮罩，仅在正中央破开约20%的不规则自然炭化开裂小孔 -->
+<div class="absolute inset-0 bg-[#E8EAE6]/95 pointer-events-none" style="clip-path: polygon(0% 0%, 0% 100%, 39% 100%, 39% 60%, 41% 40%, 48% 36%, 60% 42%, 62% 61%, 55% 65%, 45% 65%, 39% 60%, 39% 100%, 100% 100%, 100% 0%);">
+<!-- 首页缩略残余内容示意 -->
+<div class="h-3 bg-[#183236]/80 flex items-center px-2">
+<span class="font-calligraphy text-[5px] text-white/80">诗境·一卷山河</span>
+</div>
+<div class="p-2 opacity-30 flex justify-between">
+<div class="w-8 h-10 border border-qingdai/20 rounded-xs bg-white/40"></div>
+<div class="w-8 h-10 border border-qingdai/20 rounded-xs bg-white/40"></div>
+<div class="w-8 h-10 border border-qingdai/20 rounded-xs bg-white/40"></div>
+</div>
+</div>
+<!-- 中央破孔处自然焦炭边缘与暗橙微弱余烬圈 -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+<polygon points="39,60 41,40 48,36 60,42 62,61 55,65 45,65" fill="none" stroke="#2C1A14" stroke-width="0.7"/>
+<polygon points="39,60 41,40 48,36 60,42 62,61 55,65 45,65" fill="none" stroke="#B66338" stroke-width="0.28"/>
+</svg>
+</div>
+<!-- 极简中文描述 -->
+<div class="p-3 bg-white flex-1 border-t border-parchment-border flex items-center">
+<p class="text-xs leading-relaxed text-qingdai/80 font-headline">
+              02 · 中央受温微灼，宣纸微裂透见夜色江流与孤舟灯火。
+            </p>
+</div>
+</div>
+<!-- 帧 03 · 50% (径向外扩) -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm overflow-hidden">
+<div class="px-3 py-2 bg-parchment-deep/80 border-b border-parchment-border flex items-center justify-between">
+<span class="font-headline text-xs font-semibold text-qingdai">帧 03</span>
+<span class="font-headline text-[11px] text-cinnabar font-medium">50%</span>
+</div>
+<!-- 16:10 缩图：破口严格居中向四周外扩约60%，清晰透见夜江、古桥塔影与孤舟 -->
+<div class="relative aspect-[16/10] bg-[#0F2124] overflow-hidden select-none">
+<!-- 底层：枫桥夜泊完整夜色画卷 -->
+<img alt="枫桥夜泊山水全貌" class="absolute inset-0 w-full h-full object-cover" src="../../v03/assets/S02-fengqiao-cover.jpg"/>
+<!-- 表层：后退隐没的首页总览宣纸，在四周残余，居中镂空60% -->
+<div class="absolute inset-0 bg-[#E8EAE6]/90 pointer-events-none" style="clip-path: polygon(0% 0%, 0% 100%, 18% 100%, 20% 82%, 24% 35%, 38% 18%, 68% 16%, 82% 38%, 80% 80%, 55% 86%, 20% 82%, 18% 100%, 100% 100%, 100% 0%);">
+<div class="h-3 bg-[#183236]/60 flex items-center px-2">
+<span class="font-calligraphy text-[5px] text-white/60">诗境·一卷山河</span>
+</div>
+</div>
+<!-- 居中 60% 破口天然纤维撕裂炭边与暗橙余烬 -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+<polygon points="20,82 24,35 38,18 68,16 82,38 80,80 55,86" fill="none" stroke="#2C1A14" stroke-width="0.7"/>
+<polygon points="20,82 24,35 38,18 68,16 82,38 80,80 55,86" fill="none" stroke="#A85B35" stroke-width="0.25"/>
+</svg>
+</div>
+<!-- 极简中文描述 -->
+<div class="p-3 bg-white flex-1 border-t border-parchment-border flex items-center">
+<p class="text-xs leading-relaxed text-qingdai/80 font-headline">
+              03 · 破口居中向四周自然漫延，夜色渐深，冷江与灯火明朗。
+            </p>
+</div>
+</div>
+<!-- 帧 04 · 75% (残纸消融) -->
+<div class="flex flex-col bg-white border border-parchment-border rounded shadow-sm overflow-hidden">
+<div class="px-3 py-2 bg-parchment-deep/80 border-b border-parchment-border flex items-center justify-between">
+<span class="font-headline text-xs font-semibold text-qingdai">帧 04</span>
+<span class="font-headline text-[11px] text-yuanshan font-medium">75%</span>
+</div>
+<!-- 16:10 缩图：夜景覆盖90%以上，四隅仅余薄边微炭残留，左上方诗文渐入清晰 -->
+<div class="relative aspect-[16/10] bg-[#0F2124] overflow-hidden select-none">
+<!-- 底层枫桥夜泊全幅展开 -->
+<img alt="枫桥夜泊画幅全展" class="absolute inset-0 w-full h-full object-cover" src="../../v03/assets/S02-fengqiao-cover.jpg"/>
+<!-- 四角仅存极薄残纸虚影，余烬已熄无烟火 -->
+<div class="absolute inset-0 pointer-events-none">
+<!-- 左下角极薄残纸 -->
+<div class="absolute bottom-0 left-0 w-8 h-6 bg-gradient-to-tr from-[#2C1A14]/70 via-[#E8EAE6]/30 to-transparent"></div>
+<!-- 右上角薄烬残边 -->
+<div class="absolute top-0 right-0 w-10 h-7 bg-gradient-to-bl from-[#2C1A14]/60 via-[#E8EAE6]/20 to-transparent"></div>
+</div>
+<!-- 左上方题诗淡入浮现（约60%透明度） -->
+<div class="absolute top-2 left-2.5 flex flex-row-reverse space-x-1.5 space-x-reverse opacity-70">
+<div class="vertical-rl text-[7px] font-headline text-white tracking-widest drop-shadow-sm pr-0.5">
+                枫桥夜泊
+              </div>
+<div class="vertical-rl text-[6px] font-headline text-white/90 tracking-widest bg-[#183236]/40 px-0.5 py-0.5">
+                月落乌啼霜满天
+              </div>
+<div class="vertical-rl text-[6px] font-headline text-white/90 tracking-widest bg-[#183236]/40 px-0.5 py-0.5">
+                江枫渔火对愁眠
+              </div>
+</div>
+</div>
+<!-- 极简中文描述 -->
+<div class="p-3 bg-white flex-1 border-t border-parchment-border flex items-center">
+<p class="text-xs leading-relaxed text-qingdai/80 font-headline">
+              04 · 夜色全幅铺展，残纸淡入虚空，左上方诗文渐入清晰。
+            </p>
+</div>
+</div>
+<!-- 帧 05 · 100% (意境圆满) -->
+<div class="flex flex-col bg-white border border-yuanshan/60 rounded shadow-sm overflow-hidden ring-1 ring-yuanshan/25">
+<div class="px-3 py-2 bg-yuanshan/10 border-b border-parchment-border flex items-center justify-between">
+<span class="font-headline text-xs font-semibold text-yuanshan">帧 05</span>
+<span class="font-headline text-[11px] text-yuanshan font-medium">100%</span>
+</div>
+<!-- 16:10 缩图：意境圆满，残烟尽退，四列诗文舒展稳固入定 -->
+<div class="relative aspect-[16/10] bg-[#0F2124] overflow-hidden select-none">
+<!-- 纯粹沉浸式《枫桥夜泊》全景画卷 -->
+<img alt="枫桥夜泊意境圆满" class="absolute inset-0 w-full h-full object-cover" src="../../v03/assets/S02-fengqiao-cover.jpg"/>
+<!-- 幽深渐变衬托书法题字 -->
+<div class="absolute inset-0 bg-gradient-to-r from-[#183236]/80 via-[#183236]/25 to-transparent"></div>
+<!-- 左上角四列各七字经典竖排诗句独立舒展、自右向左完整排列 -->
+<div class="absolute top-2.5 left-3 flex flex-row-reverse space-x-1.5 space-x-reverse">
+<!-- 诗名与作者题款 -->
+<div class="flex flex-col items-center mr-1">
+<span class="vertical-rl text-[8px] font-headline font-semibold text-white tracking-widest drop-shadow-sm">枫桥夜泊</span>
+<span class="vertical-rl text-[5px] font-headline text-white/70 mt-1 scale-90">唐 · 张继</span>
+</div>
+<!-- 四句诗文竖排，自右向左 -->
+<div class="vertical-rl text-[6px] font-headline text-white/95 tracking-widest border-r border-white/20 pr-0.5">
+                月落乌啼霜满天
+              </div>
+<div class="vertical-rl text-[6px] font-headline text-white/95 tracking-widest border-r border-white/20 pr-0.5">
+                江枫渔火对愁眠
+              </div>
+<div class="vertical-rl text-[6px] font-headline text-white/95 tracking-widest border-r border-white/20 pr-0.5">
+                姑苏城外寒山寺
+              </div>
+<div class="vertical-rl text-[6px] font-headline text-white/95 tracking-widest">
+                夜半钟声到客船
+              </div>
+</div>
+<!-- 右侧保留“收藏本诗”克制控件 -->
+<div class="absolute bottom-2 right-2.5 flex items-center space-x-1 bg-[#183236]/85 border border-white/20 px-1.5 py-0.5 rounded text-[6px] text-white/90 shadow-xs">
+<span class="material-symbols-outlined text-[8px] text-cinnabar-glow" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="font-headline tracking-wider">收藏本诗</span>
+</div>
+</div>
+<!-- 极简中文描述 -->
+<div class="p-3 bg-white flex-1 border-t border-parchment-border flex items-center">
+<p class="text-xs leading-relaxed text-qingdai/80 font-headline">
+              05 · 意境圆满，残烟尽退，四列诗文舒展稳固入定。
+            </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= 极简版权页脚 ================= -->
+<footer class="bg-transparent border-t border-parchment-border/70 py-6">
+<div class="max-w-[1536px] mx-auto px-8 text-center">
+<p class="font-headline tracking-widest text-qingdai/70 text-xs">
+        Stitch 源稿校验预览 · 本地封面引用与焦边匹配 · 待审批
+      </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,22 @@
+{
+  "name": "create_design_system",
+  "arguments": {
+    "projectId": "11329297360365535924",
+    "designSystem": {
+      "displayName": "青黛山水 · 写实诗境 · v01 待审批",
+      "theme": {
+        "colorMode": "LIGHT",
+        "headlineFont": "NOTO_SERIF",
+        "bodyFont": "NOTO_SANS",
+        "roundness": "ROUND_FOUR",
+        "customColor": "#365C55",
+        "colorVariant": "NEUTRAL",
+        "overrideNeutralColor": "#DDE3DA",
+        "overridePrimaryColor": "#365C55",
+        "overrideSecondaryColor": "#657B76",
+        "overrideTertiaryColor": "#9F493D",
+        "designMd": "# 诗境·一卷山河\n东方山水构图、真实材料与光照、克制书法界面。深青黛山水题头 #183236，较亮青灰绢色山水总览 #DDE3DA，青绿 #365C55，少量朱砂 #9F493D。不得纯黑白、霓虹、金红、玻璃拟态或游戏 HUD。\n## Typography\n中文为主。上述 Noto 字体仅作导航与常规标题的基础，品牌主标题必须是另行处理的真正行书笔意字形，精确写作“诗境·一卷山河”，不得用普通宋体冒充行书。诗文竖排右起。正式字体许可与子集以后核验。\n## Homepage\n题头与卡片总览明确分区；题头不占满首屏，下部有浅山、薄雾、水光而不是一块空白。三首诗三张稳定网格上的轻盈浮动卡片，柔和阴影，少量高低错落；不要漂浮宫殿和仙侠传送门。\n## Navigation\n首页无返回；所有非首页有返回。导航：诗词总览、我的收藏、个人中心。诗境另有收藏本诗。\n## Scope\n本主题与页面只是待用户审批的设计稿，不是已经实现的 Three.js 应用。"
+      }
+    }
+  }
+}

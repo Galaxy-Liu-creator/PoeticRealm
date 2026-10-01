@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-01",
+  "remoteResult": "UNKNOWN_NO_RETURNED_SCREEN_ID",
+  "failures": [
+    {"request":"transitions/T01-fire-reveal.request.json","tool":"edit_screens","error":"Network failure connecting to Stitch API: fetch failed","localOutput":null,"followup":"保留 v05 原稿；另存 Stitch 源稿本地资源核验预览，不冒充新出图"},
+    {"request":"transitions/T04-page-return.request.json","tool":"edit_screens","error":"Network failure connecting to Stitch API: fetch failed","localOutput":null,"followup":"保留 v05 原稿；另存 Stitch 源稿本地资源核验预览，不冒充新出图"}
+  ]
+}

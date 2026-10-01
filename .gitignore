@@ -4,6 +4,15 @@ dist/
 dist-offline/
 *.tsbuildinfo
 .vite/
+.cache/
+
+# 测试运行生成的报告与截图（docs/ 中的验收资料仍入库）
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+blob-report/
+*.lcov
 
 # 环境变量与密钥
 .env
@@ -24,12 +33,27 @@ tools/.cache/
 # Blender 自动备份与崩溃恢复文件
 *.blend1
 *.blend2
+*.blend[0-9]*
 *.blend@
 quit.blend
 
 # Python 缓存（art/scripts）
 __pycache__/
 *.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 临时文件、冲突残留与进程转储
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.pid
+*.dmp
+*.crash
 
 # 编辑器与系统文件
 .vscode/*
@@ -37,6 +61,7 @@ __pycache__/
 !.vscode/settings.json
 .idea/
 *.swp
+*.swo
 .DS_Store
 Thumbs.db
 desktop.ini

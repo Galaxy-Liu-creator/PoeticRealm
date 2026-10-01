@@ -18,6 +18,12 @@ export class Engine {
   private resizes: ((w: number, h: number) => void)[] = [];
   private renderFn: () => void;
   private lastNow = -1;
+  private visible = !document.hidden;
+  private readonly handleResize = (): void => this.resize();
+  private readonly handleVisibility = (): void => {
+    this.visible = !document.hidden;
+    this.lastNow = -1;
+  };
 
   constructor(canvas: HTMLCanvasElement, pixelRatio = Math.min(window.devicePixelRatio, 2)) {
     this.renderer = new WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
@@ -29,7 +35,8 @@ export class Engine {
     this.camera = new PerspectiveCamera(40, 1, 0.1, 1000);
     this.renderFn = () => this.renderer.render(this.scene, this.camera);
 
-    window.addEventListener('resize', () => this.resize());
+    window.addEventListener('resize', this.handleResize);
+    document.addEventListener('visibilitychange', this.handleVisibility);
     this.resize();
   }
 
@@ -52,6 +59,7 @@ export class Engine {
 
   start(): void {
     this.renderer.setAnimationLoop((now: number) => {
+      if (!this.visible) return;
       const realDt = this.lastNow < 0 ? 0 : (now - this.lastNow) / 1000;
       this.lastNow = now;
       if (realDt > 0) this.stats.fps += (1 / realDt - this.stats.fps) * 0.05;
@@ -68,6 +76,15 @@ export class Engine {
   /** 逐帧推进并立即画一帧（录制用），暂停时也有效。 */
   step(dt: number): void {
     this.frame(this.clock.step(dt));
+  }
+
+  dispose(): void {
+    this.renderer.setAnimationLoop(null);
+    window.removeEventListener('resize', this.handleResize);
+    document.removeEventListener('visibilitychange', this.handleVisibility);
+    this.updates = [];
+    this.resizes = [];
+    this.renderer.dispose();
   }
 
   private frame(dt: number): void {

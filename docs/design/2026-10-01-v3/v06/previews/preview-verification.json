@@ -1,0 +1,26 @@
+{
+  "provider": "Local Chromium capture of Stitch source; not new Stitch generation",
+  "results": [
+    {
+      "tag": "T01-fire-reveal",
+      "sourceFile": "T01-fire-reveal.preview.html",
+      "outputFile": "T01-fire-reveal.preview.png",
+      "viewport": "1600x740",
+      "imageCount": 7,
+      "allImagesLoaded": true,
+      "horizontalOverflow": false,
+      "percentages": true
+    },
+    {
+      "tag": "T04-page-return",
+      "sourceFile": "T04-page-return.preview.html",
+      "outputFile": "T04-page-return.preview.png",
+      "viewport": "1600x740",
+      "imageCount": 12,
+      "allImagesLoaded": true,
+      "horizontalOverflow": false,
+      "percentages": true
+    }
+  ],
+  "passed": true
+}

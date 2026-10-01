@@ -1,0 +1,12 @@
+{
+  "name": "edit_screens",
+  "arguments": {
+    "projectId": "11329297360365535924",
+    "selectedScreenIds": [
+      "91009068fbb742a683a2ff6747cbad5b"
+    ],
+    "deviceType": "DESKTOP",
+    "modelId": "GEMINI_3_8_FLASH",
+    "prompt": "沿用当前已认可的青黛山水、浅绢纸、写实封面、题字、导航与背景，仅修正卡片信息区。全部 article 同宽同高，height:520px;封面height:340px;信息height:180px;box-sizing:border-box。三个首页卡片仅可平移浮动，不能scale，不改封面、不添加功能。关键纠错：当前七字竖排预览侵入按钮区，所以卡片预览改为普通横排一行，writing-mode:horizontal-tb; font-size:14px;letter-spacing:0.08em; white-space:nowrap；放在标题和地点下方靠左，距离按钮至少16px。枫桥写‘江枫渔火对愁眠’，江雪写‘独钓寒江雪’，白帝写‘轻舟已过万重山’。仅卡片预览采用横排，品牌和诗境详情竖排保持原定风格。信息区padding:18px 20px，内部上块height:92px，下块height:32px，避免任何文字或按钮溢出，按钮底部至少18px纸面内边距。收藏页同样采用此卡片，仅实际收藏的两张，不添加占位卡。删除卡片信息区内旧vertical-rl和height125px预览容器。交付完整可视UI截图，保持其它原有视觉不变。"
+  }
+}

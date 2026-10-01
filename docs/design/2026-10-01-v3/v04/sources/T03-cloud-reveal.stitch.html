@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - T03 云水入峡入境分镜 (纯粹视觉版)</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Public+Sans:wght@300;400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              ink: "#183236",         // 深青黛山水题头
+              silk: "#DDE3DA",        // 青灰绢色底景
+              pine: "#365C55",        // 远山青绿
+              cinnabar: "#9F493D",    // 朱砂点睛
+              paper: "#F7F8F5",       // 绢帛纸基米白
+              mist: "#ECEFEA",        // 晨雾浅灰
+              border: "#C7D0C5"       // 经络绢纹边线
+            },
+            "on-surface": "#183236",
+            "on-surface-variant": "#4E605D",
+            "surface": "#F2F5F0",
+            "surface-container": "#E3E9E0",
+            "primary": "#365C55",
+            "inverse-primary": "#A5C6BD",
+            "inverse-on-surface": "#F2F5F0"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Noto Serif SC", "Noto Serif", "serif"],
+            display: ["Noto Serif SC", "Noto Serif", "serif"],
+            calligraphy: ["Ma Shan Zheng", "Noto Serif SC", "cursive", "serif"],
+            body: ["Public Sans", "Noto Serif SC", "sans-serif"],
+            label: ["Public Sans", "sans-serif"]
+          },
+          aspectRatio: {
+            '16/10': '16 / 10',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .vertical-poetry {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      letter-spacing: 0.38em;
+    }
+    .chinese-seal {
+      border: 1px solid #9F493D;
+      color: #9F493D;
+      padding: 2px 4px;
+      line-height: 1.1;
+      font-size: 0.65rem;
+      border-radius: 1px;
+    }
+    /* Subtle silk texture backdrop */
+    .silk-pattern {
+      background-color: #F6F8F4;
+      background-image: radial-gradient(#CCD5CA 0.65px, transparent 0.65px), radial-gradient(#CCD5CA 0.65px, #F6F8F4 0.65px);
+      background-size: 26px 26px;
+      background-position: 0 0, 13px 13px;
+    }
+  </style>
+</head>
+<body class="silk-pattern text-brand-ink antialiased selection:bg-brand-pine selection:text-white min-h-screen flex flex-col font-body">
+<!-- ================= TOP APP BAR (Shared Component Anchored) ================= -->
+<header class="w-full bg-[#183236] text-[#DDE3DA] shadow-sm sticky top-0 z-50 transition-all duration-300"><div class="flex justify-between items-center w-full px-6 md:px-8 py-3.5 max-w-[1720px] mx-auto"><div class="flex items-center space-x-4"><a class="inline-flex items-center text-xs tracking-wider text-[#DDE3DA]/80 hover:text-white transition-colors duration-200 group" href="#"><span class="material-symbols-outlined text-sm mr-1 group-hover:-translate-x-0.5 transition-transform">arrow_back</span>返回总览</a><div class="h-3.5 w-px bg-[#DDE3DA]/25"></div><div class="flex items-baseline space-x-2.5"><span class="font-calligraphy text-xl md:text-2xl text-white tracking-widest leading-none drop-shadow-sm">诗境·一卷山河</span><span class="text-[11px] font-headline text-brand-silk/75 tracking-wider border border-brand-pine/60 px-2 py-0.5 rounded-sm bg-brand-pine/20">视觉分镜 · 待审阅</span></div></div><div class="flex items-center space-x-6"><nav class="flex items-center space-x-6 text-xs font-body tracking-wider"><a class="text-white font-medium border-b border-brand-silk pb-0.5" href="#">诗词总览</a><a class="text-[#DDE3DA]/75 hover:text-white transition-colors duration-200 pb-0.5" href="#">我的收藏</a><a class="text-[#DDE3DA]/75 hover:text-white transition-colors duration-200 pb-0.5" href="#">个人中心</a></nav></div></div></header>
+<!-- ================= SUB-HEADER / BANNER / CONTEXT STRIP ================= -->
+<section class="bg-brand-ink/95 border-b border-brand-pine/30 text-brand-silk px-6 md:px-8 py-4"><div class="max-w-[1720px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4"><div><div class="flex items-center space-x-3 mb-1.5"><h1 class="font-headline text-lg md:text-xl text-white font-normal tracking-widest">云水入峡入境</h1><span class="chinese-seal border-brand-silk/60 text-brand-silk">视觉时序分镜 · 待审阅</span></div><p class="text-xs md:text-sm text-brand-silk/80 tracking-wide font-headline max-w-4xl leading-relaxed">以晨雾生发、水气顺峡江流动为意象，由首页诗词总览平滑过渡至《早发白帝城》夔门霞光诗境。纯粹视觉时序演进示意。</p></div></div></section>
+<!-- ================= MAIN CONTENT: FIVE-FRAME HORIZONTAL TIME STORYBOARD ================= -->
+<main class="flex-1 max-w-[1720px] w-full mx-auto px-4 md:px-8 py-8 flex flex-col justify-between"><div class="flex items-center justify-between mb-6 border-b border-brand-border/70 pb-3"><div class="flex items-center space-x-3"><span class="w-2 h-2 rounded-none rotate-45 bg-brand-cinnabar inline-block"></span><h2 class="font-headline text-base tracking-widest text-brand-ink font-semibold">五帧横向时序拆解画廊</h2><span class="text-xs text-brand-on-surface-variant font-serif">16:10 宽画幅渲染视窗 · 纯粹视觉时序版</span></div><div class="flex items-center space-x-2 text-xs text-brand-on-surface-variant font-mono"><span>0%</span><div class="w-24 h-1 bg-brand-border/60 rounded-full overflow-hidden flex"><div class="w-full bg-gradient-to-r from-brand-pine via-brand-silk to-brand-cinnabar"></div></div><span>100%</span></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 mb-6"><div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col overflow-hidden"><div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs"><div class="flex items-center space-x-2"><span class="font-headline font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">帧 01</span><span class="font-headline font-medium text-brand-ink">源画卷</span></div><span class="font-serif text-brand-on-surface-variant text-[11px]">0%</span></div><div class="relative aspect-16/10 w-full overflow-hidden bg-brand-silk/40 border-b border-brand-border/50"><img alt="S01 原生画卷稳定态" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc"/><div class="absolute inset-0 p-2 flex flex-col justify-between bg-black/10"><div class="text-[8px] font-headline text-white drop-shadow bg-[#183236]/80 px-1 py-0.5 rounded-xs w-max">诗境·一卷山河</div><div class="grid grid-cols-3 gap-1"><div class="bg-white/85 p-1 rounded-xs border border-brand-border/40 text-[7px] text-center font-headline">枫桥夜泊</div><div class="bg-white/85 p-1 rounded-xs border border-brand-border/40 text-[7px] text-center font-headline">江雪</div><div class="bg-white/95 p-1 rounded-xs border border-brand-pine/60 text-[7px] text-center font-headline flex items-center justify-between"><span class="font-bold text-brand-ink">白帝城</span><span class="bg-brand-cinnabar text-white px-0.5 rounded-xs text-[6px]">入境</span></div></div></div></div><div class="p-3 text-xs bg-brand-paper/50 flex-1 flex items-center"><p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed">01 · 首页原生画卷稳定态，三卷写实诗卡静候入境。</p></div></div><div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col overflow-hidden"><div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs"><div class="flex items-center space-x-2"><span class="font-headline font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">帧 02</span><span class="font-headline font-medium text-brand-ink">水气萌生</span></div><span class="font-serif text-brand-on-surface-variant text-[11px]">25%</span></div><div class="relative aspect-16/10 w-full overflow-hidden bg-brand-silk/40 border-b border-brand-border/50"><img alt="晨雾水汽顺江流自右向左徐缓铺开" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc"/><div class="absolute inset-0 bg-gradient-to-l from-white/85 via-brand-silk/50 to-transparent mix-blend-screen pointer-events-none"></div><div class="absolute inset-0 backdrop-blur-[0.5px] bg-[#DDE3DA]/25 pointer-events-none"></div></div><div class="p-3 text-xs bg-brand-paper/50 flex-1 flex items-center"><p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed">02 · 晨雾微起，青灰水汽顺江流自右向左徐缓铺开。</p></div></div><div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col overflow-hidden"><div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs"><div class="flex items-center space-x-2"><span class="font-headline font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">帧 03</span><span class="font-headline font-medium text-brand-ink">云水入峡</span></div><span class="font-serif text-brand-on-surface-variant text-[11px]">50%</span></div><div class="relative aspect-16/10 w-full overflow-hidden bg-gradient-to-b from-[#DDE3DA] via-[#F2F5F0] to-[#C8D3C8] border-b border-brand-border/50 flex items-center justify-center"><div class="absolute inset-0 bg-radial from-transparent via-white/40 to-white/80 backdrop-blur-[1.5px]"></div></div><div class="p-3 text-xs bg-brand-paper/50 flex-1 flex items-center"><p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed">03 · 绢色云水连绵漫卷，天地虚白，源画卷自然隐没。</p></div></div><div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col overflow-hidden"><div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs"><div class="flex items-center space-x-2"><span class="font-headline font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">帧 04</span><span class="font-headline font-medium text-brand-ink">峡门初现</span></div><span class="font-serif text-brand-on-surface-variant text-[11px]">75%</span></div><div class="relative aspect-16/10 w-full overflow-hidden bg-brand-silk/40 border-b border-brand-border/50"><img alt="晨霞破雾轻舟顺江" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXMf-lXqtJVjv0Pgp3ArFIJ9p_JxJ_PdPTLRrqCZcz03vaDklwMzPhCApnVulqkygNZvY6O9vuk843nUweRlE06sXE-FrU7YPKSDcgB_UMBE9jgEBJmuT1-FaVKRqKuRwSZ3DOEe8Q12VLOyzCLaKhTypz1_dy4a3byxCYSjMx-01JNzPfdJvHmLAA4ZOKcvHd_hyamXCdrO9rXJw_CeEoM4ae9qG4fkpMBwR5rt4iLM5KK2GOaw46aCPJ"/><div class="absolute inset-0 bg-radial from-transparent via-white/20 to-white/60 backdrop-blur-[0.5px] pointer-events-none"></div></div><div class="p-3 text-xs bg-brand-paper/50 flex-1 flex items-center"><p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed">04 · 晨霞破雾，夔门雄峡、碧江晨曦与顺流轻舟清晰显现。</p></div></div><div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col overflow-hidden"><div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs"><div class="flex items-center space-x-2"><span class="font-headline font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">帧 05</span><span class="font-headline font-medium text-brand-ink">境定白帝</span></div><span class="font-serif text-brand-pine font-medium text-[11px]">100%</span></div><div class="relative aspect-16/10 w-full overflow-hidden bg-brand-silk/40 border-b border-brand-border/50"><img alt="早发白帝城全景诗境" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXMf-lXqtJVjv0Pgp3ArFIJ9p_JxJ_PdPTLRrqCZcz03vaDklwMzPhCApnVulqkygNZvY6O9vuk843nUweRlE06sXE-FrU7YPKSDcgB_UMBE9jgEBJmuT1-FaVKRqKuRwSZ3DOEe8Q12VLOyzCLaKhTypz1_dy4a3byxCYSjMx-01JNzPfdJvHmLAA4ZOKcvHd_hyamXCdrO9rXJw_CeEoM4ae9qG4fkpMBwR5rt4iLM5KK2GOaw46aCPJ"/><div class="absolute inset-0 p-2.5 flex flex-col justify-start pointer-events-none"><div class="bg-brand-paper/85 backdrop-blur-[0.5px] p-2 rounded-xs border border-brand-border/60 max-w-fit shadow-xs"><div class="mb-1 pb-1 border-b border-brand-border/40"><div class="font-headline text-[8.5px] font-bold text-brand-ink tracking-wider">早发白帝城</div><div class="text-[7px] font-serif text-brand-on-surface-variant">唐 · 李白</div></div><div class="flex flex-row-reverse space-x-1.5 space-x-reverse"><div class="vertical-poetry text-[7.5px] font-headline text-brand-ink leading-tight font-medium">朝辞白帝彩云间</div><div class="vertical-poetry text-[7.5px] font-headline text-brand-ink leading-tight font-medium">千里江陵一日还</div><div class="vertical-poetry text-[7.5px] font-headline text-brand-ink leading-tight font-medium">两岸猿声啼不住</div><div class="vertical-poetry text-[7.5px] font-headline text-brand-ink leading-tight font-medium">轻舟已过万重山</div></div></div></div></div><div class="p-3 text-xs bg-brand-paper/50 flex-1 flex items-center"><p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed">05 · 意境圆满，诗文四列舒展，轻舟过峡平稳入定。</p></div></div></div></main>
+<!-- ================= FOOTER (Shared Component Anchored) ================= -->
+<footer class="w-full bg-[#F2F5F0] border-t border-brand-border/60 mt-auto"><div class="flex justify-center items-center w-full px-8 py-6 max-w-[1720px] mx-auto text-xs text-brand-on-surface-variant/80 font-headline tracking-widest">© 诗境·一卷山河 · 循诗入境 展卷见山河</div></footer>
+</body></html>

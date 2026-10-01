@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - T04 翻书返回入境分镜审批板</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts: Noto Serif SC, Ma Shan Zheng for Xingshu aesthetic, Public Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            // Token mappings from Design System
+            "ink-dark": "#183236",       // 深青黛
+            "silk-light": "#DDE3DA",     // 青灰绢色
+            "silk-paper": "#E4E8E1",     // 宣纸/绢背
+            "pine-green": "#365C55",     // 青绿
+            "cinnabar": "#9F493D",       // 朱砂
+            "surface": "#DDE3DA",
+            "surface-container": "#D2DAD0",
+            "surface-card": "#EAEFE7",
+            "primary": "#183236",
+            "primary-container": "#365C55",
+            "on-surface": "#183236",
+            "on-surface-variant": "#4A615D",
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif SC", "Noto Serif", "serif"],
+            "display": ["Noto Serif SC", "Noto Serif", "serif"],
+            "body": ["Public Sans", "Noto Serif SC", "sans-serif"],
+            "label": ["Public Sans", "sans-serif"],
+            "xingshu": ["Ma Shan Zheng", "Noto Serif SC", "cursive"]
+          }
+        },
+      }
+    }
+  </script>
+<style>
+    /* 东方宣纸与微纤维肌理背景 */
+    body {
+      background-color: #DDE3DA;
+      color: #183236;
+      background-image: radial-gradient(#CCD5C9 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    
+    .vertical-rl {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+
+    .shufa-shadow {
+      text-shadow: 0 1px 2px rgba(24, 50, 54, 0.15);
+    }
+
+    /* 纸页翻卷仿真物理变形辅助样式 */
+    .curl-shadow-f02 {
+      box-shadow: -8px 0 16px -4px rgba(24, 50, 54, 0.28);
+    }
+    .curl-shadow-f03 {
+      box-shadow: -18px 0 32px -6px rgba(24, 50, 54, 0.38), -4px 0 10px rgba(0, 0, 0, 0.15);
+    }
+    .curl-shadow-f04 {
+      box-shadow: -10px 0 20px -6px rgba(24, 50, 54, 0.22);
+    }
+
+    /* Custom scrollbar for horizontal review */
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #CCD5C9;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #365C55;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body class="min-h-screen font-body antialiased flex flex-col selection:bg-pine-green selection:text-white">
+<!-- ==================== 顶部导航规范 (TopNavBar) ==================== -->
+<header class="w-full bg-[#D7DDD4] border-b border-[#CCD5C9] sticky top-0 z-50 shadow-sm backdrop-blur-sm bg-opacity-95">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<!-- 左侧：返回总览 + 品牌行书笔意 + 规范标签 -->
+<div class="flex items-center space-x-4">
+<a class="inline-flex items-center text-xs tracking-wider font-medium text-ink-dark hover:text-cinnabar transition-colors duration-200" href="#return">
+<span class="material-symbols-outlined text-base mr-1">arrow_back</span>
+<span>返回总览</span>
+</a>
+<span class="text-[#A5B5A2]">|</span>
+<div class="flex items-baseline space-x-2">
+<!-- 品牌主标题：行书笔意字形 精确写作“诗境·一卷山河” -->
+<span class="font-xingshu text-2xl tracking-widest text-ink-dark shufa-shadow">诗境·一卷山河</span>
+<span class="bg-[#CCD5C9] text-ink-dark text-[11px] font-mono px-2 py-0.5 rounded tracking-wider border border-[#B9C5B5]">
+            转场动效规范 · T04 翻书返回分镜
+          </span>
+</div>
+</div>
+<!-- 右侧：导航链接与评审状态 -->
+<div class="flex items-center space-x-7">
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-primary font-medium border-b border-primary pb-1 text-sm tracking-wider font-headline" href="#overview">诗词总览</a>
+<a class="text-on-surface-variant opacity-80 pb-1 text-sm tracking-wider font-headline hover:text-primary transition-colors duration-300" href="#collection">我的收藏</a>
+<a class="text-on-surface-variant opacity-80 pb-1 text-sm tracking-wider font-headline hover:text-primary transition-colors duration-300" href="#profile">个人中心</a>
+</nav>
+<div class="flex items-center space-x-2 pl-3 border-l border-[#CCD5C9]">
+<span class="inline-block w-2 h-2 rounded-full bg-cinnabar animate-pulse"></span>
+<span class="text-xs font-headline tracking-widest text-cinnabar font-semibold">评审状态：待审定</span>
+</div>
+</div>
+</div>
+</header>
+<!-- ==================== 主内容工作区 ==================== -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-6 lg:px-8 py-8">
+<!-- 规范元数据区 (Header Metadata Card) -->
+<div class="bg-[#E5EAE2] rounded border border-[#CCD5C9] p-6 lg:p-7 mb-8 shadow-[0_2px_12px_rgba(24,50,54,0.04)]">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-[#D2DAD0]">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<span class="px-2 py-0.5 text-[10px] font-mono font-bold tracking-widest bg-ink-dark text-white rounded">
+              CODE: T04-PAGE-FLIP-RETURN
+            </span>
+<span class="px-2 py-0.5 text-[10px] font-mono tracking-wider bg-pine-green text-white rounded">
+              PROPOSAL V1.2
+            </span>
+<span class="text-xs font-headline text-on-surface-variant tracking-wider">
+              基准设备：DESKTOP 1440px
+            </span>
+</div>
+<h1 class="text-2xl lg:text-3xl font-headline font-bold tracking-widest text-ink-dark flex items-center gap-3">
+<span>翻书返回 · 交互分镜规范</span>
+<span class="text-sm font-normal text-pine-green font-headline border-l border-pine-green/40 pl-3">
+              宣纸卷曲与重力物理阻尼模拟
+            </span>
+</h1>
+<p class="mt-3 text-sm text-on-surface-variant leading-relaxed font-headline max-w-3xl">
+            以文人古籍宣纸翻卷、展页归卷为意象。由《枫桥夜泊》全景诗境平滑翻折回归至 S01 首页总览（三卡等规版）。非生硬窗口推移、木板旋转或立方体切换，重在写实物理纸张挺度、纸背绢纹、透光柔阴影与空间层级归位。
+          </p>
+</div>
+<!-- 关键动效指标卡 -->
+<div class="grid grid-cols-3 gap-3 bg-[#DCE2D9] p-4 rounded border border-[#CCD5C9] min-w-[340px]">
+<div class="border-r border-[#CCD5C9] pr-3">
+<span class="text-[10px] block font-mono text-on-surface-variant tracking-wider uppercase">时长 Total</span>
+<span class="text-xl font-headline font-bold text-ink-dark">1200<span class="text-xs font-normal">ms</span></span>
+<span class="text-[10px] block text-pine-green">5个分镜关键帧</span>
+</div>
+<div class="border-r border-[#CCD5C9] pr-3">
+<span class="text-[10px] block font-mono text-on-surface-variant tracking-wider uppercase">阻尼曲线 Easing</span>
+<span class="text-xs font-mono font-semibold text-ink-dark block mt-1">cubic-bezier</span>
+<span class="text-[10px] font-mono block text-on-surface-variant text-ellipsis overflow-hidden">0.25, 1, 0.5, 1</span>
+</div>
+<div>
+<span class="text-[10px] block font-mono text-on-surface-variant tracking-wider uppercase">网格着色 Shader</span>
+<span class="text-xs font-mono font-semibold text-ink-dark block mt-1">PageCurlMesh</span>
+<span class="text-[10px] font-mono block text-pine-green">32×32 柔性曲面</span>
+</div>
+</div>
+</div>
+<!-- 时间线标尺指示器 -->
+<div class="pt-5">
+<div class="flex justify-between items-center text-xs font-mono text-ink-dark mb-2">
+<span class="flex items-center gap-1 font-bold text-cinnabar">
+<span class="material-symbols-outlined text-sm">schedule</span>
+            时间基准线性排列 (0ms - 1200ms)
+          </span>
+<span class="text-on-surface-variant text-[11px] font-headline">各帧采样间隔：300ms 匀速物理抽帧 · 画面为 16:10 宽幅</span>
+</div>
+<div class="relative w-full h-2 bg-[#CCD5C9] rounded-full overflow-hidden flex">
+<div class="h-full bg-cinnabar" style="width: 20%"></div>
+<div class="h-full bg-pine-green opacity-80" style="width: 20%"></div>
+<div class="h-full bg-ink-dark" style="width: 20%"></div>
+<div class="h-full bg-pine-green opacity-80" style="width: 20%"></div>
+<div class="h-full bg-cinnabar" style="width: 20%"></div>
+</div>
+<div class="grid grid-cols-5 text-center text-[11px] font-mono text-ink-dark mt-1.5">
+<span>0ms (T0)</span>
+<span>300ms (T1)</span>
+<span>600ms (T_peak)</span>
+<span>900ms (T3)</span>
+<span>1200ms (Tend)</span>
+</div>
+</div>
+</div>
+<!-- ==================== 五帧横向时序拆解画廊 ==================== -->
+<div class="mb-10">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-base font-headline font-bold text-ink-dark tracking-wider flex items-center gap-2">
+<span class="w-1.5 h-4 bg-cinnabar inline-block"></span>
+<span>分镜时序全流程解析（16:10 宽幅仿真渲染）</span>
+</h2>
+<span class="text-xs font-mono text-on-surface-variant">FPS TARGET: 60FPS · VRAM &lt; 1.4MB</span>
+</div>
+<!-- 5帧网格并列排布 -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+<!-- ==================== F01 ==================== -->
+<div class="bg-[#E7ECE4] rounded border border-[#CCD5C9] overflow-hidden flex flex-col shadow-sm hover:border-pine-green transition-colors">
+<!-- 帧标头 -->
+<div class="px-3 py-2 bg-[#DCE2D9] border-b border-[#CCD5C9] flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-ink-dark">F01 · 0% · 0ms</span>
+<span class="text-[10px] font-headline text-cinnabar bg-white/60 px-1.5 py-0.2 rounded">源境全貌</span>
+</div>
+<!-- 16:10 画框 -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-black/40">
+<!-- 底图：真实枫桥夜泊摄影 -->
+<img alt="枫桥夜泊全景，深青色河水、石桥孤舟、寒山寺暖光与霜气薄雾" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- 覆盖诗境 UI：返回入口与竖排诗文 -->
+<div class="absolute inset-0 p-3 pointer-events-none flex flex-col justify-between bg-gradient-to-t from-black/50 via-transparent to-black/30">
+<div class="flex justify-between items-start">
+<span class="inline-flex items-center text-[10px] text-white/90 bg-black/40 px-1.5 py-0.5 rounded backdrop-blur-xs font-headline">
+<span class="material-symbols-outlined text-[12px] mr-0.5">arrow_back</span>返回总览
+                </span>
+<span class="text-[9px] font-mono text-white/70">S02 枫桥夜泊</span>
+</div>
+<!-- 竖排书法诗文四句完整呈现 -->
+<div class="flex flex-row-reverse gap-2 self-start mt-1 mr-auto pl-1">
+<div class="vertical-rl font-headline text-white text-[10px] tracking-widest bg-black/20 p-0.5 rounded border-r border-white/20">
+                  月落乌啼霜满天
+                </div>
+<div class="vertical-rl font-headline text-white text-[10px] tracking-widest bg-black/20 p-0.5 rounded border-r border-white/20">
+                  江枫渔火对愁眠
+                </div>
+<div class="vertical-rl font-headline text-white text-[10px] tracking-widest bg-black/20 p-0.5 rounded border-r border-white/20">
+                  姑苏城外寒山寺
+                </div>
+<div class="vertical-rl font-headline text-white text-[10px] tracking-widest bg-black/20 p-0.5 rounded">
+                  夜半钟声到客船
+                </div>
+</div>
+<div class="text-[9px] font-mono text-white/60 text-right">平整视平面 · 初始态</div>
+</div>
+</div>
+<!-- 参数与阶段解析 -->
+<div class="p-3 text-xs flex-grow flex flex-col justify-between space-y-2">
+<div>
+<p class="font-headline font-semibold text-ink-dark text-[11px] mb-1">【枫桥诗境全貌 (S02)】</p>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">
+                用户点击顶栏“← 返回总览”或触发左缘向右轻滑手势。系统锁死交互层，初始化纸张物理曲率网格。
+              </p>
+</div>
+<div class="space-y-1 pt-2 border-t border-[#D2DAD0] font-mono text-[10px]">
+<div class="flex justify-between text-on-surface-variant">
+<span>翻折曲率:</span>
+<span class="font-semibold text-ink-dark">0.0 (平整)</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>诗文透明度:</span>
+<span class="font-semibold text-ink-dark">100% 稳定</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>渲染通道:</span>
+<span class="font-semibold text-pine-green">S02 独立层渲染</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== F02 ==================== -->
+<div class="bg-[#E7ECE4] rounded border border-[#CCD5C9] overflow-hidden flex flex-col shadow-sm hover:border-pine-green transition-colors">
+<!-- 帧标头 -->
+<div class="px-3 py-2 bg-[#DCE2D9] border-b border-[#CCD5C9] flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-ink-dark">F02 · 25% · 300ms</span>
+<span class="text-[10px] font-headline text-pine-green bg-white/60 px-1.5 py-0.2 rounded">边缘起卷</span>
+</div>
+<!-- 16:10 画框 -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-[#CCD5C9]">
+<!-- 底层露出的淡青灰绢底 (缝隙) -->
+<div class="absolute inset-0 bg-silk-light flex items-center pl-2">
+<span class="text-[9px] font-mono text-pine-green/60 vertical-rl">下层 S01 绢底微现</span>
+</div>
+<!-- 掀起并向右弯折的宣纸层 -->
+<div class="absolute inset-y-0 right-0 w-[88%] overflow-hidden curl-shadow-f02 border-l border-white/50" style="transform: perspective(600px) rotateY(-8deg); transform-origin: right center;">
+<img alt="枫桥夜泊画面起卷微侧光" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- 诗文渐隐 40% -->
+<div class="absolute inset-0 p-3 pointer-events-none flex flex-col justify-between bg-black/25">
+<div class="flex justify-between items-start opacity-40 transition-opacity">
+<span class="inline-flex items-center text-[10px] text-white/90 bg-black/40 px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[12px] mr-0.5">arrow_back</span>返回
+                  </span>
+</div>
+<div class="flex flex-row-reverse gap-2 self-start opacity-40">
+<div class="vertical-rl font-headline text-white text-[10px] tracking-widest bg-black/20 p-0.5">月落乌啼...</div>
+<div class="vertical-rl font-headline text-white text-[10px] tracking-widest bg-black/20 p-0.5">江枫渔火...</div>
+</div>
+<!-- 纸面侧光反光条 -->
+<div class="absolute left-0 inset-y-0 w-3 bg-gradient-to-r from-white/30 to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- 参数与阶段解析 -->
+<div class="p-3 text-xs flex-grow flex flex-col justify-between space-y-2">
+<div>
+<p class="font-headline font-semibold text-ink-dark text-[11px] mb-1">【纸页左掀 · 边缘起卷】</p>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">
+                宣纸正面左边缘受物理力矩向右掀起，伴随微弯纸质侧光与细阴影。竖排诗文伴随纸面运动同步淡出，绝不悬空滞留。
+              </p>
+</div>
+<div class="space-y-1 pt-2 border-t border-[#D2DAD0] font-mono text-[10px]">
+<div class="flex justify-between text-on-surface-variant">
+<span>卷角弧度:</span>
+<span class="font-semibold text-ink-dark">R=120px 抛物面</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>诗文淡出度:</span>
+<span class="font-semibold text-ink-dark">40% 快速消隐</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>翻页方向:</span>
+<span class="font-semibold text-pine-green">由左向右顺翻</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== F03 (峰值关键帧) ==================== -->
+<div class="bg-[#E7ECE4] rounded border-2 border-cinnabar/70 overflow-hidden flex flex-col shadow-md relative">
+<!-- 关键帧醒目标记 -->
+<div class="absolute top-0 right-0 z-20 bg-cinnabar text-white text-[9px] font-mono px-1.5 py-0.5 tracking-wider font-bold">
+            KEYFRAME · 峰值
+          </div>
+<!-- 帧标头 -->
+<div class="px-3 py-2 bg-[#DCE2D9] border-b border-[#CCD5C9] flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-cinnabar">F03 · 50% · 600ms</span>
+<span class="text-[10px] font-headline text-cinnabar bg-white/70 px-1.5 py-0.2 rounded font-semibold">峰值折卷</span>
+</div>
+<!-- 16:10 画框 (核心关键帧) -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-silk-light flex">
+<!-- 左侧大半区域：已露出下层 S01 首页总览的三卡等规版雏形 -->
+<div class="w-[58%] h-full p-2.5 flex flex-col justify-between bg-[#D7DDD4] border-r border-[#B9C5B5]">
+<div class="flex items-center justify-between opacity-80">
+<span class="font-xingshu text-xs font-bold text-ink-dark">诗境·一卷山河</span>
+<span class="text-[8px] font-mono text-pine-green">S01 首页就位中</span>
+</div>
+<!-- 模拟露出总览三卡等规缩影 -->
+<div class="grid grid-cols-2 gap-1.5 my-auto">
+<div class="h-14 bg-surface-card border border-[#B9C5B5] rounded p-1 flex flex-col justify-end relative overflow-hidden">
+<div class="absolute inset-0 bg-ink-dark/10"></div>
+<span class="relative text-[8px] font-headline font-semibold text-ink-dark">枫桥夜泊 (左)</span>
+</div>
+<div class="h-14 bg-surface-card border border-[#B9C5B5] rounded p-1 flex flex-col justify-end relative overflow-hidden">
+<div class="absolute inset-0 bg-[#365C55]/10"></div>
+<span class="relative text-[8px] font-headline text-ink-dark/80">江雪 (中)</span>
+</div>
+</div>
+<div class="text-[8px] font-mono text-on-surface-variant">底层深度空间展开</div>
+</div>
+<!-- 右侧翻折立起的纸页背面 (浅青灰绢质纹理 + 柔和环境扩散阴影) -->
+<div class="w-[42%] h-full bg-silk-paper curl-shadow-f03 relative flex flex-col justify-center items-center border-l border-white/60 p-2 text-center" style="background: linear-gradient(115deg, #E6EAE3 0%, #D4DDD1 50%, #C4CEC0 100%);">
+<!-- 宣纸背面微纤维噪点与光照反射 -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#183236 1px, transparent 0); background-size: 8px 8px;"></div>
+<span class="material-symbols-outlined text-pine-green text-xl mb-1">auto_stories</span>
+<span class="text-[10px] font-headline font-semibold text-ink-dark tracking-wider">翻卷宣纸绢背</span>
+<span class="text-[8px] font-mono text-pine-green">#E4E8E1 纤维漫反射</span>
+<!-- 背面卷曲阴影层次 -->
+<div class="absolute right-0 inset-y-0 w-2 bg-black/10"></div>
+</div>
+</div>
+<!-- 参数与阶段解析 -->
+<div class="p-3 text-xs flex-grow flex flex-col justify-between space-y-2 bg-[#E9EFE6]">
+<div>
+<p class="font-headline font-semibold text-cinnabar text-[11px] mb-1">【纸页大翻 · 绢背与柔阴影呈现】</p>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">
+                翻卷峰值。纸背呈现素雅浅青灰绢质，纸沿在底层投下 32px 柔光阴影；底层 S01 首页总览的三卡雏形清晰展现，空间纵深感达到顶峰。
+              </p>
+</div>
+<div class="space-y-1 pt-2 border-t border-[#D2DAD0] font-mono text-[10px]">
+<div class="flex justify-between text-on-surface-variant">
+<span>翻折进度:</span>
+<span class="font-bold text-cinnabar">50% 抛物弧度顶点</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>纸背材质:</span>
+<span class="font-semibold text-ink-dark">双面宣纸/青灰绢背</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>投影柔度:</span>
+<span class="font-semibold text-pine-green">blur 32px 柔光阴影</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== F04 ==================== -->
+<div class="bg-[#E7ECE4] rounded border border-[#CCD5C9] overflow-hidden flex flex-col shadow-sm hover:border-pine-green transition-colors">
+<!-- 帧标头 -->
+<div class="px-3 py-2 bg-[#DCE2D9] border-b border-[#CCD5C9] flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-ink-dark">F04 · 75% · 900ms</span>
+<span class="text-[10px] font-headline text-pine-green bg-white/60 px-1.5 py-0.2 rounded">右侧落纸</span>
+</div>
+<!-- 16:10 画框 -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-silk-light flex">
+<!-- 总览三卡等规基本完全显现 (90%) -->
+<div class="w-[85%] h-full p-2.5 flex flex-col justify-between bg-[#D7DDD4]">
+<div class="flex items-center justify-between">
+<span class="font-xingshu text-sm font-bold text-ink-dark">诗境·一卷山河</span>
+<span class="text-[8px] font-headline text-on-surface-variant">总览就绪</span>
+</div>
+<!-- 三张卡片雏形全部展现 -->
+<div class="grid grid-cols-3 gap-1 my-auto">
+<div class="h-12 bg-white/80 border-2 border-pine-green rounded p-1 flex flex-col justify-center items-center shadow-xs">
+<span class="text-[8px] font-headline font-bold text-ink-dark">枫桥夜泊</span>
+<span class="text-[6px] font-mono text-cinnabar">焦点锁定</span>
+</div>
+<div class="h-12 bg-white/50 border border-[#CCD5C9] rounded p-1 flex flex-col justify-center items-center">
+<span class="text-[8px] font-headline text-ink-dark/70">江雪</span>
+</div>
+<div class="h-12 bg-white/50 border border-[#CCD5C9] rounded p-1 flex flex-col justify-center items-center">
+<span class="text-[8px] font-headline text-ink-dark/70">早发白帝城</span>
+</div>
+</div>
+<div class="text-[8px] font-mono text-pine-green">枫桥夜泊卡片处于对齐高亮</div>
+</div>
+<!-- 右侧仅剩窄边缘落纸收卷 -->
+<div class="w-[15%] h-full bg-[#CCD5C9] curl-shadow-f04 border-l border-white/60 flex items-center justify-center" style="background: linear-gradient(to right, #D8DFD5, #BFC9BC);">
+<span class="material-symbols-outlined text-xs text-ink-dark/40 rotate-90">unfold_less</span>
+</div>
+</div>
+<!-- 参数与阶段解析 -->
+<div class="p-3 text-xs flex-grow flex flex-col justify-between space-y-2">
+<div>
+<p class="font-headline font-semibold text-ink-dark text-[11px] mb-1">【右侧落纸 · 目录画卷渐显】</p>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">
+                翻卷纸页滑向屏幕右侧边缘并摊平展收，阴影快速收敛；S01 总览三张等规诗卡完全显位，枫桥夜泊卡片预激活锁定。
+              </p>
+</div>
+<div class="space-y-1 pt-2 border-t border-[#D2DAD0] font-mono text-[10px]">
+<div class="flex justify-between text-on-surface-variant">
+<span>纸张贴合度:</span>
+<span class="font-semibold text-ink-dark">85% 平展</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>总览完整度:</span>
+<span class="font-semibold text-ink-dark">90% 元素就位</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>焦点状态:</span>
+<span class="font-semibold text-pine-green">枫桥卡片预激活</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== F05 ==================== -->
+<div class="bg-[#E7ECE4] rounded border border-[#CCD5C9] overflow-hidden flex flex-col shadow-sm hover:border-pine-green transition-colors">
+<!-- 帧标头 -->
+<div class="px-3 py-2 bg-[#DCE2D9] border-b border-[#CCD5C9] flex items-center justify-between">
+<span class="font-mono text-xs font-bold text-ink-dark">F05 · 100% · 1200ms</span>
+<span class="text-[10px] font-headline text-ink-dark bg-white/60 px-1.5 py-0.2 rounded font-semibold">稳固归位</span>
+</div>
+<!-- 16:10 画框 (S01 最终稳固态) -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-[#D7DDD4] p-2.5 flex flex-col justify-between border-2 border-pine-green/40">
+<!-- 首页题头 (无返回键) -->
+<div class="flex items-center justify-between border-b border-[#CCD5C9] pb-1">
+<span class="font-xingshu text-sm font-bold text-ink-dark">诗境·一卷山河</span>
+<div class="flex gap-2 text-[7px] font-headline text-ink-dark">
+<span class="text-pine-green font-bold">诗词总览</span>
+<span>我的收藏</span>
+<span>个人中心</span>
+</div>
+</div>
+<!-- 三张等规同高卡片总览稳固呈现 -->
+<div class="grid grid-cols-3 gap-1.5 my-auto">
+<!-- 卡1: 枫桥夜泊 (精确原图微缩) -->
+<div class="h-16 rounded border border-pine-green overflow-hidden relative shadow-xs flex flex-col justify-end p-1">
+<img alt="S01枫桥夜泊卡片缩略" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XWZawCUzSPGcp4AeUyYVWm8BUHMktv5ggBYD36pnm_103h1EfBWiR-9nGT1kdWdpOdeyAH9oknwDqR4xEDZqxz0skftvUe3eCUpF9H6GU1Rgj860liqIl3uZbqZ7fEZQP12nQR6R9KfXvqehOTY-hRn7qHwdUepbqaTBAoCubMmZHMMd7hWF4meeU-9tk8sBn05LegkWvZWzpPWbN_3g2qwV0cBwX5MHyiaziR8qleRIvyYQTN4em2eODZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<span class="relative text-[8px] font-headline font-bold text-white">枫桥夜泊</span>
+<span class="relative text-[6px] font-headline text-white/80">张继 · 苏州寒山寺</span>
+</div>
+<!-- 卡2: 江雪 -->
+<div class="h-16 rounded border border-[#CCD5C9] bg-[#CED7CC] overflow-hidden relative flex flex-col justify-end p-1">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="relative text-[8px] font-headline font-bold text-ink-dark">江雪</span>
+<span class="relative text-[6px] font-headline text-on-surface-variant">柳宗元 · 永州孤舟</span>
+</div>
+<!-- 卡3: 早发白帝城 -->
+<div class="h-16 rounded border border-[#CCD5C9] bg-[#C5CEBF] overflow-hidden relative flex flex-col justify-end p-1">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<span class="relative text-[8px] font-headline font-bold text-ink-dark">早发白帝城</span>
+<span class="relative text-[6px] font-headline text-on-surface-variant">李白 · 三峡轻舟</span>
+</div>
+</div>
+<div class="flex justify-between items-center text-[7px] font-mono text-on-surface-variant border-t border-[#CCD5C9] pt-1">
+<span>S01 首页完全激活</span>
+<span class="text-pine-green">无返回 · 交互解锁</span>
+</div>
+</div>
+<!-- 参数与阶段解析 -->
+<div class="p-3 text-xs flex-grow flex flex-col justify-between space-y-2">
+<div>
+<p class="font-headline font-semibold text-ink-dark text-[11px] mb-1">【境定总览 · 稳固归位 (S01)】</p>
+<p class="text-[11px] text-on-surface-variant leading-relaxed">
+                转场彻底完成，完全稳定在已认可的 S01 首页总览（三卡等规同高，无返回按键，交互完全解锁）。枫桥卡片精准锚定原位。
+              </p>
+</div>
+<div class="space-y-1 pt-2 border-t border-[#D2DAD0] font-mono text-[10px]">
+<div class="flex justify-between text-on-surface-variant">
+<span>物理曲率:</span>
+<span class="font-semibold text-ink-dark">0.0 (完全平铺)</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>交互状态:</span>
+<span class="font-semibold text-pine-green">S01 活跃交互，无返回</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>恢复位置:</span>
+<span class="font-semibold text-ink-dark">精准锚定枫桥原位</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== 下方三大规范技术看板 ==================== -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<!-- 看板 01 -->
+<div class="bg-[#E5EAE2] rounded border border-[#CCD5C9] p-5 shadow-xs">
+<div class="flex items-center space-x-2 pb-3 mb-3 border-b border-[#D2DAD0]">
+<span class="w-6 h-6 rounded bg-ink-dark text-white text-xs font-mono font-bold flex items-center justify-center">01</span>
+<h3 class="font-headline font-bold text-sm tracking-wider text-ink-dark">物理材质与翻折网格规则</h3>
+</div>
+<div class="space-y-3 text-xs text-on-surface-variant font-headline leading-relaxed">
+<p>
+<strong class="text-ink-dark">宣纸骨力与网格形变：</strong>
+            严禁生硬平面左右平移或机械立方体翻滚。采用 <span class="font-mono text-pine-green font-semibold">32×32 柔性顶点位移网格 (Deformation Mesh)</span>，依据中国生宣纤维韧度计算受力曲线，表现真实古籍翻折的挺括与垂落。
+          </p>
+<p>
+<strong class="text-ink-dark">双面材质着色机制：</strong>
+            正面映射当前全景诗境风景帧；背面则精确映射 <span class="font-mono text-ink-dark">#E4E8E1</span> 浅青绢纸与微细纤维漫反射噪点，杜绝单薄电子塑料感与穿模。
+          </p>
+<div class="p-2.5 bg-[#DCE2D9] rounded border border-[#CCD5C9] font-mono text-[11px] text-ink-dark">
+            着色器: <code class="text-pine-green">PageCurlDeform.frag/vert</code><br/>
+            显存开销: <span class="text-cinnabar">&lt; 1.4MB</span> | 粒子开销: 0
+          </div>
+</div>
+</div>
+<!-- 看板 02 -->
+<div class="bg-[#E5EAE2] rounded border border-[#CCD5C9] p-5 shadow-xs">
+<div class="flex items-center space-x-2 pb-3 mb-3 border-b border-[#D2DAD0]">
+<span class="w-6 h-6 rounded bg-pine-green text-white text-xs font-mono font-bold flex items-center justify-center">02</span>
+<h3 class="font-headline font-bold text-sm tracking-wider text-ink-dark">无障碍与平稳降级策略</h3>
+</div>
+<div class="space-y-3 text-xs text-on-surface-variant font-headline leading-relaxed">
+<p>
+<strong class="text-ink-dark">宁静文人意境关怀：</strong>
+            遵循东方审美“静水流深”体验。当系统检测到 <span class="font-mono text-pine-green font-semibold">prefers-reduced-motion: reduce</span> 时，自动完全禁用 3D 顶点位移弯曲计算。
+          </p>
+<p>
+<strong class="text-ink-dark">300ms 纯净静止淡化：</strong>
+            无障碍模式下转换为 300ms 宣纸轻柔平滑交叉渐变（Cross-fade），避免任何视觉晃动与眩晕，符合 WCAG 2.1 动效安全准则。
+          </p>
+<div class="p-2.5 bg-[#DCE2D9] rounded border border-[#CCD5C9] font-mono text-[11px] text-ink-dark">
+            帧率自适应监控: FPS &lt; 45 自动降级<br/>
+            备选管线: 2D Canvas 平滑推卷渲染
+          </div>
+</div>
+</div>
+<!-- 看板 03 -->
+<div class="bg-[#E5EAE2] rounded border border-[#CCD5C9] p-5 shadow-xs">
+<div class="flex items-center space-x-2 pb-3 mb-3 border-b border-[#D2DAD0]">
+<span class="w-6 h-6 rounded bg-cinnabar text-white text-xs font-mono font-bold flex items-center justify-center">03</span>
+<h3 class="font-headline font-bold text-sm tracking-wider text-ink-dark">视听联合触发与意境落地</h3>
+</div>
+<div class="space-y-3 text-xs text-on-surface-variant font-headline leading-relaxed">
+<p>
+<strong class="text-ink-dark">触觉化微声学陪伴：</strong>
+            声音极度克制，专为文人纸页服务。0ms 触发时伴随极其微弱细腻的宣纸翻页摩擦音（<span class="font-mono text-ink-dark">-26dB 轻触古籍音</span>）。
+          </p>
+<p>
+<strong class="text-ink-dark">声景归卷淡化：</strong>
+            600ms 翻折峰值时枫桥夜泊的风水声完全消隐，平滑过渡至 S01 首页总览淡雅微环境音；1200ms 彻底静止归位。
+          </p>
+<div class="p-2.5 bg-[#DCE2D9] rounded border border-[#CCD5C9] font-mono text-[11px] text-ink-dark">
+            音频层: WebAudio 动态增益 GainNode<br/>
+            衰减控制: 指数级物理包络 (Exp Decay)
+          </div>
+</div>
+</div>
+</div>
+<!-- ==================== 底部操作与审核条 ==================== -->
+<div class="bg-[#E5EAE2] rounded border border-[#CCD5C9] p-4 lg:p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
+<!-- 左侧：引擎状态与标准指标 -->
+<div class="flex flex-wrap items-center gap-4 text-xs font-mono text-on-surface-variant">
+<span class="flex items-center text-pine-green font-semibold">
+<span class="w-2 h-2 rounded-full bg-pine-green mr-1.5"></span>
+          显存占用 &lt; 1.4MB
+        </span>
+<span class="text-[#CCD5C9]">|</span>
+<span>网格顶点: 32×32 柔性网格</span>
+<span class="text-[#CCD5C9]">|</span>
+<span>渲染通道: WebGL2 / 2D Canvas 回退良好</span>
+<span class="text-[#CCD5C9]">|</span>
+<span class="text-ink-dark font-medium">WCAG 2.1 AA 动效标准</span>
+</div>
+<!-- 右侧：动作按钮 -->
+<div class="flex items-center space-x-3 w-full md:w-auto justify-end">
+<button class="px-4 py-2 text-xs font-headline tracking-wider text-ink-dark bg-[#DCE2D9] hover:bg-[#D2DAD0] border border-[#B9C5B5] rounded transition-colors duration-200 flex items-center gap-1.5 shadow-xs" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>导出翻书动效参数 JSON</span>
+</button>
+<button class="px-5 py-2 text-xs font-headline font-semibold tracking-widest text-white bg-cinnabar hover:bg-[#8B3E33] rounded transition-colors duration-200 flex items-center gap-1.5 shadow-xs" type="button">
+<span class="material-symbols-outlined text-base">verified</span>
+<span>通过此翻书转场审批</span>
+</button>
+</div>
+</div>
+</main>
+<!-- ==================== 页脚规范 (Footer) ==================== -->
+<footer class="w-full bg-surface dark:bg-surface-container mt-auto border-t border-[#CCD5C9]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-8 max-w-7xl mx-auto opacity-75 text-on-surface dark:text-inverse-on-surface">
+<div class="font-headline text-xs tracking-widest mb-4 md:mb-0">
+        © 诗境·一卷山河 · 循诗入境 展卷见山河 · 翻书返回交互与分镜规范
+      </div>
+<div class="flex space-x-6 font-body text-xs tracking-widest">
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#rolls">山河卷志</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#calligraphy">书法典藏</a>
+<a class="text-on-surface-variant dark:text-inverse-on-surface hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300" href="#about">关于诗境</a>
+</div>
+</div>
+</footer>
+</body></html>

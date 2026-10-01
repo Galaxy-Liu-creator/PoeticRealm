@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>诗境·一卷山河 - S07 首页移动端 (修订版)</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts: Ma Shan Zheng for Calligraphy Brand, Noto Serif SC for Classical Serifs -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;600;700&amp;family=Public+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            qingdai: "#183236",
+            celadon: "#DDE3DA",
+            celadonMuted: "#C8D3C8",
+            mountainTeal: "#365C55",
+            cinnabar: "#9F493D",
+            parchment: "#FBFBF8",
+            parchmentBorder: "#E2DDD5"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            calligraphy: ["'Ma Shan Zheng'", "cursive", "serif"],
+            headline: ["'Noto Serif SC'", "'Noto Serif'", "serif"],
+            display: ["'Noto Serif SC'", "'Noto Serif'", "serif"],
+            body: ["'Public Sans'", "'Noto Serif SC'", "sans-serif"],
+            label: ["'Public Sans'", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .vertical-rl {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+    /* Subtle silk texture wash */
+    .silk-pattern {
+      background-blend-mode: multiply;
+    }
+  </style>
+</head>
+<body class="bg-[#DDE3DA] text-[#183236] font-headline antialiased selection:bg-[#365C55] selection:text-white min-h-screen relative flex justify-center items-start">
+<!-- Mobile screen container (390px base width, edge-to-edge rendering) -->
+<div class="w-full max-w-[390px] min-h-screen bg-[#DDE3DA] relative shadow-2xl flex flex-col overflow-x-hidden">
+<header class="relative w-full bg-[#183236] text-[#FBFBF8] overflow-hidden pt-6 pb-5 px-5 flex flex-col justify-between h-[200px]">
+<div class="absolute inset-0 bg-gradient-to-b from-[#102225] via-[#183236] to-[#203A3E] pointer-events-none"></div>
+<div class="absolute -right-16 -bottom-10 w-64 h-64 rounded-full bg-[#365C55]/25 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -top-12 w-48 h-48 rounded-full bg-[#9F493D]/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex items-center justify-between w-full">
+<div class="flex items-center space-x-2">
+<span class="font-calligraphy text-2xl tracking-wider text-[#FBFBF8] drop-shadow-sm select-none">诗境·一卷山河</span>
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm bg-[#9F493D] text-[10px] text-white/90 font-serif leading-none shadow-sm">印</span>
+</div>
+<button aria-label="展开导航菜单" class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-full bg-[#102225]/60 backdrop-blur-md border border-white/10 text-[#DDE3DA]/90 hover:text-white transition-colors" onclick="toggleDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="menu">menu</span>
+</button>
+</div>
+<div class="relative z-10 mt-auto pl-1 pb-1">
+<p class="text-xs tracking-[0.25em] text-[#DDE3DA]/85 font-headline">循诗入境 · 展卷见山河</p>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-[#DDE3DA] to-transparent pointer-events-none"></div>
+</header>
+<div class="fixed inset-0 z-50 bg-[#183236]/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none flex justify-end" id="nav-drawer">
+<div class="w-64 h-full bg-[#183236] text-[#FBFBF8] p-6 shadow-2xl flex flex-col justify-between border-l border-white/10">
+<div>
+<div class="flex items-center justify-between pb-6 border-b border-white/10">
+<span class="font-calligraphy text-xl text-[#FBFBF8]">卷册导航</span>
+<button aria-label="关闭菜单" class="min-h-[44px] min-w-[44px] flex items-center justify-center text-[#DDE3DA]/80 hover:text-white" onclick="toggleDrawer()" type="button">
+<span class="material-symbols-outlined text-xl" data-icon="close">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-2 mt-6">
+<a class="min-h-[44px] flex items-center px-4 rounded text-sm text-[#FBFBF8] font-medium bg-[#365C55]/40 border-l-2 border-[#DDE3DA]" href="#">诗词总览</a>
+<a class="min-h-[44px] flex items-center px-4 rounded text-sm text-[#DDE3DA]/80 hover:text-white hover:bg-white/5 transition-colors" href="#">我的收藏</a>
+<a class="min-h-[44px] flex items-center px-4 rounded text-sm text-[#DDE3DA]/80 hover:text-white hover:bg-white/5 transition-colors" href="#">个人中心</a>
+</div>
+</div>
+<div class="text-[11px] text-[#DDE3DA]/50 border-t border-white/10 pt-4 tracking-widest">诗境 · 一卷山河</div>
+</div>
+</div>
+<main class="relative flex-1 px-4 pt-3 pb-8" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc'); background-size: cover; background-position: center top; background-repeat: no-repeat;">
+<div class="absolute inset-0 bg-[#DDE3DA]/80 backdrop-blur-[1px] pointer-events-none"></div>
+<div class="relative z-10 max-w-[350px] mx-auto flex flex-col gap-6">
+<div class="flex items-center justify-between pt-1 px-1">
+<div class="flex items-center gap-2">
+<span class="text-[#365C55] font-bold text-base leading-none">▎</span>
+<h2 class="text-base tracking-[0.2em] font-semibold text-[#183236]">诗词总览</h2>
+</div>
+</div>
+<article class="w-full bg-[#FBFBF8] rounded-[4px] border border-[#E2DDD5] shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-0.5">
+<div class="relative h-[205px] w-full overflow-hidden bg-[#183236]/20">
+<img alt="枫桥夜泊" class="w-full h-full object-cover rounded-t-[4px]" src="https://lh3.googleusercontent.com/aida/AEtjO1XWZawCUzSPGcp4AeUyYVWm8BUHMktv5ggBYD36pnm_103h1EfBWiR-9nGT1kdWdpOdeyAH9oknwDqR4xEDZqxz0skftvUe3eCUpF9H6GU1Rgj860liqIl3uZbqZ7fEZQP12nQR6R9KfXvqehOTY-hRn7qHwdUepbqaTBAoCubMmZHMMd7hWF4meeU-9tk8sBn05LegkWvZWzpPWbN_3g2qwV0cBwX5MHyiaziR8qleRIvyYQTN4em2eODZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded-[2px] bg-[#9F493D] text-[#FBFBF8] text-[11px] tracking-widest font-serif shadow-sm">典藏</span>
+</div>
+<div class="p-4 bg-[#FBFBF8] flex flex-col justify-between min-h-[160px]">
+<div class="flex justify-between items-start">
+<div class="flex flex-col pr-2 flex-1">
+<h3 class="text-[20px] font-semibold tracking-wider text-[#183236] font-headline leading-tight">枫桥夜泊</h3>
+<p class="text-xs text-[#365C55] font-serif mt-1 tracking-wide">唐 · 张继 · 姑苏寒山寺</p>
+<p class="text-[11px] text-[#183236]/60 font-body mt-2 leading-relaxed">霜天渔火，愁客听晚钟。千古客船羁旅之情。</p>
+</div>
+<div class="vertical-rl flex items-center justify-center pl-3 border-l border-[#E2DDD5]/70 py-0.5 select-none shrink-0">
+<span class="text-[14px] tracking-[0.25em] text-[#183236] font-headline whitespace-nowrap">江枫渔火对愁眠</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-[#E2DDD5] flex items-center justify-end">
+<button class="min-h-[44px] px-5 rounded-[2px] border border-[#9F493D] text-[#9F493D] hover:bg-[#9F493D] hover:text-[#FBFBF8] transition-all duration-200 text-xs tracking-widest font-medium flex items-center gap-1.5" type="button">
+<span>入境</span>
+<span class="text-sm">→</span>
+</button>
+</div>
+</div>
+</article>
+<article class="w-full bg-[#FBFBF8] rounded-[4px] border border-[#E2DDD5] shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-0.5">
+<div class="relative h-[205px] w-full overflow-hidden bg-[#183236]/20">
+<img alt="江雪" class="w-full h-full object-cover rounded-t-[4px]" src="https://lh3.googleusercontent.com/aida/AEtjO1VmQsYmYYmcih_2FVCB5UiEBdgXXGLb-k5za4VXolf91tDe3KdAsQVnAr9dmxmjCBQ_KMqJ2o-DIvDLUznR6S4rPfaR0lLV0Vd1gogaS_2Eed65_8qA7RsP7pMDCHWoq1TnFEHQJB3esYf_XzMOhGHpdjHtSbXEB3uDZuivmDHlSYfsMV4MywHNt2j7ELjLVjSd008FHP5p5yULmigW9HKOCBSZYc9sxXqage6jv-OYD3JCDngmjFDZ2itO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded-[2px] bg-[#9F493D] text-[#FBFBF8] text-[11px] tracking-widest font-serif shadow-sm">典藏</span>
+</div>
+<div class="p-4 bg-[#FBFBF8] flex flex-col justify-between min-h-[160px]">
+<div class="flex justify-between items-start">
+<div class="flex flex-col pr-2 flex-1">
+<h3 class="text-[20px] font-semibold tracking-wider text-[#183236] font-headline leading-tight">江雪</h3>
+<p class="text-xs text-[#365C55] font-serif mt-1 tracking-wide">唐 · 柳宗元 · 永州潇水</p>
+<p class="text-[11px] text-[#183236]/60 font-body mt-2 leading-relaxed">万山空绝，蓑笠独钓。冰雪澄净的清冷绝境。</p>
+</div>
+<div class="vertical-rl flex items-center justify-center pl-3 border-l border-[#E2DDD5]/70 py-0.5 select-none shrink-0">
+<span class="text-[14px] tracking-[0.28em] text-[#183236] font-headline whitespace-nowrap">独钓寒江雪</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-[#E2DDD5] flex items-center justify-end">
+<button class="min-h-[44px] px-5 rounded-[2px] border border-[#9F493D] text-[#9F493D] hover:bg-[#9F493D] hover:text-[#FBFBF8] transition-all duration-200 text-xs tracking-widest font-medium flex items-center gap-1.5" type="button">
+<span>入境</span>
+<span class="text-sm">→</span>
+</button>
+</div>
+</div>
+</article>
+<article class="w-full bg-[#FBFBF8] rounded-[4px] border border-[#E2DDD5] shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-0.5">
+<div class="relative h-[205px] w-full overflow-hidden bg-[#183236]/20">
+<img alt="早发白帝城" class="w-full h-full object-cover rounded-t-[4px]" src="https://lh3.googleusercontent.com/aida/AEtjO1VEu8St0B3JZT_HUeCfVSBFz3h52bGByRDAzeyn2sgi1zmQLFZ6-ZQlinkg2501pnSJNiQGUDjdtnnuePNG-yRC0UwTgKnr0-NyKQVY_FhTfJqscpBcPnJOcBjtifgbNTjb7YcFv4g0bhzkCnvWsGK1g9-kroHUVnl7gAA43cnbn2eFHHq-oPnlENezfC1rl4m0FpotEctsrPBZx-qAZOiwduzOx6EoOLsnYE27wTtUIgMF_g7mRD5rfoM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none"></div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded-[2px] bg-[#9F493D] text-[#FBFBF8] text-[11px] tracking-widest font-serif shadow-sm">典藏</span>
+</div>
+<div class="p-4 bg-[#FBFBF8] flex flex-col justify-between min-h-[160px]">
+<div class="flex justify-between items-start">
+<div class="flex flex-col pr-2 flex-1">
+<h3 class="text-[20px] font-semibold tracking-wider text-[#183236] font-headline leading-tight">早发白帝城</h3>
+<p class="text-xs text-[#365C55] font-serif mt-1 tracking-wide">唐 · 李白 · 三峡夔门</p>
+<p class="text-[11px] text-[#183236]/60 font-body mt-2 leading-relaxed">朝辞彩云，两岸猿声。轻舟破浪于万重山峡。</p>
+</div>
+<div class="vertical-rl flex items-center justify-center pl-3 border-l border-[#E2DDD5]/70 py-0.5 select-none shrink-0">
+<span class="text-[14px] tracking-[0.25em] text-[#183236] font-headline whitespace-nowrap">轻舟已过万重山</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-[#E2DDD5] flex items-center justify-end">
+<button class="min-h-[44px] px-5 rounded-[2px] border border-[#9F493D] text-[#9F493D] hover:bg-[#9F493D] hover:text-[#FBFBF8] transition-all duration-200 text-xs tracking-widest font-medium flex items-center gap-1.5" type="button">
+<span>入境</span>
+<span class="text-sm">→</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</main>
+<footer class="w-full bg-[#183236] text-[#DDE3DA]/80 py-6 px-6 text-center border-t border-[#365C55]/30">
+<p class="font-headline text-[11px] tracking-[0.2em] text-[#DDE3DA]/60">© 诗境·一卷山河 · 循诗入境 展卷见山河</p>
+<div class="mt-2 text-[10px] text-[#DDE3DA]/40 tracking-wider font-light">东方山水构图 · 真实材料与光照</div>
+</footer>
+</div>
+<!-- Lightweight micro-interaction script for navigation drawer -->
+<script>
+    function toggleDrawer() {
+      const drawer = document.getElementById('nav-drawer');
+      const isOpen = drawer.classList.contains('opacity-100');
+      if (isOpen) {
+        drawer.classList.remove('opacity-100', 'pointer-events-auto');
+        drawer.classList.add('opacity-0', 'pointer-events-none');
+      } else {
+        drawer.classList.remove('opacity-0', 'pointer-events-none');
+        drawer.classList.add('opacity-100', 'pointer-events-auto');
+      }
+    }
+  </script>
+</body></html>

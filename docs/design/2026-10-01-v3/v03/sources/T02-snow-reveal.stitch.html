@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - T02 右上广域碎雪入境五帧分镜审批板</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            // 东方山水写实调色板
+            'qingdai': '#183236',        // 深青黛
+            'qingdai-dark': '#102225',   // 墨青
+            'juan-bg': '#DDE3DA',        // 青灰绢色
+            'juan-paper': '#E8EDE5',     // 淡青宣纸色
+            'juan-card': '#EEF2EC',      // 浅色面板底
+            'qinglu': '#365C55',         // 青绿
+            'qinglu-light': '#4E7D74',   // 润青
+            'zhusha': '#9F493D',         // 朱砂
+            'zhusha-dark': '#83392E',    // 沉红
+            'lengshuang': '#A8B8B5',     // 冷霜灰
+            
+            // Design Tokens
+            surface: '#EEF2EC',
+            'on-surface': '#183236',
+            'on-surface-variant': '#485C5E',
+            primary: '#183236',
+            'on-primary': '#F2F6F0',
+            'primary-container': '#365C55',
+            'on-primary-container': '#EAEFE9',
+            secondary: '#365C55',
+            tertiary: '#9F493D',
+            outline: '#CAD4C8',
+            'outline-variant': '#B6C4B4'
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["'Noto Serif SC'", "'Noto Serif'", "serif"],
+            display: ["'Ma Shan Zheng'", "'Noto Serif SC'", "cursive"],
+            body: ["'Public Sans'", "'Noto Serif SC'", "sans-serif"],
+            label: ["'Public Sans'", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* 东方宣纸墨韵微噪底纹 */
+    .bg-paper-texture {
+      background-color: #DDE3DA;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(54, 92, 85, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(24, 50, 54, 0.06) 0px, transparent 60%);
+    }
+
+    /* 诗意书法字体 */
+    .font-xingshu {
+      font-family: 'Ma Shan Zheng', 'Noto Serif SC', cursive;
+    }
+    
+    /* 经典中国传统印章 */
+    .yinzhang {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      border: 1px solid #9F493D;
+      color: #9F493D;
+      padding: 2px 4px;
+      line-height: 1.1;
+      font-family: 'Noto Serif SC', serif;
+      box-shadow: inset 0 0 2px rgba(159, 73, 61, 0.3);
+    }
+
+    /* 竖排文本布局 */
+    .writing-vertical {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      letter-spacing: 0.35em;
+    }
+
+    /* 细致滚动条 */
+    ::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #DDE3DA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #A8B8B5;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4E7D74;
+    }
+  </style>
+</head>
+<body class="bg-paper-texture text-on-surface antialiased min-h-screen flex flex-col font-body selection:bg-qinglu selection:text-white">
+<!-- ================= TOP NAV BAR (Shared Component Anchor) ================= -->
+<header class="w-full bg-[#E5EBE2]/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline/50 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 lg:px-12 py-3.5 max-w-[1720px] mx-auto">
+<!-- Brand & Left Breadcrumb Context -->
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-1.5 text-xs text-on-surface-variant hover:text-primary transition-colors py-1 px-2 rounded hover:bg-black/5" href="#" title="返回总览页">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="font-headline tracking-wider">返回总览</span>
+</a>
+<div class="h-4 w-px bg-outline"></div>
+<div class="flex items-center gap-2">
+<!-- 行书品牌字形 -->
+<span class="font-xingshu text-2xl tracking-widest text-qingdai font-normal">诗境·一卷山河</span>
+<span class="px-2 py-0.5 text-[11px] bg-qinglu/15 text-qinglu font-headline rounded tracking-wider border border-qinglu/30">
+            入境转场规范 · T02 碎雪分镜
+          </span>
+</div>
+</div>
+<!-- Navigation Links from JSON (Exact Strings) -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary font-medium border-b border-primary pb-1 font-headline tracking-widest text-sm transition-colors duration-300" href="#">诗词总览</a>
+<a class="text-on-surface-variant opacity-80 pb-1 font-body tracking-wider text-sm hover:text-primary transition-colors duration-300" href="#">我的收藏</a>
+<a class="text-on-surface-variant opacity-80 pb-1 font-body tracking-wider text-sm hover:text-primary transition-colors duration-300" href="#">个人中心</a>
+</nav>
+<!-- Right Action & Review Status -->
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 px-3 py-1 rounded bg-[#E0E7DC] border border-outline/70">
+<span class="w-2 h-2 rounded-full bg-zhusha animate-pulse"></span>
+<span class="text-xs text-on-surface font-headline tracking-wider">评审状态：<span class="text-zhusha font-medium">待审定</span></span>
+</div>
+<button class="yinzhang text-[11px] hover:bg-zhusha hover:text-white transition-all duration-200 cursor-pointer">
+          核准
+        </button>
+</div>
+</div>
+</header>
+<!-- ================= MAIN CANVAS CONTAINER (1440px+ 宽画幅) ================= -->
+<main class="flex-1 w-full max-w-[1720px] mx-auto px-6 lg:px-12 py-8 flex flex-col gap-8">
+<!-- PAGE HEADER TITLE & METRICS BAR -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-4 border-b border-outline/60">
+<div class="max-w-4xl space-y-2">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 bg-zhusha text-white text-[11px] tracking-widest rounded-sm font-headline">转场动效审批 · T02</span>
+<span class="text-xs font-mono text-qinglu tracking-wider">PROPOSAL V1.2 · 宽画幅时序拆解</span>
+</div>
+<h1 class="text-2xl lg:text-3xl font-headline font-semibold text-qingdai tracking-widest flex items-center gap-3">
+          右上广域碎雪入境 · 交互分镜规范
+        </h1>
+<p class="text-sm text-on-surface-variant leading-relaxed font-headline tracking-wide">
+          以寒天碎雪随朔风自右上广域漫卷扑入为意象，由源页诗词总览平滑过渡至《江雪》极意孤绝诗境。非生硬白屏暴雪或抽象粒子游戏特效，重在写实冰雪空间感与文人画卷气韵连贯。
+        </p>
+</div>
+<!-- Quick Transition Specs Pills -->
+<div class="flex flex-wrap items-center gap-3 bg-[#E4EAE0] p-2.5 rounded-lg border border-outline/70 shadow-xs">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-white/70 rounded text-xs text-qingdai font-headline">
+<span class="material-symbols-outlined text-sm text-qinglu">schedule</span>
+<span>时长：<strong class="font-mono">1400ms</strong></span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-white/70 rounded text-xs text-qingdai font-headline">
+<span class="material-symbols-outlined text-sm text-qinglu">trending_down</span>
+<span>缓动：<strong class="font-mono text-[11px]">cubic-bezier(0.16, 1, 0.3, 1)</strong></span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-white/70 rounded text-xs text-qingdai font-headline">
+<span class="material-symbols-outlined text-sm text-qinglu">ac_unit</span>
+<span>粒子着色器：<strong class="font-mono text-qinglu">Canvas寒江风雪蒙版</strong></span>
+</div>
+</div>
+</div>
+<!-- ================= SECTION: SEQUENCE CHRONOLOGY (0% - 100% TIMELINE) ================= -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-4 bg-qinglu rounded-full"></span>
+<h2 class="text-base font-headline font-semibold text-qingdai tracking-wider">交互时序拆解画廊 (1400ms Chronological Breakdown)</h2>
+</div>
+<div class="text-xs text-on-surface-variant font-headline tracking-wider flex items-center gap-3">
+<span class="inline-flex items-center gap-1"><span class="w-2.5 h-0.5 bg-qinglu"></span> 朔风掠向指示</span>
+<span class="inline-flex items-center gap-1"><span class="w-2 h-2 rounded-full border border-zhusha"></span> 关键帧锚点</span>
+</div>
+</div>
+<!-- Five Keyframes Grid (Strict 5 Columns on Desktop) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5">
+<!-- FRAME 01: 0% / 0ms -->
+<div class="flex flex-col bg-[#F3F6F1] border border-outline rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group">
+<!-- Viewport 16:10 Thumbnail Simulation -->
+<div class="relative w-full aspect-[16/10] bg-[#142629] overflow-hidden">
+<!-- Simulated S01 Overview Scene using Background Image -->
+<img alt="静观总览源页画卷" class="w-full h-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc"/>
+<!-- In-thumbnail UI Mock: S01 Header & Cards -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/40 p-2 flex flex-col justify-between pointer-events-none">
+<div class="flex justify-between items-center text-[9px] text-[#DDE3DA]/90 font-headline">
+<span class="tracking-widest">诗境·一卷山河</span>
+<span class="scale-75 origin-right px-1 border border-white/30 rounded">总览视口</span>
+</div>
+<!-- Simulated 3 Floating Cards -->
+<div class="grid grid-cols-3 gap-1 mb-1">
+<div class="h-10 bg-black/40 rounded border border-white/20 p-1 flex items-center justify-center">
+<span class="text-[8px] text-white/70">枫桥夜泊</span>
+</div>
+<!-- Active Hovered Card: 江雪 -->
+<div class="h-10 bg-qinglu/60 rounded border border-white/60 p-1 flex flex-col items-center justify-center relative ring-1 ring-white/50">
+<span class="text-[8px] text-white font-medium">江雪</span>
+<span class="text-[7px] text-white/80">入境 →</span>
+<span class="absolute -top-1 -right-1 w-2 h-2 bg-zhusha rounded-full animate-ping"></span>
+</div>
+<div class="h-10 bg-black/40 rounded border border-white/20 p-1 flex items-center justify-center">
+<span class="text-[8px] text-white/70">早发白帝</span>
+</div>
+</div>
+</div>
+<!-- Stage Badge -->
+<div class="absolute top-2 left-2 px-1.5 py-0.5 bg-black/60 backdrop-blur-sm rounded text-[10px] font-mono text-white/90">
+              F01 · 0ms
+            </div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-qingdai/80 text-[10px] font-mono text-[#DDE3DA] rounded">
+              0%
+            </div>
+</div>
+<!-- Description Meta -->
+<div class="p-3.5 flex flex-col flex-1 justify-between bg-white/60">
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<h3 class="text-sm font-headline font-semibold text-qingdai">静观总览 · 源页画卷</h3>
+<span class="text-[10px] px-1.5 py-0.2 text-qinglu bg-qinglu/10 rounded">初始触发</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-headline">
+                用户在 S01 首页点击《江雪》卡片入境，总览页面保持稳定，系统初始化碎雪风场与相机景深。
+              </p>
+</div>
+<div class="pt-3 mt-2 border-t border-outline/50 space-y-1 text-[11px] font-mono text-on-surface-variant">
+<div class="flex justify-between">
+<span class="text-gray-500">风速/气象:</span>
+<span class="text-qingdai">平静无风 · 0 m/s</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">碎雪密度:</span>
+<span class="text-qingdai">0% (待命)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">DOM 状态:</span>
+<span class="text-qinglu font-medium">S01 活跃渲染</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FRAME 02: 25% / 350ms -->
+<div class="flex flex-col bg-[#F3F6F1] border border-outline rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group">
+<!-- Viewport 16:10 Thumbnail Simulation -->
+<div class="relative w-full aspect-[16/10] bg-[#142629] overflow-hidden">
+<img alt="朔风初起右上细雪" class="w-full h-full object-cover opacity-75 filter blur-[0.4px] transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc"/>
+<!-- Simulated Snow Particles drifting from top-right -->
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-bl from-white/10 via-transparent to-transparent"></div>
+<!-- Wind Vector Annotations (Diagrammatic) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" viewbox="0 0 200 125">
+<!-- Trajectory paths -->
+<path d="M 210,5 L 140,55" stroke="rgba(168,184,181,0.6)" stroke-dasharray="2 3" stroke-width="1.2"></path>
+<path d="M 185,-5 L 100,75" stroke="rgba(78,125,116,0.7)" stroke-dasharray="3 4" stroke-width="1.5"></path>
+<path d="M 160,-10 L 60,85" stroke="rgba(168,184,181,0.5)" stroke-dasharray="2 3" stroke-width="1"></path>
+<!-- Micro snow dots -->
+<circle cx="170" cy="15" fill="#FFFFFF" opacity="0.9" r="1.5"></circle>
+<circle cx="190" cy="28" fill="#E8EDE5" opacity="0.8" r="2"></circle>
+<circle cx="150" cy="40" fill="#FFFFFF" opacity="0.8" r="1.2"></circle>
+<circle cx="125" cy="62" fill="#FFFFFF" opacity="0.6" r="1"></circle>
+<circle cx="95" cy="78" fill="#FFFFFF" opacity="0.5" r="0.8"></circle>
+<!-- Wind Vector Arrow Head -->
+<polygon fill="rgba(78,125,116,0.9)" points="100,75 106,71 108,76"></polygon>
+</svg>
+<!-- Vector Label in thumbnail -->
+<div class="absolute top-8 right-2 px-1 py-0.5 bg-black/60 rounded text-[8px] font-mono text-white/80 border border-white/20">
+              风向 35° 朔风
+            </div>
+<!-- Stage Badge -->
+<div class="absolute top-2 left-2 px-1.5 py-0.5 bg-black/60 backdrop-blur-sm rounded text-[10px] font-mono text-white/90">
+              F02 · 350ms
+            </div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-qingdai/80 text-[10px] font-mono text-[#DDE3DA] rounded">
+              25%
+            </div>
+</div>
+<!-- Description Meta -->
+<div class="p-3.5 flex flex-col flex-1 justify-between bg-white/60">
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<h3 class="text-sm font-headline font-semibold text-qingdai">朔风初起 · 右上细雪</h3>
+<span class="text-[10px] px-1.5 py-0.2 text-qinglu bg-qinglu/10 rounded">粒子破空</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-headline">
+                细碎写实雪花自右上角破空漫卷，层级分为远景微粒与近景虚焦雪花，源页总览背景开始微妙泛起冷青雾气。
+              </p>
+</div>
+<div class="pt-3 mt-2 border-t border-outline/50 space-y-1 text-[11px] font-mono text-on-surface-variant">
+<div class="flex justify-between">
+<span class="text-gray-500">风向倾角:</span>
+<span class="text-qingdai">右上至左下 35°</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">覆盖面积:</span>
+<span class="text-qingdai">20% 广域破入</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">音频层:</span>
+<span class="text-qinglu font-medium">北风微掠 (-26dB)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FRAME 03: 50% / 700ms (PEAK) -->
+<div class="flex flex-col bg-[#F3F6F1] border-2 border-zhusha/60 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 relative group">
+<!-- PEAK Ribbon -->
+<div class="absolute -top-1 -right-1 z-20 overflow-hidden w-16 h-16 pointer-events-none">
+<div class="absolute transform rotate-45 bg-zhusha text-white text-[8px] font-headline py-0.5 right-[-30px] top-[14px] w-28 text-center uppercase tracking-widest shadow-xs">
+              峰值遮罩
+            </div>
+</div>
+<!-- Viewport 16:10 Thumbnail Simulation -->
+<div class="relative w-full aspect-[16/10] bg-[#1C2E30] overflow-hidden">
+<!-- Underneath: Dissolving S01 transitioning to S03 -->
+<img alt="风雪漫卷浅雪雾遮罩" class="w-full h-full object-cover opacity-60 filter blur-[1.5px] scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UaFtSpirUPDNLYk7z_kdZklaph9ZmbYaKhsg4jOk03T-ehFtKEdCC1h6ZmIA9X3OLBgenC_U6LNHrPsc8Kmkwnl7bR0ooWhqrzXYZUvraBkKyKX3fEo_Yqx3zLLWjed_YYs7yAhHQZxgpk5aIR7uQBuLvgfig3e958RfrEd-W--bi21reCTAPSGixkxjlfSG1HvCgNzUqQ6ViTYWuYisnSAeJoA_eVDsyOuiElwllkrUQAwaJJndDOVNbB"/>
+<!-- Dense Frosted Snow Mist & Radial Silk Mask Layer (绝非死白) -->
+<div class="absolute inset-0 bg-gradient-to-tr from-[#183236]/40 via-[#DDE3DA]/65 to-[#E8EDE5]/85 mix-blend-screen pointer-events-none"></div>
+<!-- Heavy Real Snow Particle Shower -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" viewbox="0 0 200 125">
+<defs>
+<filter height="140%" id="snow-blur" width="140%" x="-20%" y="-20%">
+<fegaussianblur stddeviation="1.2"></fegaussianblur>
+</filter>
+</defs>
+<!-- Bokeh foreground snow -->
+<circle cx="40" cy="30" fill="#FFFFFF" filter="url(#snow-blur)" opacity="0.35" r="4"></circle>
+<circle cx="160" cy="70" fill="#FFFFFF" filter="url(#snow-blur)" opacity="0.4" r="5"></circle>
+<circle cx="110" cy="90" fill="#FFFFFF" filter="url(#snow-blur)" opacity="0.3" r="3.5"></circle>
+<!-- Midground sharp crystal particles -->
+<circle cx="85" cy="45" fill="#FFFFFF" opacity="0.9" r="1.8"></circle>
+<circle cx="140" cy="25" fill="#FFFFFF" opacity="0.95" r="2.2"></circle>
+<circle cx="175" cy="50" fill="#FFFFFF" opacity="0.9" r="1.6"></circle>
+<circle cx="120" cy="65" fill="#FFFFFF" opacity="0.85" r="1.4"></circle>
+<circle cx="65" cy="85" fill="#FFFFFF" opacity="0.9" r="2"></circle>
+<circle cx="30" cy="95" fill="#FFFFFF" opacity="0.8" r="1.5"></circle>
+</svg>
+<!-- Center DOM Swap Indicator -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="px-2 py-1 bg-qingdai/90 text-[#DDE3DA] border border-outline rounded text-[9px] font-headline tracking-widest backdrop-blur-sm shadow-md flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-zhusha animate-ping"></span>
+<span>DOM 无缝置换节点 (700ms)</span>
+</div>
+</div>
+<!-- Stage Badge -->
+<div class="absolute top-2 left-2 px-1.5 py-0.5 bg-black/70 backdrop-blur-sm rounded text-[10px] font-mono text-white/90">
+              F03 · 700ms
+            </div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-zhusha text-[10px] font-mono text-white rounded">
+              50% (PEAK)
+            </div>
+</div>
+<!-- Description Meta -->
+<div class="p-3.5 flex flex-col flex-1 justify-between bg-white/75">
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<h3 class="text-sm font-headline font-semibold text-qingdai">风雪漫卷 · 浅雪雾遮罩</h3>
+<span class="text-[10px] px-1.5 py-0.2 text-zhusha bg-zhusha/10 rounded font-medium">峰值置换</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-headline">
+                碎雪达到峰值密度，连续浅雪雾遮罩大面积覆盖，完成由 S01 DOM 向 S03 江雪诗境的无缝换场，音画空间转场完成。
+              </p>
+</div>
+<div class="pt-3 mt-2 border-t border-outline/50 space-y-1 text-[11px] font-mono text-on-surface-variant">
+<div class="flex justify-between">
+<span class="text-gray-500">遮罩浓度:</span>
+<span class="text-zhusha font-bold">75% 冷青雪雾</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">粒子峰值数:</span>
+<span class="text-qingdai">~60 写实雪片</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">换场逻辑:</span>
+<span class="text-qingdai">S01卸载 / S03装载</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FRAME 04: 75% / 1050ms -->
+<div class="flex flex-col bg-[#F3F6F1] border border-outline rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group">
+<!-- Viewport 16:10 Thumbnail Simulation -->
+<div class="relative w-full aspect-[16/10] bg-[#142629] overflow-hidden">
+<!-- Simulated Emergence of S03 Real Scene -->
+<img alt="寒江初霁孤舟浮现" class="w-full h-full object-cover opacity-90 transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UaFtSpirUPDNLYk7z_kdZklaph9ZmbYaKhsg4jOk03T-ehFtKEdCC1h6ZmIA9X3OLBgenC_U6LNHrPsc8Kmkwnl7bR0ooWhqrzXYZUvraBkKyKX3fEo_Yqx3zLLWjed_YYs7yAhHQZxgpk5aIR7uQBuLvgfig3e958RfrEd-W--bi21reCTAPSGixkxjlfSG1HvCgNzUqQ6ViTYWuYisnSAeJoA_eVDsyOuiElwllkrUQAwaJJndDOVNbB"/>
+<!-- Receding mist overlay (fading to bottom-left) -->
+<div class="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-transparent pointer-events-none"></div>
+<!-- Emergence of Poem Watermark Calligraphy -->
+<div class="absolute top-2 left-3 flex gap-1 pointer-events-none opacity-60">
+<span class="writing-vertical text-[7px] font-headline text-white/80 bg-black/20 px-0.5 py-1 rounded">千山鸟飞绝</span>
+<span class="writing-vertical text-[7px] font-headline text-white/80 bg-black/20 px-0.5 py-1 rounded">万径人踪灭</span>
+</div>
+<!-- Decreasing Snow Dots -->
+<div class="absolute inset-0 pointer-events-none">
+<span class="absolute top-8 right-12 w-1.5 h-1.5 bg-white rounded-full opacity-80"></span>
+<span class="absolute top-14 right-24 w-1 h-1 bg-white rounded-full opacity-70"></span>
+<span class="absolute bottom-10 left-16 w-1.5 h-1.5 bg-white rounded-full opacity-60"></span>
+</div>
+<!-- Stage Badge -->
+<div class="absolute top-2 left-2 px-1.5 py-0.5 bg-black/60 backdrop-blur-sm rounded text-[10px] font-mono text-white/90">
+              F04 · 1050ms
+            </div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-qingdai/80 text-[10px] font-mono text-[#DDE3DA] rounded">
+              75%
+            </div>
+</div>
+<!-- Description Meta -->
+<div class="p-3.5 flex flex-col flex-1 justify-between bg-white/60">
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<h3 class="text-sm font-headline font-semibold text-qingdai">寒江初霁 · 孤舟浮现</h3>
+<span class="text-[10px] px-1.5 py-0.2 text-qinglu bg-qinglu/10 rounded">风势收敛</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-headline">
+                右上狂风迅速衰减，大范围雪雾散去。寒江孤舟定点浮现，冷冽水波与积雪岸石清晰可辨，四列竖排诗文自冰雾中浮现。
+              </p>
+</div>
+<div class="pt-3 mt-2 border-t border-outline/50 space-y-1 text-[11px] font-mono text-on-surface-variant">
+<div class="flex justify-between">
+<span class="text-gray-500">景深还原:</span>
+<span class="text-qingdai">85% 清晰度</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">诗文显色度:</span>
+<span class="text-qingdai">60% 水墨凝聚</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">风力阻尼:</span>
+<span class="text-qinglu font-medium">减速曲线生效</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FRAME 05: 100% / 1400ms -->
+<div class="flex flex-col bg-[#F3F6F1] border border-qinglu/60 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 group">
+<!-- Viewport 16:10 Thumbnail Simulation -->
+<div class="relative w-full aspect-[16/10] bg-[#142629] overflow-hidden">
+<!-- Fully Stabilized S03 Jiangxue Realm -->
+<img alt="境定江雪稀疏常驻" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UaFtSpirUPDNLYk7z_kdZklaph9ZmbYaKhsg4jOk03T-ehFtKEdCC1h6ZmIA9X3OLBgenC_U6LNHrPsc8Kmkwnl7bR0ooWhqrzXYZUvraBkKyKX3fEo_Yqx3zLLWjed_YYs7yAhHQZxgpk5aIR7uQBuLvgfig3e958RfrEd-W--bi21reCTAPSGixkxjlfSG1HvCgNzUqQ6ViTYWuYisnSAeJoA_eVDsyOuiElwllkrUQAwaJJndDOVNbB"/>
+<!-- Full UI Overlay on Final State -->
+<div class="absolute inset-0 p-2 flex flex-col justify-between pointer-events-none">
+<!-- Top bar controls in S03 -->
+<div class="flex justify-between items-center text-[8px] text-[#DDE3DA]">
+<div class="flex items-center gap-1 bg-black/40 px-1 py-0.5 rounded">
+<span>← 返回总览</span>
+<span>|</span>
+<span class="font-xingshu">江雪</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-1 bg-black/40 rounded text-gray-300">已静音</span>
+<span class="px-1 bg-zhusha text-white rounded">收藏本诗</span>
+</div>
+</div>
+<!-- Calligraphy Vertical Text in S03 Top-Left -->
+<div class="flex gap-1 items-start mt-1">
+<div class="writing-vertical text-[8px] font-headline text-white bg-black/30 backdrop-blur-xs px-1 py-1 rounded shadow-sm border border-white/10">千山鸟飞绝</div>
+<div class="writing-vertical text-[8px] font-headline text-white bg-black/30 backdrop-blur-xs px-1 py-1 rounded shadow-sm border border-white/10">万径人踪灭</div>
+<div class="writing-vertical text-[8px] font-headline text-white bg-black/30 backdrop-blur-xs px-1 py-1 rounded shadow-sm border border-white/10">孤舟蓑笠翁</div>
+<div class="writing-vertical text-[8px] font-headline text-white bg-black/30 backdrop-blur-xs px-1 py-1 rounded shadow-sm border border-white/10">独钓寒江雪</div>
+<div class="writing-vertical text-[7px] font-headline text-white/70 ml-0.5">唐·柳宗元</div>
+</div>
+<!-- Solitary Fisherman at Bottom Right Focus Indicator -->
+<div class="self-end mb-1">
+<div class="w-2.5 h-2.5 border border-white/80 rounded-full animate-ping opacity-60"></div>
+</div>
+</div>
+<!-- Stage Badge -->
+<div class="absolute top-2 left-2 px-1.5 py-0.5 bg-black/60 backdrop-blur-sm rounded text-[10px] font-mono text-white/90">
+              F05 · 1400ms
+            </div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 bg-qinglu text-[10px] font-mono text-white rounded">
+              100%
+            </div>
+</div>
+<!-- Description Meta -->
+<div class="p-3.5 flex flex-col flex-1 justify-between bg-white/60">
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<h3 class="text-sm font-headline font-semibold text-qingdai">境定江雪 · 稀疏常驻</h3>
+<span class="text-[10px] px-1.5 py-0.2 text-qinglu bg-qinglu/20 rounded font-medium">意境稳定</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-headline">
+                转场完全结束，狂暴碎雪彻底回落为极稀疏柔和的环境常驻微雪。诗文凝练稳固，所有导航与交互控件恢复常态响应。
+              </p>
+</div>
+<div class="pt-3 mt-2 border-t border-outline/50 space-y-1 text-[11px] font-mono text-on-surface-variant">
+<div class="flex justify-between">
+<span class="text-gray-500">常驻雪率:</span>
+<span class="text-qingdai">12 片/秒 稀疏柔和</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">交互层:</span>
+<span class="text-qingdai">完全解锁 (可收藏/返回)</span>
+</div>
+<div class="flex justify-between">
+<span class="text-gray-500">阅读环境:</span>
+<span class="text-qinglu font-medium">S03 终态确立</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SECTION: TECHNICAL & DESIGN SPECIFICATIONS ================= -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+<!-- Spec Card 1: 物理粒子与着色器逻辑 -->
+<div class="bg-[#E4EAE0] p-5 rounded-lg border border-outline/80 flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-qingdai font-headline font-semibold">
+<span class="material-symbols-outlined text-qinglu text-lg">blur_on</span>
+<h3 class="text-sm tracking-wider">01. 物理雪粒子与着色器规则</h3>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-headline">
+            严禁使用粗大生硬的剪纸雪花贴图或抽象霓虹粒子。碎雪采用轻量级 Canvas 2D / WebGL 粒子系统，分为前景（虚焦大光斑）、中景（写实结晶粒）与远景（点状冷星）三层景深（Z-depth）。
+          </p>
+<ul class="text-xs text-on-surface-variant space-y-1.5 pl-3 list-disc marker:text-qinglu">
+<li><strong>初速与风阻：</strong>粒子具有质量衰减与朔风扰动向量（Turbulence Noise）。</li>
+<li><strong>峰值覆幕渐变：</strong>以冷青绢色 <code class="bg-black/5 px-1 font-mono text-[11px]">#DDE3DA</code> 融合青绿 <code class="bg-black/5 px-1 font-mono text-[11px]">#365C55</code> 羽化呈现，杜绝生硬纯白死色。</li>
+<li><strong>微噪点处理：</strong>蒙版加入 3% 宣纸天然纤维噪点，与整体山水基底保持纯正绢帛材质统一。</li>
+</ul>
+</div>
+<div class="p-2.5 bg-white/60 rounded border border-outline/50 text-[11px] font-mono text-qingdai flex items-center justify-between">
+<span>Shader: SnowMistFilter.frag</span>
+<span class="text-qinglu">GLSL v3.0</span>
+</div>
+</div>
+<!-- Spec Card 2: 降级与无障碍保障 -->
+<div class="bg-[#E4EAE0] p-5 rounded-lg border border-outline/80 flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-qingdai font-headline font-semibold">
+<span class="material-symbols-outlined text-qinglu text-lg">accessibility_new</span>
+<h3 class="text-sm tracking-wider">02. 无障碍与平稳降级策略</h3>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-headline">
+            遵循东方写实文人审美中的“宁静温润”，确保任何生理条件下的阅读舒适度，完全通过 WCAG 2.1 AA 级动态平稳性规范。
+          </p>
+<ul class="text-xs text-on-surface-variant space-y-1.5 pl-3 list-disc marker:text-qinglu">
+<li><strong>减弱动态模式 (prefers-reduced-motion)：</strong>自动旁路狂风与粒子计算，退化为 300ms 纯净静止淡入淡出（Cross-fade）。</li>
+<li><strong>帧率监控自适应：</strong>若渲染低于 45 FPS，自动精简 60% 粒子数并关闭近景高斯模糊。</li>
+<li><strong>防眩光控制：</strong>严禁任何高频频闪、高亮爆白光效，所有白度均受限于青灰绢色基准。</li>
+</ul>
+</div>
+<div class="p-2.5 bg-white/60 rounded border border-outline/50 text-[11px] font-mono text-qingdai flex items-center justify-between">
+<span>A11y: WCAG 2.1 AA Motion</span>
+<span class="text-qinglu">Pass (0 Strobe)</span>
+</div>
+</div>
+<!-- Spec Card 3: 视听联合触发 -->
+<div class="bg-[#E4EAE0] p-5 rounded-lg border border-outline/80 flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-qingdai font-headline font-semibold">
+<span class="material-symbols-outlined text-qinglu text-lg">graphic_eq</span>
+<h3 class="text-sm tracking-wider">03. 视听联合触发与意境落定</h3>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed font-headline">
+            转场动效与环境声场保持严谨时间戳对齐，声音服务于画面意境，绝不突兀惊扰。
+          </p>
+<ul class="text-xs text-on-surface-variant space-y-1.5 pl-3 list-disc marker:text-qinglu">
+<li><strong>25% (350ms)：</strong>极微弱朔风破空掠响从右上声道渐强（-26dB），烘托寒意。</li>
+<li><strong>50% (700ms 峰值)：</strong>风声迅速柔化并切入低沉寒江水波拍击碎冰声。</li>
+<li><strong>100% (1400ms)：</strong>风声彻底止息，仅存极细微白噪音，顶栏静音指示显示“寒江雪寂 · 声音已闭”。</li>
+</ul>
+</div>
+<div class="p-2.5 bg-white/60 rounded border border-outline/50 text-[11px] font-mono text-qingdai flex items-center justify-between">
+<span>Audio: Spatial Wind Curve</span>
+<span class="text-qinglu">WebAudio Pan3D</span>
+</div>
+</div>
+</section>
+<!-- ================= SECTION: APPROVAL ACTIONS & TELEMETRY ================= -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-4 px-6 bg-[#E1E8DE] border border-outline rounded-lg">
+<div class="flex items-center gap-6 text-xs text-on-surface-variant font-mono">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-qinglu"></span>
+<span>显存占用: &lt; 1.6MB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-qinglu"></span>
+<span>粒子开销: ~60颗粒</span>
+</div>
+<div class="hidden md:flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-qinglu"></span>
+<span>渲染通道: WebGL2 / 2D Context 回退良好</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 border border-outline text-qingdai bg-white/70 hover:bg-white text-xs font-headline tracking-wider rounded transition-colors duration-200 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">code</span>
+<span>导出碎雪动效参数 JSON</span>
+</button>
+<button class="px-5 py-2 bg-zhusha hover:bg-zhusha-dark text-white text-xs font-headline tracking-widest rounded shadow-sm transition-colors duration-200 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm">check</span>
+<span>通过此转场动效审批</span>
+</button>
+</div>
+</div>
+</main>
+<!-- ================= FOOTER (Shared Component Anchor) ================= -->
+<footer class="w-full bg-[#D6DDD3] border-t border-outline/60 mt-12 transition-colors duration-200">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-8 max-w-7xl mx-auto opacity-75">
+<!-- Copyright from JSON -->
+<div class="text-xs font-body tracking-widest text-on-surface mb-4 md:mb-0">
+        © 诗境·一卷山河 · 循诗入境 展卷见山河
+      </div>
+<!-- Links from JSON -->
+<div class="flex items-center gap-6 text-xs font-body tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-300" href="#">山河卷志</a>
+<a class="hover:text-primary transition-colors duration-300" href="#">书法典藏</a>
+<a class="hover:text-primary transition-colors duration-300" href="#">关于诗境</a>
+</div>
+</div>
+</footer>
+</body></html>

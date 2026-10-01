@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - S02 枫桥诗境 (修订版)</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;600;700&amp;family=Public+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            qingdai: "#183236",
+            "qingdai-light": "#214247",
+            qinghui: "#DDE3DA",
+            qinglv: "#365C55",
+            zhusha: "#9F493D",
+            "zhusha-light": "#B55648",
+            "paper-dark": "rgba(18, 32, 35, 0.88)",
+            "silk-white": "#F3F5F2",
+            "silk-muted": "#C2C9C2"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["'Noto Serif SC'", "serif"],
+            display: ["'Noto Serif SC'", "serif"],
+            calligraphy: ["'Ma Shan Zheng'", "'Noto Serif SC'", "cursive"],
+            body: ["'Public Sans'", "'Noto Serif SC'", "sans-serif"],
+            label: ["'Public Sans'", "'Noto Serif SC'", "sans-serif"]
+          },
+          boxShadow: {
+            oriental: "0 10px 35px -8px rgba(9, 21, 23, 0.65), 0 0 1px 1px rgba(221, 227, 218, 0.08)",
+            calligraphy: "0 2px 14px rgba(0, 0, 0, 0.75)"
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* Traditional vertical poem styling */
+    .poem-column {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      white-space: nowrap;
+      font-size: 24px;
+      height: 260px;
+      line-height: 1.6;
+      letter-spacing: 0.25em;
+    }
+    
+    /* Authentic subtle paper grain texture */
+    .paper-texture {
+      background-image: radial-gradient(rgba(221, 227, 218, 0.04) 1px, transparent 0);
+      background-size: 8px 8px;
+    }
+
+    /* Sound indicator subtle pulse */
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 0.8; transform: scaleY(1); }
+      50% { opacity: 0.35; transform: scaleY(0.6); }
+    }
+    .wave-bar-1 { animation: pulse-subtle 1.8s ease-in-out infinite; }
+    .wave-bar-2 { animation: pulse-subtle 1.4s ease-in-out infinite 0.25s; }
+    .wave-bar-3 { animation: pulse-subtle 2.1s ease-in-out infinite 0.5s; }
+  </style>
+</head>
+<body class="h-full w-full bg-[#122225] text-silk-white overflow-hidden select-none font-body antialiased flex flex-col justify-between relative">
+<!-- ================= SCENIC FULL-BLEED BACKGROUND ================= -->
+<div class="absolute inset-0 z-0 overflow-hidden">
+<img alt="枫桥夜泊山水意境" class="w-full h-full object-cover object-center filter brightness-[0.98] contrast-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- Subtle natural atmospheric grading & vignette overlays -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#0e1d1f]/80 via-transparent to-[#0e1d1f]/65 pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#0e1d1f]/60 via-transparent to-transparent pointer-events-none"></div>
+</div>
+<!-- ================= TOP NAVIGATION BAR ================= -->
+<header class="relative z-30 w-full bg-qingdai/80 backdrop-blur-md paper-texture border-b border-silk-muted/10">
+<div class="max-w-[1440px] mx-auto h-[64px] px-8 flex items-center justify-between">
+<!-- Left side: Back to overview + Exact Brand Identity -->
+<div class="flex items-center space-x-6">
+<a class="group flex items-center space-x-1.5 text-silk-muted hover:text-silk-white transition-colors duration-200 text-sm font-headline tracking-widest" href="#overview">
+<span class="material-symbols-outlined text-[19px] transition-transform duration-200 group-hover:-translate-x-1">arrow_back</span>
+<span>返回总览</span>
+</a>
+<div class="h-4 w-[1px] bg-silk-muted/20"></div>
+<!-- Calligraphy Brand Logo (No '姑苏卷' badge) -->
+<div class="flex items-center space-x-2">
+<span class="font-calligraphy text-2xl tracking-[0.22em] text-silk-white font-normal drop-shadow-sm">诗境·一卷山河</span>
+</div>
+</div>
+<!-- Right side: Sound Toggle (Default Muted), Bookmark Action, My Collections & Personal Center -->
+<div class="flex items-center space-x-5 text-sm">
+<!-- Ambient Sound Toggle: Default Muted ("声音已闭") -->
+<button class="flex items-center space-x-2 px-3 py-1.5 rounded bg-qingdai-light/50 hover:bg-qingdai-light/80 border border-silk-muted/15 transition-all duration-200 text-silk-muted hover:text-silk-white group opacity-75" id="soundToggleBtn">
+<span class="material-symbols-outlined text-[17px] text-silk-muted/80 group-hover:text-silk-white" id="soundIcon">volume_off</span>
+<span class="font-headline tracking-wider text-xs" id="soundText">声音已闭</span>
+</button>
+<!-- Collect / Bookmark Current Poem (Zhusha accent) -->
+<button class="flex items-center space-x-1.5 px-3.5 py-1.5 rounded bg-zhusha hover:bg-zhusha-light text-silk-white text-xs font-headline tracking-wider transition-all duration-200 shadow-sm shadow-zhusha/40" id="bookmarkBtn">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span id="bookmarkText">收藏本诗</span>
+</button>
+<!-- Collections Entry -->
+<a class="flex items-center space-x-1 text-silk-muted hover:text-silk-white text-xs font-headline tracking-widest pl-1 transition-colors duration-200" href="#collections">
+<span class="material-symbols-outlined text-[18px]">collections_bookmark</span>
+<span>我的收藏</span>
+</a>
+<!-- Personal Center link -->
+<a class="flex items-center space-x-1 text-silk-muted hover:text-silk-white text-xs font-headline tracking-widest pl-2 transition-colors duration-200" href="#profile">
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+<span>个人中心</span>
+</a>
+</div>
+</div>
+</header>
+<!-- ================= MAIN IMMERSIVE STAGE ================= -->
+<main class="relative z-20 flex-1 max-w-[1440px] w-full mx-auto px-10 pt-8 pb-6 flex flex-col justify-between pointer-events-none">
+<!-- Left Safe Zone: Classical Poem Title & Traditional 4-Line Stanza Structure -->
+<div class="pointer-events-auto flex flex-col items-start max-w-lg mt-2">
+<!-- 1. Normal Horizontal Title & Dynastic Author Header (Strictly "枫桥夜泊", left-to-right) -->
+<div class="flex items-center space-x-4 mb-7 select-text">
+<h1 class="font-headline font-bold text-[34px] tracking-widest text-[#F3F5F2] drop-shadow-calligraphy leading-tight">
+      枫桥夜泊
+    </h1>
+<div class="flex items-center space-x-2.5 pt-1 pl-2 border-l border-silk-muted/25">
+<span class="font-headline text-xs tracking-[0.25em] text-silk-muted/90">
+        唐 · 张继
+      </span>
+<!-- Traditional cinnabar seal stamp ("张继") -->
+<div class="w-5 h-5 border border-zhusha/90 rounded-[2px] bg-zhusha/20 flex items-center justify-center rotate-[-2deg] shadow-sm shadow-zhusha/30">
+<span class="font-calligraphy text-zhusha text-[9px] leading-none font-bold">张继</span>
+</div>
+</div>
+</div>
+<!-- 2. Four Vertical Stanzas (Strictly Right-to-Left, 4 separate columns, horizontal-tb container with row-reverse) -->
+<div class="select-text drop-shadow-calligraphy" style="width: 340px; height: 300px; writing-mode: horizontal-tb; display: flex; flex-direction: row-reverse; gap: 24px; align-items: flex-start; justify-content: flex-end;">
+<!-- Line 1 (Rightmost Column) -->
+<div class="poem-column font-headline text-[#F3F5F2] font-normal transition-all duration-300 hover:text-white">
+      月落乌啼霜满天
+    </div>
+<!-- Line 2 (Second Column from Right) -->
+<div class="poem-column font-headline text-[#F3F5F2] font-normal transition-all duration-300 hover:text-white">
+      江枫渔火对愁眠
+    </div>
+<!-- Line 3 (Third Column from Right) -->
+<div class="poem-column font-headline text-[#F3F5F2] font-normal transition-all duration-300 hover:text-white">
+      姑苏城外寒山寺
+    </div>
+<!-- Line 4 (Leftmost Column) -->
+<div class="poem-column font-headline text-[#F3F5F2] font-normal transition-all duration-300 hover:text-white">
+      夜半钟声到客船
+    </div>
+</div>
+</div>
+<!-- Bottom Control & Discrete Annotation Badge (Collapsed by default) -->
+<div class="flex items-end justify-between w-full pointer-events-auto mt-auto pt-4 relative">
+<!-- Minimal Discrete Annotation Entry / Floating Tooltip Trigger -->
+<div class="relative">
+<!-- Popover Annotation Balloon (Hidden by default) -->
+<div class="hidden absolute bottom-11 left-0 w-[360px] rounded bg-paper-dark border border-silk-muted/20 backdrop-blur-md shadow-oriental p-4 paper-texture z-30 transition-all duration-200" id="annotationPopup">
+<div class="flex items-center justify-between pb-2 mb-2.5 border-b border-silk-muted/15">
+<div class="flex items-center space-x-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-zhusha inline-block"></span>
+<span class="font-headline text-xs font-semibold tracking-wider text-silk-white">笺注与诗意</span>
+</div>
+<button class="text-silk-muted hover:text-silk-white text-xs" id="closePopupBtn">
+<span class="material-symbols-outlined text-[15px]">close</span>
+</button>
+</div>
+<div class="space-y-2 text-xs font-headline leading-relaxed text-silk-muted/90">
+<p><strong class="text-silk-white font-normal">乌啼：</strong>寒夜宿乌惊鸣。<strong class="text-silk-white font-normal ml-2">愁眠：</strong>客居思乡、对火难寐。<strong class="text-silk-white font-normal ml-2">寒山寺：</strong>姑苏古刹。</p>
+<p class="text-silk-muted/80 text-[11px] border-t border-silk-muted/10 pt-1.5 leading-normal">霜天月落，枫桥寂寂，渔火摇曳中幽沉钟声划破深秋长夜，直抵孤舟羁客心脾。</p>
+</div>
+</div>
+<!-- Discrete Minimal Badge Button -->
+<button class="flex items-center space-x-2 px-3 py-1.5 rounded bg-qingdai/70 hover:bg-qingdai border border-silk-muted/20 backdrop-blur-md text-silk-muted hover:text-silk-white transition-all duration-200 text-xs font-headline shadow-sm group" id="annotationBadgeBtn" title="查看字词笺注">
+<span class="w-1.5 h-1.5 rounded-full bg-zhusha/80 group-hover:bg-zhusha"></span>
+<span class="tracking-widest">笺注</span>
+<span class="material-symbols-outlined text-[14px] text-silk-muted/70 group-hover:text-silk-white">menu_book</span>
+</button>
+</div>
+<!-- Right: Minimal Geographic Scene Marker & Fullscreen Toggle -->
+<div class="flex items-center space-x-3 bg-qingdai/60 border border-silk-muted/15 rounded px-3.5 py-1.5 backdrop-blur-md shadow-oriental text-xs">
+<div class="flex items-center space-x-2">
+<span class="font-headline tracking-widest text-silk-white">枫桥西岸 · 寒山寺</span>
+</div>
+<div class="h-3.5 w-[1px] bg-silk-muted/20"></div>
+<button class="text-silk-muted hover:text-silk-white flex items-center transition-colors" id="fullscreenBtn" title="全屏沉浸">
+<span class="material-symbols-outlined text-[17px]">fullscreen</span>
+</button>
+</div>
+</div>
+</main>
+<!-- ================= MINIMAL FOOTER ================= -->
+<!-- Cleaned up: only subtle background context text, all extraneous links removed -->
+<footer class="relative z-30 w-full bg-qingdai/75 backdrop-blur-sm border-t border-silk-muted/10 py-2.5 px-8">
+<div class="max-w-[1440px] mx-auto flex justify-between items-center text-[11px] font-headline tracking-widest text-silk-muted/60">
+<div>
+<span>唐 · 天宝年间 张继落第泊舟姑苏 极目秋夜霜月江枫</span>
+</div>
+<div>
+<span>© 诗境·一卷山河</span>
+</div>
+</div>
+</footer>
+<!-- Interactive Scripts -->
+<script>
+    // Discrete Annotation Toggle
+    const annotationBadgeBtn = document.getElementById('annotationBadgeBtn');
+    const annotationPopup = document.getElementById('annotationPopup');
+    const closePopupBtn = document.getElementById('closePopupBtn');
+
+    annotationBadgeBtn.addEventListener('click', () => {
+      annotationPopup.classList.toggle('hidden');
+    });
+
+    closePopupBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      annotationPopup.classList.add('hidden');
+    });
+
+    // Sound Toggle State Handler (Defaults to Muted: "声音已闭")
+    const soundToggleBtn = document.getElementById('soundToggleBtn');
+    const soundText = document.getElementById('soundText');
+    const soundIcon = document.getElementById('soundIcon');
+    let isSoundOn = false;
+
+    soundToggleBtn.addEventListener('click', () => {
+      isSoundOn = !isSoundOn;
+      if (isSoundOn) {
+        soundText.textContent = '夜泊余韵 · 启';
+        soundIcon.textContent = 'volume_up';
+        soundToggleBtn.classList.remove('opacity-75');
+        soundToggleBtn.classList.add('border-qinglv/50');
+      } else {
+        soundText.textContent = '声音已闭';
+        soundIcon.textContent = 'volume_off';
+        soundToggleBtn.classList.add('opacity-75');
+        soundToggleBtn.classList.remove('border-qinglv/50');
+      }
+    });
+
+    // Bookmark Toggle State
+    const bookmarkBtn = document.getElementById('bookmarkBtn');
+    const bookmarkText = document.getElementById('bookmarkText');
+    let isBookmarked = false;
+
+    bookmarkBtn.addEventListener('click', () => {
+      isBookmarked = !isBookmarked;
+      if (isBookmarked) {
+        bookmarkText.textContent = '已收藏';
+        bookmarkBtn.classList.replace('bg-zhusha', 'bg-qinglv');
+        bookmarkBtn.classList.replace('hover:bg-zhusha-light', 'hover:bg-qinglv/80');
+      } else {
+        bookmarkText.textContent = '收藏本诗';
+        bookmarkBtn.classList.replace('bg-qinglv', 'bg-zhusha');
+        bookmarkBtn.classList.replace('hover:bg-qinglv/80', 'hover:bg-zhusha-light');
+      }
+    });
+
+    // Fullscreen toggle handler
+    const fullscreenBtn = document.getElementById('fullscreenBtn');
+    fullscreenBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        }
+      }
+    });
+</script>
+</body></html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - 翻书返回总览 视觉时序分镜</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts: Noto Serif SC, Ma Shan Zheng for Xingshu aesthetic, Public Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "ink-dark": "#183236",       // 深青黛
+            "silk-light": "#DDE3DA",     // 青灰绢色
+            "silk-paper": "#E4E8E1",     // 宣纸/绢背
+            "pine-green": "#365C55",     // 青绿
+            "cinnabar": "#9F493D",       // 朱砂
+            "surface": "#DDE3DA",
+            "surface-container": "#D2DAD0",
+            "surface-card": "#EAEFE7",
+            "primary": "#183236",
+            "primary-container": "#365C55",
+            "on-surface": "#183236",
+            "on-surface-variant": "#4A615D",
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif SC", "Noto Serif", "serif"],
+            "display": ["Noto Serif SC", "Noto Serif", "serif"],
+            "body": ["Public Sans", "Noto Serif SC", "sans-serif"],
+            "label": ["Public Sans", "sans-serif"],
+            "xingshu": ["Ma Shan Zheng", "Noto Serif SC", "cursive"]
+          }
+        },
+      }
+    }
+</script>
+<style>
+    /* 东方宣纸与微纤维肌理背景 */
+    body {
+      background-color: #DDE3DA;
+      color: #183236;
+      background-image: radial-gradient(#CCD5C9 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    
+    .vertical-rl {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+
+    .shufa-shadow {
+      text-shadow: 0 1px 2px rgba(24, 50, 54, 0.15);
+    }
+
+    /* 纸页翻卷曲面渐变与柔光投影 */
+    .curl-shadow-f02 {
+      box-shadow: -6px 0 14px -3px rgba(24, 50, 54, 0.22);
+    }
+    .curl-shadow-f03 {
+      box-shadow: -14px 0 28px -5px rgba(24, 50, 54, 0.35), 8px 0 16px -4px rgba(24, 50, 54, 0.18);
+    }
+    .curl-shadow-f04 {
+      box-shadow: -8px 0 16px -4px rgba(24, 50, 54, 0.20);
+    }
+</style>
+</head>
+<body class="min-h-screen font-body antialiased flex flex-col selection:bg-pine-green selection:text-white">
+<!-- ==================== 顶部导航规范 (TopNavBar) ==================== -->
+<header class="w-full bg-[#D7DDD4] border-b border-[#CCD5C9] sticky top-0 z-50 shadow-sm backdrop-blur-sm bg-opacity-95">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<!-- 左侧：返回总览 + 品牌行书笔意 -->
+<div class="flex items-center space-x-4">
+<a class="inline-flex items-center text-xs tracking-wider font-medium text-ink-dark hover:text-cinnabar transition-colors duration-200" href="#return">
+<span class="material-symbols-outlined text-base mr-1">arrow_back</span>
+<span>返回总览</span>
+</a>
+<span class="text-[#A5B5A2]">|</span>
+<div class="flex items-baseline space-x-2">
+<span class="font-xingshu text-2xl tracking-widest text-ink-dark shufa-shadow">诗境·一卷山河</span>
+</div>
+</div>
+<!-- 右侧：核心导航链接 -->
+<nav class="flex items-center space-x-7">
+<a class="text-primary font-medium border-b border-primary pb-1 text-sm tracking-wider font-headline" href="#overview">诗词总览</a>
+<a class="text-on-surface-variant opacity-80 pb-1 text-sm tracking-wider font-headline hover:text-primary transition-colors duration-300" href="#collection">我的收藏</a>
+<a class="text-on-surface-variant opacity-80 pb-1 text-sm tracking-wider font-headline hover:text-primary transition-colors duration-300" href="#profile">个人中心</a>
+</nav>
+</div>
+</header>
+<!-- ==================== 主内容工作区 ==================== -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-6 lg:px-8 py-10 flex flex-col justify-between">
+<!-- 标题与意象阐释区 -->
+<div class="mb-10 text-center max-w-3xl mx-auto">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-1.5 h-1.5 rounded-full bg-cinnabar"></span>
+<span class="text-xs font-headline tracking-widest text-cinnabar">视觉时序分镜 · 待审阅</span>
+</div>
+<h1 class="text-3xl lg:text-4xl font-headline font-bold tracking-widest text-ink-dark mb-4">
+      翻书返回总览
+    </h1>
+<p class="text-sm text-on-surface-variant leading-relaxed font-headline tracking-wide">
+      以文人古籍宣纸翻卷、展页归卷为意象，由《枫桥夜泊》全景诗境平滑翻折回归至 S01 首页总览（三卡等规版）。纯粹视觉时序演进示意。
+    </p>
+</div>
+<!-- ==================== 五帧等尺寸 16:10 视觉缩图画廊 ==================== -->
+<div class="mb-12">
+<!-- 横向时序网格 (0% / 25% / 50% / 75% / 100%) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+<!-- ==================== 帧 01 · 0% (源诗境) ==================== -->
+<div class="flex flex-col">
+<!-- 16:10 画面卡片 -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-black/40 border border-[#CCD5C9] shadow-xs rounded-[2px] transition-transform duration-300 hover:border-pine-green">
+<!-- 背景真实风景图 -->
+<img alt="枫桥夜泊全景夜色" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- 覆盖层：沉浸式阅读态 UI -->
+<div class="absolute inset-0 p-3 pointer-events-none flex flex-col justify-between bg-gradient-to-t from-black/55 via-transparent to-black/35">
+<div class="flex justify-between items-start">
+<span class="inline-flex items-center text-[9px] text-white/95 bg-black/30 px-1.5 py-0.5 rounded-[1px] backdrop-blur-xs font-headline tracking-wider">
+<span class="material-symbols-outlined text-[11px] mr-0.5">arrow_back</span>返回总览
+              </span>
+<span class="text-[8px] font-headline text-white/70 tracking-widest">枫桥夜泊</span>
+</div>
+<!-- 竖排诗名与诗句 -->
+<div class="flex flex-row-reverse gap-1.5 self-start mt-1 mr-auto pl-1">
+<div class="vertical-rl font-headline text-white text-[9px] tracking-widest bg-black/25 px-1 py-1 rounded-[1px] border-r border-white/20">
+                月落乌啼霜满天
+              </div>
+<div class="vertical-rl font-headline text-white text-[9px] tracking-widest bg-black/25 px-1 py-1 rounded-[1px] border-r border-white/20">
+                江枫渔火对愁眠
+              </div>
+<div class="vertical-rl font-headline text-white text-[9px] tracking-widest bg-black/25 px-1 py-1 rounded-[1px] border-r border-white/20">
+                姑苏城外寒山寺
+              </div>
+<div class="vertical-rl font-headline text-white text-[9px] tracking-widest bg-black/25 px-1 py-1 rounded-[1px]">
+                夜半钟声到客船
+              </div>
+</div>
+<div class="flex justify-between items-center text-[8px] text-white/60 font-headline pt-1">
+<span>唐 · 张继</span>
+<span>夜泊沉浸态</span>
+</div>
+</div>
+</div>
+<!-- 单行中文说明 -->
+<p class="mt-3 text-xs font-headline text-on-surface text-center tracking-wide leading-relaxed">
+          01 · 枫桥诗境全貌，文人夜泊意境沉浸。
+        </p>
+</div>
+<!-- ==================== 帧 02 · 25% (边缘起卷) ==================== -->
+<div class="flex flex-col">
+<!-- 16:10 画面卡片 -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-[#CCD5C9] border border-[#CCD5C9] shadow-xs rounded-[2px] transition-transform duration-300 hover:border-pine-green">
+<!-- 底层 S01 首页青黛题头与山水轮廓若隐若现 -->
+<div class="absolute inset-0 bg-silk-light flex flex-col justify-between p-2.5">
+<div class="flex items-center justify-between opacity-50">
+<span class="font-xingshu text-xs text-ink-dark">诗境·一卷山河</span>
+<span class="text-[7px] font-headline text-ink-dark">总览</span>
+</div>
+<div class="grid grid-cols-3 gap-1 opacity-30 my-auto">
+<div class="h-12 bg-white/70 rounded-[1px] border border-[#B9C5B5]"></div>
+<div class="h-12 bg-white/50 rounded-[1px] border border-[#B9C5B5]"></div>
+<div class="h-12 bg-white/50 rounded-[1px] border border-[#B9C5B5]"></div>
+</div>
+<div class="h-2"></div>
+</div>
+<!-- 掀起并向右弯折的宣纸层 -->
+<div class="absolute inset-y-0 right-0 w-[84%] overflow-hidden curl-shadow-f02 border-l border-white/60" style="transform: perspective(700px) rotateY(-10deg); transform-origin: right center;">
+<img alt="枫桥夜泊起卷" class="w-full h-full object-cover scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- 减淡的文字与半透反光条 -->
+<div class="absolute inset-0 p-3 pointer-events-none flex flex-col justify-between bg-black/25">
+<div class="flex justify-between items-start opacity-40">
+<span class="inline-flex items-center text-[9px] text-white bg-black/30 px-1 py-0.5 rounded-[1px]">
+<span class="material-symbols-outlined text-[10px] mr-0.5">arrow_back</span>返回
+                </span>
+</div>
+<div class="flex flex-row-reverse gap-1.5 self-start opacity-35">
+<div class="vertical-rl font-headline text-white text-[8px] tracking-widest bg-black/20 p-0.5">月落乌啼...</div>
+<div class="vertical-rl font-headline text-white text-[8px] tracking-widest bg-black/20 p-0.5">江枫渔火...</div>
+</div>
+<!-- 宣纸弯折侧面细微反光 -->
+<div class="absolute left-0 inset-y-0 w-2.5 bg-gradient-to-r from-white/35 to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- 单行中文说明 -->
+<p class="mt-3 text-xs font-headline text-on-surface text-center tracking-wide leading-relaxed">
+          02 · 纸页左掀，左侧边缘起卷，底层首页若隐若现。
+        </p>
+</div>
+<!-- ==================== 帧 03 · 50% (关键中间帧 · 真实大翻卷曲面) ==================== -->
+<div class="flex flex-col">
+<!-- 16:10 画面卡片 -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-silk-light border border-[#B9C5B5] shadow-xs rounded-[2px] transition-transform duration-300 hover:border-pine-green flex">
+<!-- 左半部：已翻开的底层真实 S01 首页三张等规风景卡片 -->
+<div class="w-[52%] h-full p-2 flex flex-col justify-between bg-[#D7DDD4] border-r border-[#C2CCC0] relative overflow-hidden">
+<!-- 题头 -->
+<div class="flex items-center justify-between pb-1 border-b border-[#CCD5C9]/60">
+<span class="font-xingshu text-xs font-bold text-ink-dark">诗境·一卷山河</span>
+<div class="flex gap-1 text-[6px] font-headline text-ink-dark/70">
+<span class="text-pine-green font-bold">总览</span>
+<span>收藏</span>
+</div>
+</div>
+<!-- 三张等规真实图片缩略卡 -->
+<div class="grid grid-cols-3 gap-1 my-auto">
+<!-- 卡1: 枫桥夜泊 -->
+<div class="h-14 rounded-[1px] overflow-hidden border border-pine-green/70 relative flex flex-col justify-end p-0.5 bg-black/30">
+<img alt="枫桥夜泊" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<span class="relative text-[6px] font-headline font-semibold text-white leading-tight">枫桥夜泊</span>
+<span class="relative text-[5px] font-headline text-white/80 leading-tight">张继</span>
+</div>
+<!-- 卡2: 江雪 -->
+<div class="h-14 rounded-[1px] overflow-hidden border border-[#CCD5C9] relative flex flex-col justify-end p-0.5 bg-black/30">
+<img alt="江雪" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VbOecy3mJgC676Y13_y6_L15m6t7HjZkH7U839t3G01qF9aA2vV_cQ34mE32v8sK-kQOQvVlFj0kYtB_hG9kI4-1p9lX4v"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<span class="relative text-[6px] font-headline font-semibold text-white leading-tight">江雪</span>
+<span class="relative text-[5px] font-headline text-white/80 leading-tight">柳宗元</span>
+</div>
+<!-- 卡3: 早发白帝城 -->
+<div class="h-14 rounded-[1px] overflow-hidden border border-[#CCD5C9] relative flex flex-col justify-end p-0.5 bg-black/30">
+<img alt="早发白帝城" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XWZawCUzSPGcp4AeUyYVWm8BUHMktv5ggBYD36pnm_103h1EfBWiR-9nGT1kdWdpOdeyAH9oknwDqR4xEDZqxz0skftvUe3eCUpF9H6GU1Rgj860liqIl3uZbqZ7fEZQP12nQR6R9KfXvqehOTY-hRn7qHwdUepbqaTBAoCubMmZHMMd7hWF4meeU-9tk8sBn05LegkWvZWzpPWbN_3g2qwV0cBwX5MHyiaziR8qleRIvyYQTN4em2eODZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<span class="relative text-[6px] font-headline font-semibold text-white leading-tight">白帝城</span>
+<span class="relative text-[5px] font-headline text-white/80 leading-tight">李白</span>
+</div>
+</div>
+<div class="text-[6px] font-headline text-on-surface-variant flex justify-between">
+<span>三卡等规舒展</span>
+<span class="text-pine-green font-medium">展卷呈现</span>
+</div>
+</div>
+<!-- 中央到右侧：宣纸自然受力大翻卷曲面（绢纸微泛青白 + 柔和曲面受光与阴影） -->
+<div class="w-[48%] h-full relative flex">
+<!-- 卷曲纸背层 (受光与背光自然渐变) -->
+<div class="w-[45%] h-full curl-shadow-f03 relative z-10 flex flex-col justify-center items-center" style="background: linear-gradient(100deg, #F0F4ED 0%, #E4E8E1 45%, #D0D9CD 85%, #BAC6B7 100%);">
+<!-- 纸纤维与曲面明暗光泽 -->
+<div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(#183236 1px, transparent 0); background-size: 6px 6px;"></div>
+<div class="absolute left-0 inset-y-0 w-2 bg-gradient-to-r from-white/40 to-transparent"></div>
+<div class="absolute right-0 inset-y-0 w-3 bg-gradient-to-l from-black/15 to-transparent"></div>
+</div>
+<!-- 卷页右半部正面（仍映衬枫桥夜色江景） -->
+<div class="w-[55%] h-full relative overflow-hidden bg-black/40">
+<img alt="枫桥夜泊残存右半幅" class="w-full h-full object-cover object-right" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- 单行中文说明 -->
+<p class="mt-3 text-xs font-headline text-on-surface text-center tracking-wide leading-relaxed">
+          03 · 纸页大翻，薄纸弧面自然受力卷折，已见首页三卡。
+        </p>
+</div>
+<!-- ==================== 帧 04 · 75% (右侧落纸) ==================== -->
+<div class="flex flex-col">
+<!-- 16:10 画面卡片 -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-silk-light border border-[#CCD5C9] shadow-xs rounded-[2px] transition-transform duration-300 hover:border-pine-green flex">
+<!-- 90% 以上画幅：平整展现的 S01 首页总览 -->
+<div class="w-[88%] h-full p-2 flex flex-col justify-between bg-[#D7DDD4]">
+<div class="flex items-center justify-between pb-1 border-b border-[#CCD5C9]">
+<span class="font-xingshu text-xs font-bold text-ink-dark">诗境·一卷山河</span>
+<div class="flex gap-1.5 text-[6.5px] font-headline text-ink-dark">
+<span class="text-pine-green font-bold">诗词总览</span>
+<span class="text-on-surface-variant">我的收藏</span>
+<span class="text-on-surface-variant">个人中心</span>
+</div>
+</div>
+<!-- 三张等规卡片已平稳舒展就位 -->
+<div class="grid grid-cols-3 gap-1 my-auto">
+<!-- 枫桥夜泊卡 (锁定就位) -->
+<div class="h-15 rounded-[1px] overflow-hidden border border-pine-green relative flex flex-col justify-end p-1 shadow-xs bg-black/20">
+<img alt="枫桥夜泊" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+<span class="relative text-[7px] font-headline font-bold text-white">枫桥夜泊</span>
+<span class="relative text-[5.5px] font-headline text-white/80">张继 · 苏州</span>
+</div>
+<!-- 江雪卡 -->
+<div class="h-15 rounded-[1px] overflow-hidden border border-[#CCD5C9] relative flex flex-col justify-end p-1 bg-black/20">
+<img alt="江雪" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VbOecy3mJgC676Y13_y6_L15m6t7HjZkH7U839t3G01qF9aA2vV_cQ34mE32v8sK-kQOQvVlFj0kYtB_hG9kI4-1p9lX4v"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+<span class="relative text-[7px] font-headline font-bold text-white">江雪</span>
+<span class="relative text-[5.5px] font-headline text-white/80">柳宗元 · 永州</span>
+</div>
+<!-- 早发白帝城卡 -->
+<div class="h-15 rounded-[1px] overflow-hidden border border-[#CCD5C9] relative flex flex-col justify-end p-1 bg-black/20">
+<img alt="早发白帝城" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XWZawCUzSPGcp4AeUyYVWm8BUHMktv5ggBYD36pnm_103h1EfBWiR-9nGT1kdWdpOdeyAH9oknwDqR4xEDZqxz0skftvUe3eCUpF9H6GU1Rgj860liqIl3uZbqZ7fEZQP12nQR6R9KfXvqehOTY-hRn7qHwdUepbqaTBAoCubMmZHMMd7hWF4meeU-9tk8sBn05LegkWvZWzpPWbN_3g2qwV0cBwX5MHyiaziR8qleRIvyYQTN4em2eODZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+<span class="relative text-[7px] font-headline font-bold text-white">早发白帝城</span>
+<span class="relative text-[5.5px] font-headline text-white/80">李白 · 夔门</span>
+</div>
+</div>
+<div class="flex justify-between items-center text-[6px] font-headline text-on-surface-variant pt-0.5">
+<span>三卷画册舒展</span>
+<span class="text-pine-green font-medium">落纸归稳</span>
+</div>
+</div>
+<!-- 右侧窄幅收尾纸卷与纸背收口 -->
+<div class="w-[12%] h-full bg-[#CBD3C8] curl-shadow-f04 border-l border-white/60 relative overflow-hidden flex flex-col justify-center items-center" style="background: linear-gradient(to right, #DCE2D9, #B9C4B6);">
+<div class="w-[1px] h-full bg-white/40 absolute left-0"></div>
+</div>
+</div>
+<!-- 单行中文说明 -->
+<p class="mt-3 text-xs font-headline text-on-surface text-center tracking-wide leading-relaxed">
+          04 · 弯纸收至右侧，S01 首页总览三卷诗卡舒展就位。
+        </p>
+</div>
+<!-- ==================== 帧 05 · 100% (稳固归位) ==================== -->
+<div class="flex flex-col">
+<!-- 16:10 画面卡片 (完全稳固呈现 S01 首页原生画卷，严格无返回规范) -->
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-[#D7DDD4] border border-[#CCD5C9] shadow-xs rounded-[2px] transition-transform duration-300 hover:border-pine-green p-2.5 flex flex-col justify-between">
+<!-- 首页顶栏 (严格无返回按键，交互完全解锁) -->
+<div class="flex items-center justify-between border-b border-[#CCD5C9] pb-1">
+<span class="font-xingshu text-xs font-bold text-ink-dark">诗境·一卷山河</span>
+<div class="flex gap-2 text-[7px] font-headline text-ink-dark">
+<span class="text-pine-green font-bold border-b border-pine-green pb-0.5">诗词总览</span>
+<span class="text-on-surface-variant">我的收藏</span>
+<span class="text-on-surface-variant">个人中心</span>
+</div>
+</div>
+<!-- 三张等规写实风景卡片完整排列 -->
+<div class="grid grid-cols-3 gap-1.5 my-auto">
+<!-- 卡片 1: 枫桥夜泊 -->
+<div class="h-16 rounded-[1px] border border-pine-green overflow-hidden relative shadow-xs flex flex-col justify-end p-1">
+<img alt="枫桥夜泊" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"></div>
+<span class="relative text-[7.5px] font-headline font-bold text-white leading-tight">枫桥夜泊</span>
+<span class="relative text-[6px] font-headline text-white/80 leading-tight">张继 · 苏州寒山寺</span>
+</div>
+<!-- 卡片 2: 江雪 -->
+<div class="h-16 rounded-[1px] border border-[#CCD5C9] overflow-hidden relative shadow-xs flex flex-col justify-end p-1">
+<img alt="江雪" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VbOecy3mJgC676Y13_y6_L15m6t7HjZkH7U839t3G01qF9aA2vV_cQ34mE32v8sK-kQOQvVlFj0kYtB_hG9kI4-1p9lX4v"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"></div>
+<span class="relative text-[7.5px] font-headline font-bold text-white leading-tight">江雪</span>
+<span class="relative text-[6px] font-headline text-white/80 leading-tight">柳宗元 · 永州孤舟</span>
+</div>
+<!-- 卡片 3: 早发白帝城 -->
+<div class="h-16 rounded-[1px] border border-[#CCD5C9] overflow-hidden relative shadow-xs flex flex-col justify-end p-1">
+<img alt="早发白帝城" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XWZawCUzSPGcp4AeUyYVWm8BUHMktv5ggBYD36pnm_103h1EfBWiR-9nGT1kdWdpOdeyAH9oknwDqR4xEDZqxz0skftvUe3eCUpF9H6GU1Rgj860liqIl3uZbqZ7fEZQP12nQR6R9KfXvqehOTY-hRn7qHwdUepbqaTBAoCubMmZHMMd7hWF4meeU-9tk8sBn05LegkWvZWzpPWbN_3g2qwV0cBwX5MHyiaziR8qleRIvyYQTN4em2eODZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"></div>
+<span class="relative text-[7.5px] font-headline font-bold text-white leading-tight">早发白帝城</span>
+<span class="relative text-[6px] font-headline text-white/80 leading-tight">李白 · 白帝彩云</span>
+</div>
+</div>
+<!-- 底注 -->
+<div class="flex justify-between items-center text-[7px] font-headline text-on-surface-variant border-t border-[#CCD5C9] pt-1">
+<span>循诗入境 · 展卷见山河</span>
+<span class="text-pine-green font-medium">总览就绪</span>
+</div>
+</div>
+<!-- 单行中文说明 -->
+<p class="mt-3 text-xs font-headline text-on-surface text-center tracking-wide leading-relaxed">
+          05 · 翻卷落定，稳固归位首页原生画卷，交互解锁。
+        </p>
+</div>
+</div>
+</div>
+<!-- 底部纯净留白过渡 -->
+<div class="h-4"></div>
+</main>
+<!-- ==================== 简短版权注记页脚 (Footer) ==================== -->
+<footer class="w-full mt-auto border-t border-[#CCD5C9] py-6 bg-transparent">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<p class="font-headline text-xs tracking-widest text-on-surface-variant opacity-75">
+      © 诗境·一卷山河 · 循诗入境 展卷见山河 · 视觉分镜待审稿
+    </p>
+</div>
+</footer>
+</body></html>

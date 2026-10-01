@@ -1,0 +1,258 @@
+{
+  "sourceFile": "sources/S01-home-desktop.stitch.html",
+  "tool": "project-installed Playwright / Chromium",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1100
+      },
+      "cards": [
+        {
+          "title": "枫桥夜泊",
+          "card": {
+            "left": 80,
+            "right": 485.328125,
+            "top": 353,
+            "bottom": 873,
+            "width": 405.328125,
+            "height": 520
+          },
+          "cover": {
+            "left": 81,
+            "right": 484.328125,
+            "top": 354,
+            "bottom": 694,
+            "width": 403.328125,
+            "height": 340
+          },
+          "action": {
+            "left": 384.71875,
+            "right": 464.328125,
+            "top": 824,
+            "bottom": 856,
+            "width": 79.609375,
+            "height": 32
+          },
+          "poem": {
+            "left": 101,
+            "right": 464.328125,
+            "top": 748.5,
+            "bottom": 769.5,
+            "width": 363.328125,
+            "height": 21
+          },
+          "previewText": "江枫渔火对愁眠",
+          "previewFits": true,
+          "buttonFits": true
+        },
+        {
+          "title": "江雪",
+          "card": {
+            "left": 517.328125,
+            "right": 922.65625,
+            "top": 345,
+            "bottom": 865,
+            "width": 405.328125,
+            "height": 520
+          },
+          "cover": {
+            "left": 518.328125,
+            "right": 921.65625,
+            "top": 346,
+            "bottom": 686,
+            "width": 403.328125,
+            "height": 340
+          },
+          "action": {
+            "left": 822.046875,
+            "right": 901.65625,
+            "top": 816,
+            "bottom": 848,
+            "width": 79.609375,
+            "height": 32
+          },
+          "poem": {
+            "left": 538.328125,
+            "right": 901.65625,
+            "top": 740.5,
+            "bottom": 761.5,
+            "width": 363.328125,
+            "height": 21
+          },
+          "previewText": "独钓寒江雪",
+          "previewFits": true,
+          "buttonFits": true
+        },
+        {
+          "title": "早发白帝城",
+          "card": {
+            "left": 954.65625,
+            "right": 1360,
+            "top": 353,
+            "bottom": 873,
+            "width": 405.34375,
+            "height": 520
+          },
+          "cover": {
+            "left": 955.65625,
+            "right": 1359,
+            "top": 354,
+            "bottom": 694,
+            "width": 403.34375,
+            "height": 340
+          },
+          "action": {
+            "left": 1259.390625,
+            "right": 1339,
+            "top": 824,
+            "bottom": 856,
+            "width": 79.609375,
+            "height": 32
+          },
+          "poem": {
+            "left": 975.65625,
+            "right": 1339,
+            "top": 748.5,
+            "bottom": 769.5,
+            "width": 363.34375,
+            "height": 21
+          },
+          "previewText": "轻舟已过万重山",
+          "previewFits": true,
+          "buttonFits": true
+        }
+      ],
+      "equalDimensions": true,
+      "equalCoverDimensions": true,
+      "contentFits": true
+    },
+    {
+      "viewport": {
+        "width": 1024,
+        "height": 1100
+      },
+      "cards": [
+        {
+          "title": "枫桥夜泊",
+          "card": {
+            "left": 32,
+            "right": 330.65625,
+            "top": 353,
+            "bottom": 873,
+            "width": 298.65625,
+            "height": 520
+          },
+          "cover": {
+            "left": 33,
+            "right": 329.65625,
+            "top": 354,
+            "bottom": 694,
+            "width": 296.65625,
+            "height": 340
+          },
+          "action": {
+            "left": 230.046875,
+            "right": 309.65625,
+            "top": 824,
+            "bottom": 856,
+            "width": 79.609375,
+            "height": 32
+          },
+          "poem": {
+            "left": 53,
+            "right": 309.65625,
+            "top": 748.5,
+            "bottom": 769.5,
+            "width": 256.65625,
+            "height": 21
+          },
+          "previewText": "江枫渔火对愁眠",
+          "previewFits": true,
+          "buttonFits": true
+        },
+        {
+          "title": "江雪",
+          "card": {
+            "left": 362.65625,
+            "right": 661.328125,
+            "top": 345,
+            "bottom": 865,
+            "width": 298.671875,
+            "height": 520
+          },
+          "cover": {
+            "left": 363.65625,
+            "right": 660.328125,
+            "top": 346,
+            "bottom": 686,
+            "width": 296.671875,
+            "height": 340
+          },
+          "action": {
+            "left": 560.71875,
+            "right": 640.328125,
+            "top": 816,
+            "bottom": 848,
+            "width": 79.609375,
+            "height": 32
+          },
+          "poem": {
+            "left": 383.65625,
+            "right": 640.328125,
+            "top": 740.5,
+            "bottom": 761.5,
+            "width": 256.671875,
+            "height": 21
+          },
+          "previewText": "独钓寒江雪",
+          "previewFits": true,
+          "buttonFits": true
+        },
+        {
+          "title": "早发白帝城",
+          "card": {
+            "left": 693.328125,
+            "right": 991.984375,
+            "top": 353,
+            "bottom": 873,
+            "width": 298.65625,
+            "height": 520
+          },
+          "cover": {
+            "left": 694.328125,
+            "right": 990.984375,
+            "top": 354,
+            "bottom": 694,
+            "width": 296.65625,
+            "height": 340
+          },
+          "action": {
+            "left": 891.375,
+            "right": 970.984375,
+            "top": 824,
+            "bottom": 856,
+            "width": 79.609375,
+            "height": 32
+          },
+          "poem": {
+            "left": 714.328125,
+            "right": 970.984375,
+            "top": 748.5,
+            "bottom": 769.5,
+            "width": 256.65625,
+            "height": 21
+          },
+          "previewText": "轻舟已过万重山",
+          "previewFits": true,
+          "buttonFits": true
+        }
+      ],
+      "equalDimensions": true,
+      "equalCoverDimensions": true,
+      "contentFits": true
+    }
+  ],
+  "passed": true,
+  "scope": "Static Stitch source card geometry only; no application implementation or animation certification."
+}

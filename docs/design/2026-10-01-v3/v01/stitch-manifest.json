@@ -1,0 +1,31 @@
+{
+  "provider": "Stitch",
+  "date": "2026-10-01",
+  "projectId": "11329297360365535924",
+  "projectUrl": "https://stitch.withgoogle.com/projects/11329297360365535924",
+  "visibility": "PRIVATE",
+  "sessionId": "18325508373902646628",
+  "screenId": "ac59c6f1c6ec4c018f75f992b8fc870d",
+  "screenshotResource": "projects/11329297360365535924/files/0c6bda08bc3b4719b660185e7de545cf",
+  "designSystem": "assets/13726476300397517796",
+  "requestedModel": "GEMINI_3_8_FLASH",
+  "operation": "generate_screen_from_text",
+  "approval": "NOT_REVIEWED_BY_USER",
+  "selfReview": "REVISION_REQUESTED",
+  "files": [
+    {
+      "file": "screens/S01-home-desktop.png",
+      "width": 2560,
+      "height": 2178,
+      "bytes": 1931947,
+      "sha256": "e3684ec1e3a607fd2cda89efa522c60d6d09ed675599a21ec5105fdff2c018f0"
+    },
+    {
+      "file": "screens/S01-home-desktop.thumbnail.png",
+      "width": 512,
+      "height": 436,
+      "bytes": 139336,
+      "sha256": "e838c16b0a404dd73d516fe2124960855358b1b7010b080b2d5ee074107f1f49"
+    }
+  ]
+}

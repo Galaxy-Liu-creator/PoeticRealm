@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - S01 首页 (单列诗句等规版)</title>
+<!-- Typography and Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "qingdai": "#183236",
+            "qingdai-dark": "#122528",
+            "qingdai-light": "#224247",
+            "juan-bg": "#DDE3DA",
+            "juan-tint": "#E8ECE5",
+            "qinglu": "#365C55",
+            "qinglu-hover": "#2B4C46",
+            "zhusha": "#9F493D",
+            "zhusha-soft": "#B25649",
+            "ink-dim": "#4A5859",
+            "ink-light": "#768685"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Noto Serif SC", "Noto Serif", "serif"],
+            display: ["Noto Serif SC", "serif"],
+            calligraphy: ["'Ma Shan Zheng'", "'Noto Serif SC'", "cursive", "serif"],
+            body: ["Noto Serif SC", "Public Sans", "sans-serif"],
+            label: ["Noto Serif SC", "Public Sans", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* Pure bookmark tag */
+    .seal-ribbon {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+  </style>
+</head>
+<body class="bg-juan-bg text-qingdai antialiased flex flex-col min-h-screen selection:bg-qinglu selection:text-white">
+<!-- ==================== 1. 深青黛山水题头区 (Header & Navigation) ==================== -->
+<header class="relative bg-qingdai text-[#E3EBE8] overflow-hidden shrink-0 border-none">
+<!-- Atmospheric Realistic Mountain Mist Backdrop -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-luminosity" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIuC7F27aTyGA-yb8UOQNe10TZDfjRWWhNnsS3uVqFQhaQo0lSmgWxKNG1nCQ97BKr-4l4kyy_hd3NL2JRYQTO0BxwO0t0wLD6pm__5KIa4g7M18WQscNOw_Zqa_NxtYDDsK2JjPEDDhlx7Kl2Z8qrqw6tAtgn__L9AiqC1iAANE3Rt5ikaiOdYRBcvuoh8C_SyCaKjGIeOJH0hxcIoGkNh6nuDHPOg9rK-gHWfgMUCvxkibfQt_6JvS8o0x0UFGxlm1OYSwkec9ot')">
+</div>
+<!-- Gentle gradient transitions for depth -->
+<div class="absolute inset-0 bg-gradient-to-b from-qingdai-dark/85 via-qingdai/70 to-qingdai"></div>
+<div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent to-juan-bg/15"></div>
+<!-- Subtle water shimmer line -->
+<div class="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#548079]/30 to-transparent"></div>
+</div>
+<!-- Top Navigation Bar -->
+<div class="relative z-20">
+<nav class="flex justify-between items-center w-full px-8 py-5 max-w-7xl mx-auto">
+<!-- Brand Logo / Calligraphic Text -->
+<a class="flex items-center space-x-2 group" href="#">
+<span class="font-calligraphy text-2xl tracking-widest text-[#F1F6F4] group-hover:text-juan-bg transition-colors duration-300">诗境·一卷山河</span>
+</a>
+<!-- Navigation Links: 诗词总览 (Active), 我的收藏, 个人中心. No back button on homepage -->
+<div class="flex items-center space-x-8 text-sm font-headline tracking-wider">
+<a class="text-[#E7ECE4] font-medium border-b border-zhusha pb-1 transition-colors duration-300" href="#">诗词总览</a>
+<a class="text-[#DDE3DA]/75 pb-1 hover:text-white transition-colors duration-300" href="#">我的收藏</a>
+<a class="text-[#DDE3DA]/75 pb-1 hover:text-white transition-colors duration-300" href="#">个人中心</a>
+</div>
+</nav>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-7xl mx-auto px-8 pt-4 pb-14 flex flex-col md:flex-row md:items-end md:justify-between">
+<div class="space-y-3 py-2">
+<h1 class="font-calligraphy text-4xl sm:text-5xl lg:text-[52px] tracking-widest text-[#F7FAF9] leading-tight select-none">诗境·一卷山河</h1>
+<p class="font-headline text-base text-[#B2C6C2] tracking-[0.22em] font-light max-w-lg">循诗入境，展卷见山河</p>
+</div>
+</div>
+</header>
+<!-- ==================== 2. 下方淡绢色青灰山水总览区 (Gallery Section) ==================== -->
+<main class="relative flex-1 bg-juan-bg bg-gradient-to-b from-juan-bg via-juan-tint to-juan-bg overflow-hidden py-10 px-8">
+<!-- Realistic Mountain & Water Landscape Texture Backdrop -->
+<div class="absolute inset-0 z-0 bg-cover bg-center mix-blend-multiply pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc'); background-size: cover; background-position: center; opacity: 0.55;"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-juan-bg/80 via-juan-tint/60 to-juan-bg/90 pointer-events-none z-0" style="opacity: 0.25;"></div>
+<div class="relative z-10 max-w-7xl mx-auto space-y-6">
+<!-- Section Header -->
+<div class="flex items-center justify-between border-b border-[#CCD6C7] pb-3">
+<h2 class="font-headline text-xl tracking-widest text-qingdai font-medium flex items-center gap-2">
+<span class="w-1.5 h-4 bg-qinglu rounded-xs inline-block"></span>
+      诗词总览
+    </h2>
+</div>
+<!-- 3 Classic Poetry Cards Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-7 lg:gap-8 items-start">
+<!-- CARD 1: 《枫桥夜泊》· 唐·张继 -->
+<article class="group relative transition-transform duration-300 hover:-translate-y-1" style="height: 520px; box-sizing: border-box; overflow: hidden; background: #FAFBF9; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #CCD6C7;">
+<!-- Pure Bookmark Ribbon -->
+<div class="absolute top-0 right-5 z-20">
+<div class="seal-ribbon bg-[#E4ECE1] border-x border-b border-[#BDCBB8] text-qinglu px-2 py-2 text-[10px] font-headline tracking-widest rounded-b flex items-center justify-center select-none">
+          典藏
+        </div>
+</div>
+<!-- Scenic Visual Artwork Container (340px) -->
+<div class="relative w-full shrink-0" style="height: 340px; box-sizing: border-box; overflow: hidden;">
+<img alt="枫桥夜泊 写实自然风光" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XWZawCUzSPGcp4AeUyYVWm8BUHMktv5ggBYD36pnm_103h1EfBWiR-9nGT1kdWdpOdeyAH9oknwDqR4xEDZqxz0skftvUe3eCUpF9H6GU1Rgj860liqIl3uZbqZ7fEZQP12nQR6R9KfXvqehOTY-hRn7qHwdUepbqaTBAoCubMmZHMMd7hWF4meeU-9tk8sBn05LegkWvZWzpPWbN_3g2qwV0cBwX5MHyiaziR8qleRIvyYQTN4em2eODZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+<!-- Dynasty & Author Badge -->
+<div class="absolute bottom-3 left-4">
+<span class="bg-[#183236]/80 text-[#DDE3DA] text-[11px] font-headline px-2.5 py-0.5 rounded-sm tracking-widest border border-white/10">
+            唐 · 张继
+          </span>
+</div>
+</div>
+<!-- Lower Information Area (180px) -->
+<div style="height: 180px; box-sizing: border-box; padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between;">
+<!-- Inner Upper Block (92px) -->
+<div style="height: 92px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start;">
+<!-- Title Row: Poem Title Left, Dynasty/Location Right -->
+<div class="flex items-baseline justify-between w-full">
+<h3 class="tracking-wider truncate" style="font-size: 20px; font-weight: 600; font-family: 'Noto Serif SC', serif; color: #183236; line-height: 1.2;">枫桥夜泊</h3>
+<span class="font-headline tracking-widest shrink-0" style="font-size: 13px; color: #6E7D79;">唐 · 姑苏</span>
+</div>
+<!-- Horizontal Poetry Preview -->
+<p style="writing-mode: horizontal-tb; font-size: 14px; letter-spacing: 0.08em; white-space: nowrap; color: #4B5A56; margin-top: 12px; font-family: 'Noto Serif SC', serif;">江枫渔火对愁眠</p>
+</div>
+<!-- Inner Lower Block (32px) -->
+<div style="height: 32px; box-sizing: border-box; display: flex; justify-content: flex-end; align-items: center;">
+<a class="inline-flex items-center gap-1 font-headline tracking-widest transition-colors duration-200 hover:bg-[#365C55] hover:text-white hover:border-[#365C55]" href="#" style="border: 1px solid #8C9E99; border-radius: 2px; padding: 4px 16px; font-size: 13px; color: #2C4843; line-height: 22px; height: 32px; box-sizing: border-box;">
+<span>入境</span>
+<span class="material-symbols-outlined text-[13px] leading-none">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- CARD 2: 《江雪》· 唐·柳宗元 (Subtle translateY offset, no scale) -->
+<article class="group relative transition-transform duration-300 md:-translate-y-2 hover:-translate-y-3" style="height: 520px; box-sizing: border-box; overflow: hidden; background: #FAFBF9; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #CCD6C7;">
+<!-- Pure Bookmark Ribbon -->
+<div class="absolute top-0 right-5 z-20">
+<div class="seal-ribbon bg-[#E4ECE1] border-x border-b border-[#BDCBB8] text-qinglu px-2 py-2 text-[10px] font-headline tracking-widest rounded-b flex items-center justify-center select-none">
+          典藏
+        </div>
+</div>
+<!-- Scenic Visual Artwork Container (340px) -->
+<div class="relative w-full shrink-0" style="height: 340px; box-sizing: border-box; overflow: hidden;">
+<img alt="江雪 寒江独钓写实风光" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VmQsYmYYmcih_2FVCB5UiEBdgXXGLb-k5za4VXolf91tDe3KdAsQVnAr9dmxmjCBQ_KMqJ2o-DIvDLUznR6S4rPfaR0lLV0Vd1gogaS_2Eed65_8qA7RsP7pMDCHWoq1TnFEHQJB3esYf_XzMOhGHpdjHtSbXEB3uDZuivmDHlSYfsMV4MywHNt2j7ELjLVjSd008FHP5p5yULmigW9HKOCBSZYc9sxXqage6jv-OYD3JCDngmjFDZ2itO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+<!-- Dynasty & Author Badge -->
+<div class="absolute bottom-3 left-4">
+<span class="bg-[#183236]/80 text-[#DDE3DA] text-[11px] font-headline px-2.5 py-0.5 rounded-sm tracking-widest border border-white/10">
+            唐 · 柳宗元
+          </span>
+</div>
+</div>
+<!-- Lower Information Area (180px) -->
+<div style="height: 180px; box-sizing: border-box; padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between;">
+<!-- Inner Upper Block (92px) -->
+<div style="height: 92px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start;">
+<!-- Title Row: Poem Title Left, Dynasty/Location Right -->
+<div class="flex items-baseline justify-between w-full">
+<h3 class="tracking-wider truncate" style="font-size: 20px; font-weight: 600; font-family: 'Noto Serif SC', serif; color: #183236; line-height: 1.2;">江雪</h3>
+<span class="font-headline tracking-widest shrink-0" style="font-size: 13px; color: #6E7D79;">唐 · 永州</span>
+</div>
+<!-- Horizontal Poetry Preview -->
+<p style="writing-mode: horizontal-tb; font-size: 14px; letter-spacing: 0.08em; white-space: nowrap; color: #4B5A56; margin-top: 12px; font-family: 'Noto Serif SC', serif;">独钓寒江雪</p>
+</div>
+<!-- Inner Lower Block (32px) -->
+<div style="height: 32px; box-sizing: border-box; display: flex; justify-content: flex-end; align-items: center;">
+<a class="inline-flex items-center gap-1 font-headline tracking-widest transition-colors duration-200 hover:bg-[#365C55] hover:text-white hover:border-[#365C55]" href="#" style="border: 1px solid #8C9E99; border-radius: 2px; padding: 4px 16px; font-size: 13px; color: #2C4843; line-height: 22px; height: 32px; box-sizing: border-box;">
+<span>入境</span>
+<span class="material-symbols-outlined text-[13px] leading-none">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- CARD 3: 《早发白帝城》· 唐·李白 -->
+<article class="group relative transition-transform duration-300 hover:-translate-y-1" style="height: 520px; box-sizing: border-box; overflow: hidden; background: #FAFBF9; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #CCD6C7;">
+<!-- Pure Bookmark Ribbon -->
+<div class="absolute top-0 right-5 z-20">
+<div class="seal-ribbon bg-[#E4ECE1] border-x border-b border-[#BDCBB8] text-qinglu px-2 py-2 text-[10px] font-headline tracking-widest rounded-b flex items-center justify-center select-none">
+          典藏
+        </div>
+</div>
+<!-- Scenic Visual Artwork Container (340px) -->
+<div class="relative w-full shrink-0" style="height: 340px; box-sizing: border-box; overflow: hidden;">
+<img alt="早发白帝城 三峡彩云写实风光" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VEu8St0B3JZT_HUeCfVSBFz3h52bGByRDAzeyn2sgi1zmQLFZ6-ZQlinkg2501pnSJNiQGUDjdtnnuePNG-yRC0UwTgKnr0-NyKQVY_FhTfJqscpBcPnJOcBjtifgbNTjb7YcFv4g0bhzkCnvWsGK1g9-kroHUVnl7gAA43cnbn2eFHHq-oPnlENezfC1rl4m0FpotEctsrPBZx-qAZOiwduzOx6EoOLsnYE27wTtUIgMF_g7mRD5rfoM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+<!-- Dynasty & Author Badge -->
+<div class="absolute bottom-3 left-4">
+<span class="bg-[#183236]/80 text-[#DDE3DA] text-[11px] font-headline px-2.5 py-0.5 rounded-sm tracking-widest border border-white/10">
+            唐 · 李白
+          </span>
+</div>
+</div>
+<!-- Lower Information Area (180px) -->
+<div style="height: 180px; box-sizing: border-box; padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between;">
+<!-- Inner Upper Block (92px) -->
+<div style="height: 92px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start;">
+<!-- Title Row: Poem Title Left, Dynasty/Location Right -->
+<div class="flex items-baseline justify-between w-full">
+<h3 class="tracking-wider truncate" style="font-size: 20px; font-weight: 600; font-family: 'Noto Serif SC', serif; color: #183236; line-height: 1.2;">早发白帝城</h3>
+<span class="font-headline tracking-widest shrink-0" style="font-size: 13px; color: #6E7D79;">唐 · 白帝城</span>
+</div>
+<!-- Horizontal Poetry Preview -->
+<p style="writing-mode: horizontal-tb; font-size: 14px; letter-spacing: 0.08em; white-space: nowrap; color: #4B5A56; margin-top: 12px; font-family: 'Noto Serif SC', serif;">轻舟已过万重山</p>
+</div>
+<!-- Inner Lower Block (32px) -->
+<div style="height: 32px; box-sizing: border-box; display: flex; justify-content: flex-end; align-items: center;">
+<a class="inline-flex items-center gap-1 font-headline tracking-widest transition-colors duration-200 hover:bg-[#365C55] hover:text-white hover:border-[#365C55]" href="#" style="border: 1px solid #8C9E99; border-radius: 2px; padding: 4px 16px; font-size: 13px; color: #2C4843; line-height: 22px; height: 32px; box-sizing: border-box;">
+<span>入境</span>
+<span class="material-symbols-outlined text-[13px] leading-none">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- ==================== 3. 底部优雅收尾 (Footer) ==================== -->
+<footer class="bg-juan-bg border-t border-[#CCD6C7]/60 text-ink-dim shrink-0">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-8 max-w-7xl mx-auto opacity-75">
+<div class="flex items-center justify-center w-full py-2">
+<span class="font-headline text-xs tracking-widest text-ink-dim">© 诗境·一卷山河 · 循诗入境 展卷见山河</span>
+</div>
+</div>
+</footer>
+</body></html>

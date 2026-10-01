@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - T03 云水入峡入境分镜审批板</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Public+Sans:wght@300;400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              ink: "#183236",         // 深青黛山水题头
+              silk: "#DDE3DA",        // 青灰绢色底景
+              pine: "#365C55",        // 远山青绿
+              cinnabar: "#9F493D",    // 朱砂点睛
+              paper: "#F7F8F5",       // 绢帛纸基米白
+              mist: "#ECEFEA",        // 晨雾浅灰
+              border: "#C7D0C5"       // 经络绢纹边线
+            },
+            "on-surface": "#183236",
+            "on-surface-variant": "#4E605D",
+            "surface": "#F2F5F0",
+            "surface-container": "#E3E9E0",
+            "primary": "#365C55",
+            "inverse-primary": "#A5C6BD",
+            "inverse-on-surface": "#F2F5F0"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Noto Serif SC", "Noto Serif", "serif"],
+            display: ["Noto Serif SC", "Noto Serif", "serif"],
+            calligraphy: ["Ma Shan Zheng", "Noto Serif SC", "cursive", "serif"],
+            body: ["Public Sans", "Noto Serif SC", "sans-serif"],
+            label: ["Public Sans", "sans-serif"]
+          },
+          aspectRatio: {
+            '16/10': '16 / 10',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .vertical-poetry {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      letter-spacing: 0.38em;
+    }
+    .chinese-seal {
+      border: 1px solid #9F493D;
+      color: #9F493D;
+      padding: 2px 4px;
+      line-height: 1.1;
+      font-size: 0.65rem;
+      border-radius: 1px;
+    }
+    /* Subtle silk texture backdrop */
+    .silk-pattern {
+      background-color: #F6F8F4;
+      background-image: radial-gradient(#CCD5CA 0.65px, transparent 0.65px), radial-gradient(#CCD5CA 0.65px, #F6F8F4 0.65px);
+      background-size: 26px 26px;
+      background-position: 0 0, 13px 13px;
+    }
+  </style>
+</head>
+<body class="silk-pattern text-brand-ink antialiased selection:bg-brand-pine selection:text-white min-h-screen flex flex-col font-body">
+<!-- ================= TOP APP BAR (Shared Component Anchored) ================= -->
+<header class="w-full bg-[#183236] text-[#DDE3DA] shadow-sm sticky top-0 z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 md:px-8 py-3.5 max-w-[1720px] mx-auto">
+<!-- Left: Back Navigation + Brand Name + Page Anchor Identifier -->
+<div class="flex items-center space-x-4">
+<a class="inline-flex items-center text-xs tracking-wider text-[#DDE3DA]/80 hover:text-white transition-colors duration-200 group" href="#overview">
+<span class="material-symbols-outlined text-sm mr-1 group-hover:-translate-x-0.5 transition-transform">cloud_upload</span>
+          返回总览
+        </a>
+<div class="h-3.5 w-px bg-[#DDE3DA]/25"></div>
+<div class="flex items-baseline space-x-2.5">
+<span class="font-calligraphy text-xl md:text-2xl text-white tracking-widest leading-none drop-shadow-sm">诗境·一卷山河</span>
+<span class="hidden sm:inline-block text-[11px] font-headline text-brand-silk/75 tracking-wider border border-brand-pine/60 px-2 py-0.5 rounded-sm bg-brand-pine/20">
+            入境转场规范 · T03 云水入峡分镜
+          </span>
+</div>
+</div>
+<!-- Right: Navigation Links + Status Badge -->
+<div class="flex items-center space-x-6">
+<nav class="hidden md:flex items-center space-x-6 text-xs font-body tracking-wider">
+<a class="text-white font-medium border-b border-brand-silk pb-0.5" href="#">诗词总览</a>
+<a class="text-[#DDE3DA]/75 hover:text-white transition-colors duration-200 pb-0.5" href="#">我的收藏</a>
+<a class="text-[#DDE3DA]/75 hover:text-white transition-colors duration-200 pb-0.5" href="#">个人中心</a>
+</nav>
+<div class="h-3.5 w-px bg-[#DDE3DA]/25 hidden md:block"></div>
+<div class="flex items-center space-x-2">
+<span class="inline-flex items-center text-[11px] tracking-widest text-[#DDE3DA] bg-brand-pine/50 border border-brand-silk/30 px-2.5 py-1 rounded-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-cinnabar mr-1.5 animate-pulse"></span>
+            评审状态：待审定
+          </span>
+</div>
+</div>
+</div>
+</header>
+<!-- ================= SUB-HEADER / BANNER / CONTEXT STRIP ================= -->
+<section class="bg-brand-ink/95 border-b border-brand-pine/30 text-brand-silk px-6 md:px-8 py-4">
+<div class="max-w-[1720px] mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div>
+<div class="flex items-center space-x-3 mb-1">
+<span class="chinese-seal border-brand-silk/60 text-brand-silk">审定案例文档</span>
+<h1 class="font-headline text-lg md:text-xl text-white font-normal tracking-widest">
+            云水入峡入境 · 交互分镜规范
+          </h1>
+<span class="text-xs text-brand-silk/60 font-mono">CODE: T03-MIST-GORGE</span>
+</div>
+<p class="text-xs md:text-sm text-brand-silk/80 tracking-wide font-headline max-w-4xl leading-relaxed">
+          以晨雾生发、云水顺峡江流转入峡为意象，由源页诗词总览平滑过渡至《早发白帝城》夔门霞光诗境。非生硬白屏、无剧烈运镜俯冲，重在写实自然水气与文人画卷气韵连贯。
+        </p>
+</div>
+<!-- Right side transition parameters -->
+<div class="flex flex-wrap items-center gap-2 text-xs font-mono">
+<div class="px-3 py-1.5 rounded-sm bg-brand-pine/40 border border-brand-pine/60 flex items-center space-x-1.5">
+<span class="text-brand-silk/60">时长:</span>
+<span class="text-white font-medium">1300ms</span>
+</div>
+<div class="px-3 py-1.5 rounded-sm bg-brand-pine/40 border border-brand-pine/60 flex items-center space-x-1.5">
+<span class="text-brand-silk/60">缓动:</span>
+<span class="text-brand-silk font-medium">cubic-bezier(0.18, 1, 0.32, 1)</span>
+</div>
+<div class="px-3 py-1.5 rounded-sm bg-brand-pine/40 border border-brand-pine/60 flex items-center space-x-1.5">
+<span class="text-brand-silk/60">着色器/遮罩:</span>
+<span class="text-[#E7B8B0] font-medium">Canvas水气晨雾蒙版 (RiverMistFilter)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= MAIN CONTENT: FIVE-FRAME HORIZONTAL TIME STORYBOARD ================= -->
+<main class="flex-1 max-w-[1720px] w-full mx-auto px-4 md:px-8 py-8 flex flex-col justify-between">
+<!-- Timeline Tracker Header -->
+<div class="flex items-center justify-between mb-4 border-b border-brand-border/70 pb-3">
+<div class="flex items-center space-x-3">
+<span class="w-2 h-2 rounded-none rotate-45 bg-brand-cinnabar inline-block"></span>
+<h2 class="font-headline text-base tracking-widest text-brand-ink font-semibold">五帧横向时序拆解画廊</h2>
+<span class="text-xs text-brand-on-surface-variant font-serif">16:10 宽画幅渲染视窗 / 时间基准 1300ms</span>
+</div>
+<div class="hidden sm:flex items-center space-x-2 text-xs text-brand-on-surface-variant font-mono">
+<span>0ms (T0)</span>
+<div class="w-32 h-1 bg-brand-border/60 rounded-full overflow-hidden flex">
+<div class="w-full bg-gradient-to-r from-brand-pine via-brand-silk to-brand-cinnabar"></div>
+</div>
+<span>1300ms (Tend)</span>
+</div>
+</div>
+<!-- 5-Columns Grid (Equal width, 16:10 aspect ratio cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4.5 mb-8">
+<!-- ================= FRAME 01 ================= -->
+<div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col hover:border-brand-pine transition-all duration-300">
+<!-- Frame Header / Step Badge -->
+<div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs">
+<div class="flex items-center space-x-2">
+<span class="font-mono font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">F01</span>
+<span class="font-headline font-semibold text-brand-ink">静观总览</span>
+</div>
+<span class="font-mono text-brand-on-surface-variant text-[11px]">0% · 0ms</span>
+</div>
+<!-- 16:10 Viewport Canvas Simulated Frame -->
+<div class="relative aspect-16/10 w-full overflow-hidden bg-brand-silk/40 border-b border-brand-border/50 group">
+<!-- Background S01 Preview (Silk Overview Image) -->
+<img alt="S01 Overview Grid State" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc"/>
+<!-- UI Simulation Layer (S01 3-card mini grid) -->
+<div class="absolute inset-0 p-2 flex flex-col justify-between bg-black/10">
+<div class="flex items-center justify-between text-[8px] text-brand-ink font-headline">
+<span class="bg-white/85 px-1 py-0.5 rounded-xs">S01 诗词总览</span>
+<span class="text-white drop-shadow">静水无波</span>
+</div>
+<!-- Highlight trigger card -->
+<div class="bg-white/90 p-1.5 rounded-xs border border-brand-pine/40 shadow-xs flex items-center justify-between">
+<div class="text-[9px] font-headline font-bold text-brand-ink">早发白帝城</div>
+<span class="text-[8px] bg-brand-cinnabar text-white px-1.5 py-0.5 rounded-xs animate-pulse">入境 →</span>
+</div>
+</div>
+<!-- Micro Cursor / Trigger indication -->
+<div class="absolute bottom-2.5 right-6 pointer-events-none">
+<span class="material-symbols-outlined text-sm text-brand-cinnabar drop-shadow">near_me</span>
+</div>
+</div>
+<!-- Details / Storyboard Notes -->
+<div class="p-3.5 flex-1 flex flex-col justify-between text-xs">
+<div>
+<h3 class="font-headline text-xs font-semibold text-brand-ink mb-1.5">【源页画卷 · 触发锚点】</h3>
+<p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed mb-3">
+              首页稳定三卡等规网格形态。用户点击《早发白帝城》“入境”触发器，系统完成视口坐标捕捉，待命实例化峡江云水着色器。
+            </p>
+</div>
+<div class="pt-2 border-t border-brand-border/40 font-mono text-[10.5px] space-y-1 text-brand-on-surface-variant/90">
+<div class="flex justify-between">
+<span>江流气象:</span>
+<span class="text-brand-ink">静稳微风 · 0 m/s</span>
+</div>
+<div class="flex justify-between">
+<span>云水密度:</span>
+<span class="text-brand-pine font-medium">0% (待命)</span>
+</div>
+<div class="flex justify-between">
+<span>DOM 状态:</span>
+<span class="text-brand-ink">S01 活跃渲染</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= FRAME 02 ================= -->
+<div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col hover:border-brand-pine transition-all duration-300">
+<!-- Frame Header / Step Badge -->
+<div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs">
+<div class="flex items-center space-x-2">
+<span class="font-mono font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">F02</span>
+<span class="font-headline font-semibold text-brand-ink">晨雾初起</span>
+</div>
+<span class="font-mono text-brand-on-surface-variant text-[11px]">25% · 325ms</span>
+</div>
+<!-- 16:10 Viewport Canvas Simulated Frame -->
+<div class="relative aspect-16/10 w-full overflow-hidden bg-brand-silk/40 border-b border-brand-border/50">
+<img alt="Mist creeping in" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc"/>
+<!-- Flowing river mist overlay simulation -->
+<div class="absolute inset-0 bg-gradient-to-l from-white/80 via-white/40 to-transparent mix-blend-screen pointer-events-none"></div>
+<div class="absolute inset-0 backdrop-blur-[0.8px] bg-brand-silk/20"></div>
+<div class="absolute inset-0 p-2 flex flex-col justify-between">
+<div class="flex items-center justify-between text-[8px] font-headline text-brand-ink">
+<span class="bg-brand-paper/90 px-1 py-0.5 rounded-xs text-brand-pine">水汽顺峡生成</span>
+<span class="text-brand-pine text-[8px] font-mono">Wind 15°</span>
+</div>
+<div class="text-right">
+<span class="text-[9px] font-headline text-white drop-shadow-md bg-brand-pine/70 px-1.5 py-0.5 rounded-xs">
+                薄雾自右向中蔓延
+              </span>
+</div>
+</div>
+</div>
+<!-- Details / Storyboard Notes -->
+<div class="p-3.5 flex-1 flex flex-col justify-between text-xs">
+<div>
+<h3 class="font-headline text-xs font-semibold text-brand-ink mb-1.5">【江向薄水 · 气象蔓生】</h3>
+<p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed mb-3">
+              极淡柔和的白帝江面薄雾自右向中沿江水流动方向自然铺展，源页卡片微渐散退，背景泛起青翠与晨曦微润质感。
+            </p>
+</div>
+<div class="pt-2 border-t border-brand-border/40 font-mono text-[10.5px] space-y-1 text-brand-on-surface-variant/90">
+<div class="flex justify-between">
+<span>风向倾角:</span>
+<span class="text-brand-ink">右向左顺峡江 15°</span>
+</div>
+<div class="flex justify-between">
+<span>覆盖面积:</span>
+<span class="text-brand-pine font-medium">25% 广域破入</span>
+</div>
+<div class="flex justify-between">
+<span>音频层:</span>
+<span class="text-brand-ink">微水波 (-26dB)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= FRAME 03 (PEAK) ================= -->
+<div class="bg-white/80 border-2 border-brand-pine/60 rounded-sm shadow-md flex flex-col relative overflow-hidden">
+<div class="absolute top-0 right-0 w-8 h-8 pointer-events-none overflow-hidden">
+<div class="bg-brand-pine text-white text-[8px] py-0.5 text-center absolute transform rotate-45 w-12 top-1 -right-3 shadow-xs">PEAK</div>
+</div>
+<!-- Frame Header / Step Badge -->
+<div class="px-3.5 py-2.5 bg-brand-pine/10 border-b border-brand-pine/30 flex items-center justify-between text-xs">
+<div class="flex items-center space-x-2">
+<span class="font-mono font-bold text-white text-xs px-1.5 py-0.5 bg-brand-pine rounded-xs">F03</span>
+<span class="font-headline font-bold text-brand-ink">云水漫峡</span>
+</div>
+<span class="font-mono font-semibold text-brand-cinnabar text-[11px]">50% · 650ms</span>
+</div>
+<!-- 16:10 Viewport Canvas Simulated Frame (Peak Mist Diffusion) -->
+<div class="relative aspect-16/10 w-full overflow-hidden bg-[#E2E7DF] border-b border-brand-border/50">
+<!-- Translucent silhouette of mountain emerging beneath mist -->
+<div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://lh3.googleusercontent.com/aida/AEtjO1VXMf-lXqtJVjv0Pgp3ArFIJ9p_JxJ_PdPTLRrqCZcz03vaDklwMzPhCApnVulqkygNZvY6O9vuk843nUweRlE06sXE-FrU7YPKSDcgB_UMBE9jgEBJmuT1-FaVKRqKuRwSZ3DOEe8Q12VLOyzCLaKhTypz1_dy4a3byxCYSjMx-01JNzPfdJvHmLAA4ZOKcvHd_hyamXCdrO9rXJw_CeEoM4ae9qG4fkpMBwR5rt4iLM5KK2GOaw46aCPJ');"></div>
+<!-- Dense layered mist simulation -->
+<div class="absolute inset-0 bg-gradient-to-b from-white/90 via-[#DDE3DA]/80 to-white/95 backdrop-blur-[2px]"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-2 text-center">
+<span class="chinese-seal text-brand-cinnabar border-brand-cinnabar mb-1 bg-white/60">境态置换节点</span>
+<span class="text-[10px] font-headline text-brand-ink/90 font-medium tracking-widest">
+              S01 卸载 ➔ S04 早发白帝城装载
+            </span>
+<span class="text-[8px] font-mono text-brand-pine mt-0.5">连续性雾幕 · 无白屏闪变</span>
+</div>
+</div>
+<!-- Details / Storyboard Notes -->
+<div class="p-3.5 flex-1 flex flex-col justify-between text-xs">
+<div>
+<h3 class="font-headline text-xs font-bold text-brand-ink mb-1.5">【云水漫峡 · 连续置换】</h3>
+<p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed mb-3">
+              晨雾水气达到峰值浓度，温润柔和的天然白雾轻柔漫过全幅，完成由 S01 DOM 节点向 S04 早发白帝城 DOM 诗境的无缝置换。
+            </p>
+</div>
+<div class="pt-2 border-t border-brand-border/40 font-mono text-[10.5px] space-y-1 text-brand-on-surface-variant/90">
+<div class="flex justify-between">
+<span>遮罩浓度:</span>
+<span class="text-brand-cinnabar font-semibold">70% 柔润晨雾</span>
+</div>
+<div class="flex justify-between">
+<span>水气粒子指数:</span>
+<span class="text-brand-pine font-medium">~45 柔光片层</span>
+</div>
+<div class="flex justify-between">
+<span>置换延迟:</span>
+<span class="text-brand-ink">0ms (即刻挂载)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= FRAME 04 ================= -->
+<div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col hover:border-brand-pine transition-all duration-300">
+<!-- Frame Header / Step Badge -->
+<div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs">
+<div class="flex items-center space-x-2">
+<span class="font-mono font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">F04</span>
+<span class="font-headline font-semibold text-brand-ink">峡门初开</span>
+</div>
+<span class="font-mono text-brand-on-surface-variant text-[11px]">75% · 975ms</span>
+</div>
+<!-- 16:10 Viewport Canvas Simulated Frame -->
+<div class="relative aspect-16/10 w-full overflow-hidden bg-brand-silk/40 border-b border-brand-border/50">
+<img alt="Kuimen Gorge Emerging" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXMf-lXqtJVjv0Pgp3ArFIJ9p_JxJ_PdPTLRrqCZcz03vaDklwMzPhCApnVulqkygNZvY6O9vuk843nUweRlE06sXE-FrU7YPKSDcgB_UMBE9jgEBJmuT1-FaVKRqKuRwSZ3DOEe8Q12VLOyzCLaKhTypz1_dy4a3byxCYSjMx-01JNzPfdJvHmLAA4ZOKcvHd_hyamXCdrO9rXJw_CeEoM4ae9qG4fkpMBwR5rt4iLM5KK2GOaw46aCPJ"/>
+<!-- Dissipating mist overlay -->
+<div class="absolute inset-0 bg-radial from-transparent via-white/30 to-white/70 backdrop-blur-[0.5px] pointer-events-none"></div>
+<!-- Vertical poetry beginning to condense -->
+<div class="absolute top-2 left-3 bg-white/75 px-1 py-1 rounded-xs backdrop-blur-xs">
+<div class="vertical-poetry text-[7px] font-headline text-brand-ink/75 leading-tight">
+              朝辞白帝彩云间
+            </div>
+</div>
+<div class="absolute bottom-2 right-2 text-right">
+<span class="text-[8px] font-headline text-white drop-shadow bg-black/40 px-1 py-0.5 rounded-xs">
+              轻舟顺江初显
+            </span>
+</div>
+</div>
+<!-- Details / Storyboard Notes -->
+<div class="p-3.5 flex-1 flex flex-col justify-between text-xs">
+<div>
+<h3 class="font-headline text-xs font-semibold text-brand-ink mb-1.5">【晨霞透峡 · 景深还原】</h3>
+<p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed mb-3">
+              晨雾向两岸峡壁迅速消散，夔门雄浑峡谷、朝霞红晕与碧江中顺流而下的轻舟清晰浮现，左上角诗文自晨雾中渐凝。
+            </p>
+</div>
+<div class="pt-2 border-t border-brand-border/40 font-mono text-[10.5px] space-y-1 text-brand-on-surface-variant/90">
+<div class="flex justify-between">
+<span>景深还原:</span>
+<span class="text-brand-pine font-medium">85% 清晰度</span>
+</div>
+<div class="flex justify-between">
+<span>诗文显色度:</span>
+<span class="text-brand-ink">60% 水墨渐聚</span>
+</div>
+<div class="flex justify-between">
+<span>风力阻尼:</span>
+<span class="text-brand-ink">减速曲线生效</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= FRAME 05 ================= -->
+<div class="bg-white/80 border border-brand-border/80 rounded-sm shadow-sm flex flex-col hover:border-brand-pine transition-all duration-300">
+<!-- Frame Header / Step Badge -->
+<div class="px-3.5 py-2.5 bg-brand-paper border-b border-brand-border/60 flex items-center justify-between text-xs">
+<div class="flex items-center space-x-2">
+<span class="font-mono font-semibold text-brand-ink text-xs px-1.5 py-0.5 bg-brand-silk/60 rounded-xs">F05</span>
+<span class="font-headline font-semibold text-brand-ink">境定白帝</span>
+</div>
+<span class="font-mono text-brand-pine font-medium text-[11px]">100% · 1300ms</span>
+</div>
+<!-- 16:10 Viewport Canvas Simulated Frame -->
+<div class="relative aspect-16/10 w-full overflow-hidden bg-brand-silk/40 border-b border-brand-border/50">
+<img alt="Full Baidi City View" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VXMf-lXqtJVjv0Pgp3ArFIJ9p_JxJ_PdPTLRrqCZcz03vaDklwMzPhCApnVulqkygNZvY6O9vuk843nUweRlE06sXE-FrU7YPKSDcgB_UMBE9jgEBJmuT1-FaVKRqKuRwSZ3DOEe8Q12VLOyzCLaKhTypz1_dy4a3byxCYSjMx-01JNzPfdJvHmLAA4ZOKcvHd_hyamXCdrO9rXJw_CeEoM4ae9qG4fkpMBwR5rt4iLM5KK2GOaw46aCPJ"/>
+<!-- Full UI Overlay on Baidi City -->
+<div class="absolute inset-0 p-2 flex flex-col justify-between">
+<!-- Left top vertical poem -->
+<div class="bg-brand-paper/90 p-1.5 rounded-xs border border-brand-border/60 max-w-fit shadow-xs">
+<div class="flex space-x-1.5 vertical-poetry text-[7px] font-headline text-brand-ink leading-tight font-medium">
+<span>朝辞白帝彩云间</span>
+<span>千里江陵一日还</span>
+<span>两岸猿声啼不住</span>
+<span>轻舟已过万重山</span>
+</div>
+</div>
+<!-- Top right audio status -->
+<div class="self-end bg-brand-ink/75 text-brand-silk text-[7.5px] px-1.5 py-0.5 rounded-xs flex items-center space-x-1">
+<span class="material-symbols-outlined text-[10px]">volume_off</span>
+<span>两岸猿声 · 已闭</span>
+</div>
+</div>
+</div>
+<!-- Details / Storyboard Notes -->
+<div class="p-3.5 flex-1 flex flex-col justify-between text-xs">
+<div>
+<h3 class="font-headline text-xs font-semibold text-brand-ink mb-1.5">【境定白帝 · 霞光常驻】</h3>
+<p class="text-[11.5px] text-brand-on-surface-variant font-headline leading-relaxed mb-3">
+              早发白帝城诗境全貌确立，四句竖排诗文沉静稳固，水流缓行，界面交互控件完全解锁，进入深度诗意阅读环境。
+            </p>
+</div>
+<div class="pt-2 border-t border-brand-border/40 font-mono text-[10.5px] space-y-1 text-brand-on-surface-variant/90">
+<div class="flex justify-between">
+<span>常驻薄雾:</span>
+<span class="text-brand-ink">5% 峡间晨氲</span>
+</div>
+<div class="flex justify-between">
+<span>交互层:</span>
+<span class="text-brand-pine font-medium">完全解锁 (返回/收藏)</span>
+</div>
+<div class="flex justify-between">
+<span>阅读环境:</span>
+<span class="text-brand-ink">S04 终态确立</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= THREE TECHNICAL & EXPERIENCE AUDIT COLUMNS ================= -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<!-- Tech Column 1: Shader & Fluid Dynamics -->
+<div class="bg-white/85 border border-brand-border/90 p-5 rounded-sm shadow-xs flex flex-col">
+<div class="flex items-center space-x-2.5 mb-3 border-b border-brand-border/60 pb-2.5">
+<span class="material-symbols-outlined text-brand-pine text-base">water_drop</span>
+<h4 class="font-headline text-sm font-semibold text-brand-ink tracking-wider">
+            01. 物理流体与水气着色器规则
+          </h4>
+</div>
+<p class="text-xs text-brand-on-surface-variant font-headline leading-relaxed mb-4">
+          严禁粗大剪纸光粒或粒子游戏特效，采用三层微景深（前景色散、中景柔水雾、远景峡气），以青灰绢色 #DDE3DA 融合远山青绿 #365C55 渐变羽化，宣纸微噪点 2.5% 保留纯正绢帛材质。
+        </p>
+<div class="bg-brand-paper p-3 rounded-xs border border-brand-border/70 text-[11px] font-mono space-y-1.5 mt-auto">
+<div class="text-brand-pine font-semibold">Shader: RiverMistFilter.frag (GLSL 3.0)</div>
+<div class="text-brand-on-surface-variant">▸ 混合模式: Soft-Light + Screen (RGB Pass)</div>
+<div class="text-brand-on-surface-variant">▸ 显存占用: &lt; 1.5MB ｜ 粒子开销: ~45 柔斑</div>
+<div class="text-brand-on-surface-variant">▸ 水流矢量: Vector2(0.85, 0.15) 峡向缓推</div>
+</div>
+</div>
+<!-- Tech Column 2: A11y & Motion Degradation -->
+<div class="bg-white/85 border border-brand-border/90 p-5 rounded-sm shadow-xs flex flex-col">
+<div class="flex items-center space-x-2.5 mb-3 border-b border-brand-border/60 pb-2.5">
+<span class="material-symbols-outlined text-brand-pine text-base">accessibility_new</span>
+<h4 class="font-headline text-sm font-semibold text-brand-ink tracking-wider">
+            02. 无障碍与平稳降级策略
+          </h4>
+</div>
+<p class="text-xs text-brand-on-surface-variant font-headline leading-relaxed mb-4">
+          遵从东方文人“宁静温润”阅读舒适度。减弱动态模式（prefers-reduced-motion）自动旁路流体计算，退化为 300ms 纯净静止淡入淡出（Cross-fade）；严禁任何高频频闪或高亮白光炸裂。
+        </p>
+<div class="bg-brand-paper p-3 rounded-xs border border-brand-border/70 text-[11px] font-mono space-y-1.5 mt-auto">
+<div class="text-brand-pine font-semibold">A11y: WCAG 2.1 AA Motion (Pass 0 Strobe)</div>
+<div class="text-brand-on-surface-variant">▸ 动态减弱判定: 降解至 300ms 绢帛淡出</div>
+<div class="text-brand-on-surface-variant">▸ 帧率监控自适应: &lt; 45 FPS 自动退化 2D Canvas</div>
+<div class="text-brand-on-surface-variant">▸ 防眩光控制: 雾屏亮度峰值 &lt; 92% 纸白阈值</div>
+</div>
+</div>
+<!-- Tech Column 3: Audio & Ambiance Alignment -->
+<div class="bg-white/85 border border-brand-border/90 p-5 rounded-sm shadow-xs flex flex-col">
+<div class="flex items-center space-x-2.5 mb-3 border-b border-brand-border/60 pb-2.5">
+<span class="material-symbols-outlined text-brand-pine text-base">graphic_eq</span>
+<h4 class="font-headline text-sm font-semibold text-brand-ink tracking-wider">
+            03. 视听联合触发与意境落地
+          </h4>
+</div>
+<p class="text-xs text-brand-on-surface-variant font-headline leading-relaxed mb-4">
+          声音服务于画面意境，绝不突兀惊扰。25% 微弱晨风轻掠右声道微入；50% 峰值江水拍岸碎浪柔化；100% 风声底止，仅存极细微空间白噪音，顶栏静音指示显示“两岸猿声 · 声音已闭”。
+        </p>
+<div class="bg-brand-paper p-3 rounded-xs border border-brand-border/70 text-[11px] font-mono space-y-1.5 mt-auto">
+<div class="text-brand-pine font-semibold">Audio: Spatial River Wind Curve (WebAudio)</div>
+<div class="text-brand-on-surface-variant">▸ 增益包络: Attack 400ms / Decay 800ms</div>
+<div class="text-brand-on-surface-variant">▸ 频响限制: 低切 180Hz / 高切 4.5kHz 柔和暖调</div>
+<div class="text-brand-on-surface-variant">▸ 状态回执: 终态常驻静音（防听觉疲劳）</div>
+</div>
+</div>
+</div>
+<!-- ================= ACTION BAR & APPROVAL CONTROLS ================= -->
+<div class="bg-[#183236] text-[#DDE3DA] p-4 md:px-6 rounded-sm flex flex-col md:flex-row items-center justify-between gap-4 border border-brand-pine/50 shadow-sm">
+<div class="flex items-center space-x-4 text-xs font-mono">
+<span class="chinese-seal text-brand-silk border-brand-silk/70">引擎就绪</span>
+<div class="flex items-center space-x-2 text-[#DDE3DA]/80">
+<span>显存占用: &lt; 1.5MB</span>
+<span>｜</span>
+<span>水气开销: ~45 柔斑</span>
+<span>｜</span>
+<span>渲染通道: WebGL2 / 2D Canvas 回退良好</span>
+</div>
+</div>
+<div class="flex items-center space-x-3 w-full md:w-auto justify-end">
+<button class="text-xs font-headline px-4 py-2 border border-brand-silk/40 text-brand-silk hover:bg-brand-pine/30 transition-colors duration-200 rounded-sm" type="button">
+          导出云水动效参数 JSON
+        </button>
+<button class="text-xs font-headline px-5 py-2 bg-brand-cinnabar text-white hover:bg-[#8B3E33] transition-colors duration-200 rounded-sm shadow-xs flex items-center space-x-1.5" type="button">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>通过此转场动效审批</span>
+</button>
+</div>
+</div>
+</main>
+<!-- ================= FOOTER (Shared Component Anchored) ================= -->
+<footer class="w-full bg-[#F2F5F0] border-t border-brand-border/60 mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-8 max-w-[1720px] mx-auto opacity-80 text-xs">
+<!-- Copyright text exact match -->
+<div class="font-body text-xs tracking-widest text-on-surface mb-3 md:mb-0">
+        © 诗境·一卷山河 · 循诗入境 展卷见山河
+      </div>
+<!-- Links exact match from Shared JSON -->
+<div class="flex items-center space-x-8 font-body text-xs tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-300" href="#">山河卷志</a>
+<span class="text-brand-border">｜</span>
+<a class="hover:text-primary transition-colors duration-300" href="#">书法典藏</a>
+<span class="text-brand-border">｜</span>
+<a class="hover:text-primary transition-colors duration-300" href="#">关于诗境</a>
+</div>
+</div>
+</footer>
+</body></html>

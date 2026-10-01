@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, user-scalable=no, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - S08 个人中心移动端 (适配版)</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              qingdai: '#183236',
+              juan: '#DDE3DA',
+              qinglv: '#365C55',
+              zhusha: '#9F493D',
+              danmo: '#52615E',
+              paper: '#F4F6F2',
+              cardbg: '#FAFCF8'
+            }
+          },
+          fontFamily: {
+            headline: ["'Noto Serif SC'", 'serif'],
+            display: ["'Ma Shan Zheng'", "'Noto Serif SC'", 'cursive', 'serif'],
+            body: ["'Noto Serif SC'", "'Public Sans'", 'sans-serif'],
+            label: ["'Public Sans'", "'Noto Serif SC'", 'sans-serif']
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      background-color: #DDE3DA;
+      color: #183236;
+      font-family: 'Noto Serif SC', serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .calligraphy-title {
+      font-family: 'Ma Shan Zheng', 'Noto Serif SC', cursive, serif;
+      letter-spacing: 0.12em;
+    }
+    .juan-texture {
+      background-color: #DDE3DA;
+      background-image: radial-gradient(#CCD5C9 0.75px, transparent 0.75px), radial-gradient(#D3DCD0 0.75px, #DDE3DA 0.75px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+    }
+    .zhusha-seal {
+      border: 1px solid #9F493D;
+      color: #9F493D;
+      background-color: rgba(159, 73, 61, 0.06);
+    }
+  </style>
+</head>
+<body class="juan-texture min-h-screen flex flex-col items-center justify-start pb-8">
+<!-- Mobile Page Canvas (Width strictly 390px, naturally scrolling, no mockup/frame) -->
+<div class="w-[390px] min-h-screen flex flex-col relative mx-auto bg-[#DDE3DA] shadow-none">
+<!-- 1. Top Navigation Bar (青黛深色背景 #183236, height 58px) -->
+<header class="sticky top-0 z-50 w-full h-[58px] bg-[#183236] px-3 flex items-center justify-between shadow-[0_2px_8px_rgba(10,24,26,0.18)]">
+<!-- Back Link -->
+<a aria-label="返回" class="h-11 flex items-center gap-1 text-[#DDE3DA] text-xs font-normal tracking-wide px-1.5 rounded active:opacity-75 transition-opacity" href="javascript:history.back()">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="text-xs opacity-90">返回 / 个人中心</span>
+</a>
+<!-- Calligraphy Brand Title (行书书法笔意，精确“诗境·一卷山河”) -->
+<h1 class="calligraphy-title text-[#F4F6F2] text-[19px] font-normal tracking-wider leading-none select-none">
+        诗境·一卷山河
+      </h1>
+<!-- Hamburger Menu Button (Min 44x44px touch target) -->
+<button aria-label="展开导航菜单" class="w-11 h-11 flex items-center justify-center text-[#DDE3DA] rounded active:opacity-75 focus:outline-none" id="menu-btn" type="button">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"></path>
+</svg>
+</button>
+</header>
+<!-- Mobile Drawer Dropdown Menu -->
+<div class="hidden w-full bg-[#183236] border-t border-[#25454a] px-5 py-4 transition-all duration-300" id="mobile-menu">
+<nav class="flex flex-col space-y-3">
+<a class="text-sm text-[#DDE3DA]/80 hover:text-white py-1.5 flex items-center justify-between border-b border-[#25454a]/40" href="#">
+<span>诗词总览</span>
+<span class="text-xs opacity-50 font-label">总览卷轴</span>
+</a>
+<a class="text-sm text-[#DDE3DA]/80 hover:text-white py-1.5 flex items-center justify-between border-b border-[#25454a]/40" href="#my-favorites">
+<span>我的收藏</span>
+<span class="text-xs text-[#9F493D] font-label">2 首</span>
+</a>
+<a class="text-sm text-white font-medium py-1.5 flex items-center justify-between text-[#9F493D]" href="#">
+<span class="text-[#DDE3DA] font-semibold">个人中心</span>
+<span class="text-[11px] bg-[#365C55] text-[#DDE3DA] px-1.5 py-0.5 rounded">当前</span>
+</a>
+</nav>
+</div>
+<!-- Main Content Container (Padded 16px horizontal) -->
+<main class="w-full px-4 pt-5 pb-8 flex flex-col gap-6">
+<!-- 3. Core Section: 个人资料与表单设置 -->
+<section class="w-full flex flex-col">
+<!-- Section Header -->
+<div class="flex items-center justify-between mb-3 px-0.5">
+<div class="flex items-center gap-2">
+<span class="w-[3px] h-4 bg-[#365C55] rounded-full inline-block"></span>
+<h2 class="text-base font-semibold tracking-wider text-[#183236]">个人资料</h2>
+</div>
+<span class="text-xs text-[#52615E] tracking-widest font-light">纸墨素心，静观山河</span>
+</div>
+<!-- 绢纸素卡容器 (米白绢纸底色，青灰微细边框) -->
+<div class="w-full bg-[#FAFCF8] rounded border border-[#CCD6C9] p-5 shadow-[0_3px_12px_rgba(24,50,54,0.05)]">
+<!-- Avatar Preview (圆形裁切优雅山水头像) -->
+<div class="flex flex-col items-center text-center mb-5">
+<div class="relative w-20 h-20 rounded-full p-[2px] bg-gradient-to-b from-[#365C55]/30 to-[#183236]/10 mb-3.5">
+<div class="w-full h-full rounded-full overflow-hidden border border-[#DDE3DA]">
+<img alt="枫桥夜泊山水意境头像" class="w-full h-full object-cover object-center filter saturate-[0.85] contrast-[0.95]" src="https://lh3.googleusercontent.com/aida/AEtjO1XWZawCUzSPGcp4AeUyYVWm8BUHMktv5ggBYD36pnm_103h1EfBWiR-9nGT1kdWdpOdeyAH9oknwDqR4xEDZqxz0skftvUe3eCUpF9H6GU1Rgj860liqIl3uZbqZ7fEZQP12nQR6R9KfXvqehOTY-hRn7qHwdUepbqaTBAoCubMmZHMMd7hWF4meeU-9tk8sBn05LegkWvZWzpPWbN_3g2qwV0cBwX5MHyiaziR8qleRIvyYQTN4em2eODZ"/>
+</div>
+<div class="absolute bottom-0 right-0 w-5 h-5 bg-[#365C55] border-2 border-[#FAFCF8] rounded-full flex items-center justify-center text-white" title="山水印">
+<span class="material-symbols-outlined text-[11px]">brush</span>
+</div>
+</div>
+<!-- Avatar Action Controls (纵向排布，符合 min-height: 44px 触控规范) -->
+<div class="w-full flex flex-col gap-2">
+<label class="w-full min-h-[44px] flex items-center justify-center gap-1.5 px-4 bg-[#183236] text-[#F4F6F2] text-xs tracking-wider rounded cursor-pointer active:bg-[#25454a] transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+<span>选择本地图片</span>
+<input accept="image/jpeg,image/png,image/webp" class="hidden" type="file"/>
+</label>
+<button class="w-full min-h-[44px] flex items-center justify-center text-xs text-[#365C55] bg-transparent border border-[#365C55]/40 rounded hover:bg-[#365C55]/5 active:bg-[#365C55]/10 transition-colors" type="button">
+                恢复默认
+              </button>
+<p class="text-[12px] text-[#52615E] mt-0.5 tracking-normal">
+                JPEG / PNG / WebP，最大 5 MiB
+              </p>
+</div>
+</div>
+<!-- Divider -->
+<div class="w-full h-[1px] bg-[#E3E8E1] mb-5"></div>
+<!-- Input Fields (每个控件高 44px，全宽排布无横向溢出) -->
+<form class="flex flex-col gap-4" onsubmit="event.preventDefault();">
+<!-- Field 1: 姓名 / 雅号 -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-medium text-[#183236] tracking-wider flex items-center justify-between">
+<span>姓名 / 雅号</span>
+<span class="text-[11px] text-[#52615E]/70 font-normal">本卷称谓</span>
+</label>
+<div class="relative">
+<input class="w-full h-[44px] px-3.5 bg-[#F2F5EF] border border-[#CCD6C9] rounded text-sm text-[#183236] focus:border-[#365C55] focus:ring-1 focus:ring-[#365C55] focus:outline-none transition-all" type="text" value="山水客"/>
+</div>
+</div>
+<!-- Field 2: 性别 -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs font-medium text-[#183236] tracking-wider">
+                性别
+              </label>
+<div class="relative">
+<select class="w-full h-[44px] px-3.5 pr-9 bg-[#F2F5EF] border border-[#CCD6C9] rounded text-sm text-[#52615E] appearance-none focus:border-[#365C55] focus:ring-1 focus:ring-[#365C55] focus:outline-none transition-all cursor-pointer">
+<option selected="">未设置</option>
+<option>乾 (男)</option>
+<option>坤 (女)</option>
+<option>隐居不言</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-[#52615E]">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Status Indicator -->
+<div class="flex items-center gap-1.5 py-1 text-xs text-[#365C55]">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span class="tracking-wide">✓ 设定已为最新</span>
+</div>
+<!-- Form Action Buttons (纵向堆叠，均高 44px) -->
+<div class="flex flex-col gap-2.5 pt-1">
+<button class="w-full h-[44px] bg-[#183236] text-[#F4F6F2] text-xs font-medium tracking-widest rounded flex items-center justify-center gap-1.5 shadow-sm active:bg-[#25454a] transition-colors" type="submit">
+<span class="material-symbols-outlined text-base">save</span>
+<span>保存设置</span>
+</button>
+<button class="w-full h-[44px] bg-[#FAFCF8] text-[#52615E] border border-[#CCD6C9] text-xs tracking-widest rounded flex items-center justify-center active:bg-[#F2F5EF] transition-colors" type="button">
+                取消
+              </button>
+</div>
+<!-- 说明文案 (宋体 12px 淡墨色) -->
+<p class="text-[12px] text-[#52615E] leading-relaxed text-center pt-1 font-normal">
+              说明：仅保存在此浏览器，不上传云端。
+            </p>
+</form>
+</div>
+</section>
+<!-- 4. Section: 我的收藏 -->
+<section class="w-full flex flex-col" id="my-favorites">
+<!-- Title bar -->
+<div class="flex items-center justify-between mb-3 px-0.5">
+<div class="flex items-center gap-2">
+<span class="w-[3px] h-4 bg-[#365C55] rounded-full inline-block"></span>
+<h2 class="text-base font-semibold tracking-wider text-[#183236]">我的收藏</h2>
+</div>
+<a class="h-8 flex items-center gap-1 text-xs text-[#365C55] font-medium tracking-wider hover:opacity-80 active:opacity-60 transition-opacity" href="#">
+<span>查看全部</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- 收藏卡片单列排布 (纵向两张写实山水卡片，390px 适应无横向溢出) -->
+<div class="flex flex-col gap-4">
+<!-- Card 1: 枫桥夜泊 -->
+<article class="w-full bg-[#FAFCF8] border border-[#CCD6C9] rounded overflow-hidden shadow-[0_3px_10px_rgba(24,50,54,0.04)] flex flex-col">
+<!-- Image Area (Height ~170px, with realistic photo and vermilion badge) -->
+<div class="relative w-full h-[170px] overflow-hidden bg-[#183236]">
+<img alt="枫桥夜泊写实自然山水摄影" class="w-full h-full object-cover object-center filter brightness-[0.97] contrast-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1WmYzug7I7XAj4UlduXpVeFiqS-Z8RRRin2BLZnWLa4hjM-KiKzbg5-wYkUzERfSBv-THXZaoq2GE-NimwkVERozCiVlObzqDE57SJ_MvOdJtXl8j2dO7KBVGBpWgARJOQGq82Zf4YauUfJ1FvnXQxXhubFKALF39kKWIr5p-ZmwgmZ2OD3BGqM7t59CbNIdLVu8RQCVNocFXXTIqw9WEt2Vwh4CecSDEjZwuaGl0LfdVzN82didTmb0Hsj"/>
+<!-- 朱砂角标 “已收藏” -->
+<div class="absolute top-2.5 right-2.5 zhusha-seal px-2 py-0.5 text-[11px] font-medium tracking-widest rounded-sm backdrop-blur-[2px]">
+                已收藏
+              </div>
+</div>
+<!-- Content Area -->
+<div class="p-3.5 flex flex-col">
+<div class="flex items-baseline justify-between mb-1.5">
+<h3 class="text-base font-semibold tracking-wide text-[#183236]">
+                  枫桥夜泊
+                </h3>
+<span class="text-[11px] text-[#52615E] tracking-wider">唐 · 张继 · 姑苏寒山寺</span>
+</div>
+<!-- 代表句完整单行横排呈现 -->
+<p class="text-xs text-[#365C55] font-medium tracking-widest py-1 my-0.5 border-l-2 border-[#365C55] pl-2 bg-[#F2F5EF]/70 rounded-r">
+                江枫渔火对愁眠
+              </p>
+<!-- Divider -->
+<div class="w-full h-[1px] bg-[#E3E8E1] my-2.5"></div>
+<!-- 底部操作栏 (高度 44px) -->
+<div class="w-full h-[44px] flex items-center justify-between">
+<button class="h-11 px-2 text-xs text-[#52615E] hover:text-[#9F493D] flex items-center gap-1 active:opacity-75 transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px] text-[#9F493D]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span>取消收藏</span>
+</button>
+<a class="h-9 px-4 bg-[#183236] text-[#F4F6F2] text-xs font-medium tracking-wider rounded flex items-center justify-center gap-1 active:bg-[#25454a] transition-colors" href="#">
+<span>入境</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2: 江雪 -->
+<article class="w-full bg-[#FAFCF8] border border-[#CCD6C9] rounded overflow-hidden shadow-[0_3px_10px_rgba(24,50,54,0.04)] flex flex-col">
+<!-- Image Area (Height ~170px, with realistic photo and vermilion badge) -->
+<div class="relative w-full h-[170px] overflow-hidden bg-[#183236]">
+<img alt="江雪写实自然山水摄影" class="w-full h-full object-cover object-center filter brightness-[0.98] contrast-[1.01]" src="https://lh3.googleusercontent.com/aida/AEtjO1UaFtSpirUPDNLYk7z_kdZklaph9ZmbYaKhsg4jOk03T-ehFtKEdCC1h6ZmIA9X3OLBgenC_U6LNHrPsc8Kmkwnl7bR0ooWhqrzXYZUvraBkKyKX3fEo_Yqx3zLLWjed_YYs7yAhHQZxgpk5aIR7uQBuLvgfig3e958RfrEd-W--bi21reCTAPSGixkxjlfSG1HvCgNzUqQ6ViTYWuYisnSAeJoA_eVDsyOuiElwllkrUQAwaJJndDOVNbB"/>
+<!-- 朱砂角标 “已收藏” -->
+<div class="absolute top-2.5 right-2.5 zhusha-seal px-2 py-0.5 text-[11px] font-medium tracking-widest rounded-sm backdrop-blur-[2px]">
+                已收藏
+              </div>
+</div>
+<!-- Content Area -->
+<div class="p-3.5 flex flex-col">
+<div class="flex items-baseline justify-between mb-1.5">
+<h3 class="text-base font-semibold tracking-wide text-[#183236]">
+                  江雪
+                </h3>
+<span class="text-[11px] text-[#52615E] tracking-wider">唐 · 柳宗元 · 永州潇水</span>
+</div>
+<!-- 代表句完整单行横排呈现 -->
+<p class="text-xs text-[#365C55] font-medium tracking-widest py-1 my-0.5 border-l-2 border-[#365C55] pl-2 bg-[#F2F5EF]/70 rounded-r">
+                独钓寒江雪
+              </p>
+<!-- Divider -->
+<div class="w-full h-[1px] bg-[#E3E8E1] my-2.5"></div>
+<!-- 底部操作栏 (高度 44px) -->
+<div class="w-full h-[44px] flex items-center justify-between">
+<button class="h-11 px-2 text-xs text-[#52615E] hover:text-[#9F493D] flex items-center gap-1 active:opacity-75 transition-colors" type="button">
+<span class="material-symbols-outlined text-[17px] text-[#9F493D]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span>取消收藏</span>
+</button>
+<a class="h-9 px-4 bg-[#183236] text-[#F4F6F2] text-xs font-medium tracking-wider rounded flex items-center justify-center gap-1 active:bg-[#25454a] transition-colors" href="#">
+<span>入境</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- 6. Footer (极度克制版权注记) -->
+<footer class="w-full pt-4 pb-10 px-4 text-center">
+<div class="w-12 h-[1px] bg-[#CCD6C9] mx-auto mb-3"></div>
+<p class="text-[11px] text-[#52615E]/80 tracking-widest font-normal">
+        © 诗境·一卷山河 · 循诗入境 展卷见山河
+      </p>
+</footer>
+</div>
+<script>
+    // Hamburger menu toggle interaction
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body></html>

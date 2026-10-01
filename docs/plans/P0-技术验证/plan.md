@@ -1,8 +1,10 @@
 # P0 · 技术验证：任务级计划
 
-> 日期：2026-09-28 – 10-03　·　分支：`p0-tech-validation`　·　状态：进行中
+> 日期：2026-09-28 – 10-03　·　分支：`p0-tech-validation`　·　状态：**旧后续目标暂停（2026-10-01）**
 >
-> 目标：用灰模验证全项目风险最大的部分——书页 → 山河的转场（设计文档第 13 章）、水墨渲染（第 14 章）、Blender ↔ 代码契约（`docs/CONTRACT.md`）。10/3 做 Go/No-Go 判定。
+> **转向说明**：用户要求先做诗词总览、写实诗境与 UI 设计审批，见 [ADR 0004](../decisions/0004-转向诗词总览与设计先审.md)。T0–T5 完成记录与实验资产保留；T6–T9 以下为旧计划，不再据此开工。当前执行 [D0](../D0-方向重设与UI审批/plan.md)，旧章节引用按 v2 历史文档理解。
+>
+> 原目标：用灰模验证书页 → 山河转场、水墨渲染与 Blender ↔ 代码契约。原 10/3 Go/No-Go 被 D0 设计审批关口取代，不能将产品转向记为旧技术验收通过。
 
 ---
 
@@ -44,29 +46,29 @@
 
 ### T3 · Blender 灰模与制作端脚本（9/29）
 
-- [ ] `art/scripts/build_greybox.py`：生成 `art/blender/fengqiao.blend`
+- [x] `art/scripts/build_greybox.py`：生成 `art/blender/fengqiao.blend`
   - `terrain` 集合：1500 × 1500 m 的 `terrain` 网格，山体 + 中间一条江谷
   - `glb_main`：`CAM_enter` / `CAM_boat`（`yuan: "ping"`、Sensor Fit = Vertical、roll = 0）、`FOCUS_bell`、`EMIT_bell`、`SFX_bell`、`LIGHT_fishfire_01`、`boat_guest`（`ink_wood`、顶点色 `mask`、`behavior: "bob"`）、寺庙体块（`ink_tile` + `ink_wood`、`reveal`）、`PLACE_boat_01`
   - `glb_foliage`：单株灰模树 × 20（验证实例化方案 A）
   - 同时生成 `art/blender/props.blend`（`boat`，导出到 `common/`）
-- [ ] `validate.py`：CONTRACT 15.2 全部检查，违规时以非零码退出
-- [ ] `export_glb.py`：CONTRACT 第 13 节参数，按 `glb_` 集合导出
-- [ ] `bake_terrain.py`：CONTRACT 第 10 节 → `fengqiao.height.png`（1024²，RGB 无 alpha）+ `fengqiao.height.json`
-- [ ] 验收：三个脚本无头跑通；validate 通过；故意改坏名字（`tree.001`）时 validate 报错
+- [x] `validate.py`：CONTRACT 15.2 全部检查，违规时以非零码退出
+- [x] `export_glb.py`：CONTRACT 第 13 节参数，按 `glb_` 集合导出
+- [x] `bake_terrain.py`：CONTRACT 第 10 节 → `fengqiao.height.png`（1024²，RGB 无 alpha）+ `fengqiao.height.json`
+- [x] 验收：三个脚本无头跑通；validate 通过；故意改坏名字（`tree.001`）时 validate 报错
 
 ### T4 · 高度图解码与 PaperTerrain（9/30）
 
-- [ ] `src/engine/Assets.ts`：`loadHeightmap(scene)`（`createImageBitmap` + `colorSpaceConversion: 'none'` + `premultiplyAlpha: 'none'`）→ Float32 高度纹理 + 引导遮罩；`loadGLB(url)`（GLTFLoader + MeshoptDecoder）
-- [ ] 纯函数 `decodeHeight(r, g, hMin, hMax)`，vitest 覆盖端点与中值
-- [ ] `src/systems/terrain/PaperTerrain.ts` + `terrainGrow.{vert,frag}.glsl` + `chunks/{noise,fbm,paper}.glsl`：细分平面；`height × uGrow × smoothstep(a, b, inkMask) × edgeFade`；有限差分法线；纸 → 墨 → 场景色；水位以下随 `uGrow` 淡入
-- [ ] 验收：`?debug` 可拖 `uGrow`；截取 uGrow = 0 / 0.5 / 1 三张图
+- [x] `src/engine/Assets.ts`：`loadHeightmap(scene)`（`createImageBitmap` + `colorSpaceConversion: 'none'` + `premultiplyAlpha: 'none'`）→ Float32 高度纹理 + 引导遮罩；`loadGLB(url)`（GLTFLoader + MeshoptDecoder）
+- [x] 纯函数 `decodeHeight(r, g, hMin, hMax)`，vitest 覆盖端点与中值
+- [x] `src/systems/terrain/PaperTerrain.ts` + `terrainGrow.{vert,frag}.glsl` + `chunks/{noise,fbm,paper}.glsl`：细分平面；`height × uGrow × smoothstep(a, b, inkMask) × edgeFade`；有限差分法线；纸 → 墨 → 场景色；水位以下随 `uGrow` 淡入
+- [x] 验收：`?debug` 可拖 `uGrow`；截取 uGrow = 0 / 0.5 / 1 三张图
 
 ### T5 · 墨扩散 InkSim（10/1）
 
-- [ ] `src/systems/ink/InkSim.ts` + `sim/inkDiffuse.frag.glsl`：HalfFloat ping-pong（不支持则降级并记录）；R 水分 / G 流动墨 / B 沉积墨；速度 = 基础 × 纤维噪声 × 引导遮罩；湿边积墨；固定步长；`seekTo(t)` 从 0 快进
-- [ ] 临时墨源：Canvas 竖排写首句（BrushWriter 在 P1 做）
-- [ ] `inkMask` 接入 PaperTerrain
-- [ ] 验收：墨沿山体轮廓汇聚、江谷留白；两次 `seek(12)` 截图逐像素一致
+- [x] `src/systems/ink/InkSim.ts` + `sim/inkDiffuse.frag.glsl`：HalfFloat ping-pong（不支持则降级并记录）；R 水分 / G 流动墨 / B 沉积墨；速度 = 基础 × 纤维噪声 × 引导遮罩；湿边积墨；固定步长；`seekTo(t)` 从 0 快进
+- [x] 临时墨源：Canvas 竖排写首句（BrushWriter 在 P1 做）
+- [x] `inkMask` 接入 PaperTerrain
+- [x] 验收：墨沿山体轮廓汇聚、江谷留白；两次 `seek(12)` 截图逐像素一致
 
 ### T6 · 镜头下降与尺度归一化（10/2）
 
@@ -119,3 +121,8 @@
 | 9/28 | T1 | 另装 `@types/node`、`pngjs`（tools 读写 PNG）；`tools/shoot.mjs` 提前到 T1 写出基础版 | 各任务验收都要截图 |
 | 9/28 | T1 | vite 8 用 rolldown/oxc，vite-plugin-glsl 无需 esbuild；vitest 配置写在 `vite.config.ts`（`vitest/config`） | 版本现状 |
 | 9/28 | T2 | 时钟拆为 `engine/Clock.ts`、URL 解析拆为 `engine/debugParams.ts`（纯函数，可在 node 下测试）；`Quality.ts` 提前写出初始档位 | 可测试性；后续任务要按档位取分辨率 |
+| 9/29 | T3 | 新增 `art/scripts/contract.py` 共享命名、材质、属性与预算常量；三个制作脚本统一引用 | 避免 `validate.py`、`export_glb.py`、`bake_terrain.py` 各自复制契约并发生漂移 |
+| 9/29 | T4 | T5 完成前先用高度图 B 通道的引导遮罩代替实时 `inkMask`；截图为 `terrain-grow_t0/t6/t12.png` | T4 先独立验证高度解码、有限差分法线与隆起方向，T5 再接入墨扩散结果 |
+| 9/30 | T5 | 提前接入受限 OrbitControls 与 `R` 键重演；墨模拟在 16 s 后停止推进，页面隐藏时暂停渲染 | 根据实机预览反馈补足 P0 可发现交互，并避免静止画面仍持续消耗 GPU；不改变后续 CameraDirector 架构 |
+| 10/1 | T6–T9 / 产品方向 | 暂停旧纸面转场与全面水墨的后续目标；保留全部已有实验。先执行 D0 文档重设、Stitch / GPT-image 出稿与用户审批；可复用契约验证另行编排 | 用户明确要求浮动诗卡首页、写实三维诗境、意象入场、翻页返回、收藏和个人中心；不继续在未认可视觉方向上投入 |
+| 10/1 | D0 出稿前置 | Stitch MCP 连接失败；网页版进入 Google 登录页；当前无 GPT-image 工具，实际生成与审批尚未完成 | 如实记录工具阻塞，不以自绘页面 / 占位图替代用户指定的生成稿 |

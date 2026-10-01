@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - T02 右上广域碎雪入境五帧分镜审批板</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            // 东方山水写实调色板
+            'qingdai': '#183236',        // 深青黛
+            'qingdai-dark': '#102225',   // 墨青
+            'juan-bg': '#DDE3DA',        // 青灰绢色
+            'juan-paper': '#E8EDE5',     // 淡青宣纸色
+            'juan-card': '#EEF2EC',      // 浅色面板底
+            'qinglu': '#365C55',         // 青绿
+            'qinglu-light': '#4E7D74',   // 润青
+            'zhusha': '#9F493D',         // 朱砂
+            'zhusha-dark': '#83392E',    // 沉红
+            'lengshuang': '#A8B8B5',     // 冷霜灰
+            
+            // Design Tokens
+            surface: '#EEF2EC',
+            'on-surface': '#183236',
+            'on-surface-variant': '#485C5E',
+            primary: '#183236',
+            'on-primary': '#F2F6F0',
+            'primary-container': '#365C55',
+            'on-primary-container': '#EAEFE9',
+            secondary: '#365C55',
+            tertiary: '#9F493D',
+            outline: '#CAD4C8',
+            'outline-variant': '#B6C4B4'
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["'Noto Serif SC'", "'Noto Serif'", "serif"],
+            display: ["'Ma Shan Zheng'", "'Noto Serif SC'", "cursive"],
+            body: ["'Public Sans'", "'Noto Serif SC'", "sans-serif"],
+            label: ["'Public Sans'", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* 东方宣纸墨韵微噪底纹 */
+    .bg-paper-texture {
+      background-color: #DDE3DA;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(54, 92, 85, 0.05) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(24, 50, 54, 0.06) 0px, transparent 60%);
+    }
+
+    /* 诗意书法字体 */
+    .font-xingshu {
+      font-family: 'Ma Shan Zheng', 'Noto Serif SC', cursive;
+    }
+    
+    /* 经典中国传统印章 */
+    .yinzhang {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      border: 1px solid #9F493D;
+      color: #9F493D;
+      padding: 2px 4px;
+      line-height: 1.1;
+      font-family: 'Noto Serif SC', serif;
+      box-shadow: inset 0 0 2px rgba(159, 73, 61, 0.3);
+    }
+
+    /* 竖排文本布局 */
+    .writing-vertical {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      letter-spacing: 0.35em;
+    }
+
+    /* 细致滚动条 */
+    ::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #DDE3DA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #A8B8B5;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4E7D74;
+    }
+  </style>
+</head>
+<body class="bg-paper-texture text-on-surface antialiased min-h-screen flex flex-col font-body selection:bg-qinglu selection:text-white">
+<!-- ================= TOP NAV BAR (Shared Component Anchor) ================= -->
+<header class="w-full bg-[#E5EBE2]/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline/50 shadow-sm transition-all duration-300"><div class="flex justify-between items-center w-full px-6 lg:px-12 py-3.5 max-w-[1720px] mx-auto">
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-1.5 text-xs text-on-surface-variant hover:text-primary transition-colors py-1 px-2 rounded hover:bg-black/5" href="#" title="返回总览页">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="font-headline tracking-wider">返回总览</span>
+</a>
+<div class="h-4 w-px bg-outline"></div>
+<div class="flex items-center gap-2">
+<span class="font-xingshu text-2xl tracking-widest text-qingdai font-normal">诗境·一卷山河</span>
+<span class="px-2 py-0.5 text-[11px] bg-qinglu/15 text-qinglu font-headline rounded tracking-wider border border-qinglu/30">
+        视觉分镜 · 待审阅
+      </span>
+</div>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-primary font-medium border-b border-primary pb-1 font-headline tracking-widest text-sm transition-colors duration-300" href="#">诗词总览</a>
+<a class="text-on-surface-variant opacity-80 pb-1 font-body tracking-wider text-sm hover:text-primary transition-colors duration-300" href="#">我的收藏</a>
+<a class="text-on-surface-variant opacity-80 pb-1 font-body tracking-wider text-sm hover:text-primary transition-colors duration-300" href="#">个人中心</a>
+</nav>
+</div></header>
+<!-- ================= MAIN CANVAS CONTAINER (1440px+ 宽画幅) ================= -->
+<main class="flex-1 w-full max-w-[1720px] mx-auto px-6 lg:px-12 py-8 flex flex-col gap-8"><!-- PAGE HEADER TITLE -->
+<div class="flex flex-col gap-2 pb-5 border-b border-outline/60">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 bg-qinglu text-white text-[11px] tracking-widest rounded-sm font-headline">视觉时序分镜 · 待审阅</span>
+<span class="text-xs font-headline text-on-surface-variant tracking-wider">转场意象呈现</span>
+</div>
+<h1 class="text-2xl lg:text-3xl font-headline font-semibold text-qingdai tracking-widest">
+    右上广域碎雪入境
+  </h1>
+<p class="text-sm text-on-surface-variant leading-relaxed font-headline tracking-wide max-w-4xl mt-1">
+    以寒天碎雪随朔风自右上广域漫卷扑入为意象，由首页诗词总览平滑过渡至《江雪》极意孤绝诗境。纯粹视觉时序演进示意。
+  </p>
+</div>
+<!-- FIVE-FRAME VISUAL STORYBOARD (16:10 Horizontal Layout) -->
+<section class="w-full space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5">
+<!-- FRAME 01: 0% -->
+<div class="flex flex-col bg-[#F3F6F1] border border-outline rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+<div class="px-3 py-2 bg-[#E4EAE0] border-b border-outline/60 flex items-center justify-between">
+<span class="text-xs font-headline font-medium text-qingdai tracking-wider">帧 01 · 0%</span>
+<span class="text-[10px] px-1.5 py-0.5 bg-white/70 text-on-surface-variant rounded font-headline">源画卷</span>
+</div>
+<div class="relative w-full aspect-[16/10] bg-[#142629] overflow-hidden">
+<img alt="首页原生画卷" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/30 p-2.5 flex flex-col justify-between pointer-events-none">
+<div class="text-[9px] text-[#DDE3DA] font-headline tracking-widest">诗境·一卷山河</div>
+<div class="grid grid-cols-3 gap-1.5">
+<div class="bg-black/50 backdrop-blur-xs rounded p-1 text-center border border-white/20">
+<div class="text-[8px] text-white/90 font-headline">枫桥夜泊</div>
+<div class="text-[7px] text-[#DDE3DA]/70 scale-90">张继</div>
+</div>
+<div class="bg-qinglu/80 backdrop-blur-xs rounded p-1 text-center border border-white/60 ring-1 ring-white/50">
+<div class="text-[8px] text-white font-medium font-headline">江雪</div>
+<div class="text-[7px] text-white/90 scale-90">入境 ➔</div>
+</div>
+<div class="bg-black/50 backdrop-blur-xs rounded p-1 text-center border border-white/20">
+<div class="text-[8px] text-white/90 font-headline">早发白帝</div>
+<div class="text-[7px] text-[#DDE3DA]/70 scale-90">李白</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3 bg-white/70 flex-1 flex items-center border-t border-outline/50">
+<p class="text-xs text-on-surface-variant font-headline leading-relaxed">
+          01 · 首页原生画卷稳定态，三卷写实诗卡静候入境。
+        </p>
+</div>
+</div>
+<!-- FRAME 02: 25% -->
+<div class="flex flex-col bg-[#F3F6F1] border border-outline rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+<div class="px-3 py-2 bg-[#E4EAE0] border-b border-outline/60 flex items-center justify-between">
+<span class="text-xs font-headline font-medium text-qingdai tracking-wider">帧 02 · 25%</span>
+<span class="text-[10px] px-1.5 py-0.5 bg-white/70 text-qinglu rounded font-headline">朔风起</span>
+</div>
+<div class="relative w-full aspect-[16/10] bg-[#142629] overflow-hidden">
+<img alt="朔风细雪初卷" class="w-full h-full object-cover filter blur-[0.4px]" src="https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc"/>
+<div class="absolute inset-0 bg-gradient-to-bl from-[#DDE3DA]/25 via-transparent to-transparent pointer-events-none"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" viewbox="0 0 200 125">
+<path d="M 210,0 L 120,70" stroke="rgba(232,237,229,0.7)" stroke-dasharray="2 4" stroke-width="1.2"></path>
+<path d="M 180,-10 L 80,75" stroke="rgba(168,184,181,0.8)" stroke-dasharray="3 5" stroke-width="1.5"></path>
+<path d="M 150,-10 L 40,85" stroke="rgba(232,237,229,0.6)" stroke-dasharray="2 4" stroke-width="1"></path>
+<circle cx="185" cy="15" fill="#FFFFFF" opacity="0.9" r="1.8"></circle>
+<circle cx="165" cy="35" fill="#FFFFFF" opacity="0.85" r="2.2"></circle>
+<circle cx="145" cy="22" fill="#E8EDE5" opacity="0.8" r="1.5"></circle>
+<circle cx="120" cy="52" fill="#FFFFFF" opacity="0.75" r="1.8"></circle>
+<circle cx="95" cy="70" fill="#FFFFFF" opacity="0.7" r="1.4"></circle>
+<circle cx="65" cy="85" fill="#E8EDE5" opacity="0.6" r="1.2"></circle>
+</svg>
+</div>
+<div class="p-3 bg-white/70 flex-1 flex items-center border-t border-outline/50">
+<p class="text-xs text-on-surface-variant font-headline leading-relaxed">
+          02 · 朔风忽起，广域碎雪自右上斜向左下漫卷全幅。
+        </p>
+</div>
+</div>
+<!-- FRAME 03: 50% -->
+<div class="flex flex-col bg-[#F3F6F1] border border-outline rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+<div class="px-3 py-2 bg-[#E4EAE0] border-b border-outline/60 flex items-center justify-between">
+<span class="text-xs font-headline font-medium text-qingdai tracking-wider">帧 03 · 50%</span>
+<span class="text-[10px] px-1.5 py-0.5 bg-white/70 text-qingdai rounded font-headline">雪幕覆</span>
+</div>
+<div class="relative w-full aspect-[16/10] bg-[#1C2E30] overflow-hidden">
+<img alt="浅青灰雪雾峰值" class="w-full h-full object-cover opacity-60 filter blur-[1.5px] scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UaFtSpirUPDNLYk7z_kdZklaph9ZmbYaKhsg4jOk03T-ehFtKEdCC1h6ZmIA9X3OLBgenC_U6LNHrPsc8Kmkwnl7bR0ooWhqrzXYZUvraBkKyKX3fEo_Yqx3zLLWjed_YYs7yAhHQZxgpk5aIR7uQBuLvgfig3e958RfrEd-W--bi21reCTAPSGixkxjlfSG1HvCgNzUqQ6ViTYWuYisnSAeJoA_eVDsyOuiElwllkrUQAwaJJndDOVNbB"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-[#183236]/40 via-[#DDE3DA]/75 to-[#E8EDE5]/90 mix-blend-screen pointer-events-none"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none" viewbox="0 0 200 125">
+<circle cx="45" cy="35" fill="#FFFFFF" opacity="0.4" r="4.5"></circle>
+<circle cx="155" cy="65" fill="#FFFFFF" opacity="0.45" r="5.5"></circle>
+<circle cx="105" cy="85" fill="#FFFFFF" opacity="0.35" r="3.5"></circle>
+<circle cx="80" cy="40" fill="#FFFFFF" opacity="0.9" r="1.8"></circle>
+<circle cx="135" cy="22" fill="#FFFFFF" opacity="0.95" r="2.2"></circle>
+<circle cx="170" cy="48" fill="#FFFFFF" opacity="0.9" r="1.6"></circle>
+<circle cx="115" cy="60" fill="#FFFFFF" opacity="0.85" r="1.4"></circle>
+<circle cx="60" cy="80" fill="#FFFFFF" opacity="0.9" r="2"></circle>
+<circle cx="25" cy="90" fill="#FFFFFF" opacity="0.8" r="1.5"></circle>
+</svg>
+</div>
+<div class="p-3 bg-white/70 flex-1 flex items-center border-t border-outline/50">
+<p class="text-xs text-on-surface-variant font-headline leading-relaxed">
+          03 · 漫天风雪与浅青灰雪雾笼罩，源画卷自然隐没虚空。
+        </p>
+</div>
+</div>
+<!-- FRAME 04: 75% -->
+<div class="flex flex-col bg-[#F3F6F1] border border-outline rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+<div class="px-3 py-2 bg-[#E4EAE0] border-b border-outline/60 flex items-center justify-between">
+<span class="text-xs font-headline font-medium text-qingdai tracking-wider">帧 04 · 75%</span>
+<span class="text-[10px] px-1.5 py-0.5 bg-white/70 text-qinglu rounded font-headline">孤舟现</span>
+</div>
+<div class="relative w-full aspect-[16/10] bg-[#142629] overflow-hidden">
+<img alt="寒江初霁孤舟浮现" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1UaFtSpirUPDNLYk7z_kdZklaph9ZmbYaKhsg4jOk03T-ehFtKEdCC1h6ZmIA9X3OLBgenC_U6LNHrPsc8Kmkwnl7bR0ooWhqrzXYZUvraBkKyKX3fEo_Yqx3zLLWjed_YYs7yAhHQZxgpk5aIR7uQBuLvgfig3e958RfrEd-W--bi21reCTAPSGixkxjlfSG1HvCgNzUqQ6ViTYWuYisnSAeJoA_eVDsyOuiElwllkrUQAwaJJndDOVNbB"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-white/10 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute inset-0 pointer-events-none">
+<span class="absolute top-7 right-10 w-1.5 h-1.5 bg-white rounded-full opacity-70"></span>
+<span class="absolute top-12 right-20 w-1 h-1 bg-white rounded-full opacity-60"></span>
+<span class="absolute bottom-8 left-14 w-1.5 h-1.5 bg-white rounded-full opacity-50"></span>
+</div>
+</div>
+<div class="p-3 bg-white/70 flex-1 flex items-center border-t border-outline/50">
+<p class="text-xs text-on-surface-variant font-headline leading-relaxed">
+          04 · 暴雪初霁，寒江、远山与一叶独钓孤舟清淅浮现。
+        </p>
+</div>
+</div>
+<!-- FRAME 05: 100% -->
+<div class="flex flex-col bg-[#F3F6F1] border border-outline rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+<div class="px-3 py-2 bg-[#E4EAE0] border-b border-outline/60 flex items-center justify-between">
+<span class="text-xs font-headline font-medium text-qingdai tracking-wider">帧 05 · 100%</span>
+<span class="text-[10px] px-1.5 py-0.5 bg-white/70 text-qinglu rounded font-headline">境凝定</span>
+</div>
+<div class="relative w-full aspect-[16/10] bg-[#142629] overflow-hidden">
+<img alt="江雪极意诗境入定" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UaFtSpirUPDNLYk7z_kdZklaph9ZmbYaKhsg4jOk03T-ehFtKEdCC1h6ZmIA9X3OLBgenC_U6LNHrPsc8Kmkwnl7bR0ooWhqrzXYZUvraBkKyKX3fEo_Yqx3zLLWjed_YYs7yAhHQZxgpk5aIR7uQBuLvgfig3e958RfrEd-W--bi21reCTAPSGixkxjlfSG1HvCgNzUqQ6ViTYWuYisnSAeJoA_eVDsyOuiElwllkrUQAwaJJndDOVNbB"/>
+<div class="absolute inset-0 p-2 flex flex-col justify-between pointer-events-none bg-gradient-to-t from-black/40 via-transparent to-black/20">
+<div class="flex gap-1 items-start mt-1">
+<div class="writing-vertical text-[8px] font-headline text-white bg-black/40 px-1 py-1 rounded border border-white/10">千山鸟飞绝</div>
+<div class="writing-vertical text-[8px] font-headline text-white bg-black/40 px-1 py-1 rounded border border-white/10">万径人踪灭</div>
+<div class="writing-vertical text-[8px] font-headline text-white bg-black/40 px-1 py-1 rounded border border-white/10">孤舟蓑笠翁</div>
+<div class="writing-vertical text-[8px] font-headline text-white bg-black/40 px-1 py-1 rounded border border-white/10">独钓寒江雪</div>
+<div class="writing-vertical text-[7px] font-headline text-white/80 ml-0.5">江雪 · 柳宗元</div>
+</div>
+<div class="absolute top-6 right-8 w-1 h-1 bg-white rounded-full opacity-60"></div>
+<div class="absolute bottom-10 right-14 w-1 h-1 bg-white rounded-full opacity-50"></div>
+</div>
+</div>
+<div class="p-3 bg-white/70 flex-1 flex items-center border-t border-outline/50">
+<p class="text-xs text-on-surface-variant font-headline leading-relaxed">
+          05 · 意境圆满，诗文四列舒展，寒江独钓平稳入定。
+        </p>
+</div>
+</div>
+</div>
+</section></main>
+<!-- ================= FOOTER (Shared Component Anchor) ================= -->
+<footer class="w-full bg-[#D6DDD3] border-t border-outline/60 mt-12 transition-colors duration-200">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-8 max-w-7xl mx-auto opacity-75">
+<!-- Copyright from JSON -->
+<div class="text-xs font-body tracking-widest text-on-surface mb-4 md:mb-0">
+        © 诗境·一卷山河 · 循诗入境 展卷见山河
+      </div>
+<!-- Links from JSON -->
+<div class="flex items-center gap-6 text-xs font-body tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-300" href="#">山河卷志</a>
+<a class="hover:text-primary transition-colors duration-300" href="#">书法典藏</a>
+<a class="hover:text-primary transition-colors duration-300" href="#">关于诗境</a>
+</div>
+</div>
+</footer>
+</body></html>

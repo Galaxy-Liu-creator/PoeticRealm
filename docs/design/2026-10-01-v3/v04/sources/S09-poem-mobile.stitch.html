@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>诗境·一卷山河 - S09 江雪诗境移动端</title>
+<!-- Google Fonts: Noto Serif SC, Ma Shan Zheng (行书笔意), Public Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&amp;family=Noto+Serif+SC:wght@300;400;600;700&amp;family=Public+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            // 设计系统指定色彩
+            qingdai: "#183236",      // 深青黛山水题头
+            juanse: "#DDE3DA",       // 青灰绢色
+            qinglv: "#365C55",       // 青绿
+            zhusha: "#9F493D",       // 朱砂
+            "zhusha-hover": "#8B3E33",
+            "ink-dark": "#0F1F22",
+            "snow-white": "#F7F9F6",
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "sm": "2px",
+            "md": "4px",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Noto Serif SC", "serif"],
+            display: ["Noto Serif SC", "serif"],
+            xingshu: ["Ma Shan Zheng", "cursive", "serif"],
+            body: ["Public Sans", "Noto Serif SC", "sans-serif"],
+            label: ["Public Sans", "Noto Serif SC", "sans-serif"]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* 竖排古韵排版专用类 */
+    .vertical-column {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      white-space: nowrap;
+      letter-spacing: 0.18em;
+    }
+    
+    /* 降雪粒子效果 */
+    .snowflake {
+      position: absolute;
+      top: -10px;
+      color: #ffffff;
+      pointer-events: none;
+      user-select: none;
+      z-index: 15;
+      opacity: 0.75;
+      animation-name: fall;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.8;
+      }
+      50% {
+        transform: translateY(420px) translateX(12px);
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(850px) translateX(-8px);
+        opacity: 0.1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-stone-900 text-stone-100 flex items-center justify-center min-h-screen p-0 m-0 overflow-x-hidden font-body selection:bg-zhusha selection:text-white">
+<!-- 390×844 独立移动端画板（无设备外壳模型，高纯净视口） -->
+<main class="relative w-[390px] h-[844px] overflow-hidden bg-qingdai shadow-2xl flex flex-col justify-between select-none">
+<!-- 写实江雪摄影背景 -->
+<div class="absolute inset-0 z-0"><img alt="寒江独钓写实摄影" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAke9QJibqAc_L9WRzGE2gY58nwaf_irlBl3dj4EaKLB5dEh2DMRlfwXp6lOcFmJoF_J8Cz-19T8QzlWDcgpqGWSWtEnmUkXgPoL1fuXs9q4bFG0SULuYoUIhviKo4ypzp4_pI9puq6VHDwGMQFq3tVOqQxyZv-APyHl5n0aBGcq05wEVjxO933CvCEFG16je6axgRmnM4AM43vTcvQS43lqfQSueDS5ZKBrhLtJSFk8pcEFxEFe2bTOs2QEfgkK54j0zVBeZPbewGx" style="object-position: center bottom;"/><div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 25% 25%, rgba(18, 38, 41, 0.92) 0%, rgba(24, 50, 54, 0.65) 45%, rgba(18, 34, 38, 0.2) 75%, transparent 100%);"></div><div class="absolute top-0 left-0 right-0 h-72 bg-gradient-to-b from-qingdai/85 via-qingdai/40 to-transparent pointer-events-none"></div><div class="absolute bottom-0 left-0 right-0 h-44 bg-gradient-to-t from-qingdai/90 via-qingdai/30 to-transparent pointer-events-none"></div></div>
+<!-- 真实微风轻雪粒子层 (营造沉浸极意孤绝之境) -->
+<div class="absolute inset-0 pointer-events-none z-10 overflow-hidden" id="snow-layer">
+<div class="snowflake" style="left: 15%; animation-duration: 9s; animation-delay: 0s; font-size: 8px;">❄</div>
+<div class="snowflake" style="left: 32%; animation-duration: 13s; animation-delay: 2s; font-size: 5px; opacity: 0.5;">•</div>
+<div class="snowflake" style="left: 48%; animation-duration: 11s; animation-delay: 4s; font-size: 7px; opacity: 0.6;">❄</div>
+<div class="snowflake" style="left: 65%; animation-duration: 14s; animation-delay: 1s; font-size: 4px; opacity: 0.4;">•</div>
+<div class="snowflake" style="left: 80%; animation-duration: 10s; animation-delay: 3s; font-size: 6px; opacity: 0.5;">❄</div>
+<div class="snowflake" style="left: 92%; animation-duration: 12s; animation-delay: 5s; font-size: 5px; opacity: 0.3;">•</div>
+</div>
+<!-- 顶部状态与安全区留白 (适配移动端 44px 视域) -->
+<header class="relative z-20 w-full pt-3 pb-2 px-4 flex flex-col gap-2"><div class="flex items-center justify-between w-full h-[44px] px-1"><a class="h-[44px] px-2 flex items-center gap-1 text-juanse/90 hover:text-white transition-colors duration-200 active:opacity-70 whitespace-nowrap" href="#" title="返回诗词总览"><span class="material-symbols-outlined text-[19px]">arrow_back</span><span class="text-[13px] font-headline tracking-widest text-juanse/90">返回</span></a><div class="flex items-center justify-center"><span class="font-headline text-[15px] font-normal tracking-[0.3em] text-juanse drop-shadow-sm select-none pl-1">诗境</span></div><div class="flex items-center gap-0.5"><button aria-label="声音开关" class="w-[44px] h-[44px] flex items-center justify-center rounded-sm text-juanse/80 hover:text-white transition-colors active:scale-95" id="sound-toggle" title="寒江雪寂 · 声音已闭" type="button"><svg class="w-[19px] h-[19px] fill-current text-juanse/80" id="sound-icon-svg" viewbox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27l4.73 4.73H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"></path></svg></button><button aria-label="收藏本诗" class="w-[44px] h-[44px] flex items-center justify-center rounded-sm text-juanse/80 hover:text-white transition-colors active:scale-95" id="favorite-btn" title="收藏本诗" type="button"><span class="material-symbols-outlined text-[20px] text-juanse/85" id="fav-icon">bookmark_border</span></button><button aria-label="打开导航目录" class="w-[44px] h-[44px] flex items-center justify-center rounded-sm text-juanse/90 hover:text-white transition-colors active:scale-95" id="menu-trigger" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button></div></div><div class="flex items-center justify-between px-3 mt-0.5 pointer-events-none"><div class="flex items-center gap-1.5"><span class="inline-block w-1.5 h-1.5 rounded-full bg-cyan-200/60 animate-pulse"></span><span class="text-[10px] text-juanse/70 font-headline tracking-widest">声音已闭</span></div><span class="text-[10px] text-juanse/40 font-headline tracking-wider">唐 · 元和年间</span></div></header>
+<!-- 核心主体区：诗词排版与呼吸留白空间 (上部左侧深色岩壁区，不压盖右下孤舟) -->
+<section class="relative z-20 flex-1 px-6 pt-3 pb-6 flex flex-col justify-start"><div class="pl-2 pt-2 mb-6"><div class="flex items-baseline gap-3"><h1 class="text-[28px] font-headline font-semibold text-juanse tracking-[0.25em] drop-shadow-md select-text">江雪</h1><p class="text-[13px] font-headline tracking-widest text-[#E0E7E3]/85 border-l border-juanse/30 pl-2.5 py-0.5 select-text">唐 · 柳宗元</p></div><div class="w-8 h-[1.5px] bg-gradient-to-r from-zhusha to-transparent mt-2"></div></div><div class="w-full flex justify-start items-start pl-2"><div class="flex flex-row-reverse gap-5 select-text items-start justify-start"><div class="vertical-column text-white text-[22px] leading-[1.6] font-headline font-normal tracking-[0.22em]" style="text-shadow: 0 1px 4px rgba(0,0,0,0.6);">千山鸟飞绝</div><div class="vertical-column text-white text-[22px] leading-[1.6] font-headline font-normal tracking-[0.22em]" style="text-shadow: 0 1px 4px rgba(0,0,0,0.6);">万径人踪灭</div><div class="vertical-column text-white text-[22px] leading-[1.6] font-headline font-normal tracking-[0.22em]" style="text-shadow: 0 1px 4px rgba(0,0,0,0.6);">孤舟蓑笠翁</div><div class="vertical-column text-white text-[22px] leading-[1.6] font-headline font-semibold tracking-[0.22em]" style="text-shadow: 0 1px 4px rgba(0,0,0,0.6);">独钓寒江雪</div></div></div></section>
+<!-- 底部与注解控件区域 -->
+<footer class="relative z-20 w-full px-5 py-3.5 bg-gradient-to-t from-qingdai via-qingdai/90 to-transparent flex items-center justify-between"><div class="w-full flex justify-center items-center pb-2"><button aria-expanded="false" class="group flex items-center gap-1.5 px-4 py-2 rounded-full bg-qingdai/60 backdrop-blur-xs border border-white/5 hover:bg-qingdai/90 hover:text-white transition-all duration-200 active:scale-95 focus:outline-none" id="note-toggle-btn" type="button"><span class="text-[12px] font-headline tracking-[0.2em] text-juanse/80 group-hover:text-white">译文 / 注释</span><span class="material-symbols-outlined text-[13px] text-juanse/60 group-hover:text-white transition-transform group-hover:translate-y-[-1px]">expand_less</span></button></div></footer>
+<!-- 笺注抽屉浮层 (默认折叠收拢，点击笺注展开) -->
+<div class="absolute bottom-0 left-0 right-0 z-30 transform translate-y-full transition-transform duration-300 ease-out bg-qingdai/95 border-t border-juanse/20 backdrop-blur-md p-5 pb-6 text-juanse shadow-2xl" id="note-drawer">
+<div class="flex justify-between items-center pb-3 border-b border-juanse/15 mb-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-zhusha"></span>
+<h2 class="text-sm font-headline tracking-widest text-white">诗史笺注 · 极意孤绝之境</h2>
+</div>
+<button class="w-8 h-8 flex items-center justify-center text-juanse/70 hover:text-white rounded-full" id="close-drawer">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<p class="text-xs font-headline leading-relaxed text-juanse/90 mb-3 tracking-wide">
+        唐顺宗永贞元年（805年），柳宗元因政治改革失败被贬永州司马。此诗作于其谪居冷寂之期。
+      </p>
+<div class="bg-black/30 p-2.5 rounded-[2px] text-[11px] text-juanse/75 leading-normal space-y-1">
+<p><strong class="text-juanse font-medium">【四绝奇构】：</strong>前两句“千山”、“万径”铺陈空旷静穆的天地绝境；后两句聚神于“孤舟”、“寒江”，以老翁之独钓，映照诗人不屈尘网的峻洁人格。</p>
+<p><strong class="text-juanse font-medium">【入画山河】：</strong>潇湘寒江，覆雪苍岩，幽冷清寂而具沉静力量。</p>
+</div>
+</div>
+<!-- 全站移动端侧滑导航菜单 (点击右上角菜单入口激活) -->
+<div class="absolute inset-0 z-40 bg-black/70 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 flex justify-end" id="nav-modal">
+<div class="w-[280px] h-full bg-qingdai border-l border-juanse/20 transform translate-x-full transition-transform duration-300 ease-out p-6 flex flex-col justify-between" id="nav-modal-content">
+<div>
+<!-- 侧边栏头部 -->
+<div class="flex justify-between items-center pb-5 border-b border-juanse/15">
+<span class="font-xingshu text-xl tracking-widest text-juanse">诗境·一卷山河</span>
+<button class="w-10 h-10 flex items-center justify-center text-juanse/70 hover:text-white" id="close-menu">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- 导航链接列表（保证 Shared Components 中的入口完整） -->
+<nav class="mt-6 flex flex-col space-y-3">
+<a class="flex items-center justify-between px-3 py-2.5 rounded-[4px] text-juanse/80 hover:text-white hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lg">filter_hdr</span>
+<span class="font-headline text-sm tracking-wider">诗词总览</span>
+</div>
+<span class="material-symbols-outlined text-sm text-juanse/40">chevron_right</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-[4px] text-primary bg-white/5 text-juanse font-medium" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lg text-zhusha">bookmarks</span>
+<span class="font-headline text-sm tracking-wider">我的收藏</span>
+</div>
+<span class="text-[10px] bg-zhusha/30 text-zhusha px-1.5 py-0.5 rounded-[2px] font-mono">12首</span>
+</a>
+<a class="flex items-center justify-between px-3 py-2.5 rounded-[4px] text-juanse/80 hover:text-white hover:bg-white/5 transition-colors" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-lg">account_circle</span>
+<span class="font-headline text-sm tracking-wider">个人中心</span>
+</div>
+<span class="material-symbols-outlined text-sm text-juanse/40">chevron_right</span>
+</a>
+<div class="pt-4 mt-2 border-t border-juanse/10">
+<span class="text-[10px] text-juanse/40 tracking-widest px-3 uppercase">探索卷轴</span>
+<div class="mt-2 space-y-1">
+<a class="block px-3 py-1.5 text-xs text-juanse/70 hover:text-white" href="#">山河卷志</a>
+<a class="block px-3 py-1.5 text-xs text-juanse/70 hover:text-white" href="#">书法典藏</a>
+<a class="block px-3 py-1.5 text-xs text-juanse/70 hover:text-white" href="#">关于诗境</a>
+</div>
+</div>
+</nav>
+</div>
+<!-- 底部版权声明 -->
+<div class="pt-4 border-t border-juanse/15 text-[10px] font-headline text-juanse/50 tracking-wider">
+<p>© 诗境·一卷山河</p>
+<p class="mt-0.5">循诗入境 · 展卷见山河</p>
+</div>
+</div>
+</div>
+</main>
+<!-- 简明原生效能逻辑（控制抽屉、静音开关、收藏按钮微交互） -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. 声音状态交互切换
+      const soundBtn = document.getElementById('sound-toggle');
+      const soundIcon = document.getElementById('sound-icon');
+      const soundText = document.getElementById('sound-text');
+      let isMuted = true;
+
+      soundBtn.addEventListener('click', () => {
+        isMuted = !isMuted;
+        if (isMuted) {
+          soundIcon.innerText = 'volume_off';
+          if (soundText) soundText.innerText = '雪寂声息';
+          soundBtn.setAttribute('title', '寒江雪寂 · 声音已闭');
+        } else {
+          soundIcon.innerText = 'volume_up';
+          if (soundText) soundText.innerText = '风雪轻吟';
+          soundBtn.setAttribute('title', '寒江雪声 · 播放中');
+        }
+      });
+
+      // 2. 收藏本诗按钮微交互
+      const favBtn = document.getElementById('favorite-btn');
+      const favIcon = document.getElementById('fav-icon');
+      let isFavorited = false;
+
+      favBtn.addEventListener('click', () => {
+        isFavorited = !isFavorited;
+        if (isFavorited) {
+          favIcon.innerText = 'bookmark';
+          favIcon.style.fontVariationSettings = "'FILL' 1";
+          favBtn.classList.replace('bg-zhusha', 'bg-[#7A332B]');
+        } else {
+          favIcon.innerText = 'bookmark_border';
+          favIcon.style.fontVariationSettings = "'FILL' 0";
+          favBtn.classList.replace('bg-[#7A332B]', 'bg-zhusha');
+        }
+      });
+
+      // 3. 笺注展开与收起抽屉
+      const noteBtn = document.getElementById('note-toggle-btn');
+      const noteDrawer = document.getElementById('note-drawer');
+      const closeDrawer = document.getElementById('close-drawer');
+
+      noteBtn.addEventListener('click', () => {
+        noteDrawer.classList.remove('translate-y-full');
+        noteBtn.setAttribute('aria-expanded', 'true');
+      });
+
+      closeDrawer.addEventListener('click', () => {
+        noteDrawer.classList.add('translate-y-full');
+        noteBtn.setAttribute('aria-expanded', 'false');
+      });
+
+      // 4. 侧边全站导航抽屉
+      const menuTrigger = document.getElementById('menu-trigger');
+      const navModal = document.getElementById('nav-modal');
+      const navModalContent = document.getElementById('nav-modal-content');
+      const closeMenu = document.getElementById('close-menu');
+
+      function openMenu() {
+        navModal.classList.remove('opacity-0', 'pointer-events-none');
+        navModal.classList.add('opacity-100', 'pointer-events-auto');
+        navModalContent.classList.remove('translate-x-full');
+      }
+
+      function hideMenu() {
+        navModal.classList.add('opacity-0', 'pointer-events-none');
+        navModal.classList.remove('opacity-100', 'pointer-events-auto');
+        navModalContent.classList.add('translate-x-full');
+      }
+
+      menuTrigger.addEventListener('click', openMenu);
+      closeMenu.addEventListener('click', hideMenu);
+      navModal.addEventListener('click', (e) => {
+        if (e.target === navModal) hideMenu();
+      });
+    });
+  </script>
+</body></html>

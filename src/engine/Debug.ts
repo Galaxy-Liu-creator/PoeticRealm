@@ -42,14 +42,14 @@ export class Debug {
 
     if (this.params.debug) {
       this.gui = import('lil-gui').then(({ default: GUIClass }) => {
-        const gui = new GUIClass({ title: 'PoeticRealm' });
+        const gui = new GUIClass({ title: '诗境 · 调试' });
         const clock = gui.addFolder('时钟');
-        clock.add(engine.clock, 'time', 0, 60, 0.01).listen().onChange((t: number) => engine.seek(t));
-        clock.add(engine.clock, 'playing').listen();
+        clock.add(engine.clock, 'time', 0, 60, 0.01).name('时间').listen().onChange((t: number) => engine.seek(t));
+        clock.add(engine.clock, 'playing').name('播放中').listen();
         const stats = gui.addFolder('统计');
-        stats.add(engine.stats, 'fps').listen().disable();
-        stats.add(engine.stats, 'calls').name('draw calls').listen().disable();
-        stats.add(engine.stats, 'triangles').listen().disable();
+        stats.add(engine.stats, 'fps').name('帧率').listen().disable();
+        stats.add(engine.stats, 'calls').name('绘制批次').listen().disable();
+        stats.add(engine.stats, 'triangles').name('三角面').listen().disable();
         return gui;
       });
     }

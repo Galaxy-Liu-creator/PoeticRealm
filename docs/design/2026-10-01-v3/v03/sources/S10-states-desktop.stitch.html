@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>诗境·一卷山河 - S10 关键状态审批板</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            qingdai: "#183236",
+            yuanshan: "#365C55",
+            silk: "#DDE3DA",
+            paper: "#F4F6F2",
+            cinnabar: "#9F493D",
+            "cinnabar-subtle": "#F7EFEF",
+            "ink-deep": "#192221",
+            "ink-muted": "#566461",
+            "ink-faint": "#8A9996",
+            "border-silk": "rgba(24, 50, 54, 0.12)",
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["'Noto Serif SC'", "serif"],
+            display: ["'Noto Serif SC'", "serif"],
+            body: ["'Public Sans'", "'Noto Serif SC'", "sans-serif"],
+            label: ["'Public Sans'", "'Noto Serif SC'", "sans-serif"],
+            calligraphy: ["'Ma Shan Zheng'", "'Noto Serif SC'", "cursive"]
+          },
+          boxShadow: {
+            'paper': '0 2px 8px -2px rgba(24, 50, 54, 0.05), 0 10px 24px -4px rgba(24, 50, 54, 0.04)',
+            'paper-hover': '0 4px 12px -2px rgba(24, 50, 54, 0.08), 0 16px 32px -4px rgba(24, 50, 54, 0.06)'
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .vertical-poetry {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      letter-spacing: 0.35em;
+    }
+    .paper-pattern {
+      background-color: #DDE3DA;
+      background-image: radial-gradient(rgba(24, 50, 54, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-silk text-ink-deep font-body antialiased selection:bg-yuanshan selection:text-white min-h-screen flex flex-col paper-pattern">
+<!-- 顶栏导航系统 (TopAppBar) -->
+<header class="bg-qingdai text-paper border-none w-full sticky top-0 z-50 shadow-md">
+<div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+<!-- 品牌行书主标题与回退链路 -->
+<div class="flex items-center space-x-6">
+<a class="flex items-center space-x-2 text-paper/75 hover:text-white transition-colors duration-300 group text-xs tracking-widest font-body" href="#overview">
+<span class="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1" data-icon="arrow_back">arrow_back</span>
+<span>返回总览</span>
+</a>
+<div class="h-4 w-px bg-paper/20"></div>
+<div class="flex items-baseline space-x-3">
+<span class="font-calligraphy text-2xl tracking-widest text-[#F4F6F2] font-normal">诗境·一卷山河</span>
+<span class="text-xs tracking-wider text-paper/60 font-headline hidden md:inline">关键状态审批 · 异常与交互规范</span>
+</div>
+</div>
+<!-- 共享核心导航链接 -->
+<nav class="flex items-center space-x-8 font-body tracking-wider text-sm">
+<a class="text-paper/80 hover:text-white pb-1 transition-colors duration-300" href="#poetic-overview">诗词总览</a>
+<a class="text-paper/80 hover:text-white pb-1 transition-colors duration-300" href="#collections">我的收藏</a>
+<a class="text-white font-medium border-b border-[#F4F6F2] pb-1" href="#profile">个人中心</a>
+</nav>
+</div>
+</header>
+<!-- 画板主工作区 Canvas -->
+<main class="flex-1 max-w-7xl w-full mx-auto px-8 py-10">
+<!-- 面板标题与说明注脚 -->
+<div class="mb-10 flex flex-col md:flex-row md:items-end justify-between border-b border-border-silk pb-6 gap-4">
+<div>
+<div class="inline-flex items-center space-x-2 px-2.5 py-1 bg-white/70 rounded text-yuanshan text-xs tracking-widest font-headline mb-3 border border-border-silk">
+<span class="w-1.5 h-1.5 rounded-full bg-yuanshan"></span>
+<span>DESIGN SYSTEM AUDIT · S10</span>
+</div>
+<h1 class="text-2xl md:text-3xl font-headline font-semibold text-qingdai tracking-wider">
+          关键状态交互与容错规范 · 审批板
+        </h1>
+<p class="text-ink-muted text-sm mt-2 font-headline tracking-wide">
+          纸墨相安，静观变故 · 包含六项核心局部异常、空态、加载与辅助功能验证。摒弃喧闹报错，恪守素雅克制之宋绢风规。
+        </p>
+</div>
+<div class="flex items-center space-x-3 text-xs tracking-wider text-ink-muted font-body">
+<span class="inline-block w-2.5 h-2.5 rounded-sm bg-cinnabar"></span>
+<span>朱砂克制警戒</span>
+<span class="inline-block w-2.5 h-2.5 rounded-sm bg-yuanshan ml-2"></span>
+<span>远山青稳定动作</span>
+<span class="inline-block w-2.5 h-2.5 rounded-sm bg-paper border border-border-silk ml-2"></span>
+<span>浅青宣纸衬底</span>
+</div>
+</div>
+<!-- 2列 x 3行 状态矩阵卡片 -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- ================= 状态 01 · 空收藏 ================= -->
+<section class="bg-paper rounded border border-border-silk p-7 shadow-paper flex flex-col justify-between relative overflow-hidden">
+<!-- 头部标牌 -->
+<div class="flex items-center justify-between border-b border-border-silk/80 pb-4 mb-6">
+<div class="flex items-center space-x-2.5">
+<span class="text-xs font-semibold px-2 py-0.5 rounded bg-yuanshan/10 text-yuanshan font-headline tracking-widest">状态 01</span>
+<h2 class="font-headline text-base font-medium text-qingdai tracking-wide">空收藏 · 引导画卷</h2>
+</div>
+<span class="text-xs text-ink-faint font-body tracking-wider">我的收藏无数据时的空态</span>
+</div>
+<!-- 内部主视区：东方空态构图 -->
+<div class="py-8 flex flex-col items-center text-center px-4">
+<div class="w-20 h-20 rounded-full bg-silk/70 border border-border-silk flex items-center justify-center mb-5 text-yuanshan shadow-inner">
+<span class="material-symbols-outlined text-4xl text-yuanshan/70" data-icon="landscape">landscape</span>
+</div>
+<h3 class="font-headline text-lg text-qingdai font-medium tracking-widest mb-2">尚未收藏诗词</h3>
+<p class="text-ink-muted text-xs md:text-sm font-headline max-w-sm leading-relaxed tracking-wider">
+            游山水、吟绝句，可于总览卡片或诗境内点击「收藏本诗」入册。墨痕未干，待君寄情。
+          </p>
+</div>
+<!-- 动作操作条 -->
+<div class="pt-5 border-t border-border-silk flex items-center justify-between">
+<span class="text-xs text-ink-faint tracking-widest font-headline">卷目空明 · 虚席以待</span>
+<button class="inline-flex items-center space-x-1.5 px-4 py-2 bg-yuanshan hover:bg-qingdai text-paper text-xs tracking-widest rounded transition-colors duration-200 shadow-sm">
+<span>去总览选诗</span>
+<span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- ================= 状态 02 · 入境加载失败 ================= -->
+<section class="bg-paper rounded border border-border-silk p-7 shadow-paper flex flex-col justify-between relative overflow-hidden">
+<!-- 头部标牌 -->
+<div class="flex items-center justify-between border-b border-border-silk/80 pb-4 mb-4">
+<div class="flex items-center space-x-2.5">
+<span class="text-xs font-semibold px-2 py-0.5 rounded bg-cinnabar/15 text-cinnabar font-headline tracking-widest">状态 02</span>
+<h2 class="font-headline text-base font-medium text-qingdai tracking-wide">入境加载失败 · 原位微澜提示</h2>
+</div>
+<span class="text-xs text-ink-faint font-body tracking-wider">资源超时时的就地提示</span>
+</div>
+<!-- 内部主视区：保留原卡片视觉并叠加微澜提示 -->
+<div class="relative rounded overflow-hidden border border-border-silk my-2">
+<!-- 枫桥夜泊微缩卡片背景 -->
+<div class="relative h-44 w-full bg-qingdai overflow-hidden">
+<img class="w-full h-full object-cover opacity-45 mix-blend-luminosity filter blur-[1px]" data-alt="A peaceful night view of an ancient Chinese stone bridge over a calm canal in Suzhou under a cloudy moonlight sky. A solitary wooden boat with a warm amber lantern floats quietly in the dark teal water. The traditional pagoda in the mist glows faintly, matching the classical poetic atmosphere of Maple Bridge Night Mooring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-qenPe1YwzuJJvDI44zL17neMkcuAkmaOCYt0ZPrs8K78MA8VUnciIIAN406hzFDiFyv8YMDSwMsPVr3bOLShsjhXzXhW7XzT6W4SfR9koMbXruMu4cCerndJnDc6al7NcYzGu9GcWz681Nfw9-faaB0gD40xBxP8z3-syXERyvvLN9ouLGwWgrlclagHjo1wj5yT5EyLL9Ww6tESmfse1KkPLgocckW8Xq7wunimLeJA_8jjt7Imn3cl1vfsGg_DCY9DKAKfzHGh"/>
+<div class="absolute inset-0 bg-gradient-to-t from-qingdai via-qingdai/70 to-transparent"></div>
+<div class="absolute top-3 left-4">
+<span class="text-paper/80 font-headline text-xs tracking-widest">枫桥夜泊 · 姑苏寒山</span>
+</div>
+<!-- 雅致错误提示浮层条 (严禁报警框红光，素雅墨色与暗朱砂) -->
+<div class="absolute inset-x-4 bottom-3 bg-paper/95 border border-cinnabar/30 rounded p-3.5 shadow-md flex items-start space-x-3">
+<span class="material-symbols-outlined text-cinnabar text-lg shrink-0 mt-0.5" data-icon="error_outline">error_outline</span>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h4 class="font-headline text-xs font-semibold text-qingdai tracking-widest">网络微澜，暂时无法入境</h4>
+<span class="text-[10px] text-cinnabar font-body">超时 (ETIMEDOUT)</span>
+</div>
+<p class="text-[11px] text-ink-muted font-headline tracking-wider mt-0.5 leading-normal">
+                  山川画卷与琴音加载超时，未损耗已有进度，稍歇片刻可尝试重唤画境。
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- 动作操作条 -->
+<div class="pt-4 border-t border-border-silk flex items-center justify-between">
+<button class="text-xs text-ink-muted hover:text-qingdai tracking-widest font-headline transition-colors">
+            留在总览
+          </button>
+<div class="flex items-center space-x-3">
+<button class="px-3.5 py-1.5 border border-border-silk bg-white hover:bg-silk text-ink-deep text-xs tracking-widest rounded transition-colors">
+              取消
+            </button>
+<button class="inline-flex items-center space-x-1 px-4 py-1.5 bg-yuanshan hover:bg-qingdai text-paper text-xs tracking-widest rounded transition-colors shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="refresh">refresh</span>
+<span>重新入境</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ================= 状态 03 · 头像选择错误 ================= -->
+<section class="bg-paper rounded border border-border-silk p-7 shadow-paper flex flex-col justify-between relative overflow-hidden">
+<!-- 头部标牌 -->
+<div class="flex items-center justify-between border-b border-border-silk/80 pb-4 mb-5">
+<div class="flex items-center space-x-2.5">
+<span class="text-xs font-semibold px-2 py-0.5 rounded bg-cinnabar/15 text-cinnabar font-headline tracking-widest">状态 03</span>
+<h2 class="font-headline text-base font-medium text-qingdai tracking-wide">头像选择错误 · 稳妥保护机制</h2>
+</div>
+<span class="text-xs text-ink-faint font-body tracking-wider">破损或超限提示</span>
+</div>
+<!-- 内部主视区：原有山水头像稳妥保留，附带克制朱砂警告 -->
+<div class="space-y-4 my-auto">
+<div class="flex items-center space-x-5 p-4 bg-white/70 border border-border-silk rounded">
+<!-- 依然完好保留的原有有效头像 -->
+<div class="relative shrink-0">
+<div class="w-16 h-16 rounded-full border-2 border-yuanshan/30 overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A delicate circular landscape ink wash painting depicting distant blue-green mountains emerging through early morning fog. Serene traditional Chinese style with refined mist and tranquil composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwNqrT1ein-3AImpt9LB2H96K48ChT3Vs1aOWDR9JzF4GJuCCW9YV4lRSRMrOnqmoc4Bp5VIA0Mfi6HPNA1-NJl08XQjFlHms365h0nj_RJDCl3BSpCgbeFW181-GcRsoEWtFgKEAMvLxJxYVchblR4o1iLOk6hJe_2OvzAOVhff8873S-1w5M2NJ6_8lhtYGE7fzgwbt8vM8YdmHKD_19KVChnV1WvJjRPz2UDduju_GwFrDot6MWhF8RY48-5nGG0wWkuHkp2CRS"/>
+</div>
+<span class="absolute -bottom-1 -right-1 bg-yuanshan text-paper rounded-full text-[10px] px-1 py-0.2 border border-white">当前</span>
+</div>
+<!-- 说明与当前状态 -->
+<div class="flex-1">
+<div class="flex items-center space-x-2">
+<span class="font-headline text-sm font-medium text-qingdai tracking-wider">独钓寒江客</span>
+<span class="text-[10px] px-1.5 py-0.5 bg-silk rounded text-ink-muted">原山水头像安全保留</span>
+</div>
+<p class="text-xs text-ink-faint mt-1 font-body">选图异常未覆盖已有设置，当前展示仍为您早前指定的青绿册页。</p>
+</div>
+</div>
+<!-- 克制行内提示条 -->
+<div class="p-3 bg-cinnabar-subtle border border-cinnabar/20 rounded flex items-start space-x-2.5">
+<span class="material-symbols-outlined text-cinnabar text-sm mt-0.5" data-icon="warning">warning</span>
+<div class="text-xs leading-relaxed">
+<span class="font-headline font-medium text-cinnabar tracking-wider block">图片无法读取或文件超过 5 MiB</span>
+<span class="text-ink-muted text-[11px] font-headline tracking-wide">仅支持 JPEG、PNG、WebP 格式。原山水头像已为您完好保留，未发生重置。</span>
+</div>
+</div>
+</div>
+<!-- 动作操作条 -->
+<div class="pt-5 border-t border-border-silk flex items-center justify-between">
+<button class="px-3.5 py-1.5 border border-border-silk bg-white hover:bg-silk text-ink-deep text-xs tracking-widest rounded transition-colors">
+            保持原样
+          </button>
+<button class="inline-flex items-center space-x-1 px-4 py-1.5 bg-yuanshan hover:bg-qingdai text-paper text-xs tracking-widest rounded transition-colors shadow-sm">
+<span class="material-symbols-outlined text-xs" data-icon="photo_camera">photo_camera</span>
+<span>重新选择图片</span>
+</button>
+</div>
+</section>
+<!-- ================= 状态 04 · 本机存储受限 / 保存失败 ================= -->
+<section class="bg-paper rounded border border-border-silk p-7 shadow-paper flex flex-col justify-between relative overflow-hidden">
+<!-- 头部标牌 -->
+<div class="flex items-center justify-between border-b border-border-silk/80 pb-4 mb-5">
+<div class="flex items-center space-x-2.5">
+<span class="text-xs font-semibold px-2 py-0.5 rounded bg-yuanshan/10 text-yuanshan font-headline tracking-widest">状态 04</span>
+<h2 class="font-headline text-base font-medium text-qingdai tracking-wide">本机存储受限 · 会话存续模式</h2>
+</div>
+<span class="text-xs text-ink-faint font-body tracking-wider">无痕模式或禁用 localStorage</span>
+</div>
+<!-- 内部主视区：严禁伪造永久成功徽标，真实说明仅在当前标签页有效 -->
+<div class="my-auto space-y-4">
+<div class="p-4 bg-white/70 border border-border-silk rounded">
+<div class="flex items-center justify-between mb-3 pb-2 border-b border-border-silk/50">
+<span class="font-headline text-xs font-medium text-qingdai tracking-wider">卷轴浏览参数设定</span>
+<span class="text-[10px] font-headline text-cinnabar px-2 py-0.5 bg-cinnabar-subtle rounded border border-cinnabar/20">仅限当前会话</span>
+</div>
+<div class="grid grid-cols-2 gap-3 text-xs">
+<div class="p-2.5 bg-silk/40 rounded flex flex-col">
+<span class="text-ink-faint text-[10px] font-headline">竖排右起排版</span>
+<span class="text-qingdai font-medium font-headline mt-0.5">经典宣纸样式 (生效中)</span>
+</div>
+<div class="p-2.5 bg-silk/40 rounded flex flex-col">
+<span class="text-ink-faint text-[10px] font-headline">背景水光微动</span>
+<span class="text-qingdai font-medium font-headline mt-0.5">轻柔开 (生效中)</span>
+</div>
+</div>
+</div>
+<div class="p-3 bg-silk/80 border border-border-silk rounded flex items-start space-x-2.5">
+<span class="material-symbols-outlined text-ink-muted text-base shrink-0 mt-0.5" data-icon="lock">lock</span>
+<div>
+<p class="font-headline text-xs font-medium text-qingdai tracking-wider">本机暂不可写入 · 本次设定仅在当前会话生效</p>
+<p class="text-[11px] text-ink-muted font-headline tracking-wide mt-1 leading-normal">
+                检测到浏览器处于无痕窗口或本机存储配额受限，离开本页或关闭标签后将恢复默认。本站未连接外部服务器，绝无外泄风险。
+              </p>
+</div>
+</div>
+</div>
+<!-- 动作操作条 -->
+<div class="pt-5 border-t border-border-silk flex items-center justify-between">
+<button class="inline-flex items-center space-x-1 px-3.5 py-1.5 border border-border-silk bg-white hover:bg-silk text-ink-deep text-xs tracking-widest rounded transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="refresh">refresh</span>
+<span>重试保存</span>
+</button>
+<button class="px-4 py-1.5 bg-qingdai hover:bg-yuanshan text-paper text-xs tracking-widest rounded transition-colors shadow-sm">
+            知晓并继续浏览
+          </button>
+</div>
+</section>
+<!-- ================= 状态 05 · 本地头像圆形裁切预览 ================= -->
+<section class="bg-paper rounded border border-border-silk p-7 shadow-paper flex flex-col justify-between relative overflow-hidden">
+<!-- 头部标牌 -->
+<div class="flex items-center justify-between border-b border-border-silk/80 pb-4 mb-4">
+<div class="flex items-center space-x-2.5">
+<span class="text-xs font-semibold px-2 py-0.5 rounded bg-yuanshan/10 text-yuanshan font-headline tracking-widest">状态 05</span>
+<h2 class="font-headline text-base font-medium text-qingdai tracking-wide">本地头像圆形裁切 · 笔墨构图</h2>
+</div>
+<span class="text-xs text-ink-faint font-body tracking-wider">山水画素材裁剪交互确认</span>
+</div>
+<!-- 内部主视区：自然山水画作裁切交互框，拒绝真人现代自拍 -->
+<div class="relative bg-qingdai/90 rounded border border-border-silk p-4 flex items-center justify-center my-auto overflow-hidden h-48">
+<div class="relative w-40 h-40 flex items-center justify-center">
+<!-- 裁切底图：山水画素材 -->
+<img class="w-full h-full object-cover filter brightness-95" data-alt="Traditional Chinese landscape painting detail of steep misty karst peaks, a calm emerald river, and solitary pine trees. Subtle atmospheric light, muted ink tones, and textured silk grain, perfect for artistic avatar selection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASVMJfLWnW9KIUOby3Dh3r2noHjDnB7UaWLI9Pq--T29J2rIeoa7EyxxFff5907AcYJ0H4wDuGathuHIj2IV-oYP-OW1hgLjUTr6-gChExMw5rJ4xF-WcKSsy_2XOqXBEbnTjF72RQyka-1p5R4NBf02RerpQG8EOTOcQal3Hiv39RhO0I2M_yKHRZb0g4V0g1UahVz3PvQVmX04Kmla6nKsfF3jmbRawVf_pbZ0Q233tUKjwywfP9hMnnuc-37WNca9dhv8gwJ0yA"/>
+<!-- 半透明遮罩层 -->
+<div class="absolute inset-0 bg-qingdai/60 pointer-events-none"></div>
+<!-- 圆形透光裁剪视窗与虚线指示环 -->
+<div class="absolute w-28 h-28 rounded-full border-2 border-dashed border-paper overflow-hidden shadow-2xl flex items-center justify-center">
+<img class="w-40 h-40 max-w-none object-cover absolute" data-alt="Traditional Chinese landscape painting detail of steep misty karst peaks, a calm emerald river, and solitary pine trees. Subtle atmospheric light, muted ink tones, and textured silk grain, perfect for artistic avatar selection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqxl2OydRZ8bnwlI4CMToJ-BNrX8xN66g1s7hku2DclPy1g-bdGF0lrPgRXd5-EK1R0ZguLNQ6ok9ZCmMg4w3ypUVrPGaQ300DfqUEy2PKVX61t61__OY3ttIRoy5VagPrGjlaIlLPQFrpkz0zLHogWxmIpwRmiMc3qTYd6ruGDr498cEykIaJ6guF7OoPhbWxqSELcqazKH8lzl1urTXB4-Or5dKCdkurmUFvBNaT4XJ2wsxWMrTEv63F0r4vYcLaVr3IC2Uvrcj8"/>
+</div>
+<!-- 四角刻度标线 (东方画框微规) -->
+<div class="absolute top-1 left-1 w-2 h-2 border-t border-l border-paper/60"></div>
+<div class="absolute top-1 right-1 w-2 h-2 border-t border-r border-paper/60"></div>
+<div class="absolute bottom-1 left-1 w-2 h-2 border-b border-l border-paper/60"></div>
+<div class="absolute bottom-1 right-1 w-2 h-2 border-b border-r border-paper/60"></div>
+</div>
+<div class="absolute bottom-2 left-4 text-[10px] text-paper/70 font-headline tracking-widest flex items-center space-x-1">
+<span class="material-symbols-outlined text-xs" data-icon="crop">crop</span>
+<span>拖拽平移选定远山或清流构图</span>
+</div>
+</div>
+<!-- 动作操作条 -->
+<div class="pt-4 border-t border-border-silk flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<button class="px-3 py-1.5 text-xs text-ink-muted hover:text-qingdai tracking-widest font-headline">
+              取消
+            </button>
+<button class="px-3 py-1.5 border border-border-silk bg-white hover:bg-silk text-ink-deep text-xs tracking-widest rounded transition-colors">
+              重新选取
+            </button>
+</div>
+<button class="inline-flex items-center space-x-1.5 px-4 py-1.5 bg-yuanshan hover:bg-qingdai text-paper text-xs tracking-widest rounded transition-colors shadow-sm font-medium">
+<span class="material-symbols-outlined text-xs" data-icon="check">check</span>
+<span>确认裁切并应用</span>
+</button>
+</div>
+</section>
+<!-- ================= 状态 06 · 降低动态 / 静止模式 ================= -->
+<section class="bg-paper rounded border border-border-silk p-7 shadow-paper flex flex-col justify-between relative overflow-hidden">
+<!-- 头部标牌 -->
+<div class="flex items-center justify-between border-b border-border-silk/80 pb-4 mb-4">
+<div class="flex items-center space-x-2.5">
+<span class="text-xs font-semibold px-2 py-0.5 rounded bg-yuanshan/10 text-yuanshan font-headline tracking-widest">状态 06</span>
+<h2 class="font-headline text-base font-medium text-qingdai tracking-wide">降低动态 · 静止画卷规范</h2>
+</div>
+<span class="text-xs text-ink-faint font-body tracking-wider">无障碍减弱动态效果</span>
+</div>
+<!-- 内部主视区：经典三卡片稳定定格示意 -->
+<div class="my-auto space-y-3">
+<div class="bg-white/80 border border-border-silk rounded p-3">
+<div class="flex items-center justify-between mb-2">
+<span class="text-[11px] font-headline font-semibold text-qingdai tracking-widest flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-sm text-yuanshan" data-icon="motion_photos_off">motion_photos_off</span>
+<span>已启用「静止画卷」无障碍模式</span>
+</span>
+<span class="text-[10px] font-headline text-yuanshan bg-yuanshan/10 px-2 py-0.5 rounded">标准 200ms 淡入</span>
+</div>
+<!-- 经典三首诗静止定格预览条 -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="bg-silk/60 border border-border-silk rounded p-2 text-center">
+<span class="font-headline text-xs text-qingdai block font-medium">江雪</span>
+<span class="text-[10px] text-ink-muted">独钓寒江雪</span>
+</div>
+<div class="bg-yuanshan/15 border border-yuanshan/30 rounded p-2 text-center">
+<span class="font-headline text-xs text-yuanshan block font-medium">枫桥夜泊</span>
+<span class="text-[10px] text-ink-deep">夜半钟声到</span>
+</div>
+<div class="bg-silk/60 border border-border-silk rounded p-2 text-center">
+<span class="font-headline text-xs text-qingdai block font-medium">早发白帝城</span>
+<span class="text-[10px] text-ink-muted">轻舟已过万重山</span>
+</div>
+</div>
+</div>
+<div class="px-3 py-2 bg-silk/40 rounded border border-border-silk text-[11px] text-ink-muted font-headline leading-relaxed tracking-wide">
+            停用背景视差层滚动与微浮动漂移动画，转场采用标准 200ms 短淡入淡出，诗文与卡片尺寸严格定格保持 520px，保证阅读沉静稳定。
+          </div>
+</div>
+<!-- 动作操作条 -->
+<div class="pt-4 border-t border-border-silk flex items-center justify-between">
+<span class="text-xs text-ink-faint font-headline tracking-widest">符合 WCAG 2.1 动效要求</span>
+<button class="px-3.5 py-1.5 border border-border-silk bg-white hover:bg-silk text-ink-deep text-xs tracking-widest rounded transition-colors">
+            恢复轻微视差动态
+          </button>
+</div>
+</section>
+</div>
+<!-- 底部审批确认签注栏 -->
+<div class="mt-12 bg-white/70 border border-border-silk rounded p-6 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 rounded bg-qingdai text-paper flex items-center justify-center font-headline font-semibold text-sm">
+          S10
+        </div>
+<div>
+<h3 class="font-headline text-sm font-semibold text-qingdai tracking-wider">状态设计板已准备就绪 · 待签审确认</h3>
+<p class="text-xs text-ink-muted font-headline tracking-wide mt-0.5">所有六类异常与边缘分支均已遵循「深青黛、远山青、轻绢素宣与克制朱砂」用色准则，无现代荧光及弹窗干扰。</p>
+</div>
+</div>
+<div class="flex items-center space-x-3 w-full md:w-auto justify-end">
+<button class="px-4 py-2 border border-border-silk bg-white hover:bg-silk text-ink-deep text-xs tracking-widest rounded transition-colors font-headline">
+          导出设计稿标注
+        </button>
+<button class="px-5 py-2 bg-qingdai hover:bg-yuanshan text-paper text-xs tracking-widest rounded transition-colors shadow-sm font-headline">
+          通过此版状态规范
+        </button>
+</div>
+</div>
+</main>
+<!-- 全局统一页脚 (Footer) -->
+<footer class="bg-surface dark:bg-surface-container border-t border-border-silk/60 mt-12 py-8 bg-paper">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center opacity-75 gap-4">
+<div class="font-headline text-xs tracking-widest text-ink-deep">
+        © 诗境·一卷山河 · 循诗入境 展卷见山河 · 异常交互与关键状态规范
+      </div>
+<div class="flex items-center space-x-6 text-xs tracking-widest font-body text-ink-muted">
+<a class="hover:text-yuanshan transition-colors duration-200" href="#archives">山河卷志</a>
+<a class="hover:text-yuanshan transition-colors duration-200" href="#calligraphy">书法典藏</a>
+<a class="hover:text-yuanshan transition-colors duration-200" href="#about">关于诗境</a>
+</div>
+</div>
+</footer>
+</body></html>

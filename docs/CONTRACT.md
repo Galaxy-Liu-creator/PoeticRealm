@@ -10,6 +10,8 @@
 
 ## v3 产品转向兼容说明（2026-10-01）
 
+2026-10-02 路径整理：前端工程迁 frontend，本文发布路径改为 frontend/public/assets，Node 工具改为 frontend/tools。art 保留根目录，Blender 示例从仓库根运行。只调整工作区位置，不改变 v0.1 的节点、属性、材质、单位、编码或预算。
+
 - **本轮没有修改 v0.1 数据接口**：节点名、属性、材质槽位、顶点色、高度图编码、导出参数与预算原样保留，现有资产仍按下文验证。
 - 本契约决定资产如何交接，不决定网站必须先看书房、纸面隆起或全屏水墨。新版产品体验以 `docs/设计文档.md` v3 和 ADR 0004 为准；下文的书房 / 纸面生长描述及其旧设计章节号属于 v2 接口背景（历史文档见 Git `6bdd81a`）。
 - 写实 PBR 输入（法线、粗糙度等）、程序化地形替换、是否继续需要 study 场景等属于**后续迁移提案**，不因本次设计改稿就自动生效。实施前必须形成 v0.2 变更并同步校验脚本、资产、加载代码；当前不得声称已有完整 PBR 支持。
@@ -61,11 +63,11 @@
 
 | 文件 | 内容 | 导出到 |
 |---|---|---|
-| `art/blender/study.blend` | 书房、书封与装帧 | `public/assets/models/study/` |
-| `art/blender/fengqiao.blend` | 枫桥夜泊 | `public/assets/models/fengqiao/` |
-| `art/blender/jiangxue.blend` | 江雪 | `public/assets/models/jiangxue/` |
-| `art/blender/baidicheng.blend` | 早发白帝城 | `public/assets/models/baidicheng/` |
-| `art/blender/props.blend` | 跨场景复用的物件（舟、单株植被…） | `public/assets/models/common/` |
+| `art/blender/study.blend` | 书房、书封与装帧 | `frontend/public/assets/models/study/` |
+| `art/blender/fengqiao.blend` | 枫桥夜泊 | `frontend/public/assets/models/fengqiao/` |
+| `art/blender/jiangxue.blend` | 江雪 | `frontend/public/assets/models/jiangxue/` |
+| `art/blender/baidicheng.blend` | 早发白帝城 | `frontend/public/assets/models/baidicheng/` |
+| `art/blender/props.blend` | 跨场景复用的物件（舟、单株植被…） | `frontend/public/assets/models/common/` |
 
 ### 2.2 集合 = 导出单元
 
@@ -242,8 +244,8 @@ Blender 里的程序化节点本来就导不出去，所以材质只是**槽位*
 
 | 文件 | 内容 |
 |---|---|
-| `public/assets/terrain/<scene>.height.png` | 高度 + 墨迹引导遮罩 |
-| `public/assets/terrain/<scene>.height.json` | 尺寸、高度范围、水位等元数据 |
+| `frontend/public/assets/terrain/<scene>.height.png` | 高度 + 墨迹引导遮罩 |
+| `frontend/public/assets/terrain/<scene>.height.json` | 尺寸、高度范围、水位等元数据 |
 
 两者都由 `art/scripts/bake_terrain.py` 从 `terrain` 集合中的 `terrain` 物体烘焙，**不要手工编辑**。
 
@@ -335,7 +337,7 @@ Blender 里的程序化节点本来就导不出去，所以材质只是**槽位*
 命令：
 
 ```bash
-blender -b art/blender/fengqiao.blend --python art/scripts/export_glb.py -- --out public/assets/models/fengqiao
+blender -b art/blender/fengqiao.blend --python art/scripts/export_glb.py -- --out frontend/public/assets/models/fengqiao
 ```
 
 ---
@@ -368,10 +370,10 @@ art/blender/<scene>.blend
 ↓ art/scripts/validate.py          Blender 端检查（15.2），不通过则停止
 ↓ art/scripts/export_glb.py        按集合导出 GLB（第 13 节）
 ↓ art/scripts/bake_terrain.py      地形 → height.png + height.json（第 10 节）
-↓ tools/optimize-assets.mjs        gltf-transform：合并静态网格、Meshopt 压缩、贴图缩到 ≤ 2K 并转 WebP、去重、裁剪
-↓ public/assets/models/<scene>/
-↓ tools/check-contract.mjs         契约检查（15.3）
-↓ tools/check-budget.mjs           预算检查（第 14 节）
+↓ frontend/tools/optimize-assets.mjs        gltf-transform：合并静态网格、Meshopt 压缩、贴图缩到 ≤ 2K 并转 WebP、去重、裁剪
+↓ frontend/public/assets/models/<scene>/
+↓ frontend/tools/check-contract.mjs         契约检查（15.3）
+↓ frontend/tools/check-budget.mjs           预算检查（第 14 节）
 ↓ 前端加载
 ```
 

@@ -1,6 +1,6 @@
 # T05 · 登录 / 注册舞台拉幕规范
 
-**设计规范，尚未实现。** 视觉来源：[S13 幕布入口](references/S13-curtain-entry-user.png)、[S11 登录](references/S11-login-user.png)、[S12 注册](references/S12-register-user.png)。用户要求以原图还原并保证动画流畅。
+**历史设计规范。** R1 已实现 DOM 拉幕首版，完整布面与场景全局时钟整合仍待后续，见 [R1报告](../../../plans/R1-UI还原/report.md)。下面保留原提案；S13 仍有效，登录/注册已由 v10 替代。原来源：[S13](references/S13-curtain-entry-user.png)、[S11](references/S11-login-user.png)、[S12](references/S12-register-user.png)。
 
 ## 入口与目标
 

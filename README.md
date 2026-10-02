@@ -6,14 +6,14 @@
 
 以浮动诗词卡片为入口，通过按意象设计的转场进入有真实材质、光照与自然动态的三维山水；读诗、观景、收藏，再翻页回到诗词总览。
 
-> **当前：2026-10-01 R1 桌面 UI 首版。** 用户授权核对文档后代码还原，采用 [当前混合版本视觉清单](docs/design/README.md)。已实现总览、收藏、个人中心、三诗静态预览、账号三页与拉幕；收藏、资料、头像和偏好保存在当前浏览器。账号服务等待用户选择，实时三维和诗境专属转场留在 R2/R3。实现与验证见 [R1 报告](docs/plans/R1-UI还原/report.md)，续接状态见 [HANDOFF](HANDOFF.md)。
+> **当前：2026-10-02 R1 UI 已实现，进入 R1A 前后端分离与认证准备。** 前端已迁入 `frontend/`；用户选择 Spring Boot 后端，尚未创建或接入。九页 UI、本机收藏/资料/头像、用户名记忆与拉幕首版可用，三诗仍为静态预览。实现见 [R1 报告](docs/plans/R1-UI还原/report.md)，结构与创建配置见 [架构规划](docs/architecture/前后端分离与认证规划.md)，进度见 [HANDOFF](HANDOFF.md)。
 
 ## 新版目标与阶段
 
 - 打开即见诗词总览：全宽山水题头、行书“诗境·一卷山河”、绢纸山影与竹叶底景、三张对齐诗卡，以用户指定 v09 原图为准。
 - 按诗意入场：中央火烧、右上广域碎雪、云水揭幕；诗境中竖排读诗、观察真实山水。
 - 顶部导航：总览、收藏、个人中心；首页无返回，诗境翻页返回总览。
-- 按用户新原图设计个人中心，以及登录/注册与全屏幕布入口；认证与数据保存方案实施前明确，当前没有账号服务。
+- 按用户新原图设计个人中心，以及登录/注册与全屏幕布入口；后端已选 Spring Boot，现有资料仍保存在本机，认证尚未接入。
 - 已按指定稿开始代码还原；设计归档、当前实现和最终实机验收分别记录。
 
 ## 首版三首诗
@@ -33,14 +33,14 @@ Blender + Three.js（WebGLRenderer，three.js 0.186.1 精确锁定）+ GLSL + Ty
 ## 运行 UI 与保留的技术原型
 
 ```bash
-npm install
-npm run dev
-npm run build
-npm test
-npm run check:contract
+npm --prefix frontend ci
+npm --prefix frontend run dev
+npm --prefix frontend run build
+npm --prefix frontend test
+npm --prefix frontend run check:contract
 ```
 
-`dev` 默认展示新 UI。`node tools/verify-ui.mjs` 在已运行的本地 Vite 服务上复验页面与异常，截图保存在 R1/assets。`check:contract` 仍是未完成的原计划任务，不能凭退出成功声称完整契约校验已实现。
+以上命令从仓库根执行，开发端口为 5173，构建输出 `frontend/dist/`。`node frontend/tools/verify-ui.mjs` 在已启动的本地服务上复验，证据仍放根 docs 的 R1/assets；调整、一屏与字体/记忆脚本见架构规划。`check:contract` 当前为空占位，退出成功不算有效契约验证。开发时 `/api` 预留代理到 8080，后端未创建不影响现有页面。
 
 显式 `?scene=<id>&t=<秒>`、`?q=high|mid|low` 或 `?debug` 仍进入独立保留的 P0，覆盖普通 hash 页面，保留 `window.__POETIC__`。不带这些参数时使用 `#/`、`#/favorites`、`#/profile`、`#/poems/<id>`、`#/account`、`#/login`、`#/register`。
 
@@ -54,16 +54,18 @@ npm run check:contract
 | [UI 设计与审批](docs/design/README.md) | brief、提示词、参考、实际生成状态、审批表 |
 | [分镜](docs/STORYBOARD.md) | 火 / 雪 / 云水 / 翻页与诗境分镜草案 |
 | [验收清单](docs/CHECKLIST.md) | 区分设计审批和运行时验证 |
-| [计划索引](docs/plans/README.md) | R1 当前阶段与后续建议窗口 |
+| [计划索引](docs/plans/README.md) | R1A 认证准备与 R2–R4 后续阶段 |
 | [来源与许可](docs/CREDITS.md) | 库、素材、参考与生成声明 |
+| [前后端与认证规划](docs/architecture/前后端分离与认证规划.md) | 目录、API、会话、Spring Boot 创建配置 |
+| [项目约定](AGENTS.md) | 长期协作、素材、验证规则 |
 
-`art/` 存制作源文件，`public/assets/` 只存可发布资产；`src/` 保留引擎、系统、场景、UI 分层。新目录规划见设计文档第 23 章，不代表对应功能已经创建。
+`frontend/` 是独立前端工程，`frontend/src/` 保留 UI/引擎/场景分层；`frontend/public/assets/` 存契约资产。运行 UI 图片在 `frontend/src/assets/ui/`，副本来源可追溯，发布限制仍有效。`art/` 和 `docs/` 保留根目录；`backend/` 是用户下一步创建 Spring Boot 的目标，不把规划当作已实现。
 
 ## 验证与已知限制
 
-- 既有进度记录：P0 T1–T5 已完成，包括工程 / 时钟 / 随机、灰模导出、高度图与 GPU 墨扩散测试；本轮未重新运行这些测试。
-- 本次入库检查：24 项单元测试、类型检查、构建及两个 Blender 源文件的 `validate.py` 校验通过。`check:contract` 当前为空脚本，其退出成功不算运行端契约验证；上述检查也不代表重新完成了 GPU 截图验收。
-- 新版 UI 已实现并通过类型检查、构建、30 项单元测试与 Chromium 页面验证；三诗当前是明确标注的静态预览，意象入场、翻页与写实场景尚未实现。账号认证未接入，通知与推荐服务未开放。
+- 既有进度记录：P0 T1–T5 已完成，包括工程 / 时钟 / 随机、灰模导出、高度图与 GPU 墨扩散测试；本轮回归现有单测和查询入口，未重跑全部 Blender 制作、视觉与目标机性能验收。
+- R1 最新报告记录类型检查、构建、9 文件 37 项单测与 36 组浏览器检查通过；目录迁移的复验结果见 HANDOFF。Blender 制作端的既有校验不代表本轮重制资产。
+- 三诗是明确标注的静态预览，意象入场、翻页与写实场景留在 R2/R3；账号认证尚未接入，通知与推荐服务未开放。“记住我”只保存用户名，不提供免登录。
 - 页面沿用原图的青黛山水与绢纸构图；字体、完整无文字分层背景与精细装饰仍需收敛。当前图片仅获本地还原用途，构建包包含预览原图，许可与资源优化完成前不发布。
 - 设计图：已通过 Stitch MCP 完成总览、三首诗境、收藏、个人中心、关键状态与四类转场分镜，仅桌面网页。原稿、请求、概念素材与来源记录存于 docs/design；火烧、翻页另附明确标注的源稿资源校验预览。设计审批不代表运行时功能已实现。
 - 比赛截止为 **2026-10-23**；其余比赛规则、答辩机与团队分工仍需确认。

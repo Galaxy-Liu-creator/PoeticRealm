@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-02",
+  "source": "User attachments; copied without modification",
+  "scope": "S11/S12 supersede v07 account references; S06/S13 unchanged",
+  "references": [
+    {
+      "id": "S11",
+      "file": "references/S11-login-user.png",
+      "attachment": "C:/Users/Lenovo/AppData/Local/Temp/codex-clipboard-b7876ada-3ae7-49d8-aef4-d66f051a2e6c.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "9546693ce680329a26010d2f19bf2c67da8a23a71203eb2f63aadb2ff1b51d46"
+    },
+    {
+      "id": "S12",
+      "file": "references/S12-register-user.png",
+      "attachment": "C:/Users/Lenovo/AppData/Local/Temp/codex-clipboard-e1ea3eb0-cf87-46d1-b3c4-a44358c6a773.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5dff8b9b2bbcfad7795c67f247822d8d681a70f0592b8945d9576614d4651aa3"
+    }
+  ],
+  "runtimeBackground": {
+    "file": "../runtime-assets/auth-split-background-v1.png",
+    "source": "references/S11-login-user.png",
+    "tool": "built-in image_gen",
+    "originalOutput": "C:/Users/Lenovo/.codex/generated_images/01a0fa76-e770-78d3-b776-a205f64dde46/exec-498b2025-0c57-4609-b937-d7639b119752.png",
+    "sha256": "3f3d2ef574289880d664b060ab73e2fb839921b205217a4c840cfeb741734be2",
+    "prompt": "../runtime-assets/README.md#auth-split-background-v1png",
+    "model": null,
+    "serviceTaskId": null,
+    "note": "UI removed and occluded areas inpainted; not a pixel-identical copy of the reference."
+  },
+  "publicationPermission": "Not provided; local implementation reference only"
+}

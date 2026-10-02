@@ -1,0 +1,38 @@
+/* docs/字体规范.md is the typography authority. Installed fonts resolve synchronously. */
+:root {
+  --font-brand: "STXingkai", "华文行楷", "KaiTi", "STKaiti", serif;
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "思源宋体", "Songti SC", "SimSun", "宋体", serif;
+  --font-kai: "LXGW WenKai", "霞鹜文楷", "KaiTi", "STKaiti", "楷体", serif;
+  --font-sans: "Noto Sans SC", "Source Han Sans SC", "思源黑体", "Microsoft YaHei", sans-serif;
+}
+.font-brand { font-family: var(--font-brand); }
+.font-title { font-family: var(--font-serif); }
+.font-poetic, .poetic-copy { font-family: var(--font-kai); }
+.font-ui { font-family: var(--font-sans); }
+body { font-family: var(--font-sans); line-height: 1.5; font-weight: 400; }
+h1, h2, h3 { font-family: var(--font-serif); }
+h1 { font-weight: 700; letter-spacing: .08em; line-height: 1.25; }
+h2 { font-weight: 600; letter-spacing: .06em; }
+h3 { font-weight: 600; }
+button, input, select, textarea { font-family: var(--font-sans); letter-spacing: .02em; }
+button, .small-button, .outline-button { font-weight: 500; }
+label, .gender-options legend { font-family: var(--font-sans); font-weight: 500; letter-spacing: .02em; }
+input, select, textarea { font-weight: 400; }
+.brand, .seal, .hero-copy h1, .entry-copy h1, .auth-brand strong, .account-intro h1 { font-family: var(--font-brand); font-weight: 400; letter-spacing: .08em; }
+.navigation nav a, .return-link, .auth-tools, .account-tabs, .login-options, .agreement, .gender-options, .account-switch, .pagination, .site-footer { font-family: var(--font-sans); letter-spacing: .02em; }
+.section-title, .page-heading h1, .profile-hero h1, .poem-title h1, .account-panel > h2 { font-family: var(--font-serif); font-weight: 700; letter-spacing: .08em; line-height: 1.25; }
+.card-heading h3, .mini-poem h3, .profile-summary h2, .panel-title, .experience-list h2 { font-family: var(--font-serif); font-weight: 600; letter-spacing: .06em; }
+.hero-copy > p, .entry-copy > p, .auth-brand small, .account-tagline, .form-subtitle, .experience-list p, .excerpt, .page-heading > p, .profile-hero > p, .profile-summary > p:not(.profile-role), .mini-poem p { font-family: var(--font-kai); font-weight: 400; letter-spacing: .08em; line-height: 1.7; }
+.poem-columns p { font-family: var(--font-kai); font-weight: 400; letter-spacing: .10em; line-height: 1.9; }
+.notes-panel p { font-family: var(--font-kai); line-height: 1.7; font-weight: 400; }
+.notes-panel .culture-long { font-family: var(--font-serif); line-height: 1.7; font-weight: 400; }
+.profile-stats strong, .profile-stats small, .achievement strong, .achievement strong small, .account-info dl, .settings, .field, .form-feedback { font-family: var(--font-sans); }
+.field { font-weight: 500; letter-spacing: .02em; }
+.field small, .form-feedback { font-weight: 400; }
+.auth-submit, .enter-button, .entry-copy > div a { font-family: var(--font-serif); font-weight: 600; letter-spacing: .08em; line-height: 1.25; }
+.account-tabs a { font-weight: 500; }
+.account-tabs small { font-family: var(--font-sans); font-weight: 400; }
+@media (max-width: 759px) {
+  .navigation nav a, .brand, .auth-brand strong, .section-title, .page-heading h1, .profile-hero h1, .poem-title h1, .account-panel > h2 { letter-spacing: .06em; }
+  .form-subtitle, .account-tagline, .profile-hero > p { letter-spacing: .04em; }
+}

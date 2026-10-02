@@ -12,6 +12,14 @@
 
 旧 [v06 浏览器实测](2026-10-01-v3/v06/card-measurements.json) 仅验证旧源稿，不适用于用户原图；v09 是用户指定视觉基准，后续实施仍需精确 CSS 测量与真实浏览器验收。
 
+## 登录与注册修订
+
+2026-10-02 用户指定两张新图替换原账号稿，已原样保存于 [v10](2026-10-01-v3/v10/README.md)。当前登录与注册使用左侧山水、右侧曲线留白、顶部双语切换和返回首页，并在桌面一屏展示。字体以新增 [字体规范](../字体规范.md) 为准：品牌行书、标题宋体、诗意文案文楷、功能信息黑体。所有输入控件选中时无外框，仅显示光标；按钮和链接保留键盘焦点。旧 v07 登录与注册不再作为实施基准。
+
+![登录用户新图](2026-10-01-v3/v10/references/S11-login-user.png)
+
+![注册用户新图](2026-10-01-v3/v10/references/S12-register-user.png)
+
 ## 桌面页面与状态稿
 
 | ID | 推荐原图 | 重点 |
@@ -22,8 +30,8 @@
 | S04 | [早发白帝城 v07](2026-10-01-v3/v07/screens/S04-baidicheng-desktop.png) | 晨峡、轻舟、四列七字诗等间距，参照枫桥 |
 | S05 | [收藏页用户原图 v09](2026-10-01-v3/v09/screens/S05-favorites-desktop-user.png) | 用户指定替代 v05；已收藏、取消收藏与入境 |
 | S06 | [个人中心用户原图](2026-10-01-v3/v07/references/S06-profile-user.png) | 替代旧 Stitch 稿；左侧资料，右侧收藏/浏览/偏好/设置 |
-| S11 | [登录用户原图](2026-10-01-v3/v07/references/S11-login-user.png) | 后续按原图还原登录界面 |
-| S12 | [注册用户原图](2026-10-01-v3/v07/references/S12-register-user.png) | 后续按原图还原注册界面 |
+| S11 | [登录用户原图 v10](2026-10-01-v3/v10/references/S11-login-user.png) | 山水与曲线白面、欢迎回境、四项体验 |
+| S12 | [注册用户原图 v10](2026-10-01-v3/v10/references/S12-register-user.png) | 创建账号、紧凑表单、三项体验 |
 | S13 | [幕布入口用户原图](2026-10-01-v3/v07/references/S13-curtain-entry-user.png) | 宣传语与登录/注册按钮；点击拉幕揭示目标页 |
 | S10 | [关键状态板 v03](2026-10-01-v3/v03/screens/S10-states-desktop.png) | 空收藏、入境失败、头像错误/裁切、存储失败、减少动态 |
 
@@ -51,13 +59,16 @@
 
 ## 目录与实施映射
 
-`v01`–`v08` 保留生成历史；`v09` 只替换 S01/S05，不覆盖其他页面。`screens/` 是审阅图，`sources/` 是历史 Stitch HTML，`assets/` 是概念素材，`references/` 是用户原图，`requests/` 与 manifest 用于追溯。历史 HTML 不直接作为应用入口。
+`v01`–`v08` 保留生成历史；`v09` 替换 S01/S05，`v10` 替换 S11/S12。`screens/` 是审阅图，`sources/` 是历史 Stitch HTML，`assets/` 是概念素材，`references/` 是用户原图，`requests/` 与 manifest 用于追溯。历史 HTML 不直接作为应用入口。
 
 | 当前稿 | 应用职责 | 目录 |
 |---|---|---|
-| S01/S05 v09 | 总览与收藏，复用诗卡 | `src/ui/pages/`、`src/ui/components/` |
-| S02/S03 v04、S04 v07 | 诗文展示 UI；先静态视觉预览，实时场景在 R2/R3 制作 | `src/ui/pages/`、`src/content/` |
-| S06 v07 用户原图 | 资料、真实收藏与浏览、偏好设置 | `src/ui/pages/`、`src/stores/` |
-| S11/S12/S13 v07 用户原图 | 表单、幕布入口、拉幕 | `src/ui/pages/`、`src/transition/` |
+| S01/S05 v09 | 总览与收藏，复用诗卡 | `frontend/src/ui/pages/`、`frontend/src/ui/components/` |
+| S02/S03 v04、S04 v07 | 诗文展示 UI；先静态视觉预览，实时场景在 R2/R3 制作 | `frontend/src/ui/pages/`、`frontend/src/content/` |
+| S06 v07 用户原图 | 资料、真实收藏与浏览、偏好设置 | `frontend/src/ui/pages/`、`frontend/src/stores/` |
+| S11/S12 v10 用户原图 | 登录/注册表单、双语切换与返回首页 | `frontend/src/ui/pages/`、`frontend/src/ui/styles/account.css` |
+| S13 v07 用户原图 | 幕布入口与拉幕 | `frontend/src/ui/pages/`、`frontend/src/transition/` |
 
 R1 素材仅用于本地还原预览，来源与发布限制见 CREDITS，不将整张设计稿铺成可点击网页。文字、表单、导航和收藏均用 DOM 实现；画面区域可引用原图中的无文字局部。正式发布前替换或核实素材许可与字体。静态 UI、拉幕与真实三维诗境分别验收。
+
+2026-10-02 目录整理：原稿继续在 docs/design，实际运行副本位于 frontend/src/assets/ui 并登记 sources.json，不再从源码直接导入 docs。当前认证与分离任务见 [R1A](../plans/R1A-认证服务/plan.md)。

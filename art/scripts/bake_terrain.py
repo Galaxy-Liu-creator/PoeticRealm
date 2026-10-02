@@ -2,7 +2,7 @@
 
 用法：
     blender -b art/blender/fengqiao.blend \
-      --python art/scripts/bake_terrain.py -- --out public/assets/terrain
+      --python art/scripts/bake_terrain.py -- --out frontend/public/assets/terrain
 
 terrain 必须是规则的矩形高度场网格；这与“纸页和地形是同一张网格”的运行时
 表示一致。PNG 由脚本直接编码为 RGB 8 位，避免 Blender 色彩管理或 alpha 预乘

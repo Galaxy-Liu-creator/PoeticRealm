@@ -29,7 +29,16 @@ yarn-error.log*
 # tools/ 生成的输出（截图对比、录屏帧、离线包）
 tools/out/
 tools/.cache/
+/frontend/tools/out/
+/frontend/tools/.cache/
 *.zip
+
+# Spring Boot 构建与本机数据、私密配置
+/backend/target/
+/runtime/
+**/application-local.yml
+**/application-local.yaml
+**/application-local.properties
 
 # Blender 自动备份与崩溃恢复文件
 *.blend1

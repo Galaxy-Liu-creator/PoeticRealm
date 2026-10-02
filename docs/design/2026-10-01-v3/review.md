@@ -12,15 +12,15 @@
 | S04 | 白帝城诗境 | [v07](v07/screens/S04-baidicheng-desktop.png) | 四句列间距统一修订，待复审 |
 | S05 | 我的收藏 | [用户原图 v09](v09/screens/S05-favorites-desktop-user.png) | 用户指定本次第二张图替换收藏页，作为还原基准；原样归档，旧稿保留 |
 | S06 | 个人中心 | [用户原图](v07/references/S06-profile-user.png) | 用户指定此图替代旧 Stitch；已授权 R1 还原，浏览器视觉待最终复审 |
-| S11 | 登录 | [用户原图](v07/references/S11-login-user.png) | 用户指定后续按图还原；已原样保存 |
-| S12 | 注册 | [用户原图](v07/references/S12-register-user.png) | 用户指定后续按图还原；已原样保存 |
+| S11 | 登录 | [用户原图 v10](v10/references/S11-login-user.png) | 2026-10-02 用户指定替换旧图并实施；品牌行书，其余按字体规范，一屏展示 |
+| S12 | 注册 | [用户原图 v10](v10/references/S12-register-user.png) | 同上；输入聚焦不显示外框，协议由用户主动选择 |
 | S13 | 账号幕布入口 | [用户原图](v07/references/S13-curtain-entry-user.png) | 用户指定宣传语、登录/注册按钮与拉幕方向；已保存 |
 | S10 | 桌面关键状态板 | [v03](v03/screens/S10-states-desktop.png) | 待用户审阅；不是新增业务页面 |
 | T01 | 中央火烧揭幕 | [源稿校验预览](v06/previews/T01-fire-reveal.preview.png) · [原稿](v05/transitions/T01-fire-reveal.png) | 待用户审阅；已补本地封面引用，保留原稿 |
 | T02 | 右上广域碎雪覆幕 | [v04](v04/transitions/T02-snow-reveal.png) | 待用户审阅 |
 | T03 | 云水揭幕 | [v04](v04/transitions/T03-cloud-reveal.png) | 待用户审阅 |
 | T04 | 翻书返回 | [源稿校验预览](v06/previews/T04-page-return.preview.png) · [原稿](v05/transitions/T04-page-return.png) | 待用户审阅；已补本地封面引用，保留原稿 |
-| T05 | 登录/注册拉幕 | [规范](v07/curtain-transition.md) | 方向由用户提出；1.2 秒与缓动等细节为小样建议，动画未实现 |
+| T05 | 登录/注册拉幕 | [规范](v07/curtain-transition.md) | 方向由用户提出；R1 DOM 首版已实现并验证，完整布面/场景时钟仍待后续，不等于最终视觉批准 |
 
 S07–S09 不参与本轮审批，历史文件保留，不继续扩展。各新稿仍未收到逐图的“通过 / 修改后复审 / 否决”决定。
 
@@ -31,7 +31,7 @@ S07–S09 不参与本轮审批，历史文件保留，不继续扩展。各新�
 - 枫桥用克制中央火缘揭幕，江雪用右上广域细碎雪，白帝城用云水；诗境返回总览翻书。
 - 卡片预览横排，详情原文仍从右向左竖排；白帝城四句等间距，与枫桥一致；首页三卡顶部/底部齐平，无相位错落。
 
-2026-10-01 早先范围为先设计与归档、暂不改运行代码，后续用户已授权进入 UI 还原。账号服务仍待用户决策；示例统计与通知不作为已提供的业务能力。
+2026-10-01 早先范围为先设计与归档，之后已授权 UI 还原。2026-10-02 用户选 Spring Boot，进入 R1A；服务尚未接入，示例统计与通知仍不是已提供能力。
 
 ## 审批规则
 

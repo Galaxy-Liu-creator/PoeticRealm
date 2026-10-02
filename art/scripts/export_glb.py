@@ -2,7 +2,7 @@
 
 用法：
     blender -b art/blender/fengqiao.blend \
-      --python art/scripts/export_glb.py -- --out public/assets/models/fengqiao
+      --python art/scripts/export_glb.py -- --out frontend/public/assets/models/fengqiao
 """
 from __future__ import annotations
 

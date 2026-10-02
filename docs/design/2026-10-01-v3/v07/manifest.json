@@ -1,0 +1,85 @@
+{
+  "version": "v07",
+  "date": "2026-10-01",
+  "scope": "desktop-design-only",
+  "runtime_changed": false,
+  "files": [
+    {
+      "file": "screens/S01-home-desktop-first.png",
+      "source": "built-in image_gen edit",
+      "edit_target": "../v06/screens/S01-home-desktop.png",
+      "prompt": "requests/S01-home-desktop.prompt.txt",
+      "status": "superseded: collection controls missing; retained for provenance",
+      "model": null,
+      "service_task_id": null,
+      "bytes": 2022589, "width": 1402, "height": 1122,
+      "sha256": "5d36229eae36f7fd7d5938e44f0b796316d47eba112aece6d11a4f4e3ba219f3"
+    },
+    {
+      "file": "screens/S01-home-desktop.png",
+      "source": "built-in image_gen edit",
+      "edit_target": "screens/S01-home-desktop-first.png",
+      "prompt": "requests/S01-home-desktop-refinement.prompt.txt",
+      "status": "awaiting user re-review",
+      "model": null,
+      "service_task_id": null,
+      "bytes": 1946241, "width": 1402, "height": 1122,
+      "sha256": "7b37dec7ef8c7653ea292e00ce5a422817008959b3ca05b5df5b68888bd80940"
+    },
+    {
+      "file": "screens/S04-baidicheng-desktop.png",
+      "source": "built-in image_gen edit",
+      "edit_target": "../v04/screens/S04-baidicheng-desktop.png",
+      "spacing_reference": "../v04/screens/S02-fengqiao-desktop.png",
+      "prompt": "requests/S04-baidicheng-desktop.prompt.txt",
+      "status": "awaiting user re-review",
+      "model": null,
+      "service_task_id": null,
+      "bytes": 1577734, "width": 1402, "height": 1122,
+      "sha256": "c6001346bf1482045df44613309aa6305365e89a52682cf11732fd22127f82a9"
+    },
+    {
+      "file": "references/S06-profile-user.png",
+      "source": "user attachment, unmodified",
+      "source_attachment": "codex-clipboard-faa27588-a6d4-4778-84ae-fe31408a5b8f.png",
+      "status": "user-selected profile visual baseline; replaces Stitch S06",
+      "original_bytes_match": true,
+      "bytes": 2131312, "width": 1448, "height": 1086,
+      "sha256": "d1425b6fc9f617c08dd2393f5d1fe11b8eb4ea18c2497b735da1a573cfb60016"
+    },
+    {
+      "file": "references/S11-login-user.png",
+      "source": "user attachment, unmodified",
+      "source_attachment": "codex-clipboard-b2e58c7d-da74-44e8-88d6-96ce37e27549.png",
+      "status": "user-selected login visual baseline",
+      "original_bytes_match": true,
+      "bytes": 2755721, "width": 1672, "height": 941,
+      "sha256": "b5ef4f789c91efa25ff3552780345a0785f2ba2222dd6c2a4ce84e78f979af58"
+    },
+    {
+      "file": "references/S12-register-user.png",
+      "source": "user attachment, unmodified",
+      "source_attachment": "codex-clipboard-65c80a4e-92ad-4529-a833-0ce343af129e.png",
+      "status": "user-selected registration visual baseline",
+      "original_bytes_match": true,
+      "bytes": 2698040, "width": 1672, "height": 941,
+      "sha256": "97c7fcf5f27d76cc36bbafd5ceab12737bf8b4bff330b4eafb553e1584152bb3"
+    },
+    {
+      "file": "references/S13-curtain-entry-user.png",
+      "source": "user attachment, unmodified",
+      "source_attachment": "codex-clipboard-82114bcc-e37b-4c1e-99df-12c37103b3f8.png",
+      "status": "user-selected account curtain entry visual baseline",
+      "original_bytes_match": true,
+      "bytes": 2676371, "width": 1672, "height": 941,
+      "sha256": "2aeea9ccbaed9a99a910153772160f5d1dcbbe7355617a6fa83c1f1dda0d23db"
+    }
+  ],
+  "notes": [
+    "No new Stitch screenId, sessionId or HTML export was produced in this version.",
+    "Generated PNGs are unpainted original image_gen outputs; previous versions preserved.",
+    "Dimensions are actual PNG headers, not requested or browser viewport sizes.",
+    "User reference creators, production tools and publication licenses were not supplied.",
+    "Curtain motion is specified only; no runtime animation or account service implemented."
+  ]
+}

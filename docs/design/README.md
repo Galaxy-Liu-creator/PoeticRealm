@@ -1,27 +1,30 @@
 # 桌面网页 UI 设计与审批入口
 
-沿用用户认可的青黛山水、浅绢纸和写实诗境风格，以 Stitch MCP 完成续稿。**最新范围仅桌面网页**；此前移动稿保留历史文件，不纳入本轮审批或实施。
+沿用用户认可的青黛山水、浅绢纸和写实诗境风格。**最新范围仅桌面网页**；此前移动稿保留历史文件，不纳入本轮审批或实施。2026-10-01 用户已授权核对文档后开始代码还原，进入 [R1 实施计划](../plans/R1-UI还原/plan.md)。本页的逐项推荐原图组成当前视觉基准，不能简单采用版本号最大的整个目录。
 
 ## 首页卡片修订
 
-**[首页推荐稿 v06 · 完整原图 2560×2048](2026-10-01-v3/v06/screens/S01-home-desktop.png)**
+**[主页用户指定稿 v09](2026-10-01-v3/v09/screens/S01-home-desktop-user.png)**
 
-![首页 v06 等尺寸卡片](2026-10-01-v3/v06/screens/S01-home-desktop.png)
+![主页 v09 用户原图](2026-10-01-v3/v09/screens/S01-home-desktop-user.png)
 
-三卡统一外框、封面和内容区，中央卡仅上移 8px，不缩放；卡片代表句改为横排，诗境详情仍为竖排。下部保留可见山水层次。
+用户最新要求用本次第一张原图替换主页、第二张原图替换收藏页，两图原样保存为 [v09](2026-10-01-v3/v09/README.md)。主页三卡上下齐平，全宽山水题头与纸面山影、竹叶、卡片装饰以原图为准；此选图取代此前 v08 云雾减法提案。没有重新生成或修改图片。
 
-[浏览器实测](2026-10-01-v3/v06/card-measurements.json)：1440px 窗口下三卡约 405.3×520px，1024px 窗口下约 298.7×520px；封面均高 340px。尺寸一致，诗句与入境按钮互不重叠。
+旧 [v06 浏览器实测](2026-10-01-v3/v06/card-measurements.json) 仅验证旧源稿，不适用于用户原图；v09 是用户指定视觉基准，后续实施仍需精确 CSS 测量与真实浏览器验收。
 
 ## 桌面页面与状态稿
 
 | ID | 推荐原图 | 重点 |
 |---|---|---|
-| S01 | [诗词总览 v06](2026-10-01-v3/v06/screens/S01-home-desktop.png) | 双分区、等尺寸卡片、首页无返回 |
+| S01 | [主页用户原图 v09](2026-10-01-v3/v09/screens/S01-home-desktop-user.png) | 用户指定替代 v08，原样保存，作为还原基准 |
 | S02 | [枫桥夜泊 v04](2026-10-01-v3/v04/screens/S02-fengqiao-desktop.png) | 夜江、渔火、四列完整诗文 |
 | S03 | [江雪 v04](2026-10-01-v3/v04/screens/S03-jiangxue-desktop.png) | 寒江、孤舟、广域碎雪 |
-| S04 | [早发白帝城 v04](2026-10-01-v3/v04/screens/S04-baidicheng-desktop.png) | 晨峡、轻舟、诗题与作者分开 |
-| S05 | [我的收藏 v05](2026-10-01-v3/v05/screens/S05-favorites-desktop.png) | 同规格诗卡、取消收藏、入境 |
-| S06 | [个人中心 v04](2026-10-01-v3/v04/screens/S06-profile-desktop.png) | 本地头像、姓名/性别、保存/取消、收藏 |
+| S04 | [早发白帝城 v07](2026-10-01-v3/v07/screens/S04-baidicheng-desktop.png) | 晨峡、轻舟、四列七字诗等间距，参照枫桥 |
+| S05 | [收藏页用户原图 v09](2026-10-01-v3/v09/screens/S05-favorites-desktop-user.png) | 用户指定替代 v05；已收藏、取消收藏与入境 |
+| S06 | [个人中心用户原图](2026-10-01-v3/v07/references/S06-profile-user.png) | 替代旧 Stitch 稿；左侧资料，右侧收藏/浏览/偏好/设置 |
+| S11 | [登录用户原图](2026-10-01-v3/v07/references/S11-login-user.png) | 后续按原图还原登录界面 |
+| S12 | [注册用户原图](2026-10-01-v3/v07/references/S12-register-user.png) | 后续按原图还原注册界面 |
+| S13 | [幕布入口用户原图](2026-10-01-v3/v07/references/S13-curtain-entry-user.png) | 宣传语与登录/注册按钮；点击拉幕揭示目标页 |
 | S10 | [关键状态板 v03](2026-10-01-v3/v03/screens/S10-states-desktop.png) | 空收藏、入境失败、头像错误/裁切、存储失败、减少动态 |
 
 ## 转场分镜
@@ -32,6 +35,7 @@
 | T02 | [右上碎雪 v04](2026-10-01-v3/v04/transitions/T02-snow-reveal.png) | 右上向左下广域覆幕，再露出江雪 |
 | T03 | [云水入峡 v04](2026-10-01-v3/v04/transitions/T03-cloud-reveal.png) | 青灰云水遮幕、晨峡显现 |
 | T04 | [翻书返回校验预览](2026-10-01-v3/v06/previews/T04-page-return.preview.png) · [Stitch 原稿](2026-10-01-v3/v05/transitions/T04-page-return.png) | 诗境纸页向右翻起，露出总览 |
+| T05 | [登录/注册拉幕规范](2026-10-01-v3/v07/curtain-transition.md) · [R1 实现报告](../plans/R1-UI还原/report.md) | DOM 拉幕首版已实现，原规范的完整布面与三维衔接仍需后续验收 |
 
 火烧/翻页的 Stitch 封面修订连接失败，另附 [源稿资源校验预览](2026-10-01-v3/v06/previews/README.md)，不冒充新 Stitch 出图。分镜缩图用于审阅方向，正式字体、诗句列序和构图以 S01–S04 页面稿为准；剩余细节见 [视觉自检](2026-10-01-v3/visual-review.md)。静态稿不能证明动画或实时三维已实现。
 
@@ -43,6 +47,17 @@
 - [首页尺寸与排版自检](2026-10-01-v3/S01-self-review.md)
 - [设计输入](2026-10-01-v3/brief.md) · [精确提示词说明](2026-10-01-v3/prompts.md) · [参考来源](2026-10-01-v3/references.md)
 
-仍按 `docs/design/2026-10-01-v3/vNN/` 逐版保存：`screens/` 页面 PNG 与实际请求，`transitions/` 分镜 PNG 与实际请求，`sources/` 原始 Stitch HTML，`assets/` 随稿概念素材，以及 `stitch-manifest.json`。原图不人工重绘、不覆盖旧版；manifest 登记实际画板、会话、尺寸和 SHA-256，失败请求另记。
+仍按 `docs/design/2026-10-01-v3/vNN/` 逐版保存。Stitch 版本保留页面、分镜、原始 HTML、素材与 stitch-manifest；v07 保存 image_gen 修订 PNG、requests 提示词、references 用户原附件及 manifest。逐项区分来源，不覆盖旧版，不虚构画板或会话标识。
 
-应用代码尚未因这些稿件改动。用户逐稿审批后才进入前端、Blender 与 Three.js 实施，设计图片不直接搬入 public。
+## 目录与实施映射
+
+`v01`–`v08` 保留生成历史；`v09` 只替换 S01/S05，不覆盖其他页面。`screens/` 是审阅图，`sources/` 是历史 Stitch HTML，`assets/` 是概念素材，`references/` 是用户原图，`requests/` 与 manifest 用于追溯。历史 HTML 不直接作为应用入口。
+
+| 当前稿 | 应用职责 | 目录 |
+|---|---|---|
+| S01/S05 v09 | 总览与收藏，复用诗卡 | `src/ui/pages/`、`src/ui/components/` |
+| S02/S03 v04、S04 v07 | 诗文展示 UI；先静态视觉预览，实时场景在 R2/R3 制作 | `src/ui/pages/`、`src/content/` |
+| S06 v07 用户原图 | 资料、真实收藏与浏览、偏好设置 | `src/ui/pages/`、`src/stores/` |
+| S11/S12/S13 v07 用户原图 | 表单、幕布入口、拉幕 | `src/ui/pages/`、`src/transition/` |
+
+R1 素材仅用于本地还原预览，来源与发布限制见 CREDITS，不将整张设计稿铺成可点击网页。文字、表单、导航和收藏均用 DOM 实现；画面区域可引用原图中的无文字局部。正式发布前替换或核实素材许可与字体。静态 UI、拉幕与真实三维诗境分别验收。

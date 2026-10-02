@@ -1,0 +1,33 @@
+{
+  "version": "v09",
+  "date": "2026-10-01",
+  "scope": "user-selected home and favorites design baselines",
+  "runtime_changed": false,
+  "files": [
+    {
+      "file": "screens/S01-home-desktop-user.png",
+      "source": "user attachment, unmodified",
+      "source_attachment": "codex-clipboard-7258c75d-ada2-41cc-b8d3-2736d055efa7.png",
+      "replaces": "../v08/screens/S01-home-desktop.png",
+      "status": "user-selected visual baseline",
+      "bytes": 3114568, "width": 1536, "height": 1024,
+      "sha256": "29e8713eb4e18245a6ab3e3741e9f848005a4c6a30bc233d5b8700f283fab600",
+      "original_bytes_match": true
+    },
+    {
+      "file": "screens/S05-favorites-desktop-user.png",
+      "source": "user attachment, unmodified",
+      "source_attachment": "codex-clipboard-d172ea6c-9dc5-436c-8786-4c9b5a056190.png",
+      "replaces": "../v05/screens/S05-favorites-desktop.png",
+      "status": "user-selected visual baseline",
+      "bytes": 2978674, "width": 1448, "height": 1086,
+      "sha256": "e1237a64ac07b5167b2ffa4cd4ae6355b5618e9c51c074d19c1f44bf858277c7",
+      "original_bytes_match": true
+    }
+  ],
+  "notes": [
+    "Copied from the current user attachments without modification; previous drafts retained.",
+    "Creators, production tools and publication licenses were not supplied.",
+    "No new generated screens, Stitch identifiers, HTML exports or runtime implementation."
+  ]
+}

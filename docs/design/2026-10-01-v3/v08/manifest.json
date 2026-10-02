@@ -1,0 +1,36 @@
+{
+  "version": "v08",
+  "date": "2026-10-01",
+  "scope": "S01 desktop static design, lower background only",
+  "runtime_changed": false,
+  "files": [
+    {
+      "file": "screens/S01-home-desktop.png",
+      "source": "built-in image_gen edit",
+      "edit_target": "../v07/screens/S01-home-desktop.png",
+      "prompt": "requests/S01-home-desktop.prompt.txt",
+      "model": null,
+      "service_task_id": null,
+      "status": "awaiting user re-review",
+      "bytes": 1811077,
+      "width": 1402,
+      "height": 1122,
+      "sha256": "880c9d866a05ecfc106ac3889bf9436e38a135a90ffeed1f3f762355d6e54af2"
+    }
+  ],
+  "visual_review": {
+    "lower_landscape_removed": true,
+    "simple_low_contrast_cloud_background": true,
+    "bamboo_confined_to_corner_accents": true,
+    "upper_full_bleed_hero_retained": true,
+    "three_cards_aligned": true,
+    "poem_titles_authors_excerpts_collection_and_entry_controls_present": true,
+    "method": "human visual inspection of static output; no exact browser geometry or runtime validation"
+  },
+  "notes": [
+    "Original generated PNG copied without manual painting; old v07 files preserved.",
+    "Image generation may resample invariant artwork; this is a design reference, not a pixel-identical source patch.",
+    "No new Stitch screen/session/HTML export; model and service task identifiers were not supplied.",
+    "Profile, Baidi City, authentication references and curtain specification remain in v07."
+  ]
+}

@@ -1,0 +1,9 @@
+Use case: precise-object-edit of an existing desktop UI design mockup.
+Input image 1 is the edit target: early departure Baidi City desktop poem scene. Input image 2 is ONLY a spacing reference: Fengqiao poem scene. Keep the entirety of image 1 scenery, aspect ratio 5:4, canyon, dawn light, city, boat, top navigation, title “早发白帝城”, author “唐·李白” and bottom annotations as close to original as possible.
+Fix ONLY the four vertical poem columns in the upper left. They must have identical column widths, exactly equal horizontal center-to-center spacing, exactly matching top and bottom Y positions, consistent character size and vertical character spacing, similar typography and compact even rhythm to image 2. There should be four evenly spaced separate vertical lines, NOT a close pair on the right and two widely spaced lines on the left.
+Exact poem, read from right to left:
+rightmost column: 朝辞白帝彩云间
+second from right: 千里江陵一日还
+third from right: 两岸猿声啼不住
+leftmost column: 轻舟已过万重山
+Each column has exactly seven characters, no characters missing, no added punctuation. Correct all Chinese glyphs. Position the whole four-column block beneath the title in the same upper-left safe area, with a clear gap between title and poem. The three inter-column gaps must be equal. Do not copy the night scene of image 2. No new UI, no redesign, no panels around poem. Finished flat UI screenshot design, no browser frame.

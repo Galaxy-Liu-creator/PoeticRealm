@@ -4,7 +4,7 @@
 
 **用户认可现有 Desktop 风格后，已使用 Stitch MCP 继续完成首页等尺寸修订、三首诗境、收藏、个人中心、关键状态与四类转场原稿。** 最新范围仅桌面网页，历史移动稿排除。本轮推荐稿见 [设计入口](../README.md)，新稿仍待用户逐稿审批，前端未改。
 
-当前会话内置 MCP 连接仍失败，但复用已有 `stitch-proxy` 配置直接建立的 MCP 会话成功。不修改认证配置，不在对话 / 仓库中暴露凭据，不使用用户浏览器 Cookie。
+此前续稿复用已有 `stitch-proxy` 配置直接建立 MCP 会话成功。本次 v07 会话没有可直接调用的 Stitch 工具，使用内置 image_gen 完成图片编辑；不修改认证配置、不读取或暴露凭据、不使用用户浏览器 Cookie。
 
 ## 项目信息
 
@@ -54,6 +54,9 @@
 | v04 | edit_screens 修正三诗文字、舟裁切、收藏、个人中心；T02/T03 去掉虚构参数及“已通过”声明；历史 S07/S08/S09 适配稿保留，不参与本轮审批 | [manifest](v04/stitch-manifest.json)、[失败登记](v04/stitch-failures.json) |
 | v05 | edit_screens 将卡片预览改横排；generate_variants 各生成一张 T01/T04 独立视觉变体（REFINE，variantCount=1） | [manifest](v05/stitch-manifest.json)、同目录实际 request.json；原稿没有被覆盖 |
 | v06 | edit_screens 仅恢复首页下区山水可见度，保留等尺寸卡片；桌面浏览器核验几何 | [manifest](v06/stitch-manifest.json)、[卡片测量](v06/card-measurements.json) |
+| v07 | 内置 image_gen 编辑 S01 与 S04；原样归档用户供 S06/S11/S12/S13；补 T05 拉幕规范 | [本版说明](v07/README.md)、[manifest](v07/manifest.json)、[提示词](v07/requests/)、[验证](v07/verification.md) |
+| v08 | 内置 image_gen 仅修订 S01 下区背景：角落竹叶、低对比云雾，去掉重复山河与楼阁水面 | [本版说明](v08/README.md)、[manifest](v08/manifest.json)、[完整提示词](v08/requests/S01-home-desktop.prompt.txt)；待复审 |
+| v09 | 用户提供两张 PNG，指定替换 S01 主页与 S05 收藏；仅原样归档，无生成调用 | [本版说明](v09/README.md)、[manifest](v09/manifest.json)；用户指定视觉基准，运行代码未改 |
 
 各成功调用返回的 screenId、sessionId、resourceName、格式、实际尺寸、字节数与 SHA-256 以对应 manifest 为准，不重复猜测任务 id。桌面 PNG 主要为 2560×2048，状态板/部分首稿更高；历史移动图为完整长页面导出，不能把建议视口写成实际图片尺寸。
 
@@ -70,3 +73,12 @@ v05 首页修订调用额外返回一个收藏 UI 画板。已按实际标题归
 ## 下一步
 
 用户按 [逐稿审批表](review.md) 审阅桌面稿与分镜方向，决定通过或指出调整；再进入前端与三维资产实施。移动端不在本轮要求内。
+
+## v07 最新反馈与来源区分
+
+- 用户明确本轮先修订设计稿和归档，暂不改运行代码。旧个人中心被用户否定，指定第一张用户图替代；后三张原图是登录、注册与幕布入口的后续还原基准，不发送用户图给生成服务，不重绘它们。
+- S01 以 v06 PNG 为编辑目标，取消中卡抬高、题头铺满、增加独立幽深竹林山水背景；首轮遗漏收藏控件，保留为 S01-home-desktop-first.png，再定向编辑补回三卡收藏书签。两个完整提示词均保存。
+- S04 以 v04 PNG 为编辑目标，S02 v04 仅作为诗文间距参照，修正四列间距；晨峡、城、舟与原导航保留。完整提示词保存。
+- 实际工具为内置 image_gen；工具未返回可登记的模型名、Stitch screenId 或 sessionId，不猜测。输出原始 PNG 保存，未人工涂改，未接入应用；与既有 Stitch HTML 不一一对应。
+- 用户供图的来源是本次对话四个附件，作者、生成工具和发布许可未提供。原始字节、尺寸、SHA-256 与附件一致性登记于 manifest。
+- T05 仅为设计规范，建议时长、缓动和分层素材要求不是已通过的动态小样。旧 v06 浏览器尺寸测量不能作为 v07 或运行时验收证据。

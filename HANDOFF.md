@@ -1,16 +1,28 @@
 # 当前续接状态
 
-2026-10-02 · 前后端分离准备已完成，用户已在 backend 创建 Spring Boot 4.1.1 / Java21 模板，包名为 com.demo.backend。当前授权先提交工作区检查点，再实现认证；认证和云同步尚未接入。
+2026-10-04 · 前后端分离与基础认证首版已完成，真实MySQL认证闭环验证通过。用户创建的 backend 保留 Spring Boot4.1.1 / Java21 / Maven / com.demo.backend；注册、会话、持久登录、CSRF及前端身份恢复已接通，本机MySQL连接、Flyway V1、启动和重启恢复均已验证。云同步、密码恢复与完整账号管理尚未实现。
 
-- 架构与目录规划：[前后端分离与认证规划](docs/architecture/前后端分离与认证规划.md)；下一阶段入口：[R1A 认证服务](docs/plans/R1A-认证服务/plan.md)。已创建的 backend 使用 JDK 21 / Java 21 / Spring Boot 4.1.1 / Maven / Jar / properties；保留用户模板的包名和构建身份，按规划接认证。
+2026-10-04 · R2 首批动态已接入：首页慢雾/水光、整组同相卡片浮动，以及炭纸/雪雾/云水入境。当前入口：[R2计划](docs/plans/R2-动态特效/plan.md)、[实施报告](docs/plans/R2-动态特效/report.md)。目标仍标注静态预览；真实三维、环境音与曲面翻页返回待后续。最新自动验收为13文件57单测、动效10组、既有UI16组；隐藏暂停已做应用级模拟，原生后台切换待人工。末尾记录说明证据与续接接口。
+
+- 实施入口：[R1A认证计划](docs/plans/R1A-认证服务/plan.md)、[报告](docs/plans/R1A-认证服务/report.md)；架构/API说明已更新实际目录与接口，不再标注后端待创建。
 - 现有 src/public/tools、npm/HTML/Vite/TS 配置及本机依赖整体移入 `frontend/`；从根启动：`npm --prefix frontend run dev`，构建：`npm --prefix frontend run build`，测试：`npm --prefix frontend test`。应用实际引用的11张设计图片复制到 `frontend/src/assets/ui`，逐字节一致，sources.json 记录原位置；原稿留在 docs/design。前端运行代码不再导入 docs。
-- Vite `/api` 开发代理默认指向 127.0.0.1:8080，示例在 frontend/.env.example。工具按自身位置定位工程和仓库根，不依赖终端 cwd；验收资料仍写根 docs/output。Blender 导出说明已改 frontend/public/assets，制作源和契约字段未改变。
+- Vite `/api` 代理默认127.0.0.1:8080，前端使用相对接口地址。后端默认MySQL，配置示例与隔离测试联调步骤见 [backend/README](backend/README.md)；本机application-local.properties自动导入且被忽略，凭据不要提交。
 - README、CLAUDE、设计文档、CONTRACT 路径、来源、路线图、阶段索引和有效 ADR 已同步；D0/P0/历版设计记录保留并标注历史。重复过时的 MEMORY.md 已删除，有效长期约定归入 AGENTS.md，历史可从 Git 12fb9eb 恢复。`.gitignore` 补前端工具输出、backend/target、runtime 与本机后端配置；环境示例可入库。
-- 验证：迁移后构建/类型检查、9文件37单测、四套 Chromium 脚本16+9+4+7共36组全部通过；P0 fengqiao 查询入口 ready=true、t=12、无异常/失败资源；临时 HTTP 探针验证 `/api` 代理保持路径；11张图片逐字节核对、工具语法、当前文档链接与忽略规则、空白检查通过。
-- 第一次浏览器回归覆写已有 S06 证据时发生文件错误；重跑将截图存到忽略的 `output/playwright/frontend-migration`，全部通过，并用成功结果恢复 R1 的 verification.json。其余回归输出仍在根 output/playwright；临时5174 Vite与探针均已自动关闭，未启动常驻预览。
-- 先前静态UI检查点 `12fb9eb` 已推送到 origin/p0-tech-validation。本轮保留原有 v10、字体、账号界面修改；目录迁移及文档整理尚未提交、推送或部署。
+- 后端：BCrypt12哈希、用户名归一化唯一、版本化开发约定、可选生日/性别；Flyway V1创建app_users与persistent_logins，JPA validate。30分钟会话、登录ID/CSRF轮换、30天持久凭证轮换和退出撤销、JSON 401/403、用户名/IP失败节流。
+- 前端：AuthStore/api接实际注册/登录/会话/退出，Cookie与CSRF请求、忙碌/失败/清密码反馈、个人中心真实账号。游客与每个账号独立本机库；退出恢复游客，不自动导入收藏；登录/退出禁止重叠，旧恢复响应失效，明确401清身份，首次诗词足迹等待身份恢复。
+- 账号入口拉幕：2026-10-04按用户提供的SideCurtain v6 HTML移植3.30秒连续侧向拉幕。DOM弧形多边形遮罩、压缩/偏斜/透视与褶皱、丝光共用WAAPI驱动的暂停GSAP时间线；页面同步从浅淡模糊变清晰。裁掉地板并铺满视口，结束直接保留运动中的两片帘布，不切换SVG；停止RAF/时间线，减少动态直接显示表单，无GPU也能运行DOM效果。全站左上品牌仅展示。最新验证、预览与限制见末尾记录。
+- 验证：前轮前端构建/类型检查与11文件50单测、后端12测试和Maven package、H2真实浏览器认证11组及既有UI16+9+4+7共36组全部通过。Jar无本机配置/H2/测试启动器，H2迁移与已有版本校验、本机MySQL V1迁移/表/索引/JPA validate/健康检查已通过。2026-10-04真实MySQL追加11组浏览器及8组数据库/API/重启检查，共19组全部通过，测试数据已清理；本轮认证业务代码未变，仅扩充验证脚本的运行标识和证据输出，未重复全量单测/构建。前次P0入口、代理探针、11张图片字节与路径回归已通过，未重做Blender资产。
+- 证据：前轮output/backend-auth-test.log、frontend-auth-checks.log、auth-browser-checks.log、auth-browser-final.log、output/playwright/auth及auth-ui-regression保留。最新实库证据为output/playwright/auth-mysql-2026-10-04-0e50a352/summary.json及其浏览器、重启、数据库和清理日志。当前fetch接收者、身份竞态与初次深链接足迹有回归证明。本轮临时8082后端和5175前端均已关闭，Cookie续接临时文件已删除；仅终止本轮创建的进程。未建立外部服务或部署。
+- Git：静态UI检查点12fb9eb已推送。用户要求的认证前工作区提交已完成，`e40bf13905534976deab8f1374b1451c910ecb1a`，p0-tech-validation，本地提交未推送；归档v10/字体/记忆、前端迁移、文档与用户后端模板。认证实现为该检查点之后的未提交修改。
+- MySQL配置与原因：用户将凭据填入application-local.properties.example，已完整复制到被忽略的application-local.properties，示例保持占位值。原配置username=poeticrealm，JDBC与原生客户端均报1045；用户确认实际账号是root、端口3306后修正用户名，错误变1049，证明密码有效但URL库名poetic_realm不存在。只读枚举发现实际库为poeticrealm，已修正本机URL和公开默认/示例库名；密码原值保留。
+- MySQL验证与SQL：JDBC已连接127.0.0.1:3306、MySQL9.1.0、root@localhost、poeticrealm，SELECT 1通过；库为utf8mb4/utf8mb4_unicode_ci。用户配置密钥并授权迁移后，Flyway已从空库应用V1，创建app_users、persistent_logins和flyway_schema_history共3张表。新环境建库SQL在backend/sql/create-database.sql，认证表仍单一维护于Flyway V1。未修改MySQL账号；诊断与迁移证据不含密码或密钥。
+- SQL准备回归：数据库默认名和SQL说明同步后，后端12测试再次通过，日志确认全部使用H2而非本机MySQL；日志output/mysql-connection/backend-regression.log。配置与输出的忽略规则、diff空白检查通过，未提交或推送本轮修改。
+- 实库迁移：本机remember-me-key已配置；Flyway V1成功应用，history success=true、checksum存在、两表主键/用户名唯一索引/持久登录用户名索引齐全，JPA validate与健康检查通过。迁移证据为output/mysql-connection/pre-migration.txt、flyway-startup.log、flyway-verification.txt。2026-10-04两次启动均验证v1已是最新，无重复迁移，未改动已执行的V1。
+- 实库认证验收：MySQL9.1/poeticrealm，临时8082后端和5175 Vite。真实注册/重复409/账密登录/刷新/深链接/账号隔离/退出/错误401/网络失败11组通过；JDBC确认两个账号为BCrypt成本12。补充验证30天Cookie、会话ID轮换、后端重启后普通会话失效而持久Cookie恢复、MySQL token轮换、登录前CSRF失效403、新CSRF退出204与数据库撤销、当前/轮换前/重启前Cookie重放均为游客、仅本轮token的last_used调整31天后拒绝恢复、8次错误密码401及第9次429。服务日志仅有这些故意触发的重复/错误密码/节流警告，无未处理功能失败。
+- 实库清理与复现：运行ID0e50a352，测试前app_users/persistent_logins均0行；只创建旅人A0e50a352和旅人B0e50a352，按测试前不存在、创建时间、精确用户名和已登记ID在事务中删除这两个账号及其token，清理后两表0行、v1历史保留。未重置AUTO_INCREMENT，因此失败重复注册和已删除测试账号会留下正常ID间隙。verify-auth.mjs支持AUTH_RUN_ID/AUTH_OUTPUT并输出test-accounts.json，不输出Cookie值。忽略的frontend/tools/.cache/run-mysql-auth.mjs与output/mysql-connection/MysqlAuthProbe.java保留本轮复现工具；重跑需换新运行ID并同步两工具，先baseline，再启动后端并依次browser/prepare，重启后端后after-restart，最后cleanup/verify-clean。浏览器与三个阶段job均退出0；两个后端job在核验后主动关闭，exited 1为终止状态。
+- 诊断边界：未发现密码解析变化、重复密码键、控制字符、首尾空白或URL认证覆盖。进程7776是MySQL91服务进程5984的子进程，不是两个独立实例的证据。root账号表核验曾被自动审批拒绝，未执行；随后用户确认实际root连接账号，使用确认的账号完成正常连接与业务库元数据检查，未查询mysql.user。原生客户端临时凭据文件已删除。
 
-下一步：按 R1A 落实数据库迁移与 Spring Security 注册/会话/持久登录/CSRF，再接前端身份恢复和账号数据隔离。本机JDK21.0.9、Maven Wrapper3.9.16可用，MySQL3306可达但没有项目连接配置；本机凭据放忽略的 application-local.properties，不提交。协议正文、恢复渠道和发布素材许可仍需落实。不要将现有“30天内记住我”的用户名记忆当成免登录。
+下一步：基础认证及MySQL闭环已验收，可按backend/README启动默认8080后端和前端使用；后续按用户选择实现云数据、密码恢复、邮箱验证、全设备会话管理和正式协议，勿把本机资料当云同步。后续结构变更新增V2等脚本，不修改已执行的V1或手工重复建表；应用回退不会撤销迁移，保留表和数据，通过前向迁移修正，禁止对有用户数据的库直接drop。JDK21.0.9、Maven Wrapper3.9.16可用。R2公共入境已实现，R2/R3继续真实场景和曲面翻页返回，素材许可、原生后台切换和完整目标机证据待补。当前30天免登录已有真实服务端凭证，本机用户名记忆只是辅助。本轮未提交或推送，其他会话的幕帘工作保留。
 
 ## 历史实施记录
 
@@ -90,3 +102,47 @@
 - 新增 `LoginMemory.ts` 与4项单测，账号 checkbox 启用，通过 DOM 恢复用户名，避免插入用户 HTML。版本化本机存储仅含用户名和30天到期时间；勾选/用户名变化/提交保存，刷新和路由返回恢复，取消或到期清除。存储不可用时提示，不保存密码。账号认证尚未接入：本轮是30天用户名与选择记忆，不是真正30天免登录；该边界已向用户说明。
 - 字体规范同步到设计文档、当前v10契约、来源说明、运行素材说明与R1报告。构建及9文件37单测通过；原UI16组、调整9组、一屏/焦点4组、新字体/记忆7组，共36组浏览器检查通过，正常路径无异常或资源失败。CDP核验实际四套字体，无远程字体请求或延迟换字布局变化；七档桌面/平板账号初始和提示状态仍一屏。目视核对登录、注册、总览、个人中心，新证据在 `output/playwright/typography-login`，R1全页截图更新为当前字体。
 - UI复扫4组31线索，新增19条为用户规范指定的宋体声明，其余12条为语义或原稿选择，人工核对保留。最终聚焦验证 job j-drb6t8 退出0，临时5174服务已自动关闭；未启动常驻前端，未提交、推送或部署。下一步仍由用户选择认证服务或继续动态特效。
+
+2026-10-02 · 登录/注册入口柔性拉幕：用户要求真实拉开幕帘的观感与顺滑运动。
+
+- `frontend/src/transition/CurtainCloth.ts` 使用现有锁定Three.js的WebGLRenderer/GLSL、两个64×28布料网格和同一张已登记闭幕图。从统一1600ms时间坐标计算收拢、纵向褶皱深度与光影、受力内边缘弯曲、下摆滞后/轻抬和最后离场；为确定性程序形变，不宣称完整布料力学仿真。闭幕构图保持连续，原图下方6.6%地板由静止DOM层220ms淡出，不随布料拖走；原素材、来源、字体和账号认证未修改。
+- `CurtainReveal.ts` 保留目标资源等待、inert、焦点、失败恢复、后退中断、隐藏页面暂停和减少动态。Three模块按需加载，纹理与首次绘制在运动前预热；屏幕隐藏停止RAF，退出取消预热/绘制RAF、Animation、ResizeObserver并释放纹理/几何/材质/渲染器与GPU上下文。旧取消回调只清理自身overlay，快速重新进入不会解除新表单的inert。缺少WebGL时240ms淡出保证表单可达。
+- 限制绘制尺寸1600×1000与DPR1.25，双面材质用单次绘制。新增 `frontend/tools/verify-curtain-cloth.mjs` 7组实际浏览器验证：GPU alpha边缘证明收拢/曲边/滞后、固定地板、两入口正常播放、连续进入清理、暂停/恢复/取消、预热取消后立即重开、1920与390窗口和后退、减少动态与无GPU回退，以及无未捕获异常/正常控制台错误。原UI16组回归通过，共23组；最终构建/类型检查、11文件50单测和diff空白检查通过。
+- 最终Chromium使用ANGLE/SwiftShader软件GPU，三次真实播放采样帧间隔中位数均16.7ms，超过50ms的帧分别0/1/0；不以此宣称目标显卡恒定60fps或物理仿真达标。截图0/25/50/75/94及1920/390中途帧已目视核对，证据 `output/playwright/curtain-cloth/verification.json`；原UI证据写其 `ui-regression` 子目录，历史R1资产恢复为本轮开始状态，未覆盖历史生成证据。
+- `capture-curtain.mjs` 按overlay真实时长采样并等待绘制帧，使用隔离游客API，不依赖实库。当前视频 `output/playwright/curtain-cloth/capture/videos/page@8f725bcdae7ae3c385b0dc77ba7c9a8e.webm`，索引为 `capture/curtain-evidence.json`。最终聚焦验证/录制 job j-2e2vxl 与完整回归 j-80jzhc 均退出0；临时5174 Vite自动关闭，未启动常驻服务、未提交/推送/部署，其他认证/MySQL工作区修改保留。
+
+2026-10-03 · 幕帘由下向两侧展开与品牌展示调整：用户补充参考图并明确要求下部先向左右两侧拉开、开口由下向上推进，最终两侧上角挂参考图中的弧形垂帘。全屏布面无地板，账号页与拉幕同步由浅到深显现，全站左上角品牌移除点击跳转。
+
+- `CurtainCloth.ts` 保持现有WebGLRenderer/GLSL与锁定Three.js，网格下部先向两侧收拢、上部延后跟随，并收短为上角弧形垂帘；途中保留褶皱光影与弯曲。原图下方8%通过纹理/DOM取景裁掉，不修改原稿或生成新图片；无地板DOM层。2000ms统一时间坐标驱动各高度的拉幕进度和目标页smoothstep透明度，动画完成时页面完整呈现。角帘使用原图外侧布面取景，避免整幅纹理挤成细条。
+- 新增 `CurtainDrape.ts`，共享网格终点参数并复用同一原图为登录/注册生成静态SVG上角帘布。与末帧匹配后释放WebGL、纹理、几何、RAF与时间轴；静态帘布不拦截鼠标、不进朗读或焦点顺序。小窗残帘缩小，品牌与表单操作保持可见。目标资源等待加入SVG幕图；失败、后退、取消与快速重开会恢复透明度和inert，隐藏页面暂停，减少动态和无GPU降级保留角帘。
+- `Navigation.ts` 与 `Account.ts` 的左上品牌改为展示div，去掉href和键盘点击语义；明确的总览导航、返回首页和登录/注册切换仍可用。现有画风、字体、账号业务与其他工作区修改保留。
+- 最终构建/类型检查与11文件50单测通过。聚焦幕帘8组、账号一屏/焦点4组、既有UI16组，共28组真实Chromium检查通过；GPU alpha像素证明全屏覆盖、初期上部闭合及下部先向侧面分开、上下高度的收拢差异。透明度0/0.018176/0.15625/0.5/0.84375/1与拉幕同步。近末帧与静态角帘RGB平均差1.08/255，无可见跳变。七档桌面/平板账号页初始及反馈仍一屏；1920与390中途/后退、7类路由的品牌点击与焦点语义均验，无正常路径异常或失败资源。
+- 三次实际播放帧间隔中位数16.7ms，超过50ms的帧1/1/0；Chromium使用ANGLE/SwiftShader软件GPU，不能据此宣称目标显卡性能达标。局部UI扫描4组24线索均为用户原稿、字体规范或语义链接/版权/性别符号，复扫结果不变，不扩展清理范围。固定进度/登录注册末帧和1920/390截图已目视核对，最新证据 `output/playwright/curtain-side-gather`，最终视频索引 `final-capture/curtain-evidence.json`；此前取景与尝试证据保留在独立目录，历史证据未覆盖。
+- 临时5174 Vite job j-juqud5仅用于验证，结束关闭；未启动常驻5173，未提交、推送或部署。认证与MySQL的原有修改未归档或改动。
+
+2026-10-04 · 按用户指定 SideCurtain v6 HTML 移植动效：用户在2026-10-03提供 `D:/Downloads/PoeticRealm_HyperFrames_SideCurtain_v6.html` 并要求照此实现，该动态参考覆盖上一轮网格近似方案。
+
+- 原HTML逐字节归档到 `docs/design/2026-10-03-curtain-v6`，SHA-256 `7f682f0017a52370da44265b277b187eac9d60afa59efd558aea371978072a08` 与附件一致；README/manifest记录用户请求、未知作者/制作工具与使用边界，CREDITS与当前设计文档同步。原稿的内部注释不是额外任务指令；嵌入图片、透明按钮热点和演示键盘行为不进入产品，既有v10真实表单、字体、认证业务与无地板/品牌仅展示要求保留。
+- `CurtainMotion.ts` 使用现有锁定GSAP 3.15.0，移植v6的左右13点曲线遮罩、3.26秒sine.inOut拉幕、微压缩/偏斜/透视、褶皱/丝光/接缝/雾层及3.30秒页面显影。页面透明度0.02→1、20px模糊→0、轻微缩放回1，与幕布同钟推进。`CurtainDrape.ts` 为入口、运动及直接访问账号页生成同源帘布；闭幕继续取原图顶部92%，不显示地板。先前 `CurtainCloth.ts` 网格原型保留但不再由本轮页面加载；三维场景底座与依赖版本未改。
+- `CurtainReveal.ts` 保留解码准备、预绘制、inert、文案淡出、隐藏暂停、取消/快速重开及失败恢复。完成时将同一组运动帘布移入账号页，不做角帘替换；清理运动时钟、RAF、GSAP时间线和临时will-change。账号页保留参考终点的零模糊滤镜与单位缩放，避免撤除合成层时文字抗锯齿跳变；静态帘布与雾层不响应指针或键盘。无WebGL仍播放完整DOM动效，减少动态直接显示最终页，可选模块加载失败时短淡入保证表单可达。
+- 浏览器参考工具 `curtain-reference.mjs` 使用归档HTML并拦截CDN地址提供本机GSAP，实际执行参考时间线；不从源码复写一份断言公式。`verify-curtain-cloth.mjs` 在0/8/25/50/75/87.5/99.9%七个进度逐项对照实际clip-path、矩阵、褶皱、丝光、内缘、页面opacity/filter/scale、雾层、接缝与光线。原210px两侧范围的近末帧对比保留，平均RGB差0.0536/255；确认运动DOM与最终DOM为同一对象，帘布无切换。曾尝试缩小像素对比范围被自动审批拒绝，未执行；通过修正渲染层级与终点零模糊状态，在原范围完成验证。
+- 最终构建/类型检查与11文件50单测通过；动画专项9组、账号一屏/焦点4组、既有UI16组，共29组浏览器检查通过，正常路径无异常/资源失败。专项包含登录/注册重复进入、隐藏暂停、准备中取消后重开、1920/390视口、后退中断、减少动态、无GPU、7类路由品牌不可点击及正常导航；七档桌面/平板表单与反馈仍一屏。`verify-account-fit.mjs` 单独验证原图92%取景和v6 50.08%双帘重叠，参考指定的接缝阴影与褶皱不被误判为裁切接缝。
+- 完整Chromium使用本机 `ANGLE / AMD Radeon(TM) Graphics / D3D11`，三次3.3秒播放采得195/199/197个帧间隔，中位数均16.7ms，超过50ms均0；性能检查明确断言帧数/中位数/长帧上限。默认无头壳使用软件绘制时中位数100–116.6ms，故不以软件壳替代本机实际浏览器性能证据。`profile-curtain.mjs` 保留阴影、页面滤镜、混合和缓存层的隔离诊断；未为提速删掉参考效果。不据本机数据承诺所有显卡恒定60fps。
+- 固定帧、真实两种账号终点与1920/390截图已目视核对，主证据 `output/playwright/curtain-v6/final/verification.json`；一屏与原UI回归各在 `account-fit`、`ui-regression`。最新录制 `capture/videos/page@ab837e26499092fe5926e2e003f2270d.webm`，1440×900、5.20秒、25fps VP8，索引 `capture/curtain-evidence.json`；FFmpeg提取的早期/中途/末帧已核对，未覆盖历史视频。UI局部扫描6组29线索：新增4项渐变与1项暗角均由用户v6明确指定，其余为已有原稿/字体规范/语义元素，保留。
+- 先前临时Vite j-dfir8q在会话中断后由外部终止，首次续接回归因连接拒绝未执行；恢复5174服务 j-h1p8dh 后，完整回归/录制 j-yvsl78退出0。本轮验证完成后关闭临时5174；未启动常驻5173，未提交、推送或部署，未改动其他认证与MySQL工作区修改。
+
+2026-10-04 · 动效公共底座与三诗入境首批：用户授权开始项目动态特效并要求按需使用MCP/插件/Skill。
+
+- 新增 `systems/motion/{MotionLoop,EffectPlane,OverviewMotion}`、`shaders/materials/presentation.frag.glsl`、`transition/RealmReveal` 与 `ui/styles/motion.css`，由 Application 编排。复用 Clock 和锁定 Three.js 0.186.1，透明 GLSL 平面；首页慢雾/细水光，卡片整组同相同幅、悬停/焦点暂停。仅可见且启用时 RAF 运行，恢复不追赶隐藏时间，结束/取消释放观察器、监听、材质/几何/渲染器/上下文。
+- 炭纸1.6秒、斜雪雾2.1秒、顺江云水1.5秒接真实目标DOM。图片/字体/首帧准备完成后播放，保留源页；失败重试/取消、Esc焦点恢复、快速点击单事务、路由中断和迟到加载取消均验，播放结束才提交路由。减少动态直接进入，无WebGL可用CSS回退；实际页面仍标注静态预览。SideCurtain v6、认证/MySQL、原稿/字体/发布资产和CONTRACT未改。
+- 本轮技能路由 direct-frontend-design → 项目视觉权威，结合全局 motion-engine/web-animation-design/threejs/动画优化；Context7查询官方API。全局 Chrome DevTools MCP 1.10.1 和 Playwright MCP 通过本机stdio桥接真实调用；当前对话未直接提供两者句柄。桥接工具在用户可视化目录的 motion-toolkit-setup/project-motion-check.mjs，未改写全局配置或保存凭据。
+- 最终构建/类型检查、13文件57单测通过。`frontend/tools/verify-motion.mjs` 10组与原UI16组通过；1920/1440真实DevTools截图、各转场五进度与DOM/CSS/Console/网络/性能已验。修复雾层导航穿透、火缘极初期回缩、准备取消的RAF/计时器释放；火缘96点遮罩与运动期合成层改善性能。原生自动化切页/最小化未产生hidden=true，最终专项明确模拟visibilitychange条件验证应用停止RAF及连续恢复，真实后台切换仍待人工，不宣称通过。
+- 本机1920×1080、ANGLE/AMD Radeon/D3D11，未开启追踪首次播放采得炭纸94/雪雾127/云水92个帧间隔，中位数均16.7ms，P95为17.0/16.9/17.1ms，超过50ms均0；不代表未来三维负载或所有硬件60fps。首页追踪120帧间隔，超过50ms为0。原生Console仅既有favicon404和默认8080后端未启动的会话502；游客隔离回归无脚本异常。本轮未操作数据库。
+- 最新证据 `docs/plans/R2-动态特效/assets/accepted/motion-verification.json`，UI回归在regression，原生MCP截图/JSON/追踪在devtools；完整WebM 23.4秒与entry-demo.mp4 10.4秒均为1440×900、25fps，剪辑未变速，真实火缘/雪雾/云水帧已目视核对。调试入口为 `window.__POETIC_MOTION__` 的 pause/play/seek/transition/cancel，独立保留P0入口。
+- 续接先完成真实曲面翻页回程与枫桥真实材质/灯光/水/雾/声音闭环，再接缺失的江雪/白帝城模型与机位；资产契约变化须同步导出/验证/加载。返回总览目前沿用既有滚动/焦点恢复。本地审阅服务5184 / FastCtx job j-oi0pro保持运行，5174初次尝试因已占用而停止，未终止未知服务；账号实用需按README启动8080后端。未提交、推送或部署，其他会话已有修改保留。
+
+2026-10-04 · 用户授权归档整个当前工作区并推送GitHub。
+
+- 归档范围：认证/MySQL接入、前端身份与游客/账号资料隔离、SideCurtain v6及其原稿来源、首页氛围与三种入境、相关测试工具、设计/架构/验收文档和截图/录像；保留生成与诊断历史，最终R2证据以accepted/devtools及report为准。两份已审查的accepted/build.log与unit-tests.log单独入库，保证报告链接完整；本机凭据、output诊断、依赖和构建产物仍按忽略规则排除。
+- 提交前最新前端构建/类型检查与13文件57单测、动效10组及UI16组已通过；本轮另执行后端Maven package，12测试零失败/错误/跳过，日志确认只连接隔离H2。Jar条目确认不含真实application-local.properties、H2、application-test或AuthTestApplication，公开占位示例正常保留。本轮未重新执行实库迁移或改动数据库。
+- 目标为origin / p0-tech-validation，远程 https://github.com/Galaxy-Liu-creator/PoeticRealm.git；一并上传先前未推送的e40bf13前端迁移检查点。使用已有Git身份，提交正文包含目的、模块、数据/兼容性/安全影响、验证和回滚/发布门禁；具体归档提交哈希以Git日志为准。源码回退用revert，已有V1表和数据保留，结构修正用后续迁移；本次推送不部署，真实三维/曲面翻页/后台切换与素材发布许可仍按R2报告推进。

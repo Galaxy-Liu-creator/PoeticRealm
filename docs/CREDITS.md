@@ -67,6 +67,7 @@
 | Huang Yue · River and landscape（1825） | https://www.metmuseum.org/art/collection/search/931206 | 2026-10-01 作品页核查有 Public Domain 标记；仅作横向山水层次参考，未下载，不用其建筑作为唐风考据 |
 | 用户供个人中心、登录、注册、幕布入口四张 PNG | 2026-10-01 本次对话附件；作者、制作工具和发布许可未提供 | 原样保存于 [v07/references](design/2026-10-01-v3/v07/README.md)，作为用户指定还原基准；原附件与副本 SHA-256 一致，不推断为 Stitch/本轮 AI 输出，不直接发布 |
 | 用户供新登录、注册两张 PNG | 2026-10-02 本次对话附件；作者、制作工具和发布许可未提供 | 原样保存于 [v10/references](design/2026-10-01-v3/v10/README.md)，替换当前 S11/S12 参考；与原附件 SHA-256 一致 |
+| 用户供 SideCurtain v6 HTML | 2026-10-03 对话提供的本机 HTML；作者与制作工具未提供 | 原样保存于 [curtain-v6](design/2026-10-03-curtain-v6/README.md)，SHA-256 一致；移植运动参数和层叠 CSS，嵌入图片仅作参考，不作为新增运行素材或推断发布许可 |
 
 详见 [设计参考记录](design/2026-10-01-v3/references.md)。用户参考原图仅归档 docs/design；没有新增图片或字体进入 public。Stitch 与本轮 image_gen 生成图单列于下方。具体字体许可尚未核验，不把“候选”写成“可发布”。
 

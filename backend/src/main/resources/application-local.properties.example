@@ -1,0 +1,10 @@
+# Copy to application-local.properties, which is ignored by Git.
+# Create a dedicated MySQL database before starting the application.
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/poeticrealm?characterEncoding=UTF-8&serverTimezone=UTC
+spring.datasource.username=YOUR_MYSQL_USERNAME
+spring.datasource.password=YOUR_LOCAL_PASSWORD
+# Replace with a random secret of at least 32 characters, kept stable across restarts.
+app.auth.remember-me-key=CHANGE_ME
+# Local HTTP only. Both values must be true for an HTTPS deployment.
+server.servlet.session.cookie.secure=false
+app.auth.secure-cookie=false

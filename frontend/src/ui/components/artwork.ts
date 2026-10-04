@@ -32,8 +32,8 @@ export const artwork = {
     moon: crop(login, 1672, 941, [1454, 118, 20, 22]),
   },
   curtain,
-  curtainLeft: crop(curtain, 1672, 941, [0, 0, 836, 941]),
-  curtainRight: crop(curtain, 1672, 941, [836, 0, 836, 941]),
+  curtainLeft: crop(curtain, 1672, 941, [0, 0, 836, 941 * 0.92]),
+  curtainRight: crop(curtain, 1672, 941, [836, 0, 836, 941 * 0.92]),
   covers: {
     fengqiao: crop(home, 1536, 1024, [72, 386, 388, 305]),
     jiangxue: crop(home, 1536, 1024, [554, 386, 369, 305]),

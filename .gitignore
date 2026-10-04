@@ -66,7 +66,7 @@ __pycache__/
 *.crash
 
 # 编辑器与系统文件
-.vscode/*
+.vscode/
 !.vscode/extensions.json
 !.vscode/settings.json
 .idea/

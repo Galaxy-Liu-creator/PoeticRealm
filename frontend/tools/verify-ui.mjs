@@ -3,18 +3,20 @@ import { PNG } from 'pngjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { repositoryPath } from './paths.mjs';
+import { guestAuth } from './auth-ui-fixture.mjs';
 
 const origin = process.env.UI_ORIGIN || 'http://127.0.0.1:5173';
 const output = process.env.UI_OUTPUT || repositoryPath('docs/plans/R1-UI还原/assets');
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({ viewport: { width: 1536, height: 1024 }, reducedMotion: 'reduce' });
+await guestAuth(context);
 const page = await context.newPage();
 const errors = [];
 const checks = [];
 let complete = false;
 page.on('pageerror', (error) => errors.push(error.message));
-page.on('response', (response) => { if (response.status() >= 400) errors.push(response.status() + ' ' + response.url()); });
+page.on('response', (response) => { if (response.status() >= 400 && !(response.status() === 503 && /\/api\/v1\/auth\/(login|register)$/.test(new URL(response.url()).pathname))) errors.push(response.status() + ' ' + response.url()); });
 const check = (label) => { checks.push(label); console.log('PASS ' + label); };
 const shot = async (name) => {
   await page.locator('#app[data-ready=ready]').waitFor();
@@ -116,7 +118,7 @@ try {
   await page.getByText('两次输入的密码不一致', { exact: true }).waitFor();
   await page.getByLabel('确认密码', { exact: true }).fill('password1');
   await page.getByRole('button', { name: '立即注册', exact: false }).click();
-  await page.getByText('账号服务尚未接入，暂不能提交。你可以返回总览继续浏览诗境。', { exact: true }).waitFor();
+  await page.getByText('账号服务暂时不可用，请稍后重试。', { exact: true }).waitFor();
   assert.equal(await page.getByLabel('密码', { exact: true }).inputValue(), '');
   const saved = await page.evaluate(() => localStorage.getItem('poetic-realm.library.v1'));
   assert.ok(!saved.includes('password1'));
@@ -154,6 +156,7 @@ try {
   assert.notEqual(focus.outline, 'none');
   check('keyboard: visible focus');
   const normalContext = await browser.newContext({ viewport: { width: 1536, height: 1024 }, reducedMotion: 'no-preference' });
+await guestAuth(normalContext);
   const normal = await normalContext.newPage();
   normal.on('pageerror', (error) => errors.push(error.message));
   await normal.goto(origin + '/#/account');
@@ -172,9 +175,10 @@ try {
   await normal.goBack();
   await normal.locator('.curtain-entry').waitFor();
   assert.equal(await normal.locator('.curtain-transition').count(), 0);
-  check('normal curtain: 1.2s reveal, target inert, focus, browser-back cancellation');
+  check('normal curtain: v6 continuous sideward reveal, target inert, focus, browser-back cancellation');
   await normalContext.close();
   const failureContext = await browser.newContext({ reducedMotion: 'no-preference' });
+await guestAuth(failureContext);
   const failure = await failureContext.newPage();
   await failure.goto(origin + '/#/account');
   await failure.locator('#app[data-ready=ready]').waitFor();
@@ -190,6 +194,7 @@ try {
   await failureContext.close();
   check('curtain resource failure: restore entry and allow retry');
   const slowContext = await browser.newContext({ reducedMotion: 'no-preference' });
+await guestAuth(slowContext);
   const slow = await slowContext.newPage();
   await slow.goto(origin + '/#/account');
   await slow.locator('#app[data-ready=ready]').waitFor();
@@ -206,6 +211,7 @@ try {
   await slowContext.close();
   check('cancel during pending image load: unlock entry immediately');
   const blockedContext = await browser.newContext();
+await guestAuth(blockedContext);
   await blockedContext.addInitScript(() => { Storage.prototype.setItem = () => { throw new DOMException('quota', 'QuotaExceededError'); }; });
   const blocked = await blockedContext.newPage();
   await blocked.goto(origin + '/#/');

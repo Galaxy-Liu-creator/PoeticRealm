@@ -2,6 +2,7 @@ import { chromium } from 'playwright';
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { repositoryPath } from './paths.mjs';
+import { guestAuth } from './auth-ui-fixture.mjs';
 
 const origin = process.env.UI_ORIGIN || 'http://127.0.0.1:5173';
 const output = repositoryPath('output/playwright/typography-login');
@@ -10,6 +11,7 @@ const duration = 30 * 24 * 60 * 60 * 1000;
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({ viewport: { width: 1672, height: 941 }, reducedMotion: 'reduce' });
+await guestAuth(context);
 const page = await context.newPage();
 const checks = [];
 const errors = [];
@@ -17,7 +19,7 @@ const fontRequests = [];
 const platformFonts = {};
 let complete = false;
 page.on('pageerror', (error) => errors.push(error.message));
-page.on('response', (response) => { if (response.status() >= 400) errors.push(response.status() + ' ' + response.url()); });
+page.on('response', (response) => { if (response.status() >= 400 && !(response.status() === 503 && /\/api\/v1\/auth\/(login|register)$/.test(new URL(response.url()).pathname))) errors.push(response.status() + ' ' + response.url()); });
 page.on('request', (request) => { if (/fonts\.google|\.(woff2?|ttf|otf)(?:\?|$)/.test(request.url())) fontRequests.push(request.url()); });
 const check = (name) => { checks.push(name); console.log('PASS ' + name); };
 const route = async (path) => {
@@ -145,6 +147,7 @@ try {
   check('remember me boundaries: expired data removed, saved names restored as text');
 
   const blocked = await browser.newContext({ reducedMotion: 'reduce' });
+await guestAuth(blocked);
   try {
     await blocked.addInitScript(() => Object.defineProperty(window, 'localStorage', { get() { throw new Error('storage blocked'); } }));
     const blockedPage = await blocked.newPage();

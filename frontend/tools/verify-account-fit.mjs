@@ -3,18 +3,20 @@ import { PNG } from 'pngjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { repositoryPath } from './paths.mjs';
+import { guestAuth } from './auth-ui-fixture.mjs';
 
 const origin = process.env.UI_ORIGIN || 'http://127.0.0.1:5173';
-const output = repositoryPath('output/playwright/ui-adjustments');
+const output = process.env.UI_OUTPUT || repositoryPath('output/playwright/ui-adjustments');
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({ reducedMotion: 'reduce' });
+await guestAuth(context);
 const page = await context.newPage();
 const errors = [];
 const checks = [];
 let complete = false;
 page.on('pageerror', (error) => errors.push(error.message));
-page.on('response', (response) => { if (response.status() >= 400) errors.push(response.status() + ' ' + response.url()); });
+page.on('response', (response) => { if (response.status() >= 400 && !(response.status() === 503 && /\/api\/v1\/auth\/(login|register)$/.test(new URL(response.url()).pathname))) errors.push(response.status() + ' ' + response.url()); });
 const check = (label) => { checks.push(label); console.log('PASS ' + label); };
 const route = async (path) => {
   await page.goto(origin + '/#' + path);
@@ -51,7 +53,7 @@ try {
         await page.getByRole('checkbox', { name: '我已阅读并同意用户协议与隐私政策' }).check();
       }
       await page.getByRole('button', { name: path === '/register' ? '立即注册' : '立即登录' }).click();
-      await page.getByText('账号服务尚未接入，暂不能提交。你可以返回总览继续浏览诗境。', { exact: true }).waitFor();
+      await page.getByText('账号服务暂时不可用，请稍后重试。', { exact: true }).waitFor();
       await fits(`${path} feedback ${width}x${height}`);
     }
   }
@@ -96,6 +98,8 @@ try {
     await route('/account');
     await page.screenshot({ path: `${output}/curtain-entry-${width}x${height}.png`, fullPage: true });
     await page.locator('.entry-copy').evaluate((node) => { node.hidden = true; });
+    // v6 deliberately shades its center seam; inspect the underlying crop independently.
+    const decoration = await page.addStyleTag({ content: '.curtain-closed :is(.fabric-folds, .fabric-depth, .fabric-sheen, .inner-ridge, .center-seam, .reveal-glow) { visibility: hidden; }' });
     const expected = await page.evaluate(async () => {
       const background = getComputedStyle(document.querySelector('.curtain-half.left')).backgroundImage;
       const image = new Image();
@@ -104,14 +108,17 @@ try {
       const canvas = document.createElement('canvas');
       canvas.width = innerWidth;
       canvas.height = innerHeight;
-      canvas.getContext('2d').drawImage(image, 0, 0, canvas.width, canvas.height);
+      const paint = canvas.getContext('2d');
+      const panelWidth = innerWidth * .5008;
+      paint.drawImage(image, 0, 0, image.width / 2, image.height * .92, 0, 0, panelWidth, canvas.height);
+      paint.drawImage(image, image.width / 2, 0, image.width / 2, image.height * .92, innerWidth - panelWidth, 0, panelWidth, canvas.height);
       return canvas.toDataURL('image/png').split(',')[1];
     });
     const reference = PNG.sync.read(Buffer.from(expected, 'base64'));
     const actual = PNG.sync.read(await page.screenshot());
     let difference = 0;
     let channels = 0;
-    // Compare the joining strip to the whole source image to detect a crop/stretch seam.
+    // Compare the joining strip to the floor-free source crop to detect a seam.
     for (let y = 8; y < height - 8; y += 8) {
       for (let x = width / 2 - 24; x <= width / 2 + 24; x += 4) {
         const offset = (y * width + x) * 4;
@@ -122,11 +129,12 @@ try {
       }
     }
     assert.ok(difference / channels < 3, `curtain join differs from intact background at ${width}x${height}: ${difference / channels}`);
+    await decoration.evaluate(node => node.remove());
     await page.locator('.entry-copy').evaluate((node) => { node.hidden = false; });
     assert.ok(await page.getByRole('link', { name: '登录', exact: true }).isVisible());
     assert.ok(await page.getByRole('link', { name: '注册', exact: true }).isVisible());
   }
-  check('curtain: center pixels match the continuous full-source image at three desktop sizes, buttons remain visible');
+  check('curtain: center pixels match the continuous floor-free image at three desktop sizes, buttons remain visible');
   assert.deepEqual(errors, []);
   check('no browser exceptions or failed resources');
   complete = true;

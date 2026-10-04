@@ -2,6 +2,9 @@ import { parseRoute, type Route } from './Router';
 import { findPoem } from '../content/catalog';
 import { LibraryStore, normalizeLibrary, STORE_KEY } from '../stores/LibraryStore';
 import { LoginMemory } from '../stores/LoginMemory';
+import { AuthStore } from '../stores/AuthStore';
+import { AGREEMENT_VERSION } from '../api/auth';
+import { openAuthPolicy } from '../ui/components/AuthPolicy';
 import { navigation } from '../ui/components/Navigation';
 import { artwork } from '../ui/components/artwork';
 import { homePage } from '../ui/pages/Home';
@@ -11,14 +14,22 @@ import { poemPage } from '../ui/pages/Poem';
 import { accountPage, entryPage } from '../ui/pages/Account';
 import { openProfileEditor } from '../ui/components/ProfileEditor';
 import { CurtainReveal } from '../transition/CurtainReveal';
+import { curtainPanels } from '../transition/CurtainDrape';
 import { listPageSize } from '../ui/components/Pagination';
+import { MotionLoop } from '../systems/motion/MotionLoop';
+import { OverviewMotion } from '../systems/motion/OverviewMotion';
+import { RealmReveal, type RealmId } from '../transition/RealmReveal';
 import '../ui/styles/application.css';
 import '../ui/styles/account.css';
 import '../ui/styles/typography.css';
+import '../ui/styles/motion.css';
 
 export class Application {
   private store = new LibraryStore();
   private loginMemory = new LoginMemory();
+  private auth = new AuthStore();
+  private pendingVisits: string[] = [];
+  private disposed = false;
   private route: Route = parseRoute(location.hash);
   private previous = '/';
   private homeScroll = 0;
@@ -32,6 +43,9 @@ export class Application {
   private renderVersion = 0;
   private artworkReady: Promise<boolean> = Promise.resolve(true);
   private noticeTimer?: number;
+  private motionLoop = new MotionLoop();
+  private overviewMotion?: OverviewMotion;
+  private realmReveal = new RealmReveal(this.motionLoop);
   constructor(private root: HTMLElement) {}
   start(): void {
     document.documentElement.style.setProperty('--paper-art', `url('${artwork.paper}')`);
@@ -43,20 +57,51 @@ export class Application {
     window.addEventListener('resize', this.onResize);
     document.addEventListener('visibilitychange', this.onVisibility);
     this.motion.addEventListener('change', this.onVisibility);
-    if (this.route.page === 'poem') this.store.visit(this.route.id);
+    if (this.route.page === 'poem') this.recordVisit(this.route.id);
     this.render();
+    // Separate from the preserved P0 __POETIC__ API; no query params steal UI routes.
+    Object.assign(window, { __POETIC_MOTION__: {
+      pause: () => this.motionLoop.pause(), play: () => this.motionLoop.play(),
+      seek: (t: number) => this.motionLoop.seek(t), transition: (p: number) => this.realmReveal.seek(p),
+      cancel: () => this.realmReveal.cancel(),
+    } });
+    this.auth.onChange = this.onIdentity;
+    void this.auth.restore();
+    window.addEventListener('focus', this.onFocus);
     window.addEventListener('pagehide', (event) => {
       if (event.persisted) return;
+      this.disposed = true; this.auth.onChange = undefined;
       this.observer?.disconnect(); this.reveal.cancel(); clearTimeout(this.noticeTimer);
+      this.realmReveal.cancel(); this.overviewMotion?.dispose(); this.motionLoop.dispose();
       window.removeEventListener('hashchange', this.onRoute);
       window.removeEventListener('storage', this.onStorage);
       window.removeEventListener('resize', this.onResize);
+      window.removeEventListener('focus', this.onFocus);
       document.removeEventListener('visibilitychange', this.onVisibility);
       this.motion.removeEventListener('change', this.onVisibility);
     }, { once: true });
   }
+  private onFocus = (): void => { void this.auth.restore(); };
+  private onIdentity = (): void => {
+    const user = this.auth.user;
+    this.root.dataset.auth = user ? 'authenticated' : this.auth.available ? 'guest' : 'unavailable';
+    const key = user ? STORE_KEY + '.account.' + user.id : STORE_KEY;
+    const changed = key !== this.store.key;
+    if (changed) {
+      document.querySelector<HTMLDialogElement>('.profile-editor')?.close();
+      this.store = new LibraryStore(undefined, key, user ? { name: user.username, gender: user.gender } : undefined);
+      this.listPages.favorites = 1;
+    }
+    const visited = this.pendingVisits.length > 0;
+    this.pendingVisits.splice(0).forEach((id) => this.store.visit(id));
+    if ((changed || visited) && !['login', 'register'].includes(this.route.page)) this.render();
+  };
+  private recordVisit(id: string): void {
+    if (!this.auth.ready) this.pendingVisits.push(id);
+    else this.store.visit(id);
+  }
   private onStorage = (event: StorageEvent): void => {
-    if (event.key !== STORE_KEY) return;
+    if (event.key !== this.store.key) return;
     try { this.store.data = normalizeLibrary(event.newValue ? JSON.parse(event.newValue) : null); this.render(); }
     catch { this.notify('另一窗口的本机资料无法读取。'); }
   };
@@ -97,9 +142,12 @@ export class Application {
     document.body.classList.toggle('page-hidden', document.hidden);
     if ((this.motion.matches || !this.store.data.preferences.motion) && this.revealing) this.reveal.cancel();
     this.reveal.setHidden(document.hidden);
+    this.overviewMotion?.setEnabled(!this.motion.matches && this.store.data.preferences.motion);
+    this.realmReveal.setReduced(this.motion.matches || !this.store.data.preferences.motion);
   };
   private onRoute = (): void => {
     const next = parseRoute(location.hash);
+    this.realmReveal.cancel();
     if (next.path === this.route.path) return;
     document.querySelector<HTMLDialogElement>('.profile-editor')?.close();
     if (this.route.page === 'home') this.homeScroll = scrollY;
@@ -107,7 +155,7 @@ export class Application {
     if (this.route.page === 'poem') this.homePoem = this.route.id;
     if (this.revealing) this.reveal.cancel();
     this.route = next;
-    if (next.page === 'poem') this.store.visit(next.id);
+    if (next.page === 'poem') this.recordVisit(next.id);
     this.render();
     window.scrollTo(0, next.page === 'home' ? this.homeScroll : 0);
     const focus = next.page === 'home' && this.homePoem
@@ -116,6 +164,8 @@ export class Application {
     focus?.focus({ preventScroll: true });
   };
   private render(): void {
+    this.realmReveal.cancel();
+    this.overviewMotion?.dispose(); this.overviewMotion = undefined;
     this.observer?.disconnect();
     clearTimeout(this.noticeTimer);
     const route = this.route;
@@ -126,7 +176,7 @@ export class Application {
     switch (route.page) {
       case 'home': content = homePage(this.store, this.listPages.home, this.pageSize); break;
       case 'favorites': content = favoritesPage(this.store, this.listPages.favorites, this.pageSize); break;
-      case 'profile': content = profilePage(this.store); break;
+      case 'profile': content = profilePage(this.store, this.auth.user); break;
       case 'poem': content = poemPage(findPoem(route.id)!, this.store); break;
       case 'account': content = entryPage(); break;
       case 'login': case 'register': content = accountPage(route.page === 'register', this.store.data.preferences.dark); break;
@@ -148,10 +198,11 @@ export class Application {
       this.observer = new IntersectionObserver(([entry]) => grid.classList.toggle('float-visible', entry?.isIntersecting ?? false));
       this.observer.observe(grid);
     }
-    // Adjacent halves of one clean illustration preserve the closed curtain's center.
+    this.overviewMotion = new OverviewMotion(this.root, this.motionLoop);
+    this.overviewMotion.setEnabled(!this.motion.matches && this.store.data.preferences.motion);
+    // The entry and transition share the same closed fabric and reference shading.
     if (route.page === 'account') {
-      this.root.querySelector('.curtain-closed')!.innerHTML =
-        `<div class="curtain-half left" style="${artwork.curtainLeft}"></div><div class="curtain-half right" style="${artwork.curtainRight}"></div>`;
+      this.root.querySelector('.curtain-closed')!.innerHTML = curtainPanels();
     }
     const version = ++this.renderVersion;
     this.root.dataset.ready = 'loading';
@@ -181,6 +232,34 @@ export class Application {
   }
   private onClick = (event: MouseEvent): void => {
     const target = event.target as HTMLElement;
+    const entry = target.closest<HTMLAnchorElement>('a[href^="#/poems/"]');
+    if (entry && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && event.button === 0) {
+      const destination = parseRoute(entry.hash);
+      if (destination.page === 'poem' && destination.path !== this.route.path) {
+        event.preventDefault();
+        if (this.realmReveal.active) return;
+        const sourcePath=this.route.path;
+        const poem=findPoem(destination.id)!;
+        const markup=navigation(destination)+poemPage(poem,this.store);
+        this.overviewMotion?.setSuspended(true);
+        void this.realmReveal.play(this.root,destination.id as RealmId,markup,artwork.scenes[destination.id]!,this.motion.matches || !this.store.data.preferences.motion).then(complete=>{
+          if (complete && !this.disposed && this.route.path===sourcePath) {
+            history.pushState(null,'','#'+destination.path);this.onRoute();
+          }
+        }).finally(()=>this.overviewMotion?.setSuspended(false));
+        return;
+      }
+    }
+    const logout = target.closest<HTMLButtonElement>('[data-logout]');
+    if (logout && !logout.disabled) {
+      logout.disabled = true;
+      void this.auth.logout().then(() => {
+        if (!this.disposed) { this.render(); this.notify('已退出登录，恢复游客本机资料'); }
+      }).catch((error) => {
+        if (!this.disposed) this.notify(error instanceof Error ? error.message : '退出失败，请重试');
+      }).finally(() => { logout.disabled = false; });
+      return;
+    }
     const theme = target.closest<HTMLButtonElement>('[data-auth-theme]');
     if (theme) {
       this.store.data.preferences.dark = !this.store.data.preferences.dark;
@@ -234,8 +313,8 @@ export class Application {
       password.setAttribute('aria-pressed', String(show));
       password.setAttribute('aria-label', `${show ? '隐藏' : '显示'}${password.dataset.password === 'confirmation' ? '确认密码' : '密码'}`);
     }
-    if (target.closest('[data-auth-info]')) this.notify('密码找回将在账号服务接入后开放。');
-    if (target.closest('[data-auth-policy]')) this.notify('用户协议与隐私政策将在账号服务接入前发布。目前不收集或保存注册资料。');
+    if (target.closest('[data-auth-info]')) this.notify('密码找回尚未开放，请保管好你的测试账号密码。');
+    if (target.closest('[data-auth-policy]')) openAuthPolicy();
     const curtain = target.closest<HTMLAnchorElement>('[data-curtain]');
     if (curtain && !event.ctrlKey && !event.metaKey && !event.shiftKey && event.button === 0) {
       event.preventDefault();
@@ -301,7 +380,35 @@ export class Application {
       if (password.length < 8 || password.length > 20 || types < 2) { feedback.textContent = '密码需为8–20位，至少包含字母、数字和特殊字符中的两种'; return; }
       if (data.get('password') !== data.get('confirmation')) { feedback.textContent = '两次输入的密码不一致'; return; }
     }
-    feedback.textContent = '账号服务尚未接入，暂不能提交。你可以返回总览继续浏览诗境。';
-    form.querySelectorAll<HTMLInputElement>('[type=password], [name=password], [name=confirmation]').forEach((input) => { input.value = ''; });
+    void this.submitAccount(form, data, feedback);
   };
+  private async submitAccount(form: HTMLFormElement, data: FormData, feedback: HTMLElement): Promise<void> {
+    if (form.dataset.busy === 'true') return;
+    const register = this.route.page === 'register';
+    const username = String(data.get('username') ?? '').trim();
+    const submit = form.querySelector<HTMLButtonElement>('[type=submit]')!;
+    form.dataset.busy = 'true'; form.setAttribute('aria-busy', 'true'); submit.disabled = true;
+    feedback.textContent = register ? '正在创建账号…' : '正在登录…';
+    try {
+      if (register) {
+        const user = await this.auth.register({ username, password: String(data.get('password') ?? ''),
+          birthday: data.get('birthday') ? String(data.get('birthday')) : null,
+          gender: String(data.get('gender') ?? ''), agreement: data.get('agreement') === 'on', agreementVersion: AGREEMENT_VERSION });
+        if (this.disposed || !form.isConnected) return;
+        location.hash = '/login'; this.onRoute();
+        this.root.querySelector<HTMLInputElement>('[name=username]')!.value = user.username;
+        this.root.querySelector<HTMLElement>('.form-feedback')!.textContent = '注册成功，请使用新账号登录。';
+      } else {
+        await this.auth.login(username, String(data.get('password') ?? ''), data.get('remember') === 'on');
+        if (this.disposed) return;
+        if (form.isConnected) { location.hash = '/profile'; this.onRoute(); this.notify('欢迎回到诗境'); }
+        else this.render();
+      }
+    } catch (error) {
+      if (!this.disposed && form.isConnected) feedback.textContent = error instanceof Error ? error.message : '提交失败，请重试';
+    } finally {
+      form.querySelectorAll<HTMLInputElement>('[name=password], [name=confirmation]').forEach((input) => { input.value = ''; });
+      form.dataset.busy = 'false'; form.removeAttribute('aria-busy'); submit.disabled = false;
+    }
+  }
 }

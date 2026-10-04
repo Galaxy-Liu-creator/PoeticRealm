@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "hover pauses the entire aligned grid",
+    "hero stops offscreen and resumes",
+    "three continuous entries commit only at completion and release canvas",
+    "keyboard entry and Esc restore focus and source",
+    "failed image keeps source and retry succeeds",
+    "cancel during actual pending request unlocks source; late completion stays cancelled",
+    "rapid requests share one transaction; route changes cancel it",
+    "live reduced-motion change stops atmosphere and skips reveal after preparation",
+    "unavailable WebGL retains static UI and completes CSS fallback"
+  ],
+  "errors": [],
+  "complete": true,
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\docs\\plans\\R2-动态特效\\assets\\video\\page@f02f64355f52ab029375efdbb183f6b2.webm"
+}

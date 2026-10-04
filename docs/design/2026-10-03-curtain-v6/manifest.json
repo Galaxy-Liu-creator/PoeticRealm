@@ -1,0 +1,15 @@
+{
+  "received": "2026-10-03",
+  "source": "user-provided local HTML",
+  "originalPath": "D:/Downloads/PoeticRealm_HyperFrames_SideCurtain_v6.html",
+  "file": "PoeticRealm_HyperFrames_SideCurtain_v6.html",
+  "sha256": "7f682f0017a52370da44265b277b187eac9d60afa59efd558aea371978072a08",
+  "request": "这个是我要的动态效果，你照着这个做",
+  "author": "not supplied",
+  "creationTool": "not supplied",
+  "runtimeUse": "motion parameters and layered CSS; embedded artwork is reference only",
+  "referenceGsapVersion": "3.14.2",
+  "projectGsapVersion": "3.15.0",
+  "curtainSeconds": 3.26,
+  "sceneSeconds": 3.30
+}

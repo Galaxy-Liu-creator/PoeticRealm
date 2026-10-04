@@ -3,7 +3,8 @@ import type { LibraryStore } from '../../stores/LibraryStore';
 import { artwork } from '../components/artwork';
 import { escapeHTML as esc } from '../components/html';
 import { footer } from '../components/Navigation';
-export function profilePage(store: LibraryStore): string {
+import type { AuthUser } from '../../api/auth';
+export function profilePage(store: LibraryStore, user: AuthUser | null = null): string {
   const { profile, favorites, visits, preferences } = store.data;
   const visited = new Set(visits.map((visit) => visit.id)).size;
   const mini = (id: string): string => {
@@ -15,7 +16,7 @@ export function profilePage(store: LibraryStore): string {
     <main id="main" class="profile-layout page-width" tabindex="-1"><div class="profile-left">
     <section class="paper-panel profile-summary"><div class="avatar" ${profile.avatar ? '' : `style="${artwork.avatar}"`}>${profile.avatar ? `<img src="${esc(profile.avatar)}" alt="我的头像">` : ''}</div><h2>${esc(profile.name)}</h2><p class="profile-role">诗境旅人</p><p>${esc(profile.bio)}</p>
     <div class="profile-stats"><div><span>已浏览</span><strong>${visited}<small>首</small></strong></div><div><span>收藏</span><strong>${favorites.length}<small>首</small></strong></div><div><span>足迹</span><strong>${visits.length}<small>次</small></strong></div></div><button class="small-button" data-edit-profile>编辑资料</button></section>
-    <section class="paper-panel account-info"><h2 class="panel-title">账号信息</h2><dl><div><dt>昵称</dt><dd>${esc(profile.name)}</dd></div><div><dt>性别</dt><dd>${esc(profile.gender || '未设置')}</dd></div><div><dt>账号</dt><dd>访客 · 本机资料</dd></div></dl><a class="small-button" href="#/account">登录 / 注册 →</a><p class="local-note">资料与收藏保存在当前浏览器</p></section></div>
+    <section class="paper-panel account-info"><h2 class="panel-title">账号信息</h2><dl><div><dt>昵称</dt><dd>${esc(profile.name)}</dd></div><div><dt>性别</dt><dd>${esc(profile.gender || '未设置')}</dd></div><div><dt>账号</dt><dd>${user ? esc(user.username) + ' · 已登录' : '访客 · 本机资料'}</dd></div></dl>${user ? '<button type="button" class="small-button" data-logout>退出登录</button>' : '<a class="small-button" href="#/account">登录 / 注册 →</a>'}<p class="local-note">${user ? '本机资料按账号保存；云同步尚未开放' : '资料与收藏保存在当前浏览器'}</p></section></div>
     <div class="profile-right"><section class="paper-panel"><div class="panel-heading"><h2 class="panel-title">我的收藏</h2><a href="#/favorites">查看全部 ›</a></div><div class="mini-grid">${favorites.length ? favorites.map(mini).join('') : '<p class="panel-empty">尚未收藏诗词。<a href="#/">去总览看看 →</a></p>'}</div></section>
     <section class="paper-panel"><div class="panel-heading"><h2 class="panel-title">最近浏览</h2><span>本机足迹</span></div><ol class="recent-list">${visits.length ? visits.slice(0, 3).map((visit) => {
       const poem = findPoem(visit.id)!;

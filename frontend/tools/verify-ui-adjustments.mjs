@@ -2,17 +2,19 @@ import { chromium } from 'playwright';
 import { mkdir, writeFile } from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import { repositoryPath } from './paths.mjs';
+import { guestAuth } from './auth-ui-fixture.mjs';
 
 const origin = process.env.UI_ORIGIN || 'http://127.0.0.1:5173';
 const output = repositoryPath('output/playwright/ui-adjustments');
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({ viewport: { width: 1672, height: 941 }, reducedMotion: 'reduce' });
+await guestAuth(context);
 const page = await context.newPage();
 const errors = [];
 const checks = [];
 page.on('pageerror', (error) => errors.push(error.message));
-page.on('response', (response) => { if (response.status() >= 400) errors.push(response.status() + ' ' + response.url()); });
+page.on('response', (response) => { if (response.status() >= 400 && !(response.status() === 503 && /\/api\/v1\/auth\/(login|register)$/.test(new URL(response.url()).pathname))) errors.push(response.status() + ' ' + response.url()); });
 const check = (label) => { checks.push(label); console.log('PASS ' + label); };
 const route = async (path) => {
   await page.goto(origin + '/#' + path);

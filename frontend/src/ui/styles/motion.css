@@ -1,0 +1,15 @@
+.hero-motion { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+/* MotionLoop drives one group transform; keep all covers aligned. */
+.poem-grid { animation: none; }
+.realm-transition { position: fixed; inset: 0; z-index: 85; overflow: hidden; }
+.realm-target, .realm-veil { position: absolute; inset: 0; pointer-events: none; }
+.realm-target { visibility: hidden; overflow: hidden; background: var(--paper); isolation: isolate; z-index: 0; }
+.realm-veil { z-index: 1; }
+.realm-fengqiao[data-state=playing] .realm-target { will-change: clip-path; transform: translateZ(0); }
+.realm-target .navigation { position: relative !important; width: 100%; height: 64px; background: #15373d !important; }
+.realm-target .poem-page { height: calc(100vh - 64px); }
+.realm-veil canvas { display: block; width: 100%; height: 100%; }
+.realm-loading { position: absolute; z-index: 2; bottom: 28px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 18px; max-width: calc(100vw - 40px); padding: 12px 20px; background: #183b3d; color: #fff6e6; border: 1px solid #c2ab80; font-family: var(--font-sans); }
+.realm-loading button { padding: 5px 10px; border: 1px solid #9cb3ac; white-space: nowrap; color: #fff6e6; }
+.realm-loading button:hover { background: #355657; color: white; }
+@media (prefers-reduced-motion: reduce) { .hero-motion { display: none; } }

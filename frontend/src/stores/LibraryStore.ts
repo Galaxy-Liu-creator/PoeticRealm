@@ -38,10 +38,12 @@ export function normalizeLibrary(value: unknown): LibraryData {
 export class LibraryStore {
   data = initial();
   warning = '';
-  constructor(private storage?: Pick<Storage, 'getItem' | 'setItem'>) {
+  constructor(private storage?: Pick<Storage, 'getItem' | 'setItem'>,
+              readonly key = STORE_KEY, profile?: Partial<LibraryData['profile']>) {
+    if (profile) this.data.profile = { ...this.data.profile, ...profile };
     try {
       this.storage ??= window.localStorage;
-      const saved = this.storage.getItem(STORE_KEY);
+      const saved = this.storage.getItem(this.key);
       if (saved) this.data = normalizeLibrary(JSON.parse(saved));
     } catch {
       this.warning = '无法读取本机资料，当前更改仅在本次会话中保留。';
@@ -51,7 +53,7 @@ export class LibraryStore {
   save(): boolean {
     try {
       if (!this.storage) throw new Error('Storage unavailable');
-      this.storage.setItem(STORE_KEY, JSON.stringify(this.data));
+      this.storage.setItem(this.key, JSON.stringify(this.data));
       this.warning = '';
       return true;
     } catch {

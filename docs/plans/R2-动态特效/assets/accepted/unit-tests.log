@@ -1,0 +1,31 @@
+
+> poetic-realm@0.0.0 test
+> vitest run
+
+
+ RUN  v5.0.2 D:/University-Competition/Math_Media/PoeticRealm/frontend
+
+ ✓ src/engine/Clock.test.ts (6 tests) 18ms
+ ✓ src/systems/motion/MotionLoop.test.ts (2 tests) 21ms
+ ✓ src/engine/debugParams.test.ts (6 tests) 17ms
+ ✓ src/ui/components/Pagination.test.ts (3 tests) 16ms
+ ✓ src/stores/AuthStore.test.ts (8 tests) 38ms
+ ✓ src/api/http.test.ts (4 tests) 143ms
+ ✓ src/stores/LoginMemory.test.ts (4 tests) 19ms
+ ✓ src/utils/random.test.ts (6 tests) 501ms
+   ✓ createRng (4)
+     ✓ 取值落在 [0, 1) 471ms
+ ✓ src/app/Router.test.ts (2 tests) 13ms
+ ✓ src/stores/LibraryStore.test.ts (5 tests) 22ms
+ ✓ src/transition/RealmReveal.test.ts (5 tests) 15ms
+ ✓ src/engine/Assets.test.ts (4 tests) 10ms
+ ✓ src/systems/ink/InkSim.test.ts (2 tests) 9ms
+
+ Test Files  13 passed (13)
+      Tests  57 passed (57)
+   Start at  18:16:59
+   Duration  1.93s (transform 40%, import 37%, tests 13%, worker 10%)
+
+  Transform  transforming modules took 2.51s · 40% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns

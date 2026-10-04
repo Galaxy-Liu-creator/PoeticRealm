@@ -1,5 +1,5 @@
 /* v10 user originals: continuous landscape and curved white surface, with live controls. */
-.account-page { --auth-unit: min(calc(100vw / 1672), calc(100svh / 941)); position: relative; height: 100svh; color: #103640; isolation: isolate; }
+.account-page { --auth-unit: min(calc(100vw / 1672), calc(100svh / 941)); position: relative; height: 100svh; overflow: hidden; color: #103640; isolation: isolate; filter: blur(0px) saturate(1) brightness(1); transform: scale(1); }
 body:is([data-page=login], [data-page=register])::before { display: none; }
 .auth-background { position: absolute; inset: 0; z-index: -1; background-size: 100% 100%; background-repeat: no-repeat; pointer-events: none; }
 .auth-background::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #0a323b22, #0a323b44 35%, transparent 57%); }
@@ -8,7 +8,7 @@ body:is([data-page=login], [data-page=register])::before { display: none; }
 .auth-brand strong { display: block; font: calc(var(--auth-unit) * 34)/1.4 var(--font-serif); letter-spacing: .03em; }
 .auth-brand small { display: block; text-align: center; font-size: calc(var(--auth-unit) * 18); letter-spacing: .2em; }
 .auth-brand-icon { width: calc(var(--auth-unit) * 40); height: calc(var(--auth-unit) * 40); flex: none; background-repeat: no-repeat; border-radius: 50%; }
-.auth-brand:hover { color: #fff7e5; }
+.auth-curtain-corners { position: absolute; inset: 0; z-index: 10; width: 100%; height: 100svh; overflow: hidden; pointer-events: none; }
 .account-tabs { position: absolute; left: 64.4%; top: 9.56%; width: 18.3%; height: calc(var(--auth-unit) * 76); display: grid; grid-template-columns: 1fr 1fr; padding: calc(var(--auth-unit) * 5); border: 1px solid #d7dfdc; border-radius: 50px; background: #f8faf780; }
 .account-tabs a { display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: inherit; font-size: calc(var(--auth-unit) * 23); line-height: 1.2; color: #52696b; }
 .account-tabs small { font-size: calc(var(--auth-unit) * 16); font-style: italic; opacity: .8; }

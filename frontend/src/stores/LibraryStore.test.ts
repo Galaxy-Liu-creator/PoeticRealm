@@ -29,4 +29,16 @@ describe('local library persistence', () => {
     expect(normalizeLibrary({ version: 1, profile: { avatar: 'javascript:alert(1)' } }).profile.avatar).toBe('');
     expect(normalizeLibrary({ version: 2, favorites: ['fengqiao'] }).favorites).toEqual([]);
   });
+  it('keeps guest and different account libraries separate without importing guest data', () => {
+    const values = new Map<string, string>();
+    const storage = { getItem: (key: string) => values.get(key) ?? null,
+      setItem: (key: string, value: string) => { values.set(key, value); } };
+    const guest = new LibraryStore(storage); guest.toggle('fengqiao');
+    const first = new LibraryStore(storage, STORE_KEY + '.account.1', { name: '第一位旅人' });
+    expect(first.data.favorites).toEqual([]); expect(first.data.profile.name).toBe('第一位旅人');
+    first.toggle('jiangxue');
+    expect(new LibraryStore(storage, STORE_KEY + '.account.2').data.favorites).toEqual([]);
+    expect(new LibraryStore(storage, STORE_KEY + '.account.1').data.favorites).toEqual(['jiangxue']);
+    expect(new LibraryStore(storage).data.favorites).toEqual(['fengqiao']);
+  });
 });

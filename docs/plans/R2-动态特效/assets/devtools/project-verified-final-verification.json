@@ -1,0 +1,161 @@
+{
+  "phase": "verified-final",
+  "checks": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "canvases": 1,
+      "grid": "none",
+      "hero": "active"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "canvases": 1,
+      "grid": "none",
+      "hero": "active"
+    },
+    {
+      "scene": "fengqiao",
+      "samples": [
+        {
+          "p": 0,
+          "state": "playing",
+          "targetVisible": "hidden"
+        },
+        {
+          "p": 0.25,
+          "state": "playing",
+          "targetVisible": "visible"
+        },
+        {
+          "p": 0.5,
+          "state": "playing",
+          "targetVisible": "visible"
+        },
+        {
+          "p": 0.75,
+          "state": "playing",
+          "targetVisible": "visible"
+        },
+        {
+          "p": 1
+        }
+      ]
+    },
+    {
+      "scene": "jiangxue",
+      "samples": [
+        {
+          "p": 0,
+          "state": "playing",
+          "targetVisible": "hidden"
+        },
+        {
+          "p": 0.25,
+          "state": "playing",
+          "targetVisible": "hidden"
+        },
+        {
+          "p": 0.5,
+          "state": "playing",
+          "targetVisible": "visible"
+        },
+        {
+          "p": 0.75,
+          "state": "playing",
+          "targetVisible": "visible"
+        },
+        {
+          "p": 1
+        }
+      ]
+    },
+    {
+      "scene": "baidicheng",
+      "samples": [
+        {
+          "p": 0,
+          "state": "playing",
+          "targetVisible": "hidden"
+        },
+        {
+          "p": 0.25,
+          "state": "playing",
+          "targetVisible": "hidden"
+        },
+        {
+          "p": 0.5,
+          "state": "playing",
+          "targetVisible": "visible"
+        },
+        {
+          "p": 0.75,
+          "state": "playing",
+          "targetVisible": "visible"
+        },
+        {
+          "p": 1
+        }
+      ]
+    }
+  ],
+  "server": {
+    "name": "chrome_devtools",
+    "title": "Chrome DevTools MCP server",
+    "version": "1.10.1"
+  },
+  "dom": "## Latest page snapshot\nuid=1_0 RootWebArea \"诗词总览 · 诗境\" url=\"http://127.0.0.1:5184/\"\n  uid=1_1 link \"跳至正文\" url=\"http://127.0.0.1:5184/#main\"\n    uid=1_2 StaticText \"跳至正文\"\n  uid=1_3 banner\n    uid=1_4 StaticText \"诗境·一卷山河 \"\n    uid=1_5 navigation \"主导航\"\n      uid=1_6 link \"诗词总览\" url=\"http://127.0.0.1:5184/#/\"\n        uid=1_7 StaticText \"诗词总览\"\n      uid=1_8 link \"我的收藏\" url=\"http://127.0.0.1:5184/#/favorites\"\n        uid=1_9 StaticText \"我的收藏\"\n      uid=1_10 link \"个人中心\" url=\"http://127.0.0.1:5184/#/profile\"\n        uid=1_11 StaticText \"个人中心\"\n  uid=1_12 heading \"诗境·一卷山河 \" level=\"1\"\n  uid=1_13 StaticText \"循诗入境，展卷见山河\"\n  uid=1_14 main\n    uid=1_15 heading \"诗词总览\" level=\"2\"\n    uid=1_16 link \"进入《枫桥夜泊》\" url=\"http://127.0.0.1:5184/#/poems/fengqiao\"\n    uid=1_17 button \"收藏《枫桥夜泊》\"\n    uid=1_18 heading \"枫桥夜泊\" level=\"3\"\n    uid=1_19 StaticText \"唐 · 张继\"\n    uid=1_20 StaticText \"江枫渔火对愁眠\"\n    uid=1_21 link \"入境\" url=\"http://127.0.0.1:5184/#/poems/fengqiao\"\n      uid=1_22 StaticText \"入境\"\n    uid=1_23 link \"进入《江雪》\" url=\"http://127.0.0.1:5184/#/poems/jiangxue\"\n    uid=1_24 button \"收藏《江雪》\"\n    uid=1_25 heading \"江雪\" level=\"3\"\n    uid=1_26 StaticText \"唐 · 柳宗元\"\n    uid=1_27 StaticText \"独钓寒江雪\"\n    uid=1_28 link \"入境\" url=\"http://127.0.0.1:5184/#/poems/jiangxue\"\n      uid=1_29 StaticText \"入境\"\n    uid=1_30 link \"进入《早发白帝城》\" url=\"http://127.0.0.1:5184/#/poems/baidicheng\"\n    uid=1_31 button \"收藏《早发白帝城》\"\n    uid=1_32 heading \"早发白帝城\" level=\"3\"\n    uid=1_33 StaticText \"唐 · 李白\"\n    uid=1_34 StaticText \"轻舟已过万重山\"\n    uid=1_35 link \"入境\" url=\"http://127.0.0.1:5184/#/poems/baidicheng\"\n      uid=1_36 StaticText \"入境\"\n    uid=1_37 navigation \"诗词分页\"\n      uid=1_38 status atomic live=\"polite\" relevant=\"additions text\"\n        uid=1_39 StaticText \"共 3 首 · 每页最多 15 首\"\n      uid=1_40 button \"上一页\" disableable disabled\n      uid=1_41 form\n        uid=1_42 StaticText \"第 \"\n        uid=1_43 textbox \"输入页码\" description=\"输入页码后按回车跳转\" value=\"1\"\n        uid=1_44 StaticText \" 页 / 1 页\"\n      uid=1_45 button \"下一页\" disableable disabled\n  uid=1_46 contentinfo\n    uid=1_47 StaticText \"© 诗境·一卷山河 · 循诗入境 展卷见山河\"\n",
+  "frames": {
+    "frames": 120,
+    "p50": 16.699999999999818,
+    "p95": 16.800000000000182,
+    "over50": 0,
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "playbackMeasurement": "untraced first entry, decoded target, 1920x1080",
+  "playback": [
+    {
+      "scene": "fengqiao",
+      "frames": 94,
+      "duration": 1600.199999999999,
+      "p50": 16.69999999999891,
+      "p95": 17,
+      "over50": 0
+    },
+    {
+      "scene": "jiangxue",
+      "frames": 127,
+      "duration": 2100.2000000000007,
+      "p50": 16.69999999999891,
+      "p95": 16.900000000001455,
+      "over50": 0
+    },
+    {
+      "scene": "baidicheng",
+      "frames": 92,
+      "duration": 1516.7999999999993,
+      "p50": 16.69999999999891,
+      "p95": 17.100000000000364,
+      "over50": 0
+    }
+  ],
+  "behavior": {
+    "repeatable": true,
+    "a": "translateY(-2.56066px)",
+    "off": "paused",
+    "back": "active"
+  },
+  "cycles": {
+    "canvas": 1,
+    "overlays": 0
+  },
+  "console": "Emulating viewport: {\"deviceScaleFactor\":1,\"isMobile\":false,\"hasTouch\":false,\"isLandscape\":false,\"width\":1440,\"height\":900}\n## Console messages\nShowing 1-2 of 2 (Page 1 of 1).\nmsgid=3 [error] Failed to load resource: the server responded with a status of 404 (Not Found) (0 args)\nmsgid=4 [error] Failed to load resource: the server responded with a status of 502 (Bad Gateway) (0 args)",
+  "requests": "Emulating viewport: {\"deviceScaleFactor\":1,\"isMobile\":false,\"hasTouch\":false,\"isLandscape\":false,\"width\":1440,\"height\":900}\n## Network requests\nShowing 1-2 of 2 (Page 1 of 1).\nreqid=6 GET http://127.0.0.1:5184/favicon.ico [404]\nreqid=57 GET http://127.0.0.1:5184/api/v1/auth/session [502]",
+  "consoleDetails": [
+    "Emulating viewport: {\"deviceScaleFactor\":1,\"isMobile\":false,\"hasTouch\":false,\"isLandscape\":false,\"width\":1440,\"height\":900}\nID: 3\nMessage: error> Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Emulating viewport: {\"deviceScaleFactor\":1,\"isMobile\":false,\"hasTouch\":false,\"isLandscape\":false,\"width\":1440,\"height\":900}\nID: 4\nMessage: error> Failed to load resource: the server responded with a status of 502 (Bad Gateway)"
+  ]
+}

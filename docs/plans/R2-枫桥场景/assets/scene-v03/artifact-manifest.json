@@ -1,0 +1,585 @@
+{
+  "date": "2026-10-08",
+  "scope": "full-scene",
+  "fullSceneAccepted": false,
+  "functionalChecks": 11,
+  "unitTests": 88,
+  "sourceModelReused": "frontend/public/assets/models/fengqiao/scene_v02.glb",
+  "modelAndEnvironmentBytes": 14982076,
+  "distributedBytesIncludingTerrain": 17194260,
+  "protectedAssets": {
+    "art/blender/fengqiao-sample-v01.blend": "694b8394942943178ba1239bb1005f7c7870a2418df2bc051393d352edc0d0f6",
+    "art/blender/fengqiao-sample-v02.blend": "cfd60149342263d701ae60befe2bc7afae13e0f10dcfe8e55b737e0a3d127e99",
+    "art/blender/fengqiao-sample-v03.blend": "7056b269b62e148c45e60fa62f81ef7b3d2afea2804291921e818338861344f8",
+    "art/blender/fengqiao-sample-v04.blend": "4f3fa91b7e9ce973b7bb3f0d8fb3a576e9ec09ddc7dab0a7585784943687fb7e",
+    "frontend/public/assets/models/fengqiao/sample_v01.glb": "37540f5d04a5829c99a03b4ed802478a21bd2ec1e36895706ced132a5720caeb",
+    "frontend/public/assets/models/fengqiao/sample_v02.glb": "7ffde5fa94fd3ea26e3d7e346c3142fd85d037176f15f4133985171bb57a3114",
+    "frontend/public/assets/models/fengqiao/sample_v03.glb": "cf87dd3bc8c86b4680d871e6f200aa37cea14ff4aa908e293c3c18c2ba452107",
+    "frontend/public/assets/models/fengqiao/sample_v04.glb": "bf4868c46bc0eea6b1c67579d1db706ac9f9297ca1e874ae5326755cebcd6b97",
+    "art/blender/fengqiao-scene-v01.blend": "b7a4daf0f7255cbd4f3267a76d0e169bbb35a11b516aa0617c2c1d5c11639a6c",
+    "frontend/public/assets/models/fengqiao/scene_v01.glb": "e8f653c10690aaaa0f7a97e387871b439cab4adec351c9a4fc865f597aaddf0e",
+    "art/blender/fengqiao-scene-v02.blend": "9d883f19e9159b7243e4cbae8046c156a5aabd13bcab3425f9dac8123ef75f7e",
+    "frontend/public/assets/models/fengqiao/scene_v02.glb": "f22fb8b873d61d508c7316262e9246f17c8b4c21c116141c2249632a04d0aa57"
+  },
+  "heightmapSHA256": "5abf82f5d1b810fd784f80a4f1f46bf40918183096473ba2b75c5aa5e92ab9cf",
+  "audio": "Original runtime synthesis; WAVs are audition evidence, not added download assets. Human audition remains open.",
+  "video": {
+    "durationSeconds": 107.84,
+    "size": [
+      1440,
+      810
+    ],
+    "fps": 25,
+    "edited": false,
+    "audioRecorded": false,
+    "containsTestSeeks": true,
+    "inspectedSeconds": [
+      7,
+      50,
+      90
+    ]
+  },
+  "openGates": [
+    "Stable first-frame load <= 3000 ms",
+    "Rower view P95 <= 20 ms",
+    "R4 target-device/offline acceptance"
+  ],
+  "deferred": [
+    "Complex automatic four-verse camera storyboard"
+  ],
+  "diagnosticRevisions": {
+    "full": "Earlier height-fog v1; load gate failed, downstream checks collected",
+    "product-final-perf": "Selected height-fog v2; all three views measured without recording",
+    "rower-final": "Unselected fog v3 experiment; reverted to v2"
+  },
+  "files": [
+    {
+      "path": "accepted-flow/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/verification.json",
+      "bytes": 13975,
+      "sha256": "3901638abb00ed7e512a22b05e58b9dbecff981ff9fafc6d634440613eea7f1d"
+    },
+    {
+      "path": "accepted-flow/build.log",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/build.log",
+      "bytes": 2565,
+      "sha256": "bc44267501b364af5a0b519d46aa2d2cf3a18f46c31177bd2431353a694a64ba"
+    },
+    {
+      "path": "accepted-flow/tests.log",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/tests.log",
+      "bytes": 1869,
+      "sha256": "f1c19b50364b925c5d4533ffb6877e1572610e712d46869422080b2336dfd586"
+    },
+    {
+      "path": "accepted-flow/contract.log",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/contract.log",
+      "bytes": 253,
+      "sha256": "85a9a91bf3a130b6e5ecaa934e500d3893e0a2b9a2d9f33a8773c86eb12821ff"
+    },
+    {
+      "path": "accepted-flow/budget.log",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/budget.log",
+      "bytes": 1977,
+      "sha256": "c191d478c2714e9bd1fdccaa7362d174d0e4438f0fb7ce362dae27dbb9ead829"
+    },
+    {
+      "path": "accepted-flow/fog-off.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/fog-off.png",
+      "bytes": 1005044,
+      "sha256": "49bd1ca19b884757ba8c98ee62a2131da6816c9853b7304aca34e789c97b9c25"
+    },
+    {
+      "path": "accepted-flow/fog-on.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/fog-on.png",
+      "bytes": 895727,
+      "sha256": "bcccc01b262b29f16de6e3921d95f416c420377de2310f3985d8aa81537931ba"
+    },
+    {
+      "path": "accepted-flow/moon-repeat.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/moon-repeat.png",
+      "bytes": 927757,
+      "sha256": "a46b1356a0d36ce5f854b5de967d01f514a5372c1ffb3e1091918e5883fc6aab"
+    },
+    {
+      "path": "accepted-flow/native-product.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/native-product.png",
+      "bytes": 1326866,
+      "sha256": "b119560657ce777986ef9fe511ad210dd9f24f1274fd31bed135cdcbae8c94a5"
+    },
+    {
+      "path": "accepted-flow/product-1920.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/product-1920.png",
+      "bytes": 920422,
+      "sha256": "0baaf476e10731c27b3468ed71a0eecd4f79b0605f1fc5080d26a1f95b05e586"
+    },
+    {
+      "path": "accepted-flow/product-1440.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/product-1440.png",
+      "bytes": 648297,
+      "sha256": "79efce4f9466e9778511bdce2d51651f9dbe472ce25d678756f6f2a0b0286ba8"
+    },
+    {
+      "path": "accepted-flow/product-390.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/product-390.png",
+      "bytes": 240048,
+      "sha256": "5060ea6bb2cf7aaaf57f075bfc6510d7f191001205a024123af1fcd38a184e84"
+    },
+    {
+      "path": "accepted-flow/reduced.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/reduced.png",
+      "bytes": 885706,
+      "sha256": "8f3f74a53c866649469768e543dc32dae124406eed576b4479b771256c367867"
+    },
+    {
+      "path": "accepted-flow/reduced-repeat.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/reduced-repeat.png",
+      "bytes": 885706,
+      "sha256": "8f3f74a53c866649469768e543dc32dae124406eed576b4479b771256c367867"
+    },
+    {
+      "path": "accepted-flow/video/page@342f906d8e34c1a185f0a4d507cec9a0.webm",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/video/page@342f906d8e34c1a185f0a4d507cec9a0.webm",
+      "bytes": 9160393,
+      "sha256": "e712e8bf4bef87fec803e71ab08fce4178043a94045b7817c73759275395c646"
+    },
+    {
+      "path": "accepted-flow/moon-t0.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/moon-t0.png",
+      "bytes": 927757,
+      "sha256": "a46b1356a0d36ce5f854b5de967d01f514a5372c1ffb3e1091918e5883fc6aab"
+    },
+    {
+      "path": "accepted-flow/moon-t8.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/moon-t8.png",
+      "bytes": 913434,
+      "sha256": "7aa4e47d30fa027d9fb610e5ec38a4610b230734f39e5d413215223563f67c29"
+    },
+    {
+      "path": "accepted-flow/moon-t16.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/moon-t16.png",
+      "bytes": 895727,
+      "sha256": "bcccc01b262b29f16de6e3921d95f416c420377de2310f3985d8aa81537931ba"
+    },
+    {
+      "path": "accepted-flow/moon-t24.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/moon-t24.png",
+      "bytes": 884076,
+      "sha256": "67340678f7c4816fbce3fb90e6f61508a8d6a55155ad7d589970dde75639949c"
+    },
+    {
+      "path": "accepted-flow/moon-t32.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/moon-t32.png",
+      "bytes": 883305,
+      "sha256": "046f585528667e12cda32b0d4e32720639cc1a5a4a1d4fcfdca02e9c55637c7b"
+    },
+    {
+      "path": "accepted-flow/moon-t40.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/moon-t40.png",
+      "bytes": 882618,
+      "sha256": "fd7ae559fa17ee2673a6de2dce0a832d97e86a2de7c56537c585b6f20d0825cd"
+    },
+    {
+      "path": "accepted-flow/entry-p0.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/entry-p0.png",
+      "bytes": 2643172,
+      "sha256": "98cb1b4416df9cb4f1c28fb1055bc31941177a2debd2fe45ce2e3d1b4d0640b4"
+    },
+    {
+      "path": "accepted-flow/entry-p0.25.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/entry-p0.25.png",
+      "bytes": 2658522,
+      "sha256": "1718549cd672047febaded48291be52ecd63e26dbbfe6544ea900b9ce16dcb2f"
+    },
+    {
+      "path": "accepted-flow/entry-p0.5.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/entry-p0.5.png",
+      "bytes": 2266706,
+      "sha256": "c07f83512d9a2516ebd622dfc4d3ab0b3932ecefb408191047f763c33eea027c"
+    },
+    {
+      "path": "accepted-flow/entry-p0.75.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/entry-p0.75.png",
+      "bytes": 1507751,
+      "sha256": "cd3b9c132789d2831122110a685906bf9450053ebcdc04f05ac2efc6985dada7"
+    },
+    {
+      "path": "accepted-flow/return-p0.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/return-p0.png",
+      "bytes": 791096,
+      "sha256": "8742d2e52148364f296f359069d96e6b1497ae1ad9691dda74660e04527d5d5a"
+    },
+    {
+      "path": "accepted-flow/return-p0.25.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/return-p0.25.png",
+      "bytes": 882511,
+      "sha256": "adaa8d3325f3263da98e42df9233f867f2a5bbb362eb56709d04f2c16616dd19"
+    },
+    {
+      "path": "accepted-flow/return-p0.5.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/return-p0.5.png",
+      "bytes": 1611087,
+      "sha256": "7651a928f501a7da121dccdc4765d97153b7e9690a3eb55bba09f90564bd9ac3"
+    },
+    {
+      "path": "accepted-flow/return-p0.75.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/return-p0.75.png",
+      "bytes": 2335853,
+      "sha256": "68cd37ecf2f3147203b78fc08b3f672fdd5a9967800d09dc686b5f15ee731a1b"
+    },
+    {
+      "path": "accepted-flow/verse-CAM_moonset.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/verse-CAM_moonset.png",
+      "bytes": 902564,
+      "sha256": "0dca7b1588c23f71bdef78213b1a1f6748cd258959c192dd2d93d645409c4ce3"
+    },
+    {
+      "path": "accepted-flow/verse-CAM_riverbank.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/verse-CAM_riverbank.png",
+      "bytes": 1161624,
+      "sha256": "9fbd5501d9ce57c9b02a096e59a40b2d99bfa6dcda0019c720c3f61daaa60c4c"
+    },
+    {
+      "path": "accepted-flow/verse-CAM_temple.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/verse-CAM_temple.png",
+      "bytes": 846362,
+      "sha256": "217df3f0763768f1e477afc20cfba148e39bf64dec05578431a2dc112ef3755e"
+    },
+    {
+      "path": "accepted-flow/verse-CAM_boat.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/verse-CAM_boat.png",
+      "bytes": 1013620,
+      "sha256": "c3a50bbe732c5147a85ad378f66f7562dd801ba44405abf1691effb48621daf6"
+    },
+    {
+      "path": "accepted-flow/audio/wind.wav",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/audio/wind.wav",
+      "bytes": 192044,
+      "sha256": "715d5f83a3effcdda53665281aee37fabc2fa14925694d9e43f9137456ae5582"
+    },
+    {
+      "path": "accepted-flow/audio/water.wav",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/audio/water.wav",
+      "bytes": 192044,
+      "sha256": "bc7846a97f8670933a66a8edf96dd15662e880a86b91dbce068458d69e55a012"
+    },
+    {
+      "path": "accepted-flow/audio/crow.wav",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/audio/crow.wav",
+      "bytes": 33644,
+      "sha256": "a9e40890a41548646fa26066eba0c30b8500da9fc0958bd855c531a6f6e8b6d7"
+    },
+    {
+      "path": "accepted-flow/audio/bell.wav",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/audio/bell.wav",
+      "bytes": 480044,
+      "sha256": "f6f70a950231016afdb9816318e061abb5c1f8d53933bb4d98482410f8151510"
+    },
+    {
+      "path": "accepted-flow/video/inspected-01.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/video/inspected-01.png",
+      "bytes": 1128814,
+      "sha256": "8f02a0f91c0549ce0eb265ee9c01944dbbcc8d20e5b173081d57b1545556e2ae"
+    },
+    {
+      "path": "accepted-flow/video/inspected-02.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/video/inspected-02.png",
+      "bytes": 828697,
+      "sha256": "9ed05c31674535d1b9e2304e637ab440d7d3061952eced80f4d62f02de1133db"
+    },
+    {
+      "path": "accepted-flow/video/inspected-03.png",
+      "source": "output/playwright/fengqiao-scene-v03/accepted-flow/video/inspected-03.png",
+      "bytes": 422384,
+      "sha256": "ac2ca3b3eea20e46141bfdb67821a283315303de724850b5ba615df4c6ebefb9"
+    },
+    {
+      "path": "diagnostics/cold-load.json",
+      "source": "output/playwright/fengqiao-scene-v03/cold-load.json",
+      "bytes": 3518,
+      "sha256": "94655a92d0e080ce3b8d3e969edf0ad04711b8e5662e511b4de46adafd99f1b5"
+    },
+    {
+      "path": "diagnostics/cold-load-final.json",
+      "source": "output/playwright/fengqiao-scene-v03/cold-load-final.json",
+      "bytes": 3529,
+      "sha256": "b7387e1f651de3cbacc383a528c6cbc86445e905867cd7c3964e14da6d39dd1d"
+    },
+    {
+      "path": "diagnostics/initial/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/initial/verification.json",
+      "bytes": 10499,
+      "sha256": "4be91b7abac18513f53c9034341cc8dff0817817ef7f4d34cb0499e2746ca0b3"
+    },
+    {
+      "path": "diagnostics/initial/failure.png",
+      "source": "output/playwright/fengqiao-scene-v03/initial/failure.png",
+      "bytes": 667207,
+      "sha256": "af7bfe77019064462cf5a729880ed65802ec06f01e513e04f56fab5a1bb8744c"
+    },
+    {
+      "path": "diagnostics/quick/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/quick/verification.json",
+      "bytes": 55741,
+      "sha256": "97c9c9f168734d9228cec31dba73a2281bac8c1bcecc4d6f56a44d0337e27264"
+    },
+    {
+      "path": "diagnostics/quick/failure.png",
+      "source": "output/playwright/fengqiao-scene-v03/quick/failure.png",
+      "bytes": 673559,
+      "sha256": "6b9414545ac75b96d3ad4c6226e7c0282d9a127a8eacc903a4b9a1ca319761d7"
+    },
+    {
+      "path": "diagnostics/product/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/product/verification.json",
+      "bytes": 7911,
+      "sha256": "21d11a934e6cdeadcac9b1334050e0892a37b998ade7786adafd90b0e4b7dcbc"
+    },
+    {
+      "path": "diagnostics/product/failure.png",
+      "source": "output/playwright/fengqiao-scene-v03/product/failure.png",
+      "bytes": 830245,
+      "sha256": "281c13bf62c9e554f46b0930e7f9dea3161e3df9efc8dec06e75cd5d319ac3cc"
+    },
+    {
+      "path": "diagnostics/product-final/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/product-final/verification.json",
+      "bytes": 4202,
+      "sha256": "75a5e2b1e8d6d9364aca9d42b525a7fd77363f7a0497edf6832362e57b79e40a"
+    },
+    {
+      "path": "diagnostics/product-final/failure.png",
+      "source": "output/playwright/fengqiao-scene-v03/product-final/failure.png",
+      "bytes": 1019880,
+      "sha256": "84ccf4f1e69cef8c6901b2d60a45a5da47f591629523a2bffe2f2d1fa7ba2711"
+    },
+    {
+      "path": "diagnostics/product-complete/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/product-complete/verification.json",
+      "bytes": 1135,
+      "sha256": "eb29ab18bf52f57f38dbd39f07a25cc5f0ceaa1f71e32215c3c7b1c5861181a1"
+    },
+    {
+      "path": "diagnostics/product-complete/failure.png",
+      "source": "output/playwright/fengqiao-scene-v03/product-complete/failure.png",
+      "bytes": 884152,
+      "sha256": "c0ee3f3b8f09b0a735149e7d9b3cf59ccf47784aa958f51a4d9be124856cf974"
+    },
+    {
+      "path": "diagnostics/product-perf/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/product-perf/verification.json",
+      "bytes": 1530,
+      "sha256": "ae394a2e9ca1b1f67209367a0954ac4b00810efce2a0c36933c18d0aa66decba"
+    },
+    {
+      "path": "diagnostics/product-perf/failure.png",
+      "source": "output/playwright/fengqiao-scene-v03/product-perf/failure.png",
+      "bytes": 1062404,
+      "sha256": "d589bbab871f726f58f2dfc7960cdf9647d240cb659a67ab3b500cd17d52edf2"
+    },
+    {
+      "path": "diagnostics/product-final-perf/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/product-final-perf/verification.json",
+      "bytes": 2244,
+      "sha256": "b076ed42979cf1c549047075a343067202dd85dedc658d6ef21ad1695a398174"
+    },
+    {
+      "path": "diagnostics/product-final-perf/failure.png",
+      "source": "output/playwright/fengqiao-scene-v03/product-final-perf/failure.png",
+      "bytes": 883783,
+      "sha256": "5f8f602ea3f71a287a958d608ef812bd1cc4e706b3cdce4bb96cedbfff1e247a"
+    },
+    {
+      "path": "diagnostics/rower-final/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/rower-final/verification.json",
+      "bytes": 985,
+      "sha256": "bfe42a9278a6150087e83939ae6b48d66f5e86aff5a186b2b70565abd1ea5c47"
+    },
+    {
+      "path": "diagnostics/rower-final/failure.png",
+      "source": "output/playwright/fengqiao-scene-v03/rower-final/failure.png",
+      "bytes": 883944,
+      "sha256": "284190fd3dd2e447a7d5be107dd975123f3200800d091074520a3e7079b3ea3e"
+    },
+    {
+      "path": "diagnostics/full/verification.json",
+      "source": "output/playwright/fengqiao-scene-v03/full/verification.json",
+      "bytes": 64511,
+      "sha256": "7dd7b26d486f4c1b93962d22f8a0543cec8ec74cd679b494488f255ac09f7ced"
+    },
+    {
+      "path": "diagnostics/full/progress.json",
+      "source": "output/playwright/fengqiao-scene-v03/full/progress.json",
+      "bytes": 56095,
+      "sha256": "87fcf4875918b60dfc08baaa0a461de2727f70bb7e3d0d38c63feade38bb9a87"
+    },
+    {
+      "path": "diagnostics/full/native-devtools-1920.png",
+      "source": "output/playwright/fengqiao-scene-v03/full/native-devtools-1920.png",
+      "bytes": 1025900,
+      "sha256": "a79492841743f501968f09a1a09f3496b6ce54e4bde109113c8d40a81cb40c65"
+    },
+    {
+      "path": "diagnostics/full/performance.json.gz",
+      "source": "output/playwright/fengqiao-scene-v03/full/performance.json.gz",
+      "bytes": 3258961,
+      "sha256": "dca0b4eadf94f73d969284cee1e317653c537f922a40caf572c6d6772ab182b3"
+    },
+    {
+      "path": "source/frontend/public/assets/scenes/fengqiao.scene-v03.json",
+      "source": "frontend/public/assets/scenes/fengqiao.scene-v03.json",
+      "bytes": 1761,
+      "sha256": "3c030c073dade84f267541689a0cf1e1abe454de55fefe5b4c5de6ded0239c02"
+    },
+    {
+      "path": "source/frontend/public/assets/terrain/fengqiao.height.json",
+      "source": "frontend/public/assets/terrain/fengqiao.height.json",
+      "bytes": 244,
+      "sha256": "db18be7df651b7370b75d01725a8778bb5e6a6cb1d25f4570f58317e55aa2bc5"
+    },
+    {
+      "path": "source/frontend/src/engine/Assets.ts",
+      "source": "frontend/src/engine/Assets.ts",
+      "bytes": 8892,
+      "sha256": "b5a9bdb1115eda2949f4cfa7fe50031b044701f31f08ff83b4ad3a5a31b329ad"
+    },
+    {
+      "path": "source/frontend/src/engine/Engine.ts",
+      "source": "frontend/src/engine/Engine.ts",
+      "bytes": 4043,
+      "sha256": "24e006b89b3c970e6882677507a644252f306cbcab5a91a80a79712c4b3f64cf"
+    },
+    {
+      "path": "source/frontend/src/scenes/FengqiaoScene.ts",
+      "source": "frontend/src/scenes/FengqiaoScene.ts",
+      "bytes": 25709,
+      "sha256": "ec8481a480b2270b258a20d44200f6e22ea20761a22ffafe6328124a51e15d22"
+    },
+    {
+      "path": "source/frontend/src/scenes/fengqiao/timeline.ts",
+      "source": "frontend/src/scenes/fengqiao/timeline.ts",
+      "bytes": 192,
+      "sha256": "030d54d89919e568f6e60de063a1dae63a99b7a21a5dcc11ce36a55635c89a3d"
+    },
+    {
+      "path": "source/frontend/src/labs/fengqiao.ts",
+      "source": "frontend/src/labs/fengqiao.ts",
+      "bytes": 4346,
+      "sha256": "5c09875d91e2ed70f3ce9e23aebf5ea61ab31c9987b4bb0c55004a25696f9ed1"
+    },
+    {
+      "path": "source/frontend/src/app/Application.ts",
+      "source": "frontend/src/app/Application.ts",
+      "bytes": 38327,
+      "sha256": "00a3aff6c3b2182bb25d817e3a97b7e3a905f32a27367fa6fd2257a16a3d26c2"
+    },
+    {
+      "path": "source/frontend/src/ui/pages/Poem.ts",
+      "source": "frontend/src/ui/pages/Poem.ts",
+      "bytes": 2571,
+      "sha256": "d6027ab70510b384c661b1b6493725c8e7e852f528c6f23abcfb68876511947a"
+    },
+    {
+      "path": "source/frontend/src/ui/styles/fengqiao-scene.css",
+      "source": "frontend/src/ui/styles/fengqiao-scene.css",
+      "bytes": 1419,
+      "sha256": "08e58ffcf36e98c82b7b028ef1c9f498be56f8c2d0afd1a5ca79630ccb781e87"
+    },
+    {
+      "path": "source/frontend/src/transition/RealmReveal.ts",
+      "source": "frontend/src/transition/RealmReveal.ts",
+      "bytes": 8271,
+      "sha256": "7865111e71c86a1d593c63d4ddac513b8ed9fbfc7d06e10ed583e03701cf4f07"
+    },
+    {
+      "path": "source/frontend/src/transition/PageReturn.ts",
+      "source": "frontend/src/transition/PageReturn.ts",
+      "bytes": 9857,
+      "sha256": "2fb034054c03b0d641a6fd5a972b5f4be1395b762f45f1bc87d3ad9baca0aecf"
+    },
+    {
+      "path": "source/frontend/src/systems/nature/MoonFall.ts",
+      "source": "frontend/src/systems/nature/MoonFall.ts",
+      "bytes": 3410,
+      "sha256": "d14004d67ef8f1d4a5f31e2851f6cd36b520c7ea337e05c53c9f2db9c57b9e3f"
+    },
+    {
+      "path": "source/frontend/src/systems/nature/HeightFog.ts",
+      "source": "frontend/src/systems/nature/HeightFog.ts",
+      "bytes": 4236,
+      "sha256": "b928ceb33c9ea0db3715d061ed8cd9043eeee8b9a41d9dd945ba33e1a2079514"
+    },
+    {
+      "path": "source/frontend/src/systems/nature/DistantTerrain.ts",
+      "source": "frontend/src/systems/nature/DistantTerrain.ts",
+      "bytes": 1480,
+      "sha256": "488d9376038c118b3dfbb7ee0e90fc8c539af651a6b26562750c070a1c0c9b4f"
+    },
+    {
+      "path": "source/frontend/src/systems/water/NightRiver.ts",
+      "source": "frontend/src/systems/water/NightRiver.ts",
+      "bytes": 7457,
+      "sha256": "0cd9e9e44047a266253cc7371d9adf1c5d3e5efa2ed690417e3f27205bc6eb42"
+    },
+    {
+      "path": "source/frontend/src/systems/audio/AudioEngine.ts",
+      "source": "frontend/src/systems/audio/AudioEngine.ts",
+      "bytes": 5757,
+      "sha256": "b0a48049dd8290b902862fe31187c8354b2b42285e00ff57f3158e97fdf1db78"
+    },
+    {
+      "path": "source/frontend/src/systems/audio/fengqiaoSound.ts",
+      "source": "frontend/src/systems/audio/fengqiaoSound.ts",
+      "bytes": 1579,
+      "sha256": "a805cd996827fcb2db2dd651f9f7d15127c1c7bcb1eecbd292281e263e36b905"
+    },
+    {
+      "path": "source/frontend/src/systems/audio/fengqiaoSound.test.ts",
+      "source": "frontend/src/systems/audio/fengqiaoSound.test.ts",
+      "bytes": 1580,
+      "sha256": "2330870ff89b37bf5131af10fad33ec2f13d6d453ba6ab263cf24f810cc65b34"
+    },
+    {
+      "path": "source/frontend/src/engine/Assets.test.ts",
+      "source": "frontend/src/engine/Assets.test.ts",
+      "bytes": 1677,
+      "sha256": "3e156bfabfb661001d15d8783ee9b02a145c884ee399b57b700a22609ec6aa41"
+    },
+    {
+      "path": "source/frontend/tools/verify-fengqiao-scene.mjs",
+      "source": "frontend/tools/verify-fengqiao-scene.mjs",
+      "bytes": 17876,
+      "sha256": "88aa09279fa5085c6cdb950bcbd455b0bc8072a65ea3c962c7125e226e0a2e9c"
+    },
+    {
+      "path": "source/frontend/tools/check-fengqiao-cold-load.mjs",
+      "source": "frontend/tools/check-fengqiao-cold-load.mjs",
+      "bytes": 2743,
+      "sha256": "e6f260fe7d05102c7bbfb8b9052ed6e4774a3a567551377a56c3951be4b67f14"
+    },
+    {
+      "path": "source/frontend/tools/asset-contract.mjs",
+      "source": "frontend/tools/asset-contract.mjs",
+      "bytes": 6394,
+      "sha256": "3b14ccd963301c3ca0286bd73f413ff02293c82ef6bc2eeeb9e0c56c17b74fec"
+    },
+    {
+      "path": "source/frontend/tools/check-budget.mjs",
+      "source": "frontend/tools/check-budget.mjs",
+      "bytes": 2214,
+      "sha256": "c0e7df53000dee5b30785856aa64c9795085bbb4e4cf1bb96413d4c96b2f9d10"
+    },
+    {
+      "path": "source/docs/CONTRACT.md",
+      "source": "docs/CONTRACT.md",
+      "bytes": 36351,
+      "sha256": "216079a4eb83e9efc37adb22f0e732220ff0ad989c5146172d0ba4deb855f3e3"
+    },
+    {
+      "path": "source/docs/CREDITS.md",
+      "source": "docs/CREDITS.md",
+      "bytes": 22185,
+      "sha256": "cac7f7148290c1fdd7fa8b61fe1b9dbe44ed43e60108eae9285a57aa9dd8e398"
+    }
+  ]
+}

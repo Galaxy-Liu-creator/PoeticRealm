@@ -1,0 +1,325 @@
+{
+  "checks": [
+    "船夫蒙皮可见，五个划桨时刻双手贴柄且桨叶入水/出水",
+    "键盘选择视角、按钮与空格暂停/播放",
+    "固定时间画面可复现",
+    {
+      "label": "reflection",
+      "delta": {
+        "mean": 1.346199363425926,
+        "changed": 6545
+      }
+    },
+    {
+      "label": "shadows",
+      "delta": {
+        "mean": 0.06939332561728395,
+        "changed": 8174
+      }
+    },
+    {
+      "label": "fire",
+      "delta": {
+        "mean": 0.7256836741255144,
+        "changed": 24357
+      }
+    },
+    "10次加载/释放资源计数稳定",
+    "减少动态静止且可手动选视角",
+    "缺失 GLB 有明确失败状态；加载中离开无迟到场景或脚本异常"
+  ],
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "errors": [],
+  "frames": [
+    {
+      "frames": 3601,
+      "duration": 60004.799999999996,
+      "fps": 59.995200383969284,
+      "p50": 16.69999999999709,
+      "p95": 17,
+      "over50": 0,
+      "maxCalls": 44,
+      "maxTriangles": 67274
+    },
+    {
+      "frames": 3601,
+      "duration": 60004.7,
+      "fps": 59.99530036813783,
+      "p50": 16.69999999999709,
+      "p95": 17,
+      "over50": 0,
+      "maxCalls": 44,
+      "maxTriangles": 67274
+    },
+    {
+      "frames": 3599,
+      "duration": 60004.79999999999,
+      "fps": 59.961869717089314,
+      "p50": 16.699999999982538,
+      "p95": 17,
+      "over50": 0,
+      "maxCalls": 44,
+      "maxTriangles": 67274
+    }
+  ],
+  "firstLoadMs": 3041,
+  "details": {
+    "contractVersion": "0.2",
+    "scope": "quality-sample",
+    "reducedMotion": false,
+    "initializationMemory": {
+      "geometries": 0,
+      "textures": 2
+    },
+    "loadMs": 1780.8000000000466,
+    "loadPhases": {
+      "asset": 236.80000000004657,
+      "environment": 610.4000000001397,
+      "assembly": 615.3999999999069,
+      "textureUpload": 104.69999999995343,
+      "compile": 541.2000000001863,
+      "firstDraw": 387.10000000009313
+    },
+    "memory": {
+      "geometries": 16,
+      "textures": 19
+    },
+    "reflectionResolution": 1024,
+    "shadowResolution": 2048,
+    "drawingBuffer": [
+      1920,
+      1080
+    ],
+    "materials": [
+      "pbr_cloth__reed",
+      "pbr_metal__iron",
+      "pbr_wood__aged",
+      "glow__fire",
+      "pbr_skin__boatman",
+      "pbr_cloth__charcoal",
+      "pbr_skin__hair",
+      "pbr_cloth__indigo",
+      "pbr_cloth__linen",
+      "pbr_stone__wet",
+      "pbr_stone__dry"
+    ],
+    "maskProbe": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "boat": [
+      0.4000000059604645,
+      -0.29768111687370485,
+      -0.800000011920929
+    ],
+    "rower": {
+      "skinnedMeshes": 6,
+      "gripErrors": [
+        6.408843173013547e-8,
+        1.2916442774759058e-7
+      ],
+      "skinHandErrors": [
+        0.0011165202687300028,
+        0.0011162647059519575
+      ],
+      "oarRotation": [
+        -0.015412435737684405,
+        -0.06921099049290519,
+        0.014627076234167521,
+        0.997375728730383
+      ],
+      "blade": [
+        3.2922347771383897,
+        -0.04632244649044426,
+        1.6899664412119695
+      ]
+    }
+  },
+  "rowing": [
+    {
+      "t": 0,
+      "skinnedMeshes": 6,
+      "gripErrors": [
+        6.152235109545109e-8,
+        1.5036350102155098e-7
+      ],
+      "skinHandErrors": [
+        0.0011165283087472787,
+        0.0011162864218385259
+      ],
+      "oarRotation": [
+        0.028719269782402437,
+        0,
+        -0.031310801523122184,
+        0.9990970109309432
+      ],
+      "blade": [
+        3.4194826603461363,
+        -0.31266731073168974,
+        1.4082480091425573
+      ]
+    },
+    {
+      "t": 1.2,
+      "skinnedMeshes": 6,
+      "gripErrors": [
+        6.987576084808287e-8,
+        1.7060838401154866e-7
+      ],
+      "skinHandErrors": [
+        0.0011165278638513999,
+        0.001116234251081095
+      ],
+      "oarRotation": [
+        1.600190277949163e-18,
+        0.0799146939691727,
+        -2.052253357395093e-18,
+        0.9968017063026194
+      ],
+      "blade": [
+        3.685594890313722,
+        -0.1388836456562602,
+        1.2002501936101355
+      ]
+    },
+    {
+      "t": 2.4,
+      "skinnedMeshes": 6,
+      "gripErrors": [
+        7.451089571389986e-8,
+        1.4687609836295556e-7
+      ],
+      "skinHandErrors": [
+        0.0011165200484146178,
+        0.0011162388364207687
+      ],
+      "oarRotation": [
+        -0.028719269782402437,
+        9.788327651794141e-18,
+        0.031310801523122184,
+        0.9990970109309432
+      ],
+      "blade": [
+        3.5303312515615937,
+        0.02679411407094623,
+        1.5099894119097437
+      ]
+    },
+    {
+      "t": 3.6,
+      "skinnedMeshes": 6,
+      "gripErrors": [
+        5.920755345627178e-8,
+        1.2780324976802097e-7
+      ],
+      "skinHandErrors": [
+        0.0011165205712867488,
+        0.0011162744562488917
+      ],
+      "oarRotation": [
+        -5.7201384762062786e-18,
+        -0.0799146939691727,
+        5.313303184485765e-18,
+        0.9968017063026194
+      ],
+      "blade": [
+        3.235733466041154,
+        -0.16884408579071541,
+        1.6917759968762378
+      ]
+    },
+    {
+      "t": 4.8,
+      "skinnedMeshes": 6,
+      "gripErrors": [
+        6.099147704933775e-8,
+        1.5031969840938227e-7
+      ],
+      "skinHandErrors": [
+        0.0011165279845781462,
+        0.0011162863547568172
+      ],
+      "oarRotation": [
+        0.028719269782402437,
+        -1.9576655303588282e-17,
+        -0.031310801523122184,
+        0.9990970109309432
+      ],
+      "blade": [
+        3.4193485483095825,
+        -0.34356738687507204,
+        1.4081160083054431
+      ]
+    }
+  ],
+  "nativeServer": {
+    "name": "chrome_devtools",
+    "title": "Chrome DevTools MCP server",
+    "version": "1.10.1"
+  },
+  "dom": "## Latest page snapshot\nuid=1_0 RootWebArea \"诗境 · 一卷山河\" url=\"http://127.0.0.1:5187/?scene=fengqiao&lab=fengqiao#/login\"\n  uid=1_1 main\n    uid=1_2 Canvas \"枫桥局部三维小样\"\n    uid=1_3 complementary\n      uid=1_4 StaticText \"枫桥夜泊\"\n      uid=1_5 StaticText \"局部材质小样 · 尚未完成整场景验收\"\n    uid=1_6 navigation \"小样检查\"\n      uid=1_7 button \"整体\"\n      uid=1_8 button \"湿石岸\"\n      uid=1_9 button \"木舟\"\n      uid=1_10 button \"暂停\"\n      uid=1_11 StaticText \"时间\"\n      uid=1_12 slider \"场景时间\" orientation=\"horizontal\" value=\"0\" valuemax=\"32\" valuemin=\"0\" valuetext=\"0\"\n      uid=1_13 checkbox \"倒影\" checked\n      uid=1_14 checkbox \"阴影\" checked\n      uid=1_15 checkbox \"渔火\" checked\n",
+  "console": "## Console messages\n<no console messages found>",
+  "network": "## Network requests\nNo requests found.",
+  "trace": "The raw trace data was saved to D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-rower\\v08-final\\performance.json.gz.\nThe performance trace has been stopped.\n## Summary of Performance trace findings:\nURL: http://127.0.0.1:5187/?scene=fengqiao&lab=fengqiao\nTrace bounds: {min: 1630379934µs, max: 1633403242µs}\nCPU throttling: 1x\nNetwork throttling: none\n\n# Available insight sets\n\nThe following is a list of insight sets. An insight set covers a specific part of the trace, split by navigations. The insights within each insight set are specific to that part of the trace. Be sure to consider the insight set id and bounds when calling functions. If no specific insight set or navigation is mentioned, assume the user is referring to the first one.\n\n## Details on call tree & network request formats:\nInformation on performance traces may contain main thread activity represented as call frames and network requests.\n\nEach call frame is presented in the following format:\n\n'id;eventKey;name;duration;selfTime;urlIndex;childRange;[line];[column];[S]'\n\nKey definitions:\n\n* id: A unique numerical identifier for the call frame. Never mention this id in the output to the user.\n* eventKey: String that uniquely identifies this event in the flame chart.\n* name: A concise string describing the call frame (e.g., 'Evaluate Script', 'render', 'fetchData').\n* duration: The total execution time of the call frame, including its children.\n* selfTime: The time spent directly within the call frame, excluding its children's execution.\n* urlIndex: Index referencing the \"All URLs\" list. Empty if no specific script URL is associated.\n* childRange: Specifies the direct children of this node using their IDs. If empty ('' or 'S' at the end), the node has no children. If a single number (e.g., '4'), the node has one child with that ID. If in the format 'firstId-lastId' (e.g., '4-5'), it indicates a consecutive range of child IDs from 'firstId' to 'lastId', inclusive.\n* line: An optional field for a call frame's line number. This is where the function is defined.\n* column: An optional field for a call frame's column number. This is where the function is defined.\n* S: _Optional_. The letter 'S' terminates the line if that call frame was selected by the user.\n\nExample Call Tree:\n\n1;r-123;main;500;100;0;1;;\n2;r-124;update;200;50;;3;0;1;\n3;p-49575-15428179-2834-374;animate;150;20;0;4-5;0;1;S\n4;p-49575-15428179-3505-1162;calculatePosition;80;80;0;1;;\n5;p-49575-15428179-5391-2767;applyStyles;50;50;0;1;;\n\n\nNetwork requests are formatted like this:\n`urlIndex;eventKey;queuedTime;requestSentTime;downloadCompleteTime;processingCompleteTime;totalDuration;downloadDuration;mainThreadProcessingDuration;statusCode;mimeType;priority;initialPriority;finalPriority;renderBlocking;protocol;fromServiceWorker;initiators;redirects:[[redirectUrlIndex|startTime|duration]];responseHeaders:[header1Value|header2Value|...]`\n\n- `urlIndex`: Numerical index for the request's URL, referencing the \"All URLs\" list.\n- `eventKey`: String that uniquely identifies this request's trace event.\nTimings (all in milliseconds, relative to navigation start):\n- `queuedTime`: When the request was queued.\n- `requestSentTime`: When the request was sent.\n- `downloadCompleteTime`: When the download completed.\n- `processingCompleteTime`: When main thread processing finished.\nDurations (all in milliseconds):\n- `totalDuration`: Total time from the request being queued until its main thread processing completed.\n- `downloadDuration`: Time spent actively downloading the resource.\n- `mainThreadProcessingDuration`: Time spent on the main thread after the download completed.\n- `statusCode`: The HTTP status code of the response (e.g., 200, 404).\n- `mimeType`: The MIME type of the resource (e.g., \"text/html\", \"application/javascript\").\n- `priority`: The final network request priority (e.g., \"VeryHigh\", \"Low\").\n- `initialPriority`: The initial network request priority.\n- `finalPriority`: The final network request priority (redundant if `priority` is always final, but kept for clarity if `initialPriority` and `priority` differ).\n- `renderBlocking`: 't' if the request was render-blocking, 'f' otherwise.\n- `protocol`: The network protocol used (e.g., \"h2\", \"http/1.1\").\n- `fromServiceWorker`: 't' if the request was served from a service worker, 'f' otherwise.\n- `initiators`: A list (separated by ,) of URL indices for the initiator chain of this request. Listed in order starting from the root request to the request that directly loaded this one. This represents the network dependencies necessary to load this request. If there is no initiator, this is empty.\n- `redirects`: A comma-separated list of redirects, enclosed in square brackets. Each redirect is formatted as\n`[redirectUrlIndex|startTime|duration]`, where: `redirectUrlIndex`: Numerical index for the redirect's URL. `startTime`: The start time of the redirect in milliseconds, relative to navigation start. `duration`: The duration of the redirect in milliseconds.\n- `responseHeaders`: A list (separated by '|') of values for specific, pre-defined response headers, enclosed in square brackets.\nThe order of headers corresponds to an internal fixed list. If a header is not present, its value will be empty.\n",
+  "lastDisposal": {
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "stages": [
+      {
+        "owner": "() => window.removeEventListener(\"keydown\", onKey)",
+        "geometries": 16,
+        "textures": 19
+      },
+      {
+        "owner": "() => controls?.dispose()",
+        "geometries": 16,
+        "textures": 19
+      },
+      {
+        "owner": "() => river.dispose()",
+        "geometries": 15,
+        "textures": 18
+      },
+      {
+        "owner": "() => moon.shadow.dispose()",
+        "geometries": 15,
+        "textures": 16
+      },
+      {
+        "owner": "() => environment.dispose()",
+        "geometries": 15,
+        "textures": 15
+      },
+      {
+        "owner": "() => sky.dispose()",
+        "geometries": 15,
+        "textures": 13
+      },
+      {
+        "owner": "() => {\n\t\tconst textures = new Set();\n\t\tfor (const lookup of physicalLookups) if (lookup.value instanceof Texture) textures.add(lookup.value);\n\t\tfor (const texture of textures) texture.dispose();\n\t\tphysicalLookups.clear();\n\t}",
+        "geometries": 15,
+        "textures": 12
+      },
+      {
+        "owner": "() => asset.dispose()",
+        "geometries": 1,
+        "textures": 0
+      },
+      {
+        "owner": "() => {\n\t\tif (!pmremReleased) pmrem.dispose();\n\t}",
+        "geometries": 1,
+        "textures": 0
+      }
+    ],
+    "contextLost": true
+  },
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-rower\\v08-final\\video\\page@a37260a2a62a19da605273b145b77ba8.webm",
+  "status": "pass",
+  "scope": "full-quality-sample"
+}

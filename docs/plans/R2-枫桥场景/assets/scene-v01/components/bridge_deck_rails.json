@@ -1,0 +1,20 @@
+{
+  "component": "bridge_deck_rails",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_bridge_deck_spandrels",
+      "vertices": 992,
+      "triangles": 1488,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bridge_railings",
+      "vertices": 1312,
+      "triangles": 2096,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

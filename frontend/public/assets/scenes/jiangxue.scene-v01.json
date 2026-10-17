@@ -1,0 +1,9 @@
+{
+  "contractVersion": "0.2",
+  "scene": "jiangxue",
+  "scope": "quality-sample",
+  "model": "models/jiangxue/scene_v01.glb",
+  "terrain": "jiangxue-v01",
+  "waterLevel": 0,
+  "requiredNodes": ["CAM_enter", "CAM_birds", "CAM_path", "CAM_fog", "CAM_boat", "CAM_fisherman", "CAM_nature", "FOCUS_boat", "FOCUS_fisherman", "SFX_line", "PLACE_boat_01", "boat_guest", "boat_hull_closed", "fisherman_rig", "fishing_rod", "ANCHOR_fishing_grip", "ANCHOR_fishing_tip", "ANCHOR_fishing_water", "mask_probe"]
+}

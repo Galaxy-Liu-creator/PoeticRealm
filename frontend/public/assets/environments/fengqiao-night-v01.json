@@ -1,0 +1,11 @@
+{
+  "source": "Project-authored 512×256 night gradient, Three.js 0.186.1 PMREMGenerator on AMD Radeon / D3D11",
+  "format": "PRUV v1: 16-byte LE header + bottom-up RGBA16F CubeUV; lossless gzip",
+  "width": 384,
+  "height": 512,
+  "rawBytes": 1572880,
+  "distributedBytes": 381816,
+  "sha256": "4a20f11ba17fb006be06387bc26b9b7aba964d5da2c28687f22bc34e72b8d5fd",
+  "colorSpace": "LinearSRGB",
+  "license": "Project-authored sky; Three.js renderer MIT; no third-party HDRI"
+}

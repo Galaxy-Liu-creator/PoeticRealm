@@ -1,0 +1,57 @@
+/* Shared paper-scroll skin follows the user reference; SVG ornaments are original. */
+.paper-popup, dialog.paper-dialog, .notes-panel {
+  --popup-ink:#193f48; --popup-gold:#c9aa76;
+  color:var(--popup-ink); border:1px solid var(--popup-gold); border-radius:16px;
+  background:linear-gradient(#faf7efed,#f9f6edee),var(--paper-art) center/cover;
+  box-shadow:0 4px 12px #263b3525,inset 0 0 0 3px #fffaf180;
+  font-family:var(--font-poetic);
+}
+.paper-popup { display:flex; align-items:center; justify-content:center; gap:12px; padding:8px 18px; min-height:52px; width:max-content; max-width:min(620px,calc(100vw - 64px)); border-radius:12px; }
+.paper-popup [data-popup-message] { font-size:18px; letter-spacing:.04em; line-height:1.5; overflow-wrap:anywhere; }
+.paper-cloud { position:absolute; width:76px; height:56px; pointer-events:none; z-index:1; }
+.paper-cloud-left { left:-44px; top:1px; }
+.paper-cloud-right { right:-44px; bottom:-6px; transform:rotate(180deg); }
+.paper-popup>.paper-cloud { width:56px; height:42px; }
+.paper-popup>.paper-cloud-left { left:-30px; top:1px; }
+.paper-popup>.paper-cloud-right { right:-30px; bottom:-5px; }
+.paper-ink-ring { width:32px; height:32px; flex:none; }
+.paper-ink-ring[data-spinning] { animation:paper-ring-turn 1.8s linear infinite; }
+.paper-popup-actions { display:flex; align-items:center; justify-content:flex-end; gap:12px; flex-wrap:wrap; }
+.paper-popup>.paper-popup-actions { padding-left:12px; gap:8px; border-left:1px solid #cbbb9b; flex:none; }
+:is(.paper-popup,.paper-dialog) .paper-popup-actions button,
+.paper-dialog :is(.confirm-actions button,.solid-button,.editor-button.primary) {
+  min-height:42px; padding:5px 24px; white-space:nowrap; border:1px solid #b99c6d; border-radius:12px;
+  color:#fff5df; background:#224c53; box-shadow:inset 0 0 0 2px #c9aa7640,0 2px 4px #183b3526;
+  font:20px/1.4 var(--font-poetic); letter-spacing:.08em;
+}
+.paper-popup .paper-popup-actions button { min-height:34px; padding:4px 16px; font-size:16px; border-radius:9px; }
+:is(.paper-popup,.paper-dialog) .paper-popup-actions button:hover,.paper-dialog .confirm-actions button:hover { background:#315f61; color:#fff9e9; }
+dialog.paper-dialog { padding:28px 34px; max-width:calc(100vw - 44px); max-height:90svh; }
+dialog.paper-dialog::backdrop { background:#12333994; }
+dialog.paper-question { width:520px; overflow:visible; }
+.paper-question>p { font-size:22px; line-height:1.8; }
+.paper-question>.paper-popup-actions { margin-top:24px; }
+.profile-confirm.paper-dialog { overflow:auto; }
+.paper-dialog.profile-editor { padding:0; }
+.paper-dialog.profile-editor>.paper-cloud { z-index:5; width:40px; height:36px; }
+.paper-dialog.profile-editor>.paper-cloud-left { left:-22px; top:-20px; }
+.paper-dialog.profile-editor>.paper-cloud-right { right:-26px; bottom:-22px; }
+.paper-dialog.auth-policy { padding:30px; }
+.paper-dialog.auth-policy { width:560px;height:fit-content;inset:0;margin:auto;overflow:auto; }
+.paper-dialog.auth-policy p { margin-block:18px; }
+.notifications { position:fixed; z-index:100; top:0; left:var(--notice-left,0px); width:var(--notice-width,100%); display:grid; grid-template-rows:var(--notice-header-height,64px); grid-auto-rows:auto; align-items:center; justify-items:center; gap:8px; pointer-events:none; }
+.notifications>.paper-popup { position:relative; inset:auto; transform:none; z-index:auto; pointer-events:auto; max-width:min(620px,100%); }
+.storage-warning.paper-popup { padding-block:5px; }
+.storage-warning.paper-popup [data-popup-message] { line-height:1.3; }
+.realm-loading.paper-popup { position:absolute; z-index:2; top:calc(var(--notice-header-height,64px)/2); bottom:auto; left:calc(var(--notice-left,0px) + var(--notice-width,100%)/2); max-width:min(620px,var(--notice-width,calc(100vw - 64px))); transform:translate(-50%,-50%); }
+body:is([data-page=account],[data-page=login],[data-page=register]) .notifications { top:20px; grid-template-rows:auto; }
+body:has(.realm-transition,.page-return,.poem-scene-status:not(:empty)) .notifications { visibility:hidden; }
+.notes-panel>.paper-cloud { width:40px; height:36px; }
+.notes-panel>.paper-cloud-left { left:-16px; top:-16px; }
+.notes-panel>.paper-cloud-right { right:-16px; bottom:-16px; }
+.poem-scene-status.paper-popup { position:fixed; z-index:20; top:calc(var(--notice-header-height,64px)/2); right:auto; left:calc(var(--notice-left,0px) + var(--notice-width,100%)/2); max-width:min(620px,var(--notice-width,calc(100vw - 64px))); bottom:auto; transform:translate(-50%,-50%); }
+.poem-scene-status.paper-popup:empty { display:none; }
+:is(.realm-transition,.page-return)[data-state=failed] .paper-ink-ring { animation:none; }
+.no-motion .paper-ink-ring,.page-hidden .paper-ink-ring { animation:none; }
+@keyframes paper-ring-turn { to { transform:rotate(360deg); } }
+@media(prefers-reduced-motion:reduce) { .paper-ink-ring[data-spinning] { animation:none; } }

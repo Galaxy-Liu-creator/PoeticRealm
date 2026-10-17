@@ -1,0 +1,75 @@
+{
+  "distributedBytes": 9294744,
+  "triangles": 14859,
+  "mainPassPrimitives": 7,
+  "estimatedTextureBytesWithMipmaps": 48933554,
+  "images": [
+    {
+      "name": "tatami_mat_nor_gl",
+      "width": 512,
+      "height": 512,
+      "bytes": 336864
+    },
+    {
+      "name": "tatami_mat_Diffuse",
+      "width": 512,
+      "height": 512,
+      "bytes": 49955
+    },
+    {
+      "name": "tatami_mat_Rough",
+      "width": 512,
+      "height": 512,
+      "bytes": 116619
+    },
+    {
+      "name": "wood_planks_nor_gl",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1711501
+    },
+    {
+      "name": "wood_planks_Diffuse",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 216542
+    },
+    {
+      "name": "wood_planks_Rough",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 614263
+    },
+    {
+      "name": "rock_01_nor_gl",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 2131381
+    },
+    {
+      "name": "rock_01_Diffuse_wet",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 333979
+    },
+    {
+      "name": "rock_01_Rough_wet",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 868233
+    },
+    {
+      "name": "rock_01_Diffuse",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 452999
+    },
+    {
+      "name": "rock_01_Rough",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1142285
+    }
+  ],
+  "note": "不替代真实浏览器多 pass 和 fps 验证"
+}

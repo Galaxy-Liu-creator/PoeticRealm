@@ -1,0 +1,69 @@
+{
+  "component": "jx_fishing_tackle",
+  "scene": "jiangxue_modeling_v01",
+  "objects": [
+    {
+      "object": "src_fishing_bamboo",
+      "vertices": 396,
+      "triangles": 788,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_fishing_bamboo_nodes",
+      "vertices": 192,
+      "triangles": 352,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_fishing_line",
+      "vertices": 125,
+      "triangles": 246,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31027,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2
+  },
+  "extra": {
+    "placement": {
+      "deltaZ": -0.07400001585483551,
+      "feet": [
+        {
+          "side": "left",
+          "soleBefore": 0.4469999670982361,
+          "deck": 0.37299999594688416
+        },
+        {
+          "side": "right",
+          "soleBefore": 0.44700005650520325,
+          "deck": 0.37299999594688416
+        }
+      ],
+      "waterEndpoint": [
+        0.9621419310569763,
+        -1.380952000617981,
+        -0.006000000052154064
+      ]
+    }
+  }
+}

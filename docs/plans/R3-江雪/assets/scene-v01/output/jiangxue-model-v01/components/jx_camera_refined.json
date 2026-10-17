@@ -1,0 +1,15 @@
+{
+  "camera": "CAM_enter",
+  "position": [
+    -13.0,
+    -25.0,
+    7.0
+  ],
+  "target": [
+    6.0,
+    18.0,
+    1.0
+  ],
+  "lens": 45,
+  "purpose": "boat right of centre; left poetry safe region"
+}

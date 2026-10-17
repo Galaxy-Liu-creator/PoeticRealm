@@ -1,0 +1,71 @@
+{
+  "contractVersion": "0.2",
+  "scene": "jiangxue",
+  "scope": "quality-sample",
+  "model": "models/jiangxue/scene_v03.glb",
+  "terrain": "jiangxue-v02",
+  "waterLevel": 0,
+  "requiredNodes": [
+    "CAM_enter",
+    "CAM_birds",
+    "CAM_path",
+    "CAM_fog",
+    "CAM_boat",
+    "CAM_fisherman",
+    "CAM_nature",
+    "CAM_rocks",
+    "FOCUS_boat",
+    "FOCUS_fisherman",
+    "SFX_line",
+    "PLACE_boat_01",
+    "boat_guest",
+    "boat_hull_closed",
+    "fisherman_rig",
+    "fishing_rod",
+    "ANCHOR_fishing_grip",
+    "ANCHOR_fishing_tip",
+    "ANCHOR_fishing_water",
+    "mask_probe",
+    "shore_bank_v02",
+    "shore_snow_v02",
+    "shore_rock_v02_00",
+    "rock_snow_v02_00",
+    "dead_tree_core_v02",
+    "dead_tree_fine_v02",
+    "dead_tree_snow_v02"
+  ],
+  "boatNavigation": {
+    "path": [
+      [
+        2.0,
+        2.0
+      ],
+      [
+        2.947527336571023,
+        -4.0
+      ],
+      [
+        3.889391792013489,
+        -10.0
+      ],
+      [
+        5.1218535275481365,
+        -18.0
+      ],
+      [
+        6.597626204378672,
+        -28.0
+      ],
+      [
+        8.226474331223296,
+        -40.0
+      ],
+      [
+        9.86176138535489,
+        -54.0
+      ]
+    ],
+    "speed": 0.1,
+    "brakingDistance": 2.5
+  }
+}

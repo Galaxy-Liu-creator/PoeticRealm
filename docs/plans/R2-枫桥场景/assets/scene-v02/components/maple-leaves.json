@@ -1,0 +1,39 @@
+{
+  "component": "maple-leaves",
+  "rows": [
+    {
+      "source": "maple_grove_foliage_maple",
+      "far": "maple_far_foliage_maple",
+      "nearTriangles": 5220,
+      "farTriangles": 3132,
+      "ratio": 0.6,
+      "nonmanifoldEdges": 4176,
+      "boundErrorMetres": 0.06853103637695312,
+      "nearBounds": [
+        [
+          -20.81591796875,
+          -1.293736457824707,
+          3.843461036682129
+        ],
+        [
+          -4.1995344161987305,
+          20.953624725341797,
+          7.161139965057373
+        ]
+      ],
+      "farBounds": [
+        [
+          -20.780059814453125,
+          -1.2709846496582031,
+          3.843461036682129
+        ],
+        [
+          -4.268065452575684,
+          20.927703857421875,
+          7.161139965057373
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

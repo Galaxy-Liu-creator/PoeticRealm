@@ -1,0 +1,173 @@
+{
+  "complete": false,
+  "checks": [
+    "visible animated ignition precedes the paper opening",
+    "early flames change while the source paper remains closed",
+    "hot flames follow all sides of the opening throughout the burn",
+    "final frame removes fire, commits the target and releases the overlay"
+  ],
+  "frames": [
+    {
+      "progress": 0,
+      "warm": 0,
+      "visible": 0,
+      "quadrants": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fingerprint": 523726789,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.03,
+      "warm": 2142,
+      "visible": 3293,
+      "quadrants": [
+        119,
+        83,
+        1060,
+        880
+      ],
+      "fingerprint": 2166263499,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.06,
+      "warm": 2122,
+      "visible": 3285,
+      "quadrants": [
+        111,
+        106,
+        1062,
+        843
+      ],
+      "fingerprint": 1365213673,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.09,
+      "warm": 2115,
+      "visible": 3240,
+      "quadrants": [
+        126,
+        87,
+        1068,
+        834
+      ],
+      "fingerprint": 1369712962,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.1,
+      "warm": 2107,
+      "visible": 3229,
+      "quadrants": [
+        125,
+        84,
+        1078,
+        820
+      ],
+      "fingerprint": 2433782430,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.15,
+      "warm": 6987,
+      "visible": 11616,
+      "quadrants": [
+        1132,
+        1014,
+        2841,
+        2000
+      ],
+      "fingerprint": 532781618,
+      "openingExtent": 47.89587394546633,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.25,
+      "warm": 19938,
+      "visible": 38733,
+      "quadrants": [
+        4035,
+        5463,
+        4999,
+        5441
+      ],
+      "fingerprint": 249776127,
+      "openingExtent": 179.10792958437105,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.5,
+      "warm": 57370,
+      "visible": 105757,
+      "quadrants": [
+        16002,
+        15615,
+        11883,
+        13870
+      ],
+      "fingerprint": 4117899470,
+      "openingExtent": 454.4035321660693,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.75,
+      "warm": 30305,
+      "visible": 64871,
+      "quadrants": [
+        8499,
+        8422,
+        6611,
+        6773
+      ],
+      "fingerprint": 341399741,
+      "openingExtent": 684.339021088678,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.99,
+      "warm": 0,
+      "visible": 0,
+      "quadrants": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fingerprint": 3333403438,
+      "openingExtent": 877.3475515216076,
+      "glError": 0,
+      "route": ""
+    }
+  ],
+  "errors": [],
+  "playback": {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "frames": 62,
+    "duration": 1650.300000000001,
+    "p50": 16.799999999999272,
+    "p95": 50.100000000000364,
+    "over50": 5
+  }
+}

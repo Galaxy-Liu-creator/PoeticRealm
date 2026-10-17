@@ -1,0 +1,615 @@
+{
+  "date": "2026-10-08",
+  "scope": "quality-sample",
+  "evidenceRevision": "distance-lods-v01",
+  "fullSceneAccepted": false,
+  "source": {
+    "path": "art/blender/fengqiao-scene-v02.blend",
+    "bytes": 18637632,
+    "sha256": "9d883f19e9159b7243e4cbae8046c156a5aabd13bcab3425f9dac8123ef75f7e"
+  },
+  "model": {
+    "path": "frontend/public/assets/models/fengqiao/scene_v02.glb",
+    "bytes": 14600260,
+    "sha256": "f22fb8b873d61d508c7316262e9246f17c8b4c21c116141c2249632a04d0aa57"
+  },
+  "rawExport": {
+    "path": "output/fengqiao-scene-v02/raw-v03/scene_v02.glb",
+    "bytes": 22553216,
+    "sha256": "5f5b335e1e6d7d492aa3ab2f855d1acb7c2b3985855125ecdf790d975d5fb123"
+  },
+  "restoredNearExport": {
+    "path": "output/fengqiao-scene-v02/raw-v04/scene_v02.glb",
+    "bytes": 22553128,
+    "sha256": "60e4e554bf8bf4f5cad3269e652a4424864e51895cb1448aa79dcd1a36244df1"
+  },
+  "environment": {
+    "path": "frontend/public/assets/environments/fengqiao-night-v01.rgba16f.gz",
+    "bytes": 381816,
+    "sha256": "4a20f11ba17fb006be06387bc26b9b7aba964d5da2c28687f22bc34e72b8d5fd"
+  },
+  "budget": {
+    "distributedBytes": 14982076,
+    "modelBytes": 14600260,
+    "environmentBytes": 381816,
+    "triangles": 168577,
+    "mainPassPrimitives": 49,
+    "estimatedTextureBytesWithMipmaps": 67283636,
+    "images": [
+      {
+        "name": "tatami_mat_nor_gl",
+        "width": 512,
+        "height": 512,
+        "bytes": 287946
+      },
+      {
+        "name": "tatami_mat_Diffuse",
+        "width": 512,
+        "height": 512,
+        "bytes": 49955
+      },
+      {
+        "name": "tatami_mat_Rough",
+        "width": 512,
+        "height": 512,
+        "bytes": 59098
+      },
+      {
+        "name": "wood_planks_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1305804
+      },
+      {
+        "name": "wood_planks_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 216542
+      },
+      {
+        "name": "wood_planks_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 273484
+      },
+      {
+        "name": "linen_normal",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1766830
+      },
+      {
+        "name": "linen_work_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 315013
+      },
+      {
+        "name": "linen_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 88
+      },
+      {
+        "name": "rock_01_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1885170
+      },
+      {
+        "name": "rock_01_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 452999
+      },
+      {
+        "name": "rock_01_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 682920
+      },
+      {
+        "name": "rock_01_Diffuse_wet",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 333979
+      },
+      {
+        "name": "rock_01_Rough_wet",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 470890
+      }
+    ],
+    "note": "不替代真实浏览器多 pass 和 fps 验证"
+  },
+  "protectedAssets": {
+    "art/blender/fengqiao-sample-v01.blend": "694b8394942943178ba1239bb1005f7c7870a2418df2bc051393d352edc0d0f6",
+    "art/blender/fengqiao-sample-v02.blend": "cfd60149342263d701ae60befe2bc7afae13e0f10dcfe8e55b737e0a3d127e99",
+    "art/blender/fengqiao-sample-v03.blend": "7056b269b62e148c45e60fa62f81ef7b3d2afea2804291921e818338861344f8",
+    "art/blender/fengqiao-sample-v04.blend": "4f3fa91b7e9ce973b7bb3f0d8fb3a576e9ec09ddc7dab0a7585784943687fb7e",
+    "frontend/public/assets/models/fengqiao/sample_v01.glb": "37540f5d04a5829c99a03b4ed802478a21bd2ec1e36895706ced132a5720caeb",
+    "frontend/public/assets/models/fengqiao/sample_v02.glb": "7ffde5fa94fd3ea26e3d7e346c3142fd85d037176f15f4133985171bb57a3114",
+    "frontend/public/assets/models/fengqiao/sample_v03.glb": "cf87dd3bc8c86b4680d871e6f200aa37cea14ff4aa908e293c3c18c2ba452107",
+    "frontend/public/assets/models/fengqiao/sample_v04.glb": "bf4868c46bc0eea6b1c67579d1db706ac9f9297ca1e874ae5326755cebcd6b97",
+    "art/blender/fengqiao-scene-v01.blend": "b7a4daf0f7255cbd4f3267a76d0e169bbb35a11b516aa0617c2c1d5c11639a6c",
+    "frontend/public/assets/models/fengqiao/scene_v01.glb": "e8f653c10690aaaa0f7a97e387871b439cab4adec351c9a4fc865f597aaddf0e"
+  },
+  "nearPreservation": {
+    "status": "pass",
+    "scope": "original named near nodes, packed accessor bytes, transforms, cameras, materials, embedded texture payloads and skin bindings",
+    "nodes": 128,
+    "meshNodes": 34,
+    "skinNodes": 6,
+    "beforeSHA256": "e8f653c10690aaaa0f7a97e387871b439cab4adec351c9a4fc865f597aaddf0e",
+    "afterSHA256": "f22fb8b873d61d508c7316262e9246f17c8b4c21c116141c2249632a04d0aa57",
+    "differences": []
+  },
+  "selectedFarReports": [
+    "temple-roof-v03",
+    "bell-roof-v03",
+    "temple-frame-v02",
+    "bell-frame-v02",
+    "temple-shell",
+    "bell-shell",
+    "bridge",
+    "maple-branches",
+    "maple-leaves",
+    "reeds"
+  ],
+  "performance": {
+    "status": "pass",
+    "loadGate": {
+      "limitMs": 3000,
+      "actualMs": 1627.5,
+      "passed": true
+    },
+    "frames": [
+      {
+        "frames": 3601,
+        "duration": 60004.50000000001,
+        "fps": 59.99550033747468,
+        "p50": 16.69999999999709,
+        "p95": 16.80000000000291,
+        "over50": 0,
+        "maxCalls": 89,
+        "maxTriangles": 226898
+      },
+      {
+        "frames": 3601,
+        "duration": 60004.600000000006,
+        "fps": 59.99540035263963,
+        "p50": 16.699999999982538,
+        "p95": 16.800000000017462,
+        "over50": 0,
+        "maxCalls": 89,
+        "maxTriangles": 226898
+      },
+      {
+        "frames": 3594,
+        "duration": 60004.5,
+        "fps": 59.87884242015182,
+        "p50": 16.699999999982538,
+        "p95": 16.800000000017462,
+        "over50": 1,
+        "maxCalls": 89,
+        "maxTriangles": 226898
+      }
+    ],
+    "browser": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+    }
+  },
+  "coldLoads": {
+    "scope": "five independent fresh Chrome processes on the current device; module start to first rendered frame",
+    "limitMs": 3000,
+    "trials": [
+      {
+        "round": 1,
+        "loadMs": 1547.5,
+        "phases": {
+          "asset": 360.09999999962747,
+          "environment": 14.200000001117587,
+          "assembly": 63,
+          "textureUpload": 249.09999999962747,
+          "compile": 700.5,
+          "firstDraw": 409.40000000037253
+        },
+        "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "staticDraws": {
+          "enabled": true,
+          "variant": 7,
+          "variants": 8,
+          "preparedVariants": 1,
+          "geometries": 8,
+          "sourceMeshes": 25
+        },
+        "contextLost": true,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "round": 2,
+        "loadMs": 1536.300000000745,
+        "phases": {
+          "asset": 355.59999999962747,
+          "environment": 13.800000000745058,
+          "assembly": 66.5,
+          "textureUpload": 214.90000000037253,
+          "compile": 703.6999999992549,
+          "firstDraw": 396.30000000074506
+        },
+        "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "staticDraws": {
+          "enabled": true,
+          "variant": 7,
+          "variants": 8,
+          "preparedVariants": 1,
+          "geometries": 8,
+          "sourceMeshes": 25
+        },
+        "contextLost": true,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "round": 3,
+        "loadMs": 1513,
+        "phases": {
+          "asset": 378.40000000037253,
+          "environment": 18.699999999254942,
+          "assembly": 76.90000000037253,
+          "textureUpload": 250.59999999962747,
+          "compile": 650.4000000003725,
+          "firstDraw": 388.5
+        },
+        "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "staticDraws": {
+          "enabled": true,
+          "variant": 7,
+          "variants": 8,
+          "preparedVariants": 1,
+          "geometries": 8,
+          "sourceMeshes": 25
+        },
+        "contextLost": true,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "round": 4,
+        "loadMs": 1479.0999999996275,
+        "phases": {
+          "asset": 382.40000000037253,
+          "environment": 14.099999999627471,
+          "assembly": 60.40000000037253,
+          "textureUpload": 196.30000000074506,
+          "compile": 644.7999999988824,
+          "firstDraw": 377.09999999962747
+        },
+        "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "staticDraws": {
+          "enabled": true,
+          "variant": 7,
+          "variants": 8,
+          "preparedVariants": 1,
+          "geometries": 8,
+          "sourceMeshes": 25
+        },
+        "contextLost": true,
+        "passed": true,
+        "errors": []
+      },
+      {
+        "round": 5,
+        "loadMs": 1610.699999999255,
+        "phases": {
+          "asset": 416,
+          "environment": 13.599999999627471,
+          "assembly": 63.90000000037253,
+          "textureUpload": 211.7000000011176,
+          "compile": 707.4000000003725,
+          "firstDraw": 409.5
+        },
+        "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "staticDraws": {
+          "enabled": true,
+          "variant": 7,
+          "variants": 8,
+          "preparedVariants": 1,
+          "geometries": 8,
+          "sourceMeshes": 25
+        },
+        "contextLost": true,
+        "passed": true,
+        "errors": []
+      }
+    ],
+    "status": "pass"
+  },
+  "viewDiagnostics": {
+    "scope": "12-second-render-diagnostic",
+    "samples": [
+      {
+        "label": "enter",
+        "view": "CAM_enter",
+        "fps": 59.995000416631946,
+        "p95": 16.80000000000109,
+        "maxCalls": 89,
+        "maxTriangles": 226898
+      },
+      {
+        "label": "riverbank",
+        "view": "CAM_riverbank",
+        "fps": 59.9116740271644,
+        "p95": 16.80000000000291,
+        "maxCalls": 89,
+        "maxTriangles": 241484
+      },
+      {
+        "label": "boat",
+        "view": "CAM_boat",
+        "fps": 59.9955003374747,
+        "p95": 16.80000000000291,
+        "maxCalls": 83,
+        "maxTriangles": 350946
+      },
+      {
+        "label": "rower",
+        "view": "CAM_rower",
+        "fps": 59.3288836670583,
+        "p95": 16.80000000000291,
+        "maxCalls": 79,
+        "maxTriangles": 243626
+      },
+      {
+        "label": "temple",
+        "view": "CAM_temple",
+        "fps": 59.91267248850079,
+        "p95": 16.80000000000291,
+        "maxCalls": 63,
+        "maxTriangles": 298842
+      },
+      {
+        "label": "bridge",
+        "view": "CAM_bridge",
+        "fps": 59.66219200226645,
+        "p95": 16.80000000000291,
+        "maxCalls": 74,
+        "maxTriangles": 349140
+      },
+      {
+        "label": "bell",
+        "view": "CAM_bell",
+        "fps": 59.49504207982668,
+        "p95": 16.80000000000291,
+        "maxCalls": 65,
+        "maxTriangles": 381604
+      },
+      {
+        "label": "nature",
+        "view": "CAM_nature",
+        "fps": 59.82834763769686,
+        "p95": 16.80000000000291,
+        "maxCalls": 81,
+        "maxTriangles": 244870
+      }
+    ],
+    "errors": []
+  },
+  "lifecycle": {
+    "checks": [
+      "舟沿河向前、船首对齐行进切线、临泊位减速无跳回；近景跟随与时间重放通过",
+      "8个实际机位反射裁剪前后画面逐像素一致，保持原反射分辨率",
+      "8个实际机位矩阵复用与船体范围提前排除前后逐像素一致",
+      "八机位与五个距离阈值往返：唯一层级、所有pass共用、固定帧复现、实际多pass几何减少",
+      "五个摇橹时刻掌部贴柄、脚部固定、牵绳等长，橹叶连续浸没并横扫",
+      "完整4.8秒循环97个采样点通过掌部、脚部、牵绳及入水门禁",
+      "97个采样点实际桨杆、桨柄、桨叶与连续船壳及木构件零三角形相交",
+      "键盘选择视角、按钮与空格暂停/播放",
+      "固定时间画面可复现",
+      "三组植物按同一时钟摆动，根部固定，表面与深度程序一致",
+      {
+        "label": "reflection",
+        "delta": {
+          "mean": 0.5023001864711935,
+          "changed": 15868
+        }
+      },
+      {
+        "label": "shadows",
+        "delta": {
+          "mean": 0.7900004822530864,
+          "changed": 89418
+        }
+      },
+      {
+        "label": "fire",
+        "delta": {
+          "mean": 0.920409754372428,
+          "changed": 24021
+        }
+      },
+      "10次加载/释放资源计数稳定",
+      "减少动态静止且可手动选视角",
+      "声明但缺失的预滤波环境明确失败，无残留就绪场景",
+      "服务器原始gzip与HTTP自动解压都还原同一夜景环境",
+      "缺失 GLB 有明确失败状态；加载中离开无迟到场景或脚本异常"
+    ],
+    "errors": [],
+    "disposal": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "contextLost": true
+  },
+  "imageComparisons": [
+    {
+      "view": "CAM_enter",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_riverbank",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_boat",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_rower",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_temple",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_bridge",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_bell",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_nature",
+      "mean": 0,
+      "changed": 0
+    }
+  ],
+  "renderReuseComparisons": [
+    {
+      "view": "CAM_enter",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_riverbank",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_boat",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_rower",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_temple",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_bridge",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_bell",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_nature",
+      "mean": 0,
+      "changed": 0
+    }
+  ],
+  "staticMergeComparisons": [
+    {
+      "view": "CAM_enter",
+      "mean": 0.0009505208333333334,
+      "changed": 96
+    },
+    {
+      "view": "CAM_riverbank",
+      "mean": 0.0005013824588477366,
+      "changed": 54
+    },
+    {
+      "view": "CAM_boat",
+      "mean": 0.00032841435185185187,
+      "changed": 34
+    },
+    {
+      "view": "CAM_rower",
+      "mean": 9.950488683127572e-05,
+      "changed": 13
+    },
+    {
+      "view": "CAM_temple",
+      "mean": 0.0013284465020576132,
+      "changed": 117
+    },
+    {
+      "view": "CAM_bridge",
+      "mean": 0.0008114711934156379,
+      "changed": 84
+    },
+    {
+      "view": "CAM_bell",
+      "mean": 0.0009119405864197531,
+      "changed": 86
+    },
+    {
+      "view": "CAM_nature",
+      "mean": 0.0003851594650205761,
+      "changed": 44
+    }
+  ],
+  "legacy": {
+    "status": "pass",
+    "loadGate": {
+      "limitMs": 3000,
+      "actualMs": 1241.2000000011176,
+      "passed": true
+    },
+    "environmentComparison": {
+      "mean": 0,
+      "changed": 0
+    }
+  },
+  "video": {
+    "path": "docs/plans/R2-枫桥场景/assets/scene-v02/scene-preview.webm",
+    "bytes": 2890720,
+    "sha256": "09c2345f1a24b0a75386c67635e433de33d264f6d3aa4d568367d8c047ea519d"
+  },
+  "videoReview": {
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp8",
+          "width": 1440,
+          "height": 900,
+          "avg_frame_rate": "25/1"
+        }
+      ],
+      "format": {
+        "duration": "24.200000"
+      }
+    },
+    "sampleTimesSeconds": [
+      5,
+      13,
+      24
+    ],
+    "framesVisuallyInspected": true,
+    "edited": false
+  },
+  "method": "Inspected component-first Blender far models, preserved released near accessor bytes, exact image/Meshopt encoding, shared main-camera LOD across passes; real Chrome/D3D11 gates and counterfactual images. Earlier failures retained. Full scene awaits night storytelling, sound and product integration."
+}

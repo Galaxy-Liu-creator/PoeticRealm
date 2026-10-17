@@ -1,0 +1,20 @@
+{
+  "scope": "quality-sample",
+  "nodes": 101,
+  "meshes": 29,
+  "materials": 17,
+  "skins": 1,
+  "maskCalibration": [
+    0,
+    0.502891584649424,
+    1,
+    0,
+    0.502891584649424,
+    1
+  ],
+  "hull": {
+    "triangles": 1184,
+    "nonmanifoldEdges": 0,
+    "weldTolerance": 0.00001
+  }
+}

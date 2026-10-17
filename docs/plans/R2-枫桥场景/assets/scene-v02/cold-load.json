@@ -1,0 +1,127 @@
+{
+  "scope": "five independent fresh Chrome processes on the current device; module start to first rendered frame",
+  "limitMs": 3000,
+  "trials": [
+    {
+      "round": 1,
+      "loadMs": 1547.5,
+      "phases": {
+        "asset": 360.09999999962747,
+        "environment": 14.200000001117587,
+        "assembly": 63,
+        "textureUpload": 249.09999999962747,
+        "compile": 700.5,
+        "firstDraw": 409.40000000037253
+      },
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "staticDraws": {
+        "enabled": true,
+        "variant": 7,
+        "variants": 8,
+        "preparedVariants": 1,
+        "geometries": 8,
+        "sourceMeshes": 25
+      },
+      "contextLost": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "round": 2,
+      "loadMs": 1536.300000000745,
+      "phases": {
+        "asset": 355.59999999962747,
+        "environment": 13.800000000745058,
+        "assembly": 66.5,
+        "textureUpload": 214.90000000037253,
+        "compile": 703.6999999992549,
+        "firstDraw": 396.30000000074506
+      },
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "staticDraws": {
+        "enabled": true,
+        "variant": 7,
+        "variants": 8,
+        "preparedVariants": 1,
+        "geometries": 8,
+        "sourceMeshes": 25
+      },
+      "contextLost": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "round": 3,
+      "loadMs": 1513,
+      "phases": {
+        "asset": 378.40000000037253,
+        "environment": 18.699999999254942,
+        "assembly": 76.90000000037253,
+        "textureUpload": 250.59999999962747,
+        "compile": 650.4000000003725,
+        "firstDraw": 388.5
+      },
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "staticDraws": {
+        "enabled": true,
+        "variant": 7,
+        "variants": 8,
+        "preparedVariants": 1,
+        "geometries": 8,
+        "sourceMeshes": 25
+      },
+      "contextLost": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "round": 4,
+      "loadMs": 1479.0999999996275,
+      "phases": {
+        "asset": 382.40000000037253,
+        "environment": 14.099999999627471,
+        "assembly": 60.40000000037253,
+        "textureUpload": 196.30000000074506,
+        "compile": 644.7999999988824,
+        "firstDraw": 377.09999999962747
+      },
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "staticDraws": {
+        "enabled": true,
+        "variant": 7,
+        "variants": 8,
+        "preparedVariants": 1,
+        "geometries": 8,
+        "sourceMeshes": 25
+      },
+      "contextLost": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "round": 5,
+      "loadMs": 1610.699999999255,
+      "phases": {
+        "asset": 416,
+        "environment": 13.599999999627471,
+        "assembly": 63.90000000037253,
+        "textureUpload": 211.7000000011176,
+        "compile": 707.4000000003725,
+        "firstDraw": 409.5
+      },
+      "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "staticDraws": {
+        "enabled": true,
+        "variant": 7,
+        "variants": 8,
+        "preparedVariants": 1,
+        "geometries": 8,
+        "sourceMeshes": 25
+      },
+      "contextLost": true,
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "status": "pass"
+}

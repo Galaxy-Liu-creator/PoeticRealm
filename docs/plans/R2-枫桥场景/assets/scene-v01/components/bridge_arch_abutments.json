@@ -1,0 +1,20 @@
+{
+  "component": "bridge_arch_abutments",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_bridge_arch_stone",
+      "vertices": 520,
+      "triangles": 780,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bridge_submerged_footings",
+      "vertices": 16,
+      "triangles": 24,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

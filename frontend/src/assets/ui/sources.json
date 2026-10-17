@@ -1,0 +1,18 @@
+{
+  "description": "运行时使用的设计素材副本；原稿和生成记录继续保留在根目录 docs/design。",
+  "licenseReference": "docs/CREDITS.md",
+  "assets": [
+    { "file": "S01-home-desktop-user.png", "source": "docs/design/2026-10-01-v3/v09/screens/S01-home-desktop-user.png" },
+    { "file": "S06-profile-user.png", "source": "docs/design/2026-10-01-v3/v07/references/S06-profile-user.png" },
+    { "file": "S11-login-user.png", "source": "docs/design/2026-10-01-v3/v10/references/S11-login-user.png" },
+    { "file": "S12-register-user.png", "source": "docs/design/2026-10-01-v3/v10/references/S12-register-user.png" },
+    { "file": "auth-split-background-v1.png", "source": "docs/design/2026-10-01-v3/runtime-assets/auth-split-background-v1.png" },
+    { "file": "home-background-v1.png", "source": "docs/design/2026-10-01-v3/runtime-assets/home-background-v1.png" },
+    { "file": "curtain-background-v1.png", "source": "docs/design/2026-10-01-v3/runtime-assets/curtain-background-v1.png" },
+    { "file": "S02-fengqiao-cover.jpg", "source": "docs/design/2026-10-01-v3/v03/assets/S02-fengqiao-cover.jpg" },
+    { "file": "S03-jiangxue-desktop-asset-1.jpg", "source": "docs/design/2026-10-01-v3/v03/assets/S03-jiangxue-desktop-asset-1.jpg" },
+    { "file": "S04-baidicheng-desktop-asset-1.jpg", "source": "docs/design/2026-10-01-v3/v03/assets/S04-baidicheng-desktop-asset-1.jpg" },
+    { "file": "overview-landscape.jpg", "source": "docs/design/2026-10-01-v3/v02/assets/overview-landscape.jpg" },
+    { "file": "profile-editor-background-v1.png", "source": "docs/design/2026-10-06-profile-editor/profile-editor-background-v1.png" }
+  ]
+}

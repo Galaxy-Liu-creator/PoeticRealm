@@ -1,0 +1,72 @@
+{
+  "component": "bridge",
+  "rows": [
+    {
+      "source": "bridge_main_stone_dry",
+      "far": "bridge_far_stone_dry",
+      "nearTriangles": 4364,
+      "farTriangles": 2618,
+      "ratio": 0.6,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 9.5367431640625e-07,
+      "nearBounds": [
+        [
+          -13.44999885559082,
+          12.75,
+          0.09749999642372131
+        ],
+        [
+          3.444000244140625,
+          17.25,
+          4.572499752044678
+        ]
+      ],
+      "farBounds": [
+        [
+          -13.449999809265137,
+          12.75,
+          0.09749999642372131
+        ],
+        [
+          3.4440011978149414,
+          17.25,
+          4.572499752044678
+        ]
+      ]
+    },
+    {
+      "source": "bridge_main_stone_wet",
+      "far": "bridge_far_stone_wet",
+      "nearTriangles": 24,
+      "farTriangles": 24,
+      "ratio": 1,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.0,
+      "nearBounds": [
+        [
+          -13.399999618530273,
+          12.649999618530273,
+          -1.2450000047683716
+        ],
+        [
+          3.3999996185302734,
+          17.350000381469727,
+          0.20500004291534424
+        ]
+      ],
+      "farBounds": [
+        [
+          -13.399999618530273,
+          12.649999618530273,
+          -1.2450000047683716
+        ],
+        [
+          3.3999996185302734,
+          17.350000381469727,
+          0.20500004291534424
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

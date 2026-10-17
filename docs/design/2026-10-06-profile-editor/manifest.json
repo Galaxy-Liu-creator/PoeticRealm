@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-06",
+  "authority": "用户四张参考图",
+  "references": [
+    { "file": "references/basic.png", "attachment": "codex-clipboard-93b6fd14-2e3f-4ea6-b84e-681be8a68d1e.png", "sha256": "05b450e7cbc1839f258b6a5d2a7cbbe2c5a58a0e85413f419c7d4664d39508fc" },
+    { "file": "references/security.png", "attachment": "codex-clipboard-a6b00a47-f560-4fbb-8d49-e8c281320b77.png", "sha256": "b75750612b38a75af59a4480bef5226605f87f39688c8d5e99ac01b631de1efa" },
+    { "file": "references/privacy.png", "attachment": "codex-clipboard-d20b65b3-1988-46f8-b199-45eb3e9a268b.png", "sha256": "6a4cb65eb73299d110aa92fb7c72fa63daa568f6dd94a553cb901b0f0ddcd46d" },
+    { "file": "references/preferences.png", "attachment": "codex-clipboard-b1b992e5-14d5-4c11-bce6-628f97f19468.png", "sha256": "9afc1a85e3796e0c3cdfffb2f7f8aaae47b7099fb3267fdb03a40267380f5619" }
+  ],
+  "generated": {
+    "file": "profile-editor-background-v1.png",
+    "tool": "内置 image_gen",
+    "model": null,
+    "serviceTaskId": null,
+    "originalOutput": "C:/Users/Lenovo/.codex/generated_images/01a104bc-2354-75f3-8a58-03b954495877/exec-5ae26d51-4b39-4090-a48d-1ce24e5e938b.png",
+    "sha256": "f315a5df44f1b501049a018d516add763fc9ae6601b76fe621e497b63e74e511",
+    "prompt": "prompt.txt",
+    "edits": "生成去 UI、遮挡区补绘；输出原始文件未再编辑",
+    "usage": "四栏目共用本地预览背景；不承诺逐像素一致或发布许可"
+  }
+}

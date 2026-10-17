@@ -1,0 +1,64 @@
+{
+  "provider": "Stitch",
+  "date": "2026-10-01",
+  "projectId": "11329297360365535924",
+  "projectUrl": "https://stitch.withgoogle.com/projects/11329297360365535924",
+  "visibility": "PRIVATE",
+  "sessionId": "14296517119906683920",
+  "requestedModel": "GEMINI_3_8_FLASH",
+  "operation": "edit_screens",
+  "sourceScreenId": "ac59c6f1c6ec4c018f75f992b8fc870d",
+  "approval": "PENDING_USER_REVIEW",
+  "files": [
+    {
+      "screenId": "575c91f93ac94b4eaf7a54e987a3d51a",
+      "resourceName": "projects/11329297360365535924/files/04f74541e1f741c7b9e0bce36405fb4a",
+      "file": "screens/S01-home-desktop.png",
+      "width": 2560,
+      "height": 2048,
+      "format": "PNG",
+      "bytes": 2438867,
+      "sha256": "9caa03e11ac612719b5c3071cc2b27c81ba316ca1d75b686947650c442a2c1a1"
+    },
+    {
+      "screenId": "327cb30008d94d02bcc9202f8c426b02",
+      "resourceName": "projects/11329297360365535924/files/767a78eb74f2472ba1f539029fa88fb1",
+      "file": "assets/fengqiao-cover.jpg",
+      "width": 1376,
+      "height": 768,
+      "format": "JPEG",
+      "bytes": 136893,
+      "sha256": "41475a17499e210273458d4244e7c3f69c4540082f84d5f3f2e46b001e4455ad"
+    },
+    {
+      "screenId": "1edec2db3cab45aea06f7afd0f3550f8",
+      "resourceName": "projects/11329297360365535924/files/21b8a133ace14818aa772ace31a3b01e",
+      "file": "assets/jiangxue-cover.jpg",
+      "width": 1376,
+      "height": 768,
+      "format": "JPEG",
+      "bytes": 277426,
+      "sha256": "cb2984084af939b57ac4478c94e645b61e50eb6001aba1f5c9502dda3bd90488"
+    },
+    {
+      "screenId": "7bf78e2a6b9b4071b6f74cccc7f6a964",
+      "resourceName": "projects/11329297360365535924/files/81d20ae6bfe648bba946b12bfa4e01c8",
+      "file": "assets/baidicheng-cover.jpg",
+      "width": 1376,
+      "height": 768,
+      "format": "JPEG",
+      "bytes": 198763,
+      "sha256": "ceafcd46fa648fd0a2a9cb2e2cded8f8f07a735904133028725022799818d732"
+    },
+    {
+      "screenId": "2804d415fe03482e97aff099b2debfc4",
+      "resourceName": "projects/11329297360365535924/files/94310bac7a6e4b25a8dc26b3e6bd51b0",
+      "file": "assets/overview-landscape.jpg",
+      "width": 1376,
+      "height": 768,
+      "format": "JPEG",
+      "bytes": 71859,
+      "sha256": "2b54ddff9ca47234cee87327f5d4a2b8c93197c6837adc6d1a4173742b8dc4dd"
+    }
+  ]
+}

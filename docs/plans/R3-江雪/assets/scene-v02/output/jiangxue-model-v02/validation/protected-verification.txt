@@ -1,0 +1,16 @@
+art/blender/jiangxue-scene-v01.blend: OK
+frontend/public/assets/models/jiangxue/scene_v01.glb: OK
+frontend/public/assets/terrain/jiangxue-v01.height.png: OK
+frontend/public/assets/terrain/jiangxue-v01.height.json: OK
+art/blender/fengqiao-sample-v01.blend: OK
+art/blender/fengqiao-sample-v02.blend: OK
+art/blender/fengqiao-sample-v03.blend: OK
+art/blender/fengqiao-sample-v04.blend: OK
+art/blender/fengqiao-scene-v01.blend: OK
+art/blender/fengqiao-scene-v02.blend: OK
+frontend/public/assets/models/fengqiao/sample_v01.glb: OK
+frontend/public/assets/models/fengqiao/sample_v02.glb: OK
+frontend/public/assets/models/fengqiao/sample_v03.glb: OK
+frontend/public/assets/models/fengqiao/sample_v04.glb: OK
+frontend/public/assets/models/fengqiao/scene_v01.glb: OK
+frontend/public/assets/models/fengqiao/scene_v02.glb: OK

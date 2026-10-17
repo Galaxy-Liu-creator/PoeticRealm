@@ -1,0 +1,21 @@
+{
+  "name": "generate_variants",
+  "arguments": {
+    "projectId": "11329297360365535924",
+    "selectedScreenIds": [
+      "eea43646a95c49ffa770bae11c04154d"
+    ],
+    "deviceType": "DESKTOP",
+    "modelId": "GEMINI_3_8_FLASH",
+    "variantOptions": {
+      "variantCount": 1,
+      "creativeRange": "REFINE",
+      "aspects": [
+        "LAYOUT",
+        "IMAGES",
+        "TEXT_CONTENT"
+      ]
+    },
+    "prompt": "生成一张独立视觉变体，沿用青黛山水和浅绢纸，仅五个等尺寸16:10视觉缩图0/25/50/75/100%及每帧一句中文。移除工程参数面板、英文、性能/WCAG通过声明、批准和导出按钮。翻书返回总览。0%枫桥诗境；25%左边向右卷起薄纸；50%画面中央明显弯曲纸页，夜江正面与淡绢色背面同时可见，曲面明暗和柔投影，下方总览三张真实风景卡已可见；75%弯纸移到右侧；100%完整总览无返回。不要虚线框+图标代替纸页，不是平移直板或立方体。这是待审静态分镜，不能声称已完成动效。"
+  }
+}

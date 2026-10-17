@@ -1,0 +1,212 @@
+{
+  "component": "shore_rock_scatter",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_bank_rock_00",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_01",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_02",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_03",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_04",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_05",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_06",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_07",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_08",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_09",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_10",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_11",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_12",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_13",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_14",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_15",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_16",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_17",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_18",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_19",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_20",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_21",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_22",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_23",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_24",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_25",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_26",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_27",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_28",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_29",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_30",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_31",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_32",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_rock_33",
+      "vertices": 36,
+      "triangles": 68,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

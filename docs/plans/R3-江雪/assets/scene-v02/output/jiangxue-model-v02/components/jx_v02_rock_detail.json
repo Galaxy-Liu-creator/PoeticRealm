@@ -1,0 +1,54 @@
+{
+  "component": "jx_v02_rock_detail",
+  "scene": "jiangxue_modeling_v02",
+  "objects": [
+    {
+      "object": "src_rock_proto_v02_0",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_proto_v02_1",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_proto_v02_2",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31029,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2,
+    "bank_length": 230.0,
+    "bank_width": 95.0
+  },
+  "extra": {
+    "detail": "1280 triangles per original eroded prototype",
+    "source": "refined original geometry; coarse prototypes retained",
+    "inspectionCamera": "CAM_rocks"
+  }
+}

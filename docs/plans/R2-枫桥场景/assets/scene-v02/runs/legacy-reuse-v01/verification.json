@@ -1,0 +1,1010 @@
+{
+  "checks": [
+    "4个实际机位反射裁剪前后画面逐像素一致，保持原反射分辨率",
+    "4个实际机位矩阵复用与船体范围提前排除前后逐像素一致",
+    "原程序预滤波与RGBA16F恢复的船夫近景像素一致",
+    "五个摇橹时刻掌部贴柄、脚部固定、牵绳等长，橹叶连续浸没并横扫",
+    "完整4.8秒循环97个采样点通过掌部、脚部、牵绳及入水门禁",
+    "97个采样点实际桨杆、桨柄、桨叶与连续船壳及木构件零三角形相交",
+    "键盘选择视角、按钮与空格暂停/播放",
+    "固定时间画面可复现",
+    {
+      "label": "reflection",
+      "delta": {
+        "mean": 1.2738165509259258,
+        "changed": 5401
+      }
+    },
+    {
+      "label": "shadows",
+      "delta": {
+        "mean": 0.10307339891975309,
+        "changed": 11945
+      }
+    },
+    {
+      "label": "fire",
+      "delta": {
+        "mean": 0.8660956790123456,
+        "changed": 23409
+      }
+    }
+  ],
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "errors": [],
+  "frames": [],
+  "firstLoadMs": 3995,
+  "details": {
+    "contractVersion": "0.2",
+    "scope": "quality-sample",
+    "reducedMotion": false,
+    "initializationMemory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "loadMs": 1976.2999999998137,
+    "environmentSource": "baked-rgba16f",
+    "loadPhases": {
+      "asset": 578,
+      "environment": 21.90000000037253,
+      "assembly": 19.299999999813735,
+      "textureUpload": 213.59999999962747,
+      "compile": 642,
+      "firstDraw": 714.5999999996275
+    },
+    "memory": {
+      "geometries": 22,
+      "textures": 22
+    },
+    "reflectionResolution": 1024,
+    "reflectionScissor": [
+      0,
+      0,
+      1024,
+      1024
+    ],
+    "shadowResolution": 2048,
+    "drawingBuffer": [
+      1920,
+      1080
+    ],
+    "materials": [
+      "pbr_cloth__reed",
+      "pbr_wood__aged",
+      "pbr_metal__iron",
+      "glow__fire",
+      "pbr_skin__eyes",
+      "pbr_skin__iris",
+      "pbr_skin__weathered",
+      "pbr_cloth__worklinen",
+      "pbr_cloth__worktrousers",
+      "pbr_cloth__worncollar",
+      "pbr_stone__wet",
+      "pbr_stone__dry"
+    ],
+    "maskProbe": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "boat": [
+      3.8499999046325684,
+      -0.3038777949122518,
+      0.44999998807907104
+    ],
+    "view": {
+      "camera": [
+        10,
+        6.999999999999998,
+        12
+      ],
+      "target": [
+        2.75,
+        0.949999988079071,
+        0.44999998807907104
+      ],
+      "followsBoat": false
+    },
+    "rower": {
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        3.220889046452665e-8,
+        3.5218646390387214e-8
+      ],
+      "footErrors": [
+        4.063810868242194e-7,
+        0.000001229508732701853
+      ],
+      "skinHandErrors": [
+        0.020791009434200355,
+        0.029936571522983367
+      ],
+      "oarRotation": [
+        0.005798924032273862,
+        -0.02295297271243778,
+        -0.014227711129368707,
+        0.9996184801011581
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        0.7711877570578116,
+        -0.4664686307765209,
+        2.644177948907056
+      ],
+      "pivot": [
+        1.0531651027073181,
+        1.0810045540618487,
+        1.0634454263758806
+      ],
+      "tetherLength": 0.9204935108300006,
+      "tetherError": 0
+    },
+    "wind": {
+      "meshes": 0,
+      "rootVertices": 0,
+      "time": 8,
+      "enabled": true,
+      "surfaceCompiles": 0,
+      "depthCompiles": 0
+    }
+  },
+  "loadGate": {
+    "limitMs": 3000,
+    "actualMs": 1976.2999999998137,
+    "passed": true
+  },
+  "renderReuseComparisons": [
+    {
+      "view": "CAM_enter",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_riverbank",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_boat",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_rower",
+      "mean": 0,
+      "changed": 0
+    }
+  ],
+  "rowing": [
+    {
+      "t": 0,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        4.7774856273930174e-8,
+        3.188600713063855e-8
+      ],
+      "footErrors": [
+        4.1698180473559687e-7,
+        0.0000010792519163751334
+      ],
+      "skinHandErrors": [
+        0.020790869544033763,
+        0.029936914293399765
+      ],
+      "oarRotation": [
+        -0.000154438424018178,
+        -0.07582829800999658,
+        -0.023077177459707415,
+        0.9968537953231524
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        0.5761010510915167,
+        -0.43512856483531737,
+        2.6242857879398205
+      ],
+      "pivot": [
+        1.0540790219745988,
+        1.0851759638752059,
+        1.0644425303097826
+      ],
+      "tetherLength": 0.9204935108300006,
+      "tetherError": 0
+    },
+    {
+      "t": 1.2,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        4.9298050979265655e-8,
+        6.162795080907423e-8
+      ],
+      "footErrors": [
+        4.935376886030354e-7,
+        0.0000010944630074954228
+      ],
+      "skinHandErrors": [
+        0.020794840146497424,
+        0.029934447112928513
+      ],
+      "oarRotation": [
+        0.00043015352577828263,
+        0.06994152458751293,
+        0.00613501017240311,
+        0.9975321346986789
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        1.1338484019623838,
+        -0.459045720999661,
+        2.6764331328282287
+      ],
+      "pivot": [
+        1.0514782655516095,
+        1.0766800725688044,
+        1.0616076820016387
+      ],
+      "tetherLength": 0.9204935108300005,
+      "tetherError": 1.1102230246251565e-16
+    },
+    {
+      "t": 2.4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        3.866639417565836e-8,
+        4.796310105601207e-8
+      ],
+      "footErrors": [
+        4.1697794312824716e-7,
+        0.0000010792189920437031
+      ],
+      "skinHandErrors": [
+        0.020794310355195918,
+        0.029935017294243766
+      ],
+      "oarRotation": [
+        0.012701634856543294,
+        0.07475709399308342,
+        -0.01622556395038227,
+        0.99698885472415
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        1.07822047822815,
+        -0.4958987549825431,
+        2.643378065236777
+      ],
+      "pivot": [
+        1.047483421658936,
+        1.0713324962985096,
+        1.0572692330935949
+      ],
+      "tetherLength": 0.9204935108300004,
+      "tetherError": 2.220446049250313e-16
+    },
+    {
+      "t": 3.6,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        5.893225509366982e-8,
+        4.56407094578844e-8
+      ],
+      "footErrors": [
+        4.0330942376469346e-7,
+        0.00000124739218211164
+      ],
+      "skinHandErrors": [
+        0.020790650243306886,
+        0.02993733405292521
+      ],
+      "oarRotation": [
+        0.001627241713150527,
+        -0.06992391563755848,
+        -0.023208328805568865,
+        0.9972809892805393
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        0.5953601327569888,
+        -0.4447663749299018,
+        2.6248009750767958
+      ],
+      "pivot": [
+        1.0458966837228334,
+        1.074237445367391,
+        1.0555514731787854
+      ],
+      "tetherLength": 0.9204935108300011,
+      "tetherError": 4.440892098500626e-16
+    },
+    {
+      "t": 4.8,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        4.7851171550145644e-8,
+        3.195402309804174e-8
+      ],
+      "footErrors": [
+        4.169783850183174e-7,
+        0.0000010792227321544125
+      ],
+      "skinHandErrors": [
+        0.020790869646947988,
+        0.029936914423572745
+      ],
+      "oarRotation": [
+        -0.00015443842401816413,
+        -0.07582829800999659,
+        -0.02307717745970761,
+        0.9968537953231524
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        0.5766694588210436,
+        -0.4324703531497396,
+        2.624899979901614
+      ],
+      "pivot": [
+        1.048215432880609,
+        1.0826419369934395,
+        1.0580627414985857
+      ],
+      "tetherLength": 0.9204935108300007,
+      "tetherError": 1.1102230246251565e-16
+    }
+  ],
+  "environmentComparison": {
+    "mean": 0,
+    "changed": 0
+  },
+  "strokeLimits": {
+    "samples": 97,
+    "maxGripError": 7.313180311841699e-8,
+    "maxGripAt": 4.1,
+    "maxSkinHandError": 0.029937556956395585,
+    "maxFootError": 0.00000124739218211164,
+    "maxTetherError": 5.551115123125783e-16,
+    "highestBlade": -0.42664419352097527,
+    "lowestBlade": -0.4958987549825431
+  },
+  "oarClearance": {
+    "scope": "delivered GLB triangle intersections; fixed pin, binding and tether excluded",
+    "hullNames": [
+      "boat_hull_closed",
+      "boat_wood_aged"
+    ],
+    "movingNames": [
+      "rowing_oar_shaft",
+      "rowing_oar_handle",
+      "rowing_oar_blade"
+    ],
+    "hullTriangles": 10248,
+    "samples": [
+      {
+        "t": 0,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.049999999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.09999999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.15,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.19999999999999998,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.25,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.3,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.35000000000000003,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.39999999999999997,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.44999999999999996,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.5,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.5499999999999999,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.6,
+        "intersections": 0,
+        "candidatePairs": 563,
+        "examples": []
+      },
+      {
+        "t": 0.65,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.7000000000000001,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.75,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.7999999999999999,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 0.85,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 0.8999999999999999,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 0.9500000000000001,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 1,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 1.05,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 1.0999999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.15,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.2,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.25,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.3,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.3499999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.4000000000000001,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.45,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.5,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.5499999999999998,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 1.5999999999999999,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.6500000000000001,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.7,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.75,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.7999999999999998,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.8499999999999999,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.9000000000000001,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.95,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 2,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.05,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.1,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.15,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.1999999999999997,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 2.25,
+        "intersections": 0,
+        "candidatePairs": 553,
+        "examples": []
+      },
+      {
+        "t": 2.3,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 2.35,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.4,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.4499999999999997,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.5,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.55,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.6,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.65,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 2.6999999999999997,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 2.75,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.8000000000000003,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.8499999999999996,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 2.9,
+        "intersections": 0,
+        "candidatePairs": 545,
+        "examples": []
+      },
+      {
+        "t": 2.9499999999999997,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 3,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 3.0500000000000003,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.0999999999999996,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 3.15,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 3.1999999999999997,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.25,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.3000000000000003,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 3.3499999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.4,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 3.4499999999999997,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.5,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 3.5500000000000003,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 3.5999999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.65,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.6999999999999997,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.75,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.8000000000000003,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.8499999999999996,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.9,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.9499999999999997,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 4,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.05,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.1,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.1499999999999995,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.2,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 4.25,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 4.3,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.35,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.3999999999999995,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.45,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.5,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.55,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.6,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.6499999999999995,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.7,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 4.75,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.8,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      }
+    ],
+    "intersections": 0
+  },
+  "nativeServer": {
+    "name": "chrome_devtools",
+    "title": "Chrome DevTools MCP server",
+    "version": "1.10.1"
+  },
+  "dom": "## Latest page snapshot\nuid=1_0 RootWebArea \"诗境 · 一卷山河\" url=\"http://127.0.0.1:5187/?scene=fengqiao&lab=fengqiao#/login\"\n  uid=1_1 main\n    uid=1_2 Canvas \"枫桥局部三维小样\"\n    uid=1_3 complementary\n      uid=1_4 StaticText \"枫桥夜泊\"\n      uid=1_5 StaticText \"局部材质小样 · 尚未完成整场景验收\"\n    uid=1_6 navigation \"小样检查\"\n      uid=1_7 button \"整体\"\n      uid=1_8 button \"湿石岸\"\n      uid=1_9 button \"木舟\"\n      uid=1_10 button \"船夫\"\n      uid=1_11 button \"暂停\"\n      uid=1_12 StaticText \"时间\"\n      uid=1_13 slider \"场景时间\" orientation=\"horizontal\" value=\"0\" valuemax=\"32\" valuemin=\"0\" valuetext=\"0\"\n      uid=1_14 checkbox \"倒影\" checked\n      uid=1_15 checkbox \"阴影\" checked\n      uid=1_16 checkbox \"渔火\" checked\n",
+  "console": "## Console messages\n<no console messages found>",
+  "network": "## Network requests\nNo requests found.",
+  "status": "pass",
+  "scope": "visual-smoke"
+}

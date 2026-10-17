@@ -1,0 +1,26 @@
+{
+  "component": "temple_enclosure",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_temple_walls",
+      "vertices": 136,
+      "triangles": 204,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_temple_doors_windows",
+      "vertices": 1280,
+      "triangles": 1920,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_courtyard_wall_coping",
+      "vertices": 32,
+      "triangles": 48,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

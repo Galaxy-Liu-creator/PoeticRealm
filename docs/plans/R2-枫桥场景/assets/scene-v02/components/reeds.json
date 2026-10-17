@@ -1,0 +1,39 @@
+{
+  "component": "reeds",
+  "rows": [
+    {
+      "source": "reed_bed_foliage_reed",
+      "far": "reed_far_foliage_reed",
+      "nearTriangles": 4960,
+      "farTriangles": 2976,
+      "ratio": 0.6,
+      "nonmanifoldEdges": 1240,
+      "boundErrorMetres": 0.0009635686874389648,
+      "nearBounds": [
+        [
+          -19.857370376586914,
+          -2.3495407104492188,
+          0.1526726335287094
+        ],
+        [
+          14.233095169067383,
+          20.926067352294922,
+          1.8281980752944946
+        ]
+      ],
+      "farBounds": [
+        [
+          -19.857370376586914,
+          -2.3495407104492188,
+          0.15290838479995728
+        ],
+        [
+          14.233095169067383,
+          20.926067352294922,
+          1.8291616439819336
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

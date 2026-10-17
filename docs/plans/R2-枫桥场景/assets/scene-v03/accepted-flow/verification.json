@@ -1,0 +1,566 @@
+{
+  "scope": "product-flow-and-visual-smoke",
+  "checks": [
+    "火光入境准备真实首帧，提交前路由保留，完成后接管同一个Canvas",
+    "月落32秒后保持夜景，同刻重放像素一致；雾实际改变岸边与水面画面",
+    "四句可键盘切换现有机位，收藏重绘保留Canvas、时间和视角",
+    "模拟visibilitychange暂停场景与AudioContext，恢复不补赶后台时间",
+    "手势解锁空间音频；水风循环、乌啼与延迟钟声、暂停静音、拖动恢复尾音通过",
+    "全屏占满视口；捕获失败恢复播放，保留诗境并允许再次返回",
+    "1920/1440/390真实页面布局与原生Chrome DevTools DOM、截图、Console检查",
+    "翻页返回仅截取一次，48条带共用当前画面；Esc保留诗境，完成后释放场景",
+    "正常产品路由反复入境与返回后GPU资源归零",
+    "减少动态保留静态夜景与手动选景",
+    "模型404保留总览且可重试，加载中取消后迟到模型不接管页面"
+  ],
+  "errors": [],
+  "disposals": [
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    }
+  ],
+  "status": "pass",
+  "moon": [
+    {
+      "t": 0,
+      "progress": 0,
+      "height": 118,
+      "brightness": 1,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        118,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.3727781309111029,
+        0.19297023994755824,
+        -0.9076337100444246
+      ]
+    },
+    {
+      "t": 8,
+      "progress": 0.25,
+      "height": 97.0625,
+      "brightness": 0.9625,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        97.0625,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.3750431445398135,
+        0.15969473847658536,
+        -0.9131485258360676
+      ]
+    },
+    {
+      "t": 16,
+      "progress": 0.5,
+      "height": 51,
+      "brightness": 0.88,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        51,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.37719328805921437,
+        0.11956872657998774,
+        -0.9183836578833046
+      ]
+    },
+    {
+      "t": 24,
+      "progress": 0.75,
+      "height": 4.9375,
+      "brightness": 0.7975,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        4.9375,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.3772124493084881,
+        0.11914919748885257,
+        -0.9184303113597971
+      ]
+    },
+    {
+      "t": 32,
+      "progress": 1,
+      "height": -16,
+      "brightness": 0.76,
+      "visible": false,
+      "position": [
+        -227.95131238611876,
+        -16,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.377210726720207,
+        0.11918697426194597,
+        -0.9184261172318083
+      ]
+    },
+    {
+      "t": 40,
+      "progress": 1,
+      "height": -16,
+      "brightness": 0.76,
+      "visible": false,
+      "position": [
+        -227.95131238611876,
+        -16,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.377210726720207,
+        0.11918697426194597,
+        -0.9184261172318083
+      ]
+    }
+  ],
+  "visibleMoonPixels": 690,
+  "views": [
+    {
+      "view": "CAM_moonset",
+      "camera": [
+        15,
+        9.000000000000002,
+        20
+      ],
+      "target": [
+        -8,
+        4.5,
+        -36
+      ],
+      "followsBoat": false
+    },
+    {
+      "view": "CAM_riverbank",
+      "camera": [
+        7.800000190734863,
+        3.5999999046325675,
+        7.800000190734865
+      ],
+      "target": [
+        -1.7999999523162842,
+        0.75,
+        -3
+      ],
+      "followsBoat": false
+    },
+    {
+      "view": "CAM_temple",
+      "camera": [
+        24,
+        7.599999904632565,
+        -10
+      ],
+      "target": [
+        7.5,
+        5,
+        -33
+      ],
+      "followsBoat": false
+    },
+    {
+      "view": "CAM_boat",
+      "camera": [
+        11.385090718968534,
+        3.2999999523162846,
+        1.237013520154329
+      ],
+      "target": [
+        3.434430480820661,
+        0.949999988079071,
+        -1.9358408595994836
+      ],
+      "followsBoat": true
+    }
+  ],
+  "audioAfterCrow": {
+    "state": "running",
+    "muted": false,
+    "voices": 3,
+    "loops": 2,
+    "lastEvent": "crow",
+    "events": [
+      "crow"
+    ],
+    "tracks": [
+      "environment",
+      "effects",
+      "voice",
+      "music"
+    ]
+  },
+  "audioRms": 0.013186737910338382,
+  "audioAfterBell": {
+    "state": "running",
+    "muted": false,
+    "voices": 3,
+    "loops": 2,
+    "lastEvent": "bell",
+    "events": [
+      "crow",
+      "bell"
+    ],
+    "tracks": [
+      "environment",
+      "effects",
+      "voice",
+      "music"
+    ]
+  },
+  "audioFiles": [
+    "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\accepted-flow\\audio\\wind.wav",
+    "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\accepted-flow\\audio\\water.wav",
+    "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\accepted-flow\\audio\\crow.wav",
+    "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\accepted-flow\\audio\\bell.wav"
+  ],
+  "nativeServer": {
+    "name": "chrome_devtools",
+    "title": "Chrome DevTools MCP server",
+    "version": "1.10.1"
+  },
+  "dom": "## Latest page snapshot\nuid=1_0 RootWebArea \"枫桥夜泊 · 诗境\" url=\"http://127.0.0.1:5187/#/poems/fengqiao\"\n  uid=1_1 link \"跳至正文\" url=\"http://127.0.0.1:5187/#main\"\n    uid=1_2 StaticText \"跳至正文\"\n  uid=1_3 banner\n    uid=1_4 link \"← 返回总览\" focusable focused url=\"http://127.0.0.1:5187/#/\"\n      uid=1_5 StaticText \"← \"\n      uid=1_6 StaticText \"返回总览\"\n    uid=1_7 StaticText \"诗境·一卷山河 \"\n    uid=1_8 navigation \"主导航\"\n      uid=1_9 link \"诗词总览\" url=\"http://127.0.0.1:5187/#/\"\n        uid=1_10 StaticText \"诗词总览\"\n      uid=1_11 link \"我的收藏\" url=\"http://127.0.0.1:5187/#/favorites\"\n        uid=1_12 StaticText \"我的收藏\"\n      uid=1_13 link \"个人中心\" url=\"http://127.0.0.1:5187/#/profile\"\n        uid=1_14 StaticText \"个人中心\"\n  uid=1_15 main\n    uid=1_16 Canvas \"枫桥夜泊三维场景\"\n    uid=1_17 heading \"枫桥夜泊\" level=\"1\"\n    uid=1_18 StaticText \"唐 · 张继\"\n    uid=1_19 button \"月落乌啼霜满天，切换对应景观\"\n    uid=1_20 button \"江枫渔火对愁眠，切换对应景观\"\n    uid=1_21 button \"姑苏城外寒山寺，切换对应景观\"\n    uid=1_22 button \"夜半钟声到客船，切换对应景观\"\n    uid=1_23 button \"已收藏\" pressed\n    uid=1_24 button \"笺注 · 译文\" expandable\n    uid=1_25 button \"全屏观景\"\n    uid=1_26 button \"暂停\"\n    uid=1_27 button \"开启声音\"\n    uid=1_28 button \"重新观看月落\"\n    uid=1_29 button \"全景\"\n    uid=1_30 button \"木舟\"\n    uid=1_31 StaticText \"姑苏 · 寒山寺\"\n    uid=1_32 StaticText \"月落江雾 · 钟声到客船\"\n",
+  "console": "## Console messages\n<no console messages found>",
+  "audioContexts": [
+    "closed",
+    "suspended",
+    "closed",
+    "closed",
+    "closed"
+  ],
+  "details": {
+    "contractVersion": "0.2",
+    "scope": "full-scene",
+    "reducedMotion": true,
+    "initializationMemory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "loadMs": 3170.5,
+    "environmentSource": "baked-rgba16f",
+    "loadPhases": {
+      "asset": 1249.1999999955297,
+      "environment": 0,
+      "assembly": 70.70000000298023,
+      "textureUpload": 558.6000000014901,
+      "compile": 1077.6000000014901,
+      "firstDraw": 773
+    },
+    "memory": {
+      "geometries": 33,
+      "textures": 22
+    },
+    "reflectionResolution": 1024,
+    "reflectionScissor": [
+      0,
+      0,
+      1024,
+      527
+    ],
+    "shadowResolution": 2048,
+    "drawingBuffer": [
+      1920,
+      1016
+    ],
+    "materials": [
+      "pbr_cloth__reed",
+      "pbr_wood__aged",
+      "pbr_metal__iron",
+      "glow__fire",
+      "pbr_skin__eyes",
+      "pbr_skin__iris",
+      "pbr_skin__weathered",
+      "pbr_cloth__worklinen",
+      "pbr_cloth__worktrousers",
+      "pbr_cloth__worncollar",
+      "pbr_stone__dry",
+      "pbr_stone__lime",
+      "pbr_tile__charcoal",
+      "pbr_metal__bellbronze",
+      "pbr_stone__wet",
+      "pbr_rock__silt",
+      "pbr_foliage__maple",
+      "pbr_foliage__reed"
+    ],
+    "maskProbe": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "boat": [
+      3.85,
+      -0.30000001192092896,
+      0.45
+    ],
+    "navigation": {
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.17664405078087647,
+        0,
+        -0.9842747986836418
+      ],
+      "position": [
+        3.85,
+        -0.30000001192092896,
+        0.45
+      ],
+      "quaternion": [
+        0,
+        0.7670215286355646,
+        0,
+        0.6416213638974015
+      ],
+      "end": [
+        -0.55,
+        -9
+      ]
+    },
+    "view": {
+      "camera": [
+        15,
+        9.000000000000002,
+        20
+      ],
+      "target": [
+        -8,
+        4.5,
+        -36
+      ],
+      "followsBoat": false
+    },
+    "rower": {
+      "strokePeriodSeconds": 4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        5.0416194955600795e-8,
+        3.528199869496029e-8
+      ],
+      "footErrors": [
+        4.334385079597223e-7,
+        0.000001152033844783982
+      ],
+      "skinHandErrors": [
+        0.020790874770099572,
+        0.02993690824146763
+      ],
+      "oarRotation": [
+        -0.000154438424018178,
+        -0.07582829800999658,
+        -0.023077177459707415,
+        0.9968537953231524
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.5687522807633325,
+        -0.43670366793145354,
+        3.2878850966244992
+      ],
+      "pivot": [
+        4.945010916373245,
+        1.07999986410141,
+        3.0982165264058747
+      ],
+      "tetherLength": 0.9204935108300006,
+      "tetherError": 0
+    },
+    "wind": {
+      "meshes": 6,
+      "rootVertices": 4499,
+      "time": 0,
+      "enabled": true,
+      "surfaceCompiles": 15,
+      "depthCompiles": 8
+    },
+    "lods": [
+      {
+        "near": "temple_main",
+        "far": "temple_far",
+        "distance": 36,
+        "center": [
+          9,
+          5.985652893781662,
+          -32.59000039100647
+        ],
+        "cameraDistance": 53.01692587846666,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "bell_tower",
+        "far": "bell_far",
+        "distance": 24,
+        "center": [
+          -5,
+          5.410652607679367,
+          -30.59249973297119
+        ],
+        "cameraDistance": 54.52049563176631,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "bridge_main",
+        "far": "bridge_far",
+        "distance": 24,
+        "center": [
+          -5.002999305725098,
+          1.663749948143959,
+          -15
+        ],
+        "cameraDistance": 40.97487701077572,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "maple_grove",
+        "far": "maple_far",
+        "distance": 28,
+        "center": [
+          -12.507726192474365,
+          3.9209194481372833,
+          -9.829943656921387
+        ],
+        "cameraDistance": 40.89373543842082,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "reed_bed",
+        "far": "reed_far",
+        "distance": 22,
+        "center": [
+          -2.812138080596924,
+          0.9904353469610214,
+          -9.288262844085693
+        ],
+        "cameraDistance": 35.20266650919662,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      }
+    ],
+    "staticDraws": {
+      "enabled": true,
+      "variant": 7,
+      "variants": 8,
+      "preparedVariants": 1,
+      "geometries": 8,
+      "sourceMeshes": 25
+    },
+    "moon": {
+      "progress": 1,
+      "height": -16,
+      "brightness": 0.76,
+      "visible": false,
+      "position": [
+        -227.95131238611876,
+        -16,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.377210726720207,
+        0.11918697426194597,
+        -0.9184261172318083
+      ]
+    },
+    "fog": {
+      "enabled": true,
+      "cards": 3,
+      "materials": 26,
+      "time": 0
+    },
+    "audio": {
+      "state": "running",
+      "muted": true,
+      "voices": 0,
+      "loops": 0,
+      "events": [],
+      "tracks": [
+        "environment",
+        "effects",
+        "voice",
+        "music"
+      ]
+    },
+    "bell": {
+      "emit": [
+        -5,
+        0,
+        -26
+      ],
+      "boat": [
+        3.85,
+        -0.30000001192092896,
+        0.45
+      ],
+      "arrival": 24.08203325555713
+    }
+  },
+  "finalDisposals": [
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    }
+  ],
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\accepted-flow\\video\\page@342f906d8e34c1a185f0a4d507cec9a0.webm"
+}

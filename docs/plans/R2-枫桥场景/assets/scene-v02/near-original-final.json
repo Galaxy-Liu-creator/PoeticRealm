@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "scope": "original named near nodes, packed accessor bytes, transforms, cameras, materials, embedded texture payloads and skin bindings",
+  "nodes": 128,
+  "meshNodes": 34,
+  "skinNodes": 6,
+  "beforeSHA256": "e8f653c10690aaaa0f7a97e387871b439cab4adec351c9a4fc865f597aaddf0e",
+  "afterSHA256": "f22fb8b873d61d508c7316262e9246f17c8b4c21c116141c2249632a04d0aa57",
+  "differences": []
+}

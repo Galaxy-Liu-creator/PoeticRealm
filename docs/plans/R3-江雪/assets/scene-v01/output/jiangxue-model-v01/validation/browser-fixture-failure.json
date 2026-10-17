@@ -1,0 +1,12 @@
+{
+  "fixture": "isolated authentication; real Chrome/WebGL and published Jiangxue GLB",
+  "errors": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "warnings": [],
+  "views": [],
+  "release": [],
+  "performance": [],
+  "pass": false,
+  "failure": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('body[data-page=home] #app[data-ready=ready]') to be visible\n    - waiting for navigation to finish...\n    - navigated to \"http://127.0.0.1:5187/?scene=jiangxue&lab=jiangxue&t=0#/login\"\n\n    at openAuthenticatedPage (D:\\University-Competition\\Math_Media\\PoeticRealm\\frontend\\tools\\authenticated-ui-fixture.mjs:28:69)\n    at async file:///D:/University-Competition/Math_Media/PoeticRealm/frontend/tools/verify-jiangxue-model.mjs:13:3"
+}

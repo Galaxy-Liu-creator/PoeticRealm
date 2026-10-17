@@ -1,0 +1,12 @@
+{
+  "name": "edit_screens",
+  "arguments": {
+    "projectId": "11329297360365535924",
+    "selectedScreenIds": [
+      "93d0f0c647364f5f8154707a76488bde"
+    ],
+    "deviceType": "DESKTOP",
+    "modelId": "GEMINI_3_8_FLASH",
+    "prompt": "保持现有五帧分镜方向与青黛/绢纸风格。只修复缩略图资源和小排版：目前源/目标总览江雪图片broken，白帝封面误用了枫桥。全部总览三卡用以下正确已存项目封面，不能显示损坏图片图标或alt文字，不能拿同一夜江图替代三景；不用任何新生成素材。枫桥URL=https://lh3.googleusercontent.com/aida/AEtjO1XWZawCUzSPGcp4AeUyYVWm8BUHMktv5ggBYD36pnm_103h1EfBWiR-9nGT1kdWdpOdeyAH9oknwDqR4xEDZqxz0skftvUe3eCUpF9H6GU1Rgj860liqIl3uZbqZ7fEZQP12nQR6R9KfXvqehOTY-hRn7qHwdUepbqaTBAoCubMmZHMMd7hWF4meeU-9tk8sBn05LegkWvZWzpPWbN_3g2qwV0cBwX5MHyiaziR8qleRIvyYQTN4em2eODZ 江雪URL=https://lh3.googleusercontent.com/aida/AEtjO1VmQsYmYYmcih_2FVCB5UiEBdgXXGLb-k5za4VXolf91tDe3KdAsQVnAr9dmxmjCBQ_KMqJ2o-DIvDLUznR6S4rPfaR0lLV0Vd1gogaS_2Eed65_8qA7RsP7pMDCHWoq1TnFEHQJB3esYf_XzMOhGHpdjHtSbXEB3uDZuivmDHlSYfsMV4MywHNt2j7ELjLVjSd008FHP5p5yULmigW9HKOCBSZYc9sxXqage6jv-OYD3JCDngmjFDZ2itO 白帝URL=https://lh3.googleusercontent.com/aida/AEtjO1VEu8St0B3JZT_HUeCfVSBFz3h52bGByRDAzeyn2sgi1zmQLFZ6-ZQlinkg2501pnSJNiQGUDjdtnnuePNG-yRC0UwTgKnr0-NyKQVY_FhTfJqscpBcPnJOcBjtifgbNTjb7YcFv4g0bhzkCnvWsGK1g9-kroHUVnl7gAA43cnbn2eFHHq-oPnlENezfC1rl4m0FpotEctsrPBZx-qAZOiwduzOx6EoOLsnYE27wTtUIgMF_g7mRD5rfoM。每一帧上方写0%/25%/50%/75%/100%，五帧紧接标题下，不留半页空白。火烧25%移除洞外矩形红框，保留不规则焦纸边和洞内夜江；翻页50%薄纸曲面增加自然弧度和柔影。其余画面保持，不添加工程参数和审批声明。仅输出本张分镜修订。"
+  }
+}

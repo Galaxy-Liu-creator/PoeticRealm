@@ -1,0 +1,8 @@
+{
+  "component": "bell-roof",
+  "revision": 3,
+  "ribSpacingMetres": 1.2,
+  "farTriangles": 1876,
+  "nonmanifoldEdges": 0,
+  "curveErrorMetres": 0.03542628038935991
+}

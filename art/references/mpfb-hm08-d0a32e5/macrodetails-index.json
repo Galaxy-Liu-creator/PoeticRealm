@@ -1,0 +1,1586 @@
+[
+  {
+    "name": "african-female-baby.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/african-female-baby.target.gz",
+    "sha": "957e379b8d5f9b6111c40dd3007d103de6d2c33b",
+    "size": 153673,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-female-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-baby.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/957e379b8d5f9b6111c40dd3007d103de6d2c33b",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-baby.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-female-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/957e379b8d5f9b6111c40dd3007d103de6d2c33b",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-baby.target.gz"
+    }
+  },
+  {
+    "name": "african-female-child.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/african-female-child.target.gz",
+    "sha": "ca39763758ffd726802466613ef15d1b70d00275",
+    "size": 140780,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-female-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-child.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/ca39763758ffd726802466613ef15d1b70d00275",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-child.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-female-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/ca39763758ffd726802466613ef15d1b70d00275",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-child.target.gz"
+    }
+  },
+  {
+    "name": "african-female-old.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/african-female-old.target.gz",
+    "sha": "8325de883465696e8e9af870a6ff63084b064408",
+    "size": 125676,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-female-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-old.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/8325de883465696e8e9af870a6ff63084b064408",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-old.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-female-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/8325de883465696e8e9af870a6ff63084b064408",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-old.target.gz"
+    }
+  },
+  {
+    "name": "african-female-young.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/african-female-young.target.gz",
+    "sha": "a0e31579214e23ffb6798513f85079f70b1eb88a",
+    "size": 123654,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-female-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-young.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/a0e31579214e23ffb6798513f85079f70b1eb88a",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-young.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-female-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/a0e31579214e23ffb6798513f85079f70b1eb88a",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-female-young.target.gz"
+    }
+  },
+  {
+    "name": "african-male-baby.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/african-male-baby.target.gz",
+    "sha": "2d8afbd3a987823428fc3f592a795d40a3be6545",
+    "size": 153573,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-male-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-baby.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2d8afbd3a987823428fc3f592a795d40a3be6545",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-baby.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-male-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2d8afbd3a987823428fc3f592a795d40a3be6545",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-baby.target.gz"
+    }
+  },
+  {
+    "name": "african-male-child.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/african-male-child.target.gz",
+    "sha": "99c27a03254f5ff2b24e5dde039f07506ffa0477",
+    "size": 135693,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-male-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-child.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/99c27a03254f5ff2b24e5dde039f07506ffa0477",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-child.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-male-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/99c27a03254f5ff2b24e5dde039f07506ffa0477",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-child.target.gz"
+    }
+  },
+  {
+    "name": "african-male-old.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/african-male-old.target.gz",
+    "sha": "52f833c2999def4127db26f838e5779f77cbca81",
+    "size": 127252,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-male-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-old.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/52f833c2999def4127db26f838e5779f77cbca81",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-old.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-male-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/52f833c2999def4127db26f838e5779f77cbca81",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-old.target.gz"
+    }
+  },
+  {
+    "name": "african-male-young.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/african-male-young.target.gz",
+    "sha": "9766ea5744d25cbe5fac564ec5c2a67c2020d78e",
+    "size": 132860,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-male-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-young.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/9766ea5744d25cbe5fac564ec5c2a67c2020d78e",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-young.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/african-male-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/9766ea5744d25cbe5fac564ec5c2a67c2020d78e",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/african-male-young.target.gz"
+    }
+  },
+  {
+    "name": "asian-female-baby.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/asian-female-baby.target.gz",
+    "sha": "2512fcf817b163b48d4aba96624a821966396bd4",
+    "size": 153644,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-female-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-baby.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2512fcf817b163b48d4aba96624a821966396bd4",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-baby.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-female-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2512fcf817b163b48d4aba96624a821966396bd4",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-baby.target.gz"
+    }
+  },
+  {
+    "name": "asian-female-child.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/asian-female-child.target.gz",
+    "sha": "64929080ba7a34f6551c918391bf1973764608b9",
+    "size": 144489,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-female-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-child.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/64929080ba7a34f6551c918391bf1973764608b9",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-child.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-female-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/64929080ba7a34f6551c918391bf1973764608b9",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-child.target.gz"
+    }
+  },
+  {
+    "name": "asian-female-old.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/asian-female-old.target.gz",
+    "sha": "ef1e37933901962b9f45c4aa41198741f67becc7",
+    "size": 135183,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-female-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-old.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/ef1e37933901962b9f45c4aa41198741f67becc7",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-old.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-female-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/ef1e37933901962b9f45c4aa41198741f67becc7",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-old.target.gz"
+    }
+  },
+  {
+    "name": "asian-female-young.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/asian-female-young.target.gz",
+    "sha": "cb90d8b5110752170f84dbff9e1ac4513edc3bbf",
+    "size": 135687,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-female-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-young.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/cb90d8b5110752170f84dbff9e1ac4513edc3bbf",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-young.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-female-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/cb90d8b5110752170f84dbff9e1ac4513edc3bbf",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-female-young.target.gz"
+    }
+  },
+  {
+    "name": "asian-male-baby.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/asian-male-baby.target.gz",
+    "sha": "b673f1e852be79a07795fd6f5e6e2ea279bd7817",
+    "size": 153662,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-male-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-baby.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/b673f1e852be79a07795fd6f5e6e2ea279bd7817",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-baby.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-male-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/b673f1e852be79a07795fd6f5e6e2ea279bd7817",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-baby.target.gz"
+    }
+  },
+  {
+    "name": "asian-male-child.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/asian-male-child.target.gz",
+    "sha": "c60c929032298fb12e3254b0bf14cd32aee03d3c",
+    "size": 140790,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-male-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-child.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/c60c929032298fb12e3254b0bf14cd32aee03d3c",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-child.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-male-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/c60c929032298fb12e3254b0bf14cd32aee03d3c",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-child.target.gz"
+    }
+  },
+  {
+    "name": "asian-male-old.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/asian-male-old.target.gz",
+    "sha": "e142a2b4327ff25a6b1b48b99d3e9f7db8de5ee8",
+    "size": 130281,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-male-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-old.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e142a2b4327ff25a6b1b48b99d3e9f7db8de5ee8",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-old.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-male-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e142a2b4327ff25a6b1b48b99d3e9f7db8de5ee8",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-old.target.gz"
+    }
+  },
+  {
+    "name": "asian-male-young.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/asian-male-young.target.gz",
+    "sha": "bdf5b7e7c91df84ef277e312d9809ee62475f2c4",
+    "size": 130005,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-male-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-young.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/bdf5b7e7c91df84ef277e312d9809ee62475f2c4",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-young.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/asian-male-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/bdf5b7e7c91df84ef277e312d9809ee62475f2c4",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/asian-male-young.target.gz"
+    }
+  },
+  {
+    "name": "caucasian-female-baby.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/caucasian-female-baby.target.gz",
+    "sha": "1e8ad398b5332ac7f40461c5938e5b656ab85c46",
+    "size": 153652,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-female-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-baby.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1e8ad398b5332ac7f40461c5938e5b656ab85c46",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-baby.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-female-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1e8ad398b5332ac7f40461c5938e5b656ab85c46",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-baby.target.gz"
+    }
+  },
+  {
+    "name": "caucasian-female-child.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/caucasian-female-child.target.gz",
+    "sha": "714391dfda0c6eac9b8e2125e6b82cfcd4a76270",
+    "size": 142183,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-female-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-child.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/714391dfda0c6eac9b8e2125e6b82cfcd4a76270",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-child.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-female-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/714391dfda0c6eac9b8e2125e6b82cfcd4a76270",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-child.target.gz"
+    }
+  },
+  {
+    "name": "caucasian-female-old.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/caucasian-female-old.target.gz",
+    "sha": "6bcb4ae250919d5f177da08381229a61ab31cdff",
+    "size": 116944,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-female-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-old.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/6bcb4ae250919d5f177da08381229a61ab31cdff",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-old.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-female-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/6bcb4ae250919d5f177da08381229a61ab31cdff",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-old.target.gz"
+    }
+  },
+  {
+    "name": "caucasian-female-young.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/caucasian-female-young.target.gz",
+    "sha": "32634e46613fef3e3b56e52c366ba0322a3c084b",
+    "size": 127369,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-female-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-young.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/32634e46613fef3e3b56e52c366ba0322a3c084b",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-young.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-female-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/32634e46613fef3e3b56e52c366ba0322a3c084b",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-female-young.target.gz"
+    }
+  },
+  {
+    "name": "caucasian-male-baby.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/caucasian-male-baby.target.gz",
+    "sha": "f575bc31b379d3edb21697fbcb9dd8829800da9f",
+    "size": 153631,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-male-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-baby.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f575bc31b379d3edb21697fbcb9dd8829800da9f",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-baby.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-male-baby.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f575bc31b379d3edb21697fbcb9dd8829800da9f",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-baby.target.gz"
+    }
+  },
+  {
+    "name": "caucasian-male-child.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/caucasian-male-child.target.gz",
+    "sha": "2e2d044806fe6200cd94995a58ae559b1cf68250",
+    "size": 137652,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-male-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-child.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2e2d044806fe6200cd94995a58ae559b1cf68250",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-child.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-male-child.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2e2d044806fe6200cd94995a58ae559b1cf68250",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-child.target.gz"
+    }
+  },
+  {
+    "name": "caucasian-male-old.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/caucasian-male-old.target.gz",
+    "sha": "f14d7c89660d73c12758623634c4d4f9d0160fb2",
+    "size": 112944,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-male-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-old.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f14d7c89660d73c12758623634c4d4f9d0160fb2",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-old.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-male-old.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f14d7c89660d73c12758623634c4d4f9d0160fb2",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-old.target.gz"
+    }
+  },
+  {
+    "name": "caucasian-male-young.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/caucasian-male-young.target.gz",
+    "sha": "a422546d7026c93e17f04679249f5c7e2d3b7800",
+    "size": 127922,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-male-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-young.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/a422546d7026c93e17f04679249f5c7e2d3b7800",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-young.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/caucasian-male-young.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/a422546d7026c93e17f04679249f5c7e2d3b7800",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/caucasian-male-young.target.gz"
+    }
+  },
+  {
+    "name": "height",
+    "path": "src/mpfb/data/targets/macrodetails/height",
+    "sha": "8ea289ab1c4125c183d86034843ca698c042f996",
+    "size": 0,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/height?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/tree/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/height",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/trees/8ea289ab1c4125c183d86034843ca698c042f996",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/height?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/trees/8ea289ab1c4125c183d86034843ca698c042f996",
+      "html": "https://github.com/makehumancommunity/mpfb2/tree/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/height"
+    }
+  },
+  {
+    "name": "macro.json",
+    "path": "src/mpfb/data/targets/macrodetails/macro.json",
+    "sha": "13a841e528a356848b9118b51e512f720bf56005",
+    "size": 4356,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/macro.json?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/macro.json",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/13a841e528a356848b9118b51e512f720bf56005",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/macro.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/macro.json?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/13a841e528a356848b9118b51e512f720bf56005",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/macro.json"
+    }
+  },
+  {
+    "name": "proportions",
+    "path": "src/mpfb/data/targets/macrodetails/proportions",
+    "sha": "3af621dfbe92cd7a8ff03cf23eeee7fa4967b4ee",
+    "size": 0,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/proportions?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/tree/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/proportions",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/trees/3af621dfbe92cd7a8ff03cf23eeee7fa4967b4ee",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/proportions?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/trees/3af621dfbe92cd7a8ff03cf23eeee7fa4967b4ee",
+      "html": "https://github.com/makehumancommunity/mpfb2/tree/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/proportions"
+    }
+  },
+  {
+    "name": "universal-female-baby-averagemuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-averageweight.target.gz",
+    "sha": "86c1158ddf5f36127cdc8ef63f4ec1a91cbc30ae",
+    "size": 77,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/86c1158ddf5f36127cdc8ef63f4ec1a91cbc30ae",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/86c1158ddf5f36127cdc8ef63f4ec1a91cbc30ae",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-baby-averagemuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-maxweight.target.gz",
+    "sha": "a52446d9f92515322004df818ade4979dee0051c",
+    "size": 20951,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/a52446d9f92515322004df818ade4979dee0051c",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/a52446d9f92515322004df818ade4979dee0051c",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-baby-averagemuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-minweight.target.gz",
+    "sha": "6d4531fc28cf5b1994124d6fc7566cd2a66b197c",
+    "size": 26079,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/6d4531fc28cf5b1994124d6fc7566cd2a66b197c",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/6d4531fc28cf5b1994124d6fc7566cd2a66b197c",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-averagemuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-baby-maxmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-averageweight.target.gz",
+    "sha": "9477f9318866dc4b969220af1cafb3a25fe0031e",
+    "size": 27871,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/9477f9318866dc4b969220af1cafb3a25fe0031e",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/9477f9318866dc4b969220af1cafb3a25fe0031e",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-baby-maxmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-maxweight.target.gz",
+    "sha": "45aac455138827170543126b56d56fb98fd189ab",
+    "size": 29530,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/45aac455138827170543126b56d56fb98fd189ab",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/45aac455138827170543126b56d56fb98fd189ab",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-baby-maxmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-minweight.target.gz",
+    "sha": "5b0a86bc6dc85821cc127eacb6eafe55e7c9e407",
+    "size": 28556,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/5b0a86bc6dc85821cc127eacb6eafe55e7c9e407",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/5b0a86bc6dc85821cc127eacb6eafe55e7c9e407",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-maxmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-baby-minmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-averageweight.target.gz",
+    "sha": "4f329f1d470633473543d0960d03545271083010",
+    "size": 11728,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4f329f1d470633473543d0960d03545271083010",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4f329f1d470633473543d0960d03545271083010",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-baby-minmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-maxweight.target.gz",
+    "sha": "2c88379de614c4428e88ab6075f19523dcc44b20",
+    "size": 37046,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2c88379de614c4428e88ab6075f19523dcc44b20",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2c88379de614c4428e88ab6075f19523dcc44b20",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-baby-minmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-minweight.target.gz",
+    "sha": "499a7ac1a62b89e96b8f597f3727942277010435",
+    "size": 64355,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/499a7ac1a62b89e96b8f597f3727942277010435",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/499a7ac1a62b89e96b8f597f3727942277010435",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-baby-minmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-averagemuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-averageweight.target.gz",
+    "sha": "64a072fa6edabb033c8e8b445dfde4cbf1d8d13d",
+    "size": 78,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/64a072fa6edabb033c8e8b445dfde4cbf1d8d13d",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/64a072fa6edabb033c8e8b445dfde4cbf1d8d13d",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-averagemuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-maxweight.target.gz",
+    "sha": "92262ba2704a43d8b02cc230621d457636db447e",
+    "size": 37187,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/92262ba2704a43d8b02cc230621d457636db447e",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/92262ba2704a43d8b02cc230621d457636db447e",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-averagemuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-minweight.target.gz",
+    "sha": "031e69d72d04fedebadd3aa1c9fdfa99fbeaaf0f",
+    "size": 40750,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/031e69d72d04fedebadd3aa1c9fdfa99fbeaaf0f",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/031e69d72d04fedebadd3aa1c9fdfa99fbeaaf0f",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-averagemuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-maxmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-averageweight.target.gz",
+    "sha": "a90ce99a7dda8b08a6016ef9361958d85857f9b3",
+    "size": 42357,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/a90ce99a7dda8b08a6016ef9361958d85857f9b3",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/a90ce99a7dda8b08a6016ef9361958d85857f9b3",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-maxmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-maxweight.target.gz",
+    "sha": "ce50d8d85b970de5c4906aae00511e9085dddf64",
+    "size": 39344,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/ce50d8d85b970de5c4906aae00511e9085dddf64",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/ce50d8d85b970de5c4906aae00511e9085dddf64",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-maxmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-minweight.target.gz",
+    "sha": "42ecbafc11c801a3732804d6acdf6fd106776516",
+    "size": 39885,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/42ecbafc11c801a3732804d6acdf6fd106776516",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/42ecbafc11c801a3732804d6acdf6fd106776516",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-maxmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-minmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-averageweight.target.gz",
+    "sha": "094434a53e9cc97ffdd2d8542d9486a9d5d3e948",
+    "size": 65542,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/094434a53e9cc97ffdd2d8542d9486a9d5d3e948",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/094434a53e9cc97ffdd2d8542d9486a9d5d3e948",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-minmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-maxweight.target.gz",
+    "sha": "b6b165d4f6fa630fff87b044d7ac9f5442c2cda4",
+    "size": 76352,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/b6b165d4f6fa630fff87b044d7ac9f5442c2cda4",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/b6b165d4f6fa630fff87b044d7ac9f5442c2cda4",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-child-minmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-minweight.target.gz",
+    "sha": "688c7e46dbad987b4dc435b3574f1b845b22dfad",
+    "size": 69819,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/688c7e46dbad987b4dc435b3574f1b845b22dfad",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/688c7e46dbad987b4dc435b3574f1b845b22dfad",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-child-minmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-averagemuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-averageweight.target.gz",
+    "sha": "32c60988a64ff1b3f2907ff8181a210c0ac68978",
+    "size": 76,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/32c60988a64ff1b3f2907ff8181a210c0ac68978",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/32c60988a64ff1b3f2907ff8181a210c0ac68978",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-averagemuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-maxweight.target.gz",
+    "sha": "828e1bddf23665f272058da74bf949552d5c14d8",
+    "size": 45526,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/828e1bddf23665f272058da74bf949552d5c14d8",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/828e1bddf23665f272058da74bf949552d5c14d8",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-averagemuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-minweight.target.gz",
+    "sha": "5608201b3fc715341d764f106da86023d69922cd",
+    "size": 46165,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/5608201b3fc715341d764f106da86023d69922cd",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/5608201b3fc715341d764f106da86023d69922cd",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-averagemuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-maxmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-averageweight.target.gz",
+    "sha": "f7316f47424f29cc4f1effedb9b15517b0edc321",
+    "size": 42480,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f7316f47424f29cc4f1effedb9b15517b0edc321",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f7316f47424f29cc4f1effedb9b15517b0edc321",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-maxmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-maxweight.target.gz",
+    "sha": "b9e3aae90bca0d64393de9329e8a66aea1382165",
+    "size": 51294,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/b9e3aae90bca0d64393de9329e8a66aea1382165",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/b9e3aae90bca0d64393de9329e8a66aea1382165",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-maxmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-minweight.target.gz",
+    "sha": "57b33356986b2aa82eaf0fdcc8855a95c894146c",
+    "size": 45900,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/57b33356986b2aa82eaf0fdcc8855a95c894146c",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/57b33356986b2aa82eaf0fdcc8855a95c894146c",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-maxmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-minmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-averageweight.target.gz",
+    "sha": "74fb276d2c44dd3eb848296859efbe446f64cf2b",
+    "size": 28220,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/74fb276d2c44dd3eb848296859efbe446f64cf2b",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/74fb276d2c44dd3eb848296859efbe446f64cf2b",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-minmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-maxweight.target.gz",
+    "sha": "d26a9380b3b0a36ae3a863b8b90309d464a5c01f",
+    "size": 63291,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/d26a9380b3b0a36ae3a863b8b90309d464a5c01f",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/d26a9380b3b0a36ae3a863b8b90309d464a5c01f",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-old-minmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-minweight.target.gz",
+    "sha": "e7a39b72fc6a2e3d8dcc3c20f126d328e8b333df",
+    "size": 72680,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e7a39b72fc6a2e3d8dcc3c20f126d328e8b333df",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e7a39b72fc6a2e3d8dcc3c20f126d328e8b333df",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-old-minmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-averagemuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-averageweight.target.gz",
+    "sha": "7a9c58f432236cd107ac935ebbe5a18ae2ef0ff4",
+    "size": 78,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/7a9c58f432236cd107ac935ebbe5a18ae2ef0ff4",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/7a9c58f432236cd107ac935ebbe5a18ae2ef0ff4",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-averagemuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-maxweight.target.gz",
+    "sha": "7f0a9c5770b8079854f52bee80275596fc60c5ae",
+    "size": 36449,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/7f0a9c5770b8079854f52bee80275596fc60c5ae",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/7f0a9c5770b8079854f52bee80275596fc60c5ae",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-averagemuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-minweight.target.gz",
+    "sha": "f539b2fb3a1b837cafbae1dfac3496de0446229b",
+    "size": 44735,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f539b2fb3a1b837cafbae1dfac3496de0446229b",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f539b2fb3a1b837cafbae1dfac3496de0446229b",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-averagemuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-maxmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-averageweight.target.gz",
+    "sha": "29bf699d3042888ea1d22fd92ea06979a9fe8d12",
+    "size": 41387,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/29bf699d3042888ea1d22fd92ea06979a9fe8d12",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/29bf699d3042888ea1d22fd92ea06979a9fe8d12",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-maxmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-maxweight.target.gz",
+    "sha": "adf50eaaf78bb81272d75711d979b217c9db2885",
+    "size": 51400,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/adf50eaaf78bb81272d75711d979b217c9db2885",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/adf50eaaf78bb81272d75711d979b217c9db2885",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-maxmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-minweight.target.gz",
+    "sha": "2ee0c7029dc045b1a59ffd8aa6640bad9502f2cc",
+    "size": 45027,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2ee0c7029dc045b1a59ffd8aa6640bad9502f2cc",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2ee0c7029dc045b1a59ffd8aa6640bad9502f2cc",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-maxmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-minmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-averageweight.target.gz",
+    "sha": "1161d8b4dad74f35240a2cbfd60de27ea4c76f13",
+    "size": 27488,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1161d8b4dad74f35240a2cbfd60de27ea4c76f13",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1161d8b4dad74f35240a2cbfd60de27ea4c76f13",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-minmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-maxweight.target.gz",
+    "sha": "84b7b41440d25abd0889eae4c932ffcda2cced83",
+    "size": 64521,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/84b7b41440d25abd0889eae4c932ffcda2cced83",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/84b7b41440d25abd0889eae4c932ffcda2cced83",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-female-young-minmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-minweight.target.gz",
+    "sha": "21c179e3a0af66672b89717e9fefcb7415105bc8",
+    "size": 99371,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/21c179e3a0af66672b89717e9fefcb7415105bc8",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/21c179e3a0af66672b89717e9fefcb7415105bc8",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-female-young-minmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-averagemuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-averageweight.target.gz",
+    "sha": "1bc3c04b2cf1471a374c233d4039fc1a7b73a310",
+    "size": 75,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1bc3c04b2cf1471a374c233d4039fc1a7b73a310",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1bc3c04b2cf1471a374c233d4039fc1a7b73a310",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-averagemuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-maxweight.target.gz",
+    "sha": "dac9c7d7c837b3357730b10027004c99344b6ac5",
+    "size": 21150,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/dac9c7d7c837b3357730b10027004c99344b6ac5",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/dac9c7d7c837b3357730b10027004c99344b6ac5",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-averagemuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-minweight.target.gz",
+    "sha": "8f28cc170574493907a0bfc6981393ad4bc4f0d3",
+    "size": 26158,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/8f28cc170574493907a0bfc6981393ad4bc4f0d3",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/8f28cc170574493907a0bfc6981393ad4bc4f0d3",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-averagemuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-maxmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-averageweight.target.gz",
+    "sha": "e121b5dd09e52f13aee1713ecf0fc508baa8df81",
+    "size": 27962,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e121b5dd09e52f13aee1713ecf0fc508baa8df81",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e121b5dd09e52f13aee1713ecf0fc508baa8df81",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-maxmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-maxweight.target.gz",
+    "sha": "6125767306e8f24da32eb888665ab4fa2a8e0ef4",
+    "size": 29538,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/6125767306e8f24da32eb888665ab4fa2a8e0ef4",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/6125767306e8f24da32eb888665ab4fa2a8e0ef4",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-maxmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-minweight.target.gz",
+    "sha": "8e35b05a01518fce656070726241f36819f3f686",
+    "size": 28503,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/8e35b05a01518fce656070726241f36819f3f686",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/8e35b05a01518fce656070726241f36819f3f686",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-maxmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-minmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-averageweight.target.gz",
+    "sha": "92aa0485be41fb182cf27cc8444dcc1178bfc0fc",
+    "size": 11745,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/92aa0485be41fb182cf27cc8444dcc1178bfc0fc",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/92aa0485be41fb182cf27cc8444dcc1178bfc0fc",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-minmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-maxweight.target.gz",
+    "sha": "2a6212ab6233b855a8a5cb65f718d90d09999a0d",
+    "size": 37158,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2a6212ab6233b855a8a5cb65f718d90d09999a0d",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2a6212ab6233b855a8a5cb65f718d90d09999a0d",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-baby-minmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-minweight.target.gz",
+    "sha": "1db963074119d3544997a753957730e9ff91f7fe",
+    "size": 64363,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1db963074119d3544997a753957730e9ff91f7fe",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1db963074119d3544997a753957730e9ff91f7fe",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-baby-minmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-averagemuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-averageweight.target.gz",
+    "sha": "5dc1292e32c74fc5ca4817eb0c88bb87ea3e3a0f",
+    "size": 76,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/5dc1292e32c74fc5ca4817eb0c88bb87ea3e3a0f",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/5dc1292e32c74fc5ca4817eb0c88bb87ea3e3a0f",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-averagemuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-maxweight.target.gz",
+    "sha": "59487cf9e2323b78d657f2524dda97fb17800a8e",
+    "size": 40761,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/59487cf9e2323b78d657f2524dda97fb17800a8e",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/59487cf9e2323b78d657f2524dda97fb17800a8e",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-averagemuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-minweight.target.gz",
+    "sha": "e5e025e365f4d1ec3d873eb6ef56a06ad1a7507b",
+    "size": 39966,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e5e025e365f4d1ec3d873eb6ef56a06ad1a7507b",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e5e025e365f4d1ec3d873eb6ef56a06ad1a7507b",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-averagemuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-maxmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-averageweight.target.gz",
+    "sha": "0ff7fad53f08f8f3fb84fa3ec72ed39a94fc832e",
+    "size": 45422,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/0ff7fad53f08f8f3fb84fa3ec72ed39a94fc832e",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/0ff7fad53f08f8f3fb84fa3ec72ed39a94fc832e",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-maxmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-maxweight.target.gz",
+    "sha": "855e7a8e4beb53982dff042660a6bcd9eb3a5235",
+    "size": 49916,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/855e7a8e4beb53982dff042660a6bcd9eb3a5235",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/855e7a8e4beb53982dff042660a6bcd9eb3a5235",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-maxmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-minweight.target.gz",
+    "sha": "93ef35bb747660fed76c9b30e1cde855b8a9909b",
+    "size": 44626,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/93ef35bb747660fed76c9b30e1cde855b8a9909b",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/93ef35bb747660fed76c9b30e1cde855b8a9909b",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-maxmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-minmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-averageweight.target.gz",
+    "sha": "11e5c4b0e80e9620990ea0990793bc04896bb000",
+    "size": 42912,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/11e5c4b0e80e9620990ea0990793bc04896bb000",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/11e5c4b0e80e9620990ea0990793bc04896bb000",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-minmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-maxweight.target.gz",
+    "sha": "d0ef3715e8e1c2a207210f8a9d39a2f5aa8c0c6c",
+    "size": 70825,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/d0ef3715e8e1c2a207210f8a9d39a2f5aa8c0c6c",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/d0ef3715e8e1c2a207210f8a9d39a2f5aa8c0c6c",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-child-minmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-minweight.target.gz",
+    "sha": "1c1be87d0f9f94290bd20662be7abf5b0f5b6300",
+    "size": 63047,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1c1be87d0f9f94290bd20662be7abf5b0f5b6300",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/1c1be87d0f9f94290bd20662be7abf5b0f5b6300",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-child-minmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-averagemuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-averageweight.target.gz",
+    "sha": "2f566bec26a14011818209bbf0867d1309d79805",
+    "size": 74,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2f566bec26a14011818209bbf0867d1309d79805",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/2f566bec26a14011818209bbf0867d1309d79805",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-averagemuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-maxweight.target.gz",
+    "sha": "4bd9bcd26553aa93101913c086d06e3c68d8dda6",
+    "size": 44277,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4bd9bcd26553aa93101913c086d06e3c68d8dda6",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4bd9bcd26553aa93101913c086d06e3c68d8dda6",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-averagemuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-minweight.target.gz",
+    "sha": "d9ea4bbc329476a7c8249fda815ed0f2dab54e5a",
+    "size": 43380,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/d9ea4bbc329476a7c8249fda815ed0f2dab54e5a",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/d9ea4bbc329476a7c8249fda815ed0f2dab54e5a",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-averagemuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-maxmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-averageweight.target.gz",
+    "sha": "48b761cd5b916a12c7cd7cce3b481ca5efc4fd61",
+    "size": 46209,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/48b761cd5b916a12c7cd7cce3b481ca5efc4fd61",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/48b761cd5b916a12c7cd7cce3b481ca5efc4fd61",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-maxmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-maxweight.target.gz",
+    "sha": "968e3407ace8c360fb2f437b3bb023080f979512",
+    "size": 57285,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/968e3407ace8c360fb2f437b3bb023080f979512",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/968e3407ace8c360fb2f437b3bb023080f979512",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-maxmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-minweight.target.gz",
+    "sha": "4b8b77aefd4312af7f63766b564793dc22fdee72",
+    "size": 47390,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4b8b77aefd4312af7f63766b564793dc22fdee72",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4b8b77aefd4312af7f63766b564793dc22fdee72",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-maxmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-minmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-averageweight.target.gz",
+    "sha": "c394cf3034b3f6ba0f7bf240ed31e6fd8a3a7418",
+    "size": 44677,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/c394cf3034b3f6ba0f7bf240ed31e6fd8a3a7418",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/c394cf3034b3f6ba0f7bf240ed31e6fd8a3a7418",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-minmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-maxweight.target.gz",
+    "sha": "7cf4ea4323d80f00c81563de907d01a8a158888d",
+    "size": 77214,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/7cf4ea4323d80f00c81563de907d01a8a158888d",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/7cf4ea4323d80f00c81563de907d01a8a158888d",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-old-minmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-minweight.target.gz",
+    "sha": "264f2175e672ca824b9df510f81310bd8c8200d9",
+    "size": 59002,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/264f2175e672ca824b9df510f81310bd8c8200d9",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/264f2175e672ca824b9df510f81310bd8c8200d9",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-old-minmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-averagemuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz",
+    "sha": "4cc4b83c564a121719ce45f0389e50b01932f358",
+    "size": 76,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4cc4b83c564a121719ce45f0389e50b01932f358",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4cc4b83c564a121719ce45f0389e50b01932f358",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-averagemuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-maxweight.target.gz",
+    "sha": "e6e69daba705f579b506c3898d035be83e1675a4",
+    "size": 45230,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e6e69daba705f579b506c3898d035be83e1675a4",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/e6e69daba705f579b506c3898d035be83e1675a4",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-averagemuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-minweight.target.gz",
+    "sha": "af8ca59347c0ad03e79a2bd4a0c8888d222544a8",
+    "size": 42696,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/af8ca59347c0ad03e79a2bd4a0c8888d222544a8",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/af8ca59347c0ad03e79a2bd4a0c8888d222544a8",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-maxmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-averageweight.target.gz",
+    "sha": "f25c95bed371d2e03eec1b43e61d47f8c658c21e",
+    "size": 45597,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f25c95bed371d2e03eec1b43e61d47f8c658c21e",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/f25c95bed371d2e03eec1b43e61d47f8c658c21e",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-maxmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-maxweight.target.gz",
+    "sha": "7f326807177258ad26fa597978e19b5c12002014",
+    "size": 57195,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/7f326807177258ad26fa597978e19b5c12002014",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/7f326807177258ad26fa597978e19b5c12002014",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-maxmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-minweight.target.gz",
+    "sha": "32d59b4ccc5039ad69cba25fdd05d201d48e3a56",
+    "size": 47278,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/32d59b4ccc5039ad69cba25fdd05d201d48e3a56",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/32d59b4ccc5039ad69cba25fdd05d201d48e3a56",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-maxmuscle-minweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-minmuscle-averageweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-averageweight.target.gz",
+    "sha": "4f1c7b62b89d821fa190f3d0aa81d6dfe3cfecfe",
+    "size": 46890,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-averageweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4f1c7b62b89d821fa190f3d0aa81d6dfe3cfecfe",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-averageweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-averageweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/4f1c7b62b89d821fa190f3d0aa81d6dfe3cfecfe",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-averageweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-minmuscle-maxweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-maxweight.target.gz",
+    "sha": "11f42bfa619409a3ab2dbdb6c6e438b51bb81979",
+    "size": 77242,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-maxweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/11f42bfa619409a3ab2dbdb6c6e438b51bb81979",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-maxweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-maxweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/11f42bfa619409a3ab2dbdb6c6e438b51bb81979",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-maxweight.target.gz"
+    }
+  },
+  {
+    "name": "universal-male-young-minmuscle-minweight.target.gz",
+    "path": "src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-minweight.target.gz",
+    "sha": "0653cf226eeaeada88168ad6aa783b7395241e5a",
+    "size": 58855,
+    "url": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+    "html_url": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-minweight.target.gz",
+    "git_url": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/0653cf226eeaeada88168ad6aa783b7395241e5a",
+    "download_url": "https://raw.githubusercontent.com/makehumancommunity/mpfb2/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-minweight.target.gz",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/makehumancommunity/mpfb2/contents/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-minweight.target.gz?ref=d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "git": "https://api.github.com/repos/makehumancommunity/mpfb2/git/blobs/0653cf226eeaeada88168ad6aa783b7395241e5a",
+      "html": "https://github.com/makehumancommunity/mpfb2/blob/d0a32e57a7f915cb2f2b95410e2117648c7bbb7e/src/mpfb/data/targets/macrodetails/universal-male-young-minmuscle-minweight.target.gz"
+    }
+  }
+]

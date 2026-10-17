@@ -1,0 +1,34 @@
+{
+  "checks": [
+    "hover pauses the entire aligned grid",
+    "hero stops offscreen and resumes",
+    "simulated visibilitychange stops application RAF; restore resumes without catching up",
+    "three continuous entries commit only at completion and release canvas",
+    "keyboard entry and Esc restore focus and source",
+    "failed image keeps source and retry succeeds",
+    "cancel during actual pending request unlocks source; late completion stays cancelled",
+    "rapid requests share one transaction; route changes cancel it",
+    "live reduced-motion change stops atmosphere and skips reveal after preparation",
+    "unavailable WebGL retains static UI and completes CSS fallback"
+  ],
+  "errors": [],
+  "complete": true,
+  "timeline": [
+    {
+      "scene": "fengqiao",
+      "startedMs": 6656.8361,
+      "finishedMs": 8551.781799999999
+    },
+    {
+      "scene": "jiangxue",
+      "startedMs": 9396.4456,
+      "finishedMs": 11867.9712
+    },
+    {
+      "scene": "baidicheng",
+      "startedMs": 13874.2533,
+      "finishedMs": 15785.650800000001
+    }
+  ],
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\docs\\plans\\R2-动态特效\\assets\\fire-v2\\regression\\video\\page@d022ee8b497d2b7a1cba45992d84447c.webm"
+}

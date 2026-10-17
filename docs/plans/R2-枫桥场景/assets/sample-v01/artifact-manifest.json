@@ -1,0 +1,46 @@
+{
+  "recordedOn": "2026-10-06",
+  "contractVersion": "0.2",
+  "scope": "quality-sample",
+  "evidenceRevision": "v11-final",
+  "files": [
+    {
+      "path": "frontend/public/assets/models/fengqiao/sample_v01.glb",
+      "bytes": 9294744,
+      "sha256": "37540f5d04a5829c99a03b4ed802478a21bd2ec1e36895706ced132a5720caeb"
+    },
+    {
+      "path": "art/blender/fengqiao-sample-v01.blend",
+      "sha256": "694b8394942943178ba1239bb1005f7c7870a2418df2bc051393d352edc0d0f6"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v01/source.webm",
+      "sha256": "0c58b646021fb1615b0197f7f3dfb529ba5542bc334d8c46db59d5cb3c730aac"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v01/sample-preview.mp4",
+      "bytes": 678665,
+      "sha256": "c5781103631b28b94d9d4a53d14fd49d734e91c2b43609beb46a2b0993f0e0dd"
+    }
+  ],
+  "video": {
+    "sourceDurationSeconds": 11.92,
+    "trimStartSeconds": 3.2,
+    "trimEndSeconds": 11.6,
+    "previewDurationSeconds": 8.4,
+    "dimensions": [1440, 900],
+    "fps": 25,
+    "speed": 1,
+    "audio": false
+  },
+  "blender": {
+    "version": "5.1.1",
+    "mcpServerVersion": "2.1.1",
+    "addonVersion": "1.7",
+    "protocol": 11,
+    "scene": "fengqiao_quality_v01",
+    "sceneObjectCount": 18,
+    "exportNodeCount": 14,
+    "telemetry": false
+  }
+}

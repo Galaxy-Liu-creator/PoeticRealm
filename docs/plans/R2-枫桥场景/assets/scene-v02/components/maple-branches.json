@@ -1,0 +1,39 @@
+{
+  "component": "maple-branches",
+  "rows": [
+    {
+      "source": "maple_grove_wood_aged",
+      "far": "maple_far_wood_aged",
+      "nearTriangles": 2256,
+      "farTriangles": 1466,
+      "ratio": 0.65,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.001861572265625,
+      "nearBounds": [
+        [
+          -20.430917739868164,
+          -0.8818387985229492,
+          0.6806989312171936
+        ],
+        [
+          -4.652878284454346,
+          20.515460968017578,
+          6.987918376922607
+        ]
+      ],
+      "farBounds": [
+        [
+          -20.430171966552734,
+          -0.8807544708251953,
+          0.6806989312171936
+        ],
+        [
+          -4.653487682342529,
+          20.51441192626953,
+          6.986056804656982
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

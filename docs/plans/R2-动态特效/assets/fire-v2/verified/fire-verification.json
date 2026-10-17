@@ -1,0 +1,177 @@
+{
+  "complete": true,
+  "checks": [
+    "visible animated ignition precedes the paper opening",
+    "early flames change while the source paper remains closed",
+    "hot flames follow all sides of the opening throughout the burn",
+    "final frame removes fire, commits the target and releases the overlay",
+    "1920x1080 actual playback remains smooth",
+    "unmodified live playback recorded without page exceptions"
+  ],
+  "frames": [
+    {
+      "progress": 0,
+      "warm": 0,
+      "visible": 0,
+      "quadrants": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fingerprint": 523726789,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.03,
+      "warm": 2526,
+      "visible": 3523,
+      "quadrants": [
+        140,
+        109,
+        1112,
+        1165
+      ],
+      "fingerprint": 3443591489,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.06,
+      "warm": 2548,
+      "visible": 3518,
+      "quadrants": [
+        134,
+        104,
+        1150,
+        1160
+      ],
+      "fingerprint": 3601237682,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.09,
+      "warm": 2552,
+      "visible": 3566,
+      "quadrants": [
+        134,
+        107,
+        1167,
+        1144
+      ],
+      "fingerprint": 2508846715,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.1,
+      "warm": 2571,
+      "visible": 3568,
+      "quadrants": [
+        137,
+        107,
+        1191,
+        1136
+      ],
+      "fingerprint": 3767271899,
+      "openingExtent": 0,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.15,
+      "warm": 7736,
+      "visible": 12152,
+      "quadrants": [
+        1399,
+        1011,
+        2958,
+        2368
+      ],
+      "fingerprint": 888566389,
+      "openingExtent": 47.89587394546633,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.25,
+      "warm": 23316,
+      "visible": 43043,
+      "quadrants": [
+        5654,
+        6062,
+        5821,
+        5779
+      ],
+      "fingerprint": 227125520,
+      "openingExtent": 179.10792958437105,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.5,
+      "warm": 50027,
+      "visible": 98271,
+      "quadrants": [
+        12616,
+        13258,
+        11476,
+        12677
+      ],
+      "fingerprint": 2660328385,
+      "openingExtent": 454.4035321660693,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.75,
+      "warm": 32596,
+      "visible": 66893,
+      "quadrants": [
+        9173,
+        8888,
+        6342,
+        8193
+      ],
+      "fingerprint": 3874343210,
+      "openingExtent": 684.339021088678,
+      "glError": 0,
+      "route": ""
+    },
+    {
+      "progress": 0.99,
+      "warm": 0,
+      "visible": 0,
+      "quadrants": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "fingerprint": 523726789,
+      "openingExtent": 877.3475515216076,
+      "glError": 0,
+      "route": ""
+    }
+  ],
+  "errors": [],
+  "playback": {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "renderer": null,
+    "frames": 88,
+    "duration": 1600.1000000000004,
+    "p50": 16.699999999999818,
+    "p95": 33.30000000000018,
+    "over50": 1
+  },
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\docs\\plans\\R2-动态特效\\assets\\fire-v2\\verified\\video\\page@1cb2991d8ee342840227d49b8267c697.webm"
+}

@@ -1,0 +1,39 @@
+{
+  "component": "temple-frame",
+  "rows": [
+    {
+      "source": "temple_main_wood_aged",
+      "far": "temple_far_wood_aged",
+      "nearTriangles": 22292,
+      "farTriangles": 6240,
+      "ratio": 0.28,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.08200550079345703,
+      "nearBounds": [
+        [
+          -1.8367700576782227,
+          26.670000076293945,
+          1.6740909814834595
+        ],
+        [
+          19.836769104003906,
+          41.33000183105469,
+          10.13167953491211
+        ]
+      ],
+      "farBounds": [
+        [
+          -1.8329191207885742,
+          26.667194366455078,
+          1.674227237701416
+        ],
+        [
+          19.83292007446289,
+          41.33280563354492,
+          10.049674034118652
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

@@ -1,0 +1,77 @@
+{
+  "complete": true,
+  "checks": [
+    "first frame retains actual scene, typography and navigation within 3% pixel tolerance",
+    "curved sheet exposes paper back and soft shadow; route stays on source until completion",
+    "completion matches overview layout, restores entry focus and releases all return panels",
+    "Escape cancels the page turn, retains the poem and restores keyboard focus",
+    "cancellation during preparation remains cancelled after asynchronous decode",
+    "rapid return requests share one transaction; another route cancels and cleans it",
+    "browser Back uses the same page turn and commits the requested history destination",
+    "live and initial reduced-motion preferences finish directly after resources are ready",
+    "return restores the overview scroll position",
+    "1920x1080 normal page turn averages at least 50fps"
+  ],
+  "errors": [],
+  "frames": [
+    {
+      "progress": 0.15,
+      "panels": 48,
+      "back": 0,
+      "curvature": 4,
+      "inert": true,
+      "shadow": "0.317793",
+      "hash": "#/poems/fengqiao"
+    },
+    {
+      "progress": 0.3,
+      "panels": 48,
+      "back": 0,
+      "curvature": 11,
+      "inert": true,
+      "shadow": "0.566312",
+      "hash": "#/poems/fengqiao"
+    },
+    {
+      "progress": 0.5,
+      "panels": 48,
+      "back": 12,
+      "curvature": 25,
+      "inert": true,
+      "shadow": "0.7",
+      "hash": "#/poems/fengqiao"
+    },
+    {
+      "progress": 0.7,
+      "panels": 48,
+      "back": 28,
+      "curvature": 21,
+      "inert": true,
+      "shadow": "0.566312",
+      "hash": "#/poems/fengqiao"
+    },
+    {
+      "progress": 0.9,
+      "panels": 48,
+      "back": 43,
+      "curvature": 10,
+      "inert": true,
+      "shadow": "0.216312",
+      "hash": "#/poems/fengqiao"
+    }
+  ],
+  "sourceDifference": 0.00927391975308642,
+  "restoredScroll": 170,
+  "playback": {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "frames": 64,
+    "duration": 1100.199999999999,
+    "p50": 16.69999999999891,
+    "p95": 16.799999999999272,
+    "over50": 1
+  },
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\page-session\\return-idle-verified\\video\\page@b5821faf4794d970d43ef704b8d9ff9f.webm"
+}

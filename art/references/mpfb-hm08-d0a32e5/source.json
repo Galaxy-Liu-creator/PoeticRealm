@@ -1,0 +1,29 @@
+{
+  "project": "MakeHuman Community MPFB2",
+  "repository": "https://github.com/makehumancommunity/mpfb2",
+  "commit": "d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+  "retrieved": "2026-10-07",
+  "license": "CC0-1.0 (bundled data assets); upstream program GPL-3.0, not copied",
+  "files": [
+    {"local":"base.obj","upstream":"src/mpfb/data/3dobjs/base.obj","sha256":"8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c"},
+    {"local":"rig.game_engine.json","upstream":"src/mpfb/data/rigs/standard/rig.game_engine.json","sha256":"b324ddb4b707721c19630bfadb87c3e3b38eed3b6e4590bb3cead43ea918f799"},
+    {"local":"weights.game_engine.json","upstream":"src/mpfb/data/rigs/standard/weights.game_engine.json","sha256":"9f4a773e74ce5ba08415b4f30070338e9f75bae5971b5075b10cd6b9caa58473"},
+    {"local":"asian-male-young.target.gz","upstream":"src/mpfb/data/targets/macrodetails/asian-male-young.target.gz","sha256":"0928ed8b9f08f60afb9884cf9e9f33a939ed3a85d7f136de9ccc88a76981d6d7"},
+    {"local":"asian-male-old.target.gz","upstream":"src/mpfb/data/targets/macrodetails/asian-male-old.target.gz","sha256":"8f931e96529904375a442c77be0c31d60ace6c0461645ed7ab1a43a3c378a247"},
+    {"local":"universal-male-young-averagemuscle-averageweight.target.gz","upstream":"src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz","sha256":"e814651195c53971503d9823d6841216718a561951ef064f81d132297f4fa494"},
+    {"local":"hm08_config.json","upstream":"src/mpfb/data/mesh_metadata/hm08_config.json","sha256":"0ebab5f8ba35e56f3be49e3de241746552bce57fe8e079b72b00a362be246a29"},
+    {"local":"LICENSE.md","upstream":"LICENSE.md","sha256":"5cefb60680cb9efd4550a2e65d719021cfbec9dad3658481d11d48ae863ce04d"},
+    {"local":"LICENSE.ASSETS.md","upstream":"LICENSE.ASSETS.md","sha256":"f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"}
+  ],
+  "adaptation": {
+    "script": "art/scripts/refine_fengqiao_rower.py",
+    "bodyGroups": ["body", "helper-l-eye", "helper-r-eye"],
+    "excluded": "All helper cubes are locator inputs only. No genital, teeth, tongue, skirt, tights or hair fitting geometry is exported.",
+    "morphs": {"asian-male-young":0.8,"asian-male-old":0.2,"universal-male-young-averagemuscle-averageweight":1.0},
+    "unitConversion": "MakeHuman decimetres (x,y,z) -> Blender metres 0.1*(z,x,y), normalize anatomical height to 1.70m",
+    "skin": "Original normalized weights, largest four influences; source joint cube centres recomputed after morph; working pose baked into mesh and bind skeleton",
+    "originalWork": "Linen coat fit, collar, creased hem, belt, cuffs, shoes, hat, yuloh and grip pose; 53-joint skin with articulated fingers",
+    "notAClaim": "No photogrammetry, copied MPFB program, paid generation or exact Tang-period historical reconstruction"
+  },
+  "mechanicsReference": "https://www.taioca.org/about-3 (visual/mechanical study only; photographs not downloaded or redistributed)"
+}

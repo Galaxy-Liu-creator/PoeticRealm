@@ -1,0 +1,47 @@
+{
+  "scope": "Original procedural-PMREM pixel reference, not performance acceptance",
+  "sourceFrame": {
+    "path": "output/playwright/fengqiao-boat-v04/v07-final/rowing-t2.4.png",
+    "bytes": 763522,
+    "sha256": "bd7ffcc855a3e497d8327ec52122ed0038a4731066a48eb9750b8687dda87067"
+  },
+  "frame": {
+    "path": "docs/plans/R2-枫桥场景/assets/sample-v04/environment-procedural-baseline/rowing-t2.4.png",
+    "bytes": 763522,
+    "sha256": "bd7ffcc855a3e497d8327ec52122ed0038a4731066a48eb9750b8687dda87067"
+  },
+  "upstreamRunStatus": "failed",
+  "upstreamFailure": "AssertionError [ERR_ASSERTION]: 性能未留出小样余量\n    at file:///D:/University-Competition/Math_Media/PoeticRealm/frontend/tools/verify-fengqiao-sample.mjs:173:39",
+  "frames": [
+    {
+      "frames": 3584,
+      "duration": 60004.8,
+      "fps": 59.71188971548943,
+      "p50": 16.69999999999709,
+      "p95": 16.89999999999418,
+      "over50": 0,
+      "maxCalls": 62,
+      "maxTriangles": 127472
+    },
+    {
+      "frames": 3095,
+      "duration": 60021.600000000006,
+      "fps": 51.54810934730163,
+      "p50": 16.69999999999709,
+      "p95": 33.39999999999418,
+      "over50": 3,
+      "maxCalls": 62,
+      "maxTriangles": 127472
+    },
+    {
+      "frames": 3534,
+      "duration": 60004.69999999998,
+      "fps": 58.87872116684195,
+      "p50": 16.699999999982538,
+      "p95": 16.89999999999418,
+      "over50": 2,
+      "maxCalls": 62,
+      "maxTriangles": 127472
+    }
+  ]
+}

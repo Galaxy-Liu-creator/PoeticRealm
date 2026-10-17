@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-05",
+  "origin": "http://127.0.0.1:5186",
+  "tools": ["Chrome DevTools MCP", "Playwright MCP"],
+  "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "viewport": [1920, 1080],
+  "playback": {"frames": 67, "durationMs": 1100.2, "p50Ms": 16.7, "p95Ms": 16.8, "over50Ms": 0},
+  "trace": {"cls": 0, "forcedReflowInsight": "No problems found after caching source scroll before panel creation"},
+  "console": {"errors": 0, "warnings": 0},
+  "completion": {"route": "#/", "inert": false, "returnOverlays": 0},
+  "databaseRestart": {"sameAccountAfterExplicitRememberedLogin": true, "migrationVersion": "1", "namedVolumePreserved": true},
+  "cleanup": {"onlySixAgentCreatedAccountsDeleted": true, "remainingAccounts": 0, "remainingPersistentCredentials": 0, "migrationPreserved": true},
+  "method": "Summary of actual native MCP responses; playback and DevTools tracing were measured separately. No authentication tokens or cookies are recorded.",
+  "limitations": ["Current scene fronts are static preview DOM, not a snapshot of the future R3 WebGL scene", "Results describe this machine and current load", "A crashed or offline browser cannot guarantee delivery of pagehide"]
+}

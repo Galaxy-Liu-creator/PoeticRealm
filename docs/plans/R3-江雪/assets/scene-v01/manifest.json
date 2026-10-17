@@ -1,0 +1,616 @@
+{
+  "date": "2026-10-10",
+  "scope": "quality-sample modeling candidate; performance failures retained; ordinary Jiangxue product route not connected",
+  "files": [
+    {
+      "path": "art/blender/jiangxue-scene-v01.blend",
+      "bytes": 13078644,
+      "sha256": "bbdf66221e158b0a7de9c47e2c40152c6631af048c6888dc657a753b40baed1e"
+    },
+    {
+      "path": "art/scripts/bake_terrain.py",
+      "bytes": 7918,
+      "sha256": "9b627ab2998b67a4796bc5fc06dd223c4eb59a8ce5d8dd03b25e5a8aa30b9a18"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/assemble.py",
+      "bytes": 1612,
+      "sha256": "6cdfaa974ff51e6cd0e0896aa01a2ada4851dc5e45c9830d7ed3918567a8f8e7"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/bank_boundary.py",
+      "bytes": 1935,
+      "sha256": "b2877cc3450f87b36a3aec5645a6ea7b49fa6d8b0cd05931dd9478745d5d2d9e"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/boat.py",
+      "bytes": 2312,
+      "sha256": "e59689eebec383409c13258f61775d54c1ec3d8a6406985cef43cb5fac2ff5a5"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/boat_snow.py",
+      "bytes": 1859,
+      "sha256": "f4dca9d84ca9a9a103b26e0a9271abfebc9562e4dce49fa72d76be8f51accf99"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/camera_refine.py",
+      "bytes": 770,
+      "sha256": "dd939acce6597885740a3db3c374357cb32dda005809a308559b82429d8df34f"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/cape.py",
+      "bytes": 2276,
+      "sha256": "a91036f87a5232e7e60b3250ab18d58d99374faf4f1966c5f14974f2c0117594"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/cape_fibres.py",
+      "bytes": 1725,
+      "sha256": "7d3236fa2b149d33a2609529614c4997e7198b6e805ac647a7a2a09cbf12f49d"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/common.py",
+      "bytes": 9308,
+      "sha256": "e05a611b06dc5d685cfce6b59e256a5d4b9f4f13e9e2e58ef9408f40d91af3ff"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/export_ready.py",
+      "bytes": 1659,
+      "sha256": "e5eb5c4d3f2ddf0bcdb5a1257e6c46db59aa208665b0be0ddd2a72719663c465"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/fisherman.py",
+      "bytes": 9158,
+      "sha256": "0c4a2e8a505c067ba857504cb3baa9a4b28bfdad0ae1c3d801f79ae2ae6a37b0"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/fishing.py",
+      "bytes": 2170,
+      "sha256": "3b289defc2240020abca9304961c06df8106d596451f1ae34401647618da323b"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/hat.py",
+      "bytes": 3336,
+      "sha256": "b964d1d82102bbb82dc23d5e5a8b3394afb5ad9dc38730886bf8fbd81225c6dd"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/initialize.py",
+      "bytes": 3161,
+      "sha256": "ace32aecc777e4048d49ed2f6f64af473f19745ce482250ac367dfa3b9af9b2e"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/pack_source.py",
+      "bytes": 776,
+      "sha256": "d53a1490edfe60b25b3a357b0e011c625ea3b3a1b58b34d80f46a38bb0281015"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/placement.py",
+      "bytes": 1981,
+      "sha256": "c0a3e8123fb4012aeb5dcc29a21ef27197d813365799a5194423147db099fe9e"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/shore.py",
+      "bytes": 2611,
+      "sha256": "17d16313dbc422f1ca2cd047f090c6dea87b363f8c226688173e5ba77bbae8fe"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/shore_refine.py",
+      "bytes": 3003,
+      "sha256": "088db7eafc34cf8d1a0683ae6f67187f05d371c3dcb5175828ae57d1c3f869f0"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/shore_snow.py",
+      "bytes": 2126,
+      "sha256": "43cc58ce975b5e51537b5ec2c9e0094fbd9d07a8b035c96962a92fbc5eb8bc44"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/snow_cap_repair.py",
+      "bytes": 1815,
+      "sha256": "53f6292ede8bd2a1108e23388bcbdd5913794cd90e6095524175777e8663af16"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/terrain.py",
+      "bytes": 2004,
+      "sha256": "7fd6d73de702d5ad8a82a9e6823ffe668db55a75ca7f6b8d1b94f17dbb11bd80"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/terrain_refine.py",
+      "bytes": 1150,
+      "sha256": "e511c3c4b5442563784fa81831ef2311bfc98e8330d033f6701c97b5e295de09"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/tree.py",
+      "bytes": 1524,
+      "sha256": "fad5fede49c0f1c3d28f8adb3fa510404099aab414ed03e67710774d9d375ada"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/tree_twigs.py",
+      "bytes": 1218,
+      "sha256": "e64492bff4d2d226e9cb3ead30630903348d2e2c521a7754b48443ce180f22a6"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/verify_saved.py",
+      "bytes": 2259,
+      "sha256": "2550bf2c973da93eb1722c0b4798050a636e4694fac1b262a081117593e216df"
+    },
+    {
+      "path": "art/scripts/contract.py",
+      "bytes": 2126,
+      "sha256": "3d44f5a5f59002110cee1dae80d5f54ea40f11eca20cd634f726740b5f4f2a92"
+    },
+    {
+      "path": "art/scripts/export_glb.py",
+      "bytes": 3311,
+      "sha256": "7eca2968e4e90e92d702015b0afd89a3db87b4cc71589cfea7f47411c616f953"
+    },
+    {
+      "path": "art/scripts/validate.py",
+      "bytes": 15446,
+      "sha256": "c580008a390b9d633325c8be837033e0097360ca4b5f1f3501a90170f2c2f224"
+    },
+    {
+      "path": "art/textures/jiangxue-v01/snow_basecolor.png",
+      "bytes": 40788,
+      "sha256": "5daa1868c1f9a8fe0dad934e957d185ab31937b7ed52caad3587d2b25267a851"
+    },
+    {
+      "path": "art/textures/jiangxue-v01/snow_normal.png",
+      "bytes": 279246,
+      "sha256": "0966c4547974fb813f6740936ed0942f00402409647df2a79d2fb0f76967cf17"
+    },
+    {
+      "path": "art/textures/jiangxue-v01/snow_roughness.png",
+      "bytes": 76185,
+      "sha256": "2ffd54cfa06c1b2d5430b58bf4588463267bd6652d0537311b3ce2282a028805"
+    },
+    {
+      "path": "art/textures/jiangxue-v01/source.json",
+      "bytes": 642,
+      "sha256": "d031f4beb7dc3653faa538bf9fc2413e0cc29353db56ecd59f72789f56112974"
+    },
+    {
+      "path": "docs/CONTRACT.md",
+      "bytes": 37884,
+      "sha256": "f82a45e73cc1649a91fc2cc58981a3603b47c8259769905ef2be39d9c4e4f09f"
+    },
+    {
+      "path": "docs/CREDITS.md",
+      "bytes": 24667,
+      "sha256": "60ea5ac31e3792ff8332f64db9414a2448dbadf72ff7e31a39c6b41c7e834945"
+    },
+    {
+      "path": "docs/plans/R3-江雪/plan.md",
+      "bytes": 4139,
+      "sha256": "3e177c0c3e6e67e4cafc9497ad7c1aa10d570d494890f4b3eae970b97f88e2ac"
+    },
+    {
+      "path": "docs/plans/README.md",
+      "bytes": 3684,
+      "sha256": "479d01e9342616d1d93e1318b2a6f18c9ea5ec6c7b02057e1bb0ce4882571b80"
+    },
+    {
+      "path": "frontend/public/assets/models/jiangxue/scene_v01.glb",
+      "bytes": 10149724,
+      "sha256": "b806f8fbcfb92a53a16ba15daa1e721966b9be65b1d98c53259f7e863c04aa63"
+    },
+    {
+      "path": "frontend/public/assets/scenes/jiangxue.scene-v01.json",
+      "bytes": 499,
+      "sha256": "b2ff370ab798a6ce0445621ca4840d0aae7f8c7df4237a3842b74ca726a3ed84"
+    },
+    {
+      "path": "frontend/public/assets/terrain/jiangxue-v01.height.json",
+      "bytes": 251,
+      "sha256": "679ed7bda9d79622ee974598b4ae47d180d3f28f5cb03a9a2655b399f5782416"
+    },
+    {
+      "path": "frontend/public/assets/terrain/jiangxue-v01.height.png",
+      "bytes": 2300436,
+      "sha256": "c1d7485c665931b09d9adbb2fc1fca4dbe9306d4fed31b7910381b29879407b1"
+    },
+    {
+      "path": "frontend/src/engine/Assets.ts",
+      "bytes": 8892,
+      "sha256": "b5a9bdb1115eda2949f4cfa7fe50031b044701f31f08ff83b4ad3a5a31b329ad"
+    },
+    {
+      "path": "frontend/src/engine/Engine.ts",
+      "bytes": 4043,
+      "sha256": "24e006b89b3c970e6882677507a644252f306cbcab5a91a80a79712c4b3f64cf"
+    },
+    {
+      "path": "frontend/src/engine/objectResources.ts",
+      "bytes": 1399,
+      "sha256": "ff30c2125a808f8db25eabf532575991f51370a1697c936b933e611e8289cdf5"
+    },
+    {
+      "path": "frontend/src/labs/jiangxue.css",
+      "bytes": 1176,
+      "sha256": "5f867ef8af067122447a0bb77074e6be2d154978c1b67a6528bd3774f5f2af66"
+    },
+    {
+      "path": "frontend/src/labs/jiangxue.ts",
+      "bytes": 3762,
+      "sha256": "ed1dd916c7533247b34784a5b882ce915babb9afc98e92db0e81f65face6437e"
+    },
+    {
+      "path": "frontend/src/main.ts",
+      "bytes": 1454,
+      "sha256": "23ba145566e7e7a0bba5090a981ee4777d24b49388683cfbf3e83d15cc9c6c0c"
+    },
+    {
+      "path": "frontend/src/scenes/JiangxueScene.ts",
+      "bytes": 6463,
+      "sha256": "1220a6a2bbc02b197fd70ab7116682e4867de294a783f82586543090b6b1a698"
+    },
+    {
+      "path": "frontend/src/systems/materials/applyMaterials.ts",
+      "bytes": 1365,
+      "sha256": "1c316455fa9e9321b7d09235b55c70632dcf8a4359b109621ee0edbecdac825a"
+    },
+    {
+      "path": "frontend/src/systems/nature/QuietSnow.ts",
+      "bytes": 1205,
+      "sha256": "438143aa0fe730e64edebaa17f538cc5cb5267f5d35eb1a205c6a65e564e01de"
+    },
+    {
+      "path": "frontend/src/systems/nature/SnowTerrain.ts",
+      "bytes": 1646,
+      "sha256": "df16325b8af159ac53761c300c7b7390718c20510f0521cbc00d626bb39f7f02"
+    },
+    {
+      "path": "frontend/src/systems/water/NightRiver.ts",
+      "bytes": 8187,
+      "sha256": "a4179df60ca44a93583a53b3f342fd2b923e0b75f8b07cdec9a4bcb3046d703a"
+    },
+    {
+      "path": "frontend/tools/asset-contract.mjs",
+      "bytes": 6652,
+      "sha256": "a5b2ebcdf9abf2d6c915242d1ac419157e27a73b2b89725b252dba88d2912022"
+    },
+    {
+      "path": "frontend/tools/capture-jiangxue-model.mjs",
+      "bytes": 1754,
+      "sha256": "845c223b3de7d42a45b8414cbb4c41663d0cb59f00f474ad627cbd1390b17d78"
+    },
+    {
+      "path": "frontend/tools/check-budget.mjs",
+      "bytes": 2214,
+      "sha256": "c0e7df53000dee5b30785856aa64c9795085bbb4e4cf1bb96413d4c96b2f9d10"
+    },
+    {
+      "path": "frontend/tools/check-contract.mjs",
+      "bytes": 11015,
+      "sha256": "42e21c9c13944448c53c73c19b1806118a43307d1253e98ca458041ab4d3a2ea"
+    },
+    {
+      "path": "frontend/tools/meshopt-exact.mjs",
+      "bytes": 2670,
+      "sha256": "8cb19a13bdc22a5355d174524aeb8e24a83bd5e07128c42db707aa48eebd40be"
+    },
+    {
+      "path": "frontend/tools/optimize-assets.mjs",
+      "bytes": 8249,
+      "sha256": "5f25d4d1da6e87e8d1490cecf5efa48353abe54a3dc76c49e5fa7d05dfbaa481"
+    },
+    {
+      "path": "frontend/tools/test-jiangxue-contract.mjs",
+      "bytes": 1313,
+      "sha256": "d1ecb9027db0bea5808df4aba670b84ac5245d10c26d430ec9d71378b88b8425"
+    },
+    {
+      "path": "frontend/tools/verify-jiangxue-model.mjs",
+      "bytes": 6056,
+      "sha256": "d1a194c87232faab786c8a4d1e83eb3a926c9fe310ffd00ef2281a2a35abdca0"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_boat_snow.json",
+      "bytes": 746,
+      "sha256": "6323f3b004ce8b2891b76e4839521b30c98809a0387d82caa8baef3dbc5d1e7e"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_boat_structure.json",
+      "bytes": 1760,
+      "sha256": "4d48943efa4c6f612ce7bdb51a8258ca6de4716bea67246f3b97f9360bb25c9b"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_camera_refined.json",
+      "bytes": 214,
+      "sha256": "e7830e7ff45caaaddb44a8ae35ca82ffe48805ae115261d5b1a259994b09efd0"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_cape_core.json",
+      "bytes": 914,
+      "sha256": "336091bafd028daec450fc012fca450c8d99141612ec55a087e8012b94ec48ab"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_cape_fibres.json",
+      "bytes": 832,
+      "sha256": "ec7c5172a8b2e882ba3f8613277f2544cf7141c740dc406eea1a00f2f7082233"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_fisherman_body.json",
+      "bytes": 1331,
+      "sha256": "10d4660bfea5f6eb2638e16fbdd987824adec17a0a7089005cde1a06953cecc1"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_fishing_tackle.json",
+      "bytes": 1352,
+      "sha256": "f617b944a16a01914da444b432c9cbaff40b10eefde6d1cfcb478e5a66deb2f0"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_hat_accessories.json",
+      "bytes": 1394,
+      "sha256": "608e8ee45783a3b9134ee1571e6962cae39ac9a00af13bde0ece7a922b066700"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_rock_snow_v02.json",
+      "bytes": 934,
+      "sha256": "b31215cd2cfaed344e2bd8b1a08844f2304ca0733c5bcdd657fcae15eb07ac4a"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_shore_rock.json",
+      "bytes": 833,
+      "sha256": "2007a5e9fce6b13ccdbb76e823f437591002c43c682a9af75123ebb9aa3233fa"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_shore_snow.json",
+      "bytes": 788,
+      "sha256": "0fd418146b1c7fc88afd658dc97e0b728adac4f5b8b765d26235d9d03064857b"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_terrain_v02.json",
+      "bytes": 197,
+      "sha256": "e01c7fd95702de7674b68871588cdfb1259ca2e1efdede1d63bd6b314808e81d"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_tree_primary.json",
+      "bytes": 695,
+      "sha256": "a2b7dc80d69541751c1ec171e4ec89eb2b689d4358d74555f1930494b9e111a4"
+    },
+    {
+      "path": "output/jiangxue-model-v01/components/jx_tree_twigs.json",
+      "bytes": 798,
+      "sha256": "e1c338e77e24b6edf03659b96af243c104d90abf0e24237e5ffbf268ab0800d1"
+    },
+    {
+      "path": "output/jiangxue-model-v01/protected-sha256.txt",
+      "bytes": 1340,
+      "sha256": "8253f33521e65f53f1186b2bd99b9b6d53cd4c565c348b942e3e1ce16fa3f185"
+    },
+    {
+      "path": "output/jiangxue-model-v01/protected-verification.txt",
+      "bytes": 596,
+      "sha256": "7202e49bbd0601e465ae71f9504b4f5aa96f9fe3721cc335e6dde11d98f1b4c5"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/blender-contract.json",
+      "bytes": 39,
+      "sha256": "91d7ac5163131843cb867fa3b4ba06b7ca8098d08710709b53c393d6b5fbcdf9"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/browser-before-shadow-cache.json",
+      "bytes": 9255,
+      "sha256": "260fa3b195b88a5222d60caa564c197ebfceb13b2583de6bb68200aec0fdd336"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/browser-final-run.log",
+      "bytes": 201,
+      "sha256": "93419c09c42c2abf6bde90a6b4fa06bc06d9120d65c9c98335fb97b53b40c384"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/browser-fixture-failure.json",
+      "bytes": 831,
+      "sha256": "6c91ca827fdf88f705d7d501a4f058ba6178411b29d4d1dda54ad0e896a33928"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/browser-full.json",
+      "bytes": 9526,
+      "sha256": "2821acf322523d6a3b291f78d1e06812ff717d636fd1e561e0f59108105e2065"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/browser-lifecycle-run.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/browser-lifecycle.json",
+      "bytes": 8214,
+      "sha256": "a5ff5fb391961212e6844b946b4bbdfbb66cb8b49fdc063cd2cd88a3b02ab87e"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/browser-run.log",
+      "bytes": 203,
+      "sha256": "ca574bd29c5f0cdb5e9babbdb5029f47097d1885f854ad5bec5202f4f7f11f4d"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/browser-shadow-cache-failure.json",
+      "bytes": 9526,
+      "sha256": "b6979b358a3017cb2f972f3f7d77c8a7595a3f4d8f6973dd5c8e13d038a3d561"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/budget.json",
+      "bytes": 2062,
+      "sha256": "b377eaad03605c94ae014f025ef38ff753220e2e5525a44db71ee07c986d312e"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/build.log",
+      "bytes": 2921,
+      "sha256": "a6f99d06abe9e20d7cc10b84a2e6aa3ea0f969ea81719f632d20ddea5e36e069"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_birds-1440.png",
+      "bytes": 242757,
+      "sha256": "47ce3cf57b6e8baf89eb48c87fa1f086cd28fa17922cf83db15dd50fc1df8142"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_birds-1920.png",
+      "bytes": 338614,
+      "sha256": "60a1a9ca7159779ce29c91e17c15ab55d6d49042bd943c965cc4c50cc9749cc7"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_boat-1440.png",
+      "bytes": 485936,
+      "sha256": "3f771ead02dba005326f5b648fd1a63726c728a749a2e742e18dfb9bd244f5e4"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_boat-1920.png",
+      "bytes": 697325,
+      "sha256": "3d4883447268bb516479b0089a02fbdf68f3b296bccf86bc2b3ecf6d38a7a073"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_enter-1440.png",
+      "bytes": 548238,
+      "sha256": "3c402290aa10514c88e3303b92a1c88e1880437df63119a3853ccc19f5226e56"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_enter-1920.png",
+      "bytes": 784643,
+      "sha256": "a0f9a827d4878cfdc4f201820654a6e4baff2ed542f92d20abe9061f5bf53642"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_fisherman-1440.png",
+      "bytes": 667069,
+      "sha256": "150d9861f0c7a48764b85e52efaa21b090cc8f34e35812c12253828bdc8fd255"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_fisherman-1920.png",
+      "bytes": 961308,
+      "sha256": "2e01fbfc84f85e51b5b24bde2ee605b8c9e9e247d70aac57688aee4b4f3795eb"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_fog-1440.png",
+      "bytes": 376597,
+      "sha256": "5b5e55d234c307717b3871156f267137bc9236afac362bdaa9775ccf3b1d5c5d"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_fog-1920.png",
+      "bytes": 545031,
+      "sha256": "38ec4e3367db22cc24330e35b054d0bfa8814a56a1e719deb46981bd6a0d8723"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_nature-1440.png",
+      "bytes": 385114,
+      "sha256": "d4271830e243ca9e9fe201518f2523f585cfe9141b24ac4937fa1ef7218d9854"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_nature-1920.png",
+      "bytes": 602471,
+      "sha256": "149efc998b7d0053ffba421edc0f9b3cabb12cbed6e0a9832520e2688403034b"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_path-1440.png",
+      "bytes": 485462,
+      "sha256": "4bcb4801cdb392d683de3d89f015c52fbfc98b40b75fb30ad1471941726cb2d7"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/CAM_path-1920.png",
+      "bytes": 727059,
+      "sha256": "bf086240309a37b5ed64ff5ece3495d68358dd8dfaad6b4fd02f5fd2a5608839"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/capture-run.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/capture.json",
+      "bytes": 189,
+      "sha256": "b7f02f95915f38efe32457b42a77555cff8bce2e795a72d61e5c1fe22308cde5"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/final-boundary-optimization.json",
+      "bytes": 51791,
+      "sha256": "c203cb1f2afe9929c52d24be0ff13208e8a39ebad90fb2981b012a012e42be75"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/final-boundary-optimization.log",
+      "bytes": 3114,
+      "sha256": "9ac19db1a20b35c2e01a8b3a4dba5a16cba69c6d25cfb5e795a10cf2f66ec371"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/final-build.log",
+      "bytes": 3010,
+      "sha256": "ad937798d1ed4726630eb5ed7fee9bca8e0e30418db6723d6ee5d94eb50e20a5"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/final-export.log",
+      "bytes": 3610,
+      "sha256": "c57b2d301e1a3d77e3d24e50c6b5893414272d167c08d18c2a968ff7012b1ab2"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/final-git-status.txt",
+      "bytes": 6990,
+      "sha256": "8efbc80cec0c451f561e386052a9fcbfee6aee2d4547f806e3d2a66d07339b72"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/final-optimization.json",
+      "bytes": 51791,
+      "sha256": "abc2677942be32421ea5981fa29e994fa3fa1e2cef1c4f2b75ffbd235d12af6a"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/final-optimization.log",
+      "bytes": 3114,
+      "sha256": "1eaf393f1c2da3ef6b9a8e8ecfece8c93bda71c42020e1ac0aa8f0bfaa4df348"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/glb-contract.json",
+      "bytes": 294,
+      "sha256": "8cfdd812a366ac69de9121ec39577a4bff87543ce08f1a688ea0323e805f8193"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/jiangxue-inspection.webm",
+      "bytes": 2022562,
+      "sha256": "d302f17492b5148de713bfef6b8fba89354f61bf82b61d39fa1b100c467bb9a7"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/native-devtools.json",
+      "bytes": 965,
+      "sha256": "a2fd0cde3abc81988e1bb0b6bfd585b1e92e43052aae4fcc0bd82cb3af092495"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/optimization.json",
+      "bytes": 51791,
+      "sha256": "750a6ac1e977897200f1f77ba8334cd2cce3af0b3a560150bc7373722c747428"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/packed-source-check.log",
+      "bytes": 1002,
+      "sha256": "c3b581259fb51102627726303fbc2754341049c5fed92c8c90c839f07c47b620"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/packed-source.json",
+      "bytes": 1211,
+      "sha256": "aaea489026355d1b4a8fbb4fad85a687a291eecb4734ceecf5d29dfe8d01f72a"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/reopened-source.json",
+      "bytes": 856,
+      "sha256": "4e08d9bb04d1382cc222af0233623c5753282ba96d6601afc6282ca50a08003d"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/reopened-source.log",
+      "bytes": 921,
+      "sha256": "094ed63d099f915c2575788b89550a1fd0283d3b75ceb17b6e6eed3e861b1e9c"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/unit-tests.log",
+      "bytes": 2283,
+      "sha256": "e40cf9ad15307546dc52320c4db12cbc3a7b7a8e0b6c84136aaada62df5fc6ac"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/video-fisherman-frame.png",
+      "bytes": 604808,
+      "sha256": "eba20a8da29816f6beaa80626937b27573072361a31e27c5c253a5e9a73e6cdf"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/video-info.json",
+      "bytes": 229,
+      "sha256": "c9b1991e2c57c0cfee27896466f1e81c848c4812047e4616b953162d35b3eba4"
+    },
+    {
+      "path": "output/jiangxue-model-v01/validation/video-overview-frame.png",
+      "bytes": 514368,
+      "sha256": "d5014dbd2524b0be1d89d6794e9740538f23fe64177d377396392039e30880ab"
+    }
+  ]
+}

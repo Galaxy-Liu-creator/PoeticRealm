@@ -1,0 +1,11 @@
+{
+  "scope": "quality-sample",
+  "nodes": 14,
+  "meshes": 7,
+  "materials": 6,
+  "maskCalibration": [
+    0,
+    0.502891584649424,
+    1
+  ]
+}

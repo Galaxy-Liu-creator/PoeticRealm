@@ -1,0 +1,4 @@
+64541d4b5d7ab3d6a99438f7bdbe72b6244e83311019ebf31362ec2c05e9904f *art/blender/jiangxue-scene-v01.blend
+b806f8fbcfb92a53a16ba15daa1e721966b9be65b1d98c53259f7e863c04aa63 *frontend/public/assets/models/jiangxue/scene_v01.glb
+c1d7485c665931b09d9adbb2fc1fca4dbe9306d4fed31b7910381b29879407b1 *frontend/public/assets/terrain/jiangxue-v01.height.png
+679ed7bda9d79622ee974598b4ae47d180d3f28f5cb03a9a2655b399f5782416 *frontend/public/assets/terrain/jiangxue-v01.height.json

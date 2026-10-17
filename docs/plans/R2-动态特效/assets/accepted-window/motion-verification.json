@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "hover pauses the entire aligned grid",
+    "hero stops offscreen and resumes"
+  ],
+  "errors": [],
+  "complete": false,
+  "timeline": [],
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\docs\\plans\\R2-动态特效\\assets\\accepted-window\\video\\page@015f79d2925056fa1f1646c9f23140a5.webm"
+}

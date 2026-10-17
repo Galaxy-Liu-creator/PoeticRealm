@@ -1,0 +1,414 @@
+{
+  "checks": [
+    "五个摇橹时刻掌部贴柄、脚部固定、牵绳等长，橹叶连续浸没并横扫",
+    "完整4.8秒循环97个采样点通过掌部、脚部、牵绳及入水门禁",
+    "键盘选择视角、按钮与空格暂停/播放",
+    "固定时间画面可复现",
+    {
+      "label": "reflection",
+      "delta": {
+        "mean": 1.2784854038065843,
+        "changed": 6265
+      }
+    },
+    {
+      "label": "shadows",
+      "delta": {
+        "mean": 0.10419913837448559,
+        "changed": 12141
+      }
+    },
+    {
+      "label": "fire",
+      "delta": {
+        "mean": 1.511395318930041,
+        "changed": 49636
+      }
+    },
+    "10次加载/释放资源计数稳定",
+    "减少动态静止且可手动选视角",
+    "缺失 GLB 有明确失败状态；加载中离开无迟到场景或脚本异常"
+  ],
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "errors": [],
+  "frames": [
+    {
+      "frames": 3569,
+      "duration": 60004.8,
+      "fps": 59.461909713889554,
+      "p50": 16.69999999999709,
+      "p95": 16.900000000001455,
+      "over50": 1,
+      "maxCalls": 59,
+      "maxTriangles": 124400
+    },
+    {
+      "frames": 3583,
+      "duration": 60004.59999999999,
+      "fps": 59.69542335087644,
+      "p50": 16.69999999999709,
+      "p95": 16.90000000000873,
+      "over50": 1,
+      "maxCalls": 59,
+      "maxTriangles": 124400
+    },
+    {
+      "frames": 3576,
+      "duration": 60005.29999999999,
+      "fps": 59.578070603763344,
+      "p50": 16.699999999982538,
+      "p95": 16.800000000017462,
+      "over50": 5,
+      "maxCalls": 59,
+      "maxTriangles": 124400
+    }
+  ],
+  "firstLoadMs": 3679,
+  "details": {
+    "contractVersion": "0.2",
+    "scope": "quality-sample",
+    "reducedMotion": false,
+    "initializationMemory": {
+      "geometries": 0,
+      "textures": 2
+    },
+    "loadMs": 2229.199999999255,
+    "loadPhases": {
+      "environment": 619,
+      "asset": 1027.8999999994412,
+      "assembly": 8.799999999813735,
+      "textureUpload": 156.90000000037253,
+      "compile": 759.4000000003725,
+      "firstDraw": 432.69999999925494
+    },
+    "memory": {
+      "geometries": 21,
+      "textures": 22
+    },
+    "reflectionResolution": 1024,
+    "shadowResolution": 2048,
+    "drawingBuffer": [
+      1920,
+      1080
+    ],
+    "materials": [
+      "pbr_cloth__reed",
+      "pbr_metal__iron",
+      "pbr_wood__aged",
+      "glow__fire",
+      "pbr_skin__eyes",
+      "pbr_skin__iris",
+      "pbr_skin__weathered",
+      "pbr_cloth__worklinen",
+      "pbr_cloth__worktrousers",
+      "pbr_cloth__worncollar",
+      "pbr_stone__wet",
+      "pbr_stone__dry"
+    ],
+    "maskProbe": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "boat": [
+      3.8499999046325684,
+      -0.3038777949122518,
+      0.44999998807907104
+    ],
+    "rower": {
+      "skinnedMeshes": 7,
+      "style": "stern-yuloh",
+      "gripErrors": [
+        3.563785928623269e-8,
+        1.7430857966245363e-8
+      ],
+      "footErrors": [
+        4.063810868242194e-7,
+        0.000001229508732701853
+      ],
+      "skinHandErrors": [
+        0.020791677448935557,
+        0.02993636005083561
+      ],
+      "oarRotation": [
+        0.08720129007560389,
+        -0.0075250951582065805,
+        0.04990012659649261,
+        0.9949116972463758
+      ],
+      "blade": [
+        -0.5751374771158231,
+        -0.6187295560207671,
+        -0.14833602491610365
+      ],
+      "pivot": [
+        0.972913439983369,
+        0.9736997700410841,
+        0.053175523155732096
+      ],
+      "tetherLength": 0.9204935561448788,
+      "tetherError": 1.1102230246251565e-16
+    }
+  },
+  "rowing": [
+    {
+      "t": 0,
+      "skinnedMeshes": 7,
+      "style": "stern-yuloh",
+      "gripErrors": [
+        4.6157226145384166e-8,
+        3.458295623348351e-8
+      ],
+      "footErrors": [
+        4.1698180473559687e-7,
+        0.0000010792519163751334
+      ],
+      "skinHandErrors": [
+        0.020791363486004473,
+        0.029934102095341197
+      ],
+      "oarRotation": [
+        -0.1550303756939953,
+        -0.16687785714288778,
+        -0.10484844037706652,
+        0.9680517382650957
+      ],
+      "blade": [
+        -0.9898181089972533,
+        -0.06895696454537137,
+        -0.08663589383873879
+      ],
+      "pivot": [
+        0.9737550334996032,
+        0.9786472949631424,
+        0.054096241668387
+      ],
+      "tetherLength": 0.9204935561448786,
+      "tetherError": 3.3306690738754696e-16
+    },
+    {
+      "t": 1.2,
+      "skinnedMeshes": 7,
+      "style": "stern-yuloh",
+      "gripErrors": [
+        4.2593351954795105e-8,
+        2.753685776986267e-8
+      ],
+      "footErrors": [
+        4.935376886030354e-7,
+        0.0000010944630074954228
+      ],
+      "skinHandErrors": [
+        0.020793031220446682,
+        0.02993608652672309
+      ],
+      "oarRotation": [
+        -0.000921616649432339,
+        0.08987382393495215,
+        -0.010212521552492936,
+        0.995900371923618
+      ],
+      "blade": [
+        -0.7123982531051363,
+        -0.43859674220430744,
+        0.4508673337314607
+      ],
+      "pivot": [
+        0.971360440552687,
+        0.9679403526908111,
+        0.05148059552467121
+      ],
+      "tetherLength": 0.9204935561448787,
+      "tetherError": 2.220446049250313e-16
+    },
+    {
+      "t": 2.4,
+      "skinnedMeshes": 7,
+      "style": "stern-yuloh",
+      "gripErrors": [
+        3.9548641239217325e-8,
+        2.469293680438593e-8
+      ],
+      "footErrors": [
+        4.1697794312824716e-7,
+        0.0000010792189920437031
+      ],
+      "skinHandErrors": [
+        0.020792382949916397,
+        0.02993729812533682
+      ],
+      "oarRotation": [
+        0.1851006156742293,
+        0.13274184972888037,
+        0.07058888242214964,
+        0.9711511587214261
+      ],
+      "blade": [
+        -0.49669492610082777,
+        -0.7213554921503618,
+        -0.017990413565996358
+      ],
+      "pivot": [
+        0.9676843583729191,
+        0.9591817255354165,
+        0.04748993170538174
+      ],
+      "tetherLength": 0.9204935561448787,
+      "tetherError": 2.220446049250313e-16
+    },
+    {
+      "t": 3.6,
+      "skinnedMeshes": 7,
+      "style": "stern-yuloh",
+      "gripErrors": [
+        3.9538084886979994e-8,
+        2.0322935313011704e-8
+      ],
+      "footErrors": [
+        4.0330942376469346e-7,
+        0.00000124739218211164
+      ],
+      "skinHandErrors": [
+        0.020791353188233212,
+        0.02993603526533185
+      ],
+      "oarRotation": [
+        0.00005917936176777297,
+        -0.08987852971506836,
+        -0.0006557721237871424,
+        0.9959525171196578
+      ],
+      "blade": [
+        -0.718261768151131,
+        -0.4857368957298799,
+        -0.16180460442791955
+      ],
+      "pivot": [
+        0.9662249418455229,
+        0.9607267839475199,
+        0.0459140795139073
+      ],
+      "tetherLength": 0.9204935561448787,
+      "tetherError": 2.220446049250313e-16
+    },
+    {
+      "t": 4.8,
+      "skinnedMeshes": 7,
+      "style": "stern-yuloh",
+      "gripErrors": [
+        4.620158369190518e-8,
+        3.4611770533801327e-8
+      ],
+      "footErrors": [
+        4.169783850183174e-7,
+        0.0000010792227321544125
+      ],
+      "skinHandErrors": [
+        0.02079136356518688,
+        0.02993410199187502
+      ],
+      "oarRotation": [
+        -0.1550303756939953,
+        -0.1668778571428878,
+        -0.10484844037706652,
+        0.9680517382650957
+      ],
+      "blade": [
+        -0.9907520282691544,
+        -0.08544403153333469,
+        -0.08767138974793776
+      ],
+      "pivot": [
+        0.9683577690969503,
+        0.9711175568286068,
+        0.04821869930196243
+      ],
+      "tetherLength": 0.9204935561448792,
+      "tetherError": 2.220446049250313e-16
+    }
+  ],
+  "strokeLimits": {
+    "samples": 97,
+    "maxGripError": 5.036462329850497e-8,
+    "maxGripAt": 4.3999999999999995,
+    "maxSkinHandError": 0.02993813952868211,
+    "maxFootError": 0.00000124739218211164,
+    "maxTetherError": 5.551115123125783e-16,
+    "highestBlade": -0.06895696454537137,
+    "lowestBlade": -0.7277630807284055
+  },
+  "nativeServer": {
+    "name": "chrome_devtools",
+    "title": "Chrome DevTools MCP server",
+    "version": "1.10.1"
+  },
+  "dom": "## Latest page snapshot\nuid=1_0 RootWebArea \"诗境 · 一卷山河\" url=\"http://127.0.0.1:5187/?scene=fengqiao&lab=fengqiao#/login\"\n  uid=1_1 main\n    uid=1_2 Canvas \"枫桥局部三维小样\"\n    uid=1_3 complementary\n      uid=1_4 StaticText \"枫桥夜泊\"\n      uid=1_5 StaticText \"局部材质小样 · 尚未完成整场景验收\"\n    uid=1_6 navigation \"小样检查\"\n      uid=1_7 button \"整体\"\n      uid=1_8 button \"湿石岸\"\n      uid=1_9 button \"木舟\"\n      uid=1_10 button \"船夫\"\n      uid=1_11 button \"暂停\"\n      uid=1_12 StaticText \"时间\"\n      uid=1_13 slider \"场景时间\" orientation=\"horizontal\" value=\"0\" valuemax=\"32\" valuemin=\"0\" valuetext=\"0\"\n      uid=1_14 checkbox \"倒影\" checked\n      uid=1_15 checkbox \"阴影\" checked\n      uid=1_16 checkbox \"渔火\" checked\n",
+  "console": "## Console messages\n<no console messages found>",
+  "network": "## Network requests\nNo requests found.",
+  "trace": "The raw trace data was saved to D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-rower-v03\\v12-final\\performance.json.gz.\nThe performance trace has been stopped.\n## Summary of Performance trace findings:\nURL: http://127.0.0.1:5187/?scene=fengqiao&lab=fengqiao\nTrace bounds: {min: 7016354884µs, max: 7019382478µs}\nCPU throttling: 1x\nNetwork throttling: none\n\n# Available insight sets\n\nThe following is a list of insight sets. An insight set covers a specific part of the trace, split by navigations. The insights within each insight set are specific to that part of the trace. Be sure to consider the insight set id and bounds when calling functions. If no specific insight set or navigation is mentioned, assume the user is referring to the first one.\n\n## Details on call tree & network request formats:\nInformation on performance traces may contain main thread activity represented as call frames and network requests.\n\nEach call frame is presented in the following format:\n\n'id;eventKey;name;duration;selfTime;urlIndex;childRange;[line];[column];[S]'\n\nKey definitions:\n\n* id: A unique numerical identifier for the call frame. Never mention this id in the output to the user.\n* eventKey: String that uniquely identifies this event in the flame chart.\n* name: A concise string describing the call frame (e.g., 'Evaluate Script', 'render', 'fetchData').\n* duration: The total execution time of the call frame, including its children.\n* selfTime: The time spent directly within the call frame, excluding its children's execution.\n* urlIndex: Index referencing the \"All URLs\" list. Empty if no specific script URL is associated.\n* childRange: Specifies the direct children of this node using their IDs. If empty ('' or 'S' at the end), the node has no children. If a single number (e.g., '4'), the node has one child with that ID. If in the format 'firstId-lastId' (e.g., '4-5'), it indicates a consecutive range of child IDs from 'firstId' to 'lastId', inclusive.\n* line: An optional field for a call frame's line number. This is where the function is defined.\n* column: An optional field for a call frame's column number. This is where the function is defined.\n* S: _Optional_. The letter 'S' terminates the line if that call frame was selected by the user.\n\nExample Call Tree:\n\n1;r-123;main;500;100;0;1;;\n2;r-124;update;200;50;;3;0;1;\n3;p-49575-15428179-2834-374;animate;150;20;0;4-5;0;1;S\n4;p-49575-15428179-3505-1162;calculatePosition;80;80;0;1;;\n5;p-49575-15428179-5391-2767;applyStyles;50;50;0;1;;\n\n\nNetwork requests are formatted like this:\n`urlIndex;eventKey;queuedTime;requestSentTime;downloadCompleteTime;processingCompleteTime;totalDuration;downloadDuration;mainThreadProcessingDuration;statusCode;mimeType;priority;initialPriority;finalPriority;renderBlocking;protocol;fromServiceWorker;initiators;redirects:[[redirectUrlIndex|startTime|duration]];responseHeaders:[header1Value|header2Value|...]`\n\n- `urlIndex`: Numerical index for the request's URL, referencing the \"All URLs\" list.\n- `eventKey`: String that uniquely identifies this request's trace event.\nTimings (all in milliseconds, relative to navigation start):\n- `queuedTime`: When the request was queued.\n- `requestSentTime`: When the request was sent.\n- `downloadCompleteTime`: When the download completed.\n- `processingCompleteTime`: When main thread processing finished.\nDurations (all in milliseconds):\n- `totalDuration`: Total time from the request being queued until its main thread processing completed.\n- `downloadDuration`: Time spent actively downloading the resource.\n- `mainThreadProcessingDuration`: Time spent on the main thread after the download completed.\n- `statusCode`: The HTTP status code of the response (e.g., 200, 404).\n- `mimeType`: The MIME type of the resource (e.g., \"text/html\", \"application/javascript\").\n- `priority`: The final network request priority (e.g., \"VeryHigh\", \"Low\").\n- `initialPriority`: The initial network request priority.\n- `finalPriority`: The final network request priority (redundant if `priority` is always final, but kept for clarity if `initialPriority` and `priority` differ).\n- `renderBlocking`: 't' if the request was render-blocking, 'f' otherwise.\n- `protocol`: The network protocol used (e.g., \"h2\", \"http/1.1\").\n- `fromServiceWorker`: 't' if the request was served from a service worker, 'f' otherwise.\n- `initiators`: A list (separated by ,) of URL indices for the initiator chain of this request. Listed in order starting from the root request to the request that directly loaded this one. This represents the network dependencies necessary to load this request. If there is no initiator, this is empty.\n- `redirects`: A comma-separated list of redirects, enclosed in square brackets. Each redirect is formatted as\n`[redirectUrlIndex|startTime|duration]`, where: `redirectUrlIndex`: Numerical index for the redirect's URL. `startTime`: The start time of the redirect in milliseconds, relative to navigation start. `duration`: The duration of the redirect in milliseconds.\n- `responseHeaders`: A list (separated by '|') of values for specific, pre-defined response headers, enclosed in square brackets.\nThe order of headers corresponds to an internal fixed list. If a header is not present, its value will be empty.\n",
+  "lastDisposal": {
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "stages": [
+      {
+        "owner": "() => window.removeEventListener(\"keydown\", onKey)",
+        "geometries": 21,
+        "textures": 22
+      },
+      {
+        "owner": "() => rower?.dispose()",
+        "geometries": 20,
+        "textures": 22
+      },
+      {
+        "owner": "() => controls?.dispose()",
+        "geometries": 20,
+        "textures": 22
+      },
+      {
+        "owner": "() => river.dispose()",
+        "geometries": 19,
+        "textures": 21
+      },
+      {
+        "owner": "() => moon.shadow.dispose()",
+        "geometries": 19,
+        "textures": 19
+      },
+      {
+        "owner": "() => {\n\t\tconst textures = new Set();\n\t\tfor (const lookup of physicalLookups) if (lookup.value instanceof Texture) textures.add(lookup.value);\n\t\tfor (const texture of textures) texture.dispose();\n\t\tphysicalLookups.clear();\n\t}",
+        "geometries": 19,
+        "textures": 18
+      },
+      {
+        "owner": "() => asset.dispose()",
+        "geometries": 1,
+        "textures": 3
+      },
+      {
+        "owner": "() => environment.dispose()",
+        "geometries": 1,
+        "textures": 2
+      },
+      {
+        "owner": "() => sky.dispose()",
+        "geometries": 1,
+        "textures": 0
+      },
+      {
+        "owner": "() => {\n\t\tif (!pmremReleased) pmrem.dispose();\n\t}",
+        "geometries": 1,
+        "textures": 0
+      }
+    ],
+    "contextLost": true
+  },
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-rower-v03\\v12-final\\video\\page@1741c45f4b5e9797b8fdfb4fd202b611.webm",
+  "status": "pass",
+  "scope": "full-quality-sample"
+}

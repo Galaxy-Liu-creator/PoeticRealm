@@ -1,0 +1,38 @@
+{
+  "errors": [],
+  "warnings": [],
+  "rigBones": 53,
+  "feet": [
+    {
+      "side": "left",
+      "soleMetres": 0.3729999363422394,
+      "deckMetres": 0.37299999594688416,
+      "gapMetres": -5.960464477539063e-08
+    },
+    {
+      "side": "right",
+      "soleMetres": 0.37300002574920654,
+      "deckMetres": 0.37299999594688416,
+      "gapMetres": 2.9802322387695312e-08
+    }
+  ],
+  "hands": [
+    {
+      "side": "left",
+      "closestSurfaceMetres": 6.7144574131816626e-06
+    },
+    {
+      "side": "right",
+      "closestSurfaceMetres": 0.00013796966231893748
+    }
+  ],
+  "terrain": {
+    "size": 600.0,
+    "samples": 145,
+    "source": "terrain.py + terrain_refine.py; standard RGB8 bake",
+    "mountainStartRadius": 125.0,
+    "mountainFullRadius": 220.0,
+    "heightFactor": 0.58
+  },
+  "passed": true
+}

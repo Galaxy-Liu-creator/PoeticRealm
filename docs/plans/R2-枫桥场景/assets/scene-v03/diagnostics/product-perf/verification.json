@@ -1,0 +1,67 @@
+{
+  "checks": [
+    "火光入境准备真实首帧，提交前路由保留，完成后接管同一个Canvas"
+  ],
+  "errors": [],
+  "disposals": [],
+  "status": "failed",
+  "performance": [
+    {
+      "view": "CAM_moonset",
+      "fps": 59.61209640594221,
+      "p95": 16.80000000000291,
+      "over50": 0,
+      "maxCalls": 99,
+      "maxTriangles": 263778,
+      "audio": {
+        "state": "running",
+        "muted": false,
+        "voices": 2,
+        "loops": 2,
+        "lastEvent": "bell",
+        "events": [
+          "crow",
+          "crow",
+          "bell"
+        ],
+        "tracks": [
+          "environment",
+          "effects",
+          "voice",
+          "music"
+        ]
+      }
+    },
+    {
+      "view": "CAM_rower",
+      "fps": 54.87921739202894,
+      "p95": 33.30000000000291,
+      "over50": 0,
+      "maxCalls": 87,
+      "maxTriangles": 280502,
+      "audio": {
+        "state": "running",
+        "muted": false,
+        "voices": 2,
+        "loops": 2,
+        "lastEvent": "bell",
+        "events": [
+          "crow",
+          "crow",
+          "bell",
+          "crow",
+          "crow",
+          "bell"
+        ],
+        "tracks": [
+          "environment",
+          "effects",
+          "voice",
+          "music"
+        ]
+      }
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: 完整页面与声音近景性能门禁失败：CAM_rower\n    at file:///D:/University-Competition/Math_Media/PoeticRealm/frontend/tools/verify-fengqiao-scene.mjs:56:7",
+  "finalDisposals": []
+}

@@ -1,0 +1,9 @@
+package com.demo.backend.user;
+
+import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AccountRepository extends JpaRepository<Account, Long> {
+    Optional<Account> findByUsernameKey(String usernameKey);
+    java.util.List<Account> findTop50ByUsernameKeyContaining(String usernameKey);
+}

@@ -1,0 +1,349 @@
+{
+  "errors": [],
+  "warnings": [],
+  "rigBones": 53,
+  "feet": [
+    {
+      "side": "left",
+      "gapMetres": -5.960464477539063e-08
+    },
+    {
+      "side": "right",
+      "gapMetres": 2.9802322387695312e-08
+    }
+  ],
+  "hands": [
+    {
+      "side": "left",
+      "closestSurfaceMetres": 6.7144574131816626e-06
+    },
+    {
+      "side": "right",
+      "closestSurfaceMetres": 0.00013796966231893748
+    }
+  ],
+  "nature": [
+    {
+      "name": "shore_bank_v02",
+      "nonManifoldEdges": 0,
+      "triangles": 13514
+    },
+    {
+      "name": "shore_rock_v02_00",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_01",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_02",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_03",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_04",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_05",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_06",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_07",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_08",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_09",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_10",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_11",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_12",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_rock_v02_13",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "shore_snow_v02",
+      "nonManifoldEdges": 0,
+      "triangles": 25736
+    },
+    {
+      "name": "dead_tree_core_v02",
+      "nonManifoldEdges": 0,
+      "triangles": 2120
+    },
+    {
+      "name": "dead_tree_fine_v02",
+      "nonManifoldEdges": 0,
+      "triangles": 2478
+    },
+    {
+      "name": "dead_tree_snow_v02",
+      "nonManifoldEdges": 0,
+      "triangles": 420
+    },
+    {
+      "name": "rock_snow_v02_00",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_01",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_02",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_03",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_04",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_05",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_06",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_07",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_08",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_09",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_10",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_11",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_12",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    },
+    {
+      "name": "rock_snow_v02_13",
+      "nonManifoldEdges": 0,
+      "triangles": 1280
+    }
+  ],
+  "rockSnowContact": [
+    {
+      "snow": "rock_snow_v02_00",
+      "samples": 321,
+      "gapMetres": [
+        -0.00600433349609375,
+        -0.0059964656829833984
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_01",
+      "samples": 321,
+      "gapMetres": [
+        -0.006003856658935547,
+        -0.005996227264404297
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_02",
+      "samples": 321,
+      "gapMetres": [
+        -0.006003856658935547,
+        -0.005995750427246094
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_03",
+      "samples": 321,
+      "gapMetres": [
+        -0.006004810333251953,
+        -0.0059967041015625
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_04",
+      "samples": 321,
+      "gapMetres": [
+        -0.006004810333251953,
+        -0.005996227264404297
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_05",
+      "samples": 321,
+      "gapMetres": [
+        -0.00600433349609375,
+        -0.0059947967529296875
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_06",
+      "samples": 321,
+      "gapMetres": [
+        -0.006006002426147461,
+        -0.005993366241455078
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_07",
+      "samples": 321,
+      "gapMetres": [
+        -0.006007671356201172,
+        -0.005993366241455078
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_08",
+      "samples": 321,
+      "gapMetres": [
+        -0.006005764007568359,
+        -0.005995273590087891
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_09",
+      "samples": 321,
+      "gapMetres": [
+        -0.006003141403198242,
+        -0.005996227264404297
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_10",
+      "samples": 321,
+      "gapMetres": [
+        -0.006004810333251953,
+        -0.005994319915771484
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_11",
+      "samples": 321,
+      "gapMetres": [
+        -0.006017923355102539,
+        -0.0059814453125
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_12",
+      "samples": 321,
+      "gapMetres": [
+        -0.006007194519042969,
+        -0.005980014801025391
+      ]
+    },
+    {
+      "snow": "rock_snow_v02_13",
+      "samples": 321,
+      "gapMetres": [
+        -0.00600886344909668,
+        -0.0059931278228759766
+      ]
+    }
+  ],
+  "treeRootGapMetres": -0.014954805374145508,
+  "terrain": {
+    "scene": "jiangxue_modeling_v02",
+    "sizeMetres": [
+      600,
+      600
+    ],
+    "samples": 145,
+    "peaks": [
+      [
+        -115,
+        155,
+        34,
+        75,
+        70
+      ],
+      [
+        -195,
+        245,
+        24,
+        90,
+        90
+      ],
+      [
+        112,
+        178,
+        45,
+        68,
+        75
+      ],
+      [
+        205,
+        248,
+        28,
+        95,
+        92
+      ]
+    ],
+    "minimum": -2.5,
+    "maximum": 74.95162963867188,
+    "heightEncoding": "standard bake_terrain RGB8/RG16+B"
+  },
+  "passed": true
+}

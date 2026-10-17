@@ -1,0 +1,246 @@
+{
+  "date": "2026-10-07",
+  "scope": "quality-sample",
+  "evidenceRevision": "bridge-bank-components-v01",
+  "fullSceneAccepted": false,
+  "model": {
+    "path": "frontend/public/assets/models/fengqiao/scene_v01.glb",
+    "bytes": 12995272,
+    "sha256": "e8f653c10690aaaa0f7a97e387871b439cab4adec351c9a4fc865f597aaddf0e"
+  },
+  "source": {
+    "path": "art/blender/fengqiao-scene-v01.blend",
+    "bytes": 17284563,
+    "sha256": "fb7befacb3e3ed05d519244ed9324130f3c5ca2854959df5d4435cb8f0a50bc4"
+  },
+  "environment": {
+    "path": "frontend/public/assets/environments/fengqiao-night-v01.rgba16f.gz",
+    "bytes": 381816,
+    "sha256": "4a20f11ba17fb006be06387bc26b9b7aba964d5da2c28687f22bc34e72b8d5fd"
+  },
+  "budget": {
+    "distributedBytes": 13377088,
+    "modelBytes": 12995272,
+    "environmentBytes": 381816,
+    "triangles": 136247,
+    "mainPassPrimitives": 35,
+    "estimatedTextureBytesWithMipmaps": 67283636,
+    "images": [
+      {
+        "name": "tatami_mat_nor_gl",
+        "width": 512,
+        "height": 512,
+        "bytes": 287946
+      },
+      {
+        "name": "tatami_mat_Diffuse",
+        "width": 512,
+        "height": 512,
+        "bytes": 49955
+      },
+      {
+        "name": "tatami_mat_Rough",
+        "width": 512,
+        "height": 512,
+        "bytes": 59098
+      },
+      {
+        "name": "wood_planks_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1305804
+      },
+      {
+        "name": "wood_planks_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 216542
+      },
+      {
+        "name": "wood_planks_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 273484
+      },
+      {
+        "name": "linen_normal",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1766830
+      },
+      {
+        "name": "linen_work_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 315013
+      },
+      {
+        "name": "linen_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 88
+      },
+      {
+        "name": "rock_01_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1885170
+      },
+      {
+        "name": "rock_01_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 452999
+      },
+      {
+        "name": "rock_01_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 682920
+      },
+      {
+        "name": "rock_01_Diffuse_wet",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 333979
+      },
+      {
+        "name": "rock_01_Rough_wet",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 470890
+      }
+    ],
+    "note": "不替代真实浏览器多 pass 和 fps 验证"
+  },
+  "preservedHistoricalAssets": {
+    "art/blender/fengqiao-sample-v01.blend": "694b8394942943178ba1239bb1005f7c7870a2418df2bc051393d352edc0d0f6",
+    "art/blender/fengqiao-sample-v02.blend": "cfd60149342263d701ae60befe2bc7afae13e0f10dcfe8e55b737e0a3d127e99",
+    "art/blender/fengqiao-sample-v03.blend": "7056b269b62e148c45e60fa62f81ef7b3d2afea2804291921e818338861344f8",
+    "art/blender/fengqiao-sample-v04.blend": "4f3fa91b7e9ce973b7bb3f0d8fb3a576e9ec09ddc7dab0a7585784943687fb7e",
+    "frontend/public/assets/models/fengqiao/sample_v01.glb": "37540f5d04a5829c99a03b4ed802478a21bd2ec1e36895706ced132a5720caeb",
+    "frontend/public/assets/models/fengqiao/sample_v02.glb": "7ffde5fa94fd3ea26e3d7e346c3142fd85d037176f15f4133985171bb57a3114",
+    "frontend/public/assets/models/fengqiao/sample_v03.glb": "cf87dd3bc8c86b4680d871e6f200aa37cea14ff4aa908e293c3c18c2ba452107",
+    "frontend/public/assets/models/fengqiao/sample_v04.glb": "bf4868c46bc0eea6b1c67579d1db706ac9f9297ca1e874ae5326755cebcd6b97"
+  },
+  "lifecycle": {
+    "status": "pass",
+    "loadGate": {
+      "limitMs": 3000,
+      "actualMs": 2542.2999999970198,
+      "passed": true
+    },
+    "checks": [
+      "八个实际机位反射裁剪前后画面逐像素一致，保持原反射分辨率",
+      "五个摇橹时刻掌部贴柄、脚部固定、牵绳等长，橹叶连续浸没并横扫",
+      "完整4.8秒循环97个采样点通过掌部、脚部、牵绳及入水门禁",
+      "97个采样点实际桨杆、桨柄、桨叶与连续船壳及木构件零三角形相交",
+      "键盘选择视角、按钮与空格暂停/播放",
+      "固定时间画面可复现",
+      "三组植物按同一时钟摆动，根部固定，表面与深度程序一致",
+      {
+        "label": "reflection",
+        "delta": {
+          "mean": 0.5348223701131687,
+          "changed": 19732
+        }
+      },
+      {
+        "label": "shadows",
+        "delta": {
+          "mean": 0.7774863361625515,
+          "changed": 88499
+        }
+      },
+      {
+        "label": "fire",
+        "delta": {
+          "mean": 0.88895608281893,
+          "changed": 23588
+        }
+      },
+      "10次加载/释放资源计数稳定",
+      "减少动态静止且可手动选视角",
+      "声明但缺失的预滤波环境明确失败，无残留就绪场景",
+      "服务器原始gzip与HTTP自动解压都还原同一夜景环境",
+      "缺失 GLB 有明确失败状态；加载中离开无迟到场景或脚本异常"
+    ],
+    "disposal": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "contextLost": true
+  },
+  "performance": {
+    "status": "failed",
+    "loadGate": {
+      "limitMs": 3000,
+      "actualMs": 2106.7000000029802,
+      "passed": true
+    },
+    "frames": [
+      {
+        "frames": 2716,
+        "duration": 60004.700000000004,
+        "fps": 45.24645569430394,
+        "p50": 16.69999999999709,
+        "p95": 33.400000000001455,
+        "over50": 28,
+        "maxCalls": 107,
+        "maxTriangles": 412028
+      },
+      {
+        "frames": 3081,
+        "duration": 61688.29999999999,
+        "fps": 49.92843051275526,
+        "p50": 16.69999999999709,
+        "p95": 17,
+        "over50": 1,
+        "maxCalls": 107,
+        "maxTriangles": 412028
+      },
+      {
+        "frames": 2384,
+        "duration": 60004.70000000001,
+        "fps": 39.71355577146456,
+        "p50": 16.70000000001164,
+        "p95": 33.5,
+        "over50": 63,
+        "maxCalls": 107,
+        "maxTriangles": 412028
+      }
+    ],
+    "failure": "AssertionError [ERR_ASSERTION]: 性能未留出小样余量\n    at file:///D:/University-Competition/Math_Media/PoeticRealm/frontend/tools/verify-fengqiao-sample.mjs:220:39"
+  },
+  "legacy": {
+    "status": "pass",
+    "loadGate": {
+      "limitMs": 3000,
+      "actualMs": 2564.60000000149,
+      "passed": true
+    },
+    "environmentComparison": {
+      "mean": 0,
+      "changed": 0
+    }
+  },
+  "video": {
+    "path": "docs/plans/R2-枫桥场景/assets/scene-v01/scene-preview.webm",
+    "bytes": 3113719,
+    "sha256": "cc61250b5217458e651047bbc56d38cbfaa3337fd98fb28a37ab9baf619b91f0"
+  },
+  "videoReview": {
+    "width": 1440,
+    "height": 900,
+    "fps": 25,
+    "durationSeconds": 27.24,
+    "sampleTimesSeconds": [
+      5,
+      13,
+      24
+    ],
+    "framesVisuallyInspected": true,
+    "edited": false
+  },
+  "method": "Component-first Blender authoring; exact RGBA and decoded Meshopt bytes; real Chrome/D3D11 fixed frames, pixel controls and lifecycle. Failed performance remains failed; no full-scene acceptance."
+}

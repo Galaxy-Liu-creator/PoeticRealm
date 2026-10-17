@@ -1,0 +1,20 @@
+{
+  "source": "https://polyhaven.com/a/rough_linen",
+  "authors": ["Rico Cilliers", "colormass"],
+  "license": "CC0-1.0",
+  "retrieved": "2026-10-07",
+  "tool": "Blender MCP Poly Haven integration, 1K; retained images saved by Blender",
+  "physicalTileMetres": [0.270708, 0.2713],
+  "retainedSources": [
+    {"file":"rough_linen_Diffuse_1k.png","sha256":"97c7bd64819ee527552e7286030b1a84fb0f7b1d1a2a4d43c4e7e91ac50873e1"},
+    {"file":"rough_linen_Rough_1k.png","sha256":"76c5ba237eb8aee94b47c4c9381113b26cd737abf971461e9823a0023da68c06"},
+    {"file":"rough_linen_nor_gl_1k.png","sha256":"351168f19d254c89698286842a30faadeac6213c07522b783ed32ab0807d15fc"}
+  ],
+  "processingScript": "art/scripts/prepare_rower_textures.py",
+  "delivery": [
+    {"file":"linen_work_basecolor.jpg","sha256":"50b4f378bfc5fed82184606653361d02cd2b4b55a5da196a33bf638b47ef68be","processing":"1024 square, saturation 0.58, brightness 0.65, JPEG quality 93, RGB sRGB"},
+    {"file":"linen_normal.png","sha256":"2622d5137c39f5e7a623f2dc0cdd938b99c53ea4a98b1adf8e83d09d965a0c8a","processing":"1024 square RGB8 PNG, tangent-space +Y normal, Non-Color"},
+    {"file":"linen_roughness.png","sha256":"ed2595fcf3159455009cb594f8b5c649d891f97d4d24ce107a37daa64ce745ac","processing":"1024 square L8 PNG, Non-Color; glTF exporter packs into metallicRoughness"}
+  ],
+  "publication": "Embedded in frontend/public/assets/models/fengqiao/sample_v03.glb"
+}

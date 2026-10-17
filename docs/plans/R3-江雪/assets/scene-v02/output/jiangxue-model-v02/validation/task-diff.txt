@@ -1,0 +1,310 @@
+--- v01/frontend/src/scenes/JiangxueScene.ts
++++ v02/frontend/src/scenes/JiangxueScene.ts
+@@ -8,6 +8,7 @@
+ import { snowTerrain } from '../systems/nature/SnowTerrain';
+ import { QuietSnow } from '../systems/nature/QuietSnow';
+ import { NightRiver } from '../systems/water/NightRiver';
++import { winterDaylight } from '../systems/nature/WinterDaylight';
+ 
+ export async function prepareJiangxue(canvas:HTMLCanvasElement,signal:AbortSignal,query:URLSearchParams) {
+   const base=import.meta.env.BASE_URL+'assets/';
+@@ -19,9 +20,12 @@
+   const release=()=>{if(disposed)return;disposed=true;removeMotionListener();water?.removeFromParent();water?.dispose();snow?.dispose();terrain?.dispose();height?.dispose();if(root)disposeObjectResources(root);light?.shadow.dispose();for(const lookup of lookups)if(lookup.value instanceof Texture)lookup.value.dispose();lookups.clear();engine?.dispose();engine?.renderer.forceContextLoss();};
+   const check=()=>{if(signal.aborted)throw new DOMException('江雪准备取消','AbortError');};
+   try {
+-    const response=await fetch(base+'scenes/jiangxue.scene-v01.json',{signal});if(!response.ok)throw new Error('江雪清单加载失败');
++    const manifestPath=query.get('asset')??'scenes/jiangxue.scene-v02.json';
++    const revision=/^scenes\/jiangxue\.scene-v(01|02)\.json$/.exec(manifestPath)?.[1];
++    if(!revision)throw new Error('江雪清单路径非法');
++    const response=await fetch(base+manifestPath,{signal});if(!response.ok)throw new Error('江雪清单加载失败');
+     const manifest=await response.json();
+-    if(manifest.scene!=='jiangxue'||manifest.contractVersion!=='0.2'||manifest.scope!=='quality-sample'||manifest.model!=='models/jiangxue/scene_v01.glb'||manifest.terrain!=='jiangxue-v01'||manifest.waterLevel!==0||!Array.isArray(manifest.requiredNodes))throw new Error('江雪资产清单不完整');
++    if(manifest.scene!=='jiangxue'||manifest.contractVersion!=='0.2'||manifest.scope!=='quality-sample'||manifest.model!==`models/jiangxue/scene_v${revision}.glb`||manifest.terrain!==`jiangxue-v${revision}`||manifest.waterLevel!==0||!Array.isArray(manifest.requiredNodes)||!manifest.requiredNodes.length)throw new Error('江雪资产清单不完整');
+     const bytes=await fetch(base+manifest.model,{signal});if(!bytes.ok)throw new Error('江雪模型加载失败：'+bytes.status);
+     const gltf=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(await bytes.arrayBuffer(),base+'models/jiangxue/');
+     root=gltf.scene;check();
+@@ -31,15 +35,28 @@
+     engine=new Engine(canvas,Math.min(devicePixelRatio,2));const e=engine;
+     e.renderer.toneMapping=ACESFilmicToneMapping;e.renderer.toneMappingExposure=1;
+     e.renderer.shadowMap.enabled=true;e.renderer.shadowMap.type=PCFShadowMap;
++    if(revision==='02')light=winterDaylight(e.scene);
++    else {
+     e.scene.background=new Color(0xaabec0);e.scene.fog=new FogExp2(0xaabec0,.006);
+     e.scene.add(new HemisphereLight(0xe3f0f2,0x516066,2.4));
+     light=new DirectionalLight(0xe3edef,2);light.position.set(-18,38,12);light.castShadow=true;
+     light.shadow.mapSize.set(2048,2048);light.shadow.camera.left=-38;light.shadow.camera.right=38;light.shadow.camera.top=38;light.shadow.camera.bottom=-38;light.shadow.camera.far=120;light.shadow.bias=-.0002;light.shadow.normalBias=.025;
+     // Geometry and daylight are fixed in this modeling lab; snowfall casts no shadow.
+     light.shadow.autoUpdate=false;light.shadow.needsUpdate=true;
+-    e.scene.add(light,light.target);e.scene.add(root);
++    e.scene.add(light,light.target);
++    }
++    e.scene.add(root);
+     root.traverse(o=>{if(o instanceof Mesh){o.castShadow=true;o.receiveShadow=true;o.frustumCulled=true;}if(o.name==='mask_probe'||o.name.startsWith('PLACE_'))o.visible=false;});
+-    terrain=snowTerrain(height);e.scene.add(terrain.mesh);
++    let surface:{rock:Texture;snow:Texture}|undefined;
++    if(revision==='02'){
++      root.traverse(o=>{if(o instanceof Mesh)for(const material of Array.isArray(o.material)?o.material:[o.material])if(material instanceof MeshStandardMaterial&&material.map){
++        if(material.name==='pbr_rock__jxbank')surface={rock:material.map,snow:surface?.snow??material.map};
++      }});
++      let snowMap:Texture|undefined;
++      root.traverse(o=>{if(o instanceof Mesh)for(const m of Array.isArray(o.material)?o.material:[o.material])if(m instanceof MeshStandardMaterial&&m.name==='pbr_snow__driftv02')snowMap=m.map??undefined;});
++      if(!surface||!snowMap)throw new Error('精修版缺少岩石/雪表面贴图');surface.snow=snowMap;
++    }
++    terrain=snowTerrain(height,surface);e.scene.add(terrain.mesh);
+     e.scene.traverse(object=>{
+       if(!(object instanceof Mesh))return;
+       for(const material of Array.isArray(object.material)?object.material:[object.material]){
+@@ -48,7 +65,7 @@
+         material.onBeforeCompile=(shader,renderer)=>{compile.call(material,shader,renderer);if(shader.uniforms.dfgLUT)lookups.add(shader.uniforms.dfgLUT);};
+       }
+     });
+-    water=new NightRiver(512,700);water.material.uniforms.color.value.set(0x37575b);e.scene.add(water);
++    water=new NightRiver(512,700);water.material.uniforms.color.value.set(revision==='02'?0x24464b:0x37575b);if(revision==='02')water.material.uniforms.surfaceCalm.value=.23;e.scene.add(water);
+     snow=new QuietSnow();e.scene.add(snow);
+     const reduce=matchMedia('(prefers-reduced-motion: reduce)');snow.visible=!reduce.matches;
+     const change=()=>{if(snow)snow.visible=!reduce.matches;if(reduce.matches)e.clock.pause();};reduce.addEventListener('change',change);
+@@ -62,7 +79,7 @@
+     e.onUpdate(t=>{boat.updateWorldMatrix(true,false);inverse.copy(boat.matrixWorld).invert();water!.update(t,inverse);snow!.update(t);});
+     setView(query.get('view')??'CAM_enter');e.clock.seek(Number(query.get('t')??0));if(reduce.matches||query.has('t'))e.clock.pause();
+     await e.renderer.compileAsync(e.scene,e.camera);check();
+-    const stats=()=>({view,time:e.clock.time,playing:e.clock.playing,...e.stats,memory:{...e.renderer.info.memory},programs:e.renderer.info.programs?.length??0,contextLost:e.renderer.getContext().isContextLost(),disposed});
++    const stats=()=>({revision,view,time:e.clock.time,playing:e.clock.playing,...e.stats,memory:{...e.renderer.info.memory},programs:e.renderer.info.programs?.length??0,contextLost:e.renderer.getContext().isContextLost(),disposed});
+     return {engine:e,api:{setView,seek:(t:number)=>e.seek(t),pause:()=>e.clock.pause(),play:()=>e.clock.play(),stats,
+       setReflection:(value:boolean)=>{water!.reflectionEnabled=value;},setSnow:(value:boolean)=>{snow!.visible=value&&!reduce.matches;},
+       dispose:()=>{release();return stats();}},enter:()=>{e.seek(e.clock.time);e.start();}};
+--- v01/frontend/src/systems/nature/SnowTerrain.ts
++++ v02/frontend/src/systems/nature/SnowTerrain.ts
+@@ -1,8 +1,8 @@
+-import { Color, Float32BufferAttribute, Mesh, MeshStandardMaterial, PlaneGeometry } from 'three';
++import { Color, Float32BufferAttribute, Mesh, MeshStandardMaterial, PlaneGeometry, type Texture } from 'three';
+ import type { HeightmapAsset } from '../../engine/Assets';
+ 
+ /** Preserve the authored metres and river corridor; upward slopes retain snow. */
+-export function snowTerrain(asset: HeightmapAsset) {
++export function snowTerrain(asset: HeightmapAsset, surface?:{rock:Texture;snow:Texture}) {
+   const {meta,heightTexture}=asset,heights=heightTexture.image.data as Float32Array,n=meta.resolution;
+   const geometry=new PlaneGeometry(...meta.size,144,144);geometry.rotateX(-Math.PI/2);
+   const position=geometry.getAttribute('position');
+@@ -20,7 +20,36 @@
+     colors.push(color.r*grain,color.g*grain,color.b*grain);
+   }
+   geometry.setAttribute('color',new Float32BufferAttribute(colors,3));
+-  const material=new MeshStandardMaterial({vertexColors:true,roughness:.95,metalness:0});
++  const material=new MeshStandardMaterial({vertexColors:!surface,roughness:.95,metalness:0,map:surface?.rock??null});
++  if(surface) {
++    material.customProgramCacheKey=()=> 'jiangxue-snow-terrain-v02';
++    material.onBeforeCompile=shader=>{
++      shader.uniforms.jxSnowMap={value:surface.snow};
++      const vary='varying vec3 vJxPosition; varying vec3 vJxNormal;';
++      shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\n'+vary)
++        .replace('#include <project_vertex>','vJxPosition=(modelMatrix*vec4(transformed,1.0)).xyz;vJxNormal=normalize(mat3(modelMatrix)*objectNormal);\n#include <project_vertex>');
++      shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\n'+vary+`\n
++        uniform sampler2D jxSnowMap;
++        float jxHash(vec2 p){vec3 p3=fract(vec3(p.xyx)*.1031);p3+=dot(p3,p3.yzx+33.33);return fract((p3.x+p3.y)*p3.z);}
++        float jxNoise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);return mix(mix(jxHash(i),jxHash(i+vec2(1,0)),f.x),mix(jxHash(i+vec2(0,1)),jxHash(i+vec2(1,1)),f.x),f.y);}
++        vec3 jxSurface(sampler2D tex,vec3 p,vec3 n) {
++          vec2 uv=p.xz;
++          if(n.x>n.y&&n.x>n.z)uv=p.yz;else if(n.z>n.y)uv=p.xy;
++          return texture2D(tex,fract(uv)).rgb;
++        }
++      `)
++        .replace('#include <map_fragment>',`
++          vec3 jxN=normalize(vJxNormal);
++          vec3 weights=abs(jxN);
++          vec2 drift=vJxPosition.xz*.19+vJxPosition.y*.13;
++          float grain=(jxNoise(drift)*.7+jxNoise(drift*3.3)*.3-.5)*.42;
++          float coverage=smoothstep(.82,.90,jxN.y+grain);
++          vec3 rockColor=jxSurface(map,vJxPosition/7.0,weights)*.72;
++          vec3 snowColor=jxSurface(jxSnowMap,vJxPosition/2.0,weights);
++          diffuseColor.rgb*=mix(rockColor,snowColor,coverage);
++        `);
++    };
++  }
+   const mesh=new Mesh(geometry,material);mesh.name='jiangxue_snow_terrain';mesh.receiveShadow=true;
+   return {mesh,dispose:()=>{mesh.removeFromParent();geometry.dispose();material.dispose();}};
+ }
+--- v01/frontend/src/systems/water/NightRiver.ts
++++ v02/frontend/src/systems/water/NightRiver.ts
+@@ -34,7 +34,7 @@
+           tDiffuse: { value: null }, color: { value: new Color() }, textureMatrix: { value: new Matrix4() },
+           time: { value: 0 }, reflectionEnabled: { value: 1 }, hullBoundsEnabled: { value: 1 },
+           boatInverse: { value: new Matrix4() },
+-          moonDirection: { value: new Vector3(.35,1,.45) },
++          moonDirection: { value: new Vector3(.35,1,.45) }, surfaceCalm: { value: 1 },
+         }]),
+         vertexShader: `
+           uniform mat4 textureMatrix;
+@@ -60,6 +60,7 @@
+           uniform float hullBoundsEnabled;
+           uniform mat4 boatInverse;
+           uniform vec3 moonDirection;
++          uniform float surfaceCalm;
+           varying vec4 vMirror;
+           varying vec3 vWorld;
+           #include <common>
+@@ -82,13 +83,14 @@
+                     +.008*cos(vWorld.x*8.-vWorld.z*4.+time*1.9);
+             float sz=.020*cos(vWorld.x*2.8+vWorld.z*1.6+time*1.15)
+                     -.007*cos(vWorld.x*8.-vWorld.z*4.+time*1.9);
++            sx*=surfaceCalm;sz*=surfaceCalm;
+             vec3 normal=normalize(vec3(-sx,1.,-sz));
+             vec3 eye=normalize(cameraPosition-vWorld);
+             float fresnel=.10+.73*pow(1.-max(dot(normal,eye),0.),4.);
+             vec2 uv=vMirror.xy/vMirror.w+vec2(sx,sz)*.09;
+             vec3 reflected=texture2D(tDiffuse,uv).rgb;
+             float ripple=.5+.5*sin(vWorld.x*5.7+vWorld.z*3.8+time*.9);
+-            vec3 base=color*(.86+.08*ripple);
++            vec3 base=color*(.86+.08*ripple*surfaceCalm);
+             vec3 outgoing=mix(base,reflected,fresnel*reflectionEnabled);
+             float sheen=pow(max(dot(reflect(normalize(-moonDirection),normal),eye),0.),140.);
+             outgoing+=vec3(.14,.21,.29)*sheen;
+--- v01/frontend/src/labs/jiangxue.ts
++++ v02/frontend/src/labs/jiangxue.ts
+@@ -5,18 +5,25 @@
+ declare global {interface Window {__JIANGXUE_SAMPLE__?:Ready['api']&{reload():Promise<void>};}}
+ const app=document.querySelector<HTMLElement>('#app')!,query=new URLSearchParams(location.search);
+ app.innerHTML=`<main class="jiangxue-lab"><canvas aria-label="江雪三维模型"></canvas><aside class="jx-label">江雪<small>舟 · 蓑笠翁 · 雪岸 · 枯木</small></aside>
+-<nav class="jx-tools" aria-label="江雪模型检查"><button data-view="CAM_enter">全景</button><button data-view="CAM_birds">远山</button><button data-view="CAM_path">雪岸</button><button data-view="CAM_fog">江面</button><button data-view="CAM_boat">孤舟</button><button data-view="CAM_fisherman">蓑笠翁</button><button data-view="CAM_nature">枯木</button><button data-action="pause">暂停</button><label>时间<input type="range" min="0" max="32" step=".1" value="0" aria-label="场景时间"></label><label><input type="checkbox" checked data-feature="reflection">倒影</label><label><input type="checkbox" checked data-feature="snow">细雪</label></nav>
++<nav class="jx-tools" aria-label="江雪模型检查"><label>版本<select aria-label="模型版本"><option value="02">精修版</option><option value="01">第一版</option></select></label><button data-view="CAM_enter">全景</button><button data-view="CAM_birds">远山</button><button data-view="CAM_path">雪岸</button><button data-view="CAM_fog">江面</button><button data-view="CAM_boat">孤舟</button><button data-view="CAM_fisherman">蓑笠翁</button><button data-view="CAM_nature">枯木</button><button data-view="CAM_rocks">岩岸</button><button data-action="pause">暂停</button><label>时间<input type="range" min="0" max="32" step=".1" value="0" aria-label="场景时间"></label><label><input type="checkbox" checked data-feature="reflection">倒影</label><label><input type="checkbox" checked data-feature="snow">细雪</label></nav>
+ <div class="jx-status" role="status"><span>正在加载江雪模型…</span><button data-action="cancel">取消</button><button data-action="retry" hidden>重试</button></div></main>`;
+ const status=app.querySelector<HTMLElement>('.jx-status')!,message=status.querySelector('span')!,cancel=app.querySelector<HTMLButtonElement>('[data-action=cancel]')!,retry=app.querySelector<HTMLButtonElement>('[data-action=retry]')!,pause=app.querySelector<HTMLButtonElement>('[data-action=pause]')!;
+ let ready:Ready|undefined,controller=new AbortController(),generation=0;
++const revisionSelect=app.querySelector<HTMLSelectElement>('select')!;
++revisionSelect.value=query.get('asset')?.includes('v01')?'01':'02';
++const syncRevision=()=>{app.querySelector<HTMLButtonElement>('[data-view=CAM_rocks]')!.hidden=revisionSelect.value==='01';};
++syncRevision();
++revisionSelect.addEventListener('change',()=>{query.set('asset',`scenes/jiangxue.scene-v${revisionSelect.value}.json`);query.delete('view');history.replaceState(null,'',`${location.pathname}?${query}`);syncRevision();void load();});
+ async function load(){
+-  const current=++generation;controller.abort();ready?.api.dispose();ready=undefined;controller=new AbortController();
++  const current=++generation;controller.abort();ready?.api.dispose();ready=undefined;window.__JIANGXUE_SAMPLE__=undefined;controller=new AbortController();
+   const previous=app.querySelector<HTMLCanvasElement>('canvas')!,canvas=previous.cloneNode(false) as HTMLCanvasElement;previous.replaceWith(canvas);
+   status.hidden=false;message.textContent='正在加载江雪模型…';cancel.hidden=false;retry.hidden=true;
+   try{
+     const scene=await prepareJiangxue(canvas,controller.signal,query);
+     if(current!==generation){scene.api.dispose();return;}ready=scene;
+-    window.__JIANGXUE_SAMPLE__={...scene.api,reload:load};scene.enter();status.hidden=true;pause.textContent=scene.engine.clock.playing?'暂停':'播放';
++    window.__JIANGXUE_SAMPLE__={...scene.api,reload:load};
++    scene.api.setSnow(app.querySelector<HTMLInputElement>('[data-feature=snow]')!.checked);scene.api.setReflection(app.querySelector<HTMLInputElement>('[data-feature=reflection]')!.checked);
++    scene.enter();status.hidden=true;pause.textContent=scene.engine.clock.playing?'暂停':'播放';
+   }catch(error){if(current!==generation)return;message.textContent=controller.signal.aborted?'模型加载已取消':'模型加载失败：'+(error instanceof Error?error.message:String(error));cancel.hidden=true;retry.hidden=false;window.__JIANGXUE_SAMPLE__=undefined;}
+ }
+ app.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(button=>button.addEventListener('click',()=>ready?.api.setView(button.dataset.view!)));
+--- v01/frontend/tools/verify-jiangxue-model.mjs
++++ v02/frontend/tools/verify-jiangxue-model.mjs
+@@ -2,19 +2,21 @@
+ import {mkdir,writeFile} from 'node:fs/promises';
+ import assert from 'node:assert/strict';
+ import {authenticatedUi} from './authenticated-ui-fixture.mjs';
+-const out=new URL('../../output/jiangxue-model-v01/validation/',import.meta.url).pathname.replace(/^\/([A-Za-z]:)/,'$1');
++const revision=process.argv.find(a=>a.startsWith('--revision='))?.split('=')[1]??'02';
++assert.match(revision,/^(01|02)$/);
++const out=new URL(`../../output/jiangxue-model-v${revision}/validation/`,import.meta.url).pathname.replace(/^\/([A-Za-z]:)/,'$1');
+ await mkdir(out,{recursive:true});
+ const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=d3d11','--enable-webgl','--ignore-gpu-blocklist']});
+-const report={fixture:'isolated authentication; real Chrome/WebGL and published Jiangxue GLB',errors:[],warnings:[],views:[],release:[],performance:[]};
++const report={revision,fixture:'isolated authentication; real Chrome/WebGL and published Jiangxue GLB',errors:[],warnings:[],views:[],release:[],performance:[]};
+ try {
+   const context=await browser.newContext({viewport:{width:1920,height:1080},deviceScaleFactor:1});await authenticatedUi(context);
+   const page=await context.newPage();page.on('pageerror',error=>report.errors.push(error.message));page.on('console',message=>{if(message.type()==='error')report.errors.push(message.text());if(message.type()==='warning')report.warnings.push(message.text());});
+-  const url='http://127.0.0.1:5187/?scene=jiangxue&lab=jiangxue&t=0';
++  const url=`http://127.0.0.1:5187/?scene=jiangxue&lab=jiangxue&t=0&asset=scenes/jiangxue.scene-v${revision}.json`;
+   await page.goto(url);await page.evaluate(async()=>{const {tabSession}=await import('/src/api/TabSession.ts');tabSession.set({token:'t'.repeat(43),lease:'l'.repeat(43)});});
+   await page.reload();await page.waitForFunction(()=>!!window.__JIANGXUE_SAMPLE__,null,{timeout:45000});
+   for(const [width,height] of [[1920,1080],[1440,900]]) {
+     await page.setViewportSize({width,height});
+-    for(const view of ['CAM_enter','CAM_birds','CAM_path','CAM_fog','CAM_boat','CAM_fisherman','CAM_nature']) {
++    for(const view of ['CAM_enter','CAM_birds','CAM_path','CAM_fog','CAM_boat','CAM_fisherman','CAM_nature',...(revision==='02'?['CAM_rocks']:[])]) {
+       await page.evaluate(view=>{window.__JIANGXUE_SAMPLE__.setView(view);window.__JIANGXUE_SAMPLE__.seek(8);},view);
+       await page.screenshot({path:out+`${view}-${width}.png`});
+       report.views.push({width,height,...await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.stats())});
+@@ -51,11 +53,11 @@
+     await page.emulateMedia({reducedMotion:'reduce'});await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.reload());
+     assert.equal((await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.stats())).playing,false);
+     await page.keyboard.press('Tab');report.keyboardFocus=await page.evaluate(()=>document.activeElement?.tagName);report.reducedMotion=true;
+-    await page.route('**/assets/models/jiangxue/scene_v01.glb',route=>route.fulfill({status:404,body:'missing fixture'}));
++    await page.route(`**/assets/models/jiangxue/scene_v${revision}.glb`,route=>route.fulfill({status:404,body:'missing fixture'}));
+     await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.reload());await page.getByRole('button',{name:'重试',exact:true}).waitFor();
+     assert.match(await page.locator('.jx-status').innerText(),/加载失败/);report.missingAssetHandled=true;
+-    await page.unroute('**/assets/models/jiangxue/scene_v01.glb');await page.getByRole('button',{name:'重试',exact:true}).click();await page.waitForFunction(()=>!!window.__JIANGXUE_SAMPLE__);report.retryRecovered=true;
+-    await page.route('**/assets/models/jiangxue/scene_v01.glb',async route=>{await new Promise(resolve=>setTimeout(resolve,1200));await route.continue();});
++    await page.unroute(`**/assets/models/jiangxue/scene_v${revision}.glb`);await page.getByRole('button',{name:'重试',exact:true}).click();await page.waitForFunction(()=>!!window.__JIANGXUE_SAMPLE__);report.retryRecovered=true;
++    await page.route(`**/assets/models/jiangxue/scene_v${revision}.glb`,async route=>{await new Promise(resolve=>setTimeout(resolve,1200));await route.continue();});
+     const pending=page.evaluate(()=>window.__JIANGXUE_SAMPLE__.reload());await page.getByRole('button',{name:'取消',exact:true}).click();await pending;
+     assert.match(await page.locator('.jx-status').innerText(),/已取消/);report.cancelHandled=true;
+   }
+--- v01/frontend/tools/capture-jiangxue-model.mjs
++++ v02/frontend/tools/capture-jiangxue-model.mjs
+@@ -1,22 +1,24 @@
+ import {chromium} from 'playwright';
+ import {mkdir,writeFile} from 'node:fs/promises';
+ import {authenticatedUi} from './authenticated-ui-fixture.mjs';
+-const out=new URL('../../output/jiangxue-model-v01/validation/',import.meta.url).pathname.replace(/^\/([A-Za-z]:)/,'$1');
++const revision=process.argv.find(a=>a.startsWith('--revision='))?.split('=')[1]??'02';
++if(!/^(01|02)$/.test(revision))throw new Error('Unknown Jiangxue revision');
++const out=new URL(`../../output/jiangxue-model-v${revision}/validation/`,import.meta.url).pathname.replace(/^\/([A-Za-z]:)/,'$1');
+ await mkdir(out+'capture',{recursive:true});
+ const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=d3d11','--ignore-gpu-blocklist']});
+ const context=await browser.newContext({viewport:{width:1440,height:900},deviceScaleFactor:1,recordVideo:{dir:out+'capture',size:{width:1440,height:900}}});
+ await authenticatedUi(context);const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ try {
+-  await page.goto('http://127.0.0.1:5187/?scene=jiangxue&lab=jiangxue&t=0');
++  await page.goto(`http://127.0.0.1:5187/?scene=jiangxue&lab=jiangxue&t=0&asset=scenes/jiangxue.scene-v${revision}.json`);
+   await page.evaluate(async()=>{const {tabSession}=await import('/src/api/TabSession.ts');tabSession.set({token:'t'.repeat(43),lease:'l'.repeat(43)});});
+   await page.reload();await page.waitForFunction(()=>!!window.__JIANGXUE_SAMPLE__,null,{timeout:45000});
+-  for(const view of ['CAM_enter','CAM_boat','CAM_fisherman','CAM_nature']) {
++  for(const view of ['CAM_enter','CAM_boat','CAM_fisherman','CAM_nature',...(revision==='02'?['CAM_rocks']:[])]) {
+     await page.evaluate(view=>{window.__JIANGXUE_SAMPLE__.setView(view);window.__JIANGXUE_SAMPLE__.seek(0);window.__JIANGXUE_SAMPLE__.play();},view);
+     await page.waitForTimeout(3500);
+   }
+   await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.dispose());
+ } finally {
+   const video=page.video();await context.close();await video.saveAs(out+'jiangxue-inspection.webm');
+-  await writeFile(out+'capture.json',JSON.stringify({fixture:'isolated auth; actual Chrome video; four inspection cuts, not automatic product cinematics',viewport:[1440,900],secondsPerView:3.5,errors},null,2));
++  await writeFile(out+'capture.json',JSON.stringify({revision,fixture:'isolated auth; actual Chrome video; inspection cuts, not automatic product cinematics',viewport:[1440,900],secondsPerView:3.5,errors},null,2));
+   await browser.close();
+ }
+--- v01/frontend/tools/test-jiangxue-contract.mjs
++++ v02/frontend/tools/test-jiangxue-contract.mjs
+@@ -2,7 +2,9 @@
+ import {readAsset} from './asset-contract.mjs';
+ import {checkContract} from './check-contract.mjs';
+ import {checkBudget} from './check-budget.mjs';
+-const asset=await readAsset(new URL('../public/assets/scenes/jiangxue.scene-v01.json',import.meta.url));
++const revision=process.argv.find(a=>a.startsWith('--revision='))?.split('=')[1]??'02';
++assert.match(revision,/^(01|02)$/);
++const asset=await readAsset(new URL(`../public/assets/scenes/jiangxue.scene-v${revision}.json`,import.meta.url));
+ checkContract(asset);checkBudget(asset);
+ const bad=()=>({...asset,gltf:structuredClone(asset.gltf),manifest:structuredClone(asset.manifest)});
+ let fixture=bad();fixture.manifest.requiredNodes.push('CAM_missing');assert.throws(()=>checkContract(fixture),/缺少/);
+--- v01/docs/CONTRACT.md
++++ v02/docs/CONTRACT.md
+@@ -536,3 +536,11 @@
+ - 候选源 `art/blender/jiangxue-scene-v01.blend`、集合 `glb_scene_v01`、发布 `models/jiangxue/scene_v01.glb`。候选精修舟为独立普通根 `boat_guest`；`PLACE_boat_01`仍带 `asset: "boat"`以维持旧复用节点语义，候选lab已有精修舟时不得再实例化该旧灰舟。
+ - 立姿人物为 `fisherman_rig`及 `fisherman_*`骨骼/蒙皮网格，来源为已登记CC0 hm08，重做站姿、蓑衣与斗笠。钓竿根 `fishing_rod`及 `ANCHOR_fishing_grip`、`ANCHOR_fishing_tip`、`ANCHOR_fishing_water`挂点提供握持/竿端/入水检查；它们仅增加已登记ANCHOR前缀实例，不新增用户属性。动态舟/人物/蓑衣保留独立层级。
+ - 新候选继续执行15MB、2K及真实浏览器性能/释放验证，声明terrain时即校验高度图，不以quality-sample绕开已提供数据检查。旧枫桥清单及失败门禁保持兼容。
++
++### 18.6 江雪精修候选 v02（2026-10-12）
++
++沿用18.5的0.2材质/米制/高度图编码与quality-sample范围，新增独立源`art/blender/jiangxue-scene-v02.blend`、`glb_scene_v02`、`models/jiangxue/scene_v02.glb`、`scenes/jiangxue.scene-v02.json`和`terrain/jiangxue-v02.height.*`；v01保持。江雪实验入口允许通过asset选择v01或v02同版本清单、模型与高度图，不允许版本混用或路径越界。
++
++v02沿用正式机位、焦点、PLACE/SFX、boat_guest/boat_hull_closed、fisherman_rig及钓具挂点。新增静态组件使用既有小写对象规则：shore_bank_v02、shore_snow_v02、shore_rock_v02_NN、rock_snow_v02_NN、dead_tree_core_v02、dead_tree_fine_v02、dead_tree_snow_v02；可选岩岸检查机位CAM_rocks沿用相机约束。角色仍为pbr_rock/pbr_wood/pbr_snow，每网格至多2槽位，纹理与切线要求不变。近岸及远山使用已登记材质原像素，运行时远山表面可共享本次独占GLB内的岩石/雪BaseColor纹理，不能修改高度米值；共享纹理由该GLB宿主统一释放。
++
++`quality-sample`仅表示几何和材料交接候选，完整诗境/性能验收仍独立记录，不能因为增加组件改标full-scene。保留骨骼、手脚接触与舟壳校验，新增岩雪需取样贴合支撑岩面并检查闭合性。
+--- v01/docs/CREDITS.md
++++ v02/docs/CREDITS.md
+@@ -82,6 +82,15 @@
+ | 远山高度场与预览环境 | [terrain.py](../art/scripts/components/jiangxue/terrain.py)、terrain_refine.py、既有 bake_terrain.py、[SnowTerrain](../frontend/src/systems/nature/SnowTerrain.ts)、[QuietSnow](../frontend/src/systems/nature/QuietSnow.ts)；项目原创 | 600×600m、1024² RG16/B 编码，米制高度不变换；冷色日光、坡向积雪、种子细雪与既有水面用于实验入口。发布 terrain/jiangxue-v01.height.* |
+ | 江雪 GLB 无损打包 | 既有 optimize-assets.mjs；上述素材许可保留 | 发布 models/jiangxue/scene_v01.glb，Meshopt 原字节及 WebP 原像素无损核验；原始 GLB 和检查报告保存在 output/jiangxue-model-v01。当前是 quality-sample 建模候选 |
+ 
++### 江雪模型 v02 · 2026-10-12
++
++| 名称 | 来源与许可 | 用途与处理 |
++|---|---|---|
++| 曲线江岸、分层岩块与贴面雪体 | [v02 分段脚本](../art/scripts/components/jiangxue/v02/)；本项目原创几何，沿用已登记 Rock 01 CC0 干/湿纹理与 v01 原创雪 PBR | 独立 jiangxue-scene-v02.blend / scene_v02.glb；14 块受控变形岩石，岩雪每块 321 个支撑样本，雪帽边界限制朝上岩面；不是摄影扫描模型，不导入外部自然模型 |
++| 弯曲枯木与细枝 | tree_helpers.py / tree_core.py / tree_twigs.py；原创 Catmull–Rom 路径及渐细管体，沿用已登记 Wood Planks CC0 | 四条主路径、30 处细枝；UV 沿枝条长度，独立闭合雪条；保留第一版及本轮初稿组件 |
++| 远山表面与寒江预览 | [v02 高度场](../art/scripts/components/jiangxue/v02/terrain.py)、[SnowTerrain](../frontend/src/systems/nature/SnowTerrain.ts)、[WinterDaylight](../frontend/src/systems/nature/WinterDaylight.ts)；原创代码与高度数据 | 600m 高度场保持米制与 RG16/B；坡向、固定函数噪声和法线主方向投影混合已有岩雪 BaseColor，不新增照片。江雪 v02 降低既有水面细波对比，不改变枫桥默认参数 |
++| v02 无损交接与证据 | 既有 optimize-assets.mjs；模型、纹理许可沿用上述登记 | 独立清单/GLB/高度图；无损 WebP 原像素及 Meshopt 原字节校验。Poly Haven 扩展本轮禁用，未改变用户设置、下载自然资产或调用付费生成服务；浏览器截图/短片为实际本地 WebGL 运行，不标为生成概念图 |
++
+ ## 音频
+ 
+ | 名称 | 来源 | 作者 / 演奏者 | 许可 | 用途 | 备注 |

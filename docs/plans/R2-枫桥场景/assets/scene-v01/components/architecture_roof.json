@@ -1,0 +1,20 @@
+{
+  "component": "architecture_roof",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_temple_tile_roof",
+      "vertices": 13940,
+      "triangles": 26652,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_tower_tile_roof",
+      "vertices": 6580,
+      "triangles": 12572,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids; explicitly registered thin leaf surfaces may be open"
+}

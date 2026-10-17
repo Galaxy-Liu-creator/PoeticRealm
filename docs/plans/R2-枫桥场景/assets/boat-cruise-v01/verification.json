@@ -1,0 +1,1308 @@
+{
+  "checks": [
+    "舟沿河向前、船首对齐行进切线、临泊位减速无跳回；近景跟随与时间重放通过",
+    "8个实际机位反射裁剪前后画面逐像素一致，保持原反射分辨率",
+    "五个摇橹时刻掌部贴柄、脚部固定、牵绳等长，橹叶连续浸没并横扫",
+    "完整4.8秒循环97个采样点通过掌部、脚部、牵绳及入水门禁",
+    "97个采样点实际桨杆、桨柄、桨叶与连续船壳及木构件零三角形相交",
+    "键盘选择视角、按钮与空格暂停/播放",
+    "固定时间画面可复现",
+    "三组植物按同一时钟摆动，根部固定，表面与深度程序一致",
+    {
+      "label": "reflection",
+      "delta": {
+        "mean": 0.5153071952160494,
+        "changed": 17870
+      }
+    },
+    {
+      "label": "shadows",
+      "delta": {
+        "mean": 0.7742525077160494,
+        "changed": 88425
+      }
+    },
+    {
+      "label": "fire",
+      "delta": {
+        "mean": 0.9204091113683127,
+        "changed": 24021
+      }
+    },
+    "10次加载/释放资源计数稳定",
+    "减少动态静止且可手动选视角",
+    "声明但缺失的预滤波环境明确失败，无残留就绪场景",
+    "服务器原始gzip与HTTP自动解压都还原同一夜景环境",
+    "缺失 GLB 有明确失败状态；加载中离开无迟到场景或脚本异常"
+  ],
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "errors": [],
+  "frames": [],
+  "firstLoadMs": 4119,
+  "details": {
+    "contractVersion": "0.2",
+    "scope": "quality-sample",
+    "reducedMotion": false,
+    "initializationMemory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "loadMs": 1843.2000000001863,
+    "environmentSource": "baked-rgba16f",
+    "loadPhases": {
+      "asset": 437.70000000018626,
+      "environment": 20.399999999906868,
+      "assembly": 36.700000000186265,
+      "textureUpload": 238.39999999990687,
+      "compile": 772.8000000002794,
+      "firstDraw": 575
+    },
+    "memory": {
+      "geometries": 37,
+      "textures": 22
+    },
+    "reflectionResolution": 1024,
+    "reflectionScissor": [
+      0,
+      0,
+      1024,
+      687
+    ],
+    "shadowResolution": 2048,
+    "drawingBuffer": [
+      1920,
+      1080
+    ],
+    "materials": [
+      "pbr_cloth__reed",
+      "pbr_wood__aged",
+      "pbr_metal__iron",
+      "glow__fire",
+      "pbr_skin__eyes",
+      "pbr_skin__iris",
+      "pbr_skin__weathered",
+      "pbr_cloth__worklinen",
+      "pbr_cloth__worktrousers",
+      "pbr_cloth__worncollar",
+      "pbr_stone__dry",
+      "pbr_stone__lime",
+      "pbr_tile__charcoal",
+      "pbr_metal__bellbronze",
+      "pbr_stone__wet",
+      "pbr_rock__silt",
+      "pbr_foliage__maple",
+      "pbr_foliage__reed"
+    ],
+    "maskProbe": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "boat": [
+      3.5475130948391507,
+      -0.2971615416832698,
+      -1.2836620512791934
+    ],
+    "navigation": {
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.205892836590558,
+        0,
+        -0.9785745448562894
+      ],
+      "position": [
+        3.5475130948391507,
+        -0.2971615416832698,
+        -1.2836620512791934
+      ],
+      "quaternion": [
+        0.0021067249952486287,
+        0.776492986977022,
+        -0.0005273161425891872,
+        0.6301221507160201
+      ],
+      "end": [
+        -0.55,
+        -9
+      ]
+    },
+    "view": {
+      "camera": [
+        22,
+        13,
+        28.000000000000004
+      ],
+      "target": [
+        1,
+        3,
+        -16
+      ],
+      "followsBoat": false
+    },
+    "rower": {
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        5.303998542825555e-8,
+        5.673581154456318e-8
+      ],
+      "footErrors": [
+        4.191067299256718e-7,
+        0.0000012727209622761492
+      ],
+      "skinHandErrors": [
+        0.02079103433097015,
+        0.02993654817707438
+      ],
+      "oarRotation": [
+        0.005798924032273862,
+        -0.02295297271243778,
+        -0.014227711129368707,
+        0.9996184801011581
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.3282098108065234,
+        -0.4769889003458878,
+        1.2766748091024418
+      ],
+      "pivot": [
+        4.726345118158873,
+        1.0734061686420253,
+        1.3332824547692348
+      ],
+      "tetherLength": 0.9204935108300004,
+      "tetherError": 2.220446049250313e-16
+    },
+    "wind": {
+      "meshes": 3,
+      "rootVertices": 2734,
+      "time": 8,
+      "enabled": true,
+      "surfaceCompiles": 9,
+      "depthCompiles": 6
+    }
+  },
+  "navigation": [
+    {
+      "t": 0,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.17664405078087647,
+        0,
+        -0.9842747986836418
+      ],
+      "position": [
+        3.85,
+        -0.3011090418491167,
+        0.45
+      ],
+      "quaternion": [
+        0.002386913929078183,
+        0.7670173564051584,
+        -0.0006042113713366276,
+        0.6416216272412861
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.655926196393933,
+        3.2999999523162833,
+        5.4497518720267415
+      ]
+    },
+    {
+      "t": 8,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.205892836590558,
+        0,
+        -0.9785745448562894
+      ],
+      "position": [
+        3.5475130948391507,
+        -0.2971615416832698,
+        -1.2836620512791934
+      ],
+      "quaternion": [
+        0.0021067249952486287,
+        0.776492986977022,
+        -0.0005273161425891872,
+        0.6301221507160201
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.498944921318895,
+        3.2999999523162833,
+        3.4812864766934823
+      ]
+    },
+    {
+      "t": 16,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.26976016439035727,
+        0,
+        -0.9629275433323565
+      ],
+      "position": [
+        3.137694325717602,
+        -0.2943154595237089,
+        -2.995061065433149
+      ],
+      "quaternion": [
+        0.0007361930262213464,
+        0.7967932273268012,
+        -0.0001790025710076847,
+        0.6042515857356503
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.385090718968536,
+        3.2999999523162833,
+        1.237013520154329
+      ]
+    },
+    {
+      "t": 24,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.4416202202093975,
+        0,
+        -0.8972020848739728
+      ],
+      "position": [
+        2.5125697849952457,
+        -0.2949190668379846,
+        -4.637298756943624
+      ],
+      "quaternion": [
+        -0.0010688613014422426,
+        0.8490045458200033,
+        0.00021889458351383422,
+        0.5283844157407078
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.395751444385319,
+        3.2999999523162833,
+        -1.987942953798306
+      ]
+    },
+    {
+      "t": 32,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.5415797858714904,
+        0,
+        -0.8406493534972778
+      ],
+      "position": [
+        1.635230470420538,
+        -0.3000816524715177,
+        -6.161909683550046
+      ],
+      "quaternion": [
+        -0.0018198357025280493,
+        0.8779441355043509,
+        0.00028022282454294976,
+        0.4787595477969102
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        10.76359883851188,
+        3.2999999523162833,
+        -4.5485611465583276
+      ]
+    },
+    {
+      "t": 80,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.6162157605118057,
+        0,
+        -0.7875773844498439
+      ],
+      "position": [
+        -0.5361523955671225,
+        -0.30119808763407735,
+        -8.982282937507001
+      ],
+      "quaternion": [
+        -0.0016428446024059542,
+        0.8989464573282736,
+        0.0001481314870613791,
+        0.43805541427497663
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        8.701533236838678,
+        3.2999999523162833,
+        -8.210812444080668
+      ]
+    },
+    {
+      "t": 300,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.6154326431153633,
+        0,
+        -0.7881894834289772
+      ],
+      "position": [
+        -0.5499999999995724,
+        -0.3059356386407448,
+        -8.99999999999945
+      ],
+      "quaternion": [
+        0.00024515630820742384,
+        0.8987303552477204,
+        -0.00002230691513653846,
+        0.4385016396287389
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        8.686914265724672,
+        3.2999999523162833,
+        -8.21934808458268
+      ]
+    }
+  ],
+  "loadGate": {
+    "limitMs": 3000,
+    "actualMs": 1843.2000000001863,
+    "passed": true
+  },
+  "rowing": [
+    {
+      "t": 0,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        6.14131954943257e-8,
+        3.5253194975396225e-8
+      ],
+      "footErrors": [
+        4.334885823767155e-7,
+        0.0000011522818446054678
+      ],
+      "skinHandErrors": [
+        0.02079088233756302,
+        0.029936907991250834
+      ],
+      "oarRotation": [
+        -0.000154438424018178,
+        -0.07582829800999658,
+        -0.023077177459707415,
+        0.9968537953231524
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.568089181551629,
+        -0.4559360283387446,
+        3.2875893784606034
+      ],
+      "pivot": [
+        4.951095342605642,
+        1.0683587557739236,
+        3.101159431888829
+      ],
+      "tetherLength": 0.9204935108300003,
+      "tetherError": 3.3306690738754696e-16
+    },
+    {
+      "t": 1.2,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        7.237912345428153e-8,
+        6.760062043349346e-8
+      ],
+      "footErrors": [
+        5.144502754067608e-7,
+        0.0000011952484968727639
+      ],
+      "skinHandErrors": [
+        0.020794866382762973,
+        0.029934444066727923
+      ],
+      "oarRotation": [
+        0.00043015352577828263,
+        0.06994152458751293,
+        0.00613501017240311,
+        0.9975321346986789
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.450565342274975,
+        -0.4677338530815285,
+        2.499012230604865
+      ],
+      "pivot": [
+        4.873848111262562,
+        1.0693240540674211,
+        2.851596337649643
+      ],
+      "tetherLength": 0.9204935108300006,
+      "tetherError": 0
+    },
+    {
+      "t": 2.4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        6.784073764561798e-8,
+        6.938720131204939e-8
+      ],
+      "footErrors": [
+        4.3389259769117124e-7,
+        0.0000011549760948348618
+      ],
+      "skinHandErrors": [
+        0.020794338709574554,
+        0.029934999679439158
+      ],
+      "oarRotation": [
+        0.012701634856543294,
+        0.07475709399308342,
+        -0.01622556395038227,
+        0.99698885472415
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.371063591697301,
+        -0.4911259217211983,
+        2.314476323278803
+      ],
+      "pivot": [
+        4.81089003038492,
+        1.0774079562998031,
+        2.594582947840526
+      ],
+      "tetherLength": 0.9204935108300004,
+      "tetherError": 2.220446049250313e-16
+    },
+    {
+      "t": 3.6,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        6.651299671369076e-8,
+        6.246972586636172e-8
+      ],
+      "footErrors": [
+        4.165185336193257e-7,
+        0.0000012913970411081007
+      ],
+      "skinHandErrors": [
+        0.020790653671267742,
+        0.02993731872136478
+      ],
+      "oarRotation": [
+        0.001627241713150527,
+        -0.06992391563755848,
+        -0.023208328805568865,
+        0.9972809892805393
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.3886830651866005,
+        -0.42843073842896495,
+        2.5331901310995106
+      ],
+      "pivot": [
+        4.7653535793851916,
+        1.0872118408752505,
+        2.331872617283844
+      ],
+      "tetherLength": 0.9204935108300005,
+      "tetherError": 1.1102230246251565e-16
+    },
+    {
+      "t": 4.8,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        6.155426252960033e-8,
+        3.555827492924809e-8
+      ],
+      "footErrors": [
+        4.3368291872825505e-7,
+        0.0000011536761019125745
+      ],
+      "skinHandErrors": [
+        0.020790882472257344,
+        0.02993690830121633
+      ],
+      "oarRotation": [
+        -0.00015443842401816413,
+        -0.07582829800999659,
+        -0.02307717745970761,
+        0.9968537953231524
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.36628226295175,
+        -0.41734939212934785,
+        2.2747073029577773
+      ],
+      "pivot": [
+        4.738332798954371,
+        1.0921920352796801,
+        2.0650289525071837
+      ],
+      "tetherLength": 0.92049351083,
+      "tetherError": 6.661338147750939e-16
+    }
+  ],
+  "strokeLimits": {
+    "samples": 97,
+    "maxGripError": 8.681359824084212e-8,
+    "maxGripAt": 2.05,
+    "maxSkinHandError": 0.029937547372926247,
+    "maxFootError": 0.0000012913970411081007,
+    "maxTetherError": 6.661338147750939e-16,
+    "highestBlade": -0.4088905726774752,
+    "lowestBlade": -0.4918190036695562
+  },
+  "oarClearance": {
+    "scope": "delivered GLB triangle intersections; fixed pin, binding and tether excluded",
+    "hullNames": [
+      "boat_hull_closed",
+      "boat_wood_aged"
+    ],
+    "movingNames": [
+      "rowing_oar_shaft",
+      "rowing_oar_handle",
+      "rowing_oar_blade"
+    ],
+    "hullTriangles": 10248,
+    "samples": [
+      {
+        "t": 0,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.049999999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.09999999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.15,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.19999999999999998,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.25,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.3,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.35000000000000003,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.39999999999999997,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.44999999999999996,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.5,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.5499999999999999,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.6,
+        "intersections": 0,
+        "candidatePairs": 563,
+        "examples": []
+      },
+      {
+        "t": 0.65,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.7000000000000001,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.75,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.7999999999999999,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 0.85,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 0.8999999999999999,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 0.9500000000000001,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 1,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 1.05,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 1.0999999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.15,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.2,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.25,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.3,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.3499999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.4000000000000001,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.45,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.5,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.5499999999999998,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 1.5999999999999999,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.6500000000000001,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.7,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.75,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.7999999999999998,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.8499999999999999,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.9000000000000001,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.95,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 2,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.05,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.1,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.15,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.1999999999999997,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 2.25,
+        "intersections": 0,
+        "candidatePairs": 553,
+        "examples": []
+      },
+      {
+        "t": 2.3,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 2.35,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.4,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.4499999999999997,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.5,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.55,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.6,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.65,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 2.6999999999999997,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 2.75,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.8000000000000003,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.8499999999999996,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 2.9,
+        "intersections": 0,
+        "candidatePairs": 545,
+        "examples": []
+      },
+      {
+        "t": 2.9499999999999997,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 3,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 3.0500000000000003,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.0999999999999996,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 3.15,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 3.1999999999999997,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.25,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.3000000000000003,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 3.3499999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.4,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 3.4499999999999997,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.5,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 3.5500000000000003,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 3.5999999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.65,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.6999999999999997,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.75,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.8000000000000003,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.8499999999999996,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.9,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.9499999999999997,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 4,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.05,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.1,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.1499999999999995,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.2,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 4.25,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 4.3,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.35,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.3999999999999995,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.45,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.5,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.55,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.6,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.6499999999999995,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.7,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 4.75,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.8,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      }
+    ],
+    "intersections": 0
+  },
+  "wind": {
+    "meshes": 3,
+    "rootVertices": 2734,
+    "time": 8,
+    "enabled": true,
+    "surfaceCompiles": 9,
+    "depthCompiles": 6,
+    "delta": {
+      "mean": 0.33560747813786007,
+      "changed": 36195
+    }
+  },
+  "nativeServer": {
+    "name": "chrome_devtools",
+    "title": "Chrome DevTools MCP server",
+    "version": "1.10.1"
+  },
+  "dom": "## Latest page snapshot\nuid=1_0 RootWebArea \"诗境 · 一卷山河\" url=\"http://127.0.0.1:5187/?scene=fengqiao&lab=fengqiao&asset=scenes%2Ffengqiao.scene-v01.json#/login\"\n  uid=1_1 main\n    uid=1_2 Canvas \"枫桥局部三维小样\"\n    uid=1_3 complementary\n      uid=1_4 StaticText \"枫桥夜泊\"\n      uid=1_5 StaticText \"桥寺与河岸组件预览 · 尚未完成整场景验收\"\n    uid=1_6 navigation \"小样检查\"\n      uid=1_7 button \"整体\"\n      uid=1_8 button \"湿石岸\"\n      uid=1_9 button \"木舟\"\n      uid=1_10 button \"船夫\"\n      uid=1_11 button \"寺院\"\n      uid=1_12 button \"石桥\"\n      uid=1_13 button \"钟楼\"\n      uid=1_14 button \"河岸\"\n      uid=1_15 button \"暂停\"\n      uid=1_16 StaticText \"时间\"\n      uid=1_17 slider \"场景时间\" orientation=\"horizontal\" value=\"0\" valuemax=\"32\" valuemin=\"0\" valuetext=\"0\"\n      uid=1_18 checkbox \"倒影\" checked\n      uid=1_19 checkbox \"阴影\" checked\n      uid=1_20 checkbox \"渔火\" checked\n      uid=1_21 checkbox \"风摆\" checked\n",
+  "console": "## Console messages\n<no console messages found>",
+  "network": "## Network requests\nNo requests found.",
+  "lastDisposal": {
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "stages": [
+      {
+        "owner": "() => window.removeEventListener(\"keydown\", onKey)",
+        "geometries": 37,
+        "textures": 22
+      },
+      {
+        "owner": "() => {\n\t\tfor (const material of reflectionMaterials.values()) material.dispose();\n\t\treflectionMaterials.clear();\n\t\treflectionRoot.clear();\n\t}",
+        "geometries": 37,
+        "textures": 22
+      },
+      {
+        "owner": "() => rower?.dispose()",
+        "geometries": 36,
+        "textures": 22
+      },
+      {
+        "owner": "() => controls?.dispose()",
+        "geometries": 36,
+        "textures": 22
+      },
+      {
+        "owner": "() => river.dispose()",
+        "geometries": 35,
+        "textures": 21
+      },
+      {
+        "owner": "() => moon.shadow.dispose()",
+        "geometries": 35,
+        "textures": 19
+      },
+      {
+        "owner": "() => {\n\t\tconst textures = new Set();\n\t\tfor (const lookup of physicalLookups) if (lookup.value instanceof Texture) textures.add(lookup.value);\n\t\tfor (const texture of textures) texture.dispose();\n\t\tphysicalLookups.clear();\n\t}",
+        "geometries": 35,
+        "textures": 18
+      },
+      {
+        "owner": "() => wind.dispose()",
+        "geometries": 35,
+        "textures": 18
+      },
+      {
+        "owner": "() => environment.dispose()",
+        "geometries": 35,
+        "textures": 17
+      },
+      {
+        "owner": "() => asset.dispose()",
+        "geometries": 1,
+        "textures": 2
+      },
+      {
+        "owner": "() => sky.dispose()",
+        "geometries": 1,
+        "textures": 0
+      }
+    ],
+    "contextLost": true
+  },
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\boat-cruise-v01\\lifecycle-v01\\video\\page@6071ae02004e6d2af2316a485dfc14c1.webm",
+  "status": "pass",
+  "scope": "visual-and-lifecycle"
+}

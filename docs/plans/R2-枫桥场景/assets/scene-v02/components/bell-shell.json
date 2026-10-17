@@ -1,0 +1,105 @@
+{
+  "component": "bell-shell",
+  "rows": [
+    {
+      "source": "bell_tower_stone_dry",
+      "far": "bell_far_stone_dry",
+      "nearTriangles": 608,
+      "farTriangles": 394,
+      "ratio": 0.65,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.0015878677368164062,
+      "nearBounds": [
+        [
+          -8.619999885559082,
+          25.53499984741211,
+          0.6700000166893005
+        ],
+        [
+          -1.380000114440918,
+          34.619998931884766,
+          1.6800000667572021
+        ]
+      ],
+      "farBounds": [
+        [
+          -8.619999885559082,
+          25.53499984741211,
+          0.6700000166893005
+        ],
+        [
+          -1.380000114440918,
+          34.619998931884766,
+          1.6815879344940186
+        ]
+      ]
+    },
+    {
+      "source": "bell_tower_metal_bellbronze",
+      "far": "bell_far_metal_bellbronze",
+      "nearTriangles": 4160,
+      "farTriangles": 1164,
+      "ratio": 0.28,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.000225067138671875,
+      "nearBounds": [
+        [
+          -6.050000190734863,
+          29.950000762939453,
+          3.200000047683716
+        ],
+        [
+          -3.950000047683716,
+          32.04999923706055,
+          6.230350017547607
+        ]
+      ],
+      "farBounds": [
+        [
+          -6.04977560043335,
+          29.950223922729492,
+          3.199965715408325
+        ],
+        [
+          -3.9502243995666504,
+          32.049774169921875,
+          6.230350017547607
+        ]
+      ]
+    },
+    {
+      "source": "bell_tower_metal_iron",
+      "far": "bell_far_metal_iron",
+      "nearTriangles": 148,
+      "farTriangles": 148,
+      "ratio": 1,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.0,
+      "nearBounds": [
+        [
+          -5.315999984741211,
+          29.333999633789062,
+          3.700000047683716
+        ],
+        [
+          -4.930000305175781,
+          31.30500030517578,
+          6.389999866485596
+        ]
+      ],
+      "farBounds": [
+        [
+          -5.315999984741211,
+          29.333999633789062,
+          3.700000047683716
+        ],
+        [
+          -4.930000305175781,
+          31.30500030517578,
+          6.389999866485596
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

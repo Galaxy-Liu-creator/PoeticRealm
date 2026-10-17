@@ -1,0 +1,26 @@
+{
+  "component": "reed_prototypes",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_reed_prototype_0",
+      "vertices": 312,
+      "triangles": 384,
+      "nonmanifoldEdges": 96
+    },
+    {
+      "object": "src_reed_prototype_1",
+      "vertices": 260,
+      "triangles": 320,
+      "nonmanifoldEdges": 80
+    },
+    {
+      "object": "src_reed_prototype_2",
+      "vertices": 234,
+      "triangles": 288,
+      "nonmanifoldEdges": 72
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids; explicitly registered thin leaf surfaces may be open"
+}

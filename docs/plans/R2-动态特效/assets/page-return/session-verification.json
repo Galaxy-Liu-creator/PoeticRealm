@@ -1,0 +1,17 @@
+{
+  "complete": true,
+  "checks": [
+    "fresh opens and private deep links require login; no home or guest bypass",
+    "registration returns to login without granting access",
+    "explicit login issues a tab token; 30-day credential is HttpOnly and stores no password",
+    "remembered and CSRF cookies alone cannot authenticate protected APIs",
+    "reload preserves poem, favorites and profile routes, identity and account data",
+    "new tab pre-fills remembered state, waits for click, then gets its own token",
+    "opener-cloned sessionStorage cannot bypass login or revoke the original tab",
+    "pagehide immediately revokes access; the reload capability expires; reopening requires login",
+    "unchecking remembered login revokes its persistent credential; logout clears access and guards Back",
+    "server-side token revocation returns the active document to login"
+  ],
+  "errors": [],
+  "username": "sqa_168452956"
+}

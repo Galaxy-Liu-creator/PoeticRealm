@@ -1,0 +1,247 @@
+{
+  "component": "jx_v02_rock_cluster",
+  "scene": "jiangxue_modeling_v02",
+  "objects": [
+    {
+      "object": "src_shore_rock_v02_00",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_01",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_02",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_03",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_04",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_05",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_06",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_07",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_08",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_09",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_10",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_11",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_12",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_shore_rock_v02_13",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31029,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2,
+    "bank_length": 230.0,
+    "bank_width": 95.0
+  },
+  "extra": {
+    "rocks": [
+      {
+        "object": "src_shore_rock_v02_00",
+        "location": [
+          -9.821176528930664,
+          -18.0,
+          -0.3877623379230499
+        ],
+        "prototype": 0
+      },
+      {
+        "object": "src_shore_rock_v02_01",
+        "location": [
+          -9.75707721710205,
+          -11.0,
+          -0.6111936569213867
+        ],
+        "prototype": 1
+      },
+      {
+        "object": "src_shore_rock_v02_02",
+        "location": [
+          -9.133076667785645,
+          -3.0,
+          -0.4195103049278259
+        ],
+        "prototype": 2
+      },
+      {
+        "object": "src_shore_rock_v02_03",
+        "location": [
+          -5.965886116027832,
+          5.0,
+          -0.46973884105682373
+        ],
+        "prototype": 0
+      },
+      {
+        "object": "src_shore_rock_v02_04",
+        "location": [
+          -4.693785190582275,
+          13.0,
+          -0.6825419664382935
+        ],
+        "prototype": 1
+      },
+      {
+        "object": "src_shore_rock_v02_05",
+        "location": [
+          -5.68887186050415,
+          23.0,
+          -0.6478909254074097
+        ],
+        "prototype": 2
+      },
+      {
+        "object": "src_shore_rock_v02_06",
+        "location": [
+          -5.125229835510254,
+          31.0,
+          -0.5132603645324707
+        ],
+        "prototype": 0
+      },
+      {
+        "object": "src_shore_rock_v02_07",
+        "location": [
+          -7.245358943939209,
+          45.0,
+          -0.6256733536720276
+        ],
+        "prototype": 1
+      },
+      {
+        "object": "src_shore_rock_v02_08",
+        "location": [
+          -9.101167678833008,
+          54.0,
+          -0.41962525248527527
+        ],
+        "prototype": 2
+      },
+      {
+        "object": "src_shore_rock_v02_09",
+        "location": [
+          -9.445353507995605,
+          69.0,
+          -0.5100193619728088
+        ],
+        "prototype": 0
+      },
+      {
+        "object": "src_shore_rock_v02_10",
+        "location": [
+          -9.051462173461914,
+          87.0,
+          -0.5934240221977234
+        ],
+        "prototype": 1
+      },
+      {
+        "object": "src_shore_rock_v02_11",
+        "location": [
+          -7.094178676605225,
+          108.0,
+          -0.38388732075691223
+        ],
+        "prototype": 2
+      },
+      {
+        "object": "src_shore_rock_v02_12",
+        "location": [
+          -6.480700969696045,
+          137.0,
+          -0.5467665791511536
+        ],
+        "prototype": 0
+      },
+      {
+        "object": "src_shore_rock_v02_13",
+        "location": [
+          -8.301095008850098,
+          155.0,
+          -0.5334694981575012
+        ],
+        "prototype": 1
+      }
+    ],
+    "wetBandHeight": 0.7,
+    "placedFromCheckedPrototypes": true
+  }
+}

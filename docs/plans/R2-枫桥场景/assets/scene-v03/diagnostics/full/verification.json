@@ -1,0 +1,2442 @@
+{
+  "checks": [
+    "舟沿河向前、船首对齐行进切线、临泊位减速无跳回；近景跟随与时间重放通过",
+    "8个实际机位反射裁剪前后画面逐像素一致，保持原反射分辨率",
+    "8个实际机位矩阵复用与船体范围提前排除前后逐像素一致",
+    "八机位与五个距离阈值往返：唯一层级、所有pass共用、固定帧复现、实际多pass几何减少",
+    "五个摇橹时刻掌部贴柄、脚部固定、牵绳等长，橹叶连续浸没并横扫",
+    "完整4秒循环97个采样点通过掌部、脚部、牵绳及入水门禁",
+    "97个采样点实际桨杆、桨柄、桨叶与连续船壳及木构件零三角形相交",
+    "键盘选择视角、按钮与空格暂停/播放",
+    "固定时间画面可复现",
+    "三组植物按同一时钟摆动，根部固定，表面与深度程序一致",
+    {
+      "label": "reflection",
+      "delta": {
+        "mean": 0.3599726723251029,
+        "changed": 5898
+      }
+    },
+    {
+      "label": "shadows",
+      "delta": {
+        "mean": 3.2814208783436216,
+        "changed": 388155
+      }
+    },
+    {
+      "label": "fire",
+      "delta": {
+        "mean": 0.7332415444958847,
+        "changed": 20853
+      }
+    },
+    "10次加载/释放资源计数稳定",
+    "减少动态静止且可手动选视角",
+    "声明但缺失的预滤波环境明确失败，无残留就绪场景",
+    "服务器原始gzip与HTTP自动解压都还原同一夜景环境",
+    "缺失 GLB 有明确失败状态；加载中离开无迟到场景或脚本异常"
+  ],
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "errors": [],
+  "frames": [
+    {
+      "frames": 3526,
+      "duration": 60004.5,
+      "fps": 58.745594080443965,
+      "p50": 16.69999999999709,
+      "p95": 16.80000000000291,
+      "over50": 10,
+      "maxCalls": 99,
+      "maxTriangles": 263778
+    },
+    {
+      "frames": 3552,
+      "duration": 60004.5,
+      "fps": 59.17889491621462,
+      "p50": 16.699999999982538,
+      "p95": 16.800000000017462,
+      "over50": 1,
+      "maxCalls": 97,
+      "maxTriangles": 263774
+    },
+    {
+      "frames": 3569,
+      "duration": 60004.50000000003,
+      "fps": 59.46220700114155,
+      "p50": 16.699999999982538,
+      "p95": 16.800000000017462,
+      "over50": 0,
+      "maxCalls": 97,
+      "maxTriangles": 263774
+    }
+  ],
+  "firstLoadMs": 5104,
+  "details": {
+    "contractVersion": "0.2",
+    "scope": "full-scene",
+    "reducedMotion": false,
+    "initializationMemory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "loadMs": 3119.2000000029802,
+    "environmentSource": "baked-rgba16f",
+    "loadPhases": {
+      "asset": 1147.5,
+      "environment": 0,
+      "assembly": 213,
+      "textureUpload": 678.2000000029802,
+      "compile": 1051.5,
+      "firstDraw": 707.2000000029802
+    },
+    "memory": {
+      "geometries": 34,
+      "textures": 23
+    },
+    "reflectionResolution": 1024,
+    "reflectionScissor": [
+      0,
+      0,
+      1024,
+      527
+    ],
+    "shadowResolution": 2048,
+    "drawingBuffer": [
+      1920,
+      1080
+    ],
+    "materials": [
+      "pbr_cloth__reed",
+      "pbr_wood__aged",
+      "pbr_metal__iron",
+      "glow__fire",
+      "pbr_skin__eyes",
+      "pbr_skin__iris",
+      "pbr_skin__weathered",
+      "pbr_cloth__worklinen",
+      "pbr_cloth__worktrousers",
+      "pbr_cloth__worncollar",
+      "pbr_stone__dry",
+      "pbr_stone__lime",
+      "pbr_tile__charcoal",
+      "pbr_metal__bellbronze",
+      "pbr_stone__wet",
+      "pbr_rock__silt",
+      "pbr_foliage__maple",
+      "pbr_foliage__reed"
+    ],
+    "maskProbe": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "boat": [
+      3.5475130948391507,
+      -0.2971615416832698,
+      -1.2836620512791934
+    ],
+    "navigation": {
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.205892836590558,
+        0,
+        -0.9785745448562894
+      ],
+      "position": [
+        3.5475130948391507,
+        -0.2971615416832698,
+        -1.2836620512791934
+      ],
+      "quaternion": [
+        0.0021067249952486287,
+        0.776492986977022,
+        -0.0005273161425891872,
+        0.6301221507160201
+      ],
+      "end": [
+        -0.55,
+        -9
+      ]
+    },
+    "view": {
+      "camera": [
+        15,
+        9.000000000000002,
+        20
+      ],
+      "target": [
+        -8,
+        4.5,
+        -36
+      ],
+      "followsBoat": false
+    },
+    "rower": {
+      "strokePeriodSeconds": 4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        6.066330633826404e-8,
+        3.4299533643314604e-8
+      ],
+      "footErrors": [
+        4.3267021446115126e-7,
+        0.0000011470953499322605
+      ],
+      "skinHandErrors": [
+        0.020790881662830517,
+        0.029936908298086585
+      ],
+      "oarRotation": [
+        -0.00015443842401816413,
+        -0.0758282980099966,
+        -0.02307717745970761,
+        0.9968537953231524
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.349032964000839,
+        -0.44995320625885404,
+        1.4717026805293587
+      ],
+      "pivot": [
+        4.726345118158873,
+        1.0734061686420253,
+        1.3332824547692348
+      ],
+      "tetherLength": 0.9204935108300004,
+      "tetherError": 2.220446049250313e-16
+    },
+    "wind": {
+      "meshes": 6,
+      "rootVertices": 4499,
+      "time": 8,
+      "enabled": true,
+      "surfaceCompiles": 15,
+      "depthCompiles": 8
+    },
+    "lods": [
+      {
+        "near": "temple_main",
+        "far": "temple_far",
+        "distance": 36,
+        "center": [
+          9,
+          5.985652893781662,
+          -32.59000039100647
+        ],
+        "cameraDistance": 53.01692587846666,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "bell_tower",
+        "far": "bell_far",
+        "distance": 24,
+        "center": [
+          -5,
+          5.410652607679367,
+          -30.59249973297119
+        ],
+        "cameraDistance": 54.52049563176631,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "bridge_main",
+        "far": "bridge_far",
+        "distance": 24,
+        "center": [
+          -5.002999305725098,
+          1.663749948143959,
+          -15
+        ],
+        "cameraDistance": 40.97487701077572,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "maple_grove",
+        "far": "maple_far",
+        "distance": 28,
+        "center": [
+          -12.507726192474365,
+          3.9209194481372833,
+          -9.829943656921387
+        ],
+        "cameraDistance": 40.89373543842082,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "reed_bed",
+        "far": "reed_far",
+        "distance": 22,
+        "center": [
+          -2.812138080596924,
+          0.9904353469610214,
+          -9.288262844085693
+        ],
+        "cameraDistance": 35.20266650919662,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      }
+    ],
+    "staticDraws": {
+      "enabled": true,
+      "variant": 7,
+      "variants": 8,
+      "preparedVariants": 1,
+      "geometries": 8,
+      "sourceMeshes": 25
+    },
+    "moon": {
+      "progress": 0.25,
+      "height": 97.0625,
+      "brightness": 0.9625,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        97.0625,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.3750431445398135,
+        0.15969473847658536,
+        -0.9131485258360676
+      ]
+    },
+    "fog": {
+      "enabled": true,
+      "cards": 3,
+      "materials": 26,
+      "time": 8
+    }
+  },
+  "navigation": [
+    {
+      "t": 0,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.17664405078087647,
+        0,
+        -0.9842747986836418
+      ],
+      "position": [
+        3.85,
+        -0.3011090418491167,
+        0.45
+      ],
+      "quaternion": [
+        0.002386913929078183,
+        0.7670173564051584,
+        -0.0006042113713366276,
+        0.6416216272412861
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.655926196393933,
+        3.2999999523162833,
+        5.4497518720267415
+      ]
+    },
+    {
+      "t": 8,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.205892836590558,
+        0,
+        -0.9785745448562894
+      ],
+      "position": [
+        3.5475130948391507,
+        -0.2971615416832698,
+        -1.2836620512791934
+      ],
+      "quaternion": [
+        0.0021067249952486287,
+        0.776492986977022,
+        -0.0005273161425891872,
+        0.6301221507160201
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.498944921318895,
+        3.2999999523162833,
+        3.4812864766934823
+      ]
+    },
+    {
+      "t": 16,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.26976016439035727,
+        0,
+        -0.9629275433323565
+      ],
+      "position": [
+        3.137694325717602,
+        -0.2943154595237089,
+        -2.995061065433149
+      ],
+      "quaternion": [
+        0.0007361930262213464,
+        0.7967932273268012,
+        -0.0001790025710076847,
+        0.6042515857356503
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.385090718968536,
+        3.2999999523162833,
+        1.237013520154329
+      ]
+    },
+    {
+      "t": 24,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.4416202202093975,
+        0,
+        -0.8972020848739728
+      ],
+      "position": [
+        2.5125697849952457,
+        -0.2949190668379846,
+        -4.637298756943624
+      ],
+      "quaternion": [
+        -0.0010688613014422426,
+        0.8490045458200033,
+        0.00021889458351383422,
+        0.5283844157407078
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.395751444385319,
+        3.2999999523162833,
+        -1.987942953798306
+      ]
+    },
+    {
+      "t": 32,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.5415797858714904,
+        0,
+        -0.8406493534972778
+      ],
+      "position": [
+        1.635230470420538,
+        -0.3000816524715177,
+        -6.161909683550046
+      ],
+      "quaternion": [
+        -0.0018198357025280493,
+        0.8779441355043509,
+        0.00028022282454294976,
+        0.4787595477969102
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        10.76359883851188,
+        3.2999999523162833,
+        -4.5485611465583276
+      ]
+    },
+    {
+      "t": 80,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.6162157605118057,
+        0,
+        -0.7875773844498439
+      ],
+      "position": [
+        -0.5361523955671225,
+        -0.30119808763407735,
+        -8.982282937507001
+      ],
+      "quaternion": [
+        -0.0016428446024059542,
+        0.8989464573282736,
+        0.0001481314870613791,
+        0.43805541427497663
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        8.701533236838678,
+        3.2999999523162833,
+        -8.210812444080668
+      ]
+    },
+    {
+      "t": 300,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.6154326431153633,
+        0,
+        -0.7881894834289772
+      ],
+      "position": [
+        -0.5499999999995724,
+        -0.3059356386407448,
+        -8.99999999999945
+      ],
+      "quaternion": [
+        0.00024515630820742384,
+        0.8987303552477204,
+        -0.00002230691513653846,
+        0.4385016396287389
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        8.686914265724672,
+        3.2999999523162833,
+        -8.21934808458268
+      ]
+    }
+  ],
+  "loadGate": {
+    "limitMs": 3000,
+    "actualMs": 3119.2000000029802,
+    "passed": false
+  },
+  "renderReuseComparisons": [
+    {
+      "view": "CAM_enter",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_riverbank",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_boat",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_rower",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_temple",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_bridge",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_bell",
+      "mean": 0,
+      "changed": 0
+    },
+    {
+      "view": "CAM_nature",
+      "mean": 0,
+      "changed": 0
+    }
+  ],
+  "staticMergeComparisons": [
+    {
+      "view": "CAM_enter",
+      "mean": 0.0007016782407407408,
+      "changed": 45
+    },
+    {
+      "view": "CAM_riverbank",
+      "mean": 0.00035204475308641976,
+      "changed": 26
+    },
+    {
+      "view": "CAM_boat",
+      "mean": 0.00020945859053497944,
+      "changed": 7
+    },
+    {
+      "view": "CAM_rower",
+      "mean": 0.000055780606995884773,
+      "changed": 1
+    },
+    {
+      "view": "CAM_temple",
+      "mean": 0.0009580761316872428,
+      "changed": 56
+    },
+    {
+      "view": "CAM_bridge",
+      "mean": 0.0005161715534979424,
+      "changed": 43
+    },
+    {
+      "view": "CAM_bell",
+      "mean": 0.0007029642489711934,
+      "changed": 52
+    },
+    {
+      "view": "CAM_nature",
+      "mean": 0.00028420781893004116,
+      "changed": 25
+    }
+  ],
+  "lods": {
+    "views": [
+      {
+        "view": "CAM_enter",
+        "levels": [
+          {
+            "near": "temple_main",
+            "far": "temple_far",
+            "distance": 36,
+            "center": [
+              9,
+              5.985652893781662,
+              -32.59000039100647
+            ],
+            "cameraDistance": 62.36464713849247,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bell_tower",
+            "far": "bell_far",
+            "distance": 24,
+            "center": [
+              -5,
+              5.410652607679367,
+              -30.59249973297119
+            ],
+            "cameraDistance": 64.9590580196446,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bridge_main",
+            "far": "bridge_far",
+            "distance": 24,
+            "center": [
+              -5.002999305725098,
+              1.663749948143959,
+              -15
+            ],
+            "cameraDistance": 52.02569112220612,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "maple_grove",
+            "far": "maple_far",
+            "distance": 28,
+            "center": [
+              -12.507726192474365,
+              3.9209194481372833,
+              -9.829943656921387
+            ],
+            "cameraDistance": 52.003052869306046,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "reed_bed",
+            "far": "reed_far",
+            "distance": 22,
+            "center": [
+              -2.812138080596924,
+              0.9904353469610214,
+              -9.288262844085693
+            ],
+            "cameraDistance": 46.371180545849306,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          }
+        ]
+      },
+      {
+        "view": "CAM_riverbank",
+        "levels": [
+          {
+            "near": "temple_main",
+            "far": "temple_far",
+            "distance": 36,
+            "center": [
+              9,
+              5.985652893781662,
+              -32.59000039100647
+            ],
+            "cameraDistance": 40.478185319007785,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bell_tower",
+            "far": "bell_far",
+            "distance": 24,
+            "center": [
+              -5,
+              5.410652607679367,
+              -30.59249973297119
+            ],
+            "cameraDistance": 40.510523552351586,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bridge_main",
+            "far": "bridge_far",
+            "distance": 24,
+            "center": [
+              -5.002999305725098,
+              1.663749948143959,
+              -15
+            ],
+            "cameraDistance": 26.220333115692217,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "maple_grove",
+            "far": "maple_far",
+            "distance": 28,
+            "center": [
+              -12.507726192474365,
+              3.9209194481372833,
+              -9.829943656921387
+            ],
+            "cameraDistance": 26.89463999164532,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "reed_bed",
+            "far": "reed_far",
+            "distance": 22,
+            "center": [
+              -2.812138080596924,
+              0.9904353469610214,
+              -9.288262844085693
+            ],
+            "cameraDistance": 20.283886201064504,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          }
+        ]
+      },
+      {
+        "view": "CAM_boat",
+        "levels": [
+          {
+            "near": "temple_main",
+            "far": "temple_far",
+            "distance": 36,
+            "center": [
+              9,
+              5.985652893781662,
+              -32.59000039100647
+            ],
+            "cameraDistance": 36.257346755294854,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bell_tower",
+            "far": "bell_far",
+            "distance": 24,
+            "center": [
+              -5,
+              5.410652607679367,
+              -30.59249973297119
+            ],
+            "cameraDistance": 37.91692161568816,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bridge_main",
+            "far": "bridge_far",
+            "distance": 24,
+            "center": [
+              -5.002999305725098,
+              1.663749948143959,
+              -15
+            ],
+            "cameraDistance": 24.830413351014474,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "maple_grove",
+            "far": "maple_far",
+            "distance": 28,
+            "center": [
+              -12.507726192474365,
+              3.9209194481372833,
+              -9.829943656921387
+            ],
+            "cameraDistance": 27.45714199723239,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "reed_bed",
+            "far": "reed_far",
+            "distance": 22,
+            "center": [
+              -2.812138080596924,
+              0.9904353469610214,
+              -9.288262844085693
+            ],
+            "cameraDistance": 19.318451677343234,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          }
+        ]
+      },
+      {
+        "view": "CAM_rower",
+        "levels": [
+          {
+            "near": "temple_main",
+            "far": "temple_far",
+            "distance": 36,
+            "center": [
+              9,
+              5.985652893781662,
+              -32.59000039100647
+            ],
+            "cameraDistance": 34.92684723171325,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "bell_tower",
+            "far": "bell_far",
+            "distance": 24,
+            "center": [
+              -5,
+              5.410652607679367,
+              -30.59249973297119
+            ],
+            "cameraDistance": 35.76785999050561,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bridge_main",
+            "far": "bridge_far",
+            "distance": 24,
+            "center": [
+              -5.002999305725098,
+              1.663749948143959,
+              -15
+            ],
+            "cameraDistance": 22.200991671540596,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "maple_grove",
+            "far": "maple_far",
+            "distance": 28,
+            "center": [
+              -12.507726192474365,
+              3.9209194481372833,
+              -9.829943656921387
+            ],
+            "cameraDistance": 24.731106652192896,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "reed_bed",
+            "far": "reed_far",
+            "distance": 22,
+            "center": [
+              -2.812138080596924,
+              0.9904353469610214,
+              -9.288262844085693
+            ],
+            "cameraDistance": 16.557054565045448,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          }
+        ]
+      },
+      {
+        "view": "CAM_temple",
+        "levels": [
+          {
+            "near": "temple_main",
+            "far": "temple_far",
+            "distance": 36,
+            "center": [
+              9,
+              5.985652893781662,
+              -32.59000039100647
+            ],
+            "cameraDistance": 27.164576822345598,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "bell_tower",
+            "far": "bell_far",
+            "distance": 24,
+            "center": [
+              -5,
+              5.410652607679367,
+              -30.59249973297119
+            ],
+            "cameraDistance": 35.63487458711052,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bridge_main",
+            "far": "bridge_far",
+            "distance": 24,
+            "center": [
+              -5.002999305725098,
+              1.663749948143959,
+              -15
+            ],
+            "cameraDistance": 30.02354130134887,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "maple_grove",
+            "far": "maple_far",
+            "distance": 28,
+            "center": [
+              -12.507726192474365,
+              3.9209194481372833,
+              -9.829943656921387
+            ],
+            "cameraDistance": 36.69303236187854,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "reed_bed",
+            "far": "reed_far",
+            "distance": 22,
+            "center": [
+              -2.812138080596924,
+              0.9904353469610214,
+              -9.288262844085693
+            ],
+            "cameraDistance": 27.623968973956885,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          }
+        ]
+      },
+      {
+        "view": "CAM_bridge",
+        "levels": [
+          {
+            "near": "temple_main",
+            "far": "temple_far",
+            "distance": 36,
+            "center": [
+              9,
+              5.985652893781662,
+              -32.59000039100647
+            ],
+            "cameraDistance": 30.678231635053837,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "bell_tower",
+            "far": "bell_far",
+            "distance": 24,
+            "center": [
+              -5,
+              5.410652607679367,
+              -30.59249973297119
+            ],
+            "cameraDistance": 31.014576207878093,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bridge_main",
+            "far": "bridge_far",
+            "distance": 24,
+            "center": [
+              -5.002999305725098,
+              1.663749948143959,
+              -15
+            ],
+            "cameraDistance": 17.96964267639701,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "maple_grove",
+            "far": "maple_far",
+            "distance": 28,
+            "center": [
+              -12.507726192474365,
+              3.9209194481372833,
+              -9.829943656921387
+            ],
+            "cameraDistance": 21.038825580890197,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "reed_bed",
+            "far": "reed_far",
+            "distance": 22,
+            "center": [
+              -2.812138080596924,
+              0.9904353469610214,
+              -9.288262844085693
+            ],
+            "cameraDistance": 12.802718980595412,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          }
+        ]
+      },
+      {
+        "view": "CAM_bell",
+        "levels": [
+          {
+            "near": "temple_main",
+            "far": "temple_far",
+            "distance": 36,
+            "center": [
+              9,
+              5.985652893781662,
+              -32.59000039100647
+            ],
+            "cameraDistance": 25.35701538972476,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "bell_tower",
+            "far": "bell_far",
+            "distance": 24,
+            "center": [
+              -5,
+              5.410652607679367,
+              -30.59249973297119
+            ],
+            "cameraDistance": 13.27453556816096,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "bridge_main",
+            "far": "bridge_far",
+            "distance": 24,
+            "center": [
+              -5.002999305725098,
+              1.663749948143959,
+              -15
+            ],
+            "cameraDistance": 10.108132168258175,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "maple_grove",
+            "far": "maple_far",
+            "distance": 28,
+            "center": [
+              -12.507726192474365,
+              3.9209194481372833,
+              -9.829943656921387
+            ],
+            "cameraDistance": 10.274932759759201,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "reed_bed",
+            "far": "reed_far",
+            "distance": 22,
+            "center": [
+              -2.812138080596924,
+              0.9904353469610214,
+              -9.288262844085693
+            ],
+            "cameraDistance": 15.39825290508342,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          }
+        ]
+      },
+      {
+        "view": "CAM_nature",
+        "levels": [
+          {
+            "near": "temple_main",
+            "far": "temple_far",
+            "distance": 36,
+            "center": [
+              9,
+              5.985652893781662,
+              -32.59000039100647
+            ],
+            "cameraDistance": 36.64719205549174,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bell_tower",
+            "far": "bell_far",
+            "distance": 24,
+            "center": [
+              -5,
+              5.410652607679367,
+              -30.59249973297119
+            ],
+            "cameraDistance": 36.974406255867315,
+            "level": "far",
+            "nearVisible": false,
+            "farVisible": true
+          },
+          {
+            "near": "bridge_main",
+            "far": "bridge_far",
+            "distance": 24,
+            "center": [
+              -5.002999305725098,
+              1.663749948143959,
+              -15
+            ],
+            "cameraDistance": 23.16269747466224,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "maple_grove",
+            "far": "maple_far",
+            "distance": 28,
+            "center": [
+              -12.507726192474365,
+              3.9209194481372833,
+              -9.829943656921387
+            ],
+            "cameraDistance": 24.736856327898387,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          },
+          {
+            "near": "reed_bed",
+            "far": "reed_far",
+            "distance": 22,
+            "center": [
+              -2.812138080596924,
+              0.9904353469610214,
+              -9.288262844085693
+            ],
+            "cameraDistance": 17.42933054724386,
+            "level": "near",
+            "nearVisible": true,
+            "farVisible": false
+          }
+        ]
+      }
+    ],
+    "boundaries": [
+      {
+        "near": "temple_main",
+        "offset": -0.05,
+        "state": {
+          "near": "temple_main",
+          "far": "temple_far",
+          "distance": 36,
+          "center": [
+            9,
+            5.985652893781662,
+            -32.59000039100647
+          ],
+          "cameraDistance": 35.95000000000001,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "temple_main",
+        "offset": 0.05,
+        "state": {
+          "near": "temple_main",
+          "far": "temple_far",
+          "distance": 36,
+          "center": [
+            9,
+            5.985652893781662,
+            -32.59000039100647
+          ],
+          "cameraDistance": 36.050000000000004,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        }
+      },
+      {
+        "near": "temple_main",
+        "offset": -0.05,
+        "state": {
+          "near": "temple_main",
+          "far": "temple_far",
+          "distance": 36,
+          "center": [
+            9,
+            5.985652893781662,
+            -32.59000039100647
+          ],
+          "cameraDistance": 35.95000000000001,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "bell_tower",
+        "offset": -0.05,
+        "state": {
+          "near": "bell_tower",
+          "far": "bell_far",
+          "distance": 24,
+          "center": [
+            -5,
+            5.410652607679367,
+            -30.59249973297119
+          ],
+          "cameraDistance": 23.95,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "bell_tower",
+        "offset": 0.05,
+        "state": {
+          "near": "bell_tower",
+          "far": "bell_far",
+          "distance": 24,
+          "center": [
+            -5,
+            5.410652607679367,
+            -30.59249973297119
+          ],
+          "cameraDistance": 24.049999999999997,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        }
+      },
+      {
+        "near": "bell_tower",
+        "offset": -0.05,
+        "state": {
+          "near": "bell_tower",
+          "far": "bell_far",
+          "distance": 24,
+          "center": [
+            -5,
+            5.410652607679367,
+            -30.59249973297119
+          ],
+          "cameraDistance": 23.95,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "bridge_main",
+        "offset": -0.05,
+        "state": {
+          "near": "bridge_main",
+          "far": "bridge_far",
+          "distance": 24,
+          "center": [
+            -5.002999305725098,
+            1.663749948143959,
+            -15
+          ],
+          "cameraDistance": 23.949999999999996,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "bridge_main",
+        "offset": 0.05,
+        "state": {
+          "near": "bridge_main",
+          "far": "bridge_far",
+          "distance": 24,
+          "center": [
+            -5.002999305725098,
+            1.663749948143959,
+            -15
+          ],
+          "cameraDistance": 24.049999999999997,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        }
+      },
+      {
+        "near": "bridge_main",
+        "offset": -0.05,
+        "state": {
+          "near": "bridge_main",
+          "far": "bridge_far",
+          "distance": 24,
+          "center": [
+            -5.002999305725098,
+            1.663749948143959,
+            -15
+          ],
+          "cameraDistance": 23.949999999999996,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "maple_grove",
+        "offset": -0.05,
+        "state": {
+          "near": "maple_grove",
+          "far": "maple_far",
+          "distance": 28,
+          "center": [
+            -12.507726192474365,
+            3.9209194481372833,
+            -9.829943656921387
+          ],
+          "cameraDistance": 27.95,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "maple_grove",
+        "offset": 0.05,
+        "state": {
+          "near": "maple_grove",
+          "far": "maple_far",
+          "distance": 28,
+          "center": [
+            -12.507726192474365,
+            3.9209194481372833,
+            -9.829943656921387
+          ],
+          "cameraDistance": 28.05,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        }
+      },
+      {
+        "near": "maple_grove",
+        "offset": -0.05,
+        "state": {
+          "near": "maple_grove",
+          "far": "maple_far",
+          "distance": 28,
+          "center": [
+            -12.507726192474365,
+            3.9209194481372833,
+            -9.829943656921387
+          ],
+          "cameraDistance": 27.95,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "reed_bed",
+        "offset": -0.05,
+        "state": {
+          "near": "reed_bed",
+          "far": "reed_far",
+          "distance": 22,
+          "center": [
+            -2.812138080596924,
+            0.9904353469610214,
+            -9.288262844085693
+          ],
+          "cameraDistance": 21.95,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      },
+      {
+        "near": "reed_bed",
+        "offset": 0.05,
+        "state": {
+          "near": "reed_bed",
+          "far": "reed_far",
+          "distance": 22,
+          "center": [
+            -2.812138080596924,
+            0.9904353469610214,
+            -9.288262844085693
+          ],
+          "cameraDistance": 22.05,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        }
+      },
+      {
+        "near": "reed_bed",
+        "offset": -0.05,
+        "state": {
+          "near": "reed_bed",
+          "far": "reed_far",
+          "distance": 22,
+          "center": [
+            -2.812138080596924,
+            0.9904353469610214,
+            -9.288262844085693
+          ],
+          "cameraDistance": 21.95,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      }
+    ],
+    "nearTriangles": 448908,
+    "farTriangles": 263778
+  },
+  "rowing": [
+    {
+      "t": 0,
+      "strokePeriodSeconds": 4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        6.14131954943257e-8,
+        3.5253194975396225e-8
+      ],
+      "footErrors": [
+        4.334885823767155e-7,
+        0.0000011522818446054678
+      ],
+      "skinHandErrors": [
+        0.02079088233756302,
+        0.029936907991250834
+      ],
+      "oarRotation": [
+        -0.000154438424018178,
+        -0.07582829800999658,
+        -0.023077177459707415,
+        0.9968537953231524
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.568089181551629,
+        -0.4559360283387446,
+        3.2875893784606034
+      ],
+      "pivot": [
+        4.951095342605642,
+        1.0683587557739236,
+        3.101159431888829
+      ],
+      "tetherLength": 0.9204935108300003,
+      "tetherError": 3.3306690738754696e-16
+    },
+    {
+      "t": 1.2,
+      "strokePeriodSeconds": 4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        7.70785320364487e-8,
+        7.006181459372959e-8
+      ],
+      "footErrors": [
+        5.113005008833352e-7,
+        0.0000011944298348336015
+      ],
+      "skinHandErrors": [
+        0.020795193923381375,
+        0.029934551934123328
+      ],
+      "oarRotation": [
+        0.003044830014005887,
+        0.08973281594539508,
+        0.000030549137056322395,
+        0.9959612190338767
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.432695810065734,
+        -0.4756166905437107,
+        2.4565624952796767
+      ],
+      "pivot": [
+        4.873848111262562,
+        1.0693240540674211,
+        2.851596337649643
+      ],
+      "tetherLength": 0.9204935108300006,
+      "tetherError": 0
+    },
+    {
+      "t": 2.4,
+      "strokePeriodSeconds": 4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        5.036498810730513e-8,
+        6.193114609320508e-8
+      ],
+      "footErrors": [
+        4.2613454691143344e-7,
+        0.0000012455108489075822
+      ],
+      "skinHandErrors": [
+        0.020791842679888654,
+        0.029935738156757544
+      ],
+      "oarRotation": [
+        0.01007534855214839,
+        0.01954080857762642,
+        -0.0129240056797559,
+        0.9996747542220294
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.40190002056815,
+        -0.4808090120618671,
+        2.478191884231474
+      ],
+      "pivot": [
+        4.81089003038492,
+        1.0774079562998031,
+        2.594582947840526
+      ],
+      "tetherLength": 0.9204935108300007,
+      "tetherError": 1.1102230246251565e-16
+    },
+    {
+      "t": 3.6,
+      "strokePeriodSeconds": 4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        8.288149149118164e-8,
+        5.25378121745585e-8
+      ],
+      "footErrors": [
+        4.260942552468767e-7,
+        0.0000012452486715351713
+      ],
+      "skinHandErrors": [
+        0.020790597377071573,
+        0.029937544111921018
+      ],
+      "oarRotation": [
+        0.001241489500501642,
+        -0.10236547361073599,
+        -0.036259492219412104,
+        0.9940850153484159
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.3780759293966405,
+        -0.4136535225817919,
+        2.6774584555203518
+      ],
+      "pivot": [
+        4.7653535793851916,
+        1.0872118408752505,
+        2.331872617283844
+      ],
+      "tetherLength": 0.9204935108300004,
+      "tetherError": 2.220446049250313e-16
+    },
+    {
+      "t": 4.8,
+      "strokePeriodSeconds": 4,
+      "skinnedMeshes": 7,
+      "style": "side-yuloh",
+      "gripErrors": [
+        6.448152809815998e-8,
+        6.210833557956772e-8
+      ],
+      "footErrors": [
+        5.111569644599706e-7,
+        0.0000011939806013452807
+      ],
+      "skinHandErrors": [
+        0.020794152518495968,
+        0.029934467221469304
+      ],
+      "oarRotation": [
+        -0.0015059612486142012,
+        0.04317345376024521,
+        0.00875168613966892,
+        0.9990281242091448
+      ],
+      "oarPosition": [
+        -2.799999952316284,
+        1.3799998760223389,
+        0.60999995470047
+      ],
+      "blade": [
+        6.3449982998005945,
+        -0.4300849637824884,
+        1.7926349445739052
+      ],
+      "pivot": [
+        4.738332798954371,
+        1.0921920352796801,
+        2.0650289525071837
+      ],
+      "tetherLength": 0.9204935108300003,
+      "tetherError": 3.3306690738754696e-16
+    }
+  ],
+  "strokeLimits": {
+    "periodSeconds": 4,
+    "samples": 97,
+    "maxGripError": 8.925876709362073e-8,
+    "maxGripAt": 1.6666666666666667,
+    "maxSkinHandError": 0.029937547374458695,
+    "maxFootError": 0.0000012916078118172063,
+    "maxTetherError": 6.661338147750939e-16,
+    "highestBlade": -0.4136546474620153,
+    "lowestBlade": -0.49652442336374447
+  },
+  "oarClearance": {
+    "scope": "delivered GLB triangle intersections; fixed pin, binding and tether excluded",
+    "hullNames": [
+      "boat_hull_closed",
+      "boat_wood_aged"
+    ],
+    "movingNames": [
+      "rowing_oar_shaft",
+      "rowing_oar_handle",
+      "rowing_oar_blade"
+    ],
+    "hullTriangles": 10248,
+    "samples": [
+      {
+        "t": 0,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.041666666666666664,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.08333333333333333,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.125,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.16666666666666666,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.20833333333333334,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.25,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.2916666666666667,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.3333333333333333,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.375,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.4166666666666667,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.4583333333333333,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.5,
+        "intersections": 0,
+        "candidatePairs": 563,
+        "examples": []
+      },
+      {
+        "t": 0.5416666666666666,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.5833333333333334,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.625,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.6666666666666666,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 0.7083333333333334,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 0.75,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 0.7916666666666666,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 0.8333333333333334,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.875,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 0.9166666666666666,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.9583333333333334,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.0416666666666667,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.0833333333333333,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.125,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.1666666666666667,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.2083333333333333,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.25,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.2916666666666667,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 1.3333333333333333,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.375,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.4166666666666667,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.4583333333333333,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.5,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.5416666666666667,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.5833333333333333,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.625,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.6666666666666667,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 1.7083333333333333,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 1.75,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 1.7916666666666667,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 1.8333333333333333,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 1.875,
+        "intersections": 0,
+        "candidatePairs": 553,
+        "examples": []
+      },
+      {
+        "t": 1.9166666666666667,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 1.9583333333333333,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.0416666666666665,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.0833333333333335,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.125,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.1666666666666665,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.2083333333333335,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 2.25,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 2.2916666666666665,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.3333333333333335,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.375,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 2.4166666666666665,
+        "intersections": 0,
+        "candidatePairs": 545,
+        "examples": []
+      },
+      {
+        "t": 2.4583333333333335,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 2.5,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.5416666666666665,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.5833333333333335,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 2.625,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 2.6666666666666665,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 2.7083333333333335,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 2.75,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 2.7916666666666665,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 2.8333333333333335,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 2.875,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 2.9166666666666665,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 2.9583333333333335,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 3,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.0416666666666665,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.0833333333333335,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.125,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.1666666666666665,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.2083333333333335,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.25,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.2916666666666665,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.3333333333333335,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.375,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.4166666666666665,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.4583333333333335,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.5,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 3.5416666666666665,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 3.5833333333333335,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.625,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.6666666666666665,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.7083333333333335,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.75,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.7916666666666665,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.8333333333333335,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.875,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.9166666666666665,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.9583333333333335,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      }
+    ],
+    "intersections": 0
+  },
+  "wind": {
+    "meshes": 6,
+    "rootVertices": 4499,
+    "time": 8,
+    "enabled": true,
+    "surfaceCompiles": 18,
+    "depthCompiles": 10,
+    "delta": {
+      "mean": 0.12167807998971193,
+      "changed": 10944
+    },
+    "farDelta": {
+      "mean": 0.11342463991769547,
+      "changed": 9905
+    }
+  },
+  "nativeServer": {
+    "name": "chrome_devtools",
+    "title": "Chrome DevTools MCP server",
+    "version": "1.10.1"
+  },
+  "dom": "## Latest page snapshot\nuid=1_0 RootWebArea \"诗境 · 一卷山河\" url=\"http://127.0.0.1:5187/?scene=fengqiao&lab=fengqiao&asset=scenes%2Ffengqiao.scene-v03.json#/login\"\n  uid=1_1 main\n    uid=1_2 Canvas \"枫桥三维场景\"\n    uid=1_3 complementary\n      uid=1_4 StaticText \"枫桥夜泊\"\n      uid=1_5 StaticText \"月落 · 江雾 · 桥寺与河岸\"\n    uid=1_6 navigation \"小样检查\"\n      uid=1_7 button \"整体\"\n      uid=1_8 button \"湿石岸\"\n      uid=1_9 button \"木舟\"\n      uid=1_10 button \"船夫\"\n      uid=1_11 button \"月落\"\n      uid=1_12 button \"寺院\"\n      uid=1_13 button \"石桥\"\n      uid=1_14 button \"钟楼\"\n      uid=1_15 button \"河岸\"\n      uid=1_16 button \"暂停\"\n      uid=1_17 StaticText \"时间\"\n      uid=1_18 slider \"场景时间\" orientation=\"horizontal\" value=\"0\" valuemax=\"32\" valuemin=\"0\" valuetext=\"0\"\n      uid=1_19 checkbox \"倒影\" checked\n      uid=1_20 checkbox \"阴影\" checked\n      uid=1_21 checkbox \"渔火\" checked\n      uid=1_22 checkbox \"风摆\" checked\n      uid=1_23 checkbox \"薄雾\" checked\n",
+  "console": "## Console messages\n<no console messages found>",
+  "network": "## Network requests\nNo requests found.",
+  "trace": "The raw trace data was saved to D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\full\\performance.json.gz.\nThe performance trace has been stopped.\n## Summary of Performance trace findings:\nURL: http://127.0.0.1:5187/?scene=fengqiao&lab=fengqiao&asset=scenes%2Ffengqiao.scene-v03.json\nTrace bounds: {min: 35060023656µs, max: 35063073933µs}\nCPU throttling: 1x\nNetwork throttling: none\n\n# Available insight sets\n\nThe following is a list of insight sets. An insight set covers a specific part of the trace, split by navigations. The insights within each insight set are specific to that part of the trace. Be sure to consider the insight set id and bounds when calling functions. If no specific insight set or navigation is mentioned, assume the user is referring to the first one.\n\n## Details on call tree & network request formats:\nInformation on performance traces may contain main thread activity represented as call frames and network requests.\n\nEach call frame is presented in the following format:\n\n'id;eventKey;name;duration;selfTime;urlIndex;childRange;[line];[column];[S]'\n\nKey definitions:\n\n* id: A unique numerical identifier for the call frame. Never mention this id in the output to the user.\n* eventKey: String that uniquely identifies this event in the flame chart.\n* name: A concise string describing the call frame (e.g., 'Evaluate Script', 'render', 'fetchData').\n* duration: The total execution time of the call frame, including its children.\n* selfTime: The time spent directly within the call frame, excluding its children's execution.\n* urlIndex: Index referencing the \"All URLs\" list. Empty if no specific script URL is associated.\n* childRange: Specifies the direct children of this node using their IDs. If empty ('' or 'S' at the end), the node has no children. If a single number (e.g., '4'), the node has one child with that ID. If in the format 'firstId-lastId' (e.g., '4-5'), it indicates a consecutive range of child IDs from 'firstId' to 'lastId', inclusive.\n* line: An optional field for a call frame's line number. This is where the function is defined.\n* column: An optional field for a call frame's column number. This is where the function is defined.\n* S: _Optional_. The letter 'S' terminates the line if that call frame was selected by the user.\n\nExample Call Tree:\n\n1;r-123;main;500;100;0;1;;\n2;r-124;update;200;50;;3;0;1;\n3;p-49575-15428179-2834-374;animate;150;20;0;4-5;0;1;S\n4;p-49575-15428179-3505-1162;calculatePosition;80;80;0;1;;\n5;p-49575-15428179-5391-2767;applyStyles;50;50;0;1;;\n\n\nNetwork requests are formatted like this:\n`urlIndex;eventKey;queuedTime;requestSentTime;downloadCompleteTime;processingCompleteTime;totalDuration;downloadDuration;mainThreadProcessingDuration;statusCode;mimeType;priority;initialPriority;finalPriority;renderBlocking;protocol;fromServiceWorker;initiators;redirects:[[redirectUrlIndex|startTime|duration]];responseHeaders:[header1Value|header2Value|...]`\n\n- `urlIndex`: Numerical index for the request's URL, referencing the \"All URLs\" list.\n- `eventKey`: String that uniquely identifies this request's trace event.\nTimings (all in milliseconds, relative to navigation start):\n- `queuedTime`: When the request was queued.\n- `requestSentTime`: When the request was sent.\n- `downloadCompleteTime`: When the download completed.\n- `processingCompleteTime`: When main thread processing finished.\nDurations (all in milliseconds):\n- `totalDuration`: Total time from the request being queued until its main thread processing completed.\n- `downloadDuration`: Time spent actively downloading the resource.\n- `mainThreadProcessingDuration`: Time spent on the main thread after the download completed.\n- `statusCode`: The HTTP status code of the response (e.g., 200, 404).\n- `mimeType`: The MIME type of the resource (e.g., \"text/html\", \"application/javascript\").\n- `priority`: The final network request priority (e.g., \"VeryHigh\", \"Low\").\n- `initialPriority`: The initial network request priority.\n- `finalPriority`: The final network request priority (redundant if `priority` is always final, but kept for clarity if `initialPriority` and `priority` differ).\n- `renderBlocking`: 't' if the request was render-blocking, 'f' otherwise.\n- `protocol`: The network protocol used (e.g., \"h2\", \"http/1.1\").\n- `fromServiceWorker`: 't' if the request was served from a service worker, 'f' otherwise.\n- `initiators`: A list (separated by ,) of URL indices for the initiator chain of this request. Listed in order starting from the root request to the request that directly loaded this one. This represents the network dependencies necessary to load this request. If there is no initiator, this is empty.\n- `redirects`: A comma-separated list of redirects, enclosed in square brackets. Each redirect is formatted as\n`[redirectUrlIndex|startTime|duration]`, where: `redirectUrlIndex`: Numerical index for the redirect's URL. `startTime`: The start time of the redirect in milliseconds, relative to navigation start. `duration`: The duration of the redirect in milliseconds.\n- `responseHeaders`: A list (separated by '|') of values for specific, pre-defined response headers, enclosed in square brackets.\nThe order of headers corresponds to an internal fixed list. If a header is not present, its value will be empty.\n",
+  "lastDisposal": {
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "stages": [
+      {
+        "owner": "() => {\n\t\t\tfor (const material of reflectionMaterials.values()) material.dispose();\n\t\t\treflectionMaterials.clear();\n\t\t\treflectionRoot.clear();\n\t\t}",
+        "geometries": 94,
+        "textures": 23
+      },
+      {
+        "owner": "() => staticDraws?.dispose()",
+        "geometries": 54,
+        "textures": 23
+      },
+      {
+        "owner": "() => rower?.dispose()",
+        "geometries": 53,
+        "textures": 23
+      },
+      {
+        "owner": "() => controls?.dispose()",
+        "geometries": 53,
+        "textures": 23
+      },
+      {
+        "owner": "() => fog?.dispose()",
+        "geometries": 52,
+        "textures": 23
+      },
+      {
+        "owner": "() => moonFall?.dispose()",
+        "geometries": 51,
+        "textures": 22
+      },
+      {
+        "owner": "() => distant.dispose()",
+        "geometries": 50,
+        "textures": 22
+      },
+      {
+        "owner": "() => river.dispose()",
+        "geometries": 49,
+        "textures": 21
+      },
+      {
+        "owner": "() => moon.shadow.dispose()",
+        "geometries": 49,
+        "textures": 19
+      },
+      {
+        "owner": "() => {\n\t\t\tconst textures = new Set();\n\t\t\tfor (const lookup of physicalLookups) if (lookup.value instanceof Texture) textures.add(lookup.value);\n\t\t\tfor (const texture of textures) texture.dispose();\n\t\t\tphysicalLookups.clear();\n\t\t}",
+        "geometries": 49,
+        "textures": 18
+      },
+      {
+        "owner": "() => lods?.dispose()",
+        "geometries": 49,
+        "textures": 18
+      },
+      {
+        "owner": "() => wind.dispose()",
+        "geometries": 49,
+        "textures": 18
+      },
+      {
+        "owner": "() => asset.dispose()",
+        "geometries": 1,
+        "textures": 3
+      },
+      {
+        "owner": "() => heightmap.dispose()",
+        "geometries": 1,
+        "textures": 3
+      },
+      {
+        "owner": "() => texture.dispose()",
+        "geometries": 1,
+        "textures": 2
+      },
+      {
+        "owner": "() => sky.dispose()",
+        "geometries": 1,
+        "textures": 0
+      }
+    ],
+    "contextLost": true
+  },
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\full\\video\\page@64a77c7b25d3efa9d317437ba64d3975.webm",
+  "status": "failed",
+  "failure": "AssertionError [ERR_ASSERTION]: 小样从开始装配到首帧超过3秒；后续诊断证据已保留\n    at file:///D:/University-Competition/Math_Media/PoeticRealm/frontend/tools/verify-fengqiao-sample.mjs:415:3"
+}

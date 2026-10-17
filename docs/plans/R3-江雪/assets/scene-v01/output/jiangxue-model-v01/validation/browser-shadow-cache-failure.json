@@ -1,0 +1,464 @@
+{
+  "fixture": "isolated authentication; real Chrome/WebGL and published Jiangxue GLB",
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "warnings": [],
+  "views": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "CAM_enter",
+      "time": 8,
+      "playing": false,
+      "fps": 32.38929644273428,
+      "calls": 55,
+      "triangles": 240008,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "CAM_birds",
+      "time": 8,
+      "playing": false,
+      "fps": 53.8762587105879,
+      "calls": 14,
+      "triangles": 123632,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "CAM_path",
+      "time": 8,
+      "playing": false,
+      "fps": 55.05857488076359,
+      "calls": 18,
+      "triangles": 123440,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "CAM_fog",
+      "time": 8,
+      "playing": false,
+      "fps": 54.81585510858093,
+      "calls": 55,
+      "triangles": 240008,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "CAM_boat",
+      "time": 8,
+      "playing": false,
+      "fps": 55.067863565991786,
+      "calls": 51,
+      "triangles": 239024,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "CAM_fisherman",
+      "time": 8,
+      "playing": false,
+      "fps": 52.873292361241575,
+      "calls": 33,
+      "triangles": 171212,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "view": "CAM_nature",
+      "time": 8,
+      "playing": false,
+      "fps": 57.17745103268806,
+      "calls": 16,
+      "triangles": 122912,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "CAM_enter",
+      "time": 8,
+      "playing": false,
+      "fps": 57.199272228411274,
+      "calls": 55,
+      "triangles": 240008,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "CAM_birds",
+      "time": 8,
+      "playing": false,
+      "fps": 58.532428814813656,
+      "calls": 14,
+      "triangles": 123632,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "CAM_path",
+      "time": 8,
+      "playing": false,
+      "fps": 58.4275718624529,
+      "calls": 18,
+      "triangles": 123440,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "CAM_fog",
+      "time": 8,
+      "playing": false,
+      "fps": 59.44186792840217,
+      "calls": 55,
+      "triangles": 240008,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "CAM_boat",
+      "time": 8,
+      "playing": false,
+      "fps": 51.92881322541707,
+      "calls": 51,
+      "triangles": 239024,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "CAM_fisherman",
+      "time": 8,
+      "playing": false,
+      "fps": 53.0004109224351,
+      "calls": 33,
+      "triangles": 171212,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "view": "CAM_nature",
+      "time": 8,
+      "playing": false,
+      "fps": 56.224393477037594,
+      "calls": 16,
+      "triangles": 122912,
+      "memory": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "programs": 16,
+      "disposed": false
+    }
+  ],
+  "release": [
+    {
+      "cycle": 1,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 2,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 3,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 4,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 5,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 6,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 7,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 8,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 9,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    },
+    {
+      "cycle": 10,
+      "before": {
+        "geometries": 31,
+        "textures": 20
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 31,
+        "textures": 20
+      }
+    }
+  ],
+  "performance": [
+    {
+      "view": "CAM_enter",
+      "durationMs": 60008.700000001496,
+      "frames": 2950,
+      "fps": 49.15953853357807,
+      "p95Ms": 33.400000000001455,
+      "stats": {
+        "view": "CAM_enter",
+        "time": 69.68760000000039,
+        "playing": true,
+        "fps": 48.86943338558755,
+        "calls": 55,
+        "triangles": 240008,
+        "memory": {
+          "geometries": 31,
+          "textures": 20
+        },
+        "programs": 16,
+        "disposed": false
+      }
+    },
+    {
+      "view": "CAM_boat",
+      "durationMs": 60004.59999999852,
+      "frames": 2391,
+      "fps": 39.8469450675458,
+      "p95Ms": 33.60000000000582,
+      "stats": {
+        "view": "CAM_boat",
+        "time": 131.64280000000082,
+        "playing": true,
+        "fps": 45.302235400390146,
+        "calls": 51,
+        "triangles": 239024,
+        "memory": {
+          "geometries": 31,
+          "textures": 20
+        },
+        "programs": 16,
+        "disposed": false
+      }
+    },
+    {
+      "view": "CAM_fisherman",
+      "durationMs": 60008.20000000298,
+      "frames": 2614,
+      "fps": 43.56071336917071,
+      "p95Ms": 33.5,
+      "stats": {
+        "view": "CAM_fisherman",
+        "time": 193.94750000001088,
+        "playing": true,
+        "fps": 38.4183130007315,
+        "calls": 33,
+        "triangles": 171212,
+        "memory": {
+          "geometries": 31,
+          "textures": 20
+        },
+        "programs": 16,
+        "disposed": false
+      }
+    }
+  ],
+  "seekHashes": [
+    "034190c352ed0e68cd92b1bb66489fd10c2384f92d0622a0cc201417cdf06e6d",
+    "7bd113bb20a21193938e19b95cc9d11b7f577c89f7fdf15422c93ffbbbd3997f",
+    "034190c352ed0e68cd92b1bb66489fd10c2384f92d0622a0cc201417cdf06e6d"
+  ],
+  "keyboardFocus": "BUTTON",
+  "reducedMotion": true,
+  "missingAssetHandled": true,
+  "retryRecovered": true,
+  "cancelHandled": true,
+  "functionalPass": true,
+  "performanceAccepted": false,
+  "pass": false,
+  "failure": "AssertionError [ERR_ASSERTION]: 1920/DPR1 performance gate: >=50fps and P95 <=20ms\n    at file:///D:/University-Competition/Math_Media/PoeticRealm/frontend/tools/verify-jiangxue-model.mjs:62:38"
+}

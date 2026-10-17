@@ -1,0 +1,15 @@
+{
+  "scene": "fengqiao",
+  "resolution": 1024,
+  "size": [
+    1500.0,
+    1500.0
+  ],
+  "heightRange": [
+    -3.99965,
+    199.615139
+  ],
+  "waterLevel": 0.0,
+  "bakedFrom": "art/blender/fengqiao.blend",
+  "bakedAt": "2026-09-29T02:57:44Z"
+}

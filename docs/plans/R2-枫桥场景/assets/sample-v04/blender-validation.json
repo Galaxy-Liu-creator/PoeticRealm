@@ -1,0 +1,22 @@
+{
+  "scene": "fengqiao_quality_v04",
+  "source": "D:\\University-Competition\\Math_Media\\PoeticRealm\\art\\blender\\fengqiao-sample-v04.blend",
+  "model": "D:\\University-Competition\\Math_Media\\PoeticRealm\\frontend\\public\\assets\\models\\fengqiao\\sample_v04.glb",
+  "errors": [],
+  "warnings": [],
+  "objects": 39,
+  "bones": 53,
+  "triangles": 41395,
+  "hullNonmanifoldEdges": 0,
+  "pivot": [
+    -2.799999952316284,
+    -0.6100000143051147,
+    1.3799999952316284
+  ],
+  "shaftAxis": [
+    -0.07231014966964722,
+    -0.7231014966964722,
+    -0.6869463920593262
+  ],
+  "method": "closed transoms and thick continuous hull; port-side support above gunwale; original hand bind contacts retained"
+}

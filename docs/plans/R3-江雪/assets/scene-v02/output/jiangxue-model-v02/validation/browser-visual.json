@@ -1,0 +1,306 @@
+{
+  "revision": "02",
+  "fixture": "isolated authentication; real Chrome/WebGL and published Jiangxue GLB",
+  "errors": [],
+  "warnings": [],
+  "views": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "02",
+      "view": "CAM_enter",
+      "time": 8,
+      "playing": false,
+      "fps": 46.35176346879369,
+      "calls": 141,
+      "triangles": 364688,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "02",
+      "view": "CAM_birds",
+      "time": 8,
+      "playing": false,
+      "fps": 56.75939096922806,
+      "calls": 93,
+      "triangles": 239389,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "02",
+      "view": "CAM_path",
+      "time": 8,
+      "playing": false,
+      "fps": 59.03894933583224,
+      "calls": 99,
+      "triangles": 246360,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "02",
+      "view": "CAM_fog",
+      "time": 8,
+      "playing": false,
+      "fps": 59.45702180372081,
+      "calls": 94,
+      "triangles": 319382,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "02",
+      "view": "CAM_boat",
+      "time": 8,
+      "playing": false,
+      "fps": 58.64198384211413,
+      "calls": 85,
+      "triangles": 314458,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "02",
+      "view": "CAM_fisherman",
+      "time": 8,
+      "playing": false,
+      "fps": 59.78394954186893,
+      "calls": 33,
+      "triangles": 232576,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "02",
+      "view": "CAM_nature",
+      "time": 8,
+      "playing": false,
+      "fps": 59.959508855844824,
+      "calls": 80,
+      "triangles": 227664,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "02",
+      "view": "CAM_rocks",
+      "time": 8,
+      "playing": false,
+      "fps": 58.5634762838733,
+      "calls": 91,
+      "triangles": 245729,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "02",
+      "view": "CAM_enter",
+      "time": 8,
+      "playing": false,
+      "fps": 54.96145911714492,
+      "calls": 141,
+      "triangles": 364688,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "02",
+      "view": "CAM_birds",
+      "time": 8,
+      "playing": false,
+      "fps": 58.43024444818062,
+      "calls": 91,
+      "triangles": 234791,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "02",
+      "view": "CAM_path",
+      "time": 8,
+      "playing": false,
+      "fps": 55.815903776769545,
+      "calls": 99,
+      "triangles": 246360,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "02",
+      "view": "CAM_fog",
+      "time": 8,
+      "playing": false,
+      "fps": 58.49642214266585,
+      "calls": 69,
+      "triangles": 298332,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "02",
+      "view": "CAM_boat",
+      "time": 8,
+      "playing": false,
+      "fps": 58.63174516589804,
+      "calls": 47,
+      "triangles": 281988,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "02",
+      "view": "CAM_fisherman",
+      "time": 8,
+      "playing": false,
+      "fps": 59.639160680169915,
+      "calls": 33,
+      "triangles": 232576,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "02",
+      "view": "CAM_nature",
+      "time": 8,
+      "playing": false,
+      "fps": 59.907456265464376,
+      "calls": 54,
+      "triangles": 205360,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "02",
+      "view": "CAM_rocks",
+      "time": 8,
+      "playing": false,
+      "fps": 59.980539450083164,
+      "calls": 72,
+      "triangles": 229528,
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 16,
+      "contextLost": false,
+      "disposed": false
+    }
+  ],
+  "release": [],
+  "performance": [],
+  "seekHashes": [
+    "28752fec92370622c19ac1687c5597cb5c6e68678b9cfc695435ab21dd0fc65b",
+    "0bedd76292148c461e2cbdc07ff3a728cf0a5443b020b2260e62c7d57d545b29",
+    "28752fec92370622c19ac1687c5597cb5c6e68678b9cfc695435ab21dd0fc65b"
+  ],
+  "functionalPass": true,
+  "performanceAccepted": false,
+  "pass": true
+}

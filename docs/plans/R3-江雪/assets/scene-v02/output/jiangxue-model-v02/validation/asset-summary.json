@@ -1,0 +1,15 @@
+{
+  "nodes": 128,
+  "meshes": 55,
+  "materials": 19,
+  "skins": 1,
+  "bones": [
+    53
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ]
+}

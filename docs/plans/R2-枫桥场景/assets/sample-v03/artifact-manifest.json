@@ -1,0 +1,585 @@
+{
+  "date": "2026-10-07",
+  "scope": "Fengqiao four-element sample and standing boatman refinement",
+  "browserRun": "output/playwright/fengqiao-rower-v03/v12-final",
+  "model": {
+    "path": "frontend/public/assets/models/fengqiao/sample_v03.glb",
+    "bytes": 12889512,
+    "sha256": "cf87dd3bc8c86b4680d871e6f200aa37cea14ff4aa908e293c3c18c2ba452107"
+  },
+  "source": {
+    "path": "art/blender/fengqiao-sample-v03.blend",
+    "bytes": 11609042,
+    "sha256": "7056b269b62e148c45e60fa62f81ef7b3d2afea2804291921e818338861344f8"
+  },
+  "preservedHistoricalAssets": {
+    "art/blender/fengqiao-sample-v01.blend": "694b8394942943178ba1239bb1005f7c7870a2418df2bc051393d352edc0d0f6",
+    "frontend/public/assets/models/fengqiao/sample_v01.glb": "37540f5d04a5829c99a03b4ed802478a21bd2ec1e36895706ced132a5720caeb",
+    "art/blender/fengqiao-sample-v02.blend": "cfd60149342263d701ae60befe2bc7afae13e0f10dcfe8e55b737e0a3d127e99",
+    "frontend/public/assets/models/fengqiao/sample_v02.glb": "7ffde5fa94fd3ea26e3d7e346c3142fd85d037176f15f4133985171bb57a3114"
+  },
+  "blender": {
+    "scene": "fengqiao_quality_v03",
+    "source": "D:\\University-Competition\\Math_Media\\PoeticRealm\\art\\blender\\fengqiao-sample-v03.blend",
+    "model": "D:\\University-Competition\\Math_Media\\PoeticRealm\\frontend\\public\\assets\\models\\fengqiao\\sample_v03.glb",
+    "errors": [],
+    "warnings": [],
+    "objects": 38,
+    "bones": 53,
+    "triangles": 40371,
+    "humanSourceHeight": 1.6221599578857422,
+    "humanScale": 1.0479854293874393,
+    "style": "stern-yuloh",
+    "pivot": [
+      -2.880000114440918,
+      0.4000000059604645,
+      1.2699999809265137
+    ]
+  },
+  "budget": {
+    "distributedBytes": 12889512,
+    "triangles": 40371,
+    "mainPassPrimitives": 19,
+    "estimatedTextureBytesWithMipmaps": 65710772,
+    "images": [
+      {
+        "name": "tatami_mat_nor_gl",
+        "width": 512,
+        "height": 512,
+        "bytes": 336864
+      },
+      {
+        "name": "tatami_mat_Diffuse",
+        "width": 512,
+        "height": 512,
+        "bytes": 49955
+      },
+      {
+        "name": "tatami_mat_Rough",
+        "width": 512,
+        "height": 512,
+        "bytes": 116619
+      },
+      {
+        "name": "wood_planks_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1711501
+      },
+      {
+        "name": "wood_planks_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 216542
+      },
+      {
+        "name": "wood_planks_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 614263
+      },
+      {
+        "name": "linen_normal",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1909234
+      },
+      {
+        "name": "linen_work_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 315013
+      },
+      {
+        "name": "linen_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 15959
+      },
+      {
+        "name": "rock_01_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 2131381
+      },
+      {
+        "name": "rock_01_Diffuse_wet",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 333979
+      },
+      {
+        "name": "rock_01_Rough_wet",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 868233
+      },
+      {
+        "name": "rock_01_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 452999
+      },
+      {
+        "name": "rock_01_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1142285
+      }
+    ],
+    "note": "不替代真实浏览器多 pass 和 fps 验证"
+  },
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "frames": [
+    {
+      "frames": 3569,
+      "duration": 60004.8,
+      "fps": 59.461909713889554,
+      "p50": 16.69999999999709,
+      "p95": 16.900000000001455,
+      "over50": 1,
+      "maxCalls": 59,
+      "maxTriangles": 124400
+    },
+    {
+      "frames": 3583,
+      "duration": 60004.59999999999,
+      "fps": 59.69542335087644,
+      "p50": 16.69999999999709,
+      "p95": 16.90000000000873,
+      "over50": 1,
+      "maxCalls": 59,
+      "maxTriangles": 124400
+    },
+    {
+      "frames": 3576,
+      "duration": 60005.29999999999,
+      "fps": 59.578070603763344,
+      "p50": 16.699999999982538,
+      "p95": 16.800000000017462,
+      "over50": 5,
+      "maxCalls": 59,
+      "maxTriangles": 124400
+    }
+  ],
+  "loadMs": 2229.199999999255,
+  "navigationAndFixtureWaitMs": 3679,
+  "strokeLimits": {
+    "samples": 97,
+    "maxGripError": 5.036462329850497e-08,
+    "maxGripAt": 4.3999999999999995,
+    "maxSkinHandError": 0.02993813952868211,
+    "maxFootError": 1.24739218211164e-06,
+    "maxTetherError": 5.551115123125783e-16,
+    "highestBlade": -0.06895696454537137,
+    "lowestBlade": -0.7277630807284055
+  },
+  "lastDisposal": {
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "stages": [
+      {
+        "owner": "() => window.removeEventListener(\"keydown\", onKey)",
+        "geometries": 21,
+        "textures": 22
+      },
+      {
+        "owner": "() => rower?.dispose()",
+        "geometries": 20,
+        "textures": 22
+      },
+      {
+        "owner": "() => controls?.dispose()",
+        "geometries": 20,
+        "textures": 22
+      },
+      {
+        "owner": "() => river.dispose()",
+        "geometries": 19,
+        "textures": 21
+      },
+      {
+        "owner": "() => moon.shadow.dispose()",
+        "geometries": 19,
+        "textures": 19
+      },
+      {
+        "owner": "() => {\n\t\tconst textures = new Set();\n\t\tfor (const lookup of physicalLookups) if (lookup.value instanceof Texture) textures.add(lookup.value);\n\t\tfor (const texture of textures) texture.dispose();\n\t\tphysicalLookups.clear();\n\t}",
+        "geometries": 19,
+        "textures": 18
+      },
+      {
+        "owner": "() => asset.dispose()",
+        "geometries": 1,
+        "textures": 3
+      },
+      {
+        "owner": "() => environment.dispose()",
+        "geometries": 1,
+        "textures": 2
+      },
+      {
+        "owner": "() => sky.dispose()",
+        "geometries": 1,
+        "textures": 0
+      },
+      {
+        "owner": "() => {\n\t\tif (!pmremReleased) pmrem.dispose();\n\t}",
+        "geometries": 1,
+        "textures": 0
+      }
+    ],
+    "contextLost": true
+  },
+  "references": {
+    "human": {
+      "project": "MakeHuman Community MPFB2",
+      "repository": "https://github.com/makehumancommunity/mpfb2",
+      "commit": "d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "retrieved": "2026-10-07",
+      "license": "CC0-1.0 (bundled data assets); upstream program GPL-3.0, not copied",
+      "files": [
+        {
+          "local": "base.obj",
+          "upstream": "src/mpfb/data/3dobjs/base.obj",
+          "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c"
+        },
+        {
+          "local": "rig.game_engine.json",
+          "upstream": "src/mpfb/data/rigs/standard/rig.game_engine.json",
+          "sha256": "b324ddb4b707721c19630bfadb87c3e3b38eed3b6e4590bb3cead43ea918f799"
+        },
+        {
+          "local": "weights.game_engine.json",
+          "upstream": "src/mpfb/data/rigs/standard/weights.game_engine.json",
+          "sha256": "9f4a773e74ce5ba08415b4f30070338e9f75bae5971b5075b10cd6b9caa58473"
+        },
+        {
+          "local": "asian-male-young.target.gz",
+          "upstream": "src/mpfb/data/targets/macrodetails/asian-male-young.target.gz",
+          "sha256": "0928ed8b9f08f60afb9884cf9e9f33a939ed3a85d7f136de9ccc88a76981d6d7"
+        },
+        {
+          "local": "asian-male-old.target.gz",
+          "upstream": "src/mpfb/data/targets/macrodetails/asian-male-old.target.gz",
+          "sha256": "8f931e96529904375a442c77be0c31d60ace6c0461645ed7ab1a43a3c378a247"
+        },
+        {
+          "local": "universal-male-young-averagemuscle-averageweight.target.gz",
+          "upstream": "src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz",
+          "sha256": "e814651195c53971503d9823d6841216718a561951ef064f81d132297f4fa494"
+        },
+        {
+          "local": "hm08_config.json",
+          "upstream": "src/mpfb/data/mesh_metadata/hm08_config.json",
+          "sha256": "0ebab5f8ba35e56f3be49e3de241746552bce57fe8e079b72b00a362be246a29"
+        },
+        {
+          "local": "LICENSE.md",
+          "upstream": "LICENSE.md",
+          "sha256": "5cefb60680cb9efd4550a2e65d719021cfbec9dad3658481d11d48ae863ce04d"
+        },
+        {
+          "local": "LICENSE.ASSETS.md",
+          "upstream": "LICENSE.ASSETS.md",
+          "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+        }
+      ],
+      "adaptation": {
+        "script": "art/scripts/refine_fengqiao_rower.py",
+        "bodyGroups": [
+          "body",
+          "helper-l-eye",
+          "helper-r-eye"
+        ],
+        "excluded": "All helper cubes are locator inputs only. No genital, teeth, tongue, skirt, tights or hair fitting geometry is exported.",
+        "morphs": {
+          "asian-male-young": 0.8,
+          "asian-male-old": 0.2,
+          "universal-male-young-averagemuscle-averageweight": 1.0
+        },
+        "unitConversion": "MakeHuman decimetres (x,y,z) -> Blender metres 0.1*(z,x,y), normalize anatomical height to 1.70m",
+        "skin": "Original normalized weights, largest four influences; source joint cube centres recomputed after morph; working pose baked into mesh and bind skeleton",
+        "originalWork": "Linen coat fit, collar, creased hem, belt, cuffs, shoes, hat, yuloh and grip pose; 53-joint skin with articulated fingers",
+        "notAClaim": "No photogrammetry, copied MPFB program, paid generation or exact Tang-period historical reconstruction"
+      },
+      "mechanicsReference": "https://www.taioca.org/about-3 (visual/mechanical study only; photographs not downloaded or redistributed)"
+    },
+    "linen": {
+      "source": "https://polyhaven.com/a/rough_linen",
+      "authors": [
+        "Rico Cilliers",
+        "colormass"
+      ],
+      "license": "CC0-1.0",
+      "retrieved": "2026-10-07",
+      "tool": "Blender MCP Poly Haven integration, 1K; retained images saved by Blender",
+      "physicalTileMetres": [
+        0.270708,
+        0.2713
+      ],
+      "retainedSources": [
+        {
+          "file": "rough_linen_Diffuse_1k.png",
+          "sha256": "97c7bd64819ee527552e7286030b1a84fb0f7b1d1a2a4d43c4e7e91ac50873e1"
+        },
+        {
+          "file": "rough_linen_Rough_1k.png",
+          "sha256": "76c5ba237eb8aee94b47c4c9381113b26cd737abf971461e9823a0023da68c06"
+        },
+        {
+          "file": "rough_linen_nor_gl_1k.png",
+          "sha256": "351168f19d254c89698286842a30faadeac6213c07522b783ed32ab0807d15fc"
+        }
+      ],
+      "processingScript": "art/scripts/prepare_rower_textures.py",
+      "delivery": [
+        {
+          "file": "linen_work_basecolor.jpg",
+          "sha256": "50b4f378bfc5fed82184606653361d02cd2b4b55a5da196a33bf638b47ef68be",
+          "processing": "1024 square, saturation 0.58, brightness 0.65, JPEG quality 93, RGB sRGB"
+        },
+        {
+          "file": "linen_normal.png",
+          "sha256": "2622d5137c39f5e7a623f2dc0cdd938b99c53ea4a98b1adf8e83d09d965a0c8a",
+          "processing": "1024 square RGB8 PNG, tangent-space +Y normal, Non-Color"
+        },
+        {
+          "file": "linen_roughness.png",
+          "sha256": "ed2595fcf3159455009cb594f8b5c649d891f97d4d24ce107a37daa64ce745ac",
+          "processing": "1024 square L8 PNG, Non-Color; glTF exporter packs into metallicRoughness"
+        }
+      ],
+      "publication": "Embedded in frontend/public/assets/models/fengqiao/sample_v03.glb"
+    },
+    "mechanics": "https://www.taioca.org/about-3"
+  },
+  "video": {
+    "source": {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/rower-source.webm",
+      "bytes": 1357525,
+      "sha256": "6d113e52f133770a53f292635c60292cb541462da0e491a103974a5d686fdaa5"
+    },
+    "sourceMetadata": {
+      "duration": 12.2,
+      "fps": 25.0,
+      "size": [
+        1440,
+        900
+      ],
+      "codec": "vp8"
+    },
+    "preview": {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/rower-preview.mp4",
+      "bytes": 1229711,
+      "sha256": "2cbbe038cd6a22777db263e12769a956650cbc2a91b42045eeaff03d69cd5d94"
+    },
+    "previewMetadata": {
+      "duration": 8.4,
+      "fps": 25.0,
+      "size": [
+        1440,
+        900
+      ],
+      "codec": "h264"
+    },
+    "trimStartSeconds": 3.799999999999999,
+    "requestedDurationSeconds": 8.4,
+    "retimed": false
+  },
+  "evidence": [
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/native-devtools-1920.png",
+      "bytes": 955037,
+      "sha256": "b149b935034588e34a0a9fa2f4770ea979ed8a39d75a30faa350fa44f167e906"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/performance.json.gz",
+      "bytes": 3315956,
+      "sha256": "b0723020fe19b6b3425f123c8646d1a57b86ffe71b6b435224caca2f7f868ddf"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/sample-1440.png",
+      "bytes": 461644,
+      "sha256": "f1f5a7d2f17d473bb9c059071f48b8139abd5d4634609b498b418941a5855ae4"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/determinism-t8.png",
+      "bytes": 640119,
+      "sha256": "b073c3f3b2652078e687544fee081f4e9a2d8e8ed7a6cb427aec55aca92838bc"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/determinism-repeat.png",
+      "bytes": 640119,
+      "sha256": "b073c3f3b2652078e687544fee081f4e9a2d8e8ed7a6cb427aec55aca92838bc"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/reflection-off.png",
+      "bytes": 550290,
+      "sha256": "5b8caaf299d1f4032ee06786b03eb3e566e21b7e68c56d2056942975a64c21cd"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/shadows-off.png",
+      "bytes": 636697,
+      "sha256": "16d9329c6bac84da4ec5e8f1012ca4eb6d362c1a205ea347fc9655baee0eb402"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/fire-off.png",
+      "bytes": 617956,
+      "sha256": "322f02c07cd6943c9c3463656754ec7c3f046751180fd2bb7f83260e71660d4e"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/CAM_enter-1920.png",
+      "bytes": 640119,
+      "sha256": "b073c3f3b2652078e687544fee081f4e9a2d8e8ed7a6cb427aec55aca92838bc"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/CAM_riverbank-1920.png",
+      "bytes": 949178,
+      "sha256": "d236807075a5a62902a4d3154b05203a47251e45fa76db7db28d698df50e3c96"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/CAM_boat-1920.png",
+      "bytes": 527548,
+      "sha256": "924e0077f53d60f0cbac2b7f097b19537afa961bf17519df294796649fb0c02b"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/CAM_rower-1920.png",
+      "bytes": 921104,
+      "sha256": "2db6c1c2c15973583f78f3f25f151d6513befedbd061c7706bd3ce5982ccf37f"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/rowing-t0.png",
+      "bytes": 938977,
+      "sha256": "e7c54f8a519ebbfe5228072e04191a97ce19133ab0220f44268a1acc7ae8b05a"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/rowing-t1.2.png",
+      "bytes": 924075,
+      "sha256": "4834d8caab23a04a58d747d3b8d9966e145f4322025f816a43c56fde760da36f"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/rowing-t2.4.png",
+      "bytes": 919858,
+      "sha256": "e8371046ba21d40ef22fa58894d8c114b1b0250aebb72aafa7368267039289c1"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/rowing-t3.6.png",
+      "bytes": 930540,
+      "sha256": "df933d5fd286e27891b731f9987aac43230392c9acddc77ede083c8b897e80bb"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/rowing-t4.8.png",
+      "bytes": 941452,
+      "sha256": "564c84f4fe8403cdd9545f19474241574bf3ebd15de05857fa60a9d131677306"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/timeline-t0.png",
+      "bytes": 643312,
+      "sha256": "d0661065aac3f8620c72b65a5f0c44bbf8746e3606e26f7c146a05e4da057e0c"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/timeline-t8.png",
+      "bytes": 640119,
+      "sha256": "b073c3f3b2652078e687544fee081f4e9a2d8e8ed7a6cb427aec55aca92838bc"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/timeline-t16.png",
+      "bytes": 640063,
+      "sha256": "16807a0b7469f295deb647742182aec2c54ab1899b2155c17d869df72fdd7de4"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/timeline-t24.png",
+      "bytes": 641113,
+      "sha256": "24e581344bbf97e45cba5cb4ba9d47c6ab091f62fac3c58443310c33f2b11c1b"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/timeline-t32.png",
+      "bytes": 639264,
+      "sha256": "b6510fb2d35681ed8b9b139e1e798e9d1b4dbe03afdbf6654dc9de4290c1e44e"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/preview-start.png",
+      "bytes": 349401,
+      "sha256": "7d6ff9087661933837295325ea3150283b59f1db90a421b324fd862e01224b36"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/preview-mid.png",
+      "bytes": 474953,
+      "sha256": "c249f5cf5e35b03def68852391e9c9c6d213643ca241a3c22747a9181f5685bd"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/preview-end.png",
+      "bytes": 454167,
+      "sha256": "c6040f64f858f5b0606e99ab9703d7e16d51cc1555f1997a3db8ab2316b970fe"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/browser-verification.json",
+      "bytes": 16522,
+      "sha256": "c9542318e7ca41de3c61d8ed4b799ac1b4a000d76ae9c76b45803ea86331da47"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/blender-validation.json",
+      "bytes": 570,
+      "sha256": "c18bff42c716a766b8f3664160ac42d96c32ec8bc31222f8f61076a493fdf5ea"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/node-contract.log",
+      "bytes": 160,
+      "sha256": "134de15bf3ed1cef876e1eba9ddd84f0bf67e4b21d08a0e38e6e1985830f0acc"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/node-budget.log",
+      "bytes": 1782,
+      "sha256": "59d1287cf71e4a2a84516d48f4c873430a08d4df549578d4bab39abc31635118"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/asset-tests.log",
+      "bytes": 45,
+      "sha256": "9af4939d08e40fb0815d5692b17ca08691d36035e4ec3607f02eea59848923fd"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/build.log",
+      "bytes": 2297,
+      "sha256": "bb6092bb5cac3a0493e8fa32dd7d0639d1267f0d93cf031a412e4af54d93ec82"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v03/unit-tests.log",
+      "bytes": 1412,
+      "sha256": "545016053e25433bbc15f1e09a47a656189a98ee4277891756cbf868d3b10add"
+    }
+  ],
+  "implementation": [
+    {
+      "path": "art/scripts/refine_fengqiao_rower.py",
+      "bytes": 22332,
+      "sha256": "dcf45ab7ed28da5a3bd0fe7ddb73fea869521e49d27f70b25c4b80c4423e626d"
+    },
+    {
+      "path": "art/scripts/prepare_rower_textures.py",
+      "bytes": 1049,
+      "sha256": "a46da1e5b792c146cb97ce0659d2f3af07cc2165b928f28eac53e96a4d33962b"
+    },
+    {
+      "path": "frontend/src/systems/characters/Rower.ts",
+      "bytes": 11195,
+      "sha256": "1fdab56ee8e02175ad5a9019e6d885c821f696ac6b23b508960605bcb3c7e580"
+    },
+    {
+      "path": "frontend/src/labs/fengqiao.ts",
+      "bytes": 16064,
+      "sha256": "e1d165534406f85c8a85a31ab3630f39747cf2ba7767ed2dcc30378f9f33867f"
+    },
+    {
+      "path": "frontend/tools/verify-fengqiao-sample.mjs",
+      "bytes": 15295,
+      "sha256": "aabc75e39fcd9d046c077562913b5f90041c796751d37532acfdcc9954a1fe55"
+    }
+  ],
+  "limits": "Not full Fengqiao acceptance, presentation-machine verification, sound or 3D entry/return acceptance; no historical reconstruction claim."
+}

@@ -1,0 +1,20 @@
+{
+  "component": "architecture_foundation",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_temple_plinth",
+      "vertices": 1264,
+      "triangles": 2296,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_tower_plinth",
+      "vertices": 352,
+      "triangles": 608,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

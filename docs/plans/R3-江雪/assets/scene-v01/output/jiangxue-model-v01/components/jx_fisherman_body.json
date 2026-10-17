@@ -1,0 +1,66 @@
+{
+  "component": "jx_fisherman_body",
+  "scene": "jiangxue_modeling_v01",
+  "objects": [
+    {
+      "object": "src_fisherman_anatomy",
+      "vertices": 7575,
+      "triangles": 15042,
+      "nonmanifoldEdges": 102
+    },
+    {
+      "object": "src_fisherman_work_coat",
+      "vertices": 2805,
+      "triangles": 5466,
+      "nonmanifoldEdges": 150
+    },
+    {
+      "object": "src_fisherman_trousers",
+      "vertices": 1543,
+      "triangles": 2960,
+      "nonmanifoldEdges": 128
+    },
+    {
+      "object": "src_fisherman_eye_left",
+      "vertices": 72,
+      "triangles": 140,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_fisherman_eye_right",
+      "vertices": 72,
+      "triangles": 140,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31027,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2
+  },
+  "extra": {
+    "humanSource": "CC0 hm08 d0a32e5",
+    "ageMorph": 0.85,
+    "height": 1.7,
+    "skinBones": 53,
+    "stance": "standing; articulated grip; no idle body animation"
+  }
+}

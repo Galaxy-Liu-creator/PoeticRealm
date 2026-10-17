@@ -1,0 +1,92 @@
+{
+  "component": "jx_boat_structure",
+  "scene": "jiangxue_modeling_v01",
+  "objects": [
+    {
+      "object": "src_boat_hull_closed",
+      "vertices": 594,
+      "triangles": 1184,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_boat_wood_aged",
+      "vertices": 2856,
+      "triangles": 5632,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31027,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2
+  },
+  "extra": {
+    "source": "fengqiao-sample-v04.blend",
+    "removedCanopyParts": [
+      {
+        "vertices": 332,
+        "maxHeight": 1.2596409320831299
+      },
+      {
+        "vertices": 332,
+        "maxHeight": 1.2537517547607422
+      },
+      {
+        "vertices": 200,
+        "maxHeight": 1.3032026290893555
+      },
+      {
+        "vertices": 200,
+        "maxHeight": 1.3032026290893555
+      },
+      {
+        "vertices": 72,
+        "maxHeight": 1.2358615398406982
+      },
+      {
+        "vertices": 72,
+        "maxHeight": 1.2576570510864258
+      },
+      {
+        "vertices": 72,
+        "maxHeight": 1.161691665649414
+      },
+      {
+        "vertices": 152,
+        "maxHeight": 2.005000114440918
+      },
+      {
+        "vertices": 152,
+        "maxHeight": 2.005000114440918
+      },
+      {
+        "vertices": 152,
+        "maxHeight": 2.005000114440918
+      }
+    ],
+    "hullPreserved": true,
+    "boatOrigin": [
+      4.0,
+      -2.0,
+      0.0
+    ]
+  }
+}

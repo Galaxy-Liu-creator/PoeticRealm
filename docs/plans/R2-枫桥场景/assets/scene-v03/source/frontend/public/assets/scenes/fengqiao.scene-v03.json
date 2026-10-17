@@ -1,0 +1,14 @@
+{
+  "contractVersion": "0.2", "scene": "fengqiao", "scope": "full-scene",
+  "model": "models/fengqiao/scene_v02.glb", "terrain": "fengqiao",
+  "environment": "environments/fengqiao-night-v01.rgba16f.gz", "waterLevel": 0,
+  "boatNavigation": {"path": [[3.85,0.45],[3.5,-1.5],[2.8,-4],[1.48,-6.4],[-0.55,-9]], "speed": 0.22, "brakingDistance": 2},
+  "distanceLods": [
+    {"near":"temple_main","far":"temple_far","distance":36},
+    {"near":"bell_tower","far":"bell_far","distance":24},
+    {"near":"bridge_main","far":"bridge_far","distance":24},
+    {"near":"maple_grove","far":"maple_far","distance":28},
+    {"near":"reed_bed","far":"reed_far","distance":22}
+  ],
+  "requiredNodes": ["boat_guest","boat_hull_closed","CAM_enter","CAM_moonset","CAM_temple","CAM_bridge","CAM_bell","CAM_nature","CAM_riverbank","CAM_boat","CAM_rower","FOCUS_enter","FOCUS_moonset","FOCUS_temple","FOCUS_bridge","FOCUS_bell","FOCUS_nature","FOCUS_riverbank","FOCUS_boat","FOCUS_rower","temple_main","temple_far","bell_tower","bell_far","bridge_main","bridge_far","shore_root","maple_grove","maple_far","reed_bed","reed_far","maple_grove_wood_aged","maple_grove_foliage_maple","reed_bed_foliage_reed","SFX_bell","EMIT_bell","SFX_crow","LIGHT_fishfire_01","SFX_boat","mask_probe","rower_rig","rower_spine","rower_head","rower_upper_left","rower_upper_right","rower_fore_left","rower_fore_right","rower_hand_left","rower_hand_right","oar_pivot","ANCHOR_oar_hand_left","ANCHOR_oar_hand_right","ANCHOR_oar_blade","ANCHOR_oar_tether","ANCHOR_boat_tether","ANCHOR_rower_palm_left","ANCHOR_rower_palm_right","ANCHOR_rower_foot_left","ANCHOR_rower_foot_right","rower_root","rower_thigh_left","rower_thigh_right","rower_shin_left","rower_shin_right","rower_foot_left","rower_foot_right"]
+}

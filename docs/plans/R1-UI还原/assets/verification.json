@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "home: three cards align and no return button",
+    "favorites: add without navigation, synchronize, persist after refresh",
+    "poem: four correct DOM lines, notes, return, browser history",
+    "profile: save, refresh, escape HTML, invalid avatar, crop, default reset",
+    "preferences: functional dark mode and motion persist",
+    "account: validation and no false authentication or stored password",
+    "reduced motion: curtain skips immediately",
+    "invalid deep link: accessible fallback",
+    "1920, 1024, 390 window widths: no horizontal overflow on key pages",
+    "remove final favorite: actionable empty state",
+    "keyboard: visible focus",
+    "normal curtain: 1.2s reveal, target inert, focus, browser-back cancellation",
+    "curtain resource failure: restore entry and allow retry",
+    "cancel during pending image load: unlock entry immediately",
+    "storage failure: session state retained, warning visible",
+    "no browser exceptions or failed resources"
+  ],
+  "errors": [],
+  "complete": true
+}

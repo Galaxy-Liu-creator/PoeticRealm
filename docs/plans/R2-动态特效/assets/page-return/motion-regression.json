@@ -1,0 +1,34 @@
+{
+  "checks": [
+    "hover pauses the entire aligned grid",
+    "hero stops offscreen and resumes",
+    "simulated visibilitychange stops application RAF; restore resumes without catching up",
+    "three continuous entries commit only at completion and release canvas",
+    "keyboard entry and Esc restore focus and source",
+    "failed image keeps source and retry succeeds",
+    "cancel during actual pending request unlocks source; late completion stays cancelled",
+    "rapid requests share one transaction; route changes cancel it",
+    "live reduced-motion change stops atmosphere and skips reveal after preparation",
+    "unavailable WebGL retains static UI and completes CSS fallback"
+  ],
+  "errors": [],
+  "complete": true,
+  "timeline": [
+    {
+      "scene": "fengqiao",
+      "startedMs": 5362.4573,
+      "finishedMs": 7300.4612
+    },
+    {
+      "scene": "jiangxue",
+      "startedMs": 9462.0439,
+      "finishedMs": 11860.955100000001
+    },
+    {
+      "scene": "baidicheng",
+      "startedMs": 14151.624600000001,
+      "finishedMs": 16055.8786
+    }
+  ],
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\page-session\\motion-production-verified\\video\\page@5401685e68b76b4d9572ccd66f11e658.webm"
+}

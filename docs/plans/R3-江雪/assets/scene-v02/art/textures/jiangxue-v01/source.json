@@ -1,0 +1,11 @@
+{
+  "author": "PoeticRealm project; Codex executed original component script through Blender MCP",
+  "source": "art/scripts/components/jiangxue/boat_snow.py",
+  "kind": "original numerical microheight, gradient normal and roughness maps",
+  "seed": 31027,
+  "resolution": [512, 512],
+  "files": {"snow_basecolor.png": "sRGB", "snow_normal.png": "Non-Color tangent normal", "snow_roughness.png": "Non-Color"},
+  "thirdPartySnowImages": false,
+  "imageGenerationService": false,
+  "license": "Project-original asset; no third-party snow image license applies. Reused wood/rock/linen/straw sources are recorded separately in docs/CREDITS.md."
+}

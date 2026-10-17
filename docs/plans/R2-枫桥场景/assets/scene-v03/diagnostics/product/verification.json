@@ -1,0 +1,270 @@
+{
+  "checks": [
+    "火光入境准备真实首帧，提交前路由保留，完成后接管同一个Canvas",
+    "月落32秒后保持夜景，同刻重放像素一致；雾实际改变岸边与水面画面",
+    "四句可键盘切换现有机位，收藏重绘保留Canvas、时间和视角",
+    "手势解锁空间音频；水风循环、乌啼与延迟钟声、暂停静音、拖动恢复尾音通过",
+    "1920/1440/390真实页面布局与原生Chrome DevTools DOM、截图、Console检查",
+    "翻页返回仅截取一次，48条带共用当前画面；Esc保留诗境，完成后释放场景",
+    "正常产品路由反复入境与返回后GPU资源归零",
+    "减少动态保留静态夜景与手动选景"
+  ],
+  "errors": [],
+  "disposals": [
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    }
+  ],
+  "status": "failed",
+  "moon": [
+    {
+      "t": 0,
+      "progress": 0,
+      "height": 118,
+      "brightness": 1,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        118,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.3727781309111029,
+        0.19297023994755824,
+        -0.9076337100444246
+      ]
+    },
+    {
+      "t": 8,
+      "progress": 0.25,
+      "height": 97.0625,
+      "brightness": 0.9625,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        97.0625,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.3750431445398135,
+        0.15969473847658536,
+        -0.9131485258360676
+      ]
+    },
+    {
+      "t": 16,
+      "progress": 0.5,
+      "height": 51,
+      "brightness": 0.88,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        51,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.37719328805921437,
+        0.11956872657998774,
+        -0.9183836578833046
+      ]
+    },
+    {
+      "t": 24,
+      "progress": 0.75,
+      "height": 4.9375,
+      "brightness": 0.7975,
+      "visible": true,
+      "position": [
+        -227.95131238611876,
+        4.9375,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.3772124493084881,
+        0.11914919748885257,
+        -0.9184303113597971
+      ]
+    },
+    {
+      "t": 32,
+      "progress": 1,
+      "height": -16,
+      "brightness": 0.76,
+      "visible": false,
+      "position": [
+        -227.95131238611876,
+        -16,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.377210726720207,
+        0.11918697426194597,
+        -0.9184261172318083
+      ]
+    },
+    {
+      "t": 40,
+      "progress": 1,
+      "height": -16,
+      "brightness": 0.76,
+      "visible": false,
+      "position": [
+        -227.95131238611876,
+        -16,
+        -555.0118910270718
+      ],
+      "lightDirection": [
+        -0.377210726720207,
+        0.11918697426194597,
+        -0.9184261172318083
+      ]
+    }
+  ],
+  "views": [
+    {
+      "view": "CAM_moonset",
+      "camera": [
+        15,
+        9.000000000000002,
+        20
+      ],
+      "target": [
+        -8,
+        4.5,
+        -36
+      ],
+      "followsBoat": false
+    },
+    {
+      "view": "CAM_riverbank",
+      "camera": [
+        7.800000190734863,
+        3.5999999046325675,
+        7.800000190734865
+      ],
+      "target": [
+        -1.7999999523162842,
+        0.75,
+        -3
+      ],
+      "followsBoat": false
+    },
+    {
+      "view": "CAM_temple",
+      "camera": [
+        24,
+        7.599999904632565,
+        -10
+      ],
+      "target": [
+        7.5,
+        5,
+        -33
+      ],
+      "followsBoat": false
+    },
+    {
+      "view": "CAM_boat",
+      "camera": [
+        11.385090718968534,
+        3.2999999523162846,
+        1.237013520154329
+      ],
+      "target": [
+        3.434430480820661,
+        0.949999988079071,
+        -1.9358408595994836
+      ],
+      "followsBoat": true
+    }
+  ],
+  "audioAfterCrow": {
+    "state": "running",
+    "muted": false,
+    "voices": 3,
+    "loops": 2,
+    "lastEvent": "crow",
+    "events": [
+      "crow"
+    ],
+    "tracks": [
+      "environment",
+      "effects",
+      "voice",
+      "music"
+    ]
+  },
+  "audioAfterBell": {
+    "state": "running",
+    "muted": false,
+    "voices": 3,
+    "loops": 2,
+    "lastEvent": "bell",
+    "events": [
+      "crow",
+      "bell"
+    ],
+    "tracks": [
+      "environment",
+      "effects",
+      "voice",
+      "music"
+    ]
+  },
+  "nativeServer": {
+    "name": "chrome_devtools",
+    "title": "Chrome DevTools MCP server",
+    "version": "1.10.1"
+  },
+  "dom": "## Latest page snapshot\nuid=1_0 RootWebArea \"枫桥夜泊 · 诗境\" url=\"http://127.0.0.1:5187/#/poems/fengqiao\"\n  uid=1_1 link \"跳至正文\" url=\"http://127.0.0.1:5187/#main\"\n    uid=1_2 StaticText \"跳至正文\"\n  uid=1_3 banner\n    uid=1_4 link \"← 返回总览\" url=\"http://127.0.0.1:5187/#/\"\n      uid=1_5 StaticText \"← \"\n      uid=1_6 StaticText \"返回总览\"\n    uid=1_7 StaticText \"诗境·一卷山河 \"\n    uid=1_8 navigation \"主导航\"\n      uid=1_9 link \"诗词总览\" url=\"http://127.0.0.1:5187/#/\"\n        uid=1_10 StaticText \"诗词总览\"\n      uid=1_11 link \"我的收藏\" url=\"http://127.0.0.1:5187/#/favorites\"\n        uid=1_12 StaticText \"我的收藏\"\n      uid=1_13 link \"个人中心\" url=\"http://127.0.0.1:5187/#/profile\"\n        uid=1_14 StaticText \"个人中心\"\n  uid=1_15 main\n    uid=1_16 Canvas \"枫桥夜泊三维场景\"\n    uid=1_17 heading \"枫桥夜泊\" level=\"1\"\n    uid=1_18 StaticText \"唐 · 张继\"\n    uid=1_19 button \"月落乌啼霜满天，切换对应景观\"\n    uid=1_20 button \"江枫渔火对愁眠，切换对应景观\"\n    uid=1_21 button \"姑苏城外寒山寺，切换对应景观\"\n    uid=1_22 button \"夜半钟声到客船，切换对应景观\"\n    uid=1_23 button \"已收藏\" pressed\n    uid=1_24 button \"笺注 · 译文\" expandable\n    uid=1_25 button \"全屏观景\"\n    uid=1_26 button \"暂停\"\n    uid=1_27 button \"开启声音\"\n    uid=1_28 button \"全景\" focusable focused\n    uid=1_29 button \"木舟\"\n    uid=1_30 StaticText \"姑苏 · 寒山寺\"\n    uid=1_31 StaticText \"月落江雾 · 钟声到客船\"\n",
+  "console": "## Console messages\n<no console messages found>",
+  "failure": "locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('[data-poem=fengqiao] .enter-button')\n    - locator resolved to <a class=\"enter-button\" href=\"#/poems/fengqiao\">…</a>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n      - waiting 100ms\n    50 × waiting for element to be visible, enabled and stable\n       - element is not stable\n     - retrying click action\n       - waiting 500ms\n\n    at D:\\University-Competition\\Math_Media\\PoeticRealm\\frontend\\tools\\verify-fengqiao-scene.mjs:98:58",
+  "finalDisposals": [
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    }
+  ],
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\product\\video\\page@1a7deced08847d9e9962fecbc6abb042.webm"
+}

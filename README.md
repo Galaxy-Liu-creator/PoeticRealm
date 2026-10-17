@@ -2,139 +2,88 @@
 
 **Poetic Realm · A Scroll of Mountains and Rivers**
 
-> 一页纸，生出一片山河。
+> 循诗入境，展卷见山河。
 
-一款把中国古典诗词的意象转化为可进入的三维山水空间的交互式数字文化作品：从一张文人书案进入古籍，毛笔在宣纸上写下诗句，墨迹洇开、汇成山形，山体从纸面隆起，江河在留白处生成，镜头一镜到底进入诗中的世界。
+以浮动诗词卡片为入口，通过按意象设计的转场进入有真实材质、光照与自然动态的三维山水；读诗、观景、收藏，再翻页回到诗词总览。
 
-> **当前阶段：设计阶段。** 设计文档 v2 与 Blender ↔ 代码契约初稿已完成，目录骨架已建立（全部为空文件），**尚无可运行的代码**。进度见 [MEMORY.md](MEMORY.md)。
+> 前端在 `frontend/`，Spring Boot 后端在 `backend/`。打开页面先登录，刷新保持身份与当前页面；30天记住凭据仍需点击登录。意象入场和书页翻回已实现，三诗场景仍为静态预览。收藏、资料、头像和浏览记录按账号保存在本机。当前状态与验证见 [HANDOFF](HANDOFF.md)。
 
----
+## 新版目标与阶段
 
-## 核心体验
+- 登录后进入诗词总览：全宽山水题头、行书“诗境·一卷山河”、绢纸山影与竹叶底景、三张对齐诗卡，以用户指定 v09 原图为准。
+- 按诗意入场：中央火烧、右上广域碎雪、云水揭幕；诗境中竖排读诗、观察真实山水。
+- 顶部导航：总览、收藏、个人中心；首页无返回，诗境翻页返回总览。
+- 按用户原图实现个人中心、登录/注册与全屏幕布入口；认证使用 Spring Boot，个人中心显示真实账号身份，本机资料按游客和账号隔离。
+- 已按指定稿开始代码还原；设计归档、当前实现和最终实机验收分别记录。
 
-```text
-点击朱砂印入卷 → 烛火亮起，古书打开
-→ 毛笔书写诗句 → 墨迹在宣纸上洇开，汇成山水轮廓
-→ 纸面隆起，江河、树木、建筑、舟船依次墨显
-→ 镜头从书页上方一镜到底进入山河
-→ 诗句逐句演出：每一句驱动一段镜头、效果与声音
-```
+## 首版三首诗
 
-## 三首诗
+| 诗词 | 视觉与意境 | 重点 |
+|---|---|---|
+| 《枫桥夜泊》· 张继 | 蓝灰夜江、木舟、唐风寺、暖渔火 | 月落与钟声“到”客船 |
+| 《江雪》· 柳宗元 | 银灰雪山、冷青江水、真实孤舟与蓑衣 | 静、寒、孤与广域碎雪 |
+| 《早发白帝城》· 李白 | 青绿峡谷、晨霞、江流、轻舟 | 纵深、两岸猿声与稳定行舟 |
 
-| | 《枫桥夜泊》张继 | 《江雪》柳宗元 | 《早发白帝城》李白 |
-|---|---|---|---|
-| 情绪 | 安静、清冷、孤寂 | 空、静、寒、孤 | 轻快、壮阔、自由 |
-| 画风 | 夜景：冷蓝 + 渔火暖光 | 水墨留白（马远《寒江独钓图》） | 青绿山水（《千里江山图》） |
-| 镜头（郭熙"三远"） | 平远 | 平远 | 高远 · 深远 |
-| 核心演出 | 钟声波纹推向客船，波前到达时才响起钟声 | 大面积留白中的一叶孤舟 | 轻舟穿峡，两岸猿声交替，天色从朝霞到暮色 |
+## 技术与边界
 
-## 功能（规划）
+Blender + Three.js（WebGLRenderer，three.js 0.186.1 精确锁定）+ GLSL + TypeScript + Vite + GSAP。复杂主体在 Blender 制作；自然环境用可复用 JS / Shader 系统。全局时钟、种子随机、GLB 机位来源与资产许可要求继续保留。
 
-- [ ] 入口页：朱砂印"点击入卷"，兼作加载页与音频解锁
-- [ ] 书房：烛光、线装书自动打开、竖排标题
-- [ ] 逐笔书写：基于笔顺数据的毛笔书写动画
-- [ ] 墨扩散：GPU ping-pong 模拟宣纸吸墨
-- [ ] 纸面隆起：书页与地形是同一张高度图网格
-- [ ] 一镜到底入境：动态 near/far，尺度归一化
-- [ ] 水墨渲染：水墨材质、笔线描边、Kuwahara 晕染、宣纸纹理、分场景 LUT
-- [ ] 分镜系统：全局时钟可暂停、可跳转（`?scene=fengqiao&t=42`）
-- [ ] 三首诗的完整场景与逐句演出
-- [ ] 诗与诗之间的墨染切换（可跳过）
-- [ ] 文化面板：注释、译文、考据
-- [ ] 画质分档（只降不升）与离线包
+当前资产契约 v0.1 仍有效；写实 PBR 输入等需在后续实施时同步更新 CONTRACT、校验脚本、资产与加载代码，本轮不更改接口。
 
-## 技术栈
+## 运行 UI 与保留的技术原型
 
-| 类别 | 选择 |
-|---|---|
-| 渲染 | Three.js（WebGLRenderer，锁定版本）+ GLSL |
-| 语言 / 构建 | TypeScript + Vite |
-| 动画编排 | GSAP timeline（由全局时钟驱动） |
-| 音频 | Web Audio API |
-| 笔顺数据 | hanzi-writer / Make Me a Hanzi |
-| 建模 | Blender 5.1 + Python（程序化建模、导出、烘焙、校验） |
-| 资产优化 | gltf-transform（Meshopt + WebP） |
-| 验证 / 录制 | Node + Playwright + ffmpeg |
-
-## 运行
-
-> 以下命令为**规划**，代码实现后生效。
+前后端和数据库一键启动：
 
 ```bash
-npm install
-npm run dev        # 本地开发
-npm run build      # 构建到 dist/（相对路径，可离线运行）
+node tools/docker.mjs up
 ```
 
-调试入口（规划）：`?scene=<id>&t=<秒>` 跳到指定时刻，`?q=high|mid|low` 强制画质，`?debug` 打开参数面板；数字键 1/2/3 切换诗，←/→ 切换诗句，空格暂停。
+默认访问 **http://127.0.0.1:5173**，首次自动生成本机密钥并构建三个服务。端口冲突、停止、重启和数据持久化见 [Docker 启动说明](docs/Docker启动.md)。
 
-### 制作端（Blender）
+独立前端开发：
 
 ```bash
-# 导出某个场景的 GLB（按 glb_ 开头的集合导出）
-blender -b art/blender/fengqiao.blend --python art/scripts/export_glb.py -- --out public/assets/models/fengqiao
-
-# 压缩与校验
-node tools/optimize-assets.mjs
-node tools/check-contract.mjs
-node tools/check-budget.mjs
+npm --prefix frontend ci
+npm --prefix frontend run dev
+npm --prefix frontend run build
+npm --prefix frontend test
+npm --prefix frontend run check:contract
 ```
 
-命名、导出参数、预算等规则见 [docs/CONTRACT.md](docs/CONTRACT.md)。`.blend` 与贴图、音频源文件通过 Git LFS 管理，克隆后请先执行 `git lfs install`。
+以上命令从仓库根执行，开发端口为 5173，构建输出 `frontend/dist/`。`check:contract` 当前为空占位，退出成功不算有效契约验证。`/api` 开发代理默认指向后端8080；后端离线时账号表单提示连接失败，受保护页面需要登录。登录生命周期验收使用 `node frontend/tools/verify-session.mjs`，只对隔离测试数据库执行。
 
-## 目录
+后端配置与启动见 [backend/README.md](backend/README.md)。先复制本机配置示例、填写 MySQL 连接和随机持久登录密钥，再在 backend 执行 `./mvnw spring-boot:run`。暂未配置数据库时可使用文档中的隔离 H2 测试服务器，H2仅存在于测试依赖中。
 
-```text
-PoeticRealm/
-├── docs/          设计文档、契约、分镜、检查清单、署名
-├── art/           制作端（浏览器看不到）：.blend、Blender 脚本、源素材
-├── public/assets/ 运行端：优化后的 GLB、高度图、贴图、音频、字体子集
-├── src/
-│   ├── engine/      渲染器、全局时钟、资源、后处理、画质分档
-│   ├── app/         流程状态机、场景管理、分镜执行器
-│   ├── transition/  书页 → 山河（核心）、墨染切换
-│   ├── systems/     墨、地形、水、大气、粒子、镜头、音频、材质、行为
-│   ├── scenes/      书房与三首诗：只做组装、分镜和配置
-│   ├── content/     诗词文案（纯数据）
-│   ├── shaders/     chunks / materials / postfx / sim
-│   └── ui/          DOM 层：竖排诗句、注释卡、印章按钮
-└── tools/         资产优化、字体子集、契约与预算检查、截图对比、逐帧录制、离线打包
-```
+登录后，显式 `?scene=<id>&t=<秒>`、`?q=high|mid|low` 或 `?debug` 仍进入独立保留的 P0，保留 `window.__POETIC__`；这些参数也受认证限制。不带这些参数时使用 `#/`、`#/favorites`、`#/profile`、`#/poems/<id>`、`#/account`、`#/login`、`#/register`。
 
-完整目录与每个文件的职责见 [设计文档 23.2 节](docs/设计文档.md)。
+建模源文件和导出模型（`.blend`、`.glb`、`.gltf`、`.fbx`、`.obj`）在 Windows / Ubuntu 本机保留，由 `.gitignore` 排除，不提交 GitHub。克隆代码后，运行三维场景前需从原工程或本地备份复制 `frontend/public/assets/models/`；继续建模时还需复制 `art/blender/` 及 `art/references/` 中的本地模型。场景清单、高度图和环境资源仍随代码入库。制作端命名、导出、预算见 [CONTRACT](docs/CONTRACT.md)。
 
-## 文档
+## 文档与目录
 
-| 文档 | 内容 |
+| 入口 | 内容 |
 |---|---|
-| [docs/设计文档.md](docs/设计文档.md) | 愿景、体验、三个场景、核心转场与渲染方案、架构、计划 |
-| [docs/CONTRACT.md](docs/CONTRACT.md) | Blender ↔ 代码契约：坐标、命名、属性、材质槽位、导出参数、预算、校验 |
-| [docs/STORYBOARD.md](docs/STORYBOARD.md) | 分镜表（待写） |
-| [docs/CHECKLIST.md](docs/CHECKLIST.md) | 分阶段勾选与验收记录（待写） |
-| [docs/CREDITS.md](docs/CREDITS.md) | 字体、音频、参考、第三方库的来源与许可（待写） |
-| [MEMORY.md](MEMORY.md) | 工作进度、已定决策、待确认事项 |
+| [设计文档 v3](docs/设计文档.md) | 页面、交互、视觉、技术边界 |
+| [UI 设计与审批](docs/design/README.md) | brief、提示词、参考、实际生成状态、审批表 |
+| [分镜](docs/STORYBOARD.md) | 火 / 雪 / 云水 / 翻页与诗境分镜草案 |
+| [验收清单](docs/CHECKLIST.md) | 区分设计审批和运行时验证 |
+| [计划索引](docs/plans/README.md) | R1A 认证及 R2–R4 后续阶段 |
+| [来源与许可](docs/CREDITS.md) | 库、素材、参考与生成声明 |
+| [前后端与认证规划](docs/architecture/前后端分离与认证规划.md) | 目录、API、会话、Spring Boot 创建配置 |
+| [认证接口](docs/api/认证接口.md) | 请求、错误、CSRF、持久登录与数据边界 |
+| [项目约定](AGENTS.md) | 长期协作、素材、验证规则 |
 
-## 验证与边界
+`frontend/` 是独立前端工程，`frontend/src/` 保留 UI/引擎/场景分层；`frontend/public/assets/` 存契约资产。运行 UI 图片在 `frontend/src/assets/ui/`，副本来源可追溯，发布限制仍有效。`art/` 和 `docs/` 保留根目录；`backend/` 是独立 Maven 工程，保留用户创建的 com.demo.backend 包名。
 
-如实记录做到了什么、没做到什么，随进度更新。
+## 验证与已知限制
 
-**已完成**
-
-- 设计文档 v2：核心转场技术方案、水墨渲染方案、开发阶段与砍需求顺序。
-- Blender ↔ 代码契约 v0.1 初稿。
-- 目录骨架。
-
-**尚未完成 / 已知风险**
-
-- 尚无任何可运行代码。
-- 核心转场（书页 → 山河）尚未做技术验证，是全项目最大的风险；如果效果不可信，将启用降级方案"纸被墨浸透后露出三维场景"（设计文档 13.9）。
-- 契约中标注【P0 验证】的条目（实例化方案、跨场景复用、峡谷分段拼接）尚未实测。
-- 比赛提交要求、截止日期、团队分工尚未确定（设计文档第 3 章），体积与时长预算暂按默认假设。
+- 既有进度记录：P0 T1–T5 已完成，包括工程 / 时钟 / 随机、灰模导出、高度图与 GPU 墨扩散测试；本轮回归现有单测和查询入口，未重跑全部 Blender 制作、视觉与目标机性能验收。
+- R1 UI 验证与 R1A 认证验证分别见阶段报告，当前结果见 HANDOFF。Blender 制作端的既有校验不代表本轮重制资产。
+- 三诗是明确标注的静态预览，意象入场与翻页已实现，写实场景继续在 R3 完成；通知、推荐、密码找回与云同步未开放。注册不会自动登录；“记住我”使用服务端可撤销的30天凭据，密码不进入浏览器存储。
+- 页面沿用原图的青黛山水与绢纸构图；字体、完整无文字分层背景与精细装饰仍需收敛。当前图片仅获本地还原用途，构建包包含预览原图，许可与资源优化完成前不发布。
+- 设计图：已通过 Stitch MCP 完成总览、三首诗境、收藏、个人中心、关键状态与四类转场分镜，仅桌面网页。原稿、请求、概念素材与来源记录存于 docs/design；火烧、翻页另附明确标注的源稿资源校验预览。设计审批不代表运行时功能已实现。
+- 比赛截止为 **2026-10-23**；其余比赛规则、答辩机与团队分工仍需确认。
+- 原 P0 T6–T9 暂停按旧目标执行；现有代码和资产保留，不丢弃技术实验。
 
 ## 署名与许可
 
-- 作者：[Galaxy-Liu-creator](https://github.com/Galaxy-Liu-creator)
-- 第三方字体、音频、库与数据的来源和许可统一登记在 [docs/CREDITS.md](docs/CREDITS.md)。
-- AI 辅助声明与提示词原文：按比赛规则补充。
-- 本项目的许可协议待定。
+作者：[Galaxy-Liu-creator](https://github.com/Galaxy-Liu-creator)。项目许可尚未确定；外部资源按 CREDITS 单独登记。AI 设计输入见 [prompts.md](docs/design/2026-10-01-v3/prompts.md)，已执行的首页任务和原图来源见 [generation-log.md](docs/design/2026-10-01-v3/generation-log.md)。

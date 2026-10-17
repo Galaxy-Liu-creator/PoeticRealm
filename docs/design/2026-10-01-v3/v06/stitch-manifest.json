@@ -1,0 +1,26 @@
+{
+  "provider": "Stitch MCP",
+  "date": "2026-10-01",
+  "projectId": "11329297360365535924",
+  "projectUrl": "https://stitch.withgoogle.com/projects/11329297360365535924",
+  "visibility": "PRIVATE",
+  "requestedModel": "GEMINI_3_8_FLASH",
+  "approval": "PENDING_USER_REVIEW",
+  "files": [
+    {
+      "tag": "S01-home-desktop",
+      "screenId": "9088745d9e7d41ce8575cdf5a145516c",
+      "title": "诗境·一卷山河 - S01 首页 (清晰山水底景版)",
+      "resourceName": "projects/11329297360365535924/files/0c34a2e1f1d245aba73c31a41c4b4ff5",
+      "file": "screens/S01-home-desktop.png",
+      "width": 2560,
+      "height": 2048,
+      "format": "PNG",
+      "bytes": 2663685,
+      "sha256": "d9a2e32ed285b72be6b14795e26ac81bb7cbfc54e55f67d3ea21b960ba8d31e1",
+      "sessionId": "1203706536628139672",
+      "approval": "PENDING_USER_REVIEW",
+      "sourceFile": "sources/S01-home-desktop.stitch.html"
+    }
+  ]
+}

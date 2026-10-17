@@ -1,0 +1,236 @@
+{
+  "root": "frontend/src/ui",
+  "filesScanned": 25,
+  "groups": 6,
+  "hits": 36,
+  "findings": [
+    {
+      "id": "06",
+      "group": "color",
+      "name": "gradients as atmosphere",
+      "fix": "one flat bg; depth from a hairline",
+      "hits": [
+        {
+          "file": "styles\\application.css",
+          "line": 199,
+          "text": ".fabric-depth { opacity: .44; mix-blend-mode: multiply; background: linear-gradient(180deg, #ffffff1"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 207,
+          "text": ".reveal-glow { position: absolute; left: 50%; top: 0; z-index: 9; width: 24px; height: 100%; transfo"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 214,
+          "text": ".curtain-mist { position: absolute; inset: -8%; z-index: 2; pointer-events: none; opacity: .025; mix"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 198,
+          "text": ".fabric-folds { opacity: .34; mix-blend-mode: soft-light; background: repeating-linear-gradient(90de"
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "group": "type",
+      "name": "serif-italic emphasis",
+      "fix": "emphasise by weight, one voice",
+      "hits": [
+        {
+          "file": "styles\\account.css",
+          "line": 8,
+          "text": ".auth-brand strong { display: block; font: calc(var(--auth-unit) * 34)/1.4 var(--font-serif); letter"
+        },
+        {
+          "file": "styles\\account.css",
+          "line": 21,
+          "text": ".account-intro h1 { font: calc(var(--auth-unit) * 62)/1.35 var(--font-serif); text-align: center; wh"
+        },
+        {
+          "file": "styles\\account.css",
+          "line": 30,
+          "text": ".account-panel > h2 { font: calc(var(--auth-unit) * 64)/1.3 var(--font-serif); white-space: nowrap; "
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 27,
+          "text": ".brand { font: 24px var(--font-serif); white-space: nowrap; letter-spacing: .06em; }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 47,
+          "text": ".hero-copy h1 { font: clamp(42px, 4.1vw, 68px)/1.3 var(--font-serif); letter-spacing: .07em; }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 82,
+          "text": ".page-heading h1 { font: 44px/1.4 var(--font-serif); }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 95,
+          "text": ".empty-state h2 { font: 38px var(--font-serif); margin-bottom: 14px; }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 101,
+          "text": ".profile-hero h1 { font: 48px/1.4 var(--font-serif); position: relative; }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 113,
+          "text": ".profile-summary h2 { font: 28px var(--font-serif); }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 134,
+          "text": ".mini-poem h3 { font: 19px/1.5 var(--font-serif); white-space: nowrap; }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 166,
+          "text": ".poem-title h1 { font: 44px/1.4 var(--font-serif); }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 225,
+          "text": ".entry-copy h1 { font: clamp(44px, 4.3vw, 72px)/1.5 var(--font-serif); letter-spacing: .1em; }"
+        },
+        {
+          "file": "styles\\typography.css",
+          "line": 4,
+          "text": "--font-serif: \"Noto Serif SC\", \"Source Han Serif SC\", \"思源宋体\", \"Songti SC\", \"SimSun\", \"宋体\", serif;"
+        },
+        {
+          "file": "styles\\typography.css",
+          "line": 9,
+          "text": ".font-title { font-family: var(--font-serif); }"
+        },
+        {
+          "file": "styles\\typography.css",
+          "line": 13,
+          "text": "h1, h2, h3 { font-family: var(--font-serif); }"
+        },
+        {
+          "file": "styles\\typography.css",
+          "line": 23,
+          "text": ".section-title, .page-heading h1, .profile-hero h1, .poem-title h1, .account-panel > h2 { font-famil"
+        },
+        {
+          "file": "styles\\typography.css",
+          "line": 24,
+          "text": ".card-heading h3, .mini-poem h3, .profile-summary h2, .panel-title, .experience-list h2 { font-famil"
+        },
+        {
+          "file": "styles\\typography.css",
+          "line": 28,
+          "text": ".notes-panel .culture-long { font-family: var(--font-serif); line-height: 1.7; font-weight: 400; }"
+        },
+        {
+          "file": "styles\\typography.css",
+          "line": 32,
+          "text": ".auth-submit, .enter-button, .entry-copy > div a { font-family: var(--font-serif); font-weight: 600;"
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "group": "type",
+      "name": "decorative strikes & highlights",
+      "fix": "strike for edits, underline for links",
+      "hits": [
+        {
+          "file": "styles\\account.css",
+          "line": 51,
+          "text": ".account-switch a { color: #165a51; text-decoration: underline; margin-left: calc(var(--auth-unit) *"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 139,
+          "text": ".panel-empty a { text-decoration: underline; }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 187,
+          "text": ".text-button { font-size: inherit; padding: 0; text-decoration: underline; }"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 239,
+          "text": ".file-label { cursor: pointer; display: block; text-decoration: underline; margin-bottom: 8px; }"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "group": "copy",
+      "name": "emoji everywhere",
+      "fix": "cut emoji from product copy",
+      "hits": [
+        {
+          "file": "components\\Navigation.ts",
+          "line": 11,
+          "text": "export const footer = (): string => '<footer class=\"site-footer\"><span>© 诗境·一卷山河 · 循诗入境 展卷见山河</span>"
+        },
+        {
+          "file": "pages\\Account.ts",
+          "line": 22,
+          "text": "${register ? `${password('确认密码', 'confirmation', true, '请再次输入密码以确认，两次输入需一致')}<label class=\"field\">生日"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "group": "component",
+      "name": "max-radius / glassmorphism",
+      "fix": "one small radius, solid surfaces",
+      "hits": [
+        {
+          "file": "styles\\account.css",
+          "line": 10,
+          "text": ".auth-brand-icon { width: calc(var(--auth-unit) * 40); height: calc(var(--auth-unit) * 40); flex: no"
+        },
+        {
+          "file": "styles\\account.css",
+          "line": 26,
+          "text": ".experience-icon { width: calc(var(--auth-unit) * 77); height: calc(var(--auth-unit) * 76); border-r"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 111,
+          "text": ".avatar { width: 118px; height: 118px; border-radius: 50%; border: 2px solid #94a5a0; margin: 0 auto"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 152,
+          "text": ".landscape-medallion { width: 74px; height: 74px; border-radius: 50%; border: 3px solid #809a95; fle"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 158,
+          "text": ".settings input::before { content: \"\"; display: block; width: 16px; height: 16px; border-radius: 50%"
+        },
+        {
+          "file": "styles\\application.css",
+          "line": 237,
+          "text": ".avatar-preview canvas, .avatar-preview .avatar { width: 115px; height: 115px; border-radius: 50%; }"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "group": "component",
+      "name": "oversized drop shadow",
+      "fix": "tight elevation, never bigger than the element",
+      "hits": [
+        {
+          "file": "styles\\application.css",
+          "line": 216,
+          "text": ".curtain-vignette { position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: .55; bo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "component": "bell-frame",
+  "rows": [
+    {
+      "source": "bell_tower_wood_aged",
+      "far": "bell_far_wood_aged",
+      "nearTriangles": 8284,
+      "farTriangles": 2650,
+      "ratio": 0.32,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.014039039611816406,
+      "nearBounds": [
+        [
+          -9.241823196411133,
+          26.350000381469727,
+          1.67806875705719
+        ],
+        [
+          -0.758176326751709,
+          35.650001525878906,
+          8.98167896270752
+        ]
+      ],
+      "farBounds": [
+        [
+          -9.23590087890625,
+          26.346670150756836,
+          1.6782740354537964
+        ],
+        [
+          -0.7640986442565918,
+          35.6533317565918,
+          8.995718002319336
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

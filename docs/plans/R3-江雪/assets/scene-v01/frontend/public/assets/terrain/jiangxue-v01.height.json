@@ -1,0 +1,15 @@
+{
+  "scene": "jiangxue-v01",
+  "resolution": 1024,
+  "size": [
+    600.0,
+    600.0
+  ],
+  "heightRange": [
+    -2.5,
+    63.196677
+  ],
+  "waterLevel": 0.0,
+  "bakedFrom": "art/blender/jiangxue-scene-v01.blend",
+  "bakedAt": "2026-10-10T11:14:41Z"
+}

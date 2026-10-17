@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-10",
+  "tool": "Chrome DevTools MCP",
+  "authentication": "isolated fixture",
+  "checks": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Script ran on page and returned:\n```json\n{\"viewport\":[1920,1080,1],\"ready\":true,\"poeticFont\":\"\\\"KaiTi\\\", \\\"STKaiti\\\", \\\"楷体\\\", serif\",\"overflow\":false}\n```"
+          }
+        ]
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Emulating viewport: {\"deviceScaleFactor\":1,\"isMobile\":false,\"hasTouch\":false,\"isLandscape\":false,\"width\":1920,\"height\":1080}\n## Console messages\n<no console messages found>"
+          }
+        ]
+      }
+    }
+  ],
+  "visual": "Final full scene screenshot personally inspected; no mobile checks; this is not a 60-second performance measurement."
+}

@@ -1,0 +1,39 @@
+{
+  "component": "temple-roof",
+  "rows": [
+    {
+      "source": "temple_main_tile_charcoal",
+      "far": "temple_far_tile_charcoal",
+      "nearTriangles": 26652,
+      "farTriangles": 4796,
+      "ratio": 0.18,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.026042938232421875,
+      "nearBounds": [
+        [
+          -1.8350000381469727,
+          26.764999389648438,
+          7.409999847412109
+        ],
+        [
+          19.834999084472656,
+          41.23500061035156,
+          11.301305770874023
+        ]
+      ],
+      "farBounds": [
+        [
+          -1.8329334259033203,
+          26.767066955566406,
+          7.426943778991699
+        ],
+        [
+          19.833454132080078,
+          41.232933044433594,
+          11.275262832641602
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

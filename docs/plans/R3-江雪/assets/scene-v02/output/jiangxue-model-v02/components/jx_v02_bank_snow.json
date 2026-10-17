@@ -1,0 +1,46 @@
+{
+  "component": "jx_v02_bank_snow",
+  "scene": "jiangxue_modeling_v02",
+  "objects": [
+    {
+      "object": "src_shore_snow_v02",
+      "vertices": 12870,
+      "triangles": 25736,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31029,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2,
+    "bank_length": 230.0,
+    "bank_width": 95.0
+  },
+  "extra": {
+    "thicknessMetres": [
+      0.06301765010760482,
+      0.27298909204869737
+    ],
+    "support": "common_v02.ground",
+    "exposedRockCliff": true,
+    "varyingSnowEdge": true
+  }
+}

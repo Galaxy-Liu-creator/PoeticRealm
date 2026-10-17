@@ -1,0 +1,14 @@
+{
+  "component": "bridge_bank_approaches",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_bridge_bank_approaches",
+      "vertices": 96,
+      "triangles": 144,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

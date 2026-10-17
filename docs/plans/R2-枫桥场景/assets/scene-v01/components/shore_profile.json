@@ -1,0 +1,32 @@
+{
+  "component": "shore_profile",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_bank_left_wet",
+      "vertices": 220,
+      "triangles": 436,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_left_dry",
+      "vertices": 330,
+      "triangles": 656,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_right_wet",
+      "vertices": 220,
+      "triangles": 436,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bank_right_dry",
+      "vertices": 330,
+      "triangles": 656,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

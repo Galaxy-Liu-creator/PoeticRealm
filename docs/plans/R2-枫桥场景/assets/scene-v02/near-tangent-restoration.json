@@ -1,0 +1,10 @@
+{
+  "method": "restore original released near TANGENT bytes; derived Blender export data only",
+  "node": "rower_weathered",
+  "referenceSHA256": "e8f653c10690aaaa0f7a97e387871b439cab4adec351c9a4fc865f597aaddf0e",
+  "inputSHA256": "261895ed94b5a220b9858e2c422ff327ad0b4c9b29ec4c909d69d91b19d2481f",
+  "outputSHA256": "60e4e554bf8bf4f5cad3269e652a4424864e51895cb1448aa79dcd1a36244df1",
+  "changedComponents": 1,
+  "maxDifference": 0.00010001659393310547,
+  "restoredTangentSHA256": "4446d6c24e8170098c78ca87a2698b22e9548dab4c2bda594fded04fd18c88b5"
+}

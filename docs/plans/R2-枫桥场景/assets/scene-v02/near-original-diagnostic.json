@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "scope": "original named near nodes, packed accessor bytes, transforms, cameras, materials, embedded texture payloads and skin bindings",
+  "nodes": 128,
+  "meshNodes": 34,
+  "skinNodes": 6,
+  "beforeSHA256": "e8f653c10690aaaa0f7a97e387871b439cab4adec351c9a4fc865f597aaddf0e",
+  "afterSHA256": "0477b910f41788db8713f22c05dd40c8fe955bc4dfb249a8943ba985667bb2af",
+  "differences": [
+    {
+      "node": "rower_weathered",
+      "differences": [
+        {
+          "path": ".primitives.0.attributes.TANGENT.sha256",
+          "before": "4446d6c24e8170098c78ca87a2698b22e9548dab4c2bda594fded04fd18c88b5",
+          "after": "b3feb5232a340695146ab26dec4c86613b7b229e3d5903e35fe8d0e27c35d73c"
+        }
+      ]
+    }
+  ]
+}

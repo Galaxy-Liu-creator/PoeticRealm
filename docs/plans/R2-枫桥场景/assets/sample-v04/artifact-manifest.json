@@ -1,0 +1,1324 @@
+{
+  "date": "2026-10-07",
+  "revision": "04",
+  "scope": "Fengqiao sample: sealed bow/stern and side-mounted working oar",
+  "browserRun": "output/playwright/fengqiao-boat-v04/v12-final",
+  "model": {
+    "path": "frontend/public/assets/models/fengqiao/sample_v04.glb",
+    "bytes": 13091956,
+    "sha256": "bf4868c46bc0eea6b1c67579d1db706ac9f9297ca1e874ae5326755cebcd6b97"
+  },
+  "source": {
+    "path": "art/blender/fengqiao-sample-v04.blend",
+    "bytes": 11628126,
+    "sha256": "4f3fa91b7e9ce973b7bb3f0d8fb3a576e9ec09ddc7dab0a7585784943687fb7e"
+  },
+  "preservedHistoricalAssets": {
+    "art/blender/fengqiao-sample-v01.blend": "694b8394942943178ba1239bb1005f7c7870a2418df2bc051393d352edc0d0f6",
+    "frontend/public/assets/models/fengqiao/sample_v01.glb": "37540f5d04a5829c99a03b4ed802478a21bd2ec1e36895706ced132a5720caeb",
+    "art/blender/fengqiao-sample-v02.blend": "cfd60149342263d701ae60befe2bc7afae13e0f10dcfe8e55b737e0a3d127e99",
+    "frontend/public/assets/models/fengqiao/sample_v02.glb": "7ffde5fa94fd3ea26e3d7e346c3142fd85d037176f15f4133985171bb57a3114",
+    "art/blender/fengqiao-sample-v03.blend": "7056b269b62e148c45e60fa62f81ef7b3d2afea2804291921e818338861344f8",
+    "frontend/public/assets/models/fengqiao/sample_v03.glb": "cf87dd3bc8c86b4680d871e6f200aa37cea14ff4aa908e293c3c18c2ba452107"
+  },
+  "blender": {
+    "scene": "fengqiao_quality_v04",
+    "source": "D:\\University-Competition\\Math_Media\\PoeticRealm\\art\\blender\\fengqiao-sample-v04.blend",
+    "model": "D:\\University-Competition\\Math_Media\\PoeticRealm\\frontend\\public\\assets\\models\\fengqiao\\sample_v04.glb",
+    "errors": [],
+    "warnings": [],
+    "objects": 39,
+    "bones": 53,
+    "triangles": 41395,
+    "hullNonmanifoldEdges": 0,
+    "pivot": [
+      -2.799999952316284,
+      -0.6100000143051147,
+      1.3799999952316284
+    ],
+    "shaftAxis": [
+      -0.07231014966964722,
+      -0.7231014966964722,
+      -0.6869463920593262
+    ],
+    "method": "closed transoms and thick continuous hull; port-side support above gunwale; original hand bind contacts retained"
+  },
+  "budget": {
+    "distributedBytes": 13473772,
+    "modelBytes": 13091956,
+    "environmentBytes": 381816,
+    "triangles": 41395,
+    "mainPassPrimitives": 20,
+    "estimatedTextureBytesWithMipmaps": 67283636,
+    "images": [
+      {
+        "name": "tatami_mat_nor_gl",
+        "width": 512,
+        "height": 512,
+        "bytes": 336864
+      },
+      {
+        "name": "tatami_mat_Diffuse",
+        "width": 512,
+        "height": 512,
+        "bytes": 49955
+      },
+      {
+        "name": "tatami_mat_Rough",
+        "width": 512,
+        "height": 512,
+        "bytes": 116619
+      },
+      {
+        "name": "wood_planks_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1711501
+      },
+      {
+        "name": "wood_planks_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 216542
+      },
+      {
+        "name": "wood_planks_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 614263
+      },
+      {
+        "name": "linen_normal",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1909234
+      },
+      {
+        "name": "linen_work_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 315013
+      },
+      {
+        "name": "linen_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 15959
+      },
+      {
+        "name": "rock_01_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 2131381
+      },
+      {
+        "name": "rock_01_Diffuse_wet",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 333979
+      },
+      {
+        "name": "rock_01_Rough_wet",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 868233
+      },
+      {
+        "name": "rock_01_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 452999
+      },
+      {
+        "name": "rock_01_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1142285
+      }
+    ],
+    "note": "不替代真实浏览器多 pass 和 fps 验证"
+  },
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "frames": [
+    {
+      "frames": 3601,
+      "duration": 60004.7,
+      "fps": 59.99530036813783,
+      "p50": 16.69999999999709,
+      "p95": 16.80000000000291,
+      "over50": 0,
+      "maxCalls": 62,
+      "maxTriangles": 127472
+    },
+    {
+      "frames": 3601,
+      "duration": 60004.8,
+      "fps": 59.99520038396928,
+      "p50": 16.69999999999709,
+      "p95": 17,
+      "over50": 0,
+      "maxCalls": 62,
+      "maxTriangles": 127472
+    },
+    {
+      "frames": 3598,
+      "duration": 60004.80000000002,
+      "fps": 59.94520438364929,
+      "p50": 16.699999999982538,
+      "p95": 16.900000000023283,
+      "over50": 0,
+      "maxCalls": 62,
+      "maxTriangles": 127472
+    }
+  ],
+  "loadMs": 1648.0999999996275,
+  "navigationAndFixtureWaitMs": 3276,
+  "strokeLimits": {
+    "samples": 97,
+    "maxGripError": 7.313180311841699e-08,
+    "maxGripAt": 4.1,
+    "maxSkinHandError": 0.029937556956395585,
+    "maxFootError": 1.24739218211164e-06,
+    "maxTetherError": 5.551115123125783e-16,
+    "highestBlade": -0.42664419352097527,
+    "lowestBlade": -0.4958987549825431
+  },
+  "lastDisposal": {
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "stages": [
+      {
+        "owner": "() => window.removeEventListener(\"keydown\", onKey)",
+        "geometries": 22,
+        "textures": 22
+      },
+      {
+        "owner": "() => {\n\t\tfor (const material of reflectionMaterials.values()) material.dispose();\n\t\treflectionMaterials.clear();\n\t\treflectionRoot.clear();\n\t}",
+        "geometries": 22,
+        "textures": 22
+      },
+      {
+        "owner": "() => rower?.dispose()",
+        "geometries": 21,
+        "textures": 22
+      },
+      {
+        "owner": "() => controls?.dispose()",
+        "geometries": 21,
+        "textures": 22
+      },
+      {
+        "owner": "() => river.dispose()",
+        "geometries": 20,
+        "textures": 21
+      },
+      {
+        "owner": "() => moon.shadow.dispose()",
+        "geometries": 20,
+        "textures": 19
+      },
+      {
+        "owner": "() => {\n\t\tconst textures = new Set();\n\t\tfor (const lookup of physicalLookups) if (lookup.value instanceof Texture) textures.add(lookup.value);\n\t\tfor (const texture of textures) texture.dispose();\n\t\tphysicalLookups.clear();\n\t}",
+        "geometries": 20,
+        "textures": 18
+      },
+      {
+        "owner": "() => environment.dispose()",
+        "geometries": 20,
+        "textures": 17
+      },
+      {
+        "owner": "() => asset.dispose()",
+        "geometries": 1,
+        "textures": 2
+      },
+      {
+        "owner": "() => sky.dispose()",
+        "geometries": 1,
+        "textures": 0
+      }
+    ],
+    "contextLost": true
+  },
+  "oarClearance": {
+    "scope": "delivered GLB triangle intersections; fixed pin, binding and tether excluded",
+    "hullNames": [
+      "boat_hull_closed",
+      "boat_wood_aged"
+    ],
+    "movingNames": [
+      "rowing_oar_shaft",
+      "rowing_oar_handle",
+      "rowing_oar_blade"
+    ],
+    "hullTriangles": 10248,
+    "samples": [
+      {
+        "t": 0,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.049999999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.09999999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.15,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.19999999999999998,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.25,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.3,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.35000000000000003,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.39999999999999997,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.44999999999999996,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.5,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.5499999999999999,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.6,
+        "intersections": 0,
+        "candidatePairs": 563,
+        "examples": []
+      },
+      {
+        "t": 0.65,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.7000000000000001,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.75,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.7999999999999999,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 0.85,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 0.8999999999999999,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 0.9500000000000001,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 1,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 1.05,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 1.0999999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.15,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.2,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.25,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.3,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.3499999999999999,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.4000000000000001,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.45,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.5,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.5499999999999998,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 1.5999999999999999,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.6500000000000001,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.7,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.75,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.7999999999999998,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.8499999999999999,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.9000000000000001,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.95,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 2,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.05,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.1,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.15,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 2.1999999999999997,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 2.25,
+        "intersections": 0,
+        "candidatePairs": 553,
+        "examples": []
+      },
+      {
+        "t": 2.3,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 2.35,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.4,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.4499999999999997,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.5,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.55,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.6,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.65,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 2.6999999999999997,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 2.75,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.8000000000000003,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.8499999999999996,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 2.9,
+        "intersections": 0,
+        "candidatePairs": 545,
+        "examples": []
+      },
+      {
+        "t": 2.9499999999999997,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 3,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 3.0500000000000003,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.0999999999999996,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 3.15,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 3.1999999999999997,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.25,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.3000000000000003,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 3.3499999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.4,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 3.4499999999999997,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 3.5,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 3.5500000000000003,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 3.5999999999999996,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.65,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.6999999999999997,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.75,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.8000000000000003,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.8499999999999996,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.9,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.9499999999999997,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 4,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.05,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.1,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.1499999999999995,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.2,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 4.25,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 4.3,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 4.35,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.3999999999999995,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.45,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.5,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 4.55,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.6,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.6499999999999995,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.7,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 4.75,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4.8,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      }
+    ],
+    "intersections": 0
+  },
+  "environmentComparison": {
+    "mean": 0,
+    "changed": 0
+  },
+  "references": {
+    "human": {
+      "project": "MakeHuman Community MPFB2",
+      "repository": "https://github.com/makehumancommunity/mpfb2",
+      "commit": "d0a32e57a7f915cb2f2b95410e2117648c7bbb7e",
+      "retrieved": "2026-10-07",
+      "license": "CC0-1.0 (bundled data assets); upstream program GPL-3.0, not copied",
+      "files": [
+        {
+          "local": "base.obj",
+          "upstream": "src/mpfb/data/3dobjs/base.obj",
+          "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c"
+        },
+        {
+          "local": "rig.game_engine.json",
+          "upstream": "src/mpfb/data/rigs/standard/rig.game_engine.json",
+          "sha256": "b324ddb4b707721c19630bfadb87c3e3b38eed3b6e4590bb3cead43ea918f799"
+        },
+        {
+          "local": "weights.game_engine.json",
+          "upstream": "src/mpfb/data/rigs/standard/weights.game_engine.json",
+          "sha256": "9f4a773e74ce5ba08415b4f30070338e9f75bae5971b5075b10cd6b9caa58473"
+        },
+        {
+          "local": "asian-male-young.target.gz",
+          "upstream": "src/mpfb/data/targets/macrodetails/asian-male-young.target.gz",
+          "sha256": "0928ed8b9f08f60afb9884cf9e9f33a939ed3a85d7f136de9ccc88a76981d6d7"
+        },
+        {
+          "local": "asian-male-old.target.gz",
+          "upstream": "src/mpfb/data/targets/macrodetails/asian-male-old.target.gz",
+          "sha256": "8f931e96529904375a442c77be0c31d60ace6c0461645ed7ab1a43a3c378a247"
+        },
+        {
+          "local": "universal-male-young-averagemuscle-averageweight.target.gz",
+          "upstream": "src/mpfb/data/targets/macrodetails/universal-male-young-averagemuscle-averageweight.target.gz",
+          "sha256": "e814651195c53971503d9823d6841216718a561951ef064f81d132297f4fa494"
+        },
+        {
+          "local": "hm08_config.json",
+          "upstream": "src/mpfb/data/mesh_metadata/hm08_config.json",
+          "sha256": "0ebab5f8ba35e56f3be49e3de241746552bce57fe8e079b72b00a362be246a29"
+        },
+        {
+          "local": "LICENSE.md",
+          "upstream": "LICENSE.md",
+          "sha256": "5cefb60680cb9efd4550a2e65d719021cfbec9dad3658481d11d48ae863ce04d"
+        },
+        {
+          "local": "LICENSE.ASSETS.md",
+          "upstream": "LICENSE.ASSETS.md",
+          "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c"
+        }
+      ],
+      "adaptation": {
+        "script": "art/scripts/refine_fengqiao_rower.py",
+        "bodyGroups": [
+          "body",
+          "helper-l-eye",
+          "helper-r-eye"
+        ],
+        "excluded": "All helper cubes are locator inputs only. No genital, teeth, tongue, skirt, tights or hair fitting geometry is exported.",
+        "morphs": {
+          "asian-male-young": 0.8,
+          "asian-male-old": 0.2,
+          "universal-male-young-averagemuscle-averageweight": 1.0
+        },
+        "unitConversion": "MakeHuman decimetres (x,y,z) -> Blender metres 0.1*(z,x,y), normalize anatomical height to 1.70m",
+        "skin": "Original normalized weights, largest four influences; source joint cube centres recomputed after morph; working pose baked into mesh and bind skeleton",
+        "originalWork": "Linen coat fit, collar, creased hem, belt, cuffs, shoes, hat, yuloh and grip pose; 53-joint skin with articulated fingers",
+        "notAClaim": "No photogrammetry, copied MPFB program, paid generation or exact Tang-period historical reconstruction"
+      },
+      "mechanicsReference": "https://www.taioca.org/about-3 (visual/mechanical study only; photographs not downloaded or redistributed)"
+    },
+    "linen": {
+      "source": "https://polyhaven.com/a/rough_linen",
+      "authors": [
+        "Rico Cilliers",
+        "colormass"
+      ],
+      "license": "CC0-1.0",
+      "retrieved": "2026-10-07",
+      "tool": "Blender MCP Poly Haven integration, 1K; retained images saved by Blender",
+      "physicalTileMetres": [
+        0.270708,
+        0.2713
+      ],
+      "retainedSources": [
+        {
+          "file": "rough_linen_Diffuse_1k.png",
+          "sha256": "97c7bd64819ee527552e7286030b1a84fb0f7b1d1a2a4d43c4e7e91ac50873e1"
+        },
+        {
+          "file": "rough_linen_Rough_1k.png",
+          "sha256": "76c5ba237eb8aee94b47c4c9381113b26cd737abf971461e9823a0023da68c06"
+        },
+        {
+          "file": "rough_linen_nor_gl_1k.png",
+          "sha256": "351168f19d254c89698286842a30faadeac6213c07522b783ed32ab0807d15fc"
+        }
+      ],
+      "processingScript": "art/scripts/prepare_rower_textures.py",
+      "delivery": [
+        {
+          "file": "linen_work_basecolor.jpg",
+          "sha256": "50b4f378bfc5fed82184606653361d02cd2b4b55a5da196a33bf638b47ef68be",
+          "processing": "1024 square, saturation 0.58, brightness 0.65, JPEG quality 93, RGB sRGB"
+        },
+        {
+          "file": "linen_normal.png",
+          "sha256": "2622d5137c39f5e7a623f2dc0cdd938b99c53ea4a98b1adf8e83d09d965a0c8a",
+          "processing": "1024 square RGB8 PNG, tangent-space +Y normal, Non-Color"
+        },
+        {
+          "file": "linen_roughness.png",
+          "sha256": "ed2595fcf3159455009cb594f8b5c649d891f97d4d24ce107a37daa64ce745ac",
+          "processing": "1024 square L8 PNG, Non-Color; glTF exporter packs into metallicRoughness"
+        }
+      ],
+      "publication": "Embedded in frontend/public/assets/models/fengqiao/sample_v03.glb"
+    },
+    "mechanics": "https://www.taioca.org/about-3"
+  },
+  "video": {
+    "source": {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/rower-source.webm",
+      "bytes": 1397506,
+      "sha256": "547df868a5e6d813c3455dc85a9c9c0ed49d39941eff19c116854f2807bce30b"
+    },
+    "sourceMetadata": {
+      "duration": 12.52,
+      "fps": 25.0,
+      "size": [
+        1440,
+        900
+      ],
+      "codec": "vp8"
+    },
+    "preview": {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/rower-preview.mp4",
+      "bytes": 1150662,
+      "sha256": "1435143abf8eb815a9ac467d455840fcc91f8e8cfc2fa2f1d1ca8fb088cd2f59"
+    },
+    "previewMetadata": {
+      "duration": 8.4,
+      "fps": 25.0,
+      "size": [
+        1440,
+        900
+      ],
+      "codec": "h264"
+    },
+    "trimStartSeconds": 4.119999999999999,
+    "requestedDurationSeconds": 8.4,
+    "retimed": false
+  },
+  "evidence": [
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/native-devtools-1920.png",
+      "bytes": 959343,
+      "sha256": "f0431d8fc8f4e67f25dd282e921650be0c334d70075d72e63ce076261ad049b5"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/performance.json.gz",
+      "bytes": 3300048,
+      "sha256": "f6180e2c98248479e797e96bedf7961d460f6f366e75360731cd8cac0188ca33"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/sample-1440.png",
+      "bytes": 464076,
+      "sha256": "cac8315ae21a357f1bae3b48e5272fb74e8d508e00c320c88c8be2cbec1736cb"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/determinism-t8.png",
+      "bytes": 643575,
+      "sha256": "23e965c6bd8f66dbc00f0b3d2961bb2f7d20291cfab7e570b108de3efeb2bb08"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/determinism-repeat.png",
+      "bytes": 643575,
+      "sha256": "23e965c6bd8f66dbc00f0b3d2961bb2f7d20291cfab7e570b108de3efeb2bb08"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/reflection-off.png",
+      "bytes": 553654,
+      "sha256": "7b40be2cc3813219e4c0e410ad2d05c1c0694d012e0ec69e8f6fada109631ba4"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/shadows-off.png",
+      "bytes": 640073,
+      "sha256": "35207e032847e2cf48bc7994e519396039a3eec5f46c6dd88c605dad4d207ee1"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/fire-off.png",
+      "bytes": 622224,
+      "sha256": "b75fc3430779bc64f887294b5ec63240e125121d5cee44c54706a016e6900364"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/CAM_enter-1920.png",
+      "bytes": 643575,
+      "sha256": "23e965c6bd8f66dbc00f0b3d2961bb2f7d20291cfab7e570b108de3efeb2bb08"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/CAM_riverbank-1920.png",
+      "bytes": 964506,
+      "sha256": "04e7980d3155729e173a7efdbb04d43c87af26ec49f749aa3258f9bc42d3cc1c"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/CAM_boat-1920.png",
+      "bytes": 520403,
+      "sha256": "9e78f1fc056b618bedd2c124e21d84ede90e3542202c4ea401052421b676550a"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/CAM_rower-1920.png",
+      "bytes": 759844,
+      "sha256": "9742f19cefb41fdf41c4b2f3130b0408c80dd142da0fbefdbfc9efa6782677fc"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/rowing-t0.png",
+      "bytes": 758365,
+      "sha256": "4ebfb19ac245d52962f651a3db1c943c01fbdd6f8d22fa8c1be3a862d5a1f891"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/rowing-t1.2.png",
+      "bytes": 760341,
+      "sha256": "9aa8d5b676a11b4040daa7d7e1cebc5f7d08ff1d0d0f89f4fd24cc574f0163cb"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/rowing-t2.4.png",
+      "bytes": 763522,
+      "sha256": "bd7ffcc855a3e497d8327ec52122ed0038a4731066a48eb9750b8687dda87067"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/rowing-t3.6.png",
+      "bytes": 762640,
+      "sha256": "e3bcfc2f2ed0518fa855d10cab42a78d5a332b9319eec98c4e8320ad105ccf44"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/rowing-t4.8.png",
+      "bytes": 759689,
+      "sha256": "298ecae1046dc6ee9076f3558232cc836b77b4991f867f265569c8cd93d23515"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/timeline-t0.png",
+      "bytes": 644552,
+      "sha256": "26223e6da630ce3365b75a21589a883c01e9c4a0b97950e61af4c180db20fbb7"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/timeline-t8.png",
+      "bytes": 643575,
+      "sha256": "23e965c6bd8f66dbc00f0b3d2961bb2f7d20291cfab7e570b108de3efeb2bb08"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/timeline-t16.png",
+      "bytes": 641857,
+      "sha256": "4faadf524cb3e62efc49b5a1b724d6c9bac17d7bf707d7a8a97cca46d151571a"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/timeline-t24.png",
+      "bytes": 643057,
+      "sha256": "df8b804fef416aefd2f791f6d70e80dbc1668f4ca5f8491bbe586815f9a91358"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/timeline-t32.png",
+      "bytes": 642641,
+      "sha256": "d7857b08c7e7e523dc07843ef18004bf8c16482b4fa0840fd4a452e32a538144"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/environment-raw-server.png",
+      "bytes": 763522,
+      "sha256": "bd7ffcc855a3e497d8327ec52122ed0038a4731066a48eb9750b8687dda87067"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/preview-start.png",
+      "bytes": 302082,
+      "sha256": "b3d3db12f69460276f0eda7119258fd7bab6eadb05048f24407168c9273cda30"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/preview-mid.png",
+      "bytes": 453377,
+      "sha256": "d9c280858c7cfb182d2995a64e08aa4bbfbe2178107011abbe27211f15ae0c4b"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/preview-end.png",
+      "bytes": 425903,
+      "sha256": "035852425833a60ead970e898f76874fd5dbb0cb046629faa405c9caf445db05"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/browser-verification.json",
+      "bytes": 29955,
+      "sha256": "a56cad8f559e5fc04045ecbf4a0aaaf3a75e512da56d2d6e2eb1e5894cb02811"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/blender-validation.json",
+      "bytes": 724,
+      "sha256": "48bd6ecaf08ceaa76e9a925db5cb430a0f539f4d6e5ab602ca109b36f179c0e9"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/node-contract.log",
+      "bytes": 256,
+      "sha256": "b58a689e08c9deca3e93852666b9487a1acfb70f207f1f7c5e0ccd782ed2e8ea"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/node-budget.log",
+      "bytes": 1838,
+      "sha256": "b77e721ea3479c5da68393ba6eab73f134bebce04ea34ad7a8baffe95e0bc5cd"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/asset-tests.log",
+      "bytes": 69,
+      "sha256": "15d854fc4d162af78dee82cbe70b9a6bafb7364215b04e5291909dc9316744d8"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/build.log",
+      "bytes": 2297,
+      "sha256": "5a9dbf72afc8754af9ce114d525ee581edf0ba1571de55073fe15a2183a9d2e8"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/unit-tests.log",
+      "bytes": 1411,
+      "sha256": "0d87edaddfa04391212d51628f1e994d7347f6cd5f5937451ca0197dee15360b"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/environment-source.json",
+      "bytes": 475,
+      "sha256": "fce6e07cfa019303b72a91fa4045bf09014d442c379715af2d063d1008c11675"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/blender-source-validation.log",
+      "bytes": 651,
+      "sha256": "f8ce5cdb62e55c1ff5b0db0f786e356f26bcdf2a47c3a1cbc9bf05cff2da9bb8"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/environment-procedural-baseline/rowing-t2.4.png",
+      "bytes": 763522,
+      "sha256": "bd7ffcc855a3e497d8327ec52122ed0038a4731066a48eb9750b8687dda87067"
+    },
+    {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/environment-procedural-baseline/source.json",
+      "bytes": 1520,
+      "sha256": "6173fac50f926e23b3ae2e96750e01c04d24bb5eb590744751fc540f26757119"
+    }
+  ],
+  "implementation": [
+    {
+      "path": "art/scripts/repair_fengqiao_boat.py",
+      "bytes": 7872,
+      "sha256": "9e53b916b0bc08b48265e2edff6b509e3b7280a2b0730e06f1861bcbd2ffcad7"
+    },
+    {
+      "path": "frontend/tools/oar-clearance.mjs",
+      "bytes": 4911,
+      "sha256": "0c4888b0e6b224386cb7eca888e5987ecc9d0ecb223d50a50c0bdcad05cd375e"
+    },
+    {
+      "path": "art/scripts/prepare_rower_textures.py",
+      "bytes": 1049,
+      "sha256": "a46da1e5b792c146cb97ce0659d2f3af07cc2165b928f28eac53e96a4d33962b"
+    },
+    {
+      "path": "frontend/src/systems/characters/Rower.ts",
+      "bytes": 11434,
+      "sha256": "c99c7ebe9ef971ebbf83f743f4d4b8791f15790c78808b3b0b046b5ba3f4b339"
+    },
+    {
+      "path": "frontend/src/labs/fengqiao.ts",
+      "bytes": 18683,
+      "sha256": "2fb4542c706d152ef57d5c79085558f45e74be8cba677c847f685d7b4f837ecf"
+    },
+    {
+      "path": "frontend/tools/verify-fengqiao-sample.mjs",
+      "bytes": 19070,
+      "sha256": "fb476d23cfa24457a1140c7918b0dd2badd8fc62365ab73f868cb212b05c7dcc"
+    },
+    {
+      "path": "frontend/src/systems/materials/NightEnvironment.ts",
+      "bytes": 1795,
+      "sha256": "5414fac37f428404ce96c99de5ed6fb06f607e2d4f6db5e3f84558477b4ddd1a"
+    },
+    {
+      "path": "frontend/tools/bake-fengqiao-environment.mjs",
+      "bytes": 2165,
+      "sha256": "6545f0b82ec561f093c72231f003f8f37ed2a7c858b34a5b1e1361a6adb7f14f"
+    },
+    {
+      "path": "frontend/tools/check-contract.mjs",
+      "bytes": 7029,
+      "sha256": "1e34898c345f12d4153060ceb738a88f113eec22a1913aa2de3ac14ef30ac8dd"
+    },
+    {
+      "path": "frontend/tools/check-budget.mjs",
+      "bytes": 1918,
+      "sha256": "745a861e4229b29d482d42678056cc8c2f10f9b6f2cfcdb4edde04eb658d020b"
+    },
+    {
+      "path": "frontend/tools/asset-contract.mjs",
+      "bytes": 3939,
+      "sha256": "d3119f933f63fcd8c41f374c217a9c08bf0cb3b10173e83e2abe27f2dcc2c005"
+    },
+    {
+      "path": "frontend/tools/test-asset-contract.mjs",
+      "bytes": 3644,
+      "sha256": "95360a03122047202259b1ecc7f8ca0f941837a333909a4b89a57ceb18663e2e"
+    },
+    {
+      "path": "frontend/public/assets/scenes/fengqiao.sample.json",
+      "bytes": 1073,
+      "sha256": "46e24157a69f85414383ed4eae0400f8465dc9b7b01a19f7b9e81fd9f1b242c6"
+    }
+  ],
+  "limits": "Not full Fengqiao acceptance, presentation-machine verification, sound or 3D entry/return acceptance; no historical reconstruction claim.",
+  "environment": {
+    "path": "frontend/public/assets/environments/fengqiao-night-v01.rgba16f.gz",
+    "bytes": 381816,
+    "sha256": "4a20f11ba17fb006be06387bc26b9b7aba964d5da2c28687f22bc34e72b8d5fd"
+  },
+  "environmentMetadata": {
+    "source": "Project-authored 512×256 night gradient, Three.js 0.186.1 PMREMGenerator on AMD Radeon / D3D11",
+    "format": "PRUV v1: 16-byte LE header + bottom-up RGBA16F CubeUV; lossless gzip",
+    "width": 384,
+    "height": 512,
+    "rawBytes": 1572880,
+    "distributedBytes": 381816,
+    "sha256": "4a20f11ba17fb006be06387bc26b9b7aba964d5da2c28687f22bc34e72b8d5fd",
+    "colorSpace": "LinearSRGB",
+    "license": "Project-authored sky; Three.js renderer MIT; no third-party HDRI"
+  },
+  "proceduralEnvironmentBaseline": {
+    "scope": "Original procedural-PMREM pixel reference, not performance acceptance",
+    "sourceFrame": {
+      "path": "output/playwright/fengqiao-boat-v04/v07-final/rowing-t2.4.png",
+      "bytes": 763522,
+      "sha256": "bd7ffcc855a3e497d8327ec52122ed0038a4731066a48eb9750b8687dda87067"
+    },
+    "frame": {
+      "path": "docs/plans/R2-枫桥场景/assets/sample-v04/environment-procedural-baseline/rowing-t2.4.png",
+      "bytes": 763522,
+      "sha256": "bd7ffcc855a3e497d8327ec52122ed0038a4731066a48eb9750b8687dda87067"
+    },
+    "upstreamRunStatus": "failed",
+    "upstreamFailure": "AssertionError [ERR_ASSERTION]: 性能未留出小样余量\n    at file:///D:/University-Competition/Math_Media/PoeticRealm/frontend/tools/verify-fengqiao-sample.mjs:173:39",
+    "frames": [
+      {
+        "frames": 3584,
+        "duration": 60004.8,
+        "fps": 59.71188971548943,
+        "p50": 16.69999999999709,
+        "p95": 16.89999999999418,
+        "over50": 0,
+        "maxCalls": 62,
+        "maxTriangles": 127472
+      },
+      {
+        "frames": 3095,
+        "duration": 60021.600000000006,
+        "fps": 51.54810934730163,
+        "p50": 16.69999999999709,
+        "p95": 33.39999999999418,
+        "over50": 3,
+        "maxCalls": 62,
+        "maxTriangles": 127472
+      },
+      {
+        "frames": 3534,
+        "duration": 60004.69999999998,
+        "fps": 58.87872116684195,
+        "p50": 16.699999999982538,
+        "p95": 16.89999999999418,
+        "over50": 2,
+        "maxCalls": 62,
+        "maxTriangles": 127472
+      }
+    ]
+  }
+}

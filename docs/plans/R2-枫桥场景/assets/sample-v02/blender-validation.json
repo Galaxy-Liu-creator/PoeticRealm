@@ -1,0 +1,27 @@
+{
+  "scene": "fengqiao_quality_v02",
+  "source": "D:\\University-Competition\\Math_Media\\PoeticRealm\\art\\blender\\fengqiao-sample-v02.blend",
+  "model": "D:\\University-Competition\\Math_Media\\PoeticRealm\\frontend\\public\\assets\\models\\fengqiao\\sample_v02.glb",
+  "errors": [],
+  "warnings": [],
+  "objects": 27,
+  "bones": 15,
+  "triangles": 21369,
+  "hands": {
+    "left": [
+      1.024315595626831,
+      -0.37658482789993286,
+      1.325884461402893
+    ],
+    "right": [
+      1.2482311725616455,
+      -0.5821466445922852,
+      1.1974083185195923
+    ]
+  },
+  "pivot": [
+    1.5399999618530273,
+    -0.8500000238418579,
+    1.0299999713897705
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "component": "temple-shell",
+  "rows": [
+    {
+      "source": "temple_main_stone_dry",
+      "far": "temple_far_stone_dry",
+      "nearTriangles": 2296,
+      "farTriangles": 1492,
+      "ratio": 0.65,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.0006024837493896484,
+      "nearBounds": [
+        [
+          -0.31999969482421875,
+          26.434999465942383,
+          0.6700000166893005
+        ],
+        [
+          18.31999969482422,
+          39.720001220703125,
+          1.6800000667572021
+        ]
+      ],
+      "farBounds": [
+        [
+          -0.31999969482421875,
+          26.434999465942383,
+          0.6700000166893005
+        ],
+        [
+          18.31999969482422,
+          39.720001220703125,
+          1.6806025505065918
+        ]
+      ]
+    },
+    {
+      "source": "temple_main_stone_lime",
+      "far": "temple_far_stone_lime",
+      "nearTriangles": 204,
+      "farTriangles": 204,
+      "ratio": 1,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.0,
+      "nearBounds": [
+        [
+          -1.8499994277954102,
+          23.850000381469727,
+          1.1000001430511475
+        ],
+        [
+          19.849998474121094,
+          39.17499923706055,
+          5.820000648498535
+        ]
+      ],
+      "farBounds": [
+        [
+          -1.8499994277954102,
+          23.850000381469727,
+          1.1000001430511475
+        ],
+        [
+          19.849998474121094,
+          39.17499923706055,
+          5.820000648498535
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

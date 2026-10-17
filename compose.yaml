@@ -1,0 +1,44 @@
+name: poeticrealm
+services:
+  db:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: poeticrealm
+      MYSQL_USER: poeticrealm
+      MYSQL_PASSWORD: ${DB_PASSWORD:?Run node tools/docker.mjs up first}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?Run node tools/docker.mjs up first}
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: [CMD-SHELL, 'MYSQL_PWD="$$MYSQL_PASSWORD" mysql -h 127.0.0.1 -u "$$MYSQL_USER" "$$MYSQL_DATABASE" --execute="SELECT 1" >/dev/null 2>&1']
+      interval: 5s
+      timeout: 4s
+      start_period: 40s
+      retries: 30
+  backend:
+    build:
+      context: .
+      target: backend
+    restart: unless-stopped
+    environment:
+      DB_URL: jdbc:mysql://db:3306/poeticrealm?characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
+      DB_USERNAME: poeticrealm
+      DB_PASSWORD: ${DB_PASSWORD:?Run node tools/docker.mjs up first}
+      REMEMBER_ME_KEY: ${REMEMBER_ME_KEY:?Run node tools/docker.mjs up first}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+    depends_on:
+      db:
+        condition: service_healthy
+  frontend:
+    build:
+      context: .
+      target: frontend
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:${POETIC_PORT:-5173}:8080'
+    depends_on:
+      backend:
+        condition: service_healthy
+volumes:
+  mysql-data:

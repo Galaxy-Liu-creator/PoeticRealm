@@ -1,0 +1,26 @@
+{
+  "component": "bell_frame_body",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_bell_frame",
+      "vertices": 144,
+      "triangles": 256,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bell_body",
+      "vertices": 2090,
+      "triangles": 4160,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bell_hanging_pin",
+      "vertices": 84,
+      "triangles": 148,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

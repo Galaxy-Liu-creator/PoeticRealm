@@ -1,0 +1,65 @@
+{
+  "fileImages": [
+    {
+      "name": "linen_normal.png",
+      "packed": true
+    },
+    {
+      "name": "linen_roughness.png",
+      "packed": true
+    },
+    {
+      "name": "linen_work_basecolor.jpg",
+      "packed": true
+    },
+    {
+      "name": "rock_01_Diffuse.jpg",
+      "packed": true
+    },
+    {
+      "name": "rock_01_nor_gl.png",
+      "packed": true
+    },
+    {
+      "name": "rock_01_Rough.png",
+      "packed": true
+    },
+    {
+      "name": "snow_basecolor.png",
+      "packed": true
+    },
+    {
+      "name": "snow_normal.png",
+      "packed": true
+    },
+    {
+      "name": "snow_roughness.png",
+      "packed": true
+    },
+    {
+      "name": "tatami_mat_Diffuse.jpg",
+      "packed": true
+    },
+    {
+      "name": "tatami_mat_nor_gl.png",
+      "packed": true
+    },
+    {
+      "name": "tatami_mat_Rough.png",
+      "packed": true
+    },
+    {
+      "name": "wood_planks_Diffuse_publish",
+      "packed": true
+    },
+    {
+      "name": "wood_planks_nor_gl_sample_clean",
+      "packed": true
+    },
+    {
+      "name": "wood_planks_Rough_sample_clean",
+      "packed": true
+    }
+  ],
+  "geometryChanged": false
+}

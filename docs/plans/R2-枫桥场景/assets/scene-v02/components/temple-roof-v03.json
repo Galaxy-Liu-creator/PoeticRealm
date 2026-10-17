@@ -1,0 +1,8 @@
+{
+  "component": "temple-roof",
+  "revision": 3,
+  "ribSpacingMetres": 1.2,
+  "farTriangles": 3796,
+  "nonmanifoldEdges": 0,
+  "curveErrorMetres": 0.046463902941911606
+}

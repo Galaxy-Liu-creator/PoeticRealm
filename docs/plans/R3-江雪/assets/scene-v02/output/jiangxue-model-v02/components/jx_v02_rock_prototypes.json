@@ -1,0 +1,55 @@
+{
+  "component": "jx_v02_rock_prototypes",
+  "scene": "jiangxue_modeling_v02",
+  "objects": [
+    {
+      "object": "src_rock_proto_v02_0",
+      "vertices": 162,
+      "triangles": 320,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_proto_v02_1",
+      "vertices": 162,
+      "triangles": 320,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_proto_v02_2",
+      "vertices": 162,
+      "triangles": 320,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31029,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2,
+    "bank_length": 230.0,
+    "bank_width": 95.0
+  },
+  "extra": {
+    "count": 3,
+    "source": "Project-owned rock prototype refinement, not a scanned mesh",
+    "material": "registered CC0 Rock 01 texture set",
+    "features": "eroded ledges, uneven planes, asymmetric shoulders"
+  }
+}

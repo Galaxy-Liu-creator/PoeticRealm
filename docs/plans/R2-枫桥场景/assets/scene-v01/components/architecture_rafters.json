@@ -1,0 +1,20 @@
+{
+  "component": "architecture_rafters",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_temple_roof_frame",
+      "vertices": 5844,
+      "triangles": 10860,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_tower_roof_frame",
+      "vertices": 3436,
+      "triangles": 6412,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-08",
+  "scope": "boat-course-and-visual-lifecycle",
+  "fullSceneAccepted": false,
+  "legacy": {"status": "pass", "environmentComparison": {"mean": 0, "changed": 0}, "report": "legacy/verification.json"},
+  "navigation": [
+    {
+      "t": 0,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.17664405078087647,
+        0,
+        -0.9842747986836418
+      ],
+      "position": [
+        3.85,
+        -0.3011090418491167,
+        0.45
+      ],
+      "quaternion": [
+        0.002386913929078183,
+        0.7670173564051584,
+        -0.0006042113713366276,
+        0.6416216272412861
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.655926196393933,
+        3.2999999523162833,
+        5.4497518720267415
+      ]
+    },
+    {
+      "t": 8,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.205892836590558,
+        0,
+        -0.9785745448562894
+      ],
+      "position": [
+        3.5475130948391507,
+        -0.2971615416832698,
+        -1.2836620512791934
+      ],
+      "quaternion": [
+        0.0021067249952486287,
+        0.776492986977022,
+        -0.0005273161425891872,
+        0.6301221507160201
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.498944921318895,
+        3.2999999523162833,
+        3.4812864766934823
+      ]
+    },
+    {
+      "t": 16,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.26976016439035727,
+        0,
+        -0.9629275433323565
+      ],
+      "position": [
+        3.137694325717602,
+        -0.2943154595237089,
+        -2.995061065433149
+      ],
+      "quaternion": [
+        0.0007361930262213464,
+        0.7967932273268012,
+        -0.0001790025710076847,
+        0.6042515857356503
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.385090718968536,
+        3.2999999523162833,
+        1.237013520154329
+      ]
+    },
+    {
+      "t": 24,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.4416202202093975,
+        0,
+        -0.8972020848739728
+      ],
+      "position": [
+        2.5125697849952457,
+        -0.2949190668379846,
+        -4.637298756943624
+      ],
+      "quaternion": [
+        -0.0010688613014422426,
+        0.8490045458200033,
+        0.00021889458351383422,
+        0.5283844157407078
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        11.395751444385319,
+        3.2999999523162833,
+        -1.987942953798306
+      ]
+    },
+    {
+      "t": 32,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.5415797858714904,
+        0,
+        -0.8406493534972778
+      ],
+      "position": [
+        1.635230470420538,
+        -0.3000816524715177,
+        -6.161909683550046
+      ],
+      "quaternion": [
+        -0.0018198357025280493,
+        0.8779441355043509,
+        0.00028022282454294976,
+        0.4787595477969102
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        10.76359883851188,
+        3.2999999523162833,
+        -4.5485611465583276
+      ]
+    },
+    {
+      "t": 80,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.6162157605118057,
+        0,
+        -0.7875773844498439
+      ],
+      "position": [
+        -0.5361523955671225,
+        -0.30119808763407735,
+        -8.982282937507001
+      ],
+      "quaternion": [
+        -0.0016428446024059542,
+        0.8989464573282736,
+        0.0001481314870613791,
+        0.43805541427497663
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        8.701533236838678,
+        3.2999999523162833,
+        -8.210812444080668
+      ]
+    },
+    {
+      "t": 300,
+      "speed": 0.22,
+      "length": 10.624144065463048,
+      "forward": [
+        -0.6154326431153633,
+        0,
+        -0.7881894834289772
+      ],
+      "position": [
+        -0.5499999999995724,
+        -0.3059356386407448,
+        -8.99999999999945
+      ],
+      "quaternion": [
+        0.00024515630820742384,
+        0.8987303552477204,
+        -2.230691513653846e-05,
+        0.4385016396287389
+      ],
+      "end": [
+        -0.55,
+        -9
+      ],
+      "camera": [
+        8.686914265724672,
+        3.2999999523162833,
+        -8.21934808458268
+      ]
+    }
+  ],
+  "loadGate": {
+    "limitMs": 3000,
+    "actualMs": 1843.2000000001863,
+    "passed": true
+  },
+  "preservedAuthoredAssets": {
+    "art/blender/fengqiao-sample-v01.blend": "694b8394942943178ba1239bb1005f7c7870a2418df2bc051393d352edc0d0f6",
+    "art/blender/fengqiao-sample-v02.blend": "cfd60149342263d701ae60befe2bc7afae13e0f10dcfe8e55b737e0a3d127e99",
+    "art/blender/fengqiao-sample-v03.blend": "7056b269b62e148c45e60fa62f81ef7b3d2afea2804291921e818338861344f8",
+    "art/blender/fengqiao-sample-v04.blend": "4f3fa91b7e9ce973b7bb3f0d8fb3a576e9ec09ddc7dab0a7585784943687fb7e",
+    "frontend/public/assets/models/fengqiao/sample_v01.glb": "37540f5d04a5829c99a03b4ed802478a21bd2ec1e36895706ced132a5720caeb",
+    "frontend/public/assets/models/fengqiao/sample_v02.glb": "7ffde5fa94fd3ea26e3d7e346c3142fd85d037176f15f4133985171bb57a3114",
+    "frontend/public/assets/models/fengqiao/sample_v03.glb": "cf87dd3bc8c86b4680d871e6f200aa37cea14ff4aa908e293c3c18c2ba452107",
+    "frontend/public/assets/models/fengqiao/sample_v04.glb": "bf4868c46bc0eea6b1c67579d1db706ac9f9297ca1e874ae5326755cebcd6b97",
+    "frontend/public/assets/models/fengqiao/scene_v01.glb": "e8f653c10690aaaa0f7a97e387871b439cab4adec351c9a4fc865f597aaddf0e"
+  },
+  "sceneManifestSHA256": "2f96be5325c66a7c94d4e3760b17e5dc3b1db6d02e31b21a61ef7c4ba1509395",
+  "currentSource": {
+    "path": "art/blender/fengqiao-scene-v01.blend",
+    "sha256": "b7a4daf0f7255cbd4f3267a76d0e169bbb35a11b516aa0617c2c1d5c11639a6c",
+    "previousArchiveSHA256": "fb7befacb3e3ed05d519244ed9324130f3c5ca2854959df5d4435cb8f0a50bc4",
+    "matchesPreviousArchive": false,
+    "writtenByThisTask": false
+  },
+  "video": {
+    "path": "scene-preview.webm",
+    "sha256": "5442e81287ad103da2ea2f6edc911ab54584682f03d105dd6c72b9a338fc5980",
+    "durationSeconds": 24.96,
+    "width": 1440,
+    "height": 900,
+    "fps": 25,
+    "reviewedFrameTimesSeconds": [
+      5,
+      12,
+      22
+    ],
+    "edited": false
+  },
+  "method": "Real Chrome/AMD/D3D11 frames and lifecycle. Runtime course only; authored geometry preserved. Existing full-scene performance failure remains unresolved; no new full performance acceptance."
+}

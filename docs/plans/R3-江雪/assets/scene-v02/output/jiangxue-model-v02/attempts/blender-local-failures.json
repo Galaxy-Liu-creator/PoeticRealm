@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-12",
+  "source": "Recorded Blender MCP exception messages; not reconstructed full execution logs",
+  "failures": [
+    {"step": "rock_snow_refine", "error": "ValueError: src_shore_rock_v02_00(...): Cannot get a mesh from object 'BVHTree'", "trigger": "BVHTree.FromObject on a hidden source collection", "correction": "Reopen saved v02, build BVH directly from this static mesh's vertices/polygons; no unrelated components rebuilt"},
+    {"step": "publish_refined_snow", "error": "RuntimeError: Unchecked component", "trigger": "publish(obj) passed an object to the checked-collection helper", "correction": "publish(col); verify only checked snow meshes were copied"}
+  ]
+}

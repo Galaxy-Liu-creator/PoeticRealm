@@ -1,0 +1,172 @@
+ M .gitignore
+ M AGENTS.md
+ M HANDOFF.md
+ M README.md
+ M art/scripts/contract.py
+ M art/scripts/export_glb.py
+ M art/scripts/validate.py
+ M backend/README.md
+ M backend/src/main/java/com/demo/backend/auth/AuthController.java
+ M backend/src/main/java/com/demo/backend/auth/JsonRememberMeServices.java
+ M backend/src/main/java/com/demo/backend/config/SecurityConfig.java
+ M backend/src/main/java/com/demo/backend/user/Account.java
+ M backend/src/main/java/com/demo/backend/user/AccountRepository.java
+ M backend/src/test/java/com/demo/backend/AuthIntegrationTests.java
+ M docs/CONTRACT.md
+ M docs/CREDITS.md
+ M docs/api/认证接口.md
+ M docs/architecture/前后端分离与认证规划.md
+ M docs/plans/R2-动态特效/report.md
+ M docs/plans/README.md
+ M docs/设计文档.md
+ M frontend/package.json
+ M frontend/src/api/auth.ts
+ M frontend/src/api/http.ts
+ M frontend/src/app/Application.ts
+ M frontend/src/assets/ui/sources.json
+ M frontend/src/engine/Assets.test.ts
+ M frontend/src/engine/Assets.ts
+ M frontend/src/engine/Engine.ts
+ M frontend/src/main.ts
+ M frontend/src/scenes/fengqiao/timeline.ts
+ M frontend/src/shaders/materials/presentation.frag.glsl
+ M frontend/src/stores/AuthStore.ts
+ M frontend/src/stores/LibraryStore.test.ts
+ M frontend/src/stores/LibraryStore.ts
+ M frontend/src/systems/audio/AudioEngine.ts
+ M frontend/src/systems/ink/InkSim.ts
+ M frontend/src/systems/materials/applyMaterials.ts
+ M frontend/src/transition/CurtainMotion.ts
+ M frontend/src/transition/CurtainReveal.ts
+ M frontend/src/transition/RealmReveal.test.ts
+ M frontend/src/transition/RealmReveal.ts
+ M frontend/src/ui/components/AuthPolicy.ts
+ M frontend/src/ui/components/ProfileEditor.ts
+ M frontend/src/ui/pages/Account.ts
+ M frontend/src/ui/pages/Favorites.ts
+ M frontend/src/ui/pages/Home.ts
+ M frontend/src/ui/pages/Poem.ts
+ M frontend/src/ui/pages/Profile.ts
+ M frontend/src/ui/styles/application.css
+ M frontend/src/ui/styles/motion.css
+ M frontend/src/ui/styles/typography.css
+ M frontend/tools/check-budget.mjs
+ M frontend/tools/check-contract.mjs
+ M frontend/tools/optimize-assets.mjs
+ M frontend/tools/verify-curtain-cloth.mjs
+ M frontend/tools/verify-motion.mjs
+?? .dockerignore
+?? .env.docker.example
+?? AGENT.md
+?? Dockerfile
+?? art/blender/components/
+?? art/blender/fengqiao-sample-v01.blend
+?? art/blender/fengqiao-sample-v02.blend
+?? art/blender/fengqiao-sample-v03.blend
+?? art/blender/fengqiao-sample-v04.blend
+?? art/blender/fengqiao-scene-v01.blend
+?? art/blender/fengqiao-scene-v02.blend
+?? art/blender/jiangxue-scene-v01.blend
+?? art/references/
+?? art/scripts/add_fengqiao_rower.py
+?? art/scripts/archive_boat_cruise_evidence.py
+?? art/scripts/archive_fengqiao_scene_v03.py
+?? art/scripts/archive_jiangxue_model_v01.py
+?? art/scripts/archive_lod_evidence.py
+?? art/scripts/archive_rower_evidence.py
+?? art/scripts/archive_scene_evidence.py
+?? art/scripts/build_fengqiao_sample.py
+?? art/scripts/components/
+?? art/scripts/prepare_rower_textures.py
+?? art/scripts/refine_fengqiao_rower.py
+?? art/scripts/repair_fengqiao_boat.py
+?? art/textures/
+?? backend/src/main/java/com/demo/backend/auth/PageTokenFilter.java
+?? backend/src/main/java/com/demo/backend/auth/PageTokenService.java
+?? backend/src/main/java/com/demo/backend/user/AccountController.java
+?? backend/src/main/java/com/demo/backend/user/AccountSettingsService.java
+?? backend/src/main/java/com/demo/backend/user/LibraryDocument.java
+?? backend/src/main/resources/db/migration/V2__account_settings.sql
+?? backend/src/test/java/com/demo/backend/AccountSettingsIntegrationTests.java
+?? backend/src/test/java/com/demo/backend/auth/
+?? compose.yaml
+?? deploy/
+?? docs/Docker启动.md
+?? docs/api/个人资料与账号.md
+?? docs/design/2026-10-06-profile-editor/
+?? docs/design/2026-10-09-paper-popup/
+?? docs/plans/R2-动态特效/assets/fire-v2/
+?? docs/plans/R2-动态特效/assets/page-return/
+?? docs/plans/R2-枫桥场景/
+?? docs/plans/R3-江雪/
+?? frontend/public/assets/environments/
+?? frontend/public/assets/models/fengqiao/boat_v04_lossless.glb
+?? frontend/public/assets/models/fengqiao/sample_v01.glb
+?? frontend/public/assets/models/fengqiao/sample_v02.glb
+?? frontend/public/assets/models/fengqiao/sample_v03.glb
+?? frontend/public/assets/models/fengqiao/sample_v04.glb
+?? frontend/public/assets/models/fengqiao/scene_v01.glb
+?? frontend/public/assets/models/fengqiao/scene_v02.glb
+?? frontend/public/assets/models/jiangxue/scene_v01.glb
+?? frontend/public/assets/scenes/
+?? frontend/public/assets/terrain/jiangxue-v01.height.json
+?? frontend/public/assets/terrain/jiangxue-v01.height.png
+?? frontend/src/api/TabSession.test.ts
+?? frontend/src/api/TabSession.ts
+?? frontend/src/api/account.ts
+?? frontend/src/api/auth.test.ts
+?? frontend/src/assets/ui/profile-editor-background-v1.png
+?? frontend/src/content/orderedPoems.test.ts
+?? frontend/src/content/orderedPoems.ts
+?? frontend/src/engine/objectResources.ts
+?? frontend/src/labs/
+?? frontend/src/scenes/FengqiaoScene.ts
+?? frontend/src/scenes/JiangxueScene.ts
+?? frontend/src/shaders/plantWind.glsl.ts
+?? frontend/src/systems/AudioPreferences.ts
+?? frontend/src/systems/audio/fengqiaoSound.test.ts
+?? frontend/src/systems/audio/fengqiaoSound.ts
+?? frontend/src/systems/boats/
+?? frontend/src/systems/characters/
+?? frontend/src/systems/lod/
+?? frontend/src/systems/materials/NightEnvironment.ts
+?? frontend/src/systems/nature/
+?? frontend/src/systems/water/NightRiver.test.ts
+?? frontend/src/systems/water/NightRiver.ts
+?? frontend/src/transition/PageReturn.ts
+?? frontend/src/transition/pageCurl.test.ts
+?? frontend/src/transition/pageCurl.ts
+?? frontend/src/ui/PoemReveal.ts
+?? frontend/src/ui/components/PaperPopup.ts
+?? frontend/src/ui/components/profileIcons.ts
+?? frontend/src/ui/styles/fengqiao-scene.css
+?? frontend/src/ui/styles/paper-popup.css
+?? frontend/src/ui/styles/profile-editor.css
+?? frontend/tools/asset-contract.mjs
+?? frontend/tools/authenticated-ui-fixture.mjs
+?? frontend/tools/bake-fengqiao-environment.mjs
+?? frontend/tools/capture-jiangxue-model.mjs
+?? frontend/tools/check-fengqiao-cold-load.mjs
+?? frontend/tools/compare-lod-near.mjs
+?? frontend/tools/devtools-client.mjs
+?? frontend/tools/entry-navigation.mjs
+?? frontend/tools/meshopt-exact.mjs
+?? frontend/tools/oar-clearance.mjs
+?? frontend/tools/probe-scene-refinement.mjs
+?? frontend/tools/profile-fengqiao-render.mjs
+?? frontend/tools/restore-lod-near-tangents.mjs
+?? frontend/tools/test-asset-contract.mjs
+?? frontend/tools/test-jiangxue-contract.mjs
+?? frontend/tools/test-meshopt-exact.mjs
+?? frontend/tools/verify-entry-notices.mjs
+?? frontend/tools/verify-fengqiao-sample.mjs
+?? frontend/tools/verify-fengqiao-scene.mjs
+?? frontend/tools/verify-fire.mjs
+?? frontend/tools/verify-jiangxue-model.mjs
+?? frontend/tools/verify-login-cleanup.mjs
+?? frontend/tools/verify-motion-pace.mjs
+?? frontend/tools/verify-profile-editor.mjs
+?? frontend/tools/verify-return.mjs
+?? frontend/tools/verify-scene-refinement.mjs
+?? frontend/tools/verify-session.mjs
+?? tools/

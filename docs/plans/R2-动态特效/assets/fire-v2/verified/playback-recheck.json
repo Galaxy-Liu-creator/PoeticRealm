@@ -1,0 +1,16 @@
+{
+  "source": "frontend/tools/verify-fire.mjs, output/playwright/fire-renderer-check/fire-verification.json",
+  "purpose": "Recheck the corrected renderer diagnostic selector with unchanged performance thresholds",
+  "complete": true,
+  "checksPassed": 6,
+  "errors": [],
+  "playback": {
+    "viewport": [1920, 1080],
+    "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "frames": 95,
+    "duration": 1600.1,
+    "p50": 16.699999999999818,
+    "p95": 16.90000000000009,
+    "over50": 0
+  }
+}

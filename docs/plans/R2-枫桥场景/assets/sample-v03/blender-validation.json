@@ -1,0 +1,18 @@
+{
+  "scene": "fengqiao_quality_v03",
+  "source": "D:\\University-Competition\\Math_Media\\PoeticRealm\\art\\blender\\fengqiao-sample-v03.blend",
+  "model": "D:\\University-Competition\\Math_Media\\PoeticRealm\\frontend\\public\\assets\\models\\fengqiao\\sample_v03.glb",
+  "errors": [],
+  "warnings": [],
+  "objects": 38,
+  "bones": 53,
+  "triangles": 40371,
+  "humanSourceHeight": 1.6221599578857422,
+  "humanScale": 1.0479854293874393,
+  "style": "stern-yuloh",
+  "pivot": [
+    -2.880000114440918,
+    0.4000000059604645,
+    1.2699999809265137
+  ]
+}

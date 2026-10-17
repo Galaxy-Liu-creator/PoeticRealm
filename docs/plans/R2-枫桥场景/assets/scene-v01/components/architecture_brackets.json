@@ -1,0 +1,20 @@
+{
+  "component": "architecture_brackets",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_temple_dougong",
+      "vertices": 4544,
+      "triangles": 7456,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_tower_dougong",
+      "vertices": 736,
+      "triangles": 1200,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

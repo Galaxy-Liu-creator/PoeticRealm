@@ -1,0 +1,23 @@
+{
+  "fixture": "Native Chrome DevTools MCP; isolated authentication in this tab only; actual published v02 asset",
+  "desktop1920": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"legacy\":{\"revision\":\"01\",\"view\":\"CAM_enter\",\"time\":8,\"playing\":false,\"fps\":0,\"calls\":30,\"triangles\":122836,\"memory\":{\"geometries\":31,\"textures\":20},\"programs\":16,\"contextLost\":false,\"disposed\":false},\"release\":{\"revision\":\"02\",\"view\":\"CAM_enter\",\"time\":8,\"playing\":false,\"fps\":60.00425301776272,\"calls\":141,\"triangles\":364688,\"memory\":{\"geometries\":0,\"textures\":0},\"programs\":3,\"contextLost\":true,\"disposed\":true},\"hiddenRock\":true,\"final\":{\"revision\":\"02\",\"view\":\"CAM_enter\",\"time\":8,\"playing\":false,\"fps\":0,\"calls\":141,\"triangles\":364688,\"memory\":{\"geometries\":71,\"textures\":22},\"programs\":16,\"contextLost\":false,\"disposed\":false},\"snowChecked\":true,\"reflectionChecked\":true,\"overflow\":false,\"nav\":{\"left\":40,\"right\":1880,\"bottom\":1052,\"width\":1840},\"font\":\"\\\"Noto Serif SC\\\", \\\"Source Han Serif SC\\\", 思源宋体, \\\"Songti SC\\\", SimSun, 宋体, serif\",\"statusHidden\":true}\n```\nPage navigated to http://127.0.0.1:5187/?scene=jiangxue&lab=jiangxue&t=8&asset=scenes%2Fjiangxue.scene-v02.json."
+      }
+    ]
+  },
+  "desktop1440": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"viewport\":[1440,900],\"overflow\":false,\"tools\":{\"left\":40,\"right\":1400,\"bottom\":872},\"buttons\":[{\"text\":\"全景\",\"width\":54.5625},{\"text\":\"远山\",\"width\":54.5625},{\"text\":\"雪岸\",\"width\":54.5625},{\"text\":\"江面\",\"width\":54.5625},{\"text\":\"孤舟\",\"width\":54.5625},{\"text\":\"蓑笠翁\",\"width\":68.84375},{\"text\":\"枯木\",\"width\":54.5625},{\"text\":\"岩岸\",\"width\":54.5625},{\"text\":\"播放\",\"width\":54.5625}],\"stats\":{\"revision\":\"02\",\"view\":\"CAM_enter\",\"time\":8,\"playing\":false,\"fps\":60.00058393556343,\"calls\":141,\"triangles\":364688,\"memory\":{\"geometries\":71,\"textures\":22},\"programs\":16,\"contextLost\":false,\"disposed\":false}}\n```"
+      }
+    ]
+  },
+  "console": {
+    "warnings": 0,
+    "errors": 0
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "size": 600.0,
+  "samples": 145,
+  "source": "terrain.py + terrain_refine.py; standard RGB8 bake",
+  "mountainStartRadius": 125.0,
+  "mountainFullRadius": 220.0,
+  "heightFactor": 0.58
+}

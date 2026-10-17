@@ -1,0 +1,21 @@
+{
+  "name": "generate_variants",
+  "arguments": {
+    "projectId": "11329297360365535924",
+    "selectedScreenIds": [
+      "690b7448fa984d63b211c01fb3542fba"
+    ],
+    "deviceType": "DESKTOP",
+    "modelId": "GEMINI_3_8_FLASH",
+    "variantOptions": {
+      "variantCount": 1,
+      "creativeRange": "REFINE",
+      "aspects": [
+        "LAYOUT",
+        "IMAGES",
+        "TEXT_CONTENT"
+      ]
+    },
+    "prompt": "生成一张独立视觉变体，沿用青黛山水和浅绢纸，仅五个等尺寸16:10视觉缩图0/25/50/75/100%及每帧一句中文。移除工程参数面板、英文、性能/WCAG通过声明、批准和导出按钮。中央烧纸揭幕。0%真实总览三张同尺寸风景诗卡；25%中央不规则小洞内可见夜江，洞不能空白；50%同一中央洞径向扩成大片夜江，细焦纸边与暗橙余烬；75%只剩四周薄纸；100%干净枫桥，四句诗独立竖排完整。洞是源页面遮罩，不是火灾或传送门。这是待审静态分镜，不能声称已完成动效。"
+  }
+}

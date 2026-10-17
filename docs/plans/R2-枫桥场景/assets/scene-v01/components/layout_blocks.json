@@ -1,0 +1,26 @@
+{
+  "component": "layout_blocks",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_temple_dimension",
+      "vertices": 8,
+      "triangles": 12,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_tower_dimension",
+      "vertices": 8,
+      "triangles": 12,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_bridge_dimension",
+      "vertices": 8,
+      "triangles": 12,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids"
+}

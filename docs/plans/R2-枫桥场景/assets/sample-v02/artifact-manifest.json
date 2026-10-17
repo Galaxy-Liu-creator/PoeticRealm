@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-07",
+  "scope": "Fengqiao four-element quality sample with original skinned boatman and deterministic rowing",
+  "contractVersion": "0.2",
+  "source": {
+    "path": "art/blender/fengqiao-sample-v02.blend",
+    "sha256": "cfd60149342263d701ae60befe2bc7afae13e0f10dcfe8e55b737e0a3d127e99",
+    "scene": "fengqiao_quality_v02",
+    "exportCollection": "glb_sample_v02",
+    "exportObjects": 27,
+    "bones": 15
+  },
+  "model": {
+    "path": "frontend/public/assets/models/fengqiao/sample_v02.glb",
+    "sha256": "7ffde5fa94fd3ea26e3d7e346c3142fd85d037176f15f4133985171bb57a3114",
+    "bytes": 9759096,
+    "triangles": 21369,
+    "nodes": 42,
+    "meshes": 15,
+    "materials": 11,
+    "skins": 1
+  },
+  "preservedV01": {
+    "sourceSha256": "694b8394942943178ba1239bb1005f7c7870a2418df2bc051393d352edc0d0f6",
+    "modelSha256": "37540f5d04a5829c99a03b4ed802478a21bd2ec1e36895706ced132a5720caeb",
+    "unchanged": true
+  },
+  "browserEvidence": {
+    "originalOutput": "output/playwright/fengqiao-rower/v08-final",
+    "report": "browser-verification.json",
+    "status": "pass",
+    "viewport": [1920, 1080],
+    "deviceScaleFactor": 1,
+    "browser": "Chrome 154",
+    "renderer": "ANGLE AMD Radeon(TM) Graphics D3D11",
+    "playbackSecondsPerRound": 60,
+    "fps": [59.995200383969284, 59.99530036813783, 59.961869717089314],
+    "p95Ms": [17, 17, 17],
+    "over50Ms": [0, 0, 0],
+    "maxCalls": 44,
+    "maxRenderedTriangles": 67274,
+    "assemblyToFirstFrameMs": 1780.8000000000466,
+    "navigationAndIdentityWaitMs": 3041,
+    "releaseCycles": 10,
+    "finalGpuMemory": {"geometries": 0, "textures": 0},
+    "contextLost": true,
+    "skinHandCenterErrorMetres": "approximately 0.001117 at all five sampled stroke times"
+  },
+  "video": {
+    "source": "rower-source.webm",
+    "originalSource": "output/playwright/fengqiao-rower/v08-final/video/page@a37260a2a62a19da605273b145b77ba8.webm",
+    "sourceSha256": "9a211ac528a06abbf8a1b58d8246ca8d21c51a79521609c3420815d955837ed0",
+    "sourceSeconds": 11.84,
+    "preview": "rower-preview.mp4",
+    "previewSha256": "42aed97f1b76a75700cecefbf4f9515e32b494b8dbbed334af70e4aec8d90a3b",
+    "trimStartSeconds": 3.25,
+    "requestedTrimDurationSeconds": 8.4,
+    "previewSeconds": 8.36,
+    "width": 1440,
+    "height": 900,
+    "fps": 25,
+    "previewCodec": "H.264 yuv420p",
+    "speedChanged": false,
+    "audio": false,
+    "verifiedFramesSeconds": [0, 4.2, 8.3]
+  },
+  "limits": [
+    "Original simplified distant figure, not a scan or verified historical costume reconstruction",
+    "Local quality sample, not complete Fengqiao artistic acceptance",
+    "Development laptop evidence does not replace final presentation-machine verification",
+    "Authentication uses an isolated visual fixture; no database accounts were created"
+  ]
+}

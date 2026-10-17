@@ -1,0 +1,39 @@
+{
+  "checks": [
+    "火光入境准备真实首帧，提交前路由保留，完成后接管同一个Canvas"
+  ],
+  "errors": [],
+  "disposals": [],
+  "status": "failed",
+  "performance": [
+    {
+      "view": "CAM_moonset",
+      "fps": 46.77982484646984,
+      "p95": 33.400000000001455,
+      "over50": 6,
+      "maxCalls": 99,
+      "maxTriangles": 263778,
+      "audio": {
+        "state": "running",
+        "muted": false,
+        "voices": 2,
+        "loops": 2,
+        "lastEvent": "bell",
+        "events": [
+          "crow",
+          "crow",
+          "bell"
+        ],
+        "tracks": [
+          "environment",
+          "effects",
+          "voice",
+          "music"
+        ]
+      }
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: 完整页面与声音近景性能门禁失败：CAM_moonset\n    at file:///D:/University-Competition/Math_Media/PoeticRealm/frontend/tools/verify-fengqiao-scene.mjs:54:7",
+  "finalDisposals": [],
+  "video": "D:\\University-Competition\\Math_Media\\PoeticRealm\\output\\playwright\\fengqiao-scene-v03\\product-complete\\video\\page@41b1cb6394481957b451c0bb312d1e79.webm"
+}

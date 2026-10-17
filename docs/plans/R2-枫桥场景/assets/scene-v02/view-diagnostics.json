@@ -1,0 +1,70 @@
+{
+  "scope": "12-second-render-diagnostic",
+  "samples": [
+    {
+      "label": "enter",
+      "view": "CAM_enter",
+      "fps": 59.995000416631946,
+      "p95": 16.80000000000109,
+      "maxCalls": 89,
+      "maxTriangles": 226898
+    },
+    {
+      "label": "riverbank",
+      "view": "CAM_riverbank",
+      "fps": 59.9116740271644,
+      "p95": 16.80000000000291,
+      "maxCalls": 89,
+      "maxTriangles": 241484
+    },
+    {
+      "label": "boat",
+      "view": "CAM_boat",
+      "fps": 59.9955003374747,
+      "p95": 16.80000000000291,
+      "maxCalls": 83,
+      "maxTriangles": 350946
+    },
+    {
+      "label": "rower",
+      "view": "CAM_rower",
+      "fps": 59.3288836670583,
+      "p95": 16.80000000000291,
+      "maxCalls": 79,
+      "maxTriangles": 243626
+    },
+    {
+      "label": "temple",
+      "view": "CAM_temple",
+      "fps": 59.91267248850079,
+      "p95": 16.80000000000291,
+      "maxCalls": 63,
+      "maxTriangles": 298842
+    },
+    {
+      "label": "bridge",
+      "view": "CAM_bridge",
+      "fps": 59.66219200226645,
+      "p95": 16.80000000000291,
+      "maxCalls": 74,
+      "maxTriangles": 349140
+    },
+    {
+      "label": "bell",
+      "view": "CAM_bell",
+      "fps": 59.49504207982668,
+      "p95": 16.80000000000291,
+      "maxCalls": 65,
+      "maxTriangles": 381604
+    },
+    {
+      "label": "nature",
+      "view": "CAM_nature",
+      "fps": 59.82834763769686,
+      "p95": 16.80000000000291,
+      "maxCalls": 81,
+      "maxTriangles": 244870
+    }
+  ],
+  "errors": []
+}

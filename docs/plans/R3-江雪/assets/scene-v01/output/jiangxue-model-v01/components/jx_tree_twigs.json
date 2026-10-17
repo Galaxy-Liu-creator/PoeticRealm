@@ -1,0 +1,46 @@
+{
+  "component": "jx_tree_twigs",
+  "scene": "jiangxue_modeling_v01",
+  "objects": [
+    {
+      "object": "src_dead_tree_twigs",
+      "vertices": 384,
+      "triangles": 704,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_dead_tree_branch_snow",
+      "vertices": 48,
+      "triangles": 88,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31027,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2
+  },
+  "extra": {
+    "twigCount": 16,
+    "bareTree": true,
+    "snowStrips": 2
+  }
+}

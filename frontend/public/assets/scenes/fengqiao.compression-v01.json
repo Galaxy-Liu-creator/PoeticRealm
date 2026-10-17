@@ -1,0 +1,6 @@
+{
+  "contractVersion": "0.2", "scene": "fengqiao", "scope": "quality-sample",
+  "model": "models/fengqiao/boat_v04_lossless.glb",
+  "environment": "environments/fengqiao-night-v01.rgba16f.gz", "waterLevel": 0,
+  "requiredNodes": ["boat_guest","boat_hull_closed","CAM_enter","CAM_riverbank","CAM_boat","CAM_rower","FOCUS_boat","FOCUS_rower","LIGHT_fishfire_01","SFX_boat","mask_probe","rower_rig","rower_spine","rower_head","rower_upper_left","rower_upper_right","rower_fore_left","rower_fore_right","rower_hand_left","rower_hand_right","oar_pivot","ANCHOR_oar_hand_left","ANCHOR_oar_hand_right","ANCHOR_oar_blade","ANCHOR_oar_tether","ANCHOR_boat_tether","ANCHOR_rower_palm_left","ANCHOR_rower_palm_right","ANCHOR_rower_foot_left","ANCHOR_rower_foot_right","rower_root","rower_thigh_left","rower_thigh_right","rower_shin_left","rower_shin_right","rower_foot_left","rower_foot_right"]
+}

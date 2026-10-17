@@ -1,0 +1,46 @@
+{
+  "component": "jx_rock_snow_v02",
+  "scene": "jiangxue_modeling_v01",
+  "objects": [
+    {
+      "object": "src_shore_boulders_v02",
+      "vertices": 2296,
+      "triangles": 4536,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_caps_v03",
+      "vertices": 2044,
+      "triangles": 4032,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31027,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2
+  },
+  "extra": {
+    "rockCount": 14,
+    "snowSurface": "connected ring crown with closed 90mm volume",
+    "failedCandidate": "checkpoints/jx_snow_caps_failed.blend; original 8 nonmanifold edges rejected"
+  }
+}

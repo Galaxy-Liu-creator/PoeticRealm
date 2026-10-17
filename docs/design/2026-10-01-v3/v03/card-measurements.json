@@ -1,0 +1,31 @@
+{
+  "viewport": "1440x1100",
+  "cards": [
+    {
+      "title": "枫桥夜泊",
+      "width": 405.328125,
+      "height": 520,
+      "top": 353,
+      "coverWidth": 403.328125,
+      "coverHeight": 340
+    },
+    {
+      "title": "江雪",
+      "width": 405.328125,
+      "height": 520,
+      "top": 345,
+      "coverWidth": 403.328125,
+      "coverHeight": 340
+    },
+    {
+      "title": "早发白帝城",
+      "width": 405.34375,
+      "height": 520,
+      "top": 353,
+      "coverWidth": 403.34375,
+      "coverHeight": 340
+    }
+  ],
+  "equalDimensions": true,
+  "equalCoverDimensions": true
+}

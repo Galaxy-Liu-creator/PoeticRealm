@@ -1,0 +1,12 @@
+{
+  "name": "edit_screens",
+  "arguments": {
+    "projectId": "11329297360365535924",
+    "selectedScreenIds": [
+      "2d439719a91c4cbf9267d7ba052cb801"
+    ],
+    "deviceType": "DESKTOP",
+    "modelId": "GEMINI_3_8_FLASH",
+    "prompt": "仅编辑S01首页，不编辑收藏或任何其他页面。当前三张卡片尺寸与横排预览已经正确，必须原样保留：520px等高、340px封面、180px信息，横排代表句、右下入境、中央仅上移8px，禁止scale。保留导航、题字、字体、三个封面与所有卡片排版。唯一改动是恢复下半部诗词总览的可见中国山水背景：当前太平，山水被opacity30%与80%遮罩双重冲淡。使用已有青灰山水背景图，背景层opacity:0.55，绢色遮罩最多opacity:0.25，让卡片周围和缝隙看得见多层远山、水岸与雾带，亮度仍浅青灰，不能纯色或仅渐变。用背景图 https://lh3.googleusercontent.com/aida/AEtjO1X_2XERzReOgi2TAESVS31Im0JEys4Yoe2cEJTFk-JvcC3Ane39gLXfUS9mh4Kd8s9zAkEEGllk7t_Xy3R8KusupM2uLQmwro_vyqa-uqYTk8OcFAMmZFP9NKUmo6TXh3Qmpg2plPyk9Bu3dWX3Ah2v6uTOeyHHkj-MEyda1kl6FSyulUMs_kZbWZtfdOFHVpTmQBnxmdYLzbcf_0o5SPnEuD55GREHD46x6C6sHqnh4BOLl3zNkHFtI9Bc；background-size:cover。只输出一张首页UI画板，其余完全保持。"
+  }
+}

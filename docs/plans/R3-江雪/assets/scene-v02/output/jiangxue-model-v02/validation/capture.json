@@ -1,0 +1,10 @@
+{
+  "revision": "02",
+  "fixture": "isolated auth; actual Chrome video; inspection cuts, not automatic product cinematics",
+  "viewport": [
+    1440,
+    900
+  ],
+  "secondsPerView": 3.5,
+  "errors": []
+}

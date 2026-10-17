@@ -1,0 +1,26 @@
+{
+  "component": "maple_branches",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_maple_branches_0",
+      "vertices": 544,
+      "triangles": 888,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_maple_branches_1",
+      "vertices": 460,
+      "triangles": 752,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_maple_branches_2",
+      "vertices": 376,
+      "triangles": 616,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids; explicitly registered thin leaf surfaces may be open"
+}

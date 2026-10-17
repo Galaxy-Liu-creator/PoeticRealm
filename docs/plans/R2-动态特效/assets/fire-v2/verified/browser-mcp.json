@@ -1,0 +1,63 @@
+{
+  "nativePerformance": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"viewport\":[1920,1080],\"renderer\":\"ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)\",\"frames\":97,\"duration\":1600.2000000000007,\"p50\":16.69999999999891,\"p95\":16.899999999999636,\"over50\":0,\"route\":\"#/poems/fengqiao\"}\n```\nPage navigated to http://127.0.0.1:5184/#/."
+      }
+    ]
+  },
+  "domAndCss": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"viewport\":[1440,900],\"progress\":\"0.2500\",\"target\":{\"clipPath\":\"polygon(892.092px 450px, 892.026px 461.275px, 890.91px 472.501px, 889.803px 483.776px, 883.116px 493.707px, 869.952px 500.902px, 859.118px 507.624px, 856.75px 517.438px, 857.752px 529.531px, 855.351px 540.439px, 850.705px 550.294px, 846.882px 561.272px, 841.356px 571.356px, 831.481px 577.12px, 820.882px 581.472px, 813.58px 590.052px, 806.956px 600.612px, 796.54px 605.208px, 783.326px 602.882px, 771.1px 600.536px, 760.474px 601.051px, 750.047px 601.056px, 739.916px 601.278px, 730.321px 607.463px, 720px 618.377px, 708.583px 624.183px, 697.522px 620.739px, 687.147px 615.165px, 676.291px 613.124px, 665.386px 610.888px, 655.872px 604.819px, 646.776px 598.483px, 636.668px 594.335px, 628.051px 587.611px, 623.853px 575.301px, 620.645px 563.292px, 612.27px 557.73px, 599.327px 555.827px, 587.631px 551.57px, 578.508px 544.542px, 569.174px 537.079px, 561.599px 528.115px, 560.81px 515.939px, 564.246px 502.871px, 563.424px 491.954px, 557.513px 482.321px, 554.724px 471.759px, 558.386px 460.593px, 562.404px 450px, 563.044px 439.713px, 564.042px 429.468px, 566.45px 419.457px, 564.662px 408.377px, 557.761px 394.927px, 554.526px 381.458px, 561.062px 371.62px, 572.234px 364.687px, 581.226px 357.274px, 589.146px 349.592px, 599.009px 343.894px, 608.231px 338.231px, 614.103px 329.248px, 620.181px 319.913px, 630.415px 315.927px, 642.112px 315.094px, 650.723px 309.52px, 657.16px 298.29px, 665.125px 288.344px, 675.144px 282.597px, 685.728px 277.703px, 696.883px 274.41px, 708.758px 278.481px, 720px 288.689px, 730.146px 295.201px, 740.555px 293.872px, 751.466px 291.812px, 761.621px 294.67px, 771.361px 298.696px, 782.038px 300.227px, 792.593px 302.795px, 801.512px 308.817px, 811.216px 313.486px, 824.555px 313.742px, 838.023px 315.42px, 845.395px 324.605px, 847.199px 338.449px, 849.19px 350.869px, 852.633px 361.377px, 854.692px 372.235px, 857.287px 382.298px, 865.402px 389.773px, 876.437px 396.897px, 881.878px 406.625px, 880.866px 418.002px, 881.592px 428.726px, 887.368px 439.03px)\",\"zIndex\":\"0\"},\"veil\":{\"zIndex\":\"1\",\"pointerEvents\":\"none\",\"rect\":{\"x\":0,\"y\":0,\"width\":1440,\"height\":900,\"top\":0,\"right\":1440,\"bottom\":900,\"left\":0}},\"overlay\":{\"position\":\"fixed\",\"zIndex\":\"85\"},\"renderer\":\"ANGLE (AMD, AMD Radeon(TM) Graphics (0x0000164C) Direct3D11 vs_5_0 ps_5_0, D3D11)\",\"glError\":0,\"route\":\"#/\"}\n```"
+      }
+    ]
+  },
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Emulating viewport: {\"deviceScaleFactor\":1,\"isMobile\":false,\"hasTouch\":false,\"isLandscape\":false,\"width\":1440,\"height\":900}\n## Console messages\nShowing 1-1 of 1 (Page 1 of 1).\nmsgid=50 [error] Failed to load resource: the server responded with a status of 502 (Bad Gateway) (0 args)"
+      }
+    ]
+  },
+  "network": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Emulating viewport: {\"deviceScaleFactor\":1,\"isMobile\":false,\"hasTouch\":false,\"isLandscape\":false,\"width\":1440,\"height\":900}\n## Network requests\nShowing 1-1 of 1 (Page 1 of 1).\nreqid=728 GET http://127.0.0.1:5184/api/v1/auth/session [502]"
+      }
+    ]
+  },
+  "trace": {
+    "content": [
+      {
+        "type": "text",
+        "text": "The performance trace has been stopped.\nEmulating viewport: {\"deviceScaleFactor\":1,\"isMobile\":false,\"hasTouch\":false,\"isLandscape\":false,\"width\":1440,\"height\":900}\n## Summary of Performance trace findings:\nURL: http://127.0.0.1:5184/\nTrace bounds: {min: 39510755886µs, max: 39526484444µs}\nCPU throttling: 1x\nNetwork throttling: none\n\n# Available insight sets\n\nThe following is a list of insight sets. An insight set covers a specific part of the trace, split by navigations. The insights within each insight set are specific to that part of the trace. Be sure to consider the insight set id and bounds when calling functions. If no specific insight set or navigation is mentioned, assume the user is referring to the first one.\n\n## insight set id: NO_NAVIGATION\n\nURL: http://127.0.0.1:5184/\nBounds: {min: 39510755886µs, max: 39526484444µs}\nMetrics (lab / observed):\n  - CLS: 0.00\nMetrics (field / real users): n/a – no data for this page in CrUX\nAvailable insights:\n\n## Details on call tree & network request formats:\nInformation on performance traces may contain main thread activity represented as call frames and network requests.\n\nEach call frame is presented in the following format:\n\n'id;eventKey;name;duration;selfTime;urlIndex;childRange;[line];[column];[S]'\n\nKey definitions:\n\n* id: A unique numerical identifier for the call frame. Never mention this id in the output to the user.\n* eventKey: String that uniquely identifies this event in the flame chart.\n* name: A concise string describing the call frame (e.g., 'Evaluate Script', 'render', 'fetchData').\n* duration: The total execution time of the call frame, including its children.\n* selfTime: The time spent directly within the call frame, excluding its children's execution.\n* urlIndex: Index referencing the \"All URLs\" list. Empty if no specific script URL is associated.\n* childRange: Specifies the direct children of this node using their IDs. If empty ('' or 'S' at the end), the node has no children. If a single number (e.g., '4'), the node has one child with that ID. If in the format 'firstId-lastId' (e.g., '4-5'), it indicates a consecutive range of child IDs from 'firstId' to 'lastId', inclusive.\n* line: An optional field for a call frame's line number. This is where the function is defined.\n* column: An optional field for a call frame's column number. This is where the function is defined.\n* S: _Optional_. The letter 'S' terminates the line if that call frame was selected by the user.\n\nExample Call Tree:\n\n1;r-123;main;500;100;0;1;;\n2;r-124;update;200;50;;3;0;1;\n3;p-49575-15428179-2834-374;animate;150;20;0;4-5;0;1;S\n4;p-49575-15428179-3505-1162;calculatePosition;80;80;0;1;;\n5;p-49575-15428179-5391-2767;applyStyles;50;50;0;1;;\n\n\nNetwork requests are formatted like this:\n`urlIndex;eventKey;queuedTime;requestSentTime;downloadCompleteTime;processingCompleteTime;totalDuration;downloadDuration;mainThreadProcessingDuration;statusCode;mimeType;priority;initialPriority;finalPriority;renderBlocking;protocol;fromServiceWorker;initiators;redirects:[[redirectUrlIndex|startTime|duration]];responseHeaders:[header1Value|header2Value|...]`\n\n- `urlIndex`: Numerical index for the request's URL, referencing the \"All URLs\" list.\n- `eventKey`: String that uniquely identifies this request's trace event.\nTimings (all in milliseconds, relative to navigation start):\n- `queuedTime`: When the request was queued.\n- `requestSentTime`: When the request was sent.\n- `downloadCompleteTime`: When the download completed.\n- `processingCompleteTime`: When main thread processing finished.\nDurations (all in milliseconds):\n- `totalDuration`: Total time from the request being queued until its main thread processing completed.\n- `downloadDuration`: Time spent actively downloading the resource.\n- `mainThreadProcessingDuration`: Time spent on the main thread after the download completed.\n- `statusCode`: The HTTP status code of the response (e.g., 200, 404).\n- `mimeType`: The MIME type of the resource (e.g., \"text/html\", \"application/javascript\").\n- `priority`: The final network request priority (e.g., \"VeryHigh\", \"Low\").\n- `initialPriority`: The initial network request priority.\n- `finalPriority`: The final network request priority (redundant if `priority` is always final, but kept for clarity if `initialPriority` and `priority` differ).\n- `renderBlocking`: 't' if the request was render-blocking, 'f' otherwise.\n- `protocol`: The network protocol used (e.g., \"h2\", \"http/1.1\").\n- `fromServiceWorker`: 't' if the request was served from a service worker, 'f' otherwise.\n- `initiators`: A list (separated by ,) of URL indices for the initiator chain of this request. Listed in order starting from the root request to the request that directly loaded this one. This represents the network dependencies necessary to load this request. If there is no initiator, this is empty.\n- `redirects`: A comma-separated list of redirects, enclosed in square brackets. Each redirect is formatted as\n`[redirectUrlIndex|startTime|duration]`, where: `redirectUrlIndex`: Numerical index for the redirect's URL. `startTime`: The start time of the redirect in milliseconds, relative to navigation start. `duration`: The duration of the redirect in milliseconds.\n- `responseHeaders`: A list (separated by '|') of values for specific, pre-defined response headers, enclosed in square brackets.\nThe order of headers corresponds to an internal fixed list. If a header is not present, its value will be empty.\n"
+      }
+    ]
+  },
+  "playwright": {
+    "content": [
+      {
+        "type": "text",
+        "text": "### Result\n{\"playing\":\"playing\",\"cancelled\":true,\"focused\":true,\"small\":{\"viewport\":[390,845],\"horizontalOverflow\":false,\"canvas\":[374,844]},\"reduced\":{\"route\":\"#/poems/fengqiao\",\"overlays\":0,\"inert\":false}}\n### Ran Playwright code\n```js\nawait (async (page) => { await page.locator('#app[data-ready=ready]').waitFor(); await page.emulateMedia({reducedMotion:'no-preference'}); await page.evaluate(()=>window.__POETIC_MOTION__.pause()); const entry=page.locator('[data-poem=fengqiao] .enter-button'); await entry.focus(); await page.keyboard.press('Enter'); await page.locator('.realm-transition[data-state=playing]').waitFor(); const playing=await page.locator('.realm-transition').getAttribute('data-state'); await page.keyboard.press('Escape'); const cancelled=await page.locator('.realm-transition').count()===0; const focused=await entry.evaluate(e=>e===document.activeElement); if(!cancelled||!focused) throw Error('Escape failed to restore source and entry focus'); await page.setViewportSize({width:390,height:844}); await entry.focus(); await page.keyboard.press('Enter'); await page.locator('.realm-transition[data-state=playing]').waitFor(); await page.evaluate(()=>window.__POETIC_MOTION__.transition(.5)); const small=await page.evaluate(()=>({viewport:[innerWidth,innerHeight],horizontalOverflow:document.documentElement.scrollWidth>innerWidth,canvas:[document.querySelector('.realm-veil canvas').width,document.querySelector('.realm-veil canvas').height]})); if(small.horizontalOverflow) throw Error('Small viewport overflow'); await page.keyboard.press('Escape'); await page.emulateMedia({reducedMotion:'reduce'}); await entry.focus(); await page.keyboard.press('Enter'); await page.locator('body[data-page=poem]').waitFor(); const reduced=await page.evaluate(()=>({route:location.hash,overlays:document.querySelectorAll('.realm-transition').length,inert:document.querySelector('#app').inert})); if(reduced.overlays||reduced.inert||!reduced.route.endsWith('fengqiao')) throw Error('Reduced motion did not complete cleanly'); return {playing,cancelled,focused,small,reduced}; })(page);\n```\n### Page\n- Page URL: http://127.0.0.1:5184/#/poems/fengqiao\n- Page Title: 枫桥夜泊 · 诗境\n- Console: 2 errors, 0 warnings\n### Events\n- New console entries: .playwright-mcp\\console-2026-10-04T12-19-06-829Z.log#L2"
+      }
+    ]
+  },
+  "fixedFrameScreenshots": [
+    "devtools-ignition.png",
+    "devtools-burn-250.png"
+  ],
+  "nativeSmallViewport": {
+    "viewport": [
+      390,
+      844
+    ],
+    "progress": 0.5,
+    "horizontalOverflow": false,
+    "visualChecked": true
+  }
+}

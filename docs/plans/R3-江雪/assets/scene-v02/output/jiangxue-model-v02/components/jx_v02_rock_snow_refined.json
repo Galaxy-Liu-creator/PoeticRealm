@@ -1,0 +1,260 @@
+{
+  "component": "jx_v02_rock_snow_refined",
+  "scene": "jiangxue_modeling_v02",
+  "objects": [
+    {
+      "object": "src_rock_snow_v02_00",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_01",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_02",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_03",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_04",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_05",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_06",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_07",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_08",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_09",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_10",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_11",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_12",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    },
+    {
+      "object": "src_rock_snow_v02_13",
+      "vertices": 642,
+      "triangles": 1280,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31029,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2,
+    "bank_length": 230.0,
+    "bank_width": 95.0
+  },
+  "extra": {
+    "surfaceSamples": [
+      {
+        "rock": "src_shore_rock_v02_00",
+        "snow": "src_rock_snow_v02_00",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.19262937458306584
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_01",
+        "snow": "src_rock_snow_v02_01",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.20469279685432504
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_02",
+        "snow": "src_rock_snow_v02_02",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.1962532236140525
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_03",
+        "snow": "src_rock_snow_v02_03",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.21995072752249153
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_04",
+        "snow": "src_rock_snow_v02_04",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.15140473805503327
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_05",
+        "snow": "src_rock_snow_v02_05",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.1898553329322253
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_06",
+        "snow": "src_rock_snow_v02_06",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.2190343336171929
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_07",
+        "snow": "src_rock_snow_v02_07",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.2226927975487902
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_08",
+        "snow": "src_rock_snow_v02_08",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.21971078427617244
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_09",
+        "snow": "src_rock_snow_v02_09",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.16371421356843616
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_10",
+        "snow": "src_rock_snow_v02_10",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.18819510525922026
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_11",
+        "snow": "src_rock_snow_v02_11",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.17421303886668177
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_12",
+        "snow": "src_rock_snow_v02_12",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.2191106163914102
+        ]
+      },
+      {
+        "rock": "src_shore_rock_v02_13",
+        "snow": "src_rock_snow_v02_13",
+        "samples": 321,
+        "upwardBoundaryNormalMinimum": 0.62,
+        "thicknessMetres": [
+          0.027999999999999997,
+          0.2196276768191077
+        ]
+      }
+    ],
+    "solidSnowVolumes": true
+  }
+}

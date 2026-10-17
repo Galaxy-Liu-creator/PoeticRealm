@@ -1,0 +1,43 @@
+{
+  "component": "jx_v02_tree_core",
+  "scene": "jiangxue_modeling_v02",
+  "objects": [
+    {
+      "object": "src_dead_tree_core_v02",
+      "vertices": 1068,
+      "triangles": 2120,
+      "nonmanifoldEdges": 0
+    }
+  ],
+  "parameters": {
+    "seed": 31029,
+    "water": 0.0,
+    "boat": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "boat_angle": 0.2,
+    "bank": [
+      23.0,
+      24.0,
+      0.0
+    ],
+    "tree": [
+      22.0,
+      18.0,
+      2.2
+    ],
+    "terrain_size": 600.0,
+    "fisherman_height": 1.7,
+    "rod_length": 3.2,
+    "bank_length": 230.0,
+    "bank_width": 95.0
+  },
+  "extra": {
+    "curvedPaths": 4,
+    "heightMetres": 6.13,
+    "rootSurfaceMetres": 3.9883967876434325,
+    "uv": "longitudinal metre scale, follows each branch"
+  }
+}

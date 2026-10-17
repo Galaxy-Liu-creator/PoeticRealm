@@ -1,0 +1,98 @@
+{
+  "component": "reed_scatter",
+  "scene": "fengqiao_modeling_v01",
+  "waterLevel": 0,
+  "objects": [
+    {
+      "object": "src_reed_tuft_00",
+      "vertices": 312,
+      "triangles": 384,
+      "nonmanifoldEdges": 96
+    },
+    {
+      "object": "src_reed_tuft_01",
+      "vertices": 260,
+      "triangles": 320,
+      "nonmanifoldEdges": 80
+    },
+    {
+      "object": "src_reed_tuft_02",
+      "vertices": 234,
+      "triangles": 288,
+      "nonmanifoldEdges": 72
+    },
+    {
+      "object": "src_reed_tuft_03",
+      "vertices": 312,
+      "triangles": 384,
+      "nonmanifoldEdges": 96
+    },
+    {
+      "object": "src_reed_tuft_04",
+      "vertices": 260,
+      "triangles": 320,
+      "nonmanifoldEdges": 80
+    },
+    {
+      "object": "src_reed_tuft_05",
+      "vertices": 234,
+      "triangles": 288,
+      "nonmanifoldEdges": 72
+    },
+    {
+      "object": "src_reed_tuft_06",
+      "vertices": 312,
+      "triangles": 384,
+      "nonmanifoldEdges": 96
+    },
+    {
+      "object": "src_reed_tuft_07",
+      "vertices": 260,
+      "triangles": 320,
+      "nonmanifoldEdges": 80
+    },
+    {
+      "object": "src_reed_tuft_08",
+      "vertices": 234,
+      "triangles": 288,
+      "nonmanifoldEdges": 72
+    },
+    {
+      "object": "src_reed_tuft_09",
+      "vertices": 312,
+      "triangles": 384,
+      "nonmanifoldEdges": 96
+    },
+    {
+      "object": "src_reed_tuft_10",
+      "vertices": 260,
+      "triangles": 320,
+      "nonmanifoldEdges": 80
+    },
+    {
+      "object": "src_reed_tuft_11",
+      "vertices": 234,
+      "triangles": 288,
+      "nonmanifoldEdges": 72
+    },
+    {
+      "object": "src_reed_tuft_12",
+      "vertices": 312,
+      "triangles": 384,
+      "nonmanifoldEdges": 96
+    },
+    {
+      "object": "src_reed_tuft_13",
+      "vertices": 260,
+      "triangles": 320,
+      "nonmanifoldEdges": 80
+    },
+    {
+      "object": "src_reed_tuft_14",
+      "vertices": 234,
+      "triangles": 288,
+      "nonmanifoldEdges": 72
+    }
+  ],
+  "checks": "finite geometry, unit scale, material, UV and closed solids; explicitly registered thin leaf surfaces may be open"
+}

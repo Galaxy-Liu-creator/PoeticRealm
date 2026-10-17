@@ -1,0 +1,39 @@
+{
+  "component": "bell-roof",
+  "rows": [
+    {
+      "source": "bell_tower_tile_charcoal",
+      "far": "bell_far_tile_charcoal",
+      "nearTriangles": 12572,
+      "farTriangles": 2262,
+      "ratio": 0.18,
+      "nonmanifoldEdges": 0,
+      "boundErrorMetres": 0.02604389190673828,
+      "nearBounds": [
+        [
+          -9.234999656677246,
+          26.764999389648438,
+          7.210000038146973
+        ],
+        [
+          -0.7650003433227539,
+          35.23500061035156,
+          10.151305198669434
+        ]
+      ],
+      "farBounds": [
+        [
+          -9.234004974365234,
+          26.76649284362793,
+          7.226932048797607
+        ],
+        [
+          -0.7664933204650879,
+          35.234004974365234,
+          10.125261306762695
+        ]
+      ]
+    }
+  ],
+  "review": "native viewport and scene info required before assembly"
+}

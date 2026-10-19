@@ -1,5 +1,16 @@
 # 当前续接状态
 
+## 2026-10-19：Windows 数据库备份与 Ubuntu Docker 启动
+
+- 按用户授权，将 Windows 系统盘及 Data 盘只读挂载。原库位于 `C:/ProgramData/MySQL/MySQL Server 9.1/Data`，版本 9.1.0，日志最后记录正常关闭于 2026-10-18 23:34:13（UTC+8）。未启动或改写 Windows 原实例。
+- 本机备份目录为 `runtime/backups/windows-mysql-20261019T085817/`：保留完整 MySQL 物理归档 `windows-mysql-9.1.0-physical.tar.gz`、原配置、438 个文件的清单和 SHA-256，以及单独的 `poeticrealm-windows.sql` 逻辑备份。物理归档含 369,334,525 字节原文件，压缩后 29,187,475 字节；归档逐文件核对通过。SQL 为 5,967 字节，SHA-256 `1902ecb902aebd249c5462c630e14d4d291d69876f45df93787c31f80a862ee1`。备份与恢复工作目录均在被 Git / Docker 构建排除的 `runtime/`，私密配置继续只留本机。
+- 从物理副本启动无外部网络的 MySQL 9.1.0 临时恢复容器，再逻辑导出目标库；未将 Windows 原目录挂入运行中的数据库。导出后临时容器已停止，工作副本留在 `runtime/recovery/mysql-9.1.0-20261019T085817/`。
+- SQL 已导入新建的 Ubuntu Docker `poeticrealm_mysql-data` 持久卷，沿用项目既有 MySQL 8.4 配置，本次实际镜像版本为 8.4.11。数据库默认字符集 / 排序规则同步为 `utf8mb4 / utf8mb4_unicode_ci`。四张表的列元数据、索引与约束、行数及按主键排序的全部内容哈希核对一致；仅规范化 8.4 与 9.1 在 `SHOW CREATE TABLE` 中重复显式列字符集的显示差异，实际字符集 / 排序规则另行逐列核对。
+- 原库实际记录数：`app_users=0`、`account_settings=0`、`persistent_logins=0`、`flyway_schema_history=2`；Ubuntu 保持相同快照。记录在备份目录的 `ubuntu-restore-verification.json`。再次核对 Windows 438 个原文件的名称、大小、修改时间及 SHA-256，均保持原样，见 `source-and-archive-verification.json`。
+- 新增可执行的 `tools/docker.sh`，Ubuntu 使用 `./tools/docker.sh up` 一键构建并启动三个服务，无需宿主机安装 Node.js / Java / Maven / MySQL；支持 `status / logs / stop / down`。已有 `.env.docker` 沿用原密钥与 `POETIC_PORT=5186`；原 Node.js 入口继续可用。README 与 Docker 文档同步入口、V2 迁移及资料实际存储位置，本轮未修改业务代码或制作脚本中的 Windows 路径。
+- 验证通过：前端 TypeScript 与 Vite 生产构建、后端 Maven package（含测试）；一键首次启动及 `stop → up` 完整重启，三个服务均 healthy，重启后四表结构 / 行数 / 内容哈希仍与 Windows 快照一致。HTTP 首页与健康检查 200、CSRF 200、匿名 session 正常、受保护 `/api/v1/me` 返回 401；枫桥与江雪 v02 GLB 的 HTTP 字节哈希与本机文件一致。真实桌面浏览器确认先显示大帘幕，再可进入登录表单。
+- 当前运行地址 **http://127.0.0.1:5186**。启动 / 重启日志、HTTP 报告、重启后数据库核对结果及登录页截图保留在 `runtime/backups/`。本轮只读核对没有注册或修改业务账号，原 Windows 库继续保留。
+
 ## 2026-10-18：建模源文件仅保留在本机
 
 - 用户明确要求建模文件复制到 Ubuntu 即可，不上传 GitHub。Windows 原文件与 Ubuntu 的 39 个 `.blend`、13 个 GLB 及 1 个 OBJ 参考模型均保留；停止模型上传，将模型从尚未推送的迁移提交中排除，并在 `.gitignore` 中忽略 `.blend` / `.glb` / `.gltf` / `.fbx` / `.obj`。

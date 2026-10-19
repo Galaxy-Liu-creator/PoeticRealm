@@ -32,10 +32,10 @@ Blender + Three.js（WebGLRenderer，three.js 0.186.1 精确锁定）+ GLSL + Ty
 
 ## 运行 UI 与保留的技术原型
 
-前后端和数据库一键启动：
+Ubuntu 上前后端和数据库一键启动（先打开 Docker，无需宿主机安装 Node.js）：
 
 ```bash
-node tools/docker.mjs up
+./tools/docker.sh up
 ```
 
 默认访问 **http://127.0.0.1:5173**，首次自动生成本机密钥并构建三个服务。端口冲突、停止、重启和数据持久化见 [Docker 启动说明](docs/Docker启动.md)。

@@ -1,6 +1,15 @@
 # 当前续接状态
 
-## 2026-10-19：Windows 数据库备份与 Ubuntu Docker 启动
+## 2026-10-19：补齐实际 Docker 业务数据库与 TestAdmin 登录
+
+- 用户反馈 `TestAdmin` 登录失败后，复核发现 Windows 存在两套同名数据库：本机 MySQL 9.1 的业务表为空，实际使用的账号与资料在 Windows Docker 的 `poeticrealm_mysql-data` 卷。此前迁移遗漏了 Docker 卷，本条更正实际业务数据库来源；下条记录保留本机 MySQL 的历史备份与验证。
+- 原 Docker 数据磁盘为 `/media/liuhan/Data/Docker/Docker_Data/DockerDesktopWSL/disk/docker_data.vhdx`，22,357,737,472 字节，SHA-256 `7b878a2fbf6cca782faa3c9e2d188664426a306edb28ccdd9c96911c745b4616`。只读挂载原盘，复制并校验后，仅在 Ubuntu 临时副本上回放 VHDX / ext4 日志，再提取 `/data/docker/volumes/poeticrealm_mysql-data/_data`。原虚拟磁盘大小和修改时间保持原样。
+- 实际原库与 Ubuntu 均为 MySQL 8.4.11；账号 3 条、资料 3 条、持久凭据 7 条、Flyway 历史 2 条。`TestAdmin` 的原密码通过项目自身 BCrypt 库离线核验，并通过 Ubuntu 实际 HTTP 登录（200）及原个人资料读取验证；保留原密码哈希。密码明文和哈希均不写入仓库。
+- 专用备份位于 `runtime/backups/windows-docker-poeticrealm-20261019T092256/`：`windows-docker-mysql-physical.tar.gz` 保存 203 个文件、218,907,272 字节原数据，归档逐文件 SHA-256 核对通过；`poeticrealm-windows-docker.sql` 为 9,222 字节，SHA-256 `4fed3bc34a304d71cd0162e276e0cc76b128963a4da4f7d7036f9a2b1098891b`。另保留导入前 Ubuntu 备份、源表快照、结构与内容核对结果及登录验证报告。
+- 先确认 Ubuntu 三张业务表仍为空，再停止前后端、备份当前库、导入完整实际业务库并同步数据库默认字符集 / 排序规则。四表结构、行数和全部记录哈希一致；实际登录验证使用非持久登录并释放临时访问令牌，随后再次比对，原三套账号 / 资料及七条持久凭据保持一致。
+- 当前服务地址仍为 **http://127.0.0.1:5186**，一键入口仍为 `./tools/docker.sh up`。`stop → up` 重启后四表结构、行数及全部内容再次核对一致，三个服务均 healthy。隔离恢复容器已停止；专用物理 / SQL 备份及提取的 MySQL 副本保留，大型临时 VHDX / raw 镜像在验证专用备份后清理。本轮更正数据库来源与迁移记录，业务代码、密码和 Windows 原文件保持原样。
+
+## 2026-10-19：Windows 本机 MySQL 备份与 Ubuntu Docker 启动（历史）
 
 - 按用户授权，将 Windows 系统盘及 Data 盘只读挂载。原库位于 `C:/ProgramData/MySQL/MySQL Server 9.1/Data`，版本 9.1.0，日志最后记录正常关闭于 2026-10-18 23:34:13（UTC+8）。未启动或改写 Windows 原实例。
 - 本机备份目录为 `runtime/backups/windows-mysql-20261019T085817/`：保留完整 MySQL 物理归档 `windows-mysql-9.1.0-physical.tar.gz`、原配置、438 个文件的清单和 SHA-256，以及单独的 `poeticrealm-windows.sql` 逻辑备份。物理归档含 369,334,525 字节原文件，压缩后 29,187,475 字节；归档逐文件核对通过。SQL 为 5,967 字节，SHA-256 `1902ecb902aebd249c5462c630e14d4d291d69876f45df93787c31f80a862ee1`。备份与恢复工作目录均在被 Git / Docker 构建排除的 `runtime/`，私密配置继续只留本机。

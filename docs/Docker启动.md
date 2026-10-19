@@ -52,6 +52,6 @@ docker compose --env-file .env.docker up -d --build --wait --wait-timeout 240
 
 密钥、数据库和浏览器缓存都应按实际需要备份。`.env.docker` 不提交到 Git，不在聊天或日志中打印；`.dockerignore` 排除该文件、宿主机数据库配置、构建产物与原稿。前后端容器使用非 root 身份。
 
-Windows 数据库迁移采用先备份、再逻辑导出和导入的方式。原库完整物理备份、逐文件 SHA-256 清单、`poeticrealm` SQL 备份和核对结果保存在本机 `runtime/backups/`；该目录由 Git 与 Docker 构建上下文排除。导入仅针对 Ubuntu 数据库执行一次，日常 `up` 沿用持久卷，不会重复恢复旧快照。具体迁移结果见 `HANDOFF.md`。
+Windows 数据库迁移采用先备份、再逻辑导出和导入的方式。迁移前确认原服务实际连接的数据库：Windows 本机 MySQL 与 Docker 数据卷各自保存数据，同名数据库也需分别检查。本项目原业务数据来自 Windows Docker 的 `poeticrealm_mysql-data` 卷。原库完整物理备份、逐文件 SHA-256 清单、`poeticrealm` SQL 备份和核对结果保存在本机 `runtime/backups/`；该目录由 Git 与 Docker 构建上下文排除。导入仅针对 Ubuntu 数据库执行一次，日常 `up` 沿用持久卷，不会重复恢复旧快照。具体迁移结果见 `HANDOFF.md`。
 
 代码更新后再次执行 `up`。回退到已验证的代码或镜像时保留 `.env.docker` 和数据库卷；当前使用既有 V1、V2 迁移，无新增迁移或数据删除。后续数据库结构变更采用新的前向迁移，不修改已执行的历史版本。此配置用于本机验收；当前预览图片的公开发布许可边界仍按 CREDITS 执行。

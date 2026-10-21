@@ -1,0 +1,35 @@
+{
+  "services": {
+    "backend": {
+      "id": "7a3540fb9c24",
+      "health": "healthy",
+      "sameContainer": true
+    },
+    "db": {
+      "id": "840e21ec5f9a",
+      "health": "healthy",
+      "sameContainer": true
+    },
+    "frontend": {
+      "id": "eed9f3e34175",
+      "health": "healthy",
+      "sameContainer": false
+    }
+  },
+  "servedFiles": [
+    {
+      "file": "JiangxueScene-D9S7XnEX.js",
+      "bytes": 77,
+      "sha256": "04e3bfdb75bb4dcab28343d24828cc5e8c397042306f6ec6ec482b6e382947d7"
+    },
+    {
+      "file": "JiangxueScene-BhXgrvYG.js",
+      "bytes": 13370,
+      "sha256": "d38bc508efb34550c75b6fa36065398b0e9ba8b4b7dcf96ed924d7a3ba74d19d"
+    }
+  ],
+  "healthz": {
+    "status": 200,
+    "body": "ok"
+  }
+}

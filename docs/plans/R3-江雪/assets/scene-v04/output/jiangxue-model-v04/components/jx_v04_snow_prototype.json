@@ -1,0 +1,30 @@
+{
+  "component": "jx_v04_snow_prototype",
+  "scene": "jiangxue_modeling_v04",
+  "meshes": [
+    {
+      "object": "src_rock_snow_v04_00",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.9428365874301508,
+      "finite": true
+    }
+  ],
+  "contacts": [
+    {
+      "rock": "shore_rock_v02_00",
+      "snow": "src_rock_snow_v04_00",
+      "bottomSamples": 801,
+      "bottomContactMetres": -0.006,
+      "boundaryUpwardNormalMinimum": 0.62,
+      "thicknessMetres": [
+        0.02200007438659668,
+        0.16724395751953125
+      ],
+      "sides": 80,
+      "rings": 10,
+      "seed": 31029
+    }
+  ]
+}

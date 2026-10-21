@@ -1,0 +1,42 @@
+{
+  "origin": "http://127.0.0.1:5186",
+  "unchanged_services": {
+    "db": {
+      "id": "840e21ec5f9a",
+      "image": "mysql:8.4",
+      "healthy": true
+    },
+    "backend": {
+      "id": "7a3540fb9c24",
+      "image": "sha256:47f404ff622f5936ee28b6d795703316e391667795e3ad1cd5cabd676966c184",
+      "healthy": true
+    }
+  },
+  "assets": [
+    {
+      "name": "Application-BlPCTsG8.js",
+      "sha256": "f1c923f397deabc91bb869950f5434f84864c307c5addcf8c28e2f56cfa0189f",
+      "matches_local_build": true
+    },
+    {
+      "name": "Application-CixNr8-5.css",
+      "sha256": "8714aa0971114462572f82e7ef4de94baa378db49f41429507c1501b36ba88a8",
+      "matches_local_build": true
+    },
+    {
+      "name": "FengqiaoScene-CfQr3DJ7.js",
+      "sha256": "051c83b53fc6fe334529d6fb7218a00abf2cd4e822b5500ca82cfa405e1ee9d0",
+      "matches_local_build": true
+    },
+    {
+      "name": "FengqiaoScene-dSQctr0z.js",
+      "sha256": "5d16e1bb78bd5a1d59affdd2e90938d398f0ca086850b5542ba36d54edf9d1c2",
+      "matches_local_build": true
+    }
+  ],
+  "healthz": {
+    "status": 200,
+    "body": "ok"
+  },
+  "pass": true
+}

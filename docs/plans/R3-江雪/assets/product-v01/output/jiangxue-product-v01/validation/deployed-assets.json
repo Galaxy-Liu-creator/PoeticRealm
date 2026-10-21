@@ -1,0 +1,22 @@
+[
+  {
+    "path": "models/jiangxue/scene_v06.glb",
+    "bytes": 13039024,
+    "sha256": "2e450af0f912cd0254fdd1554429252337da081b55d63c20f15385f12bd8e45f"
+  },
+  {
+    "path": "scenes/jiangxue.scene-v06.json",
+    "bytes": 1275,
+    "sha256": "fbede147718652e9437c0fa7c91d300324fd8b1259684bcc29b31ace750294f6"
+  },
+  {
+    "path": "terrain/jiangxue-v06.height.png",
+    "bytes": 2265909,
+    "sha256": "f0dcc154f616f3f885e118d52dbc3734accd8b9c8ae995e79464e7e1cc7a4cb3"
+  },
+  {
+    "path": "terrain/jiangxue-v06.height.json",
+    "bytes": 251,
+    "sha256": "b0ebd86c2278561fd031293a7ca86c9b336a306389871fc9254ab25b59f22ca3"
+  }
+]

@@ -1,0 +1,139 @@
+{
+  "origin": "http://127.0.0.1:5187",
+  "checks": [
+    "普通打开保留大帘幕",
+    "jiangxue：诗句完成后按同一时钟展卷，seek 可复现",
+    "jiangxue：三档桌面卷轴在诗下、操作栏上，正文可滚动",
+    "jiangxue：键盘收展、收藏重绘保留状态，展卷恢复全景"
+  ],
+  "layouts": [
+    {
+      "id": "jiangxue",
+      "width": 1920,
+      "height": 1080,
+      "panel": {
+        "x": 76.796875,
+        "y": 341.5,
+        "right": 596.796875,
+        "bottom": 771.5,
+        "width": 520,
+        "height": 430
+      },
+      "poem": {
+        "x": 76.796875,
+        "y": 167,
+        "right": 413.984375,
+        "bottom": 315.5,
+        "width": 337.1875,
+        "height": 148.5
+      },
+      "toolbar": {
+        "x": 76.796875,
+        "y": 962,
+        "right": 455.796875,
+        "bottom": 1006,
+        "width": 379,
+        "height": 44
+      },
+      "body": {
+        "client": 370,
+        "scroll": 413
+      },
+      "overflow": false,
+      "roller": {
+        "x": 70.796875,
+        "y": 764.5,
+        "right": 602.796875,
+        "bottom": 777.5,
+        "width": 532,
+        "height": 13
+      }
+    },
+    {
+      "id": "jiangxue",
+      "width": 1440,
+      "height": 900,
+      "panel": {
+        "x": 57.59375,
+        "y": 340.5,
+        "right": 518.390625,
+        "bottom": 758,
+        "width": 460.796875,
+        "height": 417.5
+      },
+      "poem": {
+        "x": 57.59375,
+        "y": 166,
+        "right": 394.78125,
+        "bottom": 314.5,
+        "width": 337.1875,
+        "height": 148.5
+      },
+      "toolbar": {
+        "x": 57.59375,
+        "y": 782,
+        "right": 436.59375,
+        "bottom": 826,
+        "width": 379,
+        "height": 44
+      },
+      "body": {
+        "client": 358,
+        "scroll": 413
+      },
+      "overflow": false,
+      "roller": {
+        "x": 51.59375,
+        "y": 751,
+        "right": 524.390625,
+        "bottom": 764,
+        "width": 472.796875,
+        "height": 13
+      }
+    },
+    {
+      "id": "jiangxue",
+      "width": 1280,
+      "height": 720,
+      "panel": {
+        "x": 51.1875,
+        "y": 295.96875,
+        "right": 460.78125,
+        "bottom": 574,
+        "width": 409.59375,
+        "height": 278.03125
+      },
+      "poem": {
+        "x": 51.1875,
+        "y": 155.203125,
+        "right": 347.453125,
+        "bottom": 277.96875,
+        "width": 296.265625,
+        "height": 122.765625
+      },
+      "toolbar": {
+        "x": 51.1875,
+        "y": 602,
+        "right": 430.1875,
+        "bottom": 646,
+        "width": 379,
+        "height": 44
+      },
+      "body": {
+        "client": 228,
+        "scroll": 385
+      },
+      "overflow": false,
+      "roller": {
+        "x": 45.1875,
+        "y": 567,
+        "right": 466.78125,
+        "bottom": 580,
+        "width": 421.59375,
+        "height": 13
+      }
+    }
+  ],
+  "errors": [],
+  "pass": false
+}

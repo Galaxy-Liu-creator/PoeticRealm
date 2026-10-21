@@ -1,0 +1,33 @@
+{
+  "scope": "quality-sample",
+  "nodes": 128,
+  "meshes": 55,
+  "materials": 19,
+  "skins": 1,
+  "maskCalibration": [
+    0,
+    0.502891584649424,
+    1,
+    0,
+    0.502891584649424,
+    1
+  ],
+  "hull": {
+    "triangles": 1184,
+    "nonmanifoldEdges": 0,
+    "weldTolerance": 0.00001
+  },
+  "floating": {
+    "alignment": 0.9999999999999972,
+    "hullWorldY": [
+      -0.252998948097229,
+      0.9751243591308594
+    ],
+    "actualDraftMetres": 0.252998948097229,
+    "lineEndpoint": [
+      3.5141302704638777,
+      -0.006000012159347534,
+      1.2650475616418682
+    ]
+  }
+}

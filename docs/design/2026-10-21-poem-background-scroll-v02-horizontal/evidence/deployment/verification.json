@@ -1,0 +1,30 @@
+{
+  "origin": "http://127.0.0.1:5186",
+  "unchanged_services": {
+    "db": {
+      "id": "840e21ec5f9a",
+      "image": "mysql:8.4"
+    },
+    "backend": {
+      "id": "7a3540fb9c24",
+      "image": "sha256:47f404ff622f5936ee28b6d795703316e391667795e3ad1cd5cabd676966c184"
+    }
+  },
+  "assets": [
+    {
+      "name": "Application-BddygsUx.js",
+      "sha256": "5ee1f59b72fd079bca76f2f21c5795d277a500165bff08c8a0b9a850a5a240c3",
+      "matches_local_build": true
+    },
+    {
+      "name": "Application-DHD4Wp_W.css",
+      "sha256": "1b792f85ac20aa82d5e02749d0a585057c63a75cff8057f1e1a4460145c9a740",
+      "matches_local_build": true
+    }
+  ],
+  "healthz": {
+    "status": 200,
+    "body": "ok"
+  },
+  "pass": true
+}

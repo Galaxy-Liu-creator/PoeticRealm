@@ -1,0 +1,17 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "result": "Interrupted after a source hot reload during browser verification; no application console errors were recorded."
+    },
+    {
+      "attempt": 2,
+      "result": "1280x720 bottom roller reached toolbar boundary; increased desktop short-height bottom spacing before next run."
+    },
+    {
+      "attempt": 3,
+      "result": "Browser closed during a scene-control step; reran successfully with --disable-dev-shm-usage."
+    }
+  ],
+  "retained_files": "The initial verification.json and available initial PNGs remain in this directory. The complete successful behavior run is in final/; final density verification is in final-layout/."
+}

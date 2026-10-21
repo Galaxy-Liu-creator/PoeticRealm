@@ -1,0 +1,145 @@
+{
+  "component": "jx_v06_tree",
+  "meshes": [
+    {
+      "object": "src_dead_tree_fine_v06",
+      "vertices": 1666,
+      "triangles": 3220,
+      "nonmanifoldEdges": 0,
+      "volume": 0.010949173503356849
+    },
+    {
+      "object": "src_dead_tree_snow_v06",
+      "vertices": 272,
+      "triangles": 532,
+      "nonmanifoldEdges": 0,
+      "volume": 0.0032292219738012575
+    },
+    {
+      "object": "src_dead_tree_roots_v06",
+      "vertices": 405,
+      "triangles": 790,
+      "nonmanifoldEdges": 0,
+      "volume": 0.058949360433811854
+    }
+  ],
+  "checks": {
+    "fineBranches": 28,
+    "connections": [
+      {
+        "path": 0,
+        "sample": 7,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 0,
+        "sample": 11,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 0,
+        "sample": 15,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 0,
+        "sample": 19,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 0,
+        "sample": 23,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 0,
+        "sample": 27,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 1,
+        "sample": 7,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 1,
+        "sample": 11,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 1,
+        "sample": 15,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 2,
+        "sample": 7,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 2,
+        "sample": 11,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 2,
+        "sample": 15,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 3,
+        "sample": 7,
+        "distanceToParentCenter": 0
+      },
+      {
+        "path": 3,
+        "sample": 11,
+        "distanceToParentCenter": 0
+      }
+    ],
+    "rootContacts": [
+      {
+        "tip": [
+          0.8235755562782288,
+          0.21029336750507355,
+          0.29151448607444763
+        ],
+        "embeddedMetres": 0.045
+      },
+      {
+        "tip": [
+          0.05449796840548515,
+          0.8482511043548584,
+          0.11524493992328644
+        ],
+        "embeddedMetres": 0.045
+      },
+      {
+        "tip": [
+          -0.7898939847946167,
+          0.3139546513557434,
+          -0.19535915553569794
+        ],
+        "embeddedMetres": 0.045
+      },
+      {
+        "tip": [
+          -0.5426793098449707,
+          -0.654216468334198,
+          -0.2818993628025055
+        ],
+        "embeddedMetres": 0.045
+      },
+      {
+        "tip": [
+          0.4544997215270996,
+          -0.7182826995849609,
+          0.030413703992962837
+        ],
+        "embeddedMetres": 0.045
+      }
+    ],
+    "snowStrips": 3,
+    "seed": 41021
+  }
+}

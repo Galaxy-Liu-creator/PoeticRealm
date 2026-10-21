@@ -1,0 +1,457 @@
+{
+  "revision": "04",
+  "files": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 128583,
+      "sha256": "cc3811d3f68221f48d02736285aa4db3ff5085fc37965581bf977fd4aa60f6fb"
+    },
+    {
+      "path": "art/blender/components/jiangxue-v04/jx_v04_snow_prototype.blend",
+      "bytes": 810736,
+      "sha256": "5504a13c3aad29cf5f9eab407f2a3db6cf260246eca8990bef4f4f564b7adb8c"
+    },
+    {
+      "path": "art/blender/components/jiangxue-v04/jx_v04_snow_remaining.blend",
+      "bytes": 3602452,
+      "sha256": "bf1705fb7ed2acc2e646bbf855f389dfecbd8d24cd97c6176855b679869638ee"
+    },
+    {
+      "path": "art/blender/jiangxue-scene-v04.blend",
+      "bytes": 17744304,
+      "sha256": "df484e37676f7df507b2529958d0426872e7bfbfb1adc7e4a78ffe3fdb2aa400"
+    },
+    {
+      "path": "art/scripts/archive_jiangxue_model_v04.py",
+      "bytes": 2819,
+      "sha256": "3157a8db0c8d22e04671898edf279c439796923f2c56dbc5aecd0a431ca11446"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/v04/assemble.py",
+      "bytes": 1669,
+      "sha256": "645c9299d95e690ffd236e312b20448d6e7f45998792ae0c0c36d927676ef984"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/v04/common_v04.py",
+      "bytes": 2248,
+      "sha256": "65e0ffd55331331480abbbf3b8e4e2dce5d3371c0566206a708008631b1c4789"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/v04/export_ready.py",
+      "bytes": 769,
+      "sha256": "92e83287e1c5264f33aadeea4d77f66f69e7dad10c42c3ba6d45a617e9099e53"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/v04/initialize.py",
+      "bytes": 1172,
+      "sha256": "3587a22cf8c60f65e4a3b93f44fabcfd8c590151c08c0d976572fc5ab7b07deb"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/v04/rock_snow.py",
+      "bytes": 8460,
+      "sha256": "dac728dc55ac5fcbe98310f5e8e16e9e7fbc03d1b943a73720a792d4bc7808df"
+    },
+    {
+      "path": "art/scripts/components/jiangxue/v04/verify_saved.py",
+      "bytes": 5032,
+      "sha256": "9d7c51523d19c71dc5d04081be2d4fee38ce65a65c02196c76d75c525c4f24bf"
+    },
+    {
+      "path": "docs/CONTRACT.md",
+      "bytes": 41108,
+      "sha256": "c9d50f3ea946b77a94022f0bfa398967ae0fdb415dacae0fce53724d27f95448"
+    },
+    {
+      "path": "docs/CREDITS.md",
+      "bytes": 26836,
+      "sha256": "1a2e91a7f11183c347283684fe386f30c3494c1a2478bc66931015c7e987160b"
+    },
+    {
+      "path": "docs/plans/R3-江雪/plan.md",
+      "bytes": 7526,
+      "sha256": "9dbdaf40f32e709b2fce45f65e0de358ec6bb0150339868f19945220965b296f"
+    },
+    {
+      "path": "frontend/public/assets/models/jiangxue/scene_v04.glb",
+      "bytes": 12809544,
+      "sha256": "8cc07cebac5da0f4190e30e1d5ea03ff5059e8468e4f3d411c90b2d1b1eea6c2"
+    },
+    {
+      "path": "frontend/public/assets/scenes/jiangxue.scene-v04.json",
+      "bytes": 1248,
+      "sha256": "b6d01ec863ce5b4948924a55b604da55157e67bb1bb7b25bcb758cbdd763407b"
+    },
+    {
+      "path": "frontend/public/assets/terrain/jiangxue-v02.height.json",
+      "bytes": 251,
+      "sha256": "b1fcce6981002ed932831b35a1cd273473e436738207cbdf6da2812d3eff7d8d"
+    },
+    {
+      "path": "frontend/public/assets/terrain/jiangxue-v02.height.png",
+      "bytes": 2410058,
+      "sha256": "72876149762c2a59e73945da28629b5221aa6e28f17f3c640e3f34a90d239428"
+    },
+    {
+      "path": "frontend/src/labs/jiangxue.ts",
+      "bytes": 4781,
+      "sha256": "88a4b58e2ef0b4f52bc0fd57804978c2cb34d72e0c8f7b701e5d2401d2751070"
+    },
+    {
+      "path": "frontend/src/scenes/JiangxueScene.ts",
+      "bytes": 8792,
+      "sha256": "1680f934815079ae7951b2b3a976a60da4a50600922f8df22e66b0c9aaa7df2e"
+    },
+    {
+      "path": "frontend/tools/capture-jiangxue-model.mjs",
+      "bytes": 2058,
+      "sha256": "be0774c5f5f6ad6c84c298600abc5cee13170d998ed554d65eb8b9ddfb611eb2"
+    },
+    {
+      "path": "frontend/tools/check-contract.mjs",
+      "bytes": 11405,
+      "sha256": "6466fe0a9187a17c86ca93fe106fe7bb4d9567133fbbf66a28714949e99bf532"
+    },
+    {
+      "path": "frontend/tools/test-jiangxue-contract.mjs",
+      "bytes": 2058,
+      "sha256": "6347bacdc15155244d2a476676fc7cbfa9da38c7ba1093d822bd9beb679fbe67"
+    },
+    {
+      "path": "frontend/tools/verify-jiangxue-model.mjs",
+      "bytes": 8528,
+      "sha256": "6b4dae3b9b08eab461f3047c7a0ef241f54568eb74102c10ab1546b4133c18d5"
+    },
+    {
+      "path": "output/jiangxue-model-v04/components/assembly.json",
+      "bytes": 1952,
+      "sha256": "9504f69dd63dcf09bb092ba1f31e4714cbbf61b4dc8ceb31666665094b949842"
+    },
+    {
+      "path": "output/jiangxue-model-v04/components/jx_v04_snow_prototype.json",
+      "bytes": 649,
+      "sha256": "b5ebb8b49e831425565681731e2d67b5af430e2a55f73f1f30d8c5b46103a961"
+    },
+    {
+      "path": "output/jiangxue-model-v04/components/jx_v04_snow_remaining.json",
+      "bytes": 7049,
+      "sha256": "6a80d3bc3c3f0723bd55128540b827c9025a9b4b399c6a78a29b0ce1c6742242"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_birds-1440.png",
+      "bytes": 642376,
+      "sha256": "bd953b80fc99444a7f0e4306edfe80546ee5bfccc7db6c7230e2d5f34e298ae4"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_birds-1920.png",
+      "bytes": 1049392,
+      "sha256": "034227231a8cc162641ecfc3bfaaf48eb9282f2517671f137090f9eb26c38345"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_boat-1440.png",
+      "bytes": 565159,
+      "sha256": "3bae80dee41b5296f96817e88cf5b63570a0075dfc7bf26e57a81a0043eadd8d"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_boat-1920.png",
+      "bytes": 822268,
+      "sha256": "3bb34428b3808c35fc038036b4be6132c9051cdfb9f2525842705688dbdf38cf"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_enter-1440.png",
+      "bytes": 845556,
+      "sha256": "9de8d70189fa20361427c2d2dadfde8498bd6ed7eb20d76a36e29a82d2bb9e1d"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_enter-1920.png",
+      "bytes": 1248099,
+      "sha256": "ce55f649387878f72cc3bcceafc6f6e50ee1c7ab1f479b4c02e4bec4069595c2"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_fisherman-1440.png",
+      "bytes": 719866,
+      "sha256": "3887829c35cbab3252c9245dd8d2c5a10dc7f73ba73b6f8f7ec39c04ff182f2b"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_fisherman-1920.png",
+      "bytes": 1024135,
+      "sha256": "99911d18733411fe5eff2d9a8d19de32edc89f1658a961126b2c8e6a5c2bc378"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_fog-1440.png",
+      "bytes": 778976,
+      "sha256": "d6c7aa89ec3cfdc7a54aace7ff1856baa0508827190c8cea1f4fb91b84d23402"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_fog-1920.png",
+      "bytes": 1201719,
+      "sha256": "3d84c47235197391a81b7f61b11b01d537a5a11689a4bca16f9eb87cc72a9a54"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_nature-1440.png",
+      "bytes": 1086218,
+      "sha256": "71573881662947b0304b14676be45a598431392b7e3200291f028f3ddb2be5a2"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_nature-1920.png",
+      "bytes": 1709626,
+      "sha256": "396e88cf3e758588f08a8032f7c36f3ab34435d2b55239d599531906fda0115a"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_path-1440.png",
+      "bytes": 1122716,
+      "sha256": "d9ee30a094190fc31f0eda17eaf84aee1234b2e24730bcbcbf385291dcd94ece"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_path-1920.png",
+      "bytes": 1729070,
+      "sha256": "d43f481dc97424b0e1f62864f39d4891553d0b18dc5fd746b8ed8d1bc72c5a27"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_rocks-1440.png",
+      "bytes": 1171755,
+      "sha256": "2360fce41b94ec5442ccebd8a7cf7032f326d9e8056fcb9f71e566143d02eb54"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/CAM_rocks-1920.png",
+      "bytes": 1839489,
+      "sha256": "0c47e694514acc08e15ccfd95ba4146aecc2507319acaef5d9b2617f6e88307f"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/bad-fixtures.log",
+      "bytes": 97,
+      "sha256": "bb86272c51fa8a90fa105b9c392047e88d1ea8fe13921a9e6449d86eec58fd0b"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/blender-contract.json",
+      "bytes": 36,
+      "sha256": "cbeb7ac3e4a5c892bc49bf26cf72a7fa7fc38acb9e01d38a8d98965063697169"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/browser-full.json",
+      "bytes": 37706,
+      "sha256": "00526c204cb0cb6fa06e04b629d3fd088af06b26644a81c6abe6e86f09a93b55"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/browser-full.log",
+      "bytes": 206,
+      "sha256": "226a9b6c38b2017a87a21f02cf3b8925c9b510a235430b3a86b0518fab6a6a34"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/budget.json",
+      "bytes": 2291,
+      "sha256": "085e7022b034b2414586caf5b73de48bbc93f5551bcd4da0ecdc56d8435ef298"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/build.log",
+      "bytes": 3010,
+      "sha256": "82d5b39692e7d5dced9df657e2fa32883fd6243a5543ed668d3b00cb67d5dd44"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/native-inspection.json",
+      "bytes": 1381,
+      "sha256": "28d45a7f1eea62b1e50ccd7ecd94c25c3cb62a2fc1d667c511e1b3ac34dda548"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/node-contract.json",
+      "bytes": 582,
+      "sha256": "772c52ebfb53938e818d00ca697e51971f1d05a897a21b7736f12130f7bef5a9"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/optimization.json",
+      "bytes": 102301,
+      "sha256": "9c5f12aab6224a1f2e0d2acac4f2b32e108988c46ac1721d858eed4c1319b09b"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/optimization.log",
+      "bytes": 3516,
+      "sha256": "fdb055734f0e131a33359c77a378cdd35e39528c2536d58bd4dfca26b287585c"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/protected-after.json",
+      "bytes": 10442,
+      "sha256": "8e4cfa5dec07c02571ff563f3f73648058f325e0ff7086824d40158c790ebd19"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/protected-before.json",
+      "bytes": 9246,
+      "sha256": "7749f30858bf96ec2c7ed659ab63c9dd157bdf67885f24a88fbe42b7f7099040"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/reopened-source.json",
+      "bytes": 7750,
+      "sha256": "9c31d5633f8b8b78d0b5cd69ad83fbfef8836507c2921784c5c0ab9555e354c8"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/reopened-source.log",
+      "bytes": 850,
+      "sha256": "ec0e9eb5861ca9a11263d40791523466c721bd6c3a716af8d8966a7fa868fb7f"
+    },
+    {
+      "path": "output/jiangxue-model-v04/validation/unit-tests.log",
+      "bytes": 514,
+      "sha256": "c6941e81762a3ceaa3ddc8f46594df06b59d284a7e1419e9419e01548b517e3d"
+    }
+  ],
+  "retainedLocalAttempts": [
+    {
+      "path": "output/jiangxue-model-v04/attempts/hidden-source-matrix/before-local-matrix-correction.blend",
+      "bytes": 17683787,
+      "sha256": "f0e017c4d99ceb1ec8b94fbd28adee163f13756eb732184ecb12a4ab915ce907"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/hidden-source-matrix/reopened-source.json",
+      "bytes": 6399,
+      "sha256": "70910275bf806b0eb59d6929ab0d96ae7aed84f39d9ced4a644ce92da1e702e6"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/hidden-source-matrix/reopened-source.log",
+      "bytes": 851,
+      "sha256": "15e90da97fe6a0042cdc7a13ec2d624218dc7bde403891350f66c176e0f6475f"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_birds-1440.png",
+      "bytes": 642472,
+      "sha256": "9e5dd5a525bd73a08355edc8246a65bb9bf7db1950ef6b0479b74a9ef19d0ff0"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_birds-1920.png",
+      "bytes": 1049386,
+      "sha256": "9317cc719f0e68b1cc337400e3df6fda549d761f2f874912111f0a7d2e935127"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_boat-1440.png",
+      "bytes": 565159,
+      "sha256": "3bae80dee41b5296f96817e88cf5b63570a0075dfc7bf26e57a81a0043eadd8d"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_boat-1920.png",
+      "bytes": 822268,
+      "sha256": "3bb34428b3808c35fc038036b4be6132c9051cdfb9f2525842705688dbdf38cf"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_enter-1440.png",
+      "bytes": 845646,
+      "sha256": "d62c124f589801402eb301e6883a13ba10ebf738199b4913c5f68a6970b38480"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_enter-1920.png",
+      "bytes": 1248238,
+      "sha256": "1b4bba59ec490d734425e8cf5631df844a1c0108c06703e0e8c003e7a5d7076c"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_fisherman-1440.png",
+      "bytes": 719866,
+      "sha256": "3887829c35cbab3252c9245dd8d2c5a10dc7f73ba73b6f8f7ec39c04ff182f2b"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_fisherman-1920.png",
+      "bytes": 1024135,
+      "sha256": "99911d18733411fe5eff2d9a8d19de32edc89f1658a961126b2c8e6a5c2bc378"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_fog-1440.png",
+      "bytes": 778976,
+      "sha256": "d6c7aa89ec3cfdc7a54aace7ff1856baa0508827190c8cea1f4fb91b84d23402"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_fog-1920.png",
+      "bytes": 1201719,
+      "sha256": "3d84c47235197391a81b7f61b11b01d537a5a11689a4bca16f9eb87cc72a9a54"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_nature-1440.png",
+      "bytes": 1086186,
+      "sha256": "e0de5da878d7e66f7ee582a0e5397c206e238092d4b8f006f3727c5e4cec48fe"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_nature-1920.png",
+      "bytes": 1709728,
+      "sha256": "4d0862cd97c6953bf88881dcc5deb61bda0f7a179bf51a108bc6ae78e37af486"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_path-1440.png",
+      "bytes": 1122716,
+      "sha256": "d9ee30a094190fc31f0eda17eaf84aee1234b2e24730bcbcbf385291dcd94ece"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_path-1920.png",
+      "bytes": 1729070,
+      "sha256": "d43f481dc97424b0e1f62864f39d4891553d0b18dc5fd746b8ed8d1bc72c5a27"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_rocks-1440.png",
+      "bytes": 1171753,
+      "sha256": "0eed37e524974d4565469b5c2d063465c7cbba0f648bcf9aeaf5d8e1cc889573"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/CAM_rocks-1920.png",
+      "bytes": 1839520,
+      "sha256": "0beccbb7e9cdd1d9c9f7d955fdb7f95db7207d02e3f3e2d5a0bebdf3973705f6"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/browser-lifecycle.json",
+      "bytes": 32160,
+      "sha256": "e8a2fa100bacd47b8320f687d5f7ad5bb36b014748c44c29158c21677a1844d9"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/browser/browser-lifecycle.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/optimization.json",
+      "bytes": 102301,
+      "sha256": "41b16027ccc1619905c2e83ef1e3eb80c64ca78af8e01bf7b2c60bbf953eb735"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/optimization.log",
+      "bytes": 434,
+      "sha256": "cd8e853a38ca4d5288e9699eb56b72ab6e8089a0c1fd56debc35bcb0ff51901f"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/initial-export/scene_v04.glb",
+      "bytes": 12809568,
+      "sha256": "849c989e5a60fb32b9f3241fe4474c2df3a47ab5abc7c9956b28e77825c7db48"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/origin-correction/before-origin-correction.blend",
+      "bytes": 17673596,
+      "sha256": "06e85855045ef808f7d521df2688d81c0dc80b10812cd15488d13a11339e4398"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/origin-correction/failed-contract.json",
+      "bytes": 2198,
+      "sha256": "0af8172e4aba072fbcdee920cbc045a8e4fa3e89d788773dcaa12ef0c9029c69"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/origin-correction/jx_v04_snow_prototype.blend",
+      "bytes": 810736,
+      "sha256": "660c701d217d9a246aedb8b8245f23411cfe9110a93af031bf04e1c719007352"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/origin-correction/jx_v04_snow_remaining.blend",
+      "bytes": 3602452,
+      "sha256": "ec203a98788da4f9a43f48f5e6e8bf3051a30270c3ba8370e4b979705c316b94"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/triangle-interior-correction/before-interior-correction.blend",
+      "bytes": 17676293,
+      "sha256": "b2724be2a5e9eca5b7ac94fcaf3fc2baf2ebdfa71c41e658d2f92ed5e1ea6e2b"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/triangle-interior-correction/failed-reopened-source.log",
+      "bytes": 643,
+      "sha256": "8555a76e2ccd3880e0af06c5ec21aa7d21219b6d1f5ad37f8f0e867ac529941e"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/triangle-interior-correction/jx_v04_snow_prototype.blend",
+      "bytes": 810736,
+      "sha256": "89a91646765473492c2075dd0947868685b10ade1f452e65364dff002610593a"
+    },
+    {
+      "path": "output/jiangxue-model-v04/attempts/triangle-interior-correction/jx_v04_snow_remaining.blend",
+      "bytes": 3602452,
+      "sha256": "7574006f62435c9576fced3cddbb0c4fa40177800c8cb1e19a72b46dd6be06bf"
+    }
+  ]
+}

@@ -2,12 +2,14 @@ body[data-page=poem] {height:100svh;overflow:hidden;}
 body[data-page=poem] #app {height:100svh;min-height:0;}
 body[data-page=poem] #app>.navigation,.realm-target>.navigation,.page-return-source>.navigation {position:absolute!important;top:0;left:0;width:100%;}
 .poem-page,.realm-target .poem-page {height:100svh;min-height:0;overflow:hidden;padding:calc(var(--scene-header-height,64px) + 26px) 4% 150px;}
-.poem-fengqiao {isolation:isolate;background:#142b38;}
-.poem-fengqiao:fullscreen {height:100svh;}
+.poem-fengqiao,.poem-jiangxue {isolation:isolate;background:#142b38;}
+.poem-fengqiao:fullscreen,.poem-jiangxue:fullscreen {height:100svh;}
 .poem-scene {position:absolute;inset:0;z-index:0;}
 .poem-scene canvas,.poem-scene [data-scene-snapshot] {display:block;width:100%;height:100%;object-fit:fill;}
 .poem-fengqiao .poem-shade {pointer-events:none;background:linear-gradient(90deg,#071720bb,transparent 48%),linear-gradient(0deg,#071720aa,transparent 25%);}
+.poem-jiangxue .poem-shade {pointer-events:none;background:linear-gradient(90deg,#16323ccc,transparent 43%),linear-gradient(0deg,#17363c88,transparent 24%);}
 .poem-fengqiao .poem-toolbar,.scene-controls,.poem-fengqiao .notes-panel,.poem-fengqiao .scene-caption {z-index:2;}
+.poem-jiangxue .poem-toolbar,.poem-jiangxue .notes-panel,.poem-jiangxue .scene-caption {z-index:2;}
 .poem-line-button {writing-mode:vertical-rl;font:inherit;letter-spacing:inherit;color:inherit;background:transparent;border:0;text-shadow:inherit;padding:0;cursor:pointer;}
 .poem-line-button:hover,.poem-line-button:focus-visible {color:#ead5a3;}
 .scene-controls {position:absolute;right:4%;bottom:74px;display:flex;gap:8px;}

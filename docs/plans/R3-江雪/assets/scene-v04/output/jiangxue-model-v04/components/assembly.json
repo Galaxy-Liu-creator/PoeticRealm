@@ -1,0 +1,75 @@
+{
+  "replaced": [
+    {
+      "node": "rock_snow_v02_00",
+      "source": "src_rock_snow_v04_00",
+      "history": "history_v03_rock_snow_v02_00"
+    },
+    {
+      "node": "rock_snow_v02_01",
+      "source": "src_rock_snow_v04_01",
+      "history": "history_v03_rock_snow_v02_01"
+    },
+    {
+      "node": "rock_snow_v02_02",
+      "source": "src_rock_snow_v04_02",
+      "history": "history_v03_rock_snow_v02_02"
+    },
+    {
+      "node": "rock_snow_v02_03",
+      "source": "src_rock_snow_v04_03",
+      "history": "history_v03_rock_snow_v02_03"
+    },
+    {
+      "node": "rock_snow_v02_04",
+      "source": "src_rock_snow_v04_04",
+      "history": "history_v03_rock_snow_v02_04"
+    },
+    {
+      "node": "rock_snow_v02_05",
+      "source": "src_rock_snow_v04_05",
+      "history": "history_v03_rock_snow_v02_05"
+    },
+    {
+      "node": "rock_snow_v02_06",
+      "source": "src_rock_snow_v04_06",
+      "history": "history_v03_rock_snow_v02_06"
+    },
+    {
+      "node": "rock_snow_v02_07",
+      "source": "src_rock_snow_v04_07",
+      "history": "history_v03_rock_snow_v02_07"
+    },
+    {
+      "node": "rock_snow_v02_08",
+      "source": "src_rock_snow_v04_08",
+      "history": "history_v03_rock_snow_v02_08"
+    },
+    {
+      "node": "rock_snow_v02_09",
+      "source": "src_rock_snow_v04_09",
+      "history": "history_v03_rock_snow_v02_09"
+    },
+    {
+      "node": "rock_snow_v02_10",
+      "source": "src_rock_snow_v04_10",
+      "history": "history_v03_rock_snow_v02_10"
+    },
+    {
+      "node": "rock_snow_v02_11",
+      "source": "src_rock_snow_v04_11",
+      "history": "history_v03_rock_snow_v02_11"
+    },
+    {
+      "node": "rock_snow_v02_12",
+      "source": "src_rock_snow_v04_12",
+      "history": "history_v03_rock_snow_v02_12"
+    },
+    {
+      "node": "rock_snow_v02_13",
+      "source": "src_rock_snow_v04_13",
+      "history": "history_v03_rock_snow_v02_13"
+    }
+  ],
+  "geometryBuiltDuringAssembly": false
+}

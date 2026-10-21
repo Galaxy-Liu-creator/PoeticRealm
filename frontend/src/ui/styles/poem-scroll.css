@@ -1,0 +1,68 @@
+/* The same paper surface unrolls horizontally between two upright wooden rollers. */
+.poem-page:has(.poem-scroll) .poem-reading {
+  display:flex;flex-direction:column;align-items:flex-start;
+  width:min(32vw,520px);height:calc(100svh - var(--scene-header-height,64px) - 168px);pointer-events:none;
+}
+.poem-page:has(.poem-scroll) :is(.poem-title,.poem-columns) {flex:none;pointer-events:auto;}
+.poem-page:has(.poem-scroll) .poem-title {gap:24px;white-space:nowrap;}
+.poem-page:has(.poem-scroll) .poem-columns {width:max-content;max-width:100%;gap:clamp(28px,3.3vw,44px);}
+.poem-scroll {
+  --scroll-header:54px;--scroll-closed-width:58px;--scroll-paper:#f0e3c9;--scroll-ink:#382f25;--scroll-rule:#c9b58e;
+  position:relative;z-index:2;container-type:size;isolation:isolate;
+  width:100%;flex:1;min-height:64px;max-height:430px;margin-top:26px;color:var(--scroll-ink);
+}
+.poem-scroll-paper {
+  position:absolute;inset:0 7px;display:flex;flex-direction:column;pointer-events:auto;
+  background:linear-gradient(90deg,#c8ad7845,transparent 5%,transparent 95%,#b4996850),linear-gradient(#f4e9d4ef,#f0e3c9f5),var(--paper-art) center/cover;
+  box-shadow:inset 0 0 0 1px #c6ad7c,inset 0 0 0 6px #e2cda256,0 8px 20px #0b202629;
+  clip-path:inset(0 calc((1 - var(--scroll-progress)) * (100% - var(--scroll-closed-width) + 14px)) 0 0);
+}
+.poem-scroll[data-open=false] h2 {visibility:hidden;}
+.poem-scroll h2 {height:var(--scroll-header);flex:none;font-size:22px;line-height:1.3;}
+.poem-scroll-read-hint {display:none;}
+.poem-scroll h2 button {display:flex;align-items:center;gap:10px;width:100%;height:100%;padding:8px 22px;color:var(--scroll-ink);text-align:left;font-family:var(--font-serif);font-weight:600;}
+.poem-scroll h2 button:hover {color:#885034;background:#c6ab761a;}
+.poem-scroll h2 button:focus-visible {outline:2px solid #885034;outline-offset:-9px;}
+.poem-scroll h2 svg {width:30px;height:30px;color:#766549;flex:none;}
+.poem-scroll h2 svg:last-child {width:28px;height:28px;border-radius:50%;background:#77624a;color:#fff7e8;transform:rotate(calc((1 - var(--scroll-progress)) * 180deg));}
+.poem-scroll-action {margin-left:auto;font:12px/1.5 var(--font-sans);letter-spacing:.08em;color:#756148;}
+.poem-scroll-open {position:absolute;inset:0 auto 0 7px;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;width:calc(var(--scroll-closed-width) - 14px);padding:16px 0;color:var(--scroll-ink);background:linear-gradient(90deg,#dcc79f,var(--scroll-paper) 16%,#f4e9d4 84%,#dcc79f);pointer-events:auto;}
+.poem-scroll-open>span {writing-mode:vertical-rl;font:600 20px/1.4 var(--font-serif);letter-spacing:.14em;}
+.poem-scroll-open svg {width:28px;height:28px;border-radius:50%;background:#77624a;color:#fff7e8;}
+.poem-scroll-open small {font:12px/1.5 var(--font-sans);letter-spacing:.08em;color:#756148;}
+.poem-scroll-open:hover {color:#885034;background:#e8d7b7;}
+.poem-scroll-open:focus-visible {outline:2px solid #885034;outline-offset:-5px;}
+.poem-scroll-body {display:flex;flex-direction:column;min-height:0;overflow:auto;overscroll-behavior:contain;padding:0 22px 14px;scrollbar-width:thin;scrollbar-color:#ac9269 #eadac0;}
+.poem-scroll-body::selection,.poem-scroll-body ::selection {background:#c1b08b;color:#302a20;}
+.poem-scroll-section {display:grid;grid-template-columns:36px minmax(0,1fr);gap:14px;flex:1 0 auto;padding:8px 0;}
+.poem-scroll-section+.poem-scroll-section {border-top:1px solid var(--scroll-rule);}
+.poem-scroll-icon {display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#d5c3a36b;color:#7c684e;margin-top:3px;}
+.poem-scroll-icon svg {width:26px;height:26px;}
+.poem-scroll-section h3 {font:600 18px/1.4 var(--font-serif);letter-spacing:.07em;margin-bottom:3px;}
+.poem-scroll-section p {font:16px/1.65 var(--font-poetic);text-wrap:pretty;}
+.poem-scroll-colophon {display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none;padding:2px 0 4px;}
+.poem-scroll-seal {border:1px solid #a6533b;border-radius:2px;color:#a6533b;padding:2px 1px;writing-mode:vertical-rl;font:13px/1 var(--font-brand);}
+.poem-scroll-colophon a {display:inline-flex;align-items:center;gap:3px;min-height:28px;color:#715d43;font:12px/1.5 var(--font-sans);text-underline-offset:3px;}
+.poem-scroll-colophon a:hover {color:#8a492e;text-decoration:underline;}
+.poem-scroll-colophon svg {width:16px;height:16px;}
+.poem-scroll-roller {position:absolute;top:-6px;bottom:-6px;z-index:2;width:13px;border-radius:7px;background:linear-gradient(90deg,#9b8159,#e9d7b2 25%,#f5e9ce 43%,#c5ad81 73%,#8b714a);box-shadow:2px 3px 5px #0b20263b;pointer-events:none;}
+.poem-scroll-roller-left {left:-6px;}
+.poem-scroll-roller-right {right:-6px;transform:translateX(calc((1 - var(--scroll-progress)) * (var(--scroll-closed-width) - 100cqw)));}
+.poem-scroll-roller i {position:absolute;left:-3px;width:19px;height:13px;border-radius:40%;background:linear-gradient(#3f362b,#b39461 25%,#3f362b 45%,#d3b581 65%,#574a35);box-shadow:1px 1px 2px #1f292b70;}
+.poem-scroll-roller i:first-child {top:0;}.poem-scroll-roller i:last-child {bottom:0;transform:scaleY(-1);}
+.poem-scroll[data-manual=true] .poem-scroll-paper {transition:clip-path .55s cubic-bezier(.16,1,.3,1);}
+.poem-scroll[data-manual=true] .poem-scroll-roller-right {transition:transform .55s cubic-bezier(.16,1,.3,1);}
+.poem-scroll[data-manual=true] h2 svg:last-child {transition:transform .3s ease;}
+.no-motion .poem-scroll * {transition:none!important;}
+@media(prefers-reduced-motion:reduce) {.poem-scroll * {transition:none!important;}}
+@media(min-width:1000px) and (max-height:760px) {
+  .poem-page:has(.poem-scroll) .poem-reading {height:calc(100svh - var(--scene-header-height,64px) - 172px);}
+  .poem-scroll {--scroll-header:50px;margin-top:18px;}
+  .poem-scroll h2 {font-size:20px;}
+  .poem-scroll [aria-expanded=true] .poem-scroll-read-hint {display:inline;font:11px/1.5 var(--font-sans);color:#756148;}
+  .poem-scroll h2 button {padding-inline:16px;gap:8px;}
+  .poem-scroll-body {padding-inline:16px;}
+  .poem-scroll-section {grid-template-columns:28px minmax(0,1fr);gap:10px;}
+  .poem-scroll-icon {width:28px;height:28px;}.poem-scroll-icon svg {width:23px;height:23px;}
+  .poem-scroll-section p {font-size:16px;}
+}

@@ -1,0 +1,85 @@
+{
+  "request": "这个模型怎么在网页里不能鼠标拖动旋转？枫桥夜泊的可以",
+  "stage": "jiangxue-product-orbit-v01",
+  "files": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 146022,
+      "sha256": "3c9a997fccf762f01e91918f8f1b9351b297a856a4bc76454f7c7f0e61024139"
+    },
+    {
+      "path": "frontend/src/scenes/JiangxueScene.ts",
+      "bytes": 12719,
+      "sha256": "72584db9a8844f129c5d258b3509c05693362debb48a74984f655e747df3a189"
+    },
+    {
+      "path": "frontend/tools/verify-jiangxue-orbit.mjs",
+      "bytes": 7637,
+      "sha256": "1dbb36c51526244a185ec00432be600f3e39f8e844ad518042e5a8000a0c76a2"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/browser/before.png",
+      "bytes": 807861,
+      "sha256": "094715bb9700dfafa731dce94138e0cbb10557868330d584fef68f51a2f6eeb9"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/browser/dragged.png",
+      "bytes": 796195,
+      "sha256": "ab53be8edd59b4e21cd44775aa7a1082500c827ad9a0148d0dd18338888f83e7"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/browser/verification.json",
+      "bytes": 7712,
+      "sha256": "ad4fdb60fecac4789562123a9344045b265456c9e5d210d728b9731b7f7586cc"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/browser-run.log",
+      "bytes": 565,
+      "sha256": "5f3979a12f5fcb9699ae63c99330e1d30c67f8e880f12311f68a74217fa9fb6b"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/build.log",
+      "bytes": 3099,
+      "sha256": "bef2899df952b55af8e9cd152873024eae84f29e2bbdcf479a62cfccc6bd94ff"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/deploy.log",
+      "bytes": 262,
+      "sha256": "36d5ceacbed4f5a98a24e3ecc998b2ce8395e013accecf4973af546a53534e48"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/deployment-check.json",
+      "bytes": 739,
+      "sha256": "9c55cc131f31f344964b2718873812a83b203e5a4cc7f8192b160006a8fe745d"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/docker-build.log",
+      "bytes": 6844,
+      "sha256": "a68733f38e80de2ca9fd4e61d4bded97efd44913de1926474c87952b767842b0"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/interaction-detector.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/services-after.jsonl",
+      "bytes": 4142,
+      "sha256": "7b8aa5aa234b5d62350be33ae03f6ec622919a5f70d91730b2f4512ae57142b3"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/services-before.jsonl",
+      "bytes": 4142,
+      "sha256": "2dba0e42e685a470a4070ae25ffd8cfa4ab99a3dd2ca4492c14e7ff7fa0ac40b"
+    },
+    {
+      "path": "output/jiangxue-orbit-v01/validation/unit-tests.log",
+      "bytes": 520,
+      "sha256": "c8816cc2f8734958e4aba24dd1b31b705365ba0faa176a3e83c3ee4b00e4f323"
+    }
+  ],
+  "unchangedModel": {
+    "path": "frontend/public/assets/models/jiangxue/scene_v06.glb",
+    "sha256": "2e450af0f912cd0254fdd1554429252337da081b55d63c20f15385f12bd8e45f"
+  }
+}

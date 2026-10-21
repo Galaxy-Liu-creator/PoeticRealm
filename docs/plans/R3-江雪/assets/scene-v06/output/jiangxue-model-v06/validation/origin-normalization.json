@@ -1,0 +1,252 @@
+{
+  "objects": [
+    {
+      "object": "shore_rock_v02_00",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "shore_rock_v02_01",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "shore_rock_v02_02",
+      "worldSurfaceDeviationMetres": 2.384185791015625e-07
+    },
+    {
+      "object": "shore_rock_v02_03",
+      "worldSurfaceDeviationMetres": 1.9110702922202824e-06
+    },
+    {
+      "object": "shore_rock_v02_04",
+      "worldSurfaceDeviationMetres": 2.9802322387695312e-08
+    },
+    {
+      "object": "shore_rock_v02_05",
+      "worldSurfaceDeviationMetres": 1.9110702922202824e-06
+    },
+    {
+      "object": "shore_rock_v02_06",
+      "worldSurfaceDeviationMetres": 4.271620003502111e-06
+    },
+    {
+      "object": "shore_rock_v02_07",
+      "worldSurfaceDeviationMetres": 7.864199877963372e-06
+    },
+    {
+      "object": "shore_rock_v02_08",
+      "worldSurfaceDeviationMetres": 7.865103341677992e-06
+    },
+    {
+      "object": "shore_rock_v02_09",
+      "worldSurfaceDeviationMetres": 7.629627358341049e-06
+    },
+    {
+      "object": "shore_rock_v02_10",
+      "worldSurfaceDeviationMetres": 2.384185791015625e-07
+    },
+    {
+      "object": "shore_rock_v02_11",
+      "worldSurfaceDeviationMetres": 1.5288591384887695e-05
+    },
+    {
+      "object": "shore_rock_v02_12",
+      "worldSurfaceDeviationMetres": 1.537938444411291e-05
+    },
+    {
+      "object": "shore_rock_v02_13",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "rock_snow_v02_00",
+      "worldSurfaceDeviationMetres": 1.3486991523486091e-06
+    },
+    {
+      "object": "rock_snow_v02_01",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "rock_snow_v02_02",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "rock_snow_v02_03",
+      "worldSurfaceDeviationMetres": 0.0
+    },
+    {
+      "object": "rock_snow_v02_04",
+      "worldSurfaceDeviationMetres": 4.264961199760036e-06
+    },
+    {
+      "object": "rock_snow_v02_05",
+      "worldSurfaceDeviationMetres": 3.814697265625e-06
+    },
+    {
+      "object": "rock_snow_v02_06",
+      "worldSurfaceDeviationMetres": 3.814697265625e-06
+    },
+    {
+      "object": "rock_snow_v02_07",
+      "worldSurfaceDeviationMetres": 7.62939453125e-06
+    },
+    {
+      "object": "rock_snow_v02_08",
+      "worldSurfaceDeviationMetres": 7.688768146799611e-06
+    },
+    {
+      "object": "rock_snow_v02_09",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "rock_snow_v02_10",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "rock_snow_v02_11",
+      "worldSurfaceDeviationMetres": 1.528856233776226e-05
+    },
+    {
+      "object": "rock_snow_v02_12",
+      "worldSurfaceDeviationMetres": 1.9073486328125e-06
+    },
+    {
+      "object": "rock_snow_v02_13",
+      "worldSurfaceDeviationMetres": 1.5377536293599222e-05
+    },
+    {
+      "object": "src_rock_v06_00",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "src_rock_v06_01",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "src_rock_v06_02",
+      "worldSurfaceDeviationMetres": 2.384185791015625e-07
+    },
+    {
+      "object": "src_rock_v06_03",
+      "worldSurfaceDeviationMetres": 1.9110702922202824e-06
+    },
+    {
+      "object": "src_rock_v06_04",
+      "worldSurfaceDeviationMetres": 2.9802322387695312e-08
+    },
+    {
+      "object": "src_rock_v06_05",
+      "worldSurfaceDeviationMetres": 1.9110702922202824e-06
+    },
+    {
+      "object": "src_rock_v06_06",
+      "worldSurfaceDeviationMetres": 4.271620003502111e-06
+    },
+    {
+      "object": "src_rock_v06_07",
+      "worldSurfaceDeviationMetres": 7.864199877963372e-06
+    },
+    {
+      "object": "src_rock_v06_08",
+      "worldSurfaceDeviationMetres": 7.865103341677992e-06
+    },
+    {
+      "object": "src_rock_v06_09",
+      "worldSurfaceDeviationMetres": 7.629627358341049e-06
+    },
+    {
+      "object": "src_rock_v06_10",
+      "worldSurfaceDeviationMetres": 2.384185791015625e-07
+    },
+    {
+      "object": "src_rock_v06_11",
+      "worldSurfaceDeviationMetres": 1.5288591384887695e-05
+    },
+    {
+      "object": "src_rock_v06_12",
+      "worldSurfaceDeviationMetres": 1.537938444411291e-05
+    },
+    {
+      "object": "src_rock_v06_13",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "src_snow_v06_00",
+      "worldSurfaceDeviationMetres": 1.3486991523486091e-06
+    },
+    {
+      "object": "src_snow_v06_01",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "src_snow_v06_02",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "src_snow_v06_03",
+      "worldSurfaceDeviationMetres": 0.0
+    },
+    {
+      "object": "src_snow_v06_04",
+      "worldSurfaceDeviationMetres": 4.264961199760036e-06
+    },
+    {
+      "object": "src_snow_v06_05",
+      "worldSurfaceDeviationMetres": 3.814697265625e-06
+    },
+    {
+      "object": "src_snow_v06_06",
+      "worldSurfaceDeviationMetres": 3.814697265625e-06
+    },
+    {
+      "object": "src_snow_v06_07",
+      "worldSurfaceDeviationMetres": 7.62939453125e-06
+    },
+    {
+      "object": "src_snow_v06_08",
+      "worldSurfaceDeviationMetres": 7.688768146799611e-06
+    },
+    {
+      "object": "src_snow_v06_09",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "src_snow_v06_10",
+      "worldSurfaceDeviationMetres": 9.5367431640625e-07
+    },
+    {
+      "object": "src_snow_v06_11",
+      "worldSurfaceDeviationMetres": 1.528856233776226e-05
+    },
+    {
+      "object": "src_snow_v06_12",
+      "worldSurfaceDeviationMetres": 1.9073486328125e-06
+    },
+    {
+      "object": "src_snow_v06_13",
+      "worldSurfaceDeviationMetres": 1.5377536293599222e-05
+    },
+    {
+      "object": "dead_tree_fine_v02",
+      "worldSurfaceDeviationMetres": 2.86102294921875e-06
+    },
+    {
+      "object": "dead_tree_snow_v02",
+      "worldSurfaceDeviationMetres": 2.6973983046972182e-06
+    },
+    {
+      "object": "dead_tree_roots_v06",
+      "worldSurfaceDeviationMetres": 2.7392209274950164e-06
+    },
+    {
+      "object": "src_dead_tree_fine_v06",
+      "worldSurfaceDeviationMetres": 2.86102294921875e-06
+    },
+    {
+      "object": "src_dead_tree_snow_v06",
+      "worldSurfaceDeviationMetres": 2.6973983046972182e-06
+    },
+    {
+      "object": "src_dead_tree_roots_v06",
+      "worldSurfaceDeviationMetres": 2.7392209274950164e-06
+    }
+  ]
+}

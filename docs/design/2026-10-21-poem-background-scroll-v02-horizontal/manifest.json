@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-21",
+  "request": "request.json",
+  "reference": {
+    "source": "User follow-up to the original attached UI design",
+    "previous_version": "../2026-10-21-poem-background-scroll-v01/manifest.json"
+  },
+  "implementation": {
+    "tools": [
+      "Codex",
+      "TypeScript",
+      "CSS",
+      "original SVG interface icons"
+    ],
+    "new_generated_bitmap": false,
+    "direction": "Left roller fixed; right roller translates horizontally. Paper clips horizontally at its original text width. Folded panel exposes a narrow open control; uncovered space passes pointer input to the live scene."
+  },
+  "validation": {
+    "browser": "evidence/browser/verification.json",
+    "deployed_browser": "evidence/deployed-browser/verification.json",
+    "deployment": "evidence/deployment/verification.json",
+    "note": "The axis/layout run precedes the final pointer-events refinement. The deployed run verifies the final build, keyboard folding, horizontal geometry and scene hit testing in the uncovered area. All PNGs are actual WebGL product screenshots using an isolated account API fixture."
+  },
+  "source_sha256": [
+    {
+      "file": "frontend/src/ui/components/PoemBackground.ts",
+      "sha256": "1cad876b5bb0e4b392f606d3b315cd52f6dc0d63fa2f695cd9c4d2c2d68cf163"
+    },
+    {
+      "file": "frontend/src/ui/PoemScroll.ts",
+      "sha256": "d328d8f92e9f94dc55d07fe08ba056fd5c3b1476d536472cb8248668a58e3416"
+    },
+    {
+      "file": "frontend/src/ui/styles/poem-scroll.css",
+      "sha256": "1c387dba409fa5e6dea6400c4684f6f6d6a5f854f2cca6c4706447db47288100"
+    },
+    {
+      "file": "frontend/tools/verify-poem-scroll.mjs",
+      "sha256": "542b6dd12d6b79317eea5c6a6acb3178a655162c929ddd5f83ede6c0918b45a8"
+    }
+  ],
+  "evidence_sha256": [
+    {
+      "file": "evidence/browser/fengqiao-1280.png",
+      "sha256": "f460d8592e018d33c2a2b602565f0a2945cc42c7b88411bd671b3e5a89542156"
+    },
+    {
+      "file": "evidence/browser/fengqiao-1440.png",
+      "sha256": "564d6e3ec2d1fd43745c7906af2140c37798bf54cd8a872d650730df98a644ab"
+    },
+    {
+      "file": "evidence/browser/fengqiao-1920.png",
+      "sha256": "e2a97148f7765208a999ebb886268aa47533e5a3027c041f16366d767470d560"
+    },
+    {
+      "file": "evidence/browser/fengqiao-horizontal-collapsed.png",
+      "sha256": "61796e34b50b496107b98c0a664bd0c5ed56927953255b86edfbdb7a3a7af7a9"
+    },
+    {
+      "file": "evidence/browser/fengqiao-horizontal-mid.png",
+      "sha256": "051add116c758a45e91d82eb16f2cb3dd8c62619876f5aa7c7fd7e3962342448"
+    },
+    {
+      "file": "evidence/browser/jiangxue-1280.png",
+      "sha256": "c899778f58d5a52abd940140f92b9e0aeaece9809955f10d76afeec5e1738d18"
+    },
+    {
+      "file": "evidence/browser/jiangxue-1440.png",
+      "sha256": "37af74c1dacc0c55622f2c6f9b6b04781ffa7480d18acfcf3626961d26f7e0b9"
+    },
+    {
+      "file": "evidence/browser/jiangxue-1920.png",
+      "sha256": "7bc590b586111c68d382d7a47e504424ae122ea185a732f5531c63687fc22550"
+    },
+    {
+      "file": "evidence/browser/jiangxue-horizontal-collapsed.png",
+      "sha256": "bb52bad9668559b8640e454f1868bd9111b3d9314205b782f0571b3ebcca8982"
+    },
+    {
+      "file": "evidence/browser/jiangxue-horizontal-mid.png",
+      "sha256": "abd9fc92939260b4705319a901024c174dcc225c106d63ad32fbca24d443f29e"
+    },
+    {
+      "file": "evidence/browser/verification.json",
+      "sha256": "7fbfd67bc0b0ab83b8ae31dec8597b508affb10c4e5faba06a695c9fb0e6f1fb"
+    },
+    {
+      "file": "evidence/build-before-pointer-check.log",
+      "sha256": "777b5e0d67df0c46fb0eda2d40477f399ab51ee02f0e0d212e62d4018cef5d78"
+    },
+    {
+      "file": "evidence/build.log",
+      "sha256": "ca5dd6a38c4df53e5b04dcd03850c84eda54655374ac2062a00a88a67ecd620c"
+    },
+    {
+      "file": "evidence/deployed-browser/fengqiao-deployed-collapsed.png",
+      "sha256": "5fba3f661b1ceb160e1370a51c95bef8f6afbba70be6f25d6e6bb1eb5067aa05"
+    },
+    {
+      "file": "evidence/deployed-browser/fengqiao-deployed.png",
+      "sha256": "6fb8ebf3cdbb35b8c3f9d42247642204547bb0dac5b795cb8ab839807a2d5596"
+    },
+    {
+      "file": "evidence/deployed-browser/jiangxue-deployed-collapsed.png",
+      "sha256": "bb52bad9668559b8640e454f1868bd9111b3d9314205b782f0571b3ebcca8982"
+    },
+    {
+      "file": "evidence/deployed-browser/jiangxue-deployed.png",
+      "sha256": "37af74c1dacc0c55622f2c6f9b6b04781ffa7480d18acfcf3626961d26f7e0b9"
+    },
+    {
+      "file": "evidence/deployed-browser/verification.json",
+      "sha256": "8139ce1f15597fad4f3cd4b7e5e73b1456d66a527c35e0922e1300fd84f06e73"
+    },
+    {
+      "file": "evidence/deployment/after.json",
+      "sha256": "f99053feec0d49c608bd5f1ec6c4c8710c1f81f5970510607bfa4dfa663990d7"
+    },
+    {
+      "file": "evidence/deployment/before.json",
+      "sha256": "64fb5a80f57bcf039f33457c03c795efbc615f0c1344002ea4ddfcb1d25b2485"
+    },
+    {
+      "file": "evidence/deployment/build.log",
+      "sha256": "482b66a0f82a5e680ef0e8915e815c0e926208132750dad9a9b70e0a9c8799be"
+    },
+    {
+      "file": "evidence/deployment/update.log",
+      "sha256": "36d5ceacbed4f5a98a24e3ecc998b2ce8395e013accecf4973af546a53534e48"
+    },
+    {
+      "file": "evidence/deployment/verification.json",
+      "sha256": "a64c08745d2f3e07ceea1edfd43fd29f546c68914f4e7d0aece886995634a396"
+    },
+    {
+      "file": "evidence/design-check.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "file": "evidence/unit-tests.log",
+      "sha256": "33710ebba51fc4b3ac36db5d3e03d311a1e418c9aa84d8b8a7e0b41e5d3b6453"
+    }
+  ]
+}

@@ -550,3 +550,21 @@ v02沿用正式机位、焦点、PLACE/SFX、boat_guest/boat_hull_closed、fishe
 独立 `jiangxue-scene-v03.blend` / `glb_scene_v03` / `models/jiangxue/scene_v03.glb` / `scenes/jiangxue.scene-v03.json`，仍是quality-sample。岸山不变，v03明确复用`terrain: "jiangxue-v02"`原高度图及米值；不据此放行其他跨版本模型。Blender水面预览只放非导出集合`jiangxue_preview_v03`，与枫桥相同，发布河面继续由NightRiver系统生成。
 
 v03沿用18.3已登记的`boatNavigation`（glTF世界[x,z]米制路径、speed、brakingDistance），局部+X船首沿实际河道中线平行路径，首点匹配制作舟位置。水位0m，制作舟根降至-0.30m，实际吃水须按闭合舟壳实测，不能仅以根标高当吃水。PLACE标记记录初始制作位姿；人物、竿、FOCUS/SFX随舟，钓线的水端点需随同一时刻河面修正。舟近景相机跟随水平航行框架，不继承小幅滚转；运动阴影与倒影使用同一帧位姿。减少动态固定航行t=0，seek必须从全局时间重建，不累计步进。无新网格属性、材质角色或高度图编码。
+
+### 18.8 江雪岩雪轮廓 v04（2026-10-19）
+
+独立 `jiangxue-scene-v04.blend` / `glb_scene_v04` / `models/jiangxue/scene_v04.glb` / `scenes/jiangxue.scene-v04.json`，继续使用 `quality-sample`。明确复用 v02 高度图与 v03 `boatNavigation`；浮舟、人物接触、钓线水端与非导出预览水面规则沿用18.7。
+
+仅替换十四个 `rock_snow_v02_NN` 节点的网格，保留其既有发布节点名、层级、米制、UV0、`pbr_snow__driftv02` 材质及原像素纹理。独立制作组件为 `src_rock_snow_v04_NN`，底面按支撑岩面取样并嵌入6mm，雪冠有实际厚度、连续边界与圆弧剖面。源组件与旧雪体保持隐藏且不进入发布集合；不新增运行时属性或材质槽位。v01–v03与枫桥历史资产保持。
+
+### 18.9 江雪岩岸水线与岸雪 v05（2026-10-20）
+
+独立 `jiangxue-scene-v05.blend` / `glb_scene_v05` / `models/jiangxue/scene_v05.glb` / `scenes/jiangxue.scene-v05.json`，继续使用quality-sample范围、v02高度图及v03航线。v04及更早源与发布资产保持。
+
+`shore_rock_v02_NN`保留外表面和节点变换，允许沿世界高程0.22m切分原三角面并插值UV，使原有`pbr_rock__jxbank`/`pbr_rock__jxwetv02`两个槽位沿连续水线切换。`shore_snow_v02`保留节点语义及原雪材质，替换为按实际岸坡网格取样的闭合薄雪体，底面嵌入约6mm，雪缘薄、内侧雪冠有实际厚度。独立源组件与历史网格均不导出；不新增运行时属性、材质角色、纹理或高度图编码。继承18.7–18.8的舟体/人物/钓线、岩雪接触与预算校验。
+
+### 18.10 江雪建模定稿 v06（2026-10-21）
+
+独立`jiangxue-scene-v06.blend` / `glb_scene_v06` / `models/jiangxue/scene_v06.glb` / `scenes/jiangxue.scene-v06.json`。运行清单scope继续quality-sample，建模状态独立记录。v06使用自身`terrain: "jiangxue-v06"`高度图，保留600m米制、1024² RGB8/RG16+B编码及v03航线。
+
+保留舟、53骨骼人物和钓具接口。十四对`shore_rock_v02_NN`/`rock_snow_v02_NN`允许共同正比例仿射，世界0.22m干湿边界保持，雪底嵌入随纵向比例变化，需对实际支撑岩面重新检查。`dead_tree_fine_v02`、`dead_tree_snow_v02`替换为三维弯曲次枝及上侧枝雪；新增静态`dead_tree_roots_v06`沿用pbr_wood角色。各组件源/历史隐藏不导出。八个既有机位在Blender定稿，材质/高度图/河道按制作、GLB和浏览器同时检查；不新增运行时自定义属性或材质角色。

@@ -1,0 +1,32 @@
+{
+  "method": "actual sequential playback, no seeking",
+  "frames": [
+    {
+      "target": 2,
+      "currentTime": 2.006175,
+      "duration": null,
+      "ended": false,
+      "width": 1440,
+      "height": 900,
+      "path": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/output/jiangxue-model-v05/validation/canvas-capture/playback-2000ms.png"
+    },
+    {
+      "target": 9.283100000000093,
+      "currentTime": 9.291179,
+      "duration": 18.883,
+      "ended": false,
+      "width": 1440,
+      "height": 900,
+      "path": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/output/jiangxue-model-v05/validation/canvas-capture/playback-9283ms.png"
+    },
+    {
+      "target": 18.083,
+      "currentTime": 18.095465,
+      "duration": 18.883,
+      "ended": false,
+      "width": 1440,
+      "height": 900,
+      "path": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/output/jiangxue-model-v05/validation/canvas-capture/playback-18083ms.png"
+    }
+  ]
+}

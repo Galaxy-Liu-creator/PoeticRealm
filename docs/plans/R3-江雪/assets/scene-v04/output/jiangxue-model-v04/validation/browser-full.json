@@ -1,0 +1,1614 @@
+{
+  "revision": "04",
+  "fixture": "isolated authentication; real Chrome/WebGL and published Jiangxue GLB",
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "warnings": [
+    "THREE.WebGLRenderer: KHR_parallel_shader_compile extension not supported.",
+    "[.WebGL-0x1ed400cbe000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x1ed400cbe000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x1ed400cbe000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x1ed400cbe000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "views": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "04",
+      "view": "CAM_enter",
+      "time": 8,
+      "playing": false,
+      "fps": 0.7639544802632143,
+      "calls": 141,
+      "triangles": 418448,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        -13,
+        7,
+        25
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "04",
+      "view": "CAM_birds",
+      "time": 8,
+      "playing": false,
+      "fps": 1.08193819923143,
+      "calls": 93,
+      "triangles": 289309,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        8,
+        7.300000190734863,
+        18
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "04",
+      "view": "CAM_path",
+      "time": 8,
+      "playing": false,
+      "fps": 1.0968280753521158,
+      "calls": 97,
+      "triangles": 293720,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        12,
+        6.5,
+        10
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "04",
+      "view": "CAM_fog",
+      "time": 8,
+      "playing": false,
+      "fps": 1.3031755113777204,
+      "calls": 91,
+      "triangles": 334742,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        14,
+        4.800000190734863,
+        18
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "04",
+      "view": "CAM_boat",
+      "time": 8,
+      "playing": false,
+      "fps": 1.391692304447661,
+      "calls": 51,
+      "triangles": 282972,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        11.256656609820698,
+        2.9000000953674316,
+        2.4785750198163212
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "04",
+      "view": "CAM_fisherman",
+      "time": 8,
+      "playing": false,
+      "fps": 1.3657337140096435,
+      "calls": 38,
+      "triangles": 237180,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        7.321065832518546,
+        2.4000000953674316,
+        1.011903882976298
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "04",
+      "view": "CAM_nature",
+      "time": 8,
+      "playing": false,
+      "fps": 1.220113401665109,
+      "calls": 78,
+      "triangles": 263504,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        11,
+        8,
+        0
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "revision": "04",
+      "view": "CAM_rocks",
+      "time": 8,
+      "playing": false,
+      "fps": 1.0863974445845246,
+      "calls": 88,
+      "triangles": 279777,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        4,
+        6,
+        7
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "04",
+      "view": "CAM_enter",
+      "time": 8,
+      "playing": false,
+      "fps": 1.1022094505726414,
+      "calls": 141,
+      "triangles": 418448,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        -13,
+        7,
+        25
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "04",
+      "view": "CAM_birds",
+      "time": 8,
+      "playing": false,
+      "fps": 1.4686317635157127,
+      "calls": 91,
+      "triangles": 284711,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        8,
+        7.300000190734863,
+        18
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "04",
+      "view": "CAM_path",
+      "time": 8,
+      "playing": false,
+      "fps": 1.4650030150643802,
+      "calls": 97,
+      "triangles": 293720,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        12,
+        6.5,
+        10
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "04",
+      "view": "CAM_fog",
+      "time": 8,
+      "playing": false,
+      "fps": 1.7734159643637883,
+      "calls": 69,
+      "triangles": 309852,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        14,
+        4.800000190734863,
+        18
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "04",
+      "view": "CAM_boat",
+      "time": 8,
+      "playing": false,
+      "fps": 1.881835767963348,
+      "calls": 51,
+      "triangles": 282972,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        11.256656609820698,
+        2.9000000953674316,
+        2.4785750198163212
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "04",
+      "view": "CAM_fisherman",
+      "time": 8,
+      "playing": false,
+      "fps": 1.8176469831635587,
+      "calls": 38,
+      "triangles": 237180,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        7.321065832518546,
+        2.4000000953674316,
+        1.011903882976298
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "04",
+      "view": "CAM_nature",
+      "time": 8,
+      "playing": false,
+      "fps": 1.6436125234880015,
+      "calls": 53,
+      "triangles": 229040,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        11,
+        8,
+        0
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "revision": "04",
+      "view": "CAM_rocks",
+      "time": 8,
+      "playing": false,
+      "fps": 1.4804219585250689,
+      "calls": 71,
+      "triangles": 258456,
+      "navigation": {
+        "speed": 0.1,
+        "length": 56.555988774492945,
+        "forward": [
+          0.1560842343612322,
+          0,
+          -0.9877437480358294
+        ],
+        "position": [
+          2.1248320886670813,
+          -0.29846029688728165,
+          1.2097994280960012
+        ],
+        "quaternion": [
+          0.0025692779329687574,
+          0.6495784986554614,
+          -0.0007793357512609177,
+          0.7602897904951813
+        ],
+        "end": [
+          9.86176138535489,
+          -54
+        ],
+        "effectiveTime": 8,
+        "worldForward": [
+          0.15609433344060722,
+          0.0021528533745497694,
+          -0.9877398059661664
+        ],
+        "waterSurface": 0.0015397150336472927,
+        "lineEndpoint": [
+          3.6403568278842586,
+          -0.009132148692353237,
+          0.4758466217499101
+        ],
+        "lineWaterGap": -0.00599999999999999
+      },
+      "camera": [
+        4,
+        6,
+        7
+      ],
+      "memory": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "programs": 18,
+      "contextLost": false,
+      "disposed": false
+    }
+  ],
+  "release": [
+    {
+      "cycle": 1,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 2,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 3,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 4,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 5,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 6,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 7,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 8,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 9,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 10,
+      "before": {
+        "geometries": 71,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 71,
+        "textures": 22
+      }
+    }
+  ],
+  "performance": [
+    {
+      "view": "CAM_enter",
+      "durationMs": 60278.00000000076,
+      "frames": 66,
+      "fps": 1.0949268389793818,
+      "p95Ms": 1000,
+      "stats": {
+        "revision": "04",
+        "view": "CAM_enter",
+        "time": 14.799999999999976,
+        "playing": true,
+        "fps": 1.0823723477562988,
+        "calls": 194,
+        "triangles": 562200,
+        "navigation": {
+          "speed": 0.1,
+          "length": 56.555988774492945,
+          "forward": [
+            0.15612873195277907,
+            0,
+            -0.987736715455499
+          ],
+          "position": [
+            2.2309864355525066,
+            -0.2948038548117047,
+            0.5381363747922168
+          ],
+          "quaternion": [
+            0.0013291559973745625,
+            0.6495645619686208,
+            -0.000403189075190257,
+            0.7603051694006941
+          ],
+          "end": [
+            9.86176138535489,
+            -54
+          ],
+          "effectiveTime": 14.799999999999976,
+          "worldForward": [
+            0.15613143454616688,
+            0.001113651790219071,
+            -0.9877356604508346
+          ],
+          "waterSurface": 0.005196157109224286,
+          "lineEndpoint": [
+            3.7459074158004775,
+            -0.004578883011304713,
+            -0.19615979576976617
+          ],
+          "lineWaterGap": -0.0059999999999999845
+        },
+        "camera": [
+          -13,
+          7,
+          25
+        ],
+        "memory": {
+          "geometries": 71,
+          "textures": 22
+        },
+        "programs": 18,
+        "contextLost": false,
+        "disposed": false
+      }
+    },
+    {
+      "view": "CAM_boat",
+      "durationMs": 60398.70000000147,
+      "frames": 93,
+      "fps": 1.5397682400448642,
+      "p95Ms": 683.3999999999942,
+      "stats": {
+        "revision": "04",
+        "view": "CAM_boat",
+        "time": 24.40000000000009,
+        "playing": true,
+        "fps": 1.5275005740147578,
+        "calls": 104,
+        "triangles": 426724,
+        "navigation": {
+          "speed": 0.1,
+          "length": 56.555988774492945,
+          "forward": [
+            0.1561333327837604,
+            0,
+            -0.9877359882042547
+          ],
+          "position": [
+            2.380877679865915,
+            -0.30249034737162067,
+            -0.410089663662207
+          ],
+          "quaternion": [
+            0.002418515991328456,
+            0.6495600983764409,
+            -0.0007336379838080705,
+            0.7603060509774315
+          ],
+          "end": [
+            9.86176138535489,
+            -54
+          ],
+          "effectiveTime": 24.40000000000009,
+          "worldForward": [
+            0.1561422807449942,
+            0.002026364173872297,
+            -0.9877324951685988
+          ],
+          "waterSurface": -0.0024903354506917315,
+          "lineEndpoint": [
+            3.8963616826428202,
+            -0.011668303690577475,
+            -1.1440172499157075
+          ],
+          "lineWaterGap": -0.006000000000000008
+        },
+        "camera": [
+          11.512639121634434,
+          2.9000000953674316,
+          0.8591398498291357
+        ],
+        "memory": {
+          "geometries": 71,
+          "textures": 22
+        },
+        "programs": 18,
+        "contextLost": false,
+        "disposed": false
+      }
+    },
+    {
+      "view": "CAM_fisherman",
+      "durationMs": 60189.59999999998,
+      "frames": 78,
+      "fps": 1.2959049403883733,
+      "p95Ms": 833.2999999999884,
+      "stats": {
+        "revision": "04",
+        "view": "CAM_fisherman",
+        "time": 32.400000000000205,
+        "playing": true,
+        "fps": 1.2774445776041174,
+        "calls": 91,
+        "triangles": 380932,
+        "navigation": {
+          "speed": 0.1,
+          "length": 56.555988774492945,
+          "forward": [
+            0.1560851009102066,
+            0,
+            -0.9877436111025223
+          ],
+          "position": [
+            2.5057682095608054,
+            -0.30343783695196697,
+            -1.2002810080277473
+          ],
+          "quaternion": [
+            0.002178681289647464,
+            0.6495793884469724,
+            -0.0006608582881463737,
+            0.7602903621110941
+          ],
+          "end": [
+            9.86176138535489,
+            -54
+          ],
+          "effectiveTime": 32.400000000000205,
+          "worldForward": [
+            0.15609236274236069,
+            0.0018255645451022732,
+            -0.9877407765236784
+          ],
+          "waterSurface": -0.0034378250310380274,
+          "lineEndpoint": [
+            4.021093347024966,
+            -0.011930680702475216,
+            -1.934362182115157
+          ],
+          "lineWaterGap": -0.005999999999999975
+        },
+        "camera": [
+          7.702002127024322,
+          2.4000000953674316,
+          -1.3981719944839117
+        ],
+        "memory": {
+          "geometries": 71,
+          "textures": 22
+        },
+        "programs": 18,
+        "contextLost": false,
+        "disposed": false
+      }
+    }
+  ],
+  "renderer": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "vendor": "Google Inc. (Google)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "navigation": [
+    {
+      "time": 0,
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.15598837149777833,
+        0,
+        -0.9877588916114455
+      ],
+      "position": [
+        2,
+        -0.297435732639526,
+        2
+      ],
+      "quaternion": [
+        0.0024032842577652747,
+        0.6496159358544803,
+        -0.0007289233997486456,
+        0.7602583960597616
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 0,
+      "worldForward": [
+        0.15599720910917003,
+        0.0020140832349783903,
+        -0.9877554425154399
+      ],
+      "waterSurface": 0.0025642792814029786,
+      "lineEndpoint": [
+        3.51536836990987,
+        -0.008152435205826813,
+        1.2658450819154559
+      ],
+      "lineWaterGap": -0.005999999999999955
+    },
+    {
+      "time": 8,
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.1560842343612322,
+        0,
+        -0.9877437480358294
+      ],
+      "position": [
+        2.1248320886670813,
+        -0.29846029688728165,
+        1.2097994280960012
+      ],
+      "quaternion": [
+        0.0025692779329687574,
+        0.6495784986554614,
+        -0.0007793357512609177,
+        0.7602897904951813
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 8,
+      "worldForward": [
+        0.15609433344060722,
+        0.0021528533745497694,
+        -0.9877398059661664
+      ],
+      "waterSurface": 0.0015397150336472927,
+      "lineEndpoint": [
+        3.6403568278842586,
+        -0.009132148692353237,
+        0.4758466217499101
+      ],
+      "lineWaterGap": -0.00599999999999999
+    },
+    {
+      "time": 23,
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.15613690693210217,
+        0,
+        -0.9877354232251045
+      ],
+      "position": [
+        2.3590187460939593,
+        -0.29611900071894215,
+        -0.27180666717526336
+      ],
+      "quaternion": [
+        0.0020273082412724753,
+        0.6495598699906336,
+        -0.0006149711685356218,
+        0.7603074951159613
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 23,
+      "worldForward": [
+        0.15614319421642597,
+        0.0016985817778280695,
+        -0.9877329688330925
+      ],
+      "waterSurface": 0.0038810112019867825,
+      "lineEndpoint": [
+        3.874304726770478,
+        -0.006629278280856632,
+        -1.0058586538408194
+      ],
+      "lineWaterGap": -0.005999999999999969
+    },
+    {
+      "time": 32,
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.15608863668887799,
+        0,
+        -0.9877430523656482
+      ],
+      "position": [
+        2.4995247338155355,
+        -0.30169767334422476,
+        -1.1607712710736786
+      ],
+      "quaternion": [
+        0.0025496710776887156,
+        0.6495768705784701,
+        -0.0007733915408627178,
+        0.7602912535682634
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 32,
+      "worldForward": [
+        0.156098582150012,
+        0.0021364090710957297,
+        -0.9877391702301962
+      ],
+      "waterSurface": -0.0016976614232957776,
+      "lineEndpoint": [
+        4.015042703079073,
+        -0.011335223453879828,
+        -1.8947238386919256
+      ],
+      "lineWaterGap": -0.006000000000000037
+    },
+    {
+      "time": 90,
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.1553655836991663,
+        0,
+        -0.9878570419862468
+      ],
+      "position": [
+        3.4027057485866883,
+        -0.29979345053740764,
+        -6.890013111466962
+      ],
+      "quaternion": [
+        -0.0026566292192521427,
+        0.6498547182434968,
+        0.0008053159411102427,
+        0.7600533790228762
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 90,
+      "worldForward": [
+        0.1553763932858007,
+        -0.002228679861065429,
+        -0.9878528278015776
+      ],
+      "waterSurface": 0.0002065613835213407,
+      "lineEndpoint": [
+        4.91499026264908,
+        -0.0015360289303880115,
+        -7.626797731385986
+      ],
+      "lineWaterGap": -0.006000000000000029
+    },
+    {
+      "time": 300,
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.14080624023544885,
+        0,
+        -0.9900371723883691
+      ],
+      "position": [
+        6.548359286115476,
+        -0.30008781998360273,
+        -27.652901178991197
+      ],
+      "quaternion": [
+        -0.0026557089680563084,
+        0.6554317096795822,
+        0.0007949014932564189,
+        0.755249355701806
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 300,
+      "worldForward": [
+        0.1408172841562318,
+        -0.0022805740574324625,
+        -0.9900329749381239
+      ],
+      "waterSurface": -0.00008780806267376369,
+      "lineEndpoint": [
+        8.049645247695251,
+        -0.0018276967363767826,
+        -28.411882331474875
+      ],
+      "lineWaterGap": -0.0059999999999999975
+    },
+    {
+      "time": 10000,
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.11601210822909117,
+        0,
+        -0.9932477992647363
+      ],
+      "position": [
+        9.86176138535489,
+        -0.2950535385442643,
+        -54.00000000000001
+      ],
+      "quaternion": [
+        0.0015002175218554689,
+        0.6648247339900921,
+        -0.00044002681565001155,
+        0.7469977435031459
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 10000,
+      "worldForward": [
+        0.11601575890280957,
+        0.0013373653530468076,
+        -0.9932464725032338
+      ],
+      "waterSurface": 0.004946473376664636,
+      "lineEndpoint": [
+        11.345786692498065,
+        -0.004695508608766552,
+        -54.79495070544353
+      ],
+      "lineWaterGap": -0.005999999999999983
+    }
+  ],
+  "boatCameraFollows": true,
+  "seekHashes": [
+    "ce55f649387878f72cc3bcceafc6f6e50ee1c7ab1f479b4c02e4bec4069595c2",
+    "b256cabb021889edadcd5fd920099ec6af4cdb373783a15ee0f65cb3117f5b4d",
+    "ce55f649387878f72cc3bcceafc6f6e50ee1c7ab1f479b4c02e4bec4069595c2"
+  ],
+  "reducedBoatFrozen": true,
+  "keyboardFocus": "SELECT",
+  "reducedMotion": true,
+  "missingAssetHandled": true,
+  "retryRecovered": true,
+  "cancelHandled": true,
+  "functionalPass": true,
+  "performanceAccepted": false,
+  "pass": false,
+  "failure": "AssertionError [ERR_ASSERTION]: 1920/DPR1 performance gate: >=50fps and P95 <=20ms\n    at file:///home/liuhan/StudyDir/Math_Media/PoeticRealm/frontend/tools/verify-jiangxue-model.mjs:93:38"
+}

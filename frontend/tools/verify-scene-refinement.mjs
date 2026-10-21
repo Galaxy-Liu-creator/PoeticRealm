@@ -47,12 +47,14 @@ try{
  check('纸卷加载提示含云纹、墨环和原有取消按钮；取消保留总览');
  await page.locator('[data-poem=fengqiao] .enter-button').focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>window.__POETIC_SCENE__?.ready||document.querySelector('.realm-transition')?.dataset.state==='failed',null,{timeout:45000});
  assert(await page.evaluate(()=>window.__POETIC_SCENE__?.ready),await page.locator('.realm-transition').getAttribute('data-failure').catch(()=>null));
- assert.equal((await details()).view.name,'CAM_boat');assert((await details()).view.followsBoat);
+ assert.equal((await details()).view.name,'CAM_enter');assert(!(await details()).view.followsBoat);
+ await page.evaluate(()=>window.__POETIC_SCENE__.setView('CAM_boat'));assert((await details()).view.followsBoat);
  await seek(0);const initial=await details();await seek(16);const later=await details();
  assert(vectorDistance(initial.view.camera,later.view.camera)>1);
  assert(Math.abs(vectorDistance(initial.view.camera,initial.view.target)-vectorDistance(later.view.camera,later.view.target))<1e-5);
  assert.deepEqual(initial.waterExtent,[1500,1500]);report.follow={initial:initial.view,later:later.view,navigation:later.navigation};
- check('默认侧面整船中景随航向前进，跟随距离恒定，水面延伸至1500m');
+ check('默认全景；切换整船中景后随航向前进，跟随距离恒定，水面延伸至1500m');
+ await page.evaluate(()=>window.__POETIC_SCENE__.setView('CAM_enter'));
  for(const time of [0,.5,.95,1.5,1.95,2.5,2.95,3.5,4]){
   await seek(time);const opacity=await lines();report.frames.push({time,opacity});
   for(let i=0;i<4;i++){if(time<=i+.1)assert.equal(opacity[i],0);if(time>=i+.9)assert.equal(opacity[i],1);}
@@ -60,7 +62,7 @@ try{
   await shot('verse-t'+time);
  }
  await seek(1.5);const partial=await lines();await page.waitForTimeout(300);assert.deepEqual(await lines(),partial);
- await page.locator('[data-favorite=fengqiao]').click();assert.deepEqual(await lines(),partial);assert.equal((await details()).view.name,'CAM_boat');
+ await page.locator('[data-favorite=fengqiao]').click();assert.deepEqual(await lines(),partial);assert.equal((await details()).view.name,'CAM_enter');
  await shot('paper-toast');
  await page.locator('[data-scene-replay]').click();await page.evaluate(()=>window.__POETIC_SCENE__.pause());assert((await lines()).slice(1).every(v=>v===0));
  await seek(0);await page.evaluate(()=>window.__POETIC_SCENE__.play());await page.waitForTimeout(4200);await page.evaluate(()=>window.__POETIC_SCENE__.pause());assert.deepEqual(await lines(),[1,1,1,1]);

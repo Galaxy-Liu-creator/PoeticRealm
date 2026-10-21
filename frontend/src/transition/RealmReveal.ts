@@ -29,13 +29,14 @@ export class RealmReveal {
     root: HTMLElement; focus?: HTMLElement; inert: boolean; abort: AbortController; frame: number;
     prepareScene?: (target: HTMLElement, signal: AbortSignal) => Promise<void>;
     prepareAbort?: AbortController;
+    prepareTimeoutMs: number;
   };
   private reduced=false;
   private escape=(event:KeyboardEvent):void=>{if(event.key==='Escape') {event.preventDefault();this.cancel();}};
   constructor(private loop: MotionLoop) {}
   get active(): boolean { return !!this.transaction; }
   setReduced(value:boolean):void { this.reduced=value;if(value && this.transaction?.state==='playing') this.finish(true); }
-  play(root:HTMLElement,scene:RealmId,markup:string,url:string,reduced:boolean,prepareScene?: (target: HTMLElement, signal: AbortSignal) => Promise<void>):Promise<boolean> {
+  play(root:HTMLElement,scene:RealmId,markup:string,url:string,reduced:boolean,prepareScene?: (target: HTMLElement, signal: AbortSignal) => Promise<void>,prepareTimeoutMs=10000):Promise<boolean> {
     if(this.active) return Promise.resolve(false);
     this.reduced=reduced;
     const overlay=document.createElement('div');overlay.className=`realm-transition realm-${scene}`;
@@ -46,7 +47,7 @@ export class RealmReveal {
     target.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));
     document.body.append(overlay);
     const promise=new Promise<boolean>(resolve=>{
-      const state=this.transaction={overlay,target,veil:overlay.querySelector<HTMLElement>('.realm-veil')!,panel:overlay.querySelector<HTMLElement>('.realm-loading')!,plane:undefined as EffectPlane|undefined,stop:()=>{},resolve,scene,start:0,state:'loading' as 'loading'|'failed'|'playing',root,focus:document.activeElement instanceof HTMLElement?document.activeElement:undefined,inert:root.inert,abort:new AbortController(),frame:0,prepareScene};
+      const state=this.transaction={overlay,target,veil:overlay.querySelector<HTMLElement>('.realm-veil')!,panel:overlay.querySelector<HTMLElement>('.realm-loading')!,plane:undefined as EffectPlane|undefined,stop:()=>{},resolve,scene,start:0,state:'loading' as 'loading'|'failed'|'playing',root,focus:document.activeElement instanceof HTMLElement?document.activeElement:undefined,inert:root.inert,abort:new AbortController(),frame:0,prepareScene,prepareTimeoutMs};
       root.inert=true;
       overlay.querySelector('[data-cancel]')!.addEventListener('click',()=>this.cancel());
       overlay.querySelector('[data-retry]')!.addEventListener('click',()=>void this.prepare(url));
@@ -68,7 +69,7 @@ export class RealmReveal {
       const image=new Image();image.src=url;
       await Promise.race([
         Promise.all([image.decode(),document.fonts.ready,state.prepareScene?.(state.target,state.prepareAbort.signal)]),
-        new Promise((_,reject)=>{timer=setTimeout(()=>{image.removeAttribute('src');reject(new Error('画卷加载超时'));},10000);}),
+        new Promise((_,reject)=>{timer=setTimeout(()=>{image.removeAttribute('src');reject(new Error('画卷加载超时'));},state.prepareTimeoutMs);}),
         new Promise((_,reject)=>{abortLoad=()=>{image.removeAttribute('src');reject(new Error('入境已取消'));};state.abort.signal.addEventListener('abort',abortLoad,{once:true});}),
       ]);
       if(this.transaction!==state) return;

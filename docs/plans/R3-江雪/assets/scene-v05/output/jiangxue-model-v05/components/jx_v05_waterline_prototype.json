@@ -1,0 +1,26 @@
+{
+  "component": "jx_v05_waterline_prototype",
+  "meshes": [
+    {
+      "object": "src_shore_rock_v05_00",
+      "vertices": 725,
+      "triangles": 1446,
+      "nonmanifoldEdges": 0,
+      "volume": 59.579742353038604
+    }
+  ],
+  "checks": [
+    {
+      "rock": "src_shore_rock_v05_00",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 166,
+      "boundaryWorldZ": [
+        0.2199999988079071,
+        0.2199999988079071
+      ],
+      "surfaceDeviationMetres": 1.6858739115832577e-07,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    }
+  ]
+}

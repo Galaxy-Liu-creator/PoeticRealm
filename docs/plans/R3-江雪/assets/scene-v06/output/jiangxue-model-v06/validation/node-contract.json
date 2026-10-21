@@ -1,0 +1,304 @@
+{
+  "scope": "quality-sample",
+  "nodes": 129,
+  "meshes": 56,
+  "materials": 19,
+  "skins": 1,
+  "maskCalibration": [
+    0,
+    0.502891584649424,
+    1,
+    0,
+    0.502891584649424,
+    1
+  ],
+  "hull": {
+    "triangles": 1184,
+    "nonmanifoldEdges": 0,
+    "weldTolerance": 0.00001
+  },
+  "floating": {
+    "alignment": 0.9999999999999972,
+    "hullWorldY": [
+      -0.252998948097229,
+      0.9751243591308594
+    ],
+    "actualDraftMetres": 0.252998948097229,
+    "lineEndpoint": [
+      3.5141302704638777,
+      -0.006000012159347534,
+      1.2650475616418682
+    ]
+  },
+  "bank": {
+    "wetLevelMetres": 0.22,
+    "rocks": [
+      {
+        "node": "shore_rock_v02_00",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2199999988079071,
+              1.7017185389995575
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.11426928639411926,
+              0.2199999988079071
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_01",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              3.995959758758545
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.37845945358276367,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_02",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              2.3514736890792847
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.13173067569732666,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_03",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              3.4775495529174805
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.40076494216918945,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_04",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.22000005841255188,
+              2.7626399099826813
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.3215251863002777,
+              0.22000005841255188
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_05",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              2.47567081451416
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.3441290855407715,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_06",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              3.204156756401062
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.40327131748199463,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_07",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              3.125548779964447
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.2451203465461731,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_08",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2199999988079071,
+              2.907996714115143
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.24053019285202026,
+              0.2199999988079071
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_09",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              1.7412981986999512
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.21801161766052246,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_10",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              3.6405214071273804
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.34939682483673096,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_11",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000137090683,
+              2.4139935821294785
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.15441013872623444,
+              0.2200000137090683
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_12",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              3.081788122653961
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.3780779242515564,
+              0.2200000286102295
+            ]
+          }
+        ]
+      },
+      {
+        "node": "shore_rock_v02_13",
+        "primitives": [
+          {
+            "material": "pbr_rock__jxbank",
+            "worldY": [
+              0.2200000286102295,
+              2.2020711302757263
+            ]
+          },
+          {
+            "material": "pbr_rock__jxwetv02",
+            "worldY": [
+              -0.23208171129226685,
+              0.2200000286102295
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

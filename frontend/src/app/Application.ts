@@ -23,7 +23,7 @@ import { MotionLoop } from '../systems/motion/MotionLoop';
 import { OverviewMotion } from '../systems/motion/OverviewMotion';
 import { RealmReveal, type RealmId } from '../transition/RealmReveal';
 import { PageReturn } from '../transition/PageReturn';
-import type { FengqiaoScene } from '../scenes/FengqiaoScene';
+import {isLivePoem,preparePoemScene,type LivePoemScene} from '../scenes/preparePoemScene';
 import { AudioEngine } from '../systems/audio/AudioEngine';
 import {PoemReveal} from '../ui/PoemReveal';
 import {paperNotice} from '../ui/components/PaperPopup';
@@ -34,6 +34,7 @@ import '../ui/styles/motion.css';
 import '../ui/styles/profile-editor.css';
 import '../ui/styles/fengqiao-scene.css';
 import '../ui/styles/paper-popup.css';
+import '../ui/styles/poem-scroll.css';
 
 export class Application {
   private store = new LibraryStore();
@@ -63,7 +64,7 @@ export class Application {
   private realmReveal = new RealmReveal(this.motionLoop);
   private pageReturn = new PageReturn(this.motionLoop);
   private heartbeat?: number;
-  private fengqiao?: FengqiaoScene;
+  private liveScene?: LivePoemScene;
   private sceneLoading?: AbortController;
   private sceneStarted = false;
   private poemReveal?: PoemReveal;
@@ -77,6 +78,8 @@ export class Application {
     history.replaceState(null, '', '#/account');
     document.documentElement.style.setProperty('--paper-art', `url('${artwork.paper}')`);
     this.root.addEventListener('click', this.onClick);
+    this.root.addEventListener('pointerdown', this.onSceneInteract);
+    this.root.addEventListener('wheel', this.onSceneInteract, {passive:true});
     this.root.addEventListener('input', this.onLoginInput);
     this.root.addEventListener('change', this.onChange);
     this.root.addEventListener('submit', this.onSubmit);
@@ -107,7 +110,9 @@ export class Application {
       this.observer?.disconnect(); this.reveal.cancel(); clearTimeout(this.noticeTimer);
       this.realmReveal.cancel(); this.pageReturn.cancel(); this.overviewMotion?.dispose(); this.motionLoop.dispose();
       this.audio.dispose();
-      this.stopReading?.();this.sceneLoading?.abort();this.fengqiao?.dispose();
+      this.stopReading?.();this.sceneLoading?.abort();this.liveScene?.dispose();
+      this.root.removeEventListener('pointerdown',this.onSceneInteract);
+      this.root.removeEventListener('wheel',this.onSceneInteract);
       clearInterval(this.heartbeat); window.removeEventListener(AUTH_EXPIRED, this.onExpired);
       window.removeEventListener('hashchange', this.onRoute);
       window.removeEventListener('storage', this.onStorage);
@@ -225,8 +230,8 @@ export class Application {
     this.overviewMotion?.setEnabled(!this.motion.matches && this.store.data.preferences.motion);
     this.realmReveal.setReduced(this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions);
     this.pageReturn.setReduced(this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions);
-    this.fengqiao?.api.setReduced(this.motion.matches || !this.store.data.preferences.motion);
-    this.fengqiao?.audio?.setHidden(document.hidden);
+    this.liveScene?.api.setReduced(this.motion.matches || !this.store.data.preferences.motion);
+    this.liveScene?.audio?.setHidden(document.hidden);
     this.poemReveal?.setReduced(this.motion.matches || !this.store.data.preferences.motion);
   };
   private onRoute = (): void => {
@@ -258,8 +263,8 @@ export class Application {
     const sourcePath = this.route.path;
     const destination = parseRoute('#/');
     const markup = navigation(destination) + homePage(this.store, this.listPages.home, this.pageSize);
-    let frozen: ReturnType<FengqiaoScene['freeze']> | undefined;
-    try {frozen=this.fengqiao?.freeze();}catch{this.notify('当前画面捕获失败，请重试。');return;}
+    let frozen: ReturnType<LivePoemScene['freeze']> | undefined;
+    try {frozen=this.liveScene?.freeze();}catch{this.notify('当前画面捕获失败，请重试。');return;}
     void this.pageReturn.play(this.root, markup, this.homeScroll, this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions,frozen?.frame).then(complete => {
       if (this.disposed || this.route.path !== sourcePath) return;
       if (complete) {
@@ -270,6 +275,7 @@ export class Application {
     });
   }
   private render(): void {
+    const scrollState=this.route.page==='poem'&&this.readingPath===this.route.path?this.poemReveal?.scroll?.snapshot():undefined;
     this.guardRoute();
     this.realmReveal.cancel();
     this.pageReturn.cancel();
@@ -279,10 +285,11 @@ export class Application {
     clearTimeout(this.noticeTimer);
     const route = this.route;
     this.sceneLoading?.abort();this.sceneLoading=undefined;
-    const live=route.page==='poem' && route.id==='fengqiao' && !!this.auth.user;
-    if(this.fengqiao && !live){this.fengqiao.dispose();this.fengqiao=undefined;this.sceneStarted=false;Object.assign(window,{__POETIC_SCENE__:undefined});}
-    if(this.fengqiao)this.fengqiao.canvas.remove();
-    if(live)this.fengqiao?.audio?.setMuted(!this.store.data.preferences.sound);
+    const liveId=route.page==='poem'&&isLivePoem(route.id)&&this.auth.user?route.id:undefined;
+    const live=!!liveId;
+    if(this.liveScene && this.liveScene.id!==liveId){this.liveScene.dispose();this.liveScene=undefined;this.sceneStarted=false;Object.assign(window,{__POETIC_SCENE__:undefined});}
+    if(this.liveScene)this.liveScene.canvas.remove();
+    if(live)this.liveScene?.audio?.setMuted(!this.store.data.preferences.sound);
     document.body.dataset.page = route.page;
     document.body.classList.toggle('dark', this.store.data.preferences.dark || this.store.data.preferences.theme === 'night');
     document.body.dataset.fontSize = this.store.data.preferences.fontSize;
@@ -306,7 +313,7 @@ export class Application {
     if (this.store.warning) this.scheduleNoticeDismissal();
     if(route.page==='poem'){
       if(this.readingPath!==route.path){this.readingStart=this.motionLoop.clock.time;this.readingPath=route.path;}
-      this.poemReveal=new PoemReveal(this.root);
+      this.poemReveal=new PoemReveal(this.root,scrollState);
       this.poemReveal.setReduced(this.motion.matches || !this.store.data.preferences.motion);
       if(!live){
         const reveal=this.poemReveal;
@@ -315,7 +322,7 @@ export class Application {
         this.stopReading=this.motionLoop.subscribe(()=>!this.motion.matches&&this.store.data.preferences.motion&&this.motionLoop.clock.time-this.readingStart<reveal.duration,sample);
       }
     }else this.readingPath='';
-    if(live){if(this.fengqiao)this.attachFengqiao();else void this.loadFengqiao();}
+    if(live){if(this.liveScene)this.attachPoemScene();else void this.loadPoemScene();}
     if (route.page === 'login') {
       const remembered = this.loginMemory.read();
       this.root.querySelector<HTMLInputElement>('[name=remember]')!.checked = Boolean(remembered);
@@ -370,8 +377,8 @@ export class Application {
     style.setProperty('--notice-width',width+'px');
     style.setProperty('--notice-header-height',height+'px');
   }
-  private attachFengqiao(): void {
-    const scene=this.fengqiao;if(!scene)return;
+  private attachPoemScene(): void {
+    const scene=this.liveScene;if(!scene)return;
     const canvas=this.root.querySelector('[data-scene-canvas]');if(canvas!==scene.canvas)canvas?.replaceWith(scene.canvas);
     this.root.querySelector<HTMLElement>('.poem-scene-status')!.textContent='';
     this.root.querySelector<HTMLButtonElement>('[data-scene-retry]')!.hidden=true;
@@ -380,19 +387,19 @@ export class Application {
     if(!this.sceneStarted){scene.enter();this.sceneStarted=true;}
     this.root.querySelector<HTMLButtonElement>('[data-scene-pause]')!.textContent=scene.engine.clock.playing?'暂停':'播放';
     this.root.querySelector<HTMLButtonElement>('[data-scene-sound]')!.textContent=scene.audio?.details().state==='running'&&!scene.audio.details().muted?'静音':'开启声音';
-    Object.assign(window,{__POETIC_SCENE__:{ready:true,seek:(t:number)=>scene.engine.seek(t),pause:()=>scene.engine.clock.pause(),play:()=>scene.engine.clock.play(),setView:scene.api.setView,setFog:scene.api.setFog,setReflection:scene.api.setReflection,setReflectionCrop:scene.api.setReflectionCrop,setShadows:scene.api.setShadows,setWind:scene.api.setWind,setStaticMerge:scene.api.setStaticMerge,details:scene.api.details,snapshot:scene.api.snapshot,state:()=>({t:scene.engine.clock.time,playing:scene.engine.clock.playing,...scene.engine.stats})}});
+    Object.assign(window,{__POETIC_SCENE__:{...scene.api,ready:true,id:scene.id,seek:(t:number)=>scene.engine.seek(t),pause:()=>scene.engine.clock.pause(),play:()=>scene.engine.clock.play(),state:()=>({t:scene.engine.clock.time,playing:scene.engine.clock.playing,...scene.engine.stats})}});
   }
-  private async loadFengqiao(): Promise<void> {
+  private async loadPoemScene(): Promise<void> {
     this.sceneLoading?.abort();const controller=this.sceneLoading=new AbortController();
     let canvas=this.root.querySelector<HTMLCanvasElement>('[data-scene-canvas]');if(!canvas)return;
     if(canvas.dataset.failed==='true'){const replacement=canvas.cloneNode(false) as HTMLCanvasElement;delete replacement.dataset.failed;canvas.replaceWith(replacement);canvas=replacement;}
-    const audio=new AudioEngine();audio.setMuted(!this.store.data.preferences.sound);
+    const id=this.route.page==='poem'&&isLivePoem(this.route.id)?this.route.id:undefined;if(!id)return;
+    const audio=new AudioEngine(id);audio.setMuted(!this.store.data.preferences.sound);
     const status=this.root.querySelector<HTMLElement>('.poem-scene-status')!;status.innerHTML=paperNotice('正在展开诗境…','',true);
     try {
-      const {prepareFengqiao}=await import('../scenes/FengqiaoScene');
-      const scene=await prepareFengqiao(canvas,{manifestPath:'scenes/fengqiao.scene-v03.json',signal:controller.signal,reduced:this.motion.matches||!this.store.data.preferences.motion,audio});
+      const scene=await preparePoemScene(id,canvas,{signal:controller.signal,reduced:this.motion.matches||!this.store.data.preferences.motion,audio});
       if(controller.signal.aborted||!canvas.isConnected){scene.dispose();return;}
-      this.fengqiao=scene;this.sceneStarted=false;this.attachFengqiao();
+      this.liveScene=scene;this.sceneStarted=false;this.attachPoemScene();
     } catch(error) {
       audio.dispose();if(controller.signal.aborted||!status.isConnected)return;
       canvas.dataset.failed='true';
@@ -427,14 +434,21 @@ export class Application {
       this.root.querySelectorAll<HTMLElement>('.notifications>.paper-popup').forEach(notice=>notice.hidden=true);
     },1500);
   }
+  private onSceneInteract = (event: Event): void => {
+    if((event.target as Element).matches('[data-scene-canvas]'))this.poemReveal?.scroll?.shelve();
+  };
   private onClick = (event: MouseEvent): void => {
     const target = event.target as HTMLElement;
+    if(target.closest('[data-scroll-toggle]')){
+      if(this.poemReveal?.scroll?.toggle())this.liveScene?.api.setView('CAM_enter');
+      return;
+    }
     const view=target.closest<HTMLElement>('[data-scene-view]');
-    if(view&&this.fengqiao){this.fengqiao.api.setView(view.dataset.sceneView!);return;}
-    if(target.closest('[data-scene-replay]')&&this.fengqiao){const scene=this.fengqiao;scene.engine.clock.pause();scene.engine.seek(0);scene.api.setView('CAM_boat');if(!this.motion.matches&&this.store.data.preferences.motion)scene.engine.clock.play();this.root.querySelector<HTMLButtonElement>('[data-scene-pause]')!.textContent=scene.engine.clock.playing?'暂停':'播放';return;}
-    if(target.closest('[data-scene-pause]')&&this.fengqiao){this.fengqiao.engine.clock.toggle();target.closest('button')!.textContent=this.fengqiao.engine.clock.playing?'暂停':'播放';return;}
-    if(target.closest('[data-scene-sound]')&&this.fengqiao?.audio){const audio=this.fengqiao.audio;const mute=audio.details().state==='running'&&!audio.details().muted;audio.setMuted(mute);this.store.data.preferences.sound=!mute;this.store.save();this.syncLibrary();const button=target.closest('button')!;void audio.unlock().then(()=>{if(button.isConnected)button.textContent=audio.details().state==='running'&&!audio.details().muted?'静音':'开启声音';});return;}
-    if(target.closest('[data-scene-retry]')){void this.loadFengqiao();return;}
+    if(view&&this.liveScene){this.liveScene.api.setView(view.dataset.sceneView!);this.poemReveal?.scroll?.setView(view.dataset.sceneView!);return;}
+    if(target.closest('[data-scene-replay]')&&this.liveScene){const scene=this.liveScene;this.poemReveal?.scroll?.reset();scene.engine.clock.pause();scene.engine.seek(0);scene.api.setView('CAM_enter');if(!this.motion.matches&&this.store.data.preferences.motion)scene.engine.clock.play();this.root.querySelector<HTMLButtonElement>('[data-scene-pause]')!.textContent=scene.engine.clock.playing?'暂停':'播放';return;}
+    if(target.closest('[data-scene-pause]')&&this.liveScene){this.liveScene.engine.clock.toggle();target.closest('button')!.textContent=this.liveScene.engine.clock.playing?'暂停':'播放';return;}
+    if(target.closest('[data-scene-sound]')&&this.liveScene?.audio){const audio=this.liveScene.audio;const mute=audio.details().state==='running'&&!audio.details().muted;audio.setMuted(mute);this.store.data.preferences.sound=!mute;this.store.save();this.syncLibrary();const button=target.closest('button')!;void audio.unlock().then(()=>{if(button.isConnected)button.textContent=audio.details().state==='running'&&!audio.details().muted?'静音':'开启声音';});return;}
+    if(target.closest('[data-scene-retry]')){void this.loadPoemScene();return;}
     const home = target.closest<HTMLAnchorElement>('a[href="#/"]');
     if (this.route.page === 'poem' && (home || target.closest('[data-back]')) && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && event.button === 0) {
       event.preventDefault(); this.returnToOverview(true); return;
@@ -448,23 +462,23 @@ export class Application {
         const sourcePath=this.route.path;
         const poem=findPoem(destination.id)!;
         const markup=navigation(destination)+poemPage(poem,this.store);
-        let prepared: FengqiaoScene | undefined;
-        let sound=destination.id==='fengqiao'?new AudioEngine():undefined;
+        const sceneId=isLivePoem(destination.id)?destination.id:undefined;
+        let prepared: LivePoemScene | undefined;
+        let sound=sceneId?new AudioEngine(sceneId):undefined;
         sound?.setMuted(!this.store.data.preferences.sound);void sound?.unlock();
         let attempts=0;
         const prepareScene=async(target:HTMLElement,signal:AbortSignal)=>{
           this.fitScene(target);
-          if(destination.id!=='fengqiao')return;
-          if(attempts++){prepared?.dispose();sound?.dispose();sound=new AudioEngine();sound.setMuted(!this.store.data.preferences.sound);void sound.unlock();const old=target.querySelector<HTMLCanvasElement>('[data-scene-canvas]')!;old.replaceWith(old.cloneNode(false));}
-          const {prepareFengqiao}=await import('../scenes/FengqiaoScene');
-          const scene=await prepareFengqiao(target.querySelector<HTMLCanvasElement>('[data-scene-canvas]')!,{manifestPath:'scenes/fengqiao.scene-v03.json',signal,reduced:this.motion.matches||!this.store.data.preferences.motion,audio:sound});
+          if(!sceneId)return;
+          if(attempts++){prepared?.dispose();sound?.dispose();sound=new AudioEngine(sceneId);sound.setMuted(!this.store.data.preferences.sound);void sound.unlock();const old=target.querySelector<HTMLCanvasElement>('[data-scene-canvas]')!;old.replaceWith(old.cloneNode(false));}
+          const scene=await preparePoemScene(sceneId,target.querySelector<HTMLCanvasElement>('[data-scene-canvas]')!,{signal,reduced:this.motion.matches||!this.store.data.preferences.motion,audio:sound!});
           if(signal.aborted){scene.dispose();throw new DOMException('入境取消','AbortError');}
           prepared=scene;target.querySelector<HTMLElement>('.poem-scene-status')!.textContent='';
         };
         this.overviewMotion?.setSuspended(true);
-        void this.realmReveal.play(this.root,destination.id as RealmId,markup,artwork.scenes[destination.id]!,this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions,prepareScene).then(complete=>{
+        void this.realmReveal.play(this.root,destination.id as RealmId,markup,artwork.scenes[destination.id]!,this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions,prepareScene,sceneId?45000:10000).then(complete=>{
           if (complete && !this.disposed && this.route.path===sourcePath) {
-            if(prepared){this.fengqiao=prepared;this.sceneStarted=false;}
+            if(prepared){this.liveScene?.dispose();this.liveScene=prepared;this.sceneStarted=false;}
             history.pushState(null,'','#'+destination.path);this.onRoute();
           } else {prepared?.dispose();sound?.dispose();}
         }).finally(()=>{this.fitScene();this.overviewMotion?.setSuspended(false);});
@@ -522,6 +536,7 @@ export class Application {
     if (target.closest('[data-notes]')) {
       const panel = this.root.querySelector<HTMLElement>('#poem-notes')!;
       panel.hidden = !panel.hidden;
+      if(!panel.hidden)this.poemReveal?.scroll?.shelve();
       const toggle = this.root.querySelector<HTMLElement>('.poem-toolbar [data-notes]')!;
       toggle.setAttribute('aria-expanded', String(!panel.hidden));
       (panel.hidden ? toggle : panel.querySelector<HTMLElement>('button'))?.focus();

@@ -1,0 +1,354 @@
+{
+  "scope": "real mouse input on normal 5186 Jiangxue v06; isolated account API",
+  "checks": [
+    "暂停和减少动态时，真实左键拖动改变视角且不会被下一帧覆盖",
+    "滚轮缩放和右键平移可用",
+    "点击全景恢复制作机位，重建控制器后同样拖动没有重复响应",
+    "四句切镜后均可旋转；孤舟和蓑笠翁拖动后的相对机位随航行保留，跳转重放一致",
+    "播放和暂停保留手动角度；笺注与收藏不破坏控制器",
+    "翻页冻结期间拖动无效，取消返回后恢复拖动",
+    "重看复位，离开后资源归零，再进入可正常拖动"
+  ],
+  "errors": [],
+  "before": {
+    "revision": "06",
+    "view": {
+      "name": "CAM_enter",
+      "camera": [
+        -14.999999999999998,
+        7.9999999999999964,
+        28.999999999999996
+      ],
+      "target": [
+        -2.6003319024017344,
+        4.102962674113098,
+        -1.1134742518152265
+      ],
+      "followsBoat": false
+    },
+    "time": 8,
+    "playing": false,
+    "fps": 0.07317430118542366,
+    "calls": 141,
+    "triangles": 438332,
+    "navigation": {
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.15598837149777833,
+        0,
+        -0.9877588916114455
+      ],
+      "position": [
+        2,
+        -0.30000001192092896,
+        2
+      ],
+      "quaternion": [
+        0,
+        0.6496197458907103,
+        0,
+        0.7602592884989234
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 0,
+      "worldForward": [
+        0.1559883714977781,
+        0,
+        -0.9877588916114456
+      ],
+      "waterSurface": 0.0025642792814029786,
+      "lineEndpoint": [
+        3.5141304620219262,
+        -0.008144431673349106,
+        1.2650481288289819
+      ],
+      "lineWaterGap": -0.006000000000000021
+    },
+    "camera": [
+      -14.999999999999998,
+      7.9999999999999964,
+      28.999999999999996
+    ],
+    "cameraQuaternion": [
+      -0.058382326228195135,
+      -0.19372034492474796,
+      -0.011549501037341993,
+      0.9792499890146713
+    ],
+    "memory": {
+      "geometries": 71,
+      "textures": 22
+    },
+    "programs": 15,
+    "contextLost": false,
+    "disposed": false,
+    "scene": "jiangxue",
+    "model": "models/jiangxue/scene_v06.glb",
+    "terrain": "jiangxue-v06",
+    "loadMs": 1379.6000000005588,
+    "reducedMotion": true,
+    "audio": {
+      "state": "running",
+      "muted": false,
+      "voices": 0,
+      "loops": 0,
+      "events": [],
+      "tracks": [
+        "environment",
+        "effects",
+        "voice",
+        "music"
+      ],
+      "profile": "jiangxue",
+      "sounds": [
+        "wind",
+        "water"
+      ]
+    }
+  },
+  "dragged": {
+    "revision": "06",
+    "view": {
+      "name": "CAM_enter",
+      "camera": [
+        -26.545477808300795,
+        11.159328778723598,
+        20.160869106032504
+      ],
+      "target": [
+        -2.6003319024017344,
+        4.102962674113098,
+        -1.1134742518152265
+      ],
+      "followsBoat": false
+    },
+    "time": 8,
+    "playing": false,
+    "fps": 0.881814625176761,
+    "calls": 111,
+    "triangles": 391916,
+    "navigation": {
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.15598837149777833,
+        0,
+        -0.9877588916114455
+      ],
+      "position": [
+        2,
+        -0.30000001192092896,
+        2
+      ],
+      "quaternion": [
+        0,
+        0.6496197458907103,
+        0,
+        0.7602592884989234
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 0,
+      "worldForward": [
+        0.1559883714977781,
+        0,
+        -0.9877588916114456
+      ],
+      "waterSurface": 0.0025642792814029786,
+      "lineEndpoint": [
+        3.5141304620219262,
+        -0.008144431673349106,
+        1.2650481288289819
+      ],
+      "lineWaterGap": -0.006000000000000021
+    },
+    "camera": [
+      -26.545477808300795,
+      11.159328778723598,
+      20.160869106032504
+    ],
+    "cameraQuaternion": [
+      -0.09870445197672383,
+      -0.4073590041189896,
+      -0.044338978114526514,
+      0.9068352264567797
+    ],
+    "memory": {
+      "geometries": 71,
+      "textures": 22
+    },
+    "programs": 15,
+    "contextLost": false,
+    "disposed": false,
+    "scene": "jiangxue",
+    "model": "models/jiangxue/scene_v06.glb",
+    "terrain": "jiangxue-v06",
+    "loadMs": 1379.6000000005588,
+    "reducedMotion": true,
+    "audio": {
+      "state": "running",
+      "muted": false,
+      "voices": 0,
+      "loops": 0,
+      "events": [],
+      "tracks": [
+        "environment",
+        "effects",
+        "voice",
+        "music"
+      ],
+      "profile": "jiangxue",
+      "sounds": [
+        "wind",
+        "water"
+      ]
+    }
+  },
+  "views": [
+    {
+      "name": "CAM_birds",
+      "before": {
+        "name": "CAM_birds",
+        "camera": [
+          3.000000000000001,
+          11,
+          -8
+        ],
+        "target": [
+          2.7547457704704605,
+          10.591246074883232,
+          -22.061239658019613
+        ],
+        "followsBoat": false
+      },
+      "after": {
+        "name": "CAM_birds",
+        "camera": [
+          -0.8696398930924412,
+          11.95710411843421,
+          -8.535562207507537
+        ],
+        "target": [
+          2.7547457704704605,
+          10.591246074883232,
+          -22.061239658019613
+        ],
+        "followsBoat": false
+      }
+    },
+    {
+      "name": "CAM_path",
+      "before": {
+        "name": "CAM_path",
+        "camera": [
+          3,
+          7,
+          14.000000000000002
+        ],
+        "target": [
+          8.002614240859499,
+          6.021230768644651,
+          0.5146943369813908
+        ],
+        "followsBoat": false
+      },
+      "after": {
+        "name": "CAM_path",
+        "camera": [
+          -0.477581005229581,
+          7.801371901278703,
+          12.036629652380991
+        ],
+        "target": [
+          8.002614240859499,
+          6.021230768644651,
+          0.5146943369813908
+        ],
+        "followsBoat": false
+      }
+    },
+    {
+      "name": "CAM_boat",
+      "before": {
+        "name": "CAM_boat",
+        "camera": [
+          13.124685437336282,
+          3.599999904632568,
+          2.7108708031073334
+        ],
+        "target": [
+          2.127998144817493,
+          0.4015295992173271,
+          1.2118254465092777
+        ],
+        "followsBoat": true
+      },
+      "after": {
+        "name": "CAM_boat",
+        "camera": [
+          12.106254544740672,
+          4.214541587582565,
+          5.604981428167635
+        ],
+        "target": [
+          2.127998144817493,
+          0.4015295992173271,
+          1.2118254465092777
+        ],
+        "followsBoat": true
+      }
+    },
+    {
+      "name": "CAM_fisherman",
+      "before": {
+        "name": "CAM_fisherman",
+        "camera": [
+          7.321065832518547,
+          2.4000000953674316,
+          1.0119038829762974
+        ],
+        "target": [
+          1.86557771669626,
+          1.047860294326614,
+          2.89286423085819
+        ],
+        "followsBoat": true
+      },
+      "after": {
+        "name": "CAM_fisherman",
+        "camera": [
+          7.5438337132557445,
+          2.7200179696672384,
+          2.5929609129762246
+        ],
+        "target": [
+          1.8655777166962597,
+          1.047860294326614,
+          2.8928642308581916
+        ],
+        "followsBoat": true
+      }
+    }
+  ],
+  "disposals": [
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    }
+  ],
+  "pass": true
+}

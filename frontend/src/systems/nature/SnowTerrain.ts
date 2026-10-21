@@ -2,7 +2,7 @@ import { Color, Float32BufferAttribute, Mesh, MeshStandardMaterial, PlaneGeometr
 import type { HeightmapAsset } from '../../engine/Assets';
 
 /** Preserve the authored metres and river corridor; upward slopes retain snow. */
-export function snowTerrain(asset: HeightmapAsset, surface?:{rock:Texture;snow:Texture}) {
+export function snowTerrain(asset: HeightmapAsset, surface?:{rock:Texture;snow:Texture}, settledSnow=false) {
   const {meta,heightTexture}=asset,heights=heightTexture.image.data as Float32Array,n=meta.resolution;
   const geometry=new PlaneGeometry(...meta.size,144,144);geometry.rotateX(-Math.PI/2);
   const position=geometry.getAttribute('position');
@@ -22,7 +22,7 @@ export function snowTerrain(asset: HeightmapAsset, surface?:{rock:Texture;snow:T
   geometry.setAttribute('color',new Float32BufferAttribute(colors,3));
   const material=new MeshStandardMaterial({vertexColors:!surface,roughness:.95,metalness:0,map:surface?.rock??null});
   if(surface) {
-    material.customProgramCacheKey=()=> 'jiangxue-snow-terrain-v02';
+    material.customProgramCacheKey=()=> settledSnow?'jiangxue-snow-terrain-v06':'jiangxue-snow-terrain-v02';
     material.onBeforeCompile=shader=>{
       shader.uniforms.jxSnowMap={value:surface.snow};
       const vary='varying vec3 vJxPosition; varying vec3 vJxNormal;';
@@ -42,8 +42,8 @@ export function snowTerrain(asset: HeightmapAsset, surface?:{rock:Texture;snow:T
           vec3 jxN=normalize(vJxNormal);
           vec3 weights=abs(jxN);
           vec2 drift=vJxPosition.xz*.19+vJxPosition.y*.13;
-          float grain=(jxNoise(drift)*.7+jxNoise(drift*3.3)*.3-.5)*.42;
-          float coverage=smoothstep(.82,.90,jxN.y+grain);
+          float grain=(jxNoise(drift)*.7+jxNoise(drift*3.3)*.3-.5)*${settledSnow?'.10':'.42'};
+          float coverage=smoothstep(${settledSnow?'.84,.94':'.82,.90'},jxN.y+grain);
           vec3 rockColor=jxSurface(map,vJxPosition/7.0,weights)*.72;
           vec3 snowColor=jxSurface(jxSnowMap,vJxPosition/2.0,weights);
           diffuseColor.rgb*=mix(rockColor,snowColor,coverage);

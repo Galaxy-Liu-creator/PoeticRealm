@@ -1,11 +1,11 @@
 import {chromium} from 'playwright';
 import {mkdir,writeFile} from 'node:fs/promises';
 import {authenticatedUi} from './authenticated-ui-fixture.mjs';
-const revision=process.argv.find(a=>a.startsWith('--revision='))?.split('=')[1]??'03';
-if(!/^(01|02|03)$/.test(revision))throw new Error('Unknown Jiangxue revision');
+const revision=process.argv.find(a=>a.startsWith('--revision='))?.split('=')[1]??'05';
+if(!/^(01|02|03|04|05)$/.test(revision))throw new Error('Unknown Jiangxue revision');
 const out=new URL(`../../output/jiangxue-model-v${revision}/validation/`,import.meta.url).pathname.replace(/^\/([A-Za-z]:)/,'$1');
 await mkdir(out+'capture',{recursive:true});
-const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=d3d11','--ignore-gpu-blocklist']});
+const browser=await chromium.launch({channel:'chrome',headless:true,args:[...(process.platform==='win32'?['--use-angle=d3d11']:[]),'--ignore-gpu-blocklist']});
 const context=await browser.newContext({viewport:{width:1440,height:900},deviceScaleFactor:1,recordVideo:{dir:out+'capture',size:{width:1440,height:900}}});
 await authenticatedUi(context);const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
 try {

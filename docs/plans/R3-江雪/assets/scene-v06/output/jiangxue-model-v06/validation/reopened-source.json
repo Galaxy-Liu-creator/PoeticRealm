@@ -1,0 +1,467 @@
+{
+  "bankChecks": {
+    "waterline": [
+      {
+        "object": "shore_rock_v02_00",
+        "boundaryWorldZ": [
+          0.2199999988079071,
+          0.2199999988079071
+        ]
+      },
+      {
+        "object": "shore_rock_v02_01",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_02",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_03",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_04",
+        "boundaryWorldZ": [
+          0.22000005841255188,
+          0.22000005841255188
+        ]
+      },
+      {
+        "object": "shore_rock_v02_05",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_06",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_07",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_08",
+        "boundaryWorldZ": [
+          0.2199999988079071,
+          0.2199999988079071
+        ]
+      },
+      {
+        "object": "shore_rock_v02_09",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_10",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_11",
+        "boundaryWorldZ": [
+          0.2200000137090683,
+          0.2200000137090683
+        ]
+      },
+      {
+        "object": "shore_rock_v02_12",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      },
+      {
+        "object": "shore_rock_v02_13",
+        "boundaryWorldZ": [
+          0.2200000286102295,
+          0.2200000286102295
+        ]
+      }
+    ],
+    "bankSnow": {
+      "bottomSamples": 7956,
+      "gapMetres": [
+        -0.006015777587890625,
+        -0.005988597869873047
+      ],
+      "topInteriorSamples": 62016,
+      "minTopClearance": 0.007988452911376953
+    },
+    "tree": {
+      "connections": 14,
+      "maxConnectionCenterError": 3.844384073399806e-06,
+      "rootTipGaps": [
+        -0.045003414154052734,
+        -0.04500007629394531,
+        -0.04500007629394531,
+        -0.04500007629394531,
+        -0.04500007629394531
+      ]
+    },
+    "routeBedHeights": [
+      -2.4999923706054688,
+      -2.5,
+      -2.5000076293945312,
+      -2.4999923706054688,
+      -2.4999923706054688,
+      -2.5000076293945312,
+      -2.5
+    ],
+    "preservedRuntimeObjects": [
+      "boat_guest",
+      "shore_root",
+      "dead_tree_root",
+      "FOCUS_boat",
+      "FOCUS_fisherman",
+      "SFX_line",
+      "PLACE_boat_01",
+      "CAM_fisherman",
+      "CAM_nature",
+      "mask_probe",
+      "fishing_rod",
+      "boat_hull_closed",
+      "boat_wood_aged",
+      "boat_gunwale_snow",
+      "fisherman_rig",
+      "fisherman_anatomy",
+      "fisherman_work_coat",
+      "fisherman_trousers",
+      "fisherman_eye_left",
+      "fisherman_eye_right",
+      "fisherman_cape_shoulder",
+      "fisherman_cape_skirt",
+      "fisherman_straw_shoulder",
+      "fisherman_straw_skirt",
+      "fisherman_hat",
+      "fisherman_hat_weave",
+      "fisherman_hat_cord",
+      "fisherman_grey_beard",
+      "fisherman_shoe_left",
+      "fisherman_shoe_right",
+      "fishing_bamboo",
+      "fishing_bamboo_nodes",
+      "ANCHOR_fishing_grip",
+      "ANCHOR_fishing_tip",
+      "ANCHOR_fishing_water",
+      "CAM_rocks",
+      "shore_bank_v02",
+      "dead_tree_core_v02",
+      "fishing_line"
+    ]
+  },
+  "errors": [],
+  "warnings": [],
+  "snow": [
+    {
+      "object": "rock_snow_v02_00",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.44492460020127345,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.003308892250061035,
+        -0.0032924413681030273
+      ],
+      "thicknessMetres": [
+        0.012099981307983398,
+        0.09198427200317383
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.0055844783782958984
+    },
+    {
+      "object": "rock_snow_v02_01",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.3125238968688261,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.004328727722167969,
+        -0.004311561584472656
+      ],
+      "thicknessMetres": [
+        0.015839576721191406,
+        0.11415672302246094
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.005759239196777344
+    },
+    {
+      "object": "rock_snow_v02_02",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 1.4017393589505733,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.003310680389404297,
+        -0.003290891647338867
+      ],
+      "thicknessMetres": [
+        0.012099742889404297,
+        0.07986831665039062
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.0045909881591796875
+    },
+    {
+      "object": "rock_snow_v02_03",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 1.095565286226121,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.0054090023040771484,
+        -0.005392789840698242
+      ],
+      "thicknessMetres": [
+        0.01979970932006836,
+        0.15836310386657715
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.00719451904296875
+    },
+    {
+      "object": "rock_snow_v02_04",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.26667278836335945,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.003609180450439453,
+        -0.0035910606384277344
+      ],
+      "thicknessMetres": [
+        0.013199806213378906,
+        0.08148193359375
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.004799365997314453
+    },
+    {
+      "object": "rock_snow_v02_05",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.7521941980275161,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.0039098262786865234,
+        -0.0038919448852539062
+      ],
+      "thicknessMetres": [
+        0.014299869537353516,
+        0.1036672592163086
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.005204200744628906
+    },
+    {
+      "object": "rock_snow_v02_06",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.617524355787202,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.005108833312988281,
+        -0.005091428756713867
+      ],
+      "thicknessMetres": [
+        0.01869988441467285,
+        0.14405035972595215
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.006793975830078125
+    },
+    {
+      "object": "rock_snow_v02_07",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.18892450149745088,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.003313302993774414,
+        -0.0032911300659179688
+      ],
+      "thicknessMetres": [
+        0.012099742889404297,
+        0.07058191299438477
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.004449367523193359
+    },
+    {
+      "object": "rock_snow_v02_08",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.4522011626560866,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.004338502883911133,
+        -0.00429987907409668
+      ],
+      "thicknessMetres": [
+        0.015839815139770508,
+        0.1246800422668457
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.006175041198730469
+    },
+    {
+      "object": "rock_snow_v02_09",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.7472817929923907,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.003609895706176758,
+        -0.003590106964111328
+      ],
+      "thicknessMetres": [
+        0.013200044631958008,
+        0.09088420867919922
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.004794478416442871
+    },
+    {
+      "object": "rock_snow_v02_10",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.4637723744356366,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.004210710525512695,
+        -0.004186391830444336
+      ],
+      "thicknessMetres": [
+        0.015399694442749023,
+        0.10135197639465332
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.005595684051513672
+    },
+    {
+      "object": "rock_snow_v02_11",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.6231160517678322,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.0037450790405273438,
+        -0.0036983489990234375
+      ],
+      "thicknessMetres": [
+        0.01363992691040039,
+        0.1085348129272461
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.004979133605957031
+    },
+    {
+      "object": "rock_snow_v02_12",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.5971271683546766,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.004699230194091797,
+        -0.004664897918701172
+      ],
+      "thicknessMetres": [
+        0.017159700393676758,
+        0.11685490608215332
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.006237983703613281
+    },
+    {
+      "object": "rock_snow_v02_13",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.5133183263616947,
+      "bottomSamples": 801,
+      "bottomGapMetres": [
+        -0.0036139488220214844,
+        -0.0035810470581054688
+      ],
+      "thicknessMetres": [
+        0.013200044631958008,
+        0.0989522933959961
+      ],
+      "topInteriorSamples": 6080,
+      "minimumTopClearanceMetres": 0.005942344665527344
+    }
+  ],
+  "feet": [
+    {
+      "side": "left",
+      "sole": 0.07299995422363281,
+      "deck": 0.0729999840259552,
+      "gapMetres": -2.9802322387695312e-08
+    },
+    {
+      "side": "right",
+      "sole": 0.07300004363059998,
+      "deck": 0.0729999840259552,
+      "gapMetres": 5.960464477539063e-08
+    }
+  ],
+  "hands": [
+    {
+      "side": "left",
+      "closestSurfaceMetres": 6.774638677597977e-06
+    },
+    {
+      "side": "right",
+      "closestSurfaceMetres": 0.00013797312567476183
+    }
+  ],
+  "hullWorldZ": [
+    -0.252998948097229,
+    0.9751243591308594
+  ],
+  "actualDraftMetres": 0.252998948097229,
+  "headingAlignment": 1.0000000651925802,
+  "lineEndpoint": [
+    3.5141303539276123,
+    -1.2650477886199951,
+    -0.006000012159347534
+  ],
+  "rigBones": 53,
+  "passed": true
+}

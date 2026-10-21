@@ -276,7 +276,7 @@ try {
   const rower = root.getObjectByName('rower_rig') ? new Rower(root) : undefined;
   releases.push(() => rower?.dispose());
   let fireEnabled = true;
-  setView(full ? 'CAM_boat' : 'CAM_enter', false);
+  setView('CAM_enter', false);
   lods?.update(engine.camera);
   const staticDraws = asset.manifest.distanceLods ? new StaticDrawGroups(root, asset.manifest.distanceLods) : undefined;
   if (staticDraws) engine.scene.add(staticDraws);

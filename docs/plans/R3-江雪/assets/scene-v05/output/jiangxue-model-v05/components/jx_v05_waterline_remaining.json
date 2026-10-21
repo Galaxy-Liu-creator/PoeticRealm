@@ -1,0 +1,254 @@
+{
+  "component": "jx_v05_waterline_remaining",
+  "meshes": [
+    {
+      "object": "src_shore_rock_v05_01",
+      "vertices": 715,
+      "triangles": 1426,
+      "nonmanifoldEdges": 0,
+      "volume": 83.73811247186254
+    },
+    {
+      "object": "src_shore_rock_v05_02",
+      "vertices": 719,
+      "triangles": 1434,
+      "nonmanifoldEdges": 0,
+      "volume": 169.62970655630474
+    },
+    {
+      "object": "src_shore_rock_v05_03",
+      "vertices": 715,
+      "triangles": 1426,
+      "nonmanifoldEdges": 0,
+      "volume": 99.70405952160647
+    },
+    {
+      "object": "src_shore_rock_v05_04",
+      "vertices": 725,
+      "triangles": 1446,
+      "nonmanifoldEdges": 0,
+      "volume": 65.0121968126793
+    },
+    {
+      "object": "src_shore_rock_v05_05",
+      "vertices": 727,
+      "triangles": 1450,
+      "nonmanifoldEdges": 0,
+      "volume": 78.69576920515364
+    },
+    {
+      "object": "src_shore_rock_v05_06",
+      "vertices": 721,
+      "triangles": 1438,
+      "nonmanifoldEdges": 0,
+      "volume": 73.85868835193864
+    },
+    {
+      "object": "src_shore_rock_v05_07",
+      "vertices": 715,
+      "triangles": 1426,
+      "nonmanifoldEdges": 0,
+      "volume": 54.267947518009514
+    },
+    {
+      "object": "src_shore_rock_v05_08",
+      "vertices": 719,
+      "triangles": 1434,
+      "nonmanifoldEdges": 0,
+      "volume": 63.33621398658422
+    },
+    {
+      "object": "src_shore_rock_v05_09",
+      "vertices": 734,
+      "triangles": 1464,
+      "nonmanifoldEdges": 0,
+      "volume": 63.457100916800485
+    },
+    {
+      "object": "src_shore_rock_v05_10",
+      "vertices": 715,
+      "triangles": 1426,
+      "nonmanifoldEdges": 0,
+      "volume": 78.30959775761607
+    },
+    {
+      "object": "src_shore_rock_v05_11",
+      "vertices": 719,
+      "triangles": 1434,
+      "nonmanifoldEdges": 0,
+      "volume": 63.30887909940759
+    },
+    {
+      "object": "src_shore_rock_v05_12",
+      "vertices": 721,
+      "triangles": 1438,
+      "nonmanifoldEdges": 0,
+      "volume": 107.79713381113531
+    },
+    {
+      "object": "src_shore_rock_v05_13",
+      "vertices": 725,
+      "triangles": 1446,
+      "nonmanifoldEdges": 0,
+      "volume": 57.92756266581251
+    }
+  ],
+  "checks": [
+    {
+      "rock": "src_shore_rock_v05_01",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 146,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 1.1920928955078125e-07,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_02",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 154,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 6.664001972467304e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_03",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 146,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 1.1920928955078125e-07,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_04",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 166,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 5.960464477539063e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_05",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 170,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 5.960464477539063e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_06",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 158,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 1.1920928955078125e-07,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_07",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 146,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 2.9802322387695312e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_08",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 154,
+      "boundaryWorldZ": [
+        0.2199999988079071,
+        0.2199999988079071
+      ],
+      "surfaceDeviationMetres": 6.664001972467304e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_09",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 184,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 8.429369557916289e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_10",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 146,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 5.960464477539063e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_11",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 154,
+      "boundaryWorldZ": [
+        0.2199999988079071,
+        0.2199999988079071
+      ],
+      "surfaceDeviationMetres": 1.1920928955078125e-07,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_12",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 158,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 6.664001972467304e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    },
+    {
+      "rock": "src_shore_rock_v05_13",
+      "wetLevelMetres": 0.22,
+      "seamSamples": 166,
+      "boundaryWorldZ": [
+        0.2200000286102295,
+        0.2200000286102295
+      ],
+      "surfaceDeviationMetres": 5.960464477539063e-08,
+      "existingVerticesPreserved": 642,
+      "uvInterpolation": "bmesh bisect on original faces"
+    }
+  ]
+}

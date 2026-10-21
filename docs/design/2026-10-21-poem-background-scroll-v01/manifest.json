@@ -1,0 +1,240 @@
+{
+  "reference": {
+    "file": "reference-user.png",
+    "source": "User-provided attached UI design",
+    "sha256": "df9718e9edd60bbbc96d2dfc8e6b72d9ac39612f9b1145957481f4aaae2936ba",
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "implementation": {
+    "tools": [
+      "Codex",
+      "TypeScript",
+      "CSS",
+      "original SVG interface icons"
+    ],
+    "new_generated_bitmap": false,
+    "paper_material": "Existing registered overview-landscape.jpg under warm CSS paper layers; no new third-party artwork.",
+    "source_files": [
+      {
+        "path": "frontend/src/content/poemBackgrounds.ts",
+        "sha256": "86d24cae2beae4b1d10c23a8f8e4f2624f8b61e00f9510e32c5add8de533f718"
+      },
+      {
+        "path": "frontend/src/ui/components/PoemBackground.ts",
+        "sha256": "9debe8b135ec03bda122dcb83782e6b6615dcbf6c36acbdbf178f1c8058f31cc"
+      },
+      {
+        "path": "frontend/src/ui/PoemScroll.ts",
+        "sha256": "1078a623324c979f5dc2c89e22feb121ca7105c2305edc176040ad8fb56f4061"
+      },
+      {
+        "path": "frontend/src/ui/PoemReveal.ts",
+        "sha256": "20119e22fcfa9e7053eb6c94e4294bc865794919dcdfec415f5e051d50826dd7"
+      },
+      {
+        "path": "frontend/src/ui/styles/poem-scroll.css",
+        "sha256": "ad02dcf0c76c78775b91dd789a353fc407e10fce4f6ae5ea383a82cdde599043"
+      },
+      {
+        "path": "frontend/src/ui/pages/Poem.ts",
+        "sha256": "5a290ce332d7d369bb3350357209033487ffef7c315d1f25d7b50efa1bc24fdb"
+      },
+      {
+        "path": "frontend/src/app/Application.ts",
+        "sha256": "5098aff7b1abdb4ee2b2ecd6100e5710c0c21137092e91949e843cdc2b6c1de7"
+      },
+      {
+        "path": "frontend/src/scenes/FengqiaoScene.ts",
+        "sha256": "ccd90cea39b569abb293c9bd82cb4b9475a3122ff2292810f708a3a46223dc2d"
+      },
+      {
+        "path": "frontend/tools/verify-poem-scroll.mjs",
+        "sha256": "44f296a3019a968aed34c5eaa8a4a4f9ad594578a3deb6b8c68cd0c27accea35"
+      },
+      {
+        "path": "frontend/tools/verify-scene-refinement.mjs",
+        "sha256": "9b180ab5a7853565b37ee6a9dac69d755e7a0f86635f4ee6e6891bbf52d9ce3a"
+      }
+    ]
+  },
+  "reading_sources": [
+    "https://www.gushiwen.cn/shiwenv_58313be2d918.aspx",
+    "https://www.gushiwen.cn/shiwenv_6fb73f607ad3.aspx"
+  ],
+  "validation": {
+    "behavior": "evidence/final/verification.json",
+    "final_layout": "evidence/final-layout/verification.json",
+    "deployed_browser": "evidence/deployed-browser/verification.json",
+    "deployment": "evidence/deployment/verification.json",
+    "screenshots": "Actual WebGL product routes, fixed scene time t=8; isolated account API fixture; three desktop viewports. Final density pass is in final-layout; deployment screenshots are in deployed-browser."
+  },
+  "evidence_sha256": [
+    {
+      "file": "evidence/build.log",
+      "sha256": "ab6a6b0050a857911be483a1597acae62bcc50fac3731b1a7e15201155637b6d"
+    },
+    {
+      "file": "evidence/deployed-browser/fengqiao-deployed-collapsed.png",
+      "sha256": "417d4a6d458468a6f13d625b38699a28685bdbe2e5c766208143b644730d0779"
+    },
+    {
+      "file": "evidence/deployed-browser/fengqiao-deployed.png",
+      "sha256": "8fef7b7208f67f672a035c91ffdaa6dffa7ee2e3a5f010ff88e80a4a5e88416a"
+    },
+    {
+      "file": "evidence/deployed-browser/jiangxue-deployed-collapsed.png",
+      "sha256": "cd30445bf3f8d91ae2dee73e51b49ede52e5cf9b4d034fcd7cde83f7b6ec90b9"
+    },
+    {
+      "file": "evidence/deployed-browser/jiangxue-deployed.png",
+      "sha256": "33dc45b1b9d6550b1b8fad8630bd559f23bafa7247376e1aff49e34fd52934ab"
+    },
+    {
+      "file": "evidence/deployed-browser/verification.json",
+      "sha256": "a1f921a4422018814783abad6b813a77697cd806555935a01f769c71f7dc8f65"
+    },
+    {
+      "file": "evidence/deployment/after.json",
+      "sha256": "1dc5eda9bee29b976135a7680ecd1788dbbefcd78ed8eba8937c644b2e460445"
+    },
+    {
+      "file": "evidence/deployment/before.json",
+      "sha256": "08b521655a5408f5971fc54a626547ce96d220c112521cbb08ef758618b070ae"
+    },
+    {
+      "file": "evidence/deployment/build.log",
+      "sha256": "825ef421dcdaf7d25701a13f928bdc34e2713e4f35674ae732845b2bb2bae8aa"
+    },
+    {
+      "file": "evidence/deployment/update.log",
+      "sha256": "36d5ceacbed4f5a98a24e3ecc998b2ce8395e013accecf4973af546a53534e48"
+    },
+    {
+      "file": "evidence/deployment/verification.json",
+      "sha256": "474da88df1f4c1084e80e6558eeff21b611b12eef172c1369773eb8f1c6c7ee0"
+    },
+    {
+      "file": "evidence/early-attempts.json",
+      "sha256": "dd5db1f1f891212a3e168c23cc5d366e662f9e5268712eaf410f092f8799326f"
+    },
+    {
+      "file": "evidence/final/fengqiao-1280.png",
+      "sha256": "a3214f7abf49bd1ee344d37e0ed532f0cdd219462c1103a92fc51b313907f269"
+    },
+    {
+      "file": "evidence/final/fengqiao-1440.png",
+      "sha256": "e81414d78902b3f9a0309aa0f289ed03cf5e40b278a62a3b86421989591a7e5f"
+    },
+    {
+      "file": "evidence/final/fengqiao-1920.png",
+      "sha256": "9641a3b59b18067a74bd73ab478e3a83dfa6a502eb75d6a7ac1a1dadd11972af"
+    },
+    {
+      "file": "evidence/final/fengqiao-closeup.png",
+      "sha256": "275e253ee0d9e80261ce143f3212cc23c26be6de144cb7277e74eb6a9b348dca"
+    },
+    {
+      "file": "evidence/final/fengqiao-collapsed.png",
+      "sha256": "ee234543c62e690efe4d3cbb18eae6e35731d9daf6ea43be8668f722c070b08a"
+    },
+    {
+      "file": "evidence/final/fengqiao-reduced.png",
+      "sha256": "6910cf3de534086c9797dea3242ec3aedddf39f24a3caf2523b0876b46dd0d1a"
+    },
+    {
+      "file": "evidence/final/jiangxue-1280.png",
+      "sha256": "2e5834a1086580b2aef47eb5381de86beb8a23cc53da654b55d9d36558d7441b"
+    },
+    {
+      "file": "evidence/final/jiangxue-1440.png",
+      "sha256": "eedd2fa23f49fb20b858c314a20e829ef2072a09754e538f1518cf536f5bbbd4"
+    },
+    {
+      "file": "evidence/final/jiangxue-1920.png",
+      "sha256": "0702970f960759a3508191e05146bc5fe095f3c4db258e093d19c632b852a099"
+    },
+    {
+      "file": "evidence/final/jiangxue-closeup.png",
+      "sha256": "f9e2e874567da7f220e54566cc349bf3a152d64fceae449117650bc78b8918d4"
+    },
+    {
+      "file": "evidence/final/jiangxue-collapsed.png",
+      "sha256": "69bc997a761d067dc4e1a3882f36aa489c84fbd8c09a0ffdf41042a2bbf43bb7"
+    },
+    {
+      "file": "evidence/final/jiangxue-reduced.png",
+      "sha256": "08461adbd7911fc1bbc7f108013be1f070b2abac442b54b168cca27c99a54f23"
+    },
+    {
+      "file": "evidence/final/verification.json",
+      "sha256": "2b46a546533876f87a238811c01aa63a79de0b7963740d3c4c4e36099164e2de"
+    },
+    {
+      "file": "evidence/final-layout/fengqiao-1280.png",
+      "sha256": "ce7495484ab7de12ff8188ca04016b0a81eed357489c9d0a05256c8fcc5590f1"
+    },
+    {
+      "file": "evidence/final-layout/fengqiao-1440.png",
+      "sha256": "8fef7b7208f67f672a035c91ffdaa6dffa7ee2e3a5f010ff88e80a4a5e88416a"
+    },
+    {
+      "file": "evidence/final-layout/fengqiao-1920.png",
+      "sha256": "c86a927643e351b5e87d751d5aac5dba2998447f54bf66c31d8c9843e76d5e44"
+    },
+    {
+      "file": "evidence/final-layout/fengqiao-scroll-end.png",
+      "sha256": "ffa6e89838ddb9e95488547d23450b649ae6719c0e3ea97519c7a7329ecedad5"
+    },
+    {
+      "file": "evidence/final-layout/jiangxue-1280.png",
+      "sha256": "ec5f30e11b26077a32bbb5ef3762b134041b9d8fc51464d9d5551603990515a2"
+    },
+    {
+      "file": "evidence/final-layout/jiangxue-1440.png",
+      "sha256": "33dc45b1b9d6550b1b8fad8630bd559f23bafa7247376e1aff49e34fd52934ab"
+    },
+    {
+      "file": "evidence/final-layout/jiangxue-1920.png",
+      "sha256": "7d42f54c1dc61269cd9199ffc376de278edeeee94f86c02bc451bdf558e7f583"
+    },
+    {
+      "file": "evidence/final-layout/jiangxue-scroll-end.png",
+      "sha256": "33dc45b1b9d6550b1b8fad8630bd559f23bafa7247376e1aff49e34fd52934ab"
+    },
+    {
+      "file": "evidence/final-layout/verification.json",
+      "sha256": "be7299f232afb23d39061952fb5ee6f8d9ab2b9952fc7995e8a82974b98a9471"
+    },
+    {
+      "file": "evidence/initial-attempts/jiangxue-1280.png",
+      "sha256": "75a6f201953225d17d867a1dd596be66edf538c3e0862cfb7e16557c7b9d150b"
+    },
+    {
+      "file": "evidence/initial-attempts/jiangxue-1440.png",
+      "sha256": "eedd2fa23f49fb20b858c314a20e829ef2072a09754e538f1518cf536f5bbbd4"
+    },
+    {
+      "file": "evidence/initial-attempts/jiangxue-1920.png",
+      "sha256": "0702970f960759a3508191e05146bc5fe095f3c4db258e093d19c632b852a099"
+    },
+    {
+      "file": "evidence/initial-attempts/jiangxue-closeup.png",
+      "sha256": "84a1c4dc6f231d160bfd809d64bc68393e4c1c0b47060d28ae77faf354fd396b"
+    },
+    {
+      "file": "evidence/initial-attempts/jiangxue-collapsed.png",
+      "sha256": "69bc997a761d067dc4e1a3882f36aa489c84fbd8c09a0ffdf41042a2bbf43bb7"
+    },
+    {
+      "file": "evidence/unit-tests.log",
+      "sha256": "7a7b4c0b39b7227eee46dd6d38c1380ba6bb1a8a7b5beb6bc09d901ecd678448"
+    },
+    {
+      "file": "evidence/verification.json",
+      "sha256": "bfb6c6296f37e2f391a4c21f7b485ee8811368e74920dba6786bec28b0186e4b"
+    }
+  ]
+}

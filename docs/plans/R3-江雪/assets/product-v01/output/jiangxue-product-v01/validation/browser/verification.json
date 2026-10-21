@@ -1,0 +1,285 @@
+{
+  "scope": "normal authenticated product routes; actual v06 assets; isolated account API",
+  "checks": [
+    "普通打开仍先展示大帘幕",
+    "雪幕准备真实v06首帧，完成入境后复用同一Canvas",
+    "四句原诗竖排右起，键盘切换对应Blender机位",
+    "确定性跳转重放一致，收藏重绘保留模型、时间和视角",
+    "笺注译文、全屏与重看可用",
+    "真实WebAudio仅轻风/水声，暂停、静音与释放生效",
+    "1920、1440、1280桌面布局无横向溢出或工具遮挡",
+    "翻页仅一次捕获、48条带共用；取消可恢复，返回后资源归零",
+    "减少动态固定舟位，保留读诗、选景和返回",
+    "同页直达江雪、枫桥往返及多次重入无场景串用或资源增长",
+    "模型404可重试，加载中取消保留原页面并丢弃迟到结果"
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "disposals": [
+    {
+      "scene": "jiangxue:disposed",
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "scene": "jiangxue:disposed",
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "scene": "jiangxue:disposed",
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "scene": "fengqiao:disposed",
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "stages": [
+        {
+          "owner": "()=>{for(let e of $.values())e.dispose();$.clear(),Ge.clear()}",
+          "geometries": 45,
+          "textures": 23
+        },
+        {
+          "owner": "()=>Q?.dispose()",
+          "geometries": 29,
+          "textures": 23
+        },
+        {
+          "owner": "()=>He?.dispose()",
+          "geometries": 28,
+          "textures": 23
+        },
+        {
+          "owner": "()=>Y?.dispose()",
+          "geometries": 28,
+          "textures": 23
+        },
+        {
+          "owner": "()=>J?.dispose()",
+          "geometries": 27,
+          "textures": 23
+        },
+        {
+          "owner": "()=>q?.dispose()",
+          "geometries": 26,
+          "textures": 22
+        },
+        {
+          "owner": "()=>t.dispose()",
+          "geometries": 25,
+          "textures": 22
+        },
+        {
+          "owner": "()=>G.dispose()",
+          "geometries": 24,
+          "textures": 21
+        },
+        {
+          "owner": "()=>B.shadow.dispose()",
+          "geometries": 24,
+          "textures": 19
+        },
+        {
+          "owner": "()=>{let e=new Set;for(let t of z)t.value instanceof r&&e.add(t.value);for(let t of e)t.dispose();z.clear()}",
+          "geometries": 24,
+          "textures": 18
+        },
+        {
+          "owner": "()=>L?.dispose()",
+          "geometries": 24,
+          "textures": 18
+        },
+        {
+          "owner": "()=>I.dispose()",
+          "geometries": 24,
+          "textures": 18
+        },
+        {
+          "owner": "()=>M.dispose()",
+          "geometries": 1,
+          "textures": 3
+        },
+        {
+          "owner": "()=>e.dispose()",
+          "geometries": 1,
+          "textures": 3
+        },
+        {
+          "owner": "()=>e.dispose()",
+          "geometries": 1,
+          "textures": 2
+        },
+        {
+          "owner": "()=>j.dispose()",
+          "geometries": 1,
+          "textures": 0
+        }
+      ]
+    },
+    {
+      "scene": "jiangxue:disposed",
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    }
+  ],
+  "status": "pass",
+  "asset": {
+    "revision": "06",
+    "view": {
+      "name": "CAM_enter",
+      "camera": [
+        -15,
+        8,
+        29
+      ]
+    },
+    "time": 0.5,
+    "playing": true,
+    "fps": 0.2322184821445569,
+    "calls": 197,
+    "triangles": 591218,
+    "navigation": {
+      "speed": 0.1,
+      "length": 56.555988774492945,
+      "forward": [
+        0.15599549396247409,
+        0,
+        -0.9877577667947764
+      ],
+      "position": [
+        2.007799589620566,
+        -0.2997749667220071,
+        1.9506120887405491
+      ],
+      "quaternion": [
+        0.0026564142323120547,
+        0.6496123499882772,
+        -0.0008057025921923819,
+        0.7602605402422693
+      ],
+      "end": [
+        9.86176138535489,
+        -54
+      ],
+      "effectiveTime": 0.5,
+      "worldForward": [
+        0.15600629117208192,
+        0.0022261912079595244,
+        -0.9877535528599414
+      ],
+      "waterSurface": 0.00022504519892185162,
+      "lineEndpoint": [
+        3.5233029496871477,
+        -0.01018177684044208,
+        1.2165521533153427
+      ],
+      "lineWaterGap": -0.00599999999999995
+    },
+    "camera": [
+      -15,
+      8,
+      29
+    ],
+    "memory": {
+      "geometries": 72,
+      "textures": 22
+    },
+    "programs": 18,
+    "contextLost": false,
+    "disposed": false,
+    "scene": "jiangxue",
+    "model": "models/jiangxue/scene_v06.glb",
+    "terrain": "jiangxue-v06",
+    "loadMs": 1411.7999999998137,
+    "reducedMotion": false,
+    "audio": {
+      "state": "running",
+      "muted": false,
+      "voices": 2,
+      "loops": 2,
+      "events": [],
+      "tracks": [
+        "environment",
+        "effects",
+        "voice",
+        "music"
+      ],
+      "profile": "jiangxue",
+      "sounds": [
+        "wind",
+        "water"
+      ]
+    }
+  },
+  "views": [
+    {
+      "name": "CAM_birds",
+      "camera": [
+        3,
+        11,
+        -8
+      ]
+    },
+    {
+      "name": "CAM_path",
+      "camera": [
+        3,
+        7,
+        14
+      ]
+    },
+    {
+      "name": "CAM_boat",
+      "camera": [
+        13.124685437336279,
+        3.5999999046325684,
+        2.7108708031073343
+      ]
+    },
+    {
+      "name": "CAM_fisherman",
+      "camera": [
+        7.321065832518546,
+        2.4000000953674316,
+        1.011903882976298
+      ]
+    }
+  ],
+  "audio": {
+    "state": "running",
+    "muted": false,
+    "voices": 2,
+    "loops": 2,
+    "events": [],
+    "tracks": [
+      "environment",
+      "effects",
+      "voice",
+      "music"
+    ],
+    "profile": "jiangxue",
+    "sounds": [
+      "wind",
+      "water"
+    ]
+  },
+  "audioContexts": [
+    "closed",
+    "suspended",
+    "closed",
+    "closed",
+    "closed"
+  ]
+}

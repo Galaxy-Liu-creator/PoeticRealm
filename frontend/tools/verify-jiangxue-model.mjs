@@ -2,11 +2,11 @@ import {chromium} from 'playwright';
 import {mkdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {authenticatedUi} from './authenticated-ui-fixture.mjs';
-const revision=process.argv.find(a=>a.startsWith('--revision='))?.split('=')[1]??'03';
-assert.match(revision,/^(01|02|03)$/);
+const revision=process.argv.find(a=>a.startsWith('--revision='))?.split('=')[1]??'06';
+assert.match(revision,/^(01|02|03|04|05|06)$/);
 const out=new URL(`../../output/jiangxue-model-v${revision}/validation/`,import.meta.url).pathname.replace(/^\/([A-Za-z]:)/,'$1');
 await mkdir(out,{recursive:true});
-const browser=await chromium.launch({channel:'chrome',headless:true,args:['--use-angle=d3d11','--enable-webgl','--ignore-gpu-blocklist']});
+const browser=await chromium.launch({channel:'chrome',headless:true,args:[...(process.platform==='win32'?['--use-angle=d3d11']:[]),'--enable-webgl','--ignore-gpu-blocklist']});
 const report={revision,fixture:'isolated authentication; real Chrome/WebGL and published Jiangxue GLB',errors:[],warnings:[],views:[],release:[],performance:[]};
 try {
   const context=await browser.newContext({viewport:{width:1920,height:1080},deviceScaleFactor:1});await authenticatedUi(context);
@@ -14,7 +14,8 @@ try {
   const url=`http://127.0.0.1:5187/?scene=jiangxue&lab=jiangxue&t=0&asset=scenes/jiangxue.scene-v${revision}.json`;
   await page.goto(url);await page.evaluate(async()=>{const {tabSession}=await import('/src/api/TabSession.ts');tabSession.set({token:'t'.repeat(43),lease:'l'.repeat(43)});});
   await page.reload();await page.waitForFunction(()=>!!window.__JIANGXUE_SAMPLE__,null,{timeout:45000});
-  if(revision==='03'){
+  report.renderer=await page.evaluate(()=>{const gl=document.querySelector('canvas').getContext('webgl2'),debug=gl?.getExtension('WEBGL_debug_renderer_info');return {userAgent:navigator.userAgent,vendor:debug?gl.getParameter(debug.UNMASKED_VENDOR_WEBGL):null,renderer:debug?gl.getParameter(debug.UNMASKED_RENDERER_WEBGL):null};});
+  if(['03','04','05','06'].includes(revision)){
     report.navigation=[];
     for(const time of [0,8,23,32,90,300,10000]){
       await page.evaluate(t=>window.__JIANGXUE_SAMPLE__.seek(t),time);
@@ -70,9 +71,22 @@ try {
       const restored=await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.stats());
       assert.deepEqual(restored.memory,before.memory);report.release.push({cycle:i+1,before:before.memory,after:after.memory,restored:restored.memory});
     }
+    if(['05','06'].includes(revision)){
+      report.versionSwitch=[];
+      for(const value of [revision==='06'?'05':'04',revision]){
+        await page.evaluate(()=>{window.__JIANGXUE_PREVIOUS__=window.__JIANGXUE_SAMPLE__;});
+        await page.getByLabel('模型版本',{exact:true}).selectOption(value);
+        await page.waitForFunction(value=>window.__JIANGXUE_SAMPLE__?.stats().revision===value,value,{timeout:45000});
+        const old=await page.evaluate(()=>window.__JIANGXUE_PREVIOUS__.stats());
+        assert(old.disposed&&old.contextLost);assert.deepEqual(old.memory,{geometries:0,textures:0});
+        const current=await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.stats());
+        report.versionSwitch.push({revision:value,released:old.memory,restored:current.memory});
+        await page.evaluate(()=>{delete window.__JIANGXUE_PREVIOUS__;});
+      }
+    }
     await page.emulateMedia({reducedMotion:'reduce'});await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.reload());
     assert.equal((await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.stats())).playing,false);
-    if(revision==='03'){
+    if(['03','04','05','06'].includes(revision)){
       await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.seek(23));
       const n=(await page.evaluate(()=>window.__JIANGXUE_SAMPLE__.stats())).navigation;
       assert.equal(n.effectiveTime,0);assert(Math.hypot(n.position[0]-2,n.position[2]-2)<1e-6);report.reducedBoatFrozen=true;

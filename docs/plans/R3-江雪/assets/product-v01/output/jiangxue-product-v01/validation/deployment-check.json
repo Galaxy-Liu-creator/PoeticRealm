@@ -1,0 +1,23 @@
+{
+  "backend": {
+    "id": "7a3540fb9c24",
+    "image": "sha256:47f404ff622f5936ee28b6d795703316e391667795e3ad1cd5cabd676966c184",
+    "state": "running",
+    "health": "healthy",
+    "sameContainer": true
+  },
+  "db": {
+    "id": "840e21ec5f9a",
+    "image": "mysql:8.4",
+    "state": "running",
+    "health": "healthy",
+    "sameContainer": true
+  },
+  "frontend": {
+    "id": "b9e193f03aa5",
+    "image": "poeticrealm-frontend",
+    "state": "running",
+    "health": "healthy",
+    "sameContainer": false
+  }
+}

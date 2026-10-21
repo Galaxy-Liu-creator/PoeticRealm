@@ -110,3 +110,7 @@ desktop.ini
 /.agents/
 /.codex/
 /.aws/
+
+# 部署时的本机容器原始快照；验收摘要 verification.json 继续入库
+/docs/design/**/evidence/deployment/before.json
+/docs/design/**/evidence/deployment/after.json

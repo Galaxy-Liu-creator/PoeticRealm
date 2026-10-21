@@ -1,0 +1,39 @@
+{
+  "artifact": "Jiangxue post-entry desktop poetry layout design preview v01",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit",
+  "generatedOriginal": "/home/liuhan/.codex/generated_images/01a153b8-e7dd-79a2-a7fe-e4a9584498c1/exec-23c070f5-32f2-40e9-971a-3d1f894f9941.png",
+  "promptFile": "docs/design/2026-10-21-jiangxue-poem-layout-v01/request.json",
+  "reference": "actual 1440x900 normal product viewport; Jiangxue v06",
+  "review": {
+    "poem": "four five-character columns, right to left, text inspected",
+    "composition": "large left poetry with unobscured boat at right; compact bottom actions",
+    "status": "preview for user review"
+  },
+  "deployment": "design source only; no frontend or model modifications",
+  "files": [
+    {
+      "path": "docs/design/2026-10-21-jiangxue-poem-layout-v01/request.json",
+      "bytes": 5301,
+      "sha256": "b973e91653e08e3d1d1d6facd3ed080cf19a2ec8c13bac077f85508b3f41f4ee"
+    },
+    {
+      "path": "docs/design/2026-10-21-jiangxue-poem-layout-v01/mockup-v01.png",
+      "bytes": 1600014,
+      "sha256": "10e05e4aa09defdb4b92f72f83286a107b32120a6a81bc96713c63d7239dfb9a",
+      "dimensions": [
+        1586,
+        992
+      ]
+    },
+    {
+      "path": "docs/design/2026-10-21-jiangxue-poem-layout-v01/references/current-product.png",
+      "bytes": 807861,
+      "sha256": "094715bb9700dfafa731dce94138e0cbb10557868330d584fef68f51a2f6eeb9",
+      "dimensions": [
+        1440,
+        900
+      ]
+    }
+  ]
+}

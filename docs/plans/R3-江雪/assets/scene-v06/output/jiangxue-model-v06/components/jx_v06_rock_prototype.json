@@ -1,0 +1,39 @@
+{
+  "component": "jx_v06_rock_prototype",
+  "meshes": [
+    {
+      "object": "src_rock_v06_00",
+      "vertices": 725,
+      "triangles": 1446,
+      "nonmanifoldEdges": 0,
+      "volume": 28.115680326502346
+    },
+    {
+      "object": "src_snow_v06_00",
+      "vertices": 1602,
+      "triangles": 3200,
+      "nonmanifoldEdges": 0,
+      "volume": 0.44492460020127345
+    }
+  ],
+  "checks": [
+    {
+      "pair": 0,
+      "scales": [
+        1.1,
+        0.78,
+        0.55
+      ],
+      "offset": [
+        1.0,
+        -1
+      ],
+      "rotationRadians": -0.32,
+      "bottomGap": [
+        -0.0033082962036132812,
+        -0.003289341926574707
+      ],
+      "expectedEmbed": 0.0033000000000000004
+    }
+  ]
+}

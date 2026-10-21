@@ -1,0 +1,112 @@
+{
+  "component": "jx_v05_bank_snow_prototype",
+  "meshes": [
+    {
+      "object": "src_shore_snow_v05_prototype",
+      "vertices": 680,
+      "triangles": 1356,
+      "nonmanifoldEdges": 0,
+      "volume": 17.113300363192224
+    }
+  ],
+  "checks": {
+    "object": "src_shore_snow_v05_prototype",
+    "rows": 17,
+    "columns": 20,
+    "bottomSamples": 340,
+    "bottomContactMetres": -0.006,
+    "thicknessMetres": [
+      0.019999980926513672,
+      0.20320844650268555
+    ],
+    "front": [
+      {
+        "y": -22.0,
+        "offsetFromWaterEdge": 3.462414543739893,
+        "normalZ": 0.6347293853759766
+      },
+      {
+        "y": -20.5,
+        "offsetFromWaterEdge": 3.5037477162301993,
+        "normalZ": 0.6240485310554504
+      },
+      {
+        "y": -19.0,
+        "offsetFromWaterEdge": 3.5531928566599076,
+        "normalZ": 0.6217236518859863
+      },
+      {
+        "y": -17.5,
+        "offsetFromWaterEdge": 3.5983685468738935,
+        "normalZ": 0.6143671870231628
+      },
+      {
+        "y": -16.0,
+        "offsetFromWaterEdge": 3.6290246690619052,
+        "normalZ": 0.6506380438804626
+      },
+      {
+        "y": -14.5,
+        "offsetFromWaterEdge": 3.6392310397772833,
+        "normalZ": 0.6506380438804626
+      },
+      {
+        "y": -13.0,
+        "offsetFromWaterEdge": 3.628626173313836,
+        "normalZ": 0.67873615026474
+      },
+      {
+        "y": -11.5,
+        "offsetFromWaterEdge": 3.602461182975162,
+        "normalZ": 0.6947968602180481
+      },
+      {
+        "y": -10.0,
+        "offsetFromWaterEdge": 3.570430095514053,
+        "normalZ": 0.6947968602180481
+      },
+      {
+        "y": -8.5,
+        "offsetFromWaterEdge": 3.5445359626353627,
+        "normalZ": 0.6656184196472168
+      },
+      {
+        "y": -7.0,
+        "offsetFromWaterEdge": 3.5364472856164766,
+        "normalZ": 0.6659190654754639
+      },
+      {
+        "y": -5.5,
+        "offsetFromWaterEdge": 3.5549078567206447,
+        "normalZ": 0.6388953328132629
+      },
+      {
+        "y": -4.0,
+        "offsetFromWaterEdge": 3.6037520984252787,
+        "normalZ": 0.6266463398933411
+      },
+      {
+        "y": -2.5,
+        "offsetFromWaterEdge": 3.680949683458831,
+        "normalZ": 0.6266463398933411
+      },
+      {
+        "y": -1.0,
+        "offsetFromWaterEdge": 3.7788848850430483,
+        "normalZ": 0.9690158367156982
+      },
+      {
+        "y": 0.5,
+        "offsetFromWaterEdge": 3.88581409782103,
+        "normalZ": 0.9819574356079102
+      },
+      {
+        "y": 2.0,
+        "offsetFromWaterEdge": 3.9881949215688883,
+        "normalZ": 0.9951145648956299
+      }
+    ],
+    "support": "actual shore_bank_v02 mesh, parent-local BVH",
+    "roundedLipWidthMetres": 0.65
+  }
+}

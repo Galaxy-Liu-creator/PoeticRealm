@@ -1,0 +1,322 @@
+{
+  "stage": "jiangxue-product-v01",
+  "files": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 143743,
+      "sha256": "6f6f4725ff926ae4f7f7390467275cea1ae5858b7815461fd4525ff32aba05dc"
+    },
+    {
+      "path": "art/scripts/archive_jiangxue_product_v01.py",
+      "bytes": 1935,
+      "sha256": "0c9cd9504a720a96f38ebe117e13f41ad200032219049f8020d311d35806fd74"
+    },
+    {
+      "path": "docs/CREDITS.md",
+      "bytes": 28731,
+      "sha256": "550496f4cdc380769008c7823e194cc25aab069010636047897e98539c197411"
+    },
+    {
+      "path": "docs/plans/R3-江雪/plan.md",
+      "bytes": 11230,
+      "sha256": "13cea6faa6d1d1714134a388aef20192165e501f39e4bca13eee9785f87c33b1"
+    },
+    {
+      "path": "frontend/public/assets/scenes/jiangxue.scene-v06.json",
+      "bytes": 1275,
+      "sha256": "fbede147718652e9437c0fa7c91d300324fd8b1259684bcc29b31ace750294f6"
+    },
+    {
+      "path": "frontend/src/app/Application.ts",
+      "bytes": 40969,
+      "sha256": "d40fd7ea8b394a5484c03d4f7dfc9f674b5708a35056e82def40d1cbb3d7b3ad"
+    },
+    {
+      "path": "frontend/src/scenes/JiangxueScene.ts",
+      "bytes": 10784,
+      "sha256": "68f9b055b3765f3007c6e2e42aaa56547f5f3501569822d20df22dc3c2784d2a"
+    },
+    {
+      "path": "frontend/src/scenes/preparePoemScene.ts",
+      "bytes": 907,
+      "sha256": "cbe2a2f79a67bf50647bc39aca212b79ef555d4a5692eb4c22a9b81f1b25658b"
+    },
+    {
+      "path": "frontend/src/systems/audio/AudioEngine.ts",
+      "bytes": 6473,
+      "sha256": "f79ba4bc808633b29a1ca2a5568dae30e4c8bf4872a664505887d1adc678a3ab"
+    },
+    {
+      "path": "frontend/src/transition/RealmReveal.ts",
+      "bytes": 8572,
+      "sha256": "492599c858b2844b93dc35bc6a1d86e8ff5b1cdcc1721bd1dff425d51903752a"
+    },
+    {
+      "path": "frontend/src/ui/pages/Poem.ts",
+      "bytes": 3142,
+      "sha256": "73f3b95ca85ffe56601fd9a6b4a67a3f871e35b9c7091096ef421b0ccbc82b33"
+    },
+    {
+      "path": "frontend/src/ui/styles/fengqiao-scene.css",
+      "bytes": 3475,
+      "sha256": "31c78df312fba287e1deca7c98ea528a7606f90287776703ad8a5833e717af09"
+    },
+    {
+      "path": "frontend/tools/verify-jiangxue-abort.mjs",
+      "bytes": 3775,
+      "sha256": "0b268b262f1a08dd6d994fbd79bb86b8df70e41e201b8d21fa47a6f8d1c5654e"
+    },
+    {
+      "path": "frontend/tools/verify-jiangxue-product.mjs",
+      "bytes": 12799,
+      "sha256": "53c770f0e0697bc82bd3e874bc9a89575b050f77cb7c64735eb283c830b7dd73"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/abort/restored-product.png",
+      "bytes": 807861,
+      "sha256": "094715bb9700dfafa731dce94138e0cbb10557868330d584fef68f51a2f6eeb9"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/abort/verification.json",
+      "bytes": 2244,
+      "sha256": "b18edef06c8bb527efc20675c57995d816ecfe05eaad1b8a11ae17c0be7bf8af"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/abort-run.log",
+      "bytes": 27,
+      "sha256": "d516a5e21529fcf6459ad259465e7eeab68fbdefaf2af0fc7f36cd30ee70da9d"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/fixed-t8-repeat.png",
+      "bytes": 1201148,
+      "sha256": "4c589ab8a07e2d167c843bb5eaf8d483b77558369e34082ecc7b7012d92e0770"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/fixed-t8.png",
+      "bytes": 1201148,
+      "sha256": "4c589ab8a07e2d167c843bb5eaf8d483b77558369e34082ecc7b7012d92e0770"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/product-1280.png",
+      "bytes": 575794,
+      "sha256": "f8bef44be453cb68022ff8a15a98c58f8acdd7c531659429f54703a02aa061a8"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/product-1440.png",
+      "bytes": 809535,
+      "sha256": "7e18bd0a07c75ec3c27723c7bc104f5554dfa079023556d6b31f163ee4d7143b"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/product-1920.png",
+      "bytes": 1201309,
+      "sha256": "b41ba3aca520d17042ea8bb1d69ad65d6dc4901b8ee69fffa48d97a90b20ef74"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/return-0.5.png",
+      "bytes": 1792644,
+      "sha256": "0d8861b430866c266e6fbb33d0a665a114f7afe3ffb91b7dc07c9866fc1301cf"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/return-0.75.png",
+      "bytes": 2336274,
+      "sha256": "c7050cc8ef438b0f81ce0ecca10906ca0b7c17e07f1052710fd89b32e95ed6ec"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/return-0.png",
+      "bytes": 1108388,
+      "sha256": "5078ba50e1bb32215870933c65e7f9b98c69ceb785c27a18018519186dd42e51"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/verification.json",
+      "bytes": 6206,
+      "sha256": "220a9f227b2e9572b2b089dbd231194a72edb2a421e7571c93e13466acfd0f05"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/verse-CAM_birds.png",
+      "bytes": 963905,
+      "sha256": "72a4b04edb86ebb0d0c4b1a2a578c8e387cf5e44ed80f45242e6cdf7a5b0da5d"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/verse-CAM_boat.png",
+      "bytes": 896110,
+      "sha256": "466e0ceaf28c22f4865875753ddca137e58b8261c5c736c43255deaa4928185e"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/verse-CAM_fisherman.png",
+      "bytes": 1204755,
+      "sha256": "82d8e3e34bff6a44a65dbd58114ce29adb1ddb035d94d17da889155a61bbb389"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser/verse-CAM_path.png",
+      "bytes": 1433342,
+      "sha256": "f616af87a94b0332e73465b6a7c241e5e63be64b22d7ae63a7881cfeecf7fde7"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/browser-run.log",
+      "bytes": 868,
+      "sha256": "7daccc8385e30d0987affe74f88415ce4477543ce37fd00c20c8252158a62caf"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/build.log",
+      "bytes": 3188,
+      "sha256": "576bd4e2b1e0fbf3e8f7359abf10185b8d02f0d7be9e3896d1337c19af28ab4c"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/deploy-final.log",
+      "bytes": 262,
+      "sha256": "36d5ceacbed4f5a98a24e3ecc998b2ce8395e013accecf4973af546a53534e48"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/deploy.log",
+      "bytes": 262,
+      "sha256": "36d5ceacbed4f5a98a24e3ecc998b2ce8395e013accecf4973af546a53534e48"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/deployed-assets.json",
+      "bytes": 631,
+      "sha256": "de2b83210a6c57c7de39ef68b93cde5d1d75e44e96c5374444ca3e03310db941"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/deployment-check.json",
+      "bytes": 514,
+      "sha256": "90596b2df4e7454e4d536000a1b38ef1f95e2908a3ee32196ef438ae895aca16"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/deployment-final-check.json",
+      "bytes": 570,
+      "sha256": "56b7636079bc3d813cef216a1786165fac2735b7c7da88225d5f3a127aea4f44"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/docker-build-final.log",
+      "bytes": 6492,
+      "sha256": "1dcb87c613c3563d0c9c9b2ba00379c915bdb9e7716cb810352cd3a6027d1537"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/docker-build.log",
+      "bytes": 6814,
+      "sha256": "e90a4ab34e7926115fb95294d82d5900080867a32f03248beb32112f80036981"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/services-after.jsonl",
+      "bytes": 4150,
+      "sha256": "d622be97d40c597a0412b5e0adec6499f56706dd17b1f8295107043c9afe7aea"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/services-before.jsonl",
+      "bytes": 4177,
+      "sha256": "7b06d096a1824f78dcfb2a29b8e3f0fb3756773ac35bb04eb515046f84cbf15f"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/services-final.jsonl",
+      "bytes": 4142,
+      "sha256": "e19361e37dcacab3c2cb82853db32079dc59112296d71ae0e69ed01b51928cf8"
+    },
+    {
+      "path": "output/jiangxue-product-v01/validation/unit-tests.log",
+      "bytes": 514,
+      "sha256": "08dcff6e8b6241f431a6899671250d1889905b421a2dc70d99207337889746dc"
+    }
+  ],
+  "retainedLocalAttempts": [
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/failure.png",
+      "bytes": 1183262,
+      "sha256": "6e2a8222fe794889ad187704adfe27d418a80c48f09e938d3e7af2f6d256a085"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/fixed-t8-repeat.png",
+      "bytes": 1201148,
+      "sha256": "4c589ab8a07e2d167c843bb5eaf8d483b77558369e34082ecc7b7012d92e0770"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/fixed-t8.png",
+      "bytes": 1201148,
+      "sha256": "4c589ab8a07e2d167c843bb5eaf8d483b77558369e34082ecc7b7012d92e0770"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/run.log",
+      "bytes": 724,
+      "sha256": "8f279ae7640d6153187c6c6fa3dd54b6fe4669d995f757a490a301279b768db8"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/snow-entry-0.25.png",
+      "bytes": 2035057,
+      "sha256": "424ad47c6812d504fa6a142ca74952351de8ef3679eb6475c53a489b38db3b31"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/snow-entry-0.5.png",
+      "bytes": 402248,
+      "sha256": "97a8e0aea2b1fb293d7c7152a6254ea4514b646bdc2d3d91effbad4007008a67"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/snow-entry-0.75.png",
+      "bytes": 1268996,
+      "sha256": "03d9ec0a85e54a9a0d117b32fb875b6174e0d3934bc7a57ac7afe6a007316ae1"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/snow-entry-0.png",
+      "bytes": 2655978,
+      "sha256": "f657da49f5ef64c318a9049777792d90c04f794e8d95e0fed351d48c36c8aabf"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/verification.json",
+      "bytes": 3006,
+      "sha256": "c2515495245501497be600dbfc3a3bd7d694f94a5e3d7aaf009581018abd7306"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/verse-CAM_birds.png",
+      "bytes": 963905,
+      "sha256": "72a4b04edb86ebb0d0c4b1a2a578c8e387cf5e44ed80f45242e6cdf7a5b0da5d"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/verse-CAM_boat.png",
+      "bytes": 896110,
+      "sha256": "466e0ceaf28c22f4865875753ddca137e58b8261c5c736c43255deaa4928185e"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/verse-CAM_fisherman.png",
+      "bytes": 1204755,
+      "sha256": "82d8e3e34bff6a44a65dbd58114ce29adb1ddb035d94d17da889155a61bbb389"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-01/verse-CAM_path.png",
+      "bytes": 1433342,
+      "sha256": "f616af87a94b0332e73465b6a7c241e5e63be64b22d7ae63a7881cfeecf7fde7"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-02/failure.png",
+      "bytes": 402248,
+      "sha256": "97a8e0aea2b1fb293d7c7152a6254ea4514b646bdc2d3d91effbad4007008a67"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-02/run.log",
+      "bytes": 497,
+      "sha256": "ea18a42e94d967d936c24690ee8abcbf923b32f870170ca3f9d2b497974a3514"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-02/snow-entry-0.25.png",
+      "bytes": 2035782,
+      "sha256": "10d4a1d0e59d9e731e5d6803d472286edb613e7e184188992e7158579b350663"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-02/snow-entry-0.png",
+      "bytes": 2657467,
+      "sha256": "234d879a7c9db4e0025843dd60a104c9eb9b0576f29be9aac722db01d4ed852a"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-02/verification.json",
+      "bytes": 540,
+      "sha256": "a09a3f9ca64254d93d411d00a3f0710a328c9bb7584c4c5545522182c7959e4f"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-03/run.log",
+      "bytes": 494,
+      "sha256": "44b22920a4a240364987e65a2e2e3a1953c068843cc6147ed327c36f1589f8eb"
+    },
+    {
+      "path": "output/jiangxue-product-v01/attempts/browser-03/verification.json",
+      "bytes": 575,
+      "sha256": "813f0a00bedf1997a51ee3da88a4054339e0871beb51de8b1a7154b8274ce86f"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "component": "bd_cliff_left_far_shoulder",
+  "meshes": [
+    {
+      "object": "src_cliff_left_far_shoulder",
+      "vertices": 8580,
+      "triangles": 17156,
+      "nonmanifoldEdges": 0,
+      "volume": 2069554.8818039147
+    }
+  ],
+  "checks": {
+    "section": "left_far",
+    "parameters": [
+      -1,
+      100,
+      285,
+      108,
+      86,
+      3.9,
+      64
+    ],
+    "outerShoulderRiseMeters": [
+      17,
+      53
+    ],
+    "strata": "irregular phases and reduced repetitive ledges",
+    "publishedNode": "cliff_left_far"
+  }
+}

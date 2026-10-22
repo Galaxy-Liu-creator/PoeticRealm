@@ -1,0 +1,117 @@
+{
+  "component": "bd_v03_forest_far",
+  "meshes": [
+    {
+      "object": "src_forest_bark_right_near_far_v03",
+      "vertices": 1848,
+      "triangles": 2904,
+      "nonmanifoldEdges": 0,
+      "volume": 27.568948502402414
+    },
+    {
+      "object": "src_forest_leaves_right_near_far_v03",
+      "vertices": 1980,
+      "triangles": 2640,
+      "nonmanifoldEdges": 0,
+      "volume": 1754.7168240105038
+    },
+    {
+      "object": "src_forest_bark_left_near_far_v03",
+      "vertices": 2128,
+      "triangles": 3344,
+      "nonmanifoldEdges": 0,
+      "volume": 31.63016330513245
+    },
+    {
+      "object": "src_forest_leaves_left_near_far_v03",
+      "vertices": 2280,
+      "triangles": 3040,
+      "nonmanifoldEdges": 0,
+      "volume": 2012.3174091896065
+    },
+    {
+      "object": "src_forest_bark_left_far_far_v03",
+      "vertices": 1204,
+      "triangles": 1892,
+      "nonmanifoldEdges": 0,
+      "volume": 12.091736833614153
+    },
+    {
+      "object": "src_forest_leaves_left_far_far_v03",
+      "vertices": 1290,
+      "triangles": 1720,
+      "nonmanifoldEdges": 0,
+      "volume": 776.5972821978518
+    },
+    {
+      "object": "src_forest_bark_right_far_far_v03",
+      "vertices": 1260,
+      "triangles": 1980,
+      "nonmanifoldEdges": 0,
+      "volume": 12.089851221266981
+    },
+    {
+      "object": "src_forest_leaves_right_far_far_v03",
+      "vertices": 1350,
+      "triangles": 1800,
+      "nonmanifoldEdges": 0,
+      "volume": 769.6124400014917
+    }
+  ],
+  "checks": {
+    "assembly": [
+      {
+        "bank": "right_near",
+        "kind": "bark",
+        "trees": 66,
+        "triangles": 2904
+      },
+      {
+        "bank": "right_near",
+        "kind": "leaves",
+        "trees": 66,
+        "triangles": 2640
+      },
+      {
+        "bank": "left_near",
+        "kind": "bark",
+        "trees": 76,
+        "triangles": 3344
+      },
+      {
+        "bank": "left_near",
+        "kind": "leaves",
+        "trees": 76,
+        "triangles": 3040
+      },
+      {
+        "bank": "left_far",
+        "kind": "bark",
+        "trees": 43,
+        "triangles": 1892
+      },
+      {
+        "bank": "left_far",
+        "kind": "leaves",
+        "trees": 43,
+        "triangles": 1720
+      },
+      {
+        "bank": "right_far",
+        "kind": "bark",
+        "trees": 45,
+        "triangles": 1980
+      },
+      {
+        "bank": "right_far",
+        "kind": "leaves",
+        "trees": 45,
+        "triangles": 1800
+      }
+    ],
+    "seed": "unchanged v02 placement seed",
+    "positions": "exact v02 root positions/yaw/scale",
+    "nearBanks": "full v02 near trees and separate coarse LODs",
+    "farBanks": "coarse checked trees"
+  }
+}

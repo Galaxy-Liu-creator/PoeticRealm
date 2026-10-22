@@ -1,0 +1,28 @@
+{
+  "component": "bd_city_foundation",
+  "meshes": [
+    {
+      "object": "src_city_terrace",
+      "vertices": 96,
+      "triangles": 144,
+      "nonmanifoldEdges": 0,
+      "volume": 3257.863629134926
+    },
+    {
+      "object": "src_city_wall",
+      "vertices": 384,
+      "triangles": 576,
+      "nonmanifoldEdges": 0,
+      "volume": 617.8882516317103
+    }
+  ],
+  "checks": {
+    "supportTopMeters": 63.0,
+    "terraceTopMeters": 64.3,
+    "gateOpeningMeters": 8,
+    "sizeMeters": [
+      51,
+      51
+    ]
+  }
+}

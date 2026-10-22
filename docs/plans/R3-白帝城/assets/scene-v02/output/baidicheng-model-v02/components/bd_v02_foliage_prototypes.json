@@ -1,0 +1,58 @@
+{
+  "component": "bd_v02_foliage_prototypes",
+  "meshes": [
+    {
+      "object": "src_tree_bark_crown_v02_00",
+      "vertices": 62,
+      "triangles": 100,
+      "nonmanifoldEdges": 0,
+      "volume": 0.19050322955914034
+    },
+    {
+      "object": "src_tree_leaves_crown_v02_00",
+      "vertices": 154,
+      "triangles": 264,
+      "nonmanifoldEdges": 0,
+      "volume": 24.90987512115681
+    },
+    {
+      "object": "src_tree_bark_crown_v02_01",
+      "vertices": 62,
+      "triangles": 100,
+      "nonmanifoldEdges": 0,
+      "volume": 0.2685877243344755
+    },
+    {
+      "object": "src_tree_leaves_crown_v02_01",
+      "vertices": 154,
+      "triangles": 264,
+      "nonmanifoldEdges": 0,
+      "volume": 37.6600273477257
+    },
+    {
+      "object": "src_tree_bark_crown_v02_02",
+      "vertices": 62,
+      "triangles": 100,
+      "nonmanifoldEdges": 0,
+      "volume": 0.36598114903971124
+    },
+    {
+      "object": "src_tree_leaves_crown_v02_02",
+      "vertices": 154,
+      "triangles": 264,
+      "nonmanifoldEdges": 0,
+      "volume": 63.39693246968753
+    }
+  ],
+  "checks": {
+    "variants": 3,
+    "heightMeters": [
+      5.5,
+      6.45,
+      7.4
+    ],
+    "closedLobesPerCrown": 11,
+    "leafMask": "static zero wind weight",
+    "coordinates": "shared authored root at [0,0,0], use matrix_basis for hidden sources"
+  }
+}

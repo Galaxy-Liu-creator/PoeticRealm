@@ -1,0 +1,61 @@
+{
+  "component": "bd_v03_tree_far_bark",
+  "meshes": [
+    {
+      "object": "src_tree_bark_coarse_v03_00",
+      "vertices": 20,
+      "triangles": 32,
+      "nonmanifoldEdges": 0,
+      "volume": 0.1779070510950701
+    },
+    {
+      "object": "src_tree_bark_coarse_v03_01",
+      "vertices": 20,
+      "triangles": 32,
+      "nonmanifoldEdges": 0,
+      "volume": 0.2577633722142887
+    },
+    {
+      "object": "src_tree_bark_coarse_v03_02",
+      "vertices": 20,
+      "triangles": 32,
+      "nonmanifoldEdges": 0,
+      "volume": 0.35850918805714077
+    },
+    {
+      "object": "src_forest_bark_coarse_right_near_v03",
+      "vertices": 1320,
+      "triangles": 2112,
+      "nonmanifoldEdges": 0,
+      "volume": 27.656496418240998
+    },
+    {
+      "object": "src_forest_bark_coarse_left_near_v03",
+      "vertices": 1520,
+      "triangles": 2432,
+      "nonmanifoldEdges": 0,
+      "volume": 31.73073431775604
+    },
+    {
+      "object": "src_forest_bark_coarse_left_far_v03",
+      "vertices": 860,
+      "triangles": 1376,
+      "nonmanifoldEdges": 0,
+      "volume": 12.129392630988578
+    },
+    {
+      "object": "src_forest_bark_coarse_right_far_v03",
+      "vertices": 900,
+      "triangles": 1440,
+      "nonmanifoldEdges": 0,
+      "volume": 12.1282376016411
+    }
+  ],
+  "checks": {
+    "trees": 230,
+    "barkTrianglesPerTree": 32,
+    "totalFarTreeTriangles": 72,
+    "savedTriangles": 2760,
+    "crownGeometry": "unchanged five-clump crowns"
+  }
+}

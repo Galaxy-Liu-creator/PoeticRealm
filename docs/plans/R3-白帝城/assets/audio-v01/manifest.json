@@ -1,0 +1,194 @@
+{
+  "revision": "audio-v01",
+  "modelRevision": "03",
+  "scope": "Original bank calls and frontend-only update on local 5186",
+  "files": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 180282,
+      "sha256": "1fcb42f25a9a5bace8a3df1efd7e09316bee7f2cf46e111a09af1527f8187158"
+    },
+    {
+      "path": "art/scripts/archive_baidicheng_audio_v01.py",
+      "bytes": 2320,
+      "sha256": "bbac9c0ad695308e111fe2bf77c72f0696ad305095edf592fed593397f8cc902"
+    },
+    {
+      "path": "docs/CONTRACT.md",
+      "bytes": 51460,
+      "sha256": "5c9c9e17d03d9e58292b4fb6ae4367455223cc45842d3b91437468cee2bed1ad"
+    },
+    {
+      "path": "docs/CREDITS.md",
+      "bytes": 34099,
+      "sha256": "ac2c1dfd75f89b7ef67d3108c5e094a2610906e9e9f65b56c08f9f2e206b5694"
+    },
+    {
+      "path": "frontend/src/scenes/BaidichengScene.ts",
+      "bytes": 12544,
+      "sha256": "6857558f769ce697c2b7196e37d1ce7bbc8effc57867713edbf14bf35cc9c3ad"
+    },
+    {
+      "path": "frontend/src/systems/audio/AudioEngine.test.ts",
+      "bytes": 4935,
+      "sha256": "cf6d6a4d339c2e35d1ad25133fc5d87272bfefe75d2a4a88366ebce63904ac46"
+    },
+    {
+      "path": "frontend/src/systems/audio/AudioEngine.ts",
+      "bytes": 8650,
+      "sha256": "11665ac2df6c57af638cc25846641488fe529067afd38b730400379bb8606d65"
+    },
+    {
+      "path": "frontend/src/systems/audio/baidichengSound.test.ts",
+      "bytes": 2030,
+      "sha256": "88fbdc0825f4cc92ec7d86e3d25b722bb012e2cae461926816040c741f46574b"
+    },
+    {
+      "path": "frontend/src/systems/audio/baidichengSound.ts",
+      "bytes": 2494,
+      "sha256": "72b7fbc03136e4cd92035bfdf46ef4b97ad495e34126ec78488da074e264b156"
+    },
+    {
+      "path": "frontend/tools/check-budget.mjs",
+      "bytes": 2418,
+      "sha256": "70b10c96201c3e174ff788840ef692cf1afe45669c7690c61d76503442793279"
+    },
+    {
+      "path": "frontend/tools/verify-baidicheng-audio.mjs",
+      "bytes": 12760,
+      "sha256": "51a6696d75955bff0bd1caab625059309323e27bea4c1e5b77c77d1484e6ba53"
+    },
+    {
+      "path": "frontend/tools/verify-baidicheng-deployment.mjs",
+      "bytes": 3026,
+      "sha256": "ebb08607a314f60ae67d7ef47221f34448632a420af428c3d669f51895ab0c24"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/attempts/audio-mute-window.json",
+      "bytes": 462,
+      "sha256": "9fd06b4c6055bb1f38c8e3eb9e331e4597152cc1712d1ab3792dce53eee2e719"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/attempts/deployment-mime-check.json",
+      "bytes": 445,
+      "sha256": "36cd9593853dc667a04f81e5a1928ded739f3fe7675804d099317cf6fa290696"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-22-04.591Z/deployed-1440.png",
+      "bytes": 1327466,
+      "sha256": "a6c85c71a2d56d6c855d83010c2b6b99f0be4bcbc1521fa1f163363a5a0526eb"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-22-04.591Z/deployed-1920.png",
+      "bytes": 2151975,
+      "sha256": "1c4325266dba16fe6ee87f52f984cb8e9aa55f16ce0317591b61b0abca494410"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-22-04.591Z/two-banks-preview.wav",
+      "bytes": 2304044,
+      "sha256": "0ab3ca17c0317b134087ff86a9461381d0882ff95f51bce7e7354ea85075c1b2"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-22-04.591Z/verification.json",
+      "bytes": 3621,
+      "sha256": "60f20a8b2d10782915510777444369054fff7641b01462f58ab3c795e9f0f5b1"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-29-20.835Z/failure.png",
+      "bytes": 1321502,
+      "sha256": "990d229bf5fa5201fabae0056ab1bd94f5ed63a68cf0bf30c623a563218faf51"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-29-20.835Z/verification.json",
+      "bytes": 3634,
+      "sha256": "5be98ebba7d18b0f195f67d3ef689ee95e84a9e66d867c9d028a4cdf7e1e1ca1"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-36-48.156Z/deployed-1440.png",
+      "bytes": 1327466,
+      "sha256": "a6c85c71a2d56d6c855d83010c2b6b99f0be4bcbc1521fa1f163363a5a0526eb"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-36-48.156Z/deployed-1920.png",
+      "bytes": 2151975,
+      "sha256": "1c4325266dba16fe6ee87f52f984cb8e9aa55f16ce0317591b61b0abca494410"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-36-48.156Z/two-banks-preview.wav",
+      "bytes": 2304044,
+      "sha256": "0ab3ca17c0317b134087ff86a9461381d0882ff95f51bce7e7354ea85075c1b2"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/2026-10-22T13-36-48.156Z/verification.json",
+      "bytes": 3485,
+      "sha256": "f24072802cdf527dc38137ad118f102f74fe11b8f329d3fd9453a6cdb24d6404"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/budget.json",
+      "bytes": 1985,
+      "sha256": "0ccf9b5e3d96f1739048c03cd86ca054590ebf15fba93f78a2858c5efa8f2342"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/contract.json",
+      "bytes": 1126,
+      "sha256": "76b499538f1c25fa9e74357e4f46bf8e91c1aca168781aa86eae94c5a9db55b2"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/deploy.log",
+      "bytes": 262,
+      "sha256": "36d5ceacbed4f5a98a24e3ecc998b2ce8395e013accecf4973af546a53534e48"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/deployed-browser-final.log",
+      "bytes": 606,
+      "sha256": "788574a4ff4d535f85a9fa772ef0ac819164cb0424b453513c6e32679f012c41"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/deployed-browser.log",
+      "bytes": 837,
+      "sha256": "b6aa0f642bfb38c796e0202366f402794b39bcafe97a9d5f3ca6609ac0bc6a17"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/deployment-before.json",
+      "bytes": 1040,
+      "sha256": "8fbda5edce01e0c14eca54acc29df47d6264dbe3cc2e2400b03004f3a40ef897"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/deployment-check.log",
+      "bytes": 273,
+      "sha256": "ceaf4762ce9ee58a836859ce87b2e34ca5f1ced047cc02d7736af16d5359382b"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/deployment.json",
+      "bytes": 7547,
+      "sha256": "c9e441822bf74e4391f0fe8514fec66b3e8b9dce2e8bd433d8cc6d3588ee10db"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/docker-build.log",
+      "bytes": 16088,
+      "sha256": "f99ca1eb327fcc38d47d490d1c49b0b9c1007018f7ff090d332162270ed064e2"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/runtime-sources.json",
+      "bytes": 755,
+      "sha256": "39a0f42b6149c71fec6c1bb0374f8957613ed41566c47cc5e31e4e487a0773e3"
+    },
+    {
+      "path": "output/baidicheng-audio-v01/validation/unit-tests.json",
+      "bytes": 381,
+      "sha256": "6f4ed82892077c5026a5c91504e962c07ff45b1485c05fb4b55798916905fa5f"
+    }
+  ],
+  "localModels": [
+    {
+      "path": "frontend/public/assets/models/baidicheng/scene_v03.glb",
+      "bytes": 13651084,
+      "sha256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5"
+    },
+    {
+      "path": "art/blender/baidicheng-scene-v03.blend",
+      "bytes": 39860459,
+      "sha256": "773cb12ed7ba1e268f1a8b4d6b271592cd299d908f51a65628d89a1b432d8cf5"
+    }
+  ]
+}

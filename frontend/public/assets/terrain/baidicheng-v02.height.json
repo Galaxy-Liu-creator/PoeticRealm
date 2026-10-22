@@ -1,0 +1,15 @@
+{
+  "scene": "baidicheng-v02",
+  "resolution": 1024,
+  "size": [
+    1000.0,
+    1000.0
+  ],
+  "heightRange": [
+    -3.0,
+    235.012609
+  ],
+  "waterLevel": 0.0,
+  "bakedFrom": "art/blender/baidicheng-scene-v02.blend",
+  "bakedAt": "2026-10-22T00:14:04Z"
+}

@@ -1,0 +1,269 @@
+{
+  "pass": true,
+  "base": "http://127.0.0.1:5186",
+  "before": [
+    {
+      "service": "backend",
+      "id": "7a3540fb9c24",
+      "image": "sha256:47f404ff622f5936ee28b6d795703316e391667795e3ad1cd5cabd676966c184",
+      "health": "healthy",
+      "state": "running",
+      "publishers": [
+        {
+          "URL": "",
+          "TargetPort": 8080,
+          "PublishedPort": 0,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "service": "db",
+      "id": "840e21ec5f9a",
+      "image": "mysql:8.4",
+      "health": "healthy",
+      "state": "running",
+      "publishers": [
+        {
+          "URL": "",
+          "TargetPort": 3306,
+          "PublishedPort": 0,
+          "Protocol": "tcp"
+        },
+        {
+          "URL": "",
+          "TargetPort": 33060,
+          "PublishedPort": 0,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "service": "frontend",
+      "id": "8811ec681c28",
+      "image": "poeticrealm-frontend",
+      "health": "healthy",
+      "state": "running",
+      "publishers": [
+        {
+          "URL": "127.0.0.1",
+          "TargetPort": 8080,
+          "PublishedPort": 5186,
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "service": "backend",
+      "id": "7a3540fb9c24",
+      "image": "sha256:47f404ff622f5936ee28b6d795703316e391667795e3ad1cd5cabd676966c184",
+      "health": "healthy",
+      "state": "running",
+      "publishers": [
+        {
+          "URL": "",
+          "TargetPort": 8080,
+          "PublishedPort": 0,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "service": "db",
+      "id": "840e21ec5f9a",
+      "image": "mysql:8.4",
+      "health": "healthy",
+      "state": "running",
+      "publishers": [
+        {
+          "URL": "",
+          "TargetPort": 3306,
+          "PublishedPort": 0,
+          "Protocol": "tcp"
+        },
+        {
+          "URL": "",
+          "TargetPort": 33060,
+          "PublishedPort": 0,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    {
+      "service": "frontend",
+      "id": "2ed42c1781cb",
+      "image": "poeticrealm-frontend",
+      "health": "healthy",
+      "state": "running",
+      "publishers": [
+        {
+          "URL": "127.0.0.1",
+          "TargetPort": 8080,
+          "PublishedPort": 5186,
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "health": 200,
+  "csrf": 200,
+  "assets": [
+    {
+      "path": "assets/Application-Bawp_QOb.js",
+      "bytes": 135910,
+      "sha256": "b846c08d23fc8719f4078befc0176afce16476afe436eae72e036fd93f25413b"
+    },
+    {
+      "path": "assets/Application-DUaTadRv.css",
+      "bytes": 82040,
+      "sha256": "9950d4a6acb2d207a54b56410ff704e825a58f99982522d545e03fc48f3bb7ab"
+    },
+    {
+      "path": "assets/BaidichengScene-D2y3CBMz.js",
+      "bytes": 81,
+      "sha256": "d96d300fa3eb7c2d0bc1e801f8827c49a495f06f8dca3e99e43dbbbec884e0bc"
+    },
+    {
+      "path": "assets/BaidichengScene-YeM1awc5.js",
+      "bytes": 19305,
+      "sha256": "e0ea4a5812cf9a747ebb4abc42513e014d5d2b3a16c9cc8b0e591973e83cb207"
+    },
+    {
+      "path": "assets/CurtainDrape-e11V8Yj6.js",
+      "bytes": 3189,
+      "sha256": "a5932c41ebbeb1f16350a81a2096b58262ba6f4be865bb61fc55749862b3364a"
+    },
+    {
+      "path": "assets/CurtainMotion-2a8UcnD3.js",
+      "bytes": 71838,
+      "sha256": "83bc9a7e5689e799279ef3d8a036b64de0487ae79dde8ea764f27c6d310da02f"
+    },
+    {
+      "path": "assets/Engine-DUaJzg4B.js",
+      "bytes": 106982,
+      "sha256": "c0d0930c52691f629492c0c0c1eaeed5129694de94b06bf3382ddd074cf2cfc5"
+    },
+    {
+      "path": "assets/FengqiaoScene-CZt2Cmuc.js",
+      "bytes": 25887,
+      "sha256": "107eae36d267e2dce21f25226ef4e88457919e16a1ba66279f4597e7df96859f"
+    },
+    {
+      "path": "assets/FengqiaoScene-QptMZawI.js",
+      "bytes": 77,
+      "sha256": "3ab9982f5be3b61dacadd3235d519b064e010e84c0aaeb9eae65c947ecff45ff"
+    },
+    {
+      "path": "assets/JiangxueScene-C3CSLmr_.js",
+      "bytes": 77,
+      "sha256": "6e6a48e28694b8d8a78623d13ef3cdb3ed566e51a0f4ba17b89203e853ff43ff"
+    },
+    {
+      "path": "assets/JiangxueScene-CLMEpmqz.js",
+      "bytes": 13366,
+      "sha256": "ce848e1b49303babe35df321e69ac1f8e20be812a45821f46d4f941bc920ff52"
+    },
+    {
+      "path": "assets/NightRiver-DuUE9LPj.js",
+      "bytes": 9564,
+      "sha256": "d61c9c0608e73be8a9d45d532896f20378b20d61ddb1f599ecb7ad7f001a2a78"
+    },
+    {
+      "path": "assets/Rower-Dx1HbS_9.js",
+      "bytes": 6892,
+      "sha256": "2b354e3b00015c688c6c7fa74763bb152d353840cfb596891622c717c5052b43"
+    },
+    {
+      "path": "assets/auth-DNBhXBNb.js",
+      "bytes": 4224,
+      "sha256": "dc4d0dfb3fa5ef588636ad49f388e70a44414b7096df6aa2e7644bf201c42309"
+    },
+    {
+      "path": "assets/baidicheng-DMr4-woy.js",
+      "bytes": 2723,
+      "sha256": "03c80df2d2e26424a45812190320141779c1279e47b7ab215f923c1f2ae52267"
+    },
+    {
+      "path": "assets/fengqiao-BFL2u1K2.css",
+      "bytes": 1359,
+      "sha256": "9cbfeea91cf24d22cead9ed3d8483b91841f5b4e6305f38274e6ac6990ec0d0d"
+    },
+    {
+      "path": "assets/fengqiao-shPiKiBe.js",
+      "bytes": 3409,
+      "sha256": "e71ce240ad894a7685a137d534b8548e9d5b35f12c4d88d738665ac8c24c42f1"
+    },
+    {
+      "path": "assets/fengqiaoSound-B0sT86Bj.js",
+      "bytes": 845,
+      "sha256": "ebbbc522c21869216ac83e2dcdaafef51652977b4b69ae71dcdb386c8fda24be"
+    },
+    {
+      "path": "assets/index-CH_RTZVs.js",
+      "bytes": 2748,
+      "sha256": "581d4240b60041741b1f9ca2c07347f0d521441fb5813590940d5f4500a8b611"
+    },
+    {
+      "path": "assets/jiangxue-ChOXkzZB.js",
+      "bytes": 3693,
+      "sha256": "7108113bd5d4e28fd3004f2fdb73be1527406d2435e1a25bdef47416950754f1"
+    },
+    {
+      "path": "assets/jiangxue-j_3EsxTj.css",
+      "bytes": 1164,
+      "sha256": "7db59b7ff50f2fbfd40a9dfefa630910045c8d63b3faccf0bbcd2af2477eec79"
+    },
+    {
+      "path": "assets/legacy-jnq43mF0.js",
+      "bytes": 13599,
+      "sha256": "4dc63b7fa01ac3848f99683386ff00afdedd15723c4749f71712004c1c826da9"
+    },
+    {
+      "path": "assets/lil-gui.esm-riACrVWc.js",
+      "bytes": 30635,
+      "sha256": "a773cea448cb7adffc178a7ff4f618ea5d134e56ae5026d87b8eba18c35af7e1"
+    },
+    {
+      "path": "assets/preload-helper-uBIymjUX.js",
+      "bytes": 1233,
+      "sha256": "e1a22f3f73566f21ff932e058d32243e4a118f3491b91e96893aa5ab7eb49a00"
+    },
+    {
+      "path": "assets/three.module-CmHL0OJ3.js",
+      "bytes": 574897,
+      "sha256": "db081f530901f61786781e1e39459ce9a06d10dda41bd9579fdf3db7d6501bc3"
+    },
+    {
+      "path": "assets/typography-CC7kYx0x.css",
+      "bytes": 2908,
+      "sha256": "c9a555edf6a1d2b04a7de1c8ce65cfdf3050c6dc3d2b63feb195c88ee2e08d53"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1207,
+      "sha256": "f411826ebe7bf7454f9901a3f8e952166e4c7dee7389131bc631167f19344878"
+    },
+    {
+      "path": "assets/scenes/baidicheng.scene-v03.json",
+      "bytes": 4027,
+      "sha256": "9ac1a293d87164a898aecf18f66d1c2a02a45123b33ea7255a2472aa7333f3d9"
+    },
+    {
+      "path": "assets/models/baidicheng/scene_v03.glb",
+      "bytes": 13651084,
+      "sha256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5"
+    },
+    {
+      "path": "assets/terrain/baidicheng-v03.height.json",
+      "bytes": 258,
+      "sha256": "79956f56dbf8f485f7bc5252387e7a389ad880b3c4e5e277c556f843acd7c1b4"
+    },
+    {
+      "path": "assets/terrain/baidicheng-v03.height.png",
+      "bytes": 1751574,
+      "sha256": "39ae3b1ddbb561ee3e2f37262b4afa7c83eb4fd8ce8113b716d9dafd8a1bdde6"
+    }
+  ]
+}

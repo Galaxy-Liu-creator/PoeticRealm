@@ -1,0 +1,416 @@
+{
+  "component": "bd_v03_city_support",
+  "meshes": [
+    {
+      "object": "src_city_support_detail_v03",
+      "vertices": 2352,
+      "triangles": 3864,
+      "nonmanifoldEdges": 0,
+      "volume": 22.589110895529338
+    },
+    {
+      "object": "src_city_support_coarse_v03",
+      "vertices": 672,
+      "triangles": 1008,
+      "nonmanifoldEdges": 0,
+      "volume": 21.19946019675743
+    },
+    {
+      "object": "src_city_timber_lowered_v03",
+      "vertices": 1568,
+      "triangles": 2604,
+      "nonmanifoldEdges": 0,
+      "volume": 68.54302326154067
+    }
+  ],
+  "checks": {
+    "posts": 42,
+    "postShorteningMeters": 1.1,
+    "baseRadiusMeters": 0.37,
+    "bearingSpanMeters": [
+      1.45,
+      1.6
+    ],
+    "connections": [
+      {
+        "post": [
+          45.5,
+          114.0,
+          68.4
+        ],
+        "bearingTop": 69.60000000000001,
+        "beamUnderside": 69.06
+      },
+      {
+        "post": [
+          45.5,
+          122.0,
+          68.4
+        ],
+        "bearingTop": 69.60000000000001,
+        "beamUnderside": 69.06
+      },
+      {
+        "post": [
+          51.0,
+          114.0,
+          68.4
+        ],
+        "bearingTop": 69.60000000000001,
+        "beamUnderside": 69.06
+      },
+      {
+        "post": [
+          51.0,
+          122.0,
+          68.4
+        ],
+        "bearingTop": 69.60000000000001,
+        "beamUnderside": 69.06
+      },
+      {
+        "post": [
+          56.5,
+          114.0,
+          68.4
+        ],
+        "bearingTop": 69.60000000000001,
+        "beamUnderside": 69.06
+      },
+      {
+        "post": [
+          56.5,
+          122.0,
+          68.4
+        ],
+        "bearingTop": 69.60000000000001,
+        "beamUnderside": 69.06
+      },
+      {
+        "post": [
+          62.0,
+          116.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          62.0,
+          122.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          66.0,
+          116.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          66.0,
+          122.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          70.0,
+          116.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          70.0,
+          122.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          33.0,
+          118.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          33.0,
+          124.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          37.0,
+          118.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          37.0,
+          124.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          41.0,
+          118.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          41.0,
+          124.0,
+          67.4
+        ],
+        "bearingTop": 68.60000000000001,
+        "beamUnderside": 68.06
+      },
+      {
+        "post": [
+          45.0,
+          126.5,
+          69.3
+        ],
+        "bearingTop": 70.5,
+        "beamUnderside": 69.96
+      },
+      {
+        "post": [
+          45.0,
+          135.5,
+          69.3
+        ],
+        "bearingTop": 70.5,
+        "beamUnderside": 69.96
+      },
+      {
+        "post": [
+          52.0,
+          126.5,
+          69.3
+        ],
+        "bearingTop": 70.5,
+        "beamUnderside": 69.96
+      },
+      {
+        "post": [
+          52.0,
+          135.5,
+          69.3
+        ],
+        "bearingTop": 70.5,
+        "beamUnderside": 69.96
+      },
+      {
+        "post": [
+          59.0,
+          126.5,
+          69.3
+        ],
+        "bearingTop": 70.5,
+        "beamUnderside": 69.96
+      },
+      {
+        "post": [
+          59.0,
+          135.5,
+          69.3
+        ],
+        "bearingTop": 70.5,
+        "beamUnderside": 69.96
+      },
+      {
+        "post": [
+          34.5,
+          132.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          34.5,
+          138.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          38.0,
+          132.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          38.0,
+          138.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          41.5,
+          132.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          41.5,
+          138.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          63.5,
+          133.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          63.5,
+          139.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          67.0,
+          133.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          67.0,
+          139.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          70.5,
+          133.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          70.5,
+          139.0,
+          67.3
+        ],
+        "bearingTop": 68.5,
+        "beamUnderside": 67.96
+      },
+      {
+        "post": [
+          48.5,
+          93.0,
+          68.7
+        ],
+        "bearingTop": 69.9,
+        "beamUnderside": 69.36
+      },
+      {
+        "post": [
+          48.5,
+          97.0,
+          68.7
+        ],
+        "bearingTop": 69.9,
+        "beamUnderside": 69.36
+      },
+      {
+        "post": [
+          52.0,
+          93.0,
+          68.7
+        ],
+        "bearingTop": 69.9,
+        "beamUnderside": 69.36
+      },
+      {
+        "post": [
+          52.0,
+          97.0,
+          68.7
+        ],
+        "bearingTop": 69.9,
+        "beamUnderside": 69.36
+      },
+      {
+        "post": [
+          55.5,
+          93.0,
+          68.7
+        ],
+        "bearingTop": 69.9,
+        "beamUnderside": 69.36
+      },
+      {
+        "post": [
+          55.5,
+          97.0,
+          68.7
+        ],
+        "bearingTop": 69.9,
+        "beamUnderside": 69.36
+      }
+    ],
+    "scope": "support geometry only; same floor and roof levels"
+  }
+}

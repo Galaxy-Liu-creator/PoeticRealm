@@ -1,0 +1,162 @@
+{
+  "base": "http://127.0.0.1:5186",
+  "output": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/output/baidicheng-audio-v01/validation/2026-10-22T13-29-20.835Z",
+  "checks": [
+    "Ordinary curtain/login and overview enter the deployed v03 scene with both ape banks",
+    "Actual Web Audio emits nonzero left/right calls from distinct authored world positions and restores offsets",
+    "Real HRTF offline rendering places the left bank left and right bank right from the overview camera"
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "initial": {
+    "model": "models/baidicheng/scene_v03.glb",
+    "view": {
+      "name": "CAM_enter",
+      "camera": [
+        6.999999999999999,
+        72,
+        155
+      ],
+      "target": [
+        0,
+        28,
+        -100
+      ],
+      "followsBoat": false
+    },
+    "audio": {
+      "state": "running",
+      "muted": false,
+      "voices": 0,
+      "loops": 0,
+      "lastEvent": "ape-left",
+      "events": [
+        "ape-left",
+        "ape-right",
+        "ape-left",
+        "ape-right",
+        "ape-left",
+        "ape-right",
+        "ape-left",
+        "ape-right",
+        "ape-left"
+      ],
+      "tracks": [
+        "environment",
+        "effects",
+        "voice",
+        "music"
+      ],
+      "profile": "baidicheng",
+      "sounds": [
+        "wind",
+        "water",
+        "ape-left",
+        "ape-right"
+      ],
+      "apeCues": []
+    }
+  },
+  "leftRms": 0.004404414896250196,
+  "left": {
+    "state": "running",
+    "muted": false,
+    "voices": 3,
+    "loops": 2,
+    "lastEvent": "ape-left",
+    "events": [
+      "ape-left",
+      "ape-right",
+      "ape-left",
+      "ape-right",
+      "ape-left",
+      "ape-right",
+      "ape-left",
+      "ape-right",
+      "ape-left",
+      "ape-left"
+    ],
+    "tracks": [
+      "environment",
+      "effects",
+      "voice",
+      "music"
+    ],
+    "profile": "baidicheng",
+    "sounds": [
+      "wind",
+      "water",
+      "ape-left",
+      "ape-right"
+    ],
+    "apeCues": [
+      {
+        "key": "0:1.4",
+        "position": [
+          -60,
+          34,
+          -60
+        ]
+      }
+    ]
+  },
+  "rightRms": 0.0033666053565967417,
+  "right": {
+    "state": "running",
+    "muted": false,
+    "voices": 3,
+    "loops": 2,
+    "lastEvent": "ape-right",
+    "events": [
+      "ape-left",
+      "ape-right",
+      "ape-left",
+      "ape-right",
+      "ape-left",
+      "ape-right",
+      "ape-left",
+      "ape-right",
+      "ape-left",
+      "ape-left",
+      "ape-right"
+    ],
+    "tracks": [
+      "environment",
+      "effects",
+      "voice",
+      "music"
+    ],
+    "profile": "baidicheng",
+    "sounds": [
+      "wind",
+      "water",
+      "ape-left",
+      "ape-right"
+    ],
+    "apeCues": [
+      {
+        "key": "0:6.3",
+        "position": [
+          63,
+          48,
+          -150
+        ]
+      }
+    ]
+  },
+  "stereo": {
+    "left": [
+      0.024791362717635466,
+      0.019659868141589022
+    ],
+    "right": [
+      0.015553459682505669,
+      0.01968738540478725
+    ]
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert((await sample())<.000001)\n",
+  "page": {
+    "url": "http://127.0.0.1:5186/#/poems/baidicheng",
+    "text": "跳至正文\n← 返回总览\n诗境·一卷山河 诗境\n诗词总览\n我的收藏\n个人中心\n早发白帝城\n唐 · 李白\n\n朝辞白帝彩云间\n\n千里江陵一日还\n\n两岸猿声啼不住\n\n轻舟已过万重山\n\n收藏本诗\n笺注 · 译文\n全屏观景\n暂停\n开启声音\n重看\n全景\n轻舟\n船夫\n奉节 · 瞿塘峡\n晨峡彩云 · 轻舟行江"
+  }
+}

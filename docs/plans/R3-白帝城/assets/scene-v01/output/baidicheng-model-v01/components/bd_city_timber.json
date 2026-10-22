@@ -1,0 +1,25 @@
+{
+  "component": "bd_city_timber",
+  "meshes": [
+    {
+      "object": "src_city_timber",
+      "vertices": 1568,
+      "triangles": 2604,
+      "nonmanifoldEdges": 0,
+      "volume": 73.2002188121832
+    },
+    {
+      "object": "src_city_enclosure",
+      "vertices": 240,
+      "triangles": 360,
+      "nonmanifoldEdges": 0,
+      "volume": 157.58384503457665
+    }
+  ],
+  "checks": {
+    "buildings": 7,
+    "sharedBayParameters": true,
+    "postRadiusMeters": 0.2,
+    "support": "terrace top + 1.3m"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "run": "validation/2026-10-22T13-29-20.835Z",
+  "issue": "The first 5186 browser run passed real output and HRTF checks, then sampled mute silence after a fixed 350ms. The analyser retains a 4096-sample window while master gain exponentially fades.",
+  "resolution": "Wait for actual RMS below the same 0.000001 threshold, bounded at 3 seconds, and record pause/mute RMS. Product code and threshold remain unchanged; the original failed run is preserved."
+}

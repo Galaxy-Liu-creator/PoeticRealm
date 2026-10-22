@@ -1,0 +1,10 @@
+{
+  "command": "npm --prefix frontend test",
+  "startedLocal": "2026-10-22 21:13:01 UTC+8",
+  "filesPassed": 27,
+  "testsPassed": 129,
+  "durationSeconds": 1.42,
+  "pass": true,
+  "focusedAudioRun": {"filesPassed":3,"testsPassed":8,"pass":true},
+  "scope": "Full Vitest suite after the final production TypeScript edits; later edits affect verification and archival tools only."
+}

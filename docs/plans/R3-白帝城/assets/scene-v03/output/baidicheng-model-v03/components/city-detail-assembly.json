@@ -1,0 +1,18 @@
+{
+  "roots": [
+    "city_detail",
+    "city_detail_lod"
+  ],
+  "components": [
+    "support",
+    "joinery",
+    "roof"
+  ],
+  "distanceMeters": 180.0,
+  "worldOrigin": [
+    52.0,
+    118.0,
+    63.0
+  ],
+  "geometryCreated": false
+}

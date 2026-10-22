@@ -1,0 +1,17 @@
+{
+  "sourceCollections": [
+    "bd_boat_day",
+    "bd_cliff_right_near",
+    "bd_cliff_left_near",
+    "bd_cliff_left_far",
+    "bd_cliff_right_far",
+    "bd_cliff_city_support",
+    "bd_city_foundation",
+    "bd_city_timber",
+    "bd_city_roofs",
+    "bd_foliage_scatter"
+  ],
+  "objects": 48,
+  "rigTargetsRemapped": true,
+  "geometryGeneration": false
+}

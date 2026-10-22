@@ -1,0 +1,51 @@
+{
+  "mode": "near for authoring preview",
+  "definitions": [
+    {
+      "near": "forest_bark_right_near",
+      "far": "forest_bark_right_near_lod",
+      "distance": 160.0
+    },
+    {
+      "near": "forest_leaves_right_near",
+      "far": "forest_leaves_right_near_lod",
+      "distance": 160.0
+    },
+    {
+      "near": "forest_bark_left_near",
+      "far": "forest_bark_left_near_lod",
+      "distance": 160.0
+    },
+    {
+      "near": "forest_leaves_left_near",
+      "far": "forest_leaves_left_near_lod",
+      "distance": 160.0
+    },
+    {
+      "near": "cliff_right_near",
+      "far": "cliff_right_near_lod",
+      "distance": 190.0
+    },
+    {
+      "near": "cliff_left_near",
+      "far": "cliff_left_near_lod",
+      "distance": 190.0
+    },
+    {
+      "near": "cliff_left_far",
+      "far": "cliff_left_far_lod",
+      "distance": 190.0
+    },
+    {
+      "near": "cliff_right_far",
+      "far": "cliff_right_far_lod",
+      "distance": 190.0
+    },
+    {
+      "near": "city_detail",
+      "far": "city_detail_lod",
+      "distance": 180.0
+    }
+  ],
+  "export": "explicitly unhide both levels then restore"
+}

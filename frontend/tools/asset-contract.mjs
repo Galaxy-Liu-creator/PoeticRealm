@@ -10,7 +10,19 @@ export const requireThat = (value, message) => { if (!value) throw new Error(mes
 export async function readAsset(manifestPath = defaultManifest) {
   const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   requireThat(manifest.contractVersion === '0.2', '不支持的资产契约版本');
-  requireThat(['fengqiao','jiangxue'].includes(manifest.scene) && ['quality-sample','full-scene'].includes(manifest.scope), '未实现此验收范围');
+  requireThat(['fengqiao','jiangxue','baidicheng'].includes(manifest.scene) && ['quality-sample','full-scene'].includes(manifest.scope), '未实现此验收范围');
+  if(manifest.scene==='baidicheng') {
+    const paired=['01','02','03'].some(revision=>manifest.model===`models/baidicheng/scene_v${revision}.glb`&&manifest.terrain===`baidicheng-v${revision}`);
+    requireThat(manifest.scope==='quality-sample' && paired && manifest.waterLevel===0,'白帝城候选清单版本或范围非法');
+    const required=['CAM_enter','CAM_city','CAM_follow','CAM_gorge','CAM_exit','FOCUS_city','FOCUS_boat','SFX_ape_left','SFX_ape_right','ANCHOR_seg_in','ANCHOR_seg_out','boat_guest','boat_hull_closed','rower_rig','mask_probe'];
+    if(manifest.terrain!=='baidicheng-v01')required.push('forest_bark','forest_leaves',...['bark','leaves'].flatMap(kind=>['right_near','left_near','left_far','right_far'].map(bank=>`forest_${kind}_${bank}`)));
+    if(manifest.terrain==='baidicheng-v03'){
+      const nearNames=['cliff_right_near','cliff_left_near','cliff_left_far','cliff_right_far',...['bark','leaves'].flatMap(kind=>['right_near','left_near'].map(bank=>`forest_${kind}_${bank}`)),'city_detail'];
+      required.push(...nearNames.flatMap(n=>[n,n+'_lod',...(n==='city_detail'?[]:[n+'_lod_mesh'])]),...['support','joinery','roof'].flatMap(kind=>[`city_${kind}_detail`,`city_${kind}_coarse`]));
+      requireThat(Array.isArray(manifest.distanceLods)&&manifest.distanceLods.length===nearNames.length&&nearNames.every(n=>manifest.distanceLods.some(d=>d?.near===n&&d.far===n+'_lod')),'白帝城v03近远层级不完整');
+    }else requireThat(manifest.distanceLods===undefined,'此白帝城修订未登记距离层级');
+    requireThat(Array.isArray(manifest.requiredNodes) && required.every(n=>manifest.requiredNodes.includes(n)) && manifest.boatNavigation!==undefined,'白帝城候选缺少正式节点或航线');
+  }
   requireThat(typeof manifest.model === 'string' && !manifest.model.startsWith('/') && !manifest.model.includes('\\'), '模型路径必须相对 assets');
   const modelPath = resolve(assetRoot, manifest.model);
   requireThat(modelPath.startsWith(assetRoot + sep), '模型路径越出 assets');

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "protectedModels": 119,
+  "archives": [
+    {
+      "revision": "01",
+      "verifiedFiles": 161,
+      "manifestSHA256": "6f458abec19f59f1415c9af04f1cd5e813bcd33c370ea7a8ad27d42b17744e31"
+    },
+    {
+      "revision": "02",
+      "verifiedFiles": 169,
+      "manifestSHA256": "42212eca7862708ed38e2a5703f7a3bfbf433836063ebd8805a14912f5d21ff4"
+    }
+  ]
+}

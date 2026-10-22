@@ -1,0 +1,673 @@
+{
+  "pass": true,
+  "sourcesUnchangedThroughoutFinalRun": {
+    "frontend/src/systems/nature/CanyonFrameCache.ts": "7e896dbf6ecc1bdf6312368bd0592ab22ba25db848faa54378633bc61333df3f",
+    "frontend/src/systems/nature/CanyonFrameCache.test.ts": "9ad274bdbbc579ff2cb2ba61900c58fd193fc53e3794611212b6237f00e894ba",
+    "frontend/src/scenes/BaidichengScene.ts": "5d5138912b537c3bb98a16255e53a3cd6a7deb450a597b92d17423ec618836c1",
+    "frontend/src/scenes/preparePoemScene.ts": "031f7fda21ff76f517727475df291d757d7fa4478920419c36f74409644f45fa",
+    "frontend/src/systems/audio/AudioEngine.ts": "22c14b14a5b5911097236f2bcface796f2044496a4967b19877489752768c084",
+    "frontend/src/ui/pages/Poem.ts": "276b364f1db028847ed8671437a682e7ae794c9dccc98ee8aa85015c7bf8971a",
+    "frontend/src/ui/styles/fengqiao-scene.css": "2a034b9f34979aaeedcc33b642f9c15694162975153e2f6c56c26b8007037ae7"
+  },
+  "product": {
+    "checks": [
+      "Overview enters the real v03 scene with default overview and white-emperor audio profile",
+      "Four vertical right-to-left lines reveal from the scene clock",
+      "Four line buttons use authored city/follow/gorge/exit cameras; moving view bypasses the cache",
+      "seek8→23→8 is pixel-stable; favorite redraw retains the canvas and camera; notes open and close",
+      "Three desktop sizes, native cache dimensions, close views, mouse orbit, replay and reduced motion pass",
+      "Page-return transition releases all resources",
+      "Ordinary refresh returns to the account curtain"
+    ],
+    "layouts": [
+      [
+        1920,
+        1080
+      ],
+      [
+        1440,
+        900
+      ],
+      [
+        1280,
+        720
+      ]
+    ],
+    "failureChecks": [
+      "Cancel during model loading preserves overview",
+      "Failed entry offers retry and retry enters the real scene"
+    ],
+    "errors": []
+  },
+  "cache": {
+    "comparisons": 14,
+    "maxMeanChannelError": 0.025569701646090535,
+    "maxChangedRatio": 0.0011512345679012346
+  },
+  "phases": {
+    "core": {
+      "functionalPass": true,
+      "assetSHA256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5",
+      "finalRelease": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    "lod": {
+      "functionalPass": true,
+      "assetSHA256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5",
+      "finalRelease": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    "release": {
+      "functionalPass": true,
+      "assetSHA256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5",
+      "finalRelease": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    "recovery": {
+      "functionalPass": true,
+      "assetSHA256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5",
+      "finalRelease": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    "performance": {
+      "functionalPass": true,
+      "assetSHA256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5",
+      "finalRelease": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    "performance-follow": {
+      "functionalPass": true,
+      "assetSHA256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5",
+      "finalRelease": {
+        "geometries": 0,
+        "textures": 0
+      }
+    }
+  },
+  "releaseCycles": [
+    {
+      "cycle": 1,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 2,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 3,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 4,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 5,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 6,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 7,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 8,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 9,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 10,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    }
+  ],
+  "performance": {
+    "scope": "12-second diagnostic; not the three-round 60-second gate",
+    "durationMs": 12174.799999999814,
+    "frames": 38,
+    "fps": 3.1212011696291175,
+    "p95Ms": 400.09999999999854,
+    "stats": {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_enter",
+      "time": 3.800000000000002,
+      "playing": true,
+      "fps": 2.668948527197108,
+      "calls": 168,
+      "triangles": 374641,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.12572694402540932,
+          0,
+          -0.9920648847459684
+        ],
+        "position": [
+          8.56802240581744,
+          -0.2955472663920156,
+          17.45704019628669
+        ],
+        "quaternion": [
+          -0.0016675155626625139,
+          0.7502402522142138,
+          0.00043007587795966876,
+          0.6611630648971104
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 105.8927374458167,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 106.01132741148685,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 144.6332544782433,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 144.7785605474748,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 98.50666292530201,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 133.3834564226203,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 363.8112858623324,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 318.7696975843368,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.67293930053711,
+            -116
+          ],
+          "cameraDistance": 274.6900650422179,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 161.25551010639657,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "renderCache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 41,
+        "misses": 2,
+        "width": 1920,
+        "height": 1080,
+        "staticMeshes": 59
+      },
+      "camera": [
+        6.999999999999999,
+        72,
+        155
+      ],
+      "cameraQuaternion": [
+        -0.08528987535943373,
+        0.013671608995709673,
+        0.0011704266370133544,
+        0.996261689703198
+      ],
+      "target": [
+        0,
+        28,
+        -100
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    }
+  },
+  "followPerformance": {
+    "scope": "12-second diagnostic; not the three-round 60-second gate",
+    "durationMs": 12339.400000000001,
+    "frames": 13,
+    "fps": 1.0535358283222847,
+    "p95Ms": 1316.5,
+    "stats": {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_follow",
+      "time": 1.4000000000000001,
+      "playing": true,
+      "fps": 0.479333420329312,
+      "calls": 161,
+      "triangles": 508984,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.13659186405416013,
+          0,
+          -0.9906274086023513
+        ],
+        "position": [
+          9.442827279564877,
+          -0.3001140923050405,
+          24.11982053563922
+        ],
+        "quaternion": [
+          0.0024754763460589,
+          0.7538495859880449,
+          -0.0006359170698091907,
+          0.657042060550155
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 122.07512109441558,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 123.59058389030218,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 146.56443009632562,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 148.39981133532683,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 93.59409228581514,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 113.78186651685635,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 269.8279670117216,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 210.1662283924136,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.67293930053711,
+            -116
+          ],
+          "cameraDistance": 168.5324005166281,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 117.82383423570485,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "renderCache": {
+        "enabled": true,
+        "bypassed": true,
+        "valid": true,
+        "hits": 3,
+        "misses": 2,
+        "width": 1920,
+        "height": 1080,
+        "staticMeshes": 59
+      },
+      "camera": [
+        20.28774973473368,
+        5.9999999999999964,
+        37.24946822607276
+      ],
+      "cameraQuaternion": [
+        -0.07922440735009455,
+        0.2391130859249625,
+        0.019578780667730687,
+        0.9675562499240187
+      ],
+      "target": [
+        7.5735318502143025,
+        1.5,
+        13.096856735078639
+      ],
+      "followsBoat": true,
+      "memory": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    }
+  }
+}

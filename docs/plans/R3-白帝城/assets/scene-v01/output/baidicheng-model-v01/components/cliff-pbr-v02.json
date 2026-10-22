@@ -1,0 +1,19 @@
+{
+  "source": "jiangxue-scene-v06.blend/pbr_rock__jxbank",
+  "registeredAsset": "Poly Haven Rock 01 CC0",
+  "nodes": [
+    "city_promontory",
+    "cliff_left_far",
+    "cliff_left_near",
+    "cliff_right_far",
+    "cliff_right_near",
+    "src_city_promontory",
+    "src_cliff_left_far",
+    "src_cliff_left_near",
+    "src_cliff_near_right",
+    "src_cliff_near_right_detail",
+    "src_cliff_right_far",
+    "src_cliff_right_near"
+  ],
+  "channels": "shared original BaseColor, Normal, Roughness pixels"
+}

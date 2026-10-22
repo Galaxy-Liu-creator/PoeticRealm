@@ -1,0 +1,5 @@
+{
+  "issue": "Initial deployment check required model/gltf-binary for GLB; the existing Nginx MIME table serves binary GLB as application/octet-stream.",
+  "observed": {"status":200,"contentType":"application/octet-stream","contentLength":13651084},
+  "resolution": "Accept either binary MIME type, continue rejecting the old text/html SPA fallback, and require exact SHA256 equality with local dist. No server configuration or model change."
+}

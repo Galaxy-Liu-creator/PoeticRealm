@@ -1,0 +1,41 @@
+{
+  "component": "bd_cliff_city_support",
+  "meshes": [
+    {
+      "object": "src_city_promontory",
+      "vertices": 704,
+      "triangles": 1404,
+      "nonmanifoldEdges": 0,
+      "volume": 370473.09247025277
+    }
+  ],
+  "checks": {
+    "foundationCornerSupport": [
+      [
+        26.5,
+        92.5,
+        63.0
+      ],
+      [
+        26.5,
+        143.5,
+        63.0
+      ],
+      [
+        77.5,
+        92.5,
+        63.0
+      ],
+      [
+        77.5,
+        143.5,
+        62.999996185302734
+      ]
+    ],
+    "topRadiusMeters": [
+      39.9,
+      40.85
+    ],
+    "revision": "widened before foundation placement"
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "viewport": [
+    1440,
+    900
+  ],
+  "dpr": 1,
+  "errors": [],
+  "comparisons": [
+    {
+      "view": "CAM_enter",
+      "time": 8,
+      "meanChannelError": 0.024065072016460905,
+      "changedRatio": 0.0011512345679012346,
+      "max": 147,
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 2,
+        "misses": 2,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_enter",
+      "time": 23,
+      "meanChannelError": 0.023957561728395062,
+      "changedRatio": 0.0011489197530864198,
+      "max": 147,
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 4,
+        "misses": 3,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_city",
+      "time": 8,
+      "meanChannelError": 0.021276748971193415,
+      "changedRatio": 0.0007824074074074074,
+      "max": 124,
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 6,
+        "misses": 4,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_city",
+      "time": 23,
+      "meanChannelError": 0.021377057613168726,
+      "changedRatio": 0.0007862654320987655,
+      "max": 123,
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 8,
+        "misses": 5,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_gorge",
+      "time": 8,
+      "meanChannelError": 0.025089248971193415,
+      "changedRatio": 0.001054783950617284,
+      "max": 90,
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 10,
+        "misses": 6,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_gorge",
+      "time": 23,
+      "meanChannelError": 0.024878600823045268,
+      "changedRatio": 0.001035493827160494,
+      "max": 91,
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 12,
+        "misses": 7,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_exit",
+      "time": 8,
+      "meanChannelError": 0.025569701646090535,
+      "changedRatio": 0.0009691358024691358,
+      "max": 94,
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 14,
+        "misses": 8,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_exit",
+      "time": 23,
+      "meanChannelError": 0.025534722222222223,
+      "changedRatio": 0.0009652777777777778,
+      "max": 94,
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 16,
+        "misses": 9,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_follow",
+      "time": 8,
+      "meanChannelError": 0,
+      "changedRatio": 0,
+      "max": 0,
+      "cache": {
+        "enabled": true,
+        "bypassed": true,
+        "valid": false,
+        "hits": 16,
+        "misses": 9,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_follow",
+      "time": 23,
+      "meanChannelError": 0.0000056584362139917696,
+      "changedRatio": 0,
+      "max": 1,
+      "cache": {
+        "enabled": true,
+        "bypassed": true,
+        "valid": false,
+        "hits": 16,
+        "misses": 9,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_boat",
+      "time": 8,
+      "meanChannelError": 0.000009259259259259259,
+      "changedRatio": 0,
+      "max": 1,
+      "cache": {
+        "enabled": true,
+        "bypassed": true,
+        "valid": false,
+        "hits": 16,
+        "misses": 9,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_boat",
+      "time": 23,
+      "meanChannelError": 0.000019804526748971192,
+      "changedRatio": 7.716049382716049e-7,
+      "max": 18,
+      "cache": {
+        "enabled": true,
+        "bypassed": true,
+        "valid": false,
+        "hits": 16,
+        "misses": 9,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_rower",
+      "time": 8,
+      "meanChannelError": 0,
+      "changedRatio": 0,
+      "max": 0,
+      "cache": {
+        "enabled": true,
+        "bypassed": true,
+        "valid": false,
+        "hits": 16,
+        "misses": 9,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "view": "CAM_rower",
+      "time": 23,
+      "meanChannelError": 0,
+      "changedRatio": 0,
+      "max": 0,
+      "cache": {
+        "enabled": true,
+        "bypassed": true,
+        "valid": false,
+        "hits": 16,
+        "misses": 9,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    }
+  ],
+  "preparationHandoff": true,
+  "release": {
+    "scene": "baidicheng",
+    "revision": "03",
+    "view": "CAM_rower",
+    "time": 23,
+    "playing": false,
+    "fps": 0,
+    "calls": 53,
+    "triangles": 242318,
+    "navigation": {
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.3248344506642194,
+        0,
+        -0.9457708917394715
+      ],
+      "position": [
+        -3.2110890226940394,
+        -0.3049703924903482,
+        -34.81178552670837
+      ],
+      "quaternion": [
+        0.0012402724330031444,
+        0.8138890520759778,
+        -0.0002913544351364162,
+        0.5810189220221242
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    "lods": [
+      {
+        "near": "forest_bark_right_near",
+        "far": "forest_bark_right_near_lod",
+        "distance": 160,
+        "center": [
+          82.00546264648438,
+          99.60451889038086,
+          85.53459167480469
+        ],
+        "cameraDistance": 173.31171454472118,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_leaves_right_near",
+        "far": "forest_leaves_right_near_lod",
+        "distance": 160,
+        "center": [
+          81.68559646606445,
+          101.62310028076172,
+          85.84123229980469
+        ],
+        "cameraDistance": 174.50988651012884,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_bark_left_near",
+        "far": "forest_bark_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.99219703674316,
+          101.43073654174805,
+          51.824790954589844
+        ],
+        "cameraDistance": 158.27530013779761,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_leaves_left_near",
+        "far": "forest_leaves_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.50600242614746,
+          104.71992111206055,
+          52.15628433227539
+        ],
+        "cameraDistance": 160.25528750490267,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_near",
+        "far": "cliff_right_near_lod",
+        "distance": 190,
+        "center": [
+          74.07235717773438,
+          67.43255615234375,
+          83
+        ],
+        "cameraDistance": 151.6322274523101,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_left_near",
+        "far": "cliff_left_near_lod",
+        "distance": 190,
+        "center": [
+          -77.23818588256836,
+          62.72236633300781,
+          52
+        ],
+        "cameraDistance": 129.50776279064485,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_left_far",
+        "far": "cliff_left_far_lod",
+        "distance": 190,
+        "center": [
+          -100.4301528930664,
+          79.82073974609375,
+          -192.5
+        ],
+        "cameraDistance": 204.37132502465946,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_far",
+        "far": "cliff_right_far_lod",
+        "distance": 190,
+        "center": [
+          90.51280784606934,
+          62.86320495605469,
+          -152.5
+        ],
+        "cameraDistance": 161.92706096412763,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "city_detail",
+        "far": "city_detail_lod",
+        "distance": 180,
+        "center": [
+          51.75,
+          68.67293930053711,
+          -116
+        ],
+        "cameraDistance": 118.44535580975942,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      }
+    ],
+    "terrainLod": {
+      "enabled": true,
+      "mode": "auto",
+      "level": "near",
+      "distance": 118.05872563614574,
+      "threshold": 280,
+      "nearTriangles": 32768,
+      "farTriangles": 8192
+    },
+    "renderCache": {
+      "enabled": true,
+      "bypassed": true,
+      "valid": false,
+      "hits": 16,
+      "misses": 9,
+      "width": 1440,
+      "height": 900,
+      "staticMeshes": 59
+    },
+    "camera": [
+      0.28222447259524097,
+      2.400000095367433,
+      -32.40413931139252
+    ],
+    "cameraQuaternion": [
+      -0.11513290500339603,
+      0.6483150960571947,
+      0.10006552871216347,
+      0.7459348767831199
+    ],
+    "target": [
+      -2.849200238679862,
+      1.4000000357627869,
+      -32.84479956220336
+    ],
+    "followsBoat": true,
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "contextLost": true,
+    "disposed": true,
+    "reducedMotion": false
+  },
+  "pass": true
+}

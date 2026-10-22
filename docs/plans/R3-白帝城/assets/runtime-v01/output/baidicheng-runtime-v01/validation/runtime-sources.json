@@ -1,0 +1,9 @@
+{
+  "frontend/src/systems/nature/CanyonFrameCache.ts": "7e896dbf6ecc1bdf6312368bd0592ab22ba25db848faa54378633bc61333df3f",
+  "frontend/src/systems/nature/CanyonFrameCache.test.ts": "9ad274bdbbc579ff2cb2ba61900c58fd193fc53e3794611212b6237f00e894ba",
+  "frontend/src/scenes/BaidichengScene.ts": "5d5138912b537c3bb98a16255e53a3cd6a7deb450a597b92d17423ec618836c1",
+  "frontend/src/scenes/preparePoemScene.ts": "031f7fda21ff76f517727475df291d757d7fa4478920419c36f74409644f45fa",
+  "frontend/src/systems/audio/AudioEngine.ts": "22c14b14a5b5911097236f2bcface796f2044496a4967b19877489752768c084",
+  "frontend/src/ui/pages/Poem.ts": "276b364f1db028847ed8671437a682e7ae794c9dccc98ee8aa85015c7bf8971a",
+  "frontend/src/ui/styles/fengqiao-scene.css": "2a034b9f34979aaeedcc33b642f9c15694162975153e2f6c56c26b8007037ae7"
+}

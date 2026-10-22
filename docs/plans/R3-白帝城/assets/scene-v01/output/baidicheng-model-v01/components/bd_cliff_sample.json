@@ -1,0 +1,23 @@
+{
+  "component": "bd_cliff_sample",
+  "meshes": [
+    {
+      "object": "src_cliff_near_right",
+      "vertices": 1666,
+      "triangles": 3328,
+      "nonmanifoldEdges": 0,
+      "volume": 349920.359019504
+    }
+  ],
+  "checks": {
+    "waterLevel": 0,
+    "wetLineMeters": 0.22,
+    "side": "right",
+    "yRange": [
+      -35,
+      44
+    ],
+    "heightMeters": 94,
+    "source": "original stratified closed loft; registered Rock 01 pixels"
+  }
+}

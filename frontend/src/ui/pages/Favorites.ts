@@ -8,7 +8,7 @@ import { paginate, pagination } from '../components/Pagination';
 export function favoritesPage(store: LibraryStore, page = 1, pageSize = 12): string {
   const selected = orderedPoems(poems.filter((poem) => store.data.favorites.includes(poem.id)), store.data);
   const collection = paginate(selected, page, pageSize);
-  return `<div class="landscape-page"><div class="landscape-background" style="${artwork.homePaper}" aria-hidden="true"></div>
+  return `<div class="landscape-page catalog-page"><div class="landscape-background" style="${artwork.homePaper}" aria-hidden="true"></div>
     <main id="main" class="favorites-page page-width" tabindex="-1"><div class="page-heading"><h1>我的收藏</h1><span class="heading-ornament" aria-hidden="true">﹏</span><p>一卷中烟霞，朝夕可对</p></div>
     <p class="collection-count">已收藏 ${selected.length} 首诗</p>
     ${selected.length ? `<div class="poem-grid favorites-grid">${collection.items.map((poem) => poemCard(poem, true, true)).join('')}</div>${pagination(collection)}` :

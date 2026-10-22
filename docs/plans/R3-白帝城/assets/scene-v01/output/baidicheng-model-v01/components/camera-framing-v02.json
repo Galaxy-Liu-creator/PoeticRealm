@@ -1,0 +1,29 @@
+{
+  "before": {
+    "camera": [
+      27.0,
+      -66.0,
+      15.0
+    ],
+    "focus": [
+      -7.0,
+      79.0,
+      31.0
+    ],
+    "lens": 24.0
+  },
+  "after": {
+    "camera": [
+      7.0,
+      -155.0,
+      72.0
+    ],
+    "focus": [
+      0.0,
+      100.0,
+      28.0
+    ],
+    "lens": 20
+  },
+  "purpose": "complete boat, city and cliff crowns in the desktop overview"
+}

@@ -1,0 +1,30 @@
+{
+  "sourceSHA256": {
+    "baseColor": "86c53239974ec94abbc02c18810ef9c5ae0a517f61d458d9d326c1acd5c203d5",
+    "roughness": "baf173e1ae024fdd06dfef7d8db01a0d6415d85440b9f853b4dc556be840a3a3"
+  },
+  "maps": [
+    {
+      "name": "dry",
+      "linearColorFactor": [
+        0.7,
+        0.81,
+        0.78
+      ],
+      "roughnessFactor": 0.94,
+      "baseColor": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/art/textures/baidicheng-v01/dry_basecolor.jpg",
+      "roughness": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/art/textures/baidicheng-v01/dry_roughness.png"
+    },
+    {
+      "name": "wet",
+      "linearColorFactor": [
+        0.33,
+        0.43,
+        0.39
+      ],
+      "roughnessFactor": 0.34,
+      "baseColor": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/art/textures/baidicheng-v01/wet_basecolor.jpg",
+      "roughness": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/art/textures/baidicheng-v01/wet_roughness.png"
+    }
+  ]
+}

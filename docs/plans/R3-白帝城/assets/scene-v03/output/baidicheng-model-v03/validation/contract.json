@@ -1,0 +1,59 @@
+{
+  "scope": "quality-sample",
+  "nodes": 151,
+  "meshes": 55,
+  "materials": 19,
+  "skins": 1,
+  "maskCalibration": [
+    0,
+    0.502891584649424,
+    1
+  ],
+  "hull": {
+    "triangles": 1184,
+    "nonmanifoldEdges": 0,
+    "weldTolerance": 0.00001
+  },
+  "canyon": {
+    "bands": [
+      {
+        "name": "cliff_right_near",
+        "triangles": 13306
+      },
+      {
+        "name": "cliff_left_near",
+        "triangles": 15506
+      },
+      {
+        "name": "cliff_left_far",
+        "triangles": 10226
+      },
+      {
+        "name": "cliff_right_far",
+        "triangles": 11546
+      },
+      {
+        "name": "city_promontory",
+        "triangles": 3808
+      },
+      {
+        "name": "cliff_right_near_lod_mesh",
+        "triangles": 3844
+      },
+      {
+        "name": "cliff_left_near_lod_mesh",
+        "triangles": 4486
+      },
+      {
+        "name": "cliff_left_far_lod_mesh",
+        "triangles": 2972
+      },
+      {
+        "name": "cliff_right_far_lod_mesh",
+        "triangles": 3292
+      }
+    ],
+    "routeSamples": 257,
+    "minimumHorizontalShoreDistanceMeters": 10.30255475644479
+  }
+}

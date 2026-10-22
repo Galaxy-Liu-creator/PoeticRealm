@@ -1,0 +1,214 @@
+{
+  "revision": "background-v01",
+  "date": "2026-10-22",
+  "scope": "Three original reading notes using the shared poem scroll; frontend-only update on local 5186",
+  "references": [
+    {
+      "url": "https://www.gushiwen.cn/shiwenv_0f81015a040c.aspx",
+      "checked": "2026-10-22",
+      "use": "Historical context and poem interpretation; original concise paraphrases"
+    }
+  ],
+  "files": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 182360,
+      "sha256": "64b45798c65b3df4d0d82571e2d18ac4f3b2041df930b781cc5705ddd2bb80e8"
+    },
+    {
+      "path": "frontend/src/content/poemBackgrounds.ts",
+      "bytes": 1566,
+      "sha256": "291433a35b496798230fb5dec5a3b36d5d5b8760b75838bf8442b54c336603db"
+    },
+    {
+      "path": "frontend/src/ui/components/PoemBackground.ts",
+      "bytes": 2449,
+      "sha256": "1cad876b5bb0e4b392f606d3b315cd52f6dc0d63fa2f695cd9c4d2c2d68cf163"
+    },
+    {
+      "path": "frontend/src/ui/PoemScroll.ts",
+      "bytes": 2853,
+      "sha256": "d328d8f92e9f94dc55d07fe08ba056fd5c3b1476d536472cb8248668a58e3416"
+    },
+    {
+      "path": "frontend/src/ui/styles/poem-scroll.css",
+      "bytes": 6246,
+      "sha256": "1c387dba409fa5e6dea6400c4684f6f6d6a5f854f2cca6c4706447db47288100"
+    },
+    {
+      "path": "frontend/tools/verify-poem-scroll.mjs",
+      "bytes": 11280,
+      "sha256": "542b6dd12d6b79317eea5c6a6acb3178a655162c929ddd5f83ede6c0918b45a8"
+    },
+    {
+      "path": "frontend/tools/verify-baidicheng-deployment.mjs",
+      "bytes": 3057,
+      "sha256": "589eb5ecfbdee4359e3623bbeba33a96c8fc6d243fbe0d3dbd497fe71e300775"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/build-final.log",
+      "bytes": 3455,
+      "sha256": "eca8bab560a1f96704da5ddea4d99586a17f2162583dcfd4a98f2ae67070744f"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/build-initial.log",
+      "bytes": 3455,
+      "sha256": "6075885eb31e8e262a856c9bd25ef32eabc60a127ee058845131422642eda16f"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/deploy.log",
+      "bytes": 262,
+      "sha256": "36d5ceacbed4f5a98a24e3ecc998b2ce8395e013accecf4973af546a53534e48"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/deployed/baidicheng-deployed-collapsed.png",
+      "bytes": 1345597,
+      "sha256": "8bba6c3fb4c35a131be468938ff464b59d8327ebe1c6f74ad6f0f4a01e1eed45"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/deployed/baidicheng-deployed.png",
+      "bytes": 1287789,
+      "sha256": "ba2c99711a2e842d70dd3bc29bbd44eb9039b3fe840b4a7eed8219a0fa8a22e2"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/deployed/verification.json",
+      "bytes": 677,
+      "sha256": "630cb3f6d312462ea7454df17d55a974b79cb34488318e56ce33437aa749d1c0"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/deployed-browser.log",
+      "bytes": 118,
+      "sha256": "f958d0b5b9aa82ddc437b3ea11dfe1f7c06950fd882e0d859525d4250cd71565"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/deployment-before.json",
+      "bytes": 1040,
+      "sha256": "cbf13e06fe114207cd1a793f43cdaa439b3c43bda1dbffea9fbdad82b1665f43"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/deployment-check.log",
+      "bytes": 273,
+      "sha256": "40e1d9d0693567ec3fbae652795b672a61ddb200ec3e5c32bcb2756569d3e1db"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/deployment.json",
+      "bytes": 7547,
+      "sha256": "c8eb8335161aebe5fa56ebdab49555b00eabcfaca8d4f292f6c6e3190ae15d57"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev/baidicheng-1280.png",
+      "bytes": 942757,
+      "sha256": "73bd31cefb3fa577b8fade18b33d386e98d37b8a5e911694a2cce553e2972ecd"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev/baidicheng-1440.png",
+      "bytes": 1292623,
+      "sha256": "b190f32069172a974faa830023ab535cdad6cdc7596b7e8806f429ee5bdce640"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev/baidicheng-1920.png",
+      "bytes": 2102062,
+      "sha256": "2d0443ff0ada2c9e54f35c8cc04770c7806e8006b4d0a8eb314b36e6ac62e3bd"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev/baidicheng-horizontal-mid.png",
+      "bytes": 1329943,
+      "sha256": "a56f329787bc5e6635d42ec6fbf2aeecdcd6b1093bff02fbf909aadbd271e174"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev/verification.json",
+      "bytes": 4675,
+      "sha256": "87f291adbd285a96c8b3cc199207a332922a6561d21ec4c2361d7378281a6ba6"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-final/baidicheng-1280.png",
+      "bytes": 945030,
+      "sha256": "4e37d8863fe717bee26116822e11333bf50eda8dd46d7832c967e70d9a644736"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-final/baidicheng-1440.png",
+      "bytes": 1287789,
+      "sha256": "ba2c99711a2e842d70dd3bc29bbd44eb9039b3fe840b4a7eed8219a0fa8a22e2"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-final/baidicheng-1920.png",
+      "bytes": 2095700,
+      "sha256": "aeb00db5555ad894fce1541475ff32cd34b8c15783d530c0f6ec9b4b78a34d88"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-final/baidicheng-closeup.png",
+      "bytes": 1195639,
+      "sha256": "7c07d55b5708ae238ecfd829cd4d2d82ad90dc61b2f7aa481ad2bb7f6991a080"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-final/baidicheng-collapsed.png",
+      "bytes": 1345597,
+      "sha256": "8bba6c3fb4c35a131be468938ff464b59d8327ebe1c6f74ad6f0f4a01e1eed45"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-final/baidicheng-horizontal-mid.png",
+      "bytes": 1329484,
+      "sha256": "2585174a07302d87ea0494a74fd585b669aa919685dd5913a3d2b21cbf4bfc97"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-final/verification.json",
+      "bytes": 4756,
+      "sha256": "a2be0fa4f74f9b87b5db2c6582936dcdfdc07f674cc48305198437c051a012f9"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-final.log",
+      "bytes": 1454,
+      "sha256": "45122c960e37a8e046f875a37f4a2cfc0540ce156b80e0932a649deb821e6ce5"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-horizontal/baidicheng-1280.png",
+      "bytes": 945030,
+      "sha256": "4e37d8863fe717bee26116822e11333bf50eda8dd46d7832c967e70d9a644736"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-horizontal/baidicheng-1440.png",
+      "bytes": 1287789,
+      "sha256": "ba2c99711a2e842d70dd3bc29bbd44eb9039b3fe840b4a7eed8219a0fa8a22e2"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-horizontal/baidicheng-1920.png",
+      "bytes": 2095700,
+      "sha256": "aeb00db5555ad894fce1541475ff32cd34b8c15783d530c0f6ec9b4b78a34d88"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-horizontal/baidicheng-horizontal-collapsed.png",
+      "bytes": 1345597,
+      "sha256": "8bba6c3fb4c35a131be468938ff464b59d8327ebe1c6f74ad6f0f4a01e1eed45"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-horizontal/baidicheng-horizontal-mid.png",
+      "bytes": 1329484,
+      "sha256": "238b82f275b3e226b32502897ab5686c1f01dcae6183a7ad3cc56c68a0a78f6e"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-horizontal/verification.json",
+      "bytes": 6109,
+      "sha256": "947af45facb4b89027966c44a5c8dac62d7caf256c0db09acbbfb66be3daab3e"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-horizontal.log",
+      "bytes": 318,
+      "sha256": "2304a8b2e08122a8692a941e9a9cb25a39ca9b224e7bb4c6eb2b34687651de8b"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/dev-initial.log",
+      "bytes": 582,
+      "sha256": "29dbb893519c35cf954a21cfabda9a9a187e57da54751215f94fbe58cb637ad6"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/docker-build-final.log",
+      "bytes": 6898,
+      "sha256": "74fd9289a91523746796af2e35f52a0689ffefe624b2c56395c3f4075c3cef6d"
+    },
+    {
+      "path": "output/baidicheng-background-v01/validation/docker-build.log",
+      "bytes": 6876,
+      "sha256": "07aa063b25427788ee1f941bd662198b0613b2a8d22ba52be8dac0961a56967b"
+    }
+  ]
+}

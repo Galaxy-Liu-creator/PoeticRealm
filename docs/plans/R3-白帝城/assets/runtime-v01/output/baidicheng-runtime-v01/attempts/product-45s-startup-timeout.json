@@ -1,0 +1,16 @@
+{
+  "phase": "main",
+  "errors": [
+    "[vite] failed to connect to websocket.\nyour current setup:\n  (browser) 127.0.0.1:5187/ <--[HTTP]--> localhost:5187/ (server)\n  (browser) 127.0.0.1:5187/ <--[WebSocket (failing)]--> localhost:5187/ (server)\nCheck out your Vite / network configuration and https://vite.dev/config/server-options.html#server-hmr .",
+    "Failed to send error to Vite server: TypeError: Cannot read properties of undefined (reading 'send')\n    at Object.send (http://127.0.0.1:5187/@vite/client:251:7)\n    at Object.send (http://127.0.0.1:5187/@vite/client:931:16)\n    at Object.send (http://127.0.0.1:5187/@vite/client:110:21)\n    at Object.send (http://127.0.0.1:5187/@vite/client:190:30)\n    at sendError (http://127.0.0.1:5187/@vite/client:260:19)\n    at sendLog (http://127.0.0.1:5187/@vite/client:288:11)"
+  ],
+  "expectedErrors": [],
+  "checks": [],
+  "layouts": [],
+  "failure": "AssertionError [ERR_ASSERTION]: 画卷加载超时",
+  "pageState": {
+    "url": "http://127.0.0.1:5187/#/",
+    "text": "跳至正文\n诗境·一卷山河 诗境\n诗词总览\n我的收藏\n个人中心\n诗境·一卷山河 诗境\n\n循诗入境，展卷见山河\n\n诗词总览\n﹏\n收藏\n枫桥夜泊\n唐 · 张继\n\n江枫渔火对愁眠\n\n﹏\n入境\n→\n收藏\n江雪\n唐 · 柳宗元\n\n独钓寒江雪\n\n﹏\n入境\n→\n收藏\n早发白帝城\n唐 · 李白\n\n轻舟已过万重山\n\n﹏\n入境\n→\n共 3 首 · 每页最多 12 首\n← 上一页\n第  页 / 1 页\n下一页 →\n© 诗境·一卷山河 · 循诗入境 展卷见山河\n画卷加载失败，原页面已保留。\n重试\n取消入境",
+    "ready": false
+  }
+}

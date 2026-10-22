@@ -1,0 +1,25 @@
+{
+  "component": "bd_v02_forest_supported",
+  "meshes": [
+    {
+      "object": "src_forest_bark_supported_v02",
+      "vertices": 14260,
+      "triangles": 23000,
+      "nonmanifoldEdges": 0,
+      "volume": 86.8573227337469
+    },
+    {
+      "object": "src_forest_leaves_supported_v02",
+      "vertices": 63020,
+      "triangles": 74520,
+      "nonmanifoldEdges": 27600,
+      "volume": 25343.0078199288
+    }
+  ],
+  "checks": {
+    "count": 230,
+    "rootEmbeddedMeters": 0.05,
+    "maxHeightAdjustmentMeters": 5.089324951171875,
+    "changed": "root translation only"
+  }
+}

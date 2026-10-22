@@ -1,0 +1,518 @@
+{
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLRenderer: KHR_parallel_shader_compile extension not supported.",
+    "[.WebGL-0x382400138800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x382400138800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x382400138800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x382400138800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "views": [
+    {
+      "scene": "baidicheng",
+      "revision": "02",
+      "view": "CAM_enter",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 89,
+      "triangles": 553336,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "camera": [
+        6.999999999999999,
+        72,
+        155
+      ],
+      "cameraQuaternion": [
+        -0.08528987535943373,
+        0.013671608995709673,
+        0.0011704266370133544,
+        0.996261689703198
+      ],
+      "target": [
+        0,
+        28,
+        -100
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 45,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "02",
+      "view": "CAM_city",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 57,
+      "triangles": 522300,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "camera": [
+        -7.999999999999996,
+        68,
+        -19.999999999999982
+      ],
+      "cameraQuaternion": [
+        0.0079912007584074,
+        -0.25665919246557556,
+        0.0021221555258114084,
+        0.9664666037118752
+      ],
+      "target": [
+        52,
+        70,
+        -125
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 45,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "02",
+      "view": "CAM_follow",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 79,
+      "triangles": 551776,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "camera": [
+        20.999442066839173,
+        5.9999999999999964,
+        41.00047175112427
+      ],
+      "cameraQuaternion": [
+        -0.07910724572482954,
+        0.24483041763584493,
+        0.02004692111622632,
+        0.9661253703468543
+      ],
+      "target": [
+        8.000471983890835,
+        1.5,
+        16.99991436108543
+      ],
+      "followsBoat": true,
+      "memory": {
+        "geometries": 45,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "02",
+      "view": "CAM_gorge",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 53,
+      "triangles": 507678,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "camera": [
+        -11.999999999999996,
+        16.000000000000007,
+        -45
+      ],
+      "cameraQuaternion": [
+        0.0980356266324066,
+        -0.04546913156517501,
+        0.004483900522435489,
+        0.9941335265556857
+      ],
+      "target": [
+        -1,
+        40,
+        -165
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 45,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "02",
+      "view": "CAM_exit",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 33,
+      "triangles": 452032,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "camera": [
+        22.00000000000003,
+        20.00000000000002,
+        -193.99999999999997
+      ],
+      "cameraQuaternion": [
+        0.044232790770398864,
+        0.03755449617840217,
+        -0.001663941125771221,
+        0.9983137539559983
+      ],
+      "target": [
+        11,
+        33,
+        -340
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 45,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "02",
+      "view": "CAM_boat",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 62,
+      "triangles": 538912,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "camera": [
+        16.999785367350462,
+        3.4999999999999987,
+        33.00030025604633
+      ],
+      "cameraQuaternion": [
+        -0.11993512815820107,
+        0.4141805495484714,
+        0.055159259083882244,
+        0.9005706488388652
+      ],
+      "target": [
+        10.000042722116028,
+        0.9999999403953552,
+        27.000000081984375
+      ],
+      "followsBoat": true,
+      "memory": {
+        "geometries": 45,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "02",
+      "view": "CAM_rower",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 49,
+      "triangles": 509896,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "camera": [
+        12.999871239031604,
+        2.4000000953674334,
+        31.00012866786177
+      ],
+      "cameraQuaternion": [
+        -0.12374946580222125,
+        0.5778503121290904,
+        0.08918949167936699,
+        0.8017607629935541
+      ],
+      "target": [
+        9.999913995810816,
+        1.4000000357627869,
+        29.999999317289443
+      ],
+      "followsBoat": true,
+      "memory": {
+        "geometries": 45,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    }
+  ],
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "video": {
+    "mime": "video/webm;codecs=vp8",
+    "bytes": 99160,
+    "wallSeconds": 27.164799999999815,
+    "steps": [
+      {
+        "view": "CAM_enter",
+        "wallSeconds": 0.003099999999627471,
+        "sceneTime": 0
+      },
+      {
+        "view": "CAM_city",
+        "wallSeconds": 5.288799999999814,
+        "sceneTime": 0.30000000000000004
+      },
+      {
+        "view": "CAM_follow",
+        "wallSeconds": 9.3565,
+        "sceneTime": 0.7999999999999999
+      },
+      {
+        "view": "CAM_boat",
+        "wallSeconds": 14.17169999999972,
+        "sceneTime": 1.3
+      },
+      {
+        "view": "CAM_gorge",
+        "wallSeconds": 19.2975,
+        "sceneTime": 1.8000000000000005
+      },
+      {
+        "view": "CAM_exit",
+        "wallSeconds": 23.54969999999972,
+        "sceneTime": 2.2000000000000006
+      }
+    ],
+    "width": 1440,
+    "height": 900,
+    "audio": false
+  },
+  "release": {
+    "scene": "baidicheng",
+    "revision": "02",
+    "view": "CAM_exit",
+    "time": 2.9000000000000012,
+    "playing": false,
+    "fps": 1.0817386021198219,
+    "calls": 75,
+    "triangles": 646140,
+    "navigation": {
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.12842262306358912,
+        0,
+        -0.9917195318664787
+      ],
+      "position": [
+        8.8879027994614,
+        -0.29405152333968876,
+        19.956654708259883
+      ],
+      "quaternion": [
+        0.00032491729906113185,
+        0.7511399310914445,
+        -0.00008371779669587358,
+        0.6601429325078165
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    "camera": [
+      22.00000000000003,
+      20.00000000000002,
+      -193.99999999999997
+    ],
+    "cameraQuaternion": [
+      0.044232790770398864,
+      0.03755449617840217,
+      -0.001663941125771221,
+      0.9983137539559983
+    ],
+    "target": [
+      11,
+      33,
+      -340
+    ],
+    "followsBoat": false,
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "contextLost": true,
+    "disposed": true,
+    "reducedMotion": false
+  },
+  "pass": true
+}

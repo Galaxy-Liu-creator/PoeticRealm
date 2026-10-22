@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "comparisons": 14,
+  "maxMean": 0.025569701646090535,
+  "maxChangedRatio": 0.0011512345679012346,
+  "handoff": true,
+  "release": {
+    "geometries": 0,
+    "textures": 0
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "component": "bd_v03_tree_far_round",
+  "meshes": [
+    {
+      "object": "src_tree_leaves_round_v03_00",
+      "vertices": 30,
+      "triangles": 48,
+      "nonmanifoldEdges": 0,
+      "volume": 17.334864382588123
+    },
+    {
+      "object": "src_tree_leaves_round_v03_01",
+      "vertices": 30,
+      "triangles": 48,
+      "nonmanifoldEdges": 0,
+      "volume": 27.958354075708886
+    },
+    {
+      "object": "src_tree_leaves_round_v03_02",
+      "vertices": 30,
+      "triangles": 48,
+      "nonmanifoldEdges": 0,
+      "volume": 42.22091197911408
+    },
+    {
+      "object": "src_forest_leaves_round_right_near_v03",
+      "vertices": 1980,
+      "triangles": 3168,
+      "nonmanifoldEdges": 0,
+      "volume": 3050.2517223343225
+    },
+    {
+      "object": "src_forest_leaves_round_left_near_v03",
+      "vertices": 2280,
+      "triangles": 3648,
+      "nonmanifoldEdges": 0,
+      "volume": 3498.042147098179
+    },
+    {
+      "object": "src_forest_leaves_round_left_far_v03",
+      "vertices": 1290,
+      "triangles": 2064,
+      "nonmanifoldEdges": 0,
+      "volume": 1349.971136906896
+    },
+    {
+      "object": "src_forest_leaves_round_right_far_v03",
+      "vertices": 1350,
+      "triangles": 2160,
+      "nonmanifoldEdges": 0,
+      "volume": 1337.8287089600349
+    }
+  ],
+  "checks": {
+    "trees": 230,
+    "crownTriangles": 48,
+    "barkTriangles": 32,
+    "totalFarTreeTriangles": 80,
+    "crownVerticesPerTree": 30,
+    "roots": "same230 authored positions",
+    "revision": "smoother silhouette at equal crown vertex count"
+  }
+}

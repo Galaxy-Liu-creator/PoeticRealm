@@ -1,0 +1,33 @@
+{
+  "phase": "failure",
+  "errors": [],
+  "expectedErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "checks": [
+    "Cancel during model loading preserves overview",
+    "Failed entry offers retry and retry enters the real scene"
+  ],
+  "layouts": [],
+  "releases": [
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    },
+    {
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      }
+    }
+  ],
+  "pass": true
+}

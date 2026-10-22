@@ -1,0 +1,59 @@
+{
+  "component": "bd_v03_city_roof_detail",
+  "meshes": [
+    {
+      "object": "src_city_roof_detail_v03",
+      "vertices": 1528,
+      "triangles": 2528,
+      "nonmanifoldEdges": 0,
+      "volume": 4.590151565970443
+    },
+    {
+      "object": "src_city_roof_coarse_v03",
+      "vertices": 112,
+      "triangles": 168,
+      "nonmanifoldEdges": 0,
+      "volume": 3.5614961612736824
+    }
+  ],
+  "checks": {
+    "roofs": [
+      {
+        "roof": 0,
+        "raisedRibs": 28
+      },
+      {
+        "roof": 1,
+        "raisedRibs": 10
+      },
+      {
+        "roof": 2,
+        "raisedRibs": 10
+      },
+      {
+        "roof": 3,
+        "raisedRibs": 34
+      },
+      {
+        "roof": 4,
+        "raisedRibs": 9
+      },
+      {
+        "roof": 5,
+        "raisedRibs": 9
+      },
+      {
+        "roof": 6,
+        "raisedRibs": 18
+      }
+    ],
+    "ribWidthMeters": 0.07,
+    "ribSurfaceOffsetMeters": 0.065,
+    "ribStations": [
+      0,
+      0.45,
+      0.9
+    ],
+    "eaveThicknessMeters": 0.16
+  }
+}

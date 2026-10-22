@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-22",
+  "stage": "profile-center-redesign-v01",
+  "status": "design-preview",
+  "tool": "cursor:GenerateImage",
+  "direction": "card_scroll_workbench",
+  "deployment": "design mockups only; no frontend or backend code modified",
+  "files": [
+    {
+      "path": "docs/design/2026-10-22-profile-center-redesign-v01/profile-overview-mockup-v01.jpg",
+      "originalOutput": "/home/liuhan/.cursor/projects/home-liuhan-StudyDir-Math-Media-PoeticRealm/assets/profile-overview-mockup-v01.jpg",
+      "bytes": 260447,
+      "sha256": "c13ffd4d8dfc6797891ff4d079426d2b61c87079dc281b01057f0bc4a57fa60f",
+      "role": "我的诗境（总览）雅集画卷工作台设计稿"
+    },
+    {
+      "path": "docs/design/2026-10-22-profile-center-redesign-v01/profile-basic-security-mockup-v01.jpg",
+      "originalOutput": "/home/liuhan/.cursor/projects/home-liuhan-StudyDir-Math-Media-PoeticRealm/assets/profile-basic-security-mockup-v01.jpg",
+      "bytes": 224725,
+      "sha256": "2606244e3aea2dd76475480b63de5e7f3ca4fa57281f95e24b52bb2b10b1e3b0",
+      "role": "个人资料与账号安全双栏宣纸卡片表单设计稿"
+    },
+    {
+      "path": "docs/design/2026-10-22-profile-center-redesign-v01/profile-settings-grid-mockup-v01.jpg",
+      "originalOutput": "/home/liuhan/.cursor/projects/home-liuhan-StudyDir-Math-Media-PoeticRealm/assets/profile-settings-grid-mockup-v01.jpg",
+      "bytes": 265581,
+      "sha256": "5e889bf02582558fecdd9976f6fe71b82aa82a8c33724a91b082f7ac75ec06b1",
+      "role": "偏好设置与隐私管理双列宣纸卡片网格设计稿"
+    }
+  ]
+}

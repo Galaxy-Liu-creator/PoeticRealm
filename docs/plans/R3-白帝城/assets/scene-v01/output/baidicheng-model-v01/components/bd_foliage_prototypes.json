@@ -1,0 +1,57 @@
+{
+  "component": "bd_foliage_prototypes",
+  "meshes": [
+    {
+      "object": "src_tree_bark_00",
+      "vertices": 72,
+      "triangles": 116,
+      "nonmanifoldEdges": 0,
+      "volume": 0.09327121335048147
+    },
+    {
+      "object": "src_tree_leaves_00",
+      "vertices": 210,
+      "triangles": 168,
+      "nonmanifoldEdges": 168,
+      "volume": 4.582354695084413
+    },
+    {
+      "object": "src_tree_bark_01",
+      "vertices": 72,
+      "triangles": 116,
+      "nonmanifoldEdges": 0,
+      "volume": 0.11637144576450358
+    },
+    {
+      "object": "src_tree_leaves_01",
+      "vertices": 210,
+      "triangles": 168,
+      "nonmanifoldEdges": 168,
+      "volume": 5.163896946929693
+    },
+    {
+      "object": "src_tree_bark_02",
+      "vertices": 72,
+      "triangles": 116,
+      "nonmanifoldEdges": 0,
+      "volume": 0.13931595764347843
+    },
+    {
+      "object": "src_tree_leaves_02",
+      "vertices": 210,
+      "triangles": 168,
+      "nonmanifoldEdges": 168,
+      "volume": 6.6424002525834585
+    }
+  ],
+  "checks": {
+    "variants": 3,
+    "seed": 821047,
+    "heightMeters": [
+      3.2,
+      4.0,
+      4.8
+    ],
+    "leafMask": "static zero wind weight, exact shared prototype geometry"
+  }
+}

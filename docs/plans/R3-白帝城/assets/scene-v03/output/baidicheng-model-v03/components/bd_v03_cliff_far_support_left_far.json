@@ -1,0 +1,39 @@
+{
+  "component": "bd_v03_cliff_far_support_left_far",
+  "meshes": [
+    {
+      "object": "src_cliff_left_far_far_support_v03",
+      "vertices": 1488,
+      "triangles": 2972,
+      "nonmanifoldEdges": 0,
+      "volume": 1700704.1276396266
+    }
+  ],
+  "checks": {
+    "nearNode": "cliff_left_far",
+    "frontLevels": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      14,
+      22,
+      31,
+      38,
+      40,
+      41,
+      43,
+      44
+    ],
+    "interiorColumnStep": 5,
+    "protectedTreeSupportFaces": [
+      4220,
+      318,
+      1143
+    ],
+    "preserved": "all waterline/top/shoulder vertices and exact top surface triangles",
+    "trianglesNear": 10226,
+    "distanceMeters": 190.0
+  }
+}

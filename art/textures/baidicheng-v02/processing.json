@@ -1,0 +1,34 @@
+{
+  "sourceLicense": "CC0, registered Rock 01; see CREDITS",
+  "normalAndRoughness": "unchanged v01 pixels",
+  "maps": [
+    {
+      "role": "dry",
+      "source": "art/textures/baidicheng-v01/dry_basecolor.jpg",
+      "sourceSHA256": "ab2c8b810d4e5eda9c343c896a780958cb8a7cfa73fcbe8dd618c5806957e687",
+      "linearDesaturation": 0.82,
+      "linearBrightness": 1.38,
+      "linearTint": [
+        0.95,
+        1.0,
+        1.025
+      ],
+      "output": "art/textures/baidicheng-v02/dry_basecolor.jpg",
+      "outputSHA256": "6f320fbd41e2063059d9b4f75e813f037bffac3bb20e949f370bdc80a5ac0dc5"
+    },
+    {
+      "role": "wet",
+      "source": "art/textures/baidicheng-v01/wet_basecolor.jpg",
+      "sourceSHA256": "e31ae0fe808e113ee268e28a2d0ea4b1d70213aacb4504d282d1788bfdc82a49",
+      "linearDesaturation": 0.82,
+      "linearBrightness": 0.96,
+      "linearTint": [
+        0.92,
+        1.0,
+        1.04
+      ],
+      "output": "art/textures/baidicheng-v02/wet_basecolor.jpg",
+      "outputSHA256": "27af91e3383d7bd3f05d2d72b45c11973823460a5dbaf6bb56d408e7df60ce69"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "passed": true,
+  "errors": [],
+  "warnings": [],
+  "closedMeshes": [
+    {
+      "object": "boat_hull_closed",
+      "vertices": 594,
+      "triangles": 1184,
+      "nonmanifoldEdges": 0,
+      "volume": 0.779024618503798
+    },
+    {
+      "object": "boat_wood_aged",
+      "vertices": 4592,
+      "triangles": 9064,
+      "nonmanifoldEdges": 0,
+      "volume": 1.2424900479353531
+    },
+    {
+      "object": "boat_cloth_reed",
+      "vertices": 232,
+      "triangles": 364,
+      "nonmanifoldEdges": 0,
+      "volume": 0.08745160164520788
+    },
+    {
+      "object": "boat_metal_iron",
+      "vertices": 536,
+      "triangles": 1028,
+      "nonmanifoldEdges": 0,
+      "volume": 0.0012287869795222126
+    },
+    {
+      "object": "rowing_oar_blade",
+      "vertices": 144,
+      "triangles": 284,
+      "nonmanifoldEdges": 0,
+      "volume": 0.005158300324296051
+    },
+    {
+      "object": "rowing_oar_shaft",
+      "vertices": 120,
+      "triangles": 236,
+      "nonmanifoldEdges": 0,
+      "volume": 0.0061863982571670525
+    },
+    {
+      "object": "rowing_oar_handle",
+      "vertices": 144,
+      "triangles": 284,
+      "nonmanifoldEdges": 0,
+      "volume": 0.003742325775252997
+    },
+    {
+      "object": "rowing_oar_binding",
+      "vertices": 168,
+      "triangles": 332,
+      "nonmanifoldEdges": 0,
+      "volume": 0.00044723936811763326
+    },
+    {
+      "object": "rowing_oar_pin",
+      "vertices": 96,
+      "triangles": 188,
+      "nonmanifoldEdges": 0,
+      "volume": 0.0013670153084256568
+    },
+    {
+      "object": "cliff_right_near",
+      "vertices": 9636,
+      "triangles": 19268,
+      "nonmanifoldEdges": 0,
+      "volume": 1270936.2804458693
+    },
+    {
+      "object": "cliff_left_near",
+      "vertices": 9372,
+      "triangles": 18740,
+      "nonmanifoldEdges": 0,
+      "volume": 1994253.8460864387
+    },
+    {
+      "object": "cliff_left_far",
+      "vertices": 8580,
+      "triangles": 17156,
+      "nonmanifoldEdges": 0,
+      "volume": 2069554.8818039147
+    },
+    {
+      "object": "cliff_right_far",
+      "vertices": 8580,
+      "triangles": 17156,
+      "nonmanifoldEdges": 0,
+      "volume": 1532297.9183214419
+    },
+    {
+      "object": "city_promontory",
+      "vertices": 704,
+      "triangles": 1404,
+      "nonmanifoldEdges": 0,
+      "volume": 370473.09247025277
+    },
+    {
+      "object": "city_terrace",
+      "vertices": 96,
+      "triangles": 144,
+      "nonmanifoldEdges": 0,
+      "volume": 3257.863629134926
+    },
+    {
+      "object": "city_wall",
+      "vertices": 384,
+      "triangles": 576,
+      "nonmanifoldEdges": 0,
+      "volume": 617.8882516317103
+    },
+    {
+      "object": "city_timber",
+      "vertices": 1568,
+      "triangles": 2604,
+      "nonmanifoldEdges": 0,
+      "volume": 73.20021881218318
+    },
+    {
+      "object": "city_enclosure",
+      "vertices": 240,
+      "triangles": 360,
+      "nonmanifoldEdges": 0,
+      "volume": 157.58384503457665
+    },
+    {
+      "object": "city_roof_00",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 147.26145811010366
+    },
+    {
+      "object": "city_roof_01",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 73.59506360871629
+    },
+    {
+      "object": "city_roof_02",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 73.59506819460354
+    },
+    {
+      "object": "city_roof_03",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 216.53322316955916
+    },
+    {
+      "object": "city_roof_04",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 65.61062968850705
+    },
+    {
+      "object": "city_roof_05",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 65.61062883737505
+    },
+    {
+      "object": "city_roof_06",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 39.81132507742093
+    },
+    {
+      "object": "city_ridges",
+      "vertices": 336,
+      "triangles": 588,
+      "nonmanifoldEdges": 0,
+      "volume": 0.8753850377983063
+    },
+    {
+      "object": "forest_bark",
+      "vertices": 17280,
+      "triangles": 27840,
+      "nonmanifoldEdges": 0,
+      "volume": 113.71307533007192
+    }
+  ],
+  "waterlineNodes": [
+    "cliff_right_near",
+    "cliff_left_near",
+    "cliff_left_far",
+    "cliff_right_far",
+    "city_promontory"
+  ],
+  "hullBottomMeters": -0.252998948097229,
+  "rigBones": 53,
+  "treeRoots": 240,
+  "maxRootSupportErrorMeters": 1.136590821460004e-14,
+  "source": "/home/liuhan/StudyDir/Math_Media/PoeticRealm/art/blender/baidicheng-scene-v01.blend"
+}

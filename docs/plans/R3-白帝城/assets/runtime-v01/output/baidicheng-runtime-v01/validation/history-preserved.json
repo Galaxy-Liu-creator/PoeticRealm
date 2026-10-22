@@ -1,0 +1,34 @@
+{
+  "archives": [
+    {
+      "revision": "01",
+      "files": 161,
+      "manifestSHA256": "6f458abec19f59f1415c9af04f1cd5e813bcd33c370ea7a8ad27d42b17744e31"
+    },
+    {
+      "revision": "02",
+      "files": 169,
+      "manifestSHA256": "42212eca7862708ed38e2a5703f7a3bfbf433836063ebd8805a14912f5d21ff4"
+    },
+    {
+      "revision": "03",
+      "files": 192,
+      "manifestSHA256": "612435f6b6668077a2e4663475f147c1f4395b92677f7caf6d3bd4220ee7643a"
+    }
+  ],
+  "changedLocalReferences": [
+    {
+      "path": "art/blender/baidicheng-scene-v03.blend",
+      "reference": "59fb628fe1a5a8b5ad45e73be79037fcfb060f5fbf7e21e858437c06a272ef8d",
+      "current": "773cb12ed7ba1e268f1a8b4d6b271592cd299d908f51a65628d89a1b432d8cf5",
+      "mtime": 1792659889.9675229,
+      "preservedOriginal": {
+        "path": "art/blender/baidicheng-scene-v03.blend1",
+        "sha256": "59fb628fe1a5a8b5ad45e73be79037fcfb060f5fbf7e21e858437c06a272ef8d"
+      },
+      "note": "本轮续接读取时已存在的主文件差异；原归档字节完整保留在.blend1，本轮未调用Blender或写入二者。"
+    }
+  ],
+  "protectedModels": 119,
+  "archivesAndProtectedPass": true
+}

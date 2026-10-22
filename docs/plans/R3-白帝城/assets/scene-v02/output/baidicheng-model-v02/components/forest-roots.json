@@ -1,0 +1,28 @@
+{
+  "roots": [
+    {
+      "root": "forest_bark",
+      "type": "EMPTY",
+      "children": [
+        "forest_bark_left_far",
+        "forest_bark_left_near",
+        "forest_bark_right_far",
+        "forest_bark_right_near"
+      ]
+    },
+    {
+      "root": "forest_leaves",
+      "type": "EMPTY",
+      "children": [
+        "forest_leaves_left_far",
+        "forest_leaves_left_near",
+        "forest_leaves_right_far",
+        "forest_leaves_right_near"
+      ]
+    }
+  ],
+  "preservedMeshRoots": [
+    "src_forest_bark_prepartition_v02",
+    "src_forest_leaves_prepartition_v02"
+  ]
+}

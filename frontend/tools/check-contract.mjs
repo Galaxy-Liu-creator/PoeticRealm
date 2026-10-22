@@ -3,6 +3,7 @@ import {closedHullTopology} from './oar-clearance.mjs';
 import {Matrix4,Vector3,Quaternion} from 'three';
 import {checkJiangxueFloat} from './jiangxue-float-contract.mjs';
 import {checkJiangxueBank} from './jiangxue-bank-contract.mjs';
+import {checkBaidicheng} from './baidicheng-contract.mjs';
 export function checkContract(asset) {
   const {gltf,manifest}=asset;
   if(manifest.scene==='jiangxue'&&['models/jiangxue/scene_v03.glb','models/jiangxue/scene_v04.glb','models/jiangxue/scene_v05.glb','models/jiangxue/scene_v06.glb'].includes(manifest.model))requireThat(manifest.boatNavigation!==undefined,'江雪浮舟缺少河道路径');
@@ -135,7 +136,8 @@ export function checkContract(asset) {
   for(const expected of [0,.5,1]) requireThat(red.some(value=>Math.abs(value-expected)<.01),'遮罩往返改变权重：'+expected);
   const floating=manifest.scene==='jiangxue'&&manifest.boatNavigation?checkJiangxueFloat(asset):undefined;
   const bank=manifest.scene==='jiangxue'&&['models/jiangxue/scene_v05.glb','models/jiangxue/scene_v06.glb'].includes(manifest.model)?checkJiangxueBank(asset):undefined;
-  return {scope:manifest.scope,nodes:names.size,meshes:gltf.meshes.length,materials:gltf.materials.length,skins:gltf.skins?.length??0,maskCalibration:red,hull,floating,bank};
+  const canyon=manifest.scene==='baidicheng'?checkBaidicheng(asset):undefined;
+  return {scope:manifest.scope,nodes:names.size,meshes:gltf.meshes.length,materials:gltf.materials.length,skins:gltf.skins?.length??0,maskCalibration:red,hull,floating,bank,canyon};
 }
 if(process.argv[1]?.endsWith('check-contract.mjs')) {
   try { console.log(JSON.stringify(checkContract(await readAsset(process.argv[2])),null,2)); }

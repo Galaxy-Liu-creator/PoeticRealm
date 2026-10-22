@@ -1,0 +1,26 @@
+{
+  "component": "bd_cliff_right_near",
+  "meshes": [
+    {
+      "object": "src_cliff_right_near",
+      "vertices": 9636,
+      "triangles": 19268,
+      "nonmanifoldEdges": 0,
+      "volume": 566464.7412262808
+    }
+  ],
+  "checks": {
+    "section": "right_near",
+    "parameters": [
+      1,
+      -90,
+      44,
+      94,
+      48,
+      0.6,
+      72
+    ],
+    "wetLineMeters": 0.22,
+    "prototype": "bd_cliff_sample_detail"
+  }
+}

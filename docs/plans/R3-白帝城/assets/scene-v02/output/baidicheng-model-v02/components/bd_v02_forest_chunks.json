@@ -1,0 +1,107 @@
+{
+  "component": "bd_v02_forest_chunks",
+  "meshes": [
+    {
+      "object": "src_forest_bark_right_near_v02",
+      "vertices": 4092,
+      "triangles": 6600,
+      "nonmanifoldEdges": 0,
+      "volume": 28.726683192029647
+    },
+    {
+      "object": "src_forest_bark_left_near_v02",
+      "vertices": 4712,
+      "triangles": 7600,
+      "nonmanifoldEdges": 0,
+      "volume": 32.962657507703824
+    },
+    {
+      "object": "src_forest_bark_left_far_v02",
+      "vertices": 2666,
+      "triangles": 4300,
+      "nonmanifoldEdges": 0,
+      "volume": 12.569921476504476
+    },
+    {
+      "object": "src_forest_bark_right_far_v02",
+      "vertices": 2790,
+      "triangles": 4500,
+      "nonmanifoldEdges": 0,
+      "volume": 12.598091964729065
+    },
+    {
+      "object": "src_forest_leaves_right_near_v02",
+      "vertices": 18084,
+      "triangles": 21384,
+      "nonmanifoldEdges": 7920,
+      "volume": 5237.321079849245
+    },
+    {
+      "object": "src_forest_leaves_left_near_v02",
+      "vertices": 20824,
+      "triangles": 24624,
+      "nonmanifoldEdges": 9120,
+      "volume": 6744.438756663102
+    },
+    {
+      "object": "src_forest_leaves_left_far_v02",
+      "vertices": 11782,
+      "triangles": 13932,
+      "nonmanifoldEdges": 5160,
+      "volume": 2014.9988266776497
+    },
+    {
+      "object": "src_forest_leaves_right_far_v02",
+      "vertices": 12330,
+      "triangles": 14580,
+      "nonmanifoldEdges": 5400,
+      "volume": 2222.601269072746
+    }
+  ],
+  "checks": {
+    "partition": [
+      {
+        "node": "forest_bark_right_near",
+        "trees": 66,
+        "triangles": 6600
+      },
+      {
+        "node": "forest_bark_left_near",
+        "trees": 76,
+        "triangles": 7600
+      },
+      {
+        "node": "forest_bark_left_far",
+        "trees": 43,
+        "triangles": 4300
+      },
+      {
+        "node": "forest_bark_right_far",
+        "trees": 45,
+        "triangles": 4500
+      },
+      {
+        "node": "forest_leaves_right_near",
+        "trees": 66,
+        "triangles": 21384
+      },
+      {
+        "node": "forest_leaves_left_near",
+        "trees": 76,
+        "triangles": 24624
+      },
+      {
+        "node": "forest_leaves_left_far",
+        "trees": 43,
+        "triangles": 13932
+      },
+      {
+        "node": "forest_leaves_right_far",
+        "trees": 45,
+        "triangles": 14580
+      }
+    ],
+    "changed": "grouping only; exact world vertices, faces and materials preserved",
+    "trees": 230
+  }
+}

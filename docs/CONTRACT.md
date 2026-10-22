@@ -568,3 +568,53 @@ v03沿用18.3已登记的`boatNavigation`（glTF世界[x,z]米制路径、speed�
 独立`jiangxue-scene-v06.blend` / `glb_scene_v06` / `models/jiangxue/scene_v06.glb` / `scenes/jiangxue.scene-v06.json`。运行清单scope继续quality-sample，建模状态独立记录。v06使用自身`terrain: "jiangxue-v06"`高度图，保留600m米制、1024² RGB8/RG16+B编码及v03航线。
 
 保留舟、53骨骼人物和钓具接口。十四对`shore_rock_v02_NN`/`rock_snow_v02_NN`允许共同正比例仿射，世界0.22m干湿边界保持，雪底嵌入随纵向比例变化，需对实际支撑岩面重新检查。`dead_tree_fine_v02`、`dead_tree_snow_v02`替换为三维弯曲次枝及上侧枝雪；新增静态`dead_tree_roots_v06`沿用pbr_wood角色。各组件源/历史隐藏不导出。八个既有机位在Blender定稿，材质/高度图/河道按制作、GLB和浏览器同时检查；不新增运行时自定义属性或材质角色。
+
+### 18.11 白帝城晨峡候选 v01（2026-10-21）
+
+独立`art/blender/baidicheng-scene-v01.blend`、场景`baidicheng_modeling_v01`、集合`glb_scene_v01`及`models/baidicheng/scene_v01.glb`。清单`scenes/baidicheng.scene-v01.json`使用`contractVersion: "0.2"`、`scene: "baidicheng"`、`scope: "quality-sample"`、水位0m与`terrain: "baidicheng-v01"`；高度图沿用第10节1024² RGB8/RG16+B、真实米制范围。先补齐第16.4节节点，候选增加已登记语义的`boat_guest`/`boat_hull_closed`、原枫桥人物/橹骨骼与接触挂点、`CAM_boat`/`CAM_rower`及可选`FOCUS_enter`/`FOCUS_follow`/`FOCUS_gorge`/`FOCUS_exit`。不新增属性前缀或PBR角色。
+
+`boatNavigation`沿用18.2：由Blender非导出航线生成glTF世界水平`[x,z]`米制点、正数speed和brakingDistance；起点对应boat_guest，局部+X船首顺河，末端平滑停留，不回绕。CAM_follow/boat/rower读取制作相机相对初始舟水平框架的变换，随航行更新且不继承波面滚转；其余环境机位固定。原掌部/脚部/牵绳/橹叶与舟壳约束继续适用。
+
+近景岩壁/城台为GLB真实几何，远山高度图与近景不重叠盖住航道。岩体最多干/湿两槽，分界按世界0.22m连续切分；城市台基/柱梁/屋面和绿植分别制作并检查后装配。ANCHOR_seg_in/out描述有限场景入口/出口，canyon拼接仍为P0预案。水、晨光、云霞、雾和声源由运行系统装配；制作预览水/灯、源组件和历史不导出。独立共用舟/人物资产与所有峡谷段GLB合计计入15MB门禁；环境、高度图和声音另报完整分发。
+
+山肩地被可由运行系统按现有世界法线/高程着色，使用原PBR输入并保留其编译回调，不增加GLB属性。候选校验增加实际GLB干/湿三角面高程检查，以及257个航线弧长样本到交付水岸轮廓的水平净距（>4m）；它们与舟壳/人物接触检查共同执行。
+
+### 18.12 白帝城晨峡精修候选 v02（2026-10-22）
+
+另存 `art/blender/baidicheng-scene-v02.blend` / `baidicheng_modeling_v02` / `glb_scene_v02` / `models/baidicheng/scene_v02.glb` / `scenes/baidicheng.scene-v02.json`，配套 `terrain: "baidicheng-v02"` 与自身高度图，v01及其证据保持。实验入口允许精确选择v01或v02清单，模型与地形版本必须配对。
+
+保留v01的发布节点、舟/人物/橹、航线、材质角色及米制接口。四段岩壁和城台分别替换为分块断裂、局部退台与不规则崖顶的闭合源组件，干湿世界0.22m切分继续校验。森林从独立树干/叶冠原型组装，叶冠为有体积的小簇与边缘叶片；静态 `mask` 保持零风权重，重新检查所有根部对实际修订岩面的支撑。森林仍按树干/树叶两类发布，叶网格允许两个已登记pbr_foliage槽位。远山为独立细化地形，航道保持源网格留空。
+
+纯常量PBR的森林发布网格可省去未使用的UV0与由其导出的切线；制作原型仍保留UV。任何带图像输入的网格继续要求UV0，法线贴图继续要求有效切线；COLOR_0行为遮罩保持。
+
+v02森林按四岸空间块发布：`forest_bark` / `forest_leaves`保留为静态EMPTY根，子网格为`forest_bark_right_near` / `forest_bark_left_near` / `forest_bark_left_far` / `forest_bark_right_far`及同后缀`forest_leaves_*`。十个节点均列入必需清单；每块来自已检查的原森林实例，不改变树形或位置，便于各机位独立裁剪。每个叶块仍有COLOR_0静态遮罩和最多两个pbr_foliage槽位。
+
+运行端可按世界位置、法线对既有PBR颜色做地被/树冠层次变化，保留原编译回调；不增加GLB自定义属性或纹理类型。总预算、精确编码、坏数据、机位、航行及释放检查沿用18.11。每个组件单独保存和检查后才替换发布网格。
+
+v02运行远山可共享本版岩壁已加载的BaseColor/Normal/Roughness，规则地形生成自身UV与切线；不重复分发贴图。独立地形材质与几何由地形释放，共享贴图由GLB根资源释放；十次装卸继续检查零残留。
+
+### 18.13 白帝城城楼细部与远近层级候选 v03（2026-10-22）
+
+另存 `art/blender/baidicheng-scene-v03.blend` / `baidicheng_modeling_v03` / `glb_scene_v03` / `models/baidicheng/scene_v03.glb` / `scenes/baidicheng.scene-v03.json`，配套 `terrain: "baidicheng-v03"` 与自身1024²高度图。保留v01/v02历史、米制、相机/FOCUS、舟/人物/橹和航线。继续quality-sample；清单/模型/高度图必须同版本配对。
+
+沿用18.2的`distanceLods`语义及现有DistanceLods：四岸`cliff_*`各增加`<原名>_lod`远景根，`city_promontory`沿用v02主体；远景根可为EMPTY，子网格`<原名>_lod_mesh`保留独立底面原点。近/远根世界矩阵一致，静态几何、干/湿两槽、0/.22m切环、PBR与UV/切线继续检查；257个航线样本同时检查近/远水岸。LOD每帧由主相机到近景包围盒中心的距离决定，阴影/倒影复用同一可见性，切机位与seek无历史状态。
+
+森林保留v02十个根/网格名。两近岸允许与`forest_bark_<bank>_lod` / `forest_leaves_<bank>_lod`组成LOD对；远岸原节点可直接使用由原型制作的简化树形。所有230株位置、根部标高、零风mask及树干/叶冠材质角色保持，近远网格均计入200k/15MB总预算。
+
+城楼细部分柱础/檐下承托、门窗、屋面细部独立制作。新根`city_detail`及`city_detail_lod`为同变换的静态独立层级，近景子网格`city_support_detail` / `city_joinery_detail` / `city_roof_detail`，远景子网格`city_support_coarse` / `city_joinery_coarse` / `city_roof_coarse`；各最多两槽，沿用pbr_stone/wood/tile语义。原台基、城墙、柱梁及厚屋面继续承担主体轮廓；细部比例参考已有唐构资料，作为诗境城景构成。
+
+v03运行远山使用同一高度图采样的近/远规则网格（约128/64跨），由主相机到网格包围盒中心距离选择一个；UV、法线和切线从各自米制网格生成，地形表面PBR沿用v02。LOD调试可强制near/far/auto，仅用于lab检查。几何/材质/共享图像按原所有权释放，切换不重建资源；对固定机位/时刻、切换边界、减少动态及十次释放验收。
+
+v03固定九对距离层级：四岸岩壁、两近岸的树干/叶冠四对、城楼细部一对。初始化分别预热近/远可见层，再恢复自动状态；后续切换复用同一批资源。静止时间下LOD变化也更新阴影，避免沿用上一层级的阴影缓存。亚像素瓦垄细部只接收阴影，原厚屋面继续负责主体投影。
+
+### 18.14 白帝城运行优化与浏览器接入（2026-10-22）
+
+继续使用已验证的v03清单、GLB与高度图，资产文件与Blender源不重写。静止的岩壁、森林、城楼及运行地形允许按当前主相机缓存原生分辨率的显示颜色与深度；机位/投影、尺寸或LOD变化时重绘，关闭缓存可直接对照。水、天空、舟/人物及其阴影仍按全局时间更新；倒影保持真实512²平面反射并看到完整场景。缓存直接复制原PBR/纹理/雾/PCF的最终显示颜色，保留原色调映射与sRGB顺序，深度参与动态遮挡；不得以降DPR、关倒影或关阴影冒充原生1920优化。
+
+正式诗境路由可复用同一准备/释放接口进入白帝城，四句机位依次为CAM_city/follow/gorge/exit，保留总览与舟/人物近景。普通新打开仍先帘幕/登录；收藏、笺注、偏好、翻页返回、失败取消/重试沿用现有流程。运行声景首批复用原创风/水缓冲，左右猿声另接并如实登记。
+
+白帝城正式入境准备保留可取消/重试，准备超时为90秒，以容纳当前CPU软件渲染器的冷启动着色器编译；准备交接成功后不再受准备阶段取消信号影响，资源由运行场景负责释放。
+
+### 18.15 白帝城两岸猿声（2026-10-22）
+
+沿用现有 `SFX_ape_left` / `SFX_ape_right` 的GLB世界坐标作为两岸声源，主相机位置、前向与上向作为Web Audio监听者；不改模型、挂点或清单版本。`baidichengSound.ts` 原创程序合成两种有音高起伏、气声与衰减回响的艺术化猿啼，不使用外部录音，不标为实地采样或特定物种录音。左右声部按同一场景时间的确定性呼应表播放，跳转只恢复目标时刻仍在持续的声段，暂停、静音、后台和退出沿用现有音频生命周期。枫桥与江雪保持各自原声部。

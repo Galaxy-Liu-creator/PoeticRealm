@@ -1,0 +1,60 @@
+{
+  "component": "bd_v03_city_roof_ribs_seated",
+  "meshes": [
+    {
+      "object": "src_city_roof_ribs_seated_v03",
+      "vertices": 1240,
+      "triangles": 2048,
+      "nonmanifoldEdges": 0,
+      "volume": 8.589063554014366
+    }
+  ],
+  "checks": {
+    "roofs": [
+      {
+        "roof": 0,
+        "ribs": 22,
+        "minimumUpperEdgeClearanceMeters": 0.060000000000000005
+      },
+      {
+        "roof": 1,
+        "ribs": 8,
+        "minimumUpperEdgeClearanceMeters": 0.060000000000000005
+      },
+      {
+        "roof": 2,
+        "ribs": 8,
+        "minimumUpperEdgeClearanceMeters": 0.060000000000000005
+      },
+      {
+        "roof": 3,
+        "ribs": 28,
+        "minimumUpperEdgeClearanceMeters": 0.060000000000000005
+      },
+      {
+        "roof": 4,
+        "ribs": 7,
+        "minimumUpperEdgeClearanceMeters": 0.060000000000000005
+      },
+      {
+        "roof": 5,
+        "ribs": 7,
+        "minimumUpperEdgeClearanceMeters": 0.060000000000000005
+      },
+      {
+        "roof": 6,
+        "ribs": 14,
+        "minimumUpperEdgeClearanceMeters": 0.060000000000000005
+      }
+    ],
+    "ribWidthMeters": 0.16,
+    "ribStations": [
+      0.001,
+      0.45,
+      0.9
+    ],
+    "fit": "actual triangulated thick roof;33 upper edge samples per span; each station bottom seated2cm inside roof",
+    "bottomContactInsetMeters": 0.02,
+    "previous": "bd_v03_city_roof_ribs_refined and bd_v03_city_roof_detail retained"
+  }
+}

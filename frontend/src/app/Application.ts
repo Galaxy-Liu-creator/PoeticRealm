@@ -1,6 +1,6 @@
 import { parseRoute, type Route } from './Router';
 import { findPoem } from '../content/catalog';
-import { LibraryStore, normalizeLibrary, STORE_KEY } from '../stores/LibraryStore';
+import { LibraryStore, normalizeLibrary, STORE_KEY, type LibraryData } from '../stores/LibraryStore';
 import { LoginMemory } from '../stores/LoginMemory';
 import { AuthStore } from '../stores/AuthStore';
 import { AGREEMENT_VERSION } from '../api/auth';
@@ -15,7 +15,9 @@ import { favoritesPage } from '../ui/pages/Favorites';
 import { profilePage } from '../ui/pages/Profile';
 import { poemPage } from '../ui/pages/Poem';
 import { accountPage, entryPage } from '../ui/pages/Account';
-import { openProfileEditor } from '../ui/components/ProfileEditor';
+import { mountProfileEditor, type ProfileEditorController } from '../ui/components/ProfileEditor';
+import { publicProfilePage, mountPublicProfile } from '../ui/pages/PublicProfile';
+import { openProfileSearch } from '../ui/components/ProfileSearch';
 import { CurtainReveal } from '../transition/CurtainReveal';
 import { curtainPanels } from '../transition/CurtainDrape';
 import { listPageSize } from '../ui/components/Pagination';
@@ -71,6 +73,9 @@ export class Application {
   private stopReading?: () => void;
   private readingPath = '';
   private readingStart = 0;
+  private profileEditor?: ProfileEditorController;
+  private editorPreferences?: LibraryData['preferences'];
+  private get preferences(): LibraryData['preferences'] { return this.editorPreferences ?? this.store.data.preferences; }
   constructor(private root: HTMLElement) {}
   start(): void {
     // Each document opens on the closed curtain; form navigation stays in this document.
@@ -107,6 +112,7 @@ export class Application {
       tabSession.release();
       if (event.persisted) return;
       this.disposed = true; this.auth.onChange = undefined;
+      this.profileEditor?.dispose();
       this.observer?.disconnect(); this.reveal.cancel(); clearTimeout(this.noticeTimer);
       this.realmReveal.cancel(); this.pageReturn.cancel(); this.overviewMotion?.dispose(); this.motionLoop.dispose();
       this.audio.dispose();
@@ -126,6 +132,7 @@ export class Application {
   private onExpired = (): void => { this.auth.expire(); };
   private onPageShow = (event: PageTransitionEvent): void => { if (event.persisted) void this.auth.restore(); };
   private guardRoute(): void {
+    if (location.hash === '#/profile/edit') history.replaceState(null, '', '#/profile');
     if (!this.auth.user && !['account', 'login', 'register'].includes(this.route.page) && (!tabSession.current || this.auth.ready)) {
       this.route = parseRoute('#/account'); history.replaceState(null, '', '#/account');
     }
@@ -137,7 +144,7 @@ export class Application {
     const key = user ? STORE_KEY + '.account.' + user.id : STORE_KEY;
     const changed = key !== this.store.key;
     if (changed) {
-      document.querySelector<HTMLDialogElement>('.profile-editor')?.close();
+      this.profileEditor?.dispose(); this.profileEditor = undefined;
       this.store = new LibraryStore(undefined, key, user ? { name: user.username, gender: user.gender, birthday: user.birthday || '' } : undefined);
       this.listPages.favorites = 1;
       this.hydration = user ? this.hydrateLibrary(this.store) : Promise.resolve();
@@ -186,7 +193,7 @@ export class Application {
   }
   private onStorage = (event: StorageEvent): void => {
     if (event.key !== this.store.key) return;
-    try { this.store.data = normalizeLibrary(event.newValue ? JSON.parse(event.newValue) : null); this.render(); }
+    try { this.store.data = normalizeLibrary(event.newValue ? JSON.parse(event.newValue) : null); if (!this.profileEditor) this.render(); }
     catch { this.notify('另一窗口的本机资料无法读取。'); }
   };
   private onResize = (): void => {
@@ -223,27 +230,36 @@ export class Application {
     this.turnPage(page, focusInput ? '[data-list-page]' : '#main');
   }
   private onVisibility = (): void => {
-    document.body.classList.toggle('no-motion', this.motion.matches || !this.store.data.preferences.motion);
+    document.body.classList.toggle('no-motion', this.motion.matches || !this.preferences.motion);
     document.body.classList.toggle('page-hidden', document.hidden);
-    if ((this.motion.matches || !this.store.data.preferences.motion) && this.revealing) this.reveal.cancel();
+    if ((this.motion.matches || !this.preferences.motion) && this.revealing) this.reveal.cancel();
     this.reveal.setHidden(document.hidden);
-    this.overviewMotion?.setEnabled(!this.motion.matches && this.store.data.preferences.motion);
-    this.realmReveal.setReduced(this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions);
-    this.pageReturn.setReduced(this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions);
-    this.liveScene?.api.setReduced(this.motion.matches || !this.store.data.preferences.motion);
+    this.overviewMotion?.setEnabled(!this.motion.matches && this.preferences.motion);
+    this.realmReveal.setReduced(this.motion.matches || !this.preferences.motion || !this.preferences.transitions);
+    this.pageReturn.setReduced(this.motion.matches || !this.preferences.motion || !this.preferences.transitions);
+    this.liveScene?.api.setReduced(this.motion.matches || !this.preferences.motion);
     this.liveScene?.audio?.setHidden(document.hidden);
-    this.poemReveal?.setReduced(this.motion.matches || !this.store.data.preferences.motion);
+    this.poemReveal?.setReduced(this.motion.matches || !this.preferences.motion);
   };
   private onRoute = (): void => {
+    if (location.hash === '#/profile/edit') history.replaceState(null, '', '#/profile');
     const next = parseRoute(location.hash);
     this.realmReveal.cancel();
     if (this.pageReturn.active) this.pageReturn.cancel();
     if (next.path === this.route.path) return;
+    if (this.profileEditor) {
+      const editor = this.profileEditor;
+      void editor.confirmLeave().then(accepted => {
+        if (this.profileEditor !== editor || parseRoute(location.hash).path !== next.path) return;
+        if (accepted) this.commitRoute(next);
+        else history.replaceState(null, '', '#' + this.route.path);
+      });
+      return;
+    }
     if (this.auth.user && this.route.page === 'poem' && next.page === 'home') { this.returnToOverview(false); return; }
     this.commitRoute(next);
   };
   private commitRoute(next: Route): void {
-    document.querySelector<HTMLDialogElement>('.profile-editor')?.close();
     if (this.route.page === 'home') this.homeScroll = scrollY;
     this.previous = this.route.path;
     if (this.route.page === 'poem') this.homePoem = this.route.id;
@@ -275,6 +291,8 @@ export class Application {
     });
   }
   private render(): void {
+    this.profileEditor?.dispose(); this.profileEditor = undefined; this.editorPreferences = undefined;
+    document.querySelectorAll<HTMLDialogElement>('.profile-search-dialog').forEach(dialog => dialog.close());
     const scrollState=this.route.page==='poem'&&this.readingPath===this.route.path?this.poemReveal?.scroll?.snapshot():undefined;
     this.guardRoute();
     this.realmReveal.cancel();
@@ -302,13 +320,30 @@ export class Application {
     switch (route.page) {
       case 'home': content = homePage(this.store, this.listPages.home, this.pageSize); break;
       case 'favorites': content = favoritesPage(this.store, this.listPages.favorites, this.pageSize); break;
-      case 'profile': content = profilePage(this.store, this.auth.user); break;
+      case 'profile': content = profilePage(); break;
+      case 'public-profile': content = publicProfilePage(); break;
       case 'poem': content = poemPage(findPoem(route.id)!, this.store); break;
       case 'account': content = entryPage(); break;
       case 'login': case 'register': content = accountPage(route.page === 'register', this.store.data.preferences.dark); break;
       default: content = '<main id="main" class="empty-state page-width" tabindex="-1"><h1>未找到这页诗境</h1><p>这首诗或页面暂未收录。</p><a class="enter-button" href="#/">返回诗词总览 →</a></main>';
     }
     this.root.innerHTML = `<a class="skip-link" href="#main">跳至正文</a>${['account', 'login', 'register'].includes(route.page) ? '' : navigation(route)}${content}<div class="notifications"><div class="storage-warning paper-popup" role="status" ${this.store.warning ? '' : 'hidden'}>${paperNotice(this.store.warning)}</div><div class="toast paper-popup" role="status" aria-live="polite" hidden>${paperNotice('')}</div></div>`;
+    if (route.page === 'profile' && this.auth.user) {
+      const host = this.root.querySelector<HTMLElement>('.profile-editor')!, store = this.store, user = this.auth.user;
+      void Promise.all([this.hydration, this.syncing]).then(() => {
+        if (!host.isConnected || this.disposed || this.store !== store) return;
+        this.profileEditor = mountProfileEditor(host, store, user, () => {
+          this.editorPreferences = undefined;
+          this.notify('资料与设置已保存');
+        }, message => this.notify(message), preferences => {
+          this.editorPreferences = preferences;
+          document.body.classList.toggle('dark', preferences.dark || preferences.theme === 'night');
+          document.body.dataset.fontSize = preferences.fontSize;
+          this.audio.update(preferences, true); this.onVisibility();
+        });
+      });
+    }
+    if (route.page === 'public-profile') mountPublicProfile(this.root.querySelector('[data-public-profile]')!, route.username);
     this.fitScene();
     if (this.store.warning) this.scheduleNoticeDismissal();
     if(route.page==='poem'){
@@ -332,7 +367,7 @@ export class Application {
     if (route.page === 'home' || route.page === 'favorites') {
       this.listPages[route.page] = Number(this.root.querySelector<HTMLInputElement>('[data-list-page]')?.value || 1);
     }
-    document.title = `${route.page === 'poem' ? findPoem(route.id)!.title : ({ home: '诗词总览', favorites: '我的收藏', profile: '个人中心', account: '循诗入境', login: '欢迎回境', register: '创建账号', missing: '未找到页面' })[route.page]} · 诗境`;
+    document.title = `${route.page === 'poem' ? findPoem(route.id)!.title : route.page === 'public-profile' ? '诗友主页' : ({ home: '诗词总览', favorites: '我的收藏', profile: '个人中心', account: '循诗入境', login: '欢迎回境', register: '创建账号', missing: '未找到页面' })[route.page]} · 诗境`;
     const grid = this.root.querySelector('.poem-grid');
     if (grid) {
       this.observer = new IntersectionObserver(([entry]) => grid.classList.toggle('float-visible', entry?.isIntersecting ?? false));
@@ -476,7 +511,7 @@ export class Application {
           prepared=scene;target.querySelector<HTMLElement>('.poem-scene-status')!.textContent='';
         };
         this.overviewMotion?.setSuspended(true);
-        void this.realmReveal.play(this.root,destination.id as RealmId,markup,artwork.scenes[destination.id]!,this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions,prepareScene,sceneId?45000:10000).then(complete=>{
+        void this.realmReveal.play(this.root,destination.id as RealmId,markup,artwork.scenes[destination.id]!,this.motion.matches || !this.store.data.preferences.motion || !this.store.data.preferences.transitions,prepareScene,sceneId==='baidicheng'?90000:sceneId?45000:10000).then(complete=>{
           if (complete && !this.disposed && this.route.path===sourcePath) {
             if(prepared){this.liveScene?.dispose();this.liveScene=prepared;this.sceneStarted=false;}
             history.pushState(null,'','#'+destination.path);this.onRoute();
@@ -488,9 +523,11 @@ export class Application {
     const logout = target.closest<HTMLButtonElement>('[data-logout]');
     if (logout && !logout.disabled) {
       logout.disabled = true;
-      void this.auth.logout().then(() => {
+      void (async () => {
+        if (this.profileEditor && !await this.profileEditor.confirmLeave()) return;
+        await this.auth.logout();
         if (!this.disposed) { this.render(); this.notify('已退出登录，请登录后继续'); }
-      }).catch((error) => {
+      })().catch((error) => {
         if (!this.disposed) this.notify(error instanceof Error ? error.message : '退出失败，请重试');
       }).finally(() => { logout.disabled = false; });
       return;
@@ -521,13 +558,7 @@ export class Application {
       this.notify(`${active ? '已收藏' : '已取消收藏'}《${findPoem(id)!.title}》${this.store.warning ? '；仅在本次会话保留' : ''}`);
       return;
     }
-    if (target.closest('[data-edit-profile]')) {
-      const store = this.store, user = this.auth.user;
-      if (user) void Promise.all([this.hydration, this.syncing]).then(() => {
-        if (this.store !== store || this.disposed || this.route.page !== 'profile') return;
-        openProfileEditor(store, user, () => { this.render(); this.root.querySelector<HTMLElement>('[data-edit-profile]')?.focus(); this.notify('资料与设置已保存'); }, message => this.notify(message));
-      });
-    }
+    if (target.closest('[data-profile-search]')) { openProfileSearch(); return; }
     const back = target.closest('[data-back]');
     if (back && !event.metaKey && !event.ctrlKey) {
       event.preventDefault();
@@ -603,8 +634,9 @@ export class Application {
     const key = input.dataset.preference;
     if (key === 'dark' || key === 'motion' || key === 'recommend') {
       this.store.data.preferences[key] = input.checked;
+      if (key === 'dark') this.store.data.preferences.theme = input.checked ? 'night' : 'ink';
       this.store.save(); this.syncLibrary(); this.onVisibility();
-      document.body.classList.toggle('dark', this.store.data.preferences.dark);
+      document.body.classList.toggle('dark', this.store.data.preferences.dark || this.store.data.preferences.theme === 'night');
       this.notify(this.store.warning || '偏好已保存');
     }
   };

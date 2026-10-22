@@ -1,0 +1,31 @@
+{
+  "component": "bd_v03_cliff_far_right_near",
+  "meshes": [
+    {
+      "object": "src_cliff_right_near_far_v03",
+      "vertices": 1940,
+      "triangles": 3876,
+      "nonmanifoldEdges": 0,
+      "volume": 1341376.0981987312
+    }
+  ],
+  "checks": {
+    "nearNode": "cliff_right_near",
+    "frontLevels": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      14,
+      22,
+      31,
+      38,
+      44
+    ],
+    "interiorColumnStep": 3,
+    "preserved": "all waterline/top/shoulder vertices and exact top surface triangles",
+    "trianglesNear": 13306,
+    "distanceMeters": 190.0
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "phase": "lod",
+  "assetSHA256": "9c1644db47dee4ea97fb28dc1387af0acc46d585ef37ca18d09d3d43b437c4c0",
+  "contract": {
+    "scope": "quality-sample",
+    "nodes": 151,
+    "meshes": 55,
+    "materials": 19,
+    "skins": 1,
+    "maskCalibration": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "hull": {
+      "triangles": 1184,
+      "nonmanifoldEdges": 0,
+      "weldTolerance": 0.00001
+    },
+    "canyon": {
+      "bands": [
+        {
+          "name": "cliff_right_near",
+          "triangles": 13306
+        },
+        {
+          "name": "cliff_left_near",
+          "triangles": 15506
+        },
+        {
+          "name": "cliff_left_far",
+          "triangles": 10226
+        },
+        {
+          "name": "cliff_right_far",
+          "triangles": 11546
+        },
+        {
+          "name": "city_promontory",
+          "triangles": 3808
+        },
+        {
+          "name": "cliff_right_near_lod_mesh",
+          "triangles": 3844
+        },
+        {
+          "name": "cliff_left_near_lod_mesh",
+          "triangles": 4486
+        },
+        {
+          "name": "cliff_left_far_lod_mesh",
+          "triangles": 2972
+        },
+        {
+          "name": "cliff_right_far_lod_mesh",
+          "triangles": 3292
+        }
+      ],
+      "routeSamples": 257,
+      "minimumHorizontalShoreDistanceMeters": 10.30255475644479
+    }
+  },
+  "budget": {
+    "distributedBytes": 15435120,
+    "modelBytes": 13683288,
+    "environmentBytes": 0,
+    "terrainBytes": 1751832,
+    "audioFileBytes": 0,
+    "triangles": 199935,
+    "mainPassPrimitives": 73,
+    "estimatedTextureBytesWithMipmaps": 70953652,
+    "images": [
+      {
+        "name": "tatami_mat_nor_gl",
+        "width": 512,
+        "height": 512,
+        "bytes": 287946
+      },
+      {
+        "name": "tatami_mat_Diffuse",
+        "width": 512,
+        "height": 512,
+        "bytes": 49955
+      },
+      {
+        "name": "tatami_mat_Rough",
+        "width": 512,
+        "height": 512,
+        "bytes": 59098
+      },
+      {
+        "name": "wood_planks_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1305804
+      },
+      {
+        "name": "wood_planks_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 216542
+      },
+      {
+        "name": "wood_planks_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 273484
+      },
+      {
+        "name": "linen_normal",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1766830
+      },
+      {
+        "name": "linen_work_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 315013
+      },
+      {
+        "name": "linen_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 88
+      },
+      {
+        "name": "rock_01_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1885170
+      },
+      {
+        "name": "dry_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 637113
+      },
+      {
+        "name": "dry_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 666650
+      },
+      {
+        "name": "wet_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 518211
+      },
+      {
+        "name": "wet_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 480958
+      }
+    ],
+    "note": "完整分发包含高度图与元数据；白帝城建模候选尚未接入音频；实际多 pass 与 fps 由浏览器测量"
+  },
+  "errors": [],
+  "expectedErrors": [],
+  "warnings": [
+    "THREE.WebGLRenderer: KHR_parallel_shader_compile extension not supported.",
+    "[.WebGL-0x3d3c0013e800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+  ],
+  "release": [],
+  "navigation": [],
+  "badWaterlineRejected": true,
+  "badFarWaterlineRejected": true,
+  "badLodTransformRejected": true,
+  "badManifests": [
+    "missing-camera",
+    "wrong-terrain",
+    "mixed-revision",
+    "wrong-model",
+    "wrong-scope",
+    "bad-route",
+    "missing-lod",
+    "bad-lod-distance",
+    "missing-city-detail"
+  ],
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "failure": "TimeoutError: page.waitForFunction: Timeout 90000ms exceeded."
+}

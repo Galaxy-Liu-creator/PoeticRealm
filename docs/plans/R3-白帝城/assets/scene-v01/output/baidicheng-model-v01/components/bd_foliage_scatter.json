@@ -1,0 +1,29 @@
+{
+  "component": "bd_foliage_scatter",
+  "meshes": [
+    {
+      "object": "src_forest_bark",
+      "vertices": 12960,
+      "triangles": 20880,
+      "nonmanifoldEdges": 0,
+      "volume": 55.257226280158505
+    },
+    {
+      "object": "src_forest_leaves",
+      "vertices": 37800,
+      "triangles": 30240,
+      "nonmanifoldEdges": 30240,
+      "volume": 49083.523156554795
+    }
+  ],
+  "checks": {
+    "count": 180,
+    "prototypes": "bd_foliage_prototypes",
+    "rootEmbeddedMeters": 0.05,
+    "support": "actual checked cliff BVH",
+    "buildingClearanceMeters": [
+      28,
+      29
+    ]
+  }
+}

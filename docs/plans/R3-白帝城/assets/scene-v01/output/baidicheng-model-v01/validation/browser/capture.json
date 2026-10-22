@@ -1,0 +1,130 @@
+{
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLRenderer: KHR_parallel_shader_compile extension not supported.",
+    "[.WebGL-0x1fc00c7c800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x1fc00c7c800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x1fc00c7c800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x1fc00c7c800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "views": [
+    {
+      "scene": "baidicheng",
+      "revision": "01",
+      "view": "CAM_enter",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 73,
+      "triangles": 439196,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "camera": [
+        26.999999999999996,
+        14.999999999999998,
+        66
+      ],
+      "cameraQuaternion": [
+        0.05313043151379728,
+        0.11474203054724336,
+        -0.006145756961978973,
+        0.9919544613292652
+      ],
+      "target": [
+        -7,
+        31,
+        -79
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 44,
+        "textures": 17
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    }
+  ],
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "release": {
+    "scene": "baidicheng",
+    "revision": "01",
+    "view": "CAM_enter",
+    "time": 0,
+    "playing": false,
+    "fps": 0,
+    "calls": 73,
+    "triangles": 439196,
+    "navigation": {
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.1482979876521404,
+        0,
+        -0.9889427217277681
+      ],
+      "position": [
+        10,
+        -0.30592150526965284,
+        28
+      ],
+      "quaternion": [
+        0.0003970766126192676,
+        0.757726084680832,
+        -0.00010156882082428377,
+        0.652572610985318
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    "camera": [
+      26.999999999999996,
+      14.999999999999998,
+      66
+    ],
+    "cameraQuaternion": [
+      0.05313043151379728,
+      0.11474203054724336,
+      -0.006145756961978973,
+      0.9919544613292652
+    ],
+    "target": [
+      -7,
+      31,
+      -79
+    ],
+    "followsBoat": false,
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "contextLost": true,
+    "disposed": true,
+    "reducedMotion": false
+  },
+  "pass": true
+}

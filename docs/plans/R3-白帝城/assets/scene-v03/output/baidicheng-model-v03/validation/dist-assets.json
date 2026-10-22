@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "path": "models/baidicheng/scene_v03.glb",
+      "bytes": 13651084,
+      "sha256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5"
+    },
+    {
+      "path": "scenes/baidicheng.scene-v03.json",
+      "bytes": 4027,
+      "sha256": "9ac1a293d87164a898aecf18f66d1c2a02a45123b33ea7255a2472aa7333f3d9"
+    },
+    {
+      "path": "terrain/baidicheng-v03.height.png",
+      "bytes": 1751574,
+      "sha256": "39ae3b1ddbb561ee3e2f37262b4afa7c83eb4fd8ce8113b716d9dafd8a1bdde6"
+    },
+    {
+      "path": "terrain/baidicheng-v03.height.json",
+      "bytes": 258,
+      "sha256": "79956f56dbf8f485f7bc5252387e7a389ad880b3c4e5e277c556f843acd7c1b4"
+    }
+  ]
+}

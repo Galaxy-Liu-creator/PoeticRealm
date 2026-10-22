@@ -1,0 +1,97 @@
+{
+  "distributedBytes": 15620300,
+  "modelBytes": 14191452,
+  "environmentBytes": 0,
+  "terrainBytes": 1428848,
+  "audioFileBytes": 0,
+  "triangles": 184041,
+  "mainPassPrimitives": 41,
+  "estimatedTextureBytesWithMipmaps": 70953652,
+  "images": [
+    {
+      "name": "tatami_mat_nor_gl",
+      "width": 512,
+      "height": 512,
+      "bytes": 287946
+    },
+    {
+      "name": "tatami_mat_Diffuse",
+      "width": 512,
+      "height": 512,
+      "bytes": 49955
+    },
+    {
+      "name": "tatami_mat_Rough",
+      "width": 512,
+      "height": 512,
+      "bytes": 59098
+    },
+    {
+      "name": "wood_planks_nor_gl",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1305804
+    },
+    {
+      "name": "wood_planks_Diffuse",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 216542
+    },
+    {
+      "name": "wood_planks_Rough",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 273484
+    },
+    {
+      "name": "linen_normal",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1766830
+    },
+    {
+      "name": "linen_work_basecolor",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 315013
+    },
+    {
+      "name": "linen_roughness",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 88
+    },
+    {
+      "name": "rock_01_nor_gl",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1885170
+    },
+    {
+      "name": "dry_basecolor",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 647338
+    },
+    {
+      "name": "dry_roughness",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 666650
+    },
+    {
+      "name": "wet_basecolor",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 537626
+    },
+    {
+      "name": "wet_roughness",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 480958
+    }
+  ],
+  "note": "完整分发包含高度图与元数据；白帝城建模候选尚未接入音频；实际多 pass 与 fps 由浏览器测量"
+}

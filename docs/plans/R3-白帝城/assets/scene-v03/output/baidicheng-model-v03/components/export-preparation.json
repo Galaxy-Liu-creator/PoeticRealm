@@ -1,0 +1,280 @@
+{
+  "meshes": [
+    {
+      "name": "boat_hull_closed",
+      "triangles": 1184,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rower_worklinen",
+      "triangles": 5702,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "boat_wood_aged",
+      "triangles": 9064,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "boat_cloth_reed",
+      "triangles": 364,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "boat_metal_iron",
+      "triangles": 1028,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rowing_oar_blade",
+      "triangles": 284,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rowing_oar_shaft",
+      "triangles": 236,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rower_worktrousers",
+      "triangles": 2048,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rowing_oar_handle",
+      "triangles": 284,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rower_eyes",
+      "triangles": 280,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rower_weathered",
+      "triangles": 15042,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rowing_oar_binding",
+      "triangles": 332,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rower_worncollar",
+      "triangles": 456,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rower_reed",
+      "triangles": 636,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "rowing_oar_pin",
+      "triangles": 188,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "mask_probe",
+      "triangles": 1,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "cliff_right_near",
+      "triangles": 13306,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "cliff_left_near",
+      "triangles": 15506,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "cliff_left_far",
+      "triangles": 10226,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "cliff_right_far",
+      "triangles": 11546,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_promontory",
+      "triangles": 3808,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_terrace",
+      "triangles": 144,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_wall",
+      "triangles": 576,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_timber",
+      "triangles": 2604,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_enclosure",
+      "triangles": 360,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_00",
+      "triangles": 108,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_01",
+      "triangles": 108,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_02",
+      "triangles": 108,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_03",
+      "triangles": 108,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_04",
+      "triangles": 108,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_05",
+      "triangles": 108,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_06",
+      "triangles": 108,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_ridges",
+      "triangles": 588,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_bark_right_near",
+      "triangles": 6600,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_bark_left_near",
+      "triangles": 7600,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_bark_left_far",
+      "triangles": 1376,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_bark_right_far",
+      "triangles": 1440,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_leaves_right_near",
+      "triangles": 21384,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_leaves_left_near",
+      "triangles": 24624,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_leaves_left_far",
+      "triangles": 2064,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_leaves_right_far",
+      "triangles": 2160,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_bark_right_near_lod_mesh",
+      "triangles": 2112,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_leaves_right_near_lod_mesh",
+      "triangles": 3168,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_bark_left_near_lod_mesh",
+      "triangles": 2432,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "forest_leaves_left_near_lod_mesh",
+      "triangles": 3648,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "cliff_right_near_lod_mesh",
+      "triangles": 3844,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "cliff_left_near_lod_mesh",
+      "triangles": 4486,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "cliff_left_far_lod_mesh",
+      "triangles": 2972,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "cliff_right_far_lod_mesh",
+      "triangles": 3292,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_support_detail",
+      "triangles": 3864,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_support_coarse",
+      "triangles": 1008,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_joinery_detail",
+      "triangles": 2328,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_joinery_coarse",
+      "triangles": 288,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_detail",
+      "triangles": 2048,
+      "ngonsTriangulated": 0
+    },
+    {
+      "name": "city_roof_coarse",
+      "triangles": 168,
+      "ngonsTriangulated": 0
+    }
+  ],
+  "triangles": 199455
+}

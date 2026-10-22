@@ -1,0 +1,53 @@
+[
+  {
+    "service": "backend",
+    "id": "7a3540fb9c24",
+    "image": "sha256:47f404ff622f5936ee28b6d795703316e391667795e3ad1cd5cabd676966c184",
+    "health": "healthy",
+    "state": "running",
+    "publishers": [
+      {
+        "URL": "",
+        "TargetPort": 8080,
+        "PublishedPort": 0,
+        "Protocol": "tcp"
+      }
+    ]
+  },
+  {
+    "service": "db",
+    "id": "840e21ec5f9a",
+    "image": "mysql:8.4",
+    "health": "healthy",
+    "state": "running",
+    "publishers": [
+      {
+        "URL": "",
+        "TargetPort": 3306,
+        "PublishedPort": 0,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "",
+        "TargetPort": 33060,
+        "PublishedPort": 0,
+        "Protocol": "tcp"
+      }
+    ]
+  },
+  {
+    "service": "frontend",
+    "id": "8811ec681c28",
+    "image": "poeticrealm-frontend",
+    "health": "healthy",
+    "state": "running",
+    "publishers": [
+      {
+        "URL": "127.0.0.1",
+        "TargetPort": 8080,
+        "PublishedPort": 5186,
+        "Protocol": "tcp"
+      }
+    ]
+  }
+]

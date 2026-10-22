@@ -10,8 +10,9 @@ export function paperNotice(message: string, actions = '', loading = false): str
 }
 
 /** Styled native dialog keeps focus trapping, Escape, and safe cancellation on owner close. */
-export function confirmPaper(message: string, owner: HTMLDialogElement): Promise<boolean> {
-  if (!owner.open || document.querySelector('.paper-question')) return Promise.resolve(false);
+export function confirmPaper(message: string, owner: HTMLElement): Promise<boolean> {
+  const active = (): boolean => owner.isConnected && (!(owner instanceof HTMLDialogElement) || owner.open);
+  if (!active() || document.querySelector('.paper-question')) return Promise.resolve(false);
   const dialog = document.createElement('dialog');
   dialog.className = 'paper-dialog paper-question';
   dialog.setAttribute('aria-label', '确认操作');
@@ -22,7 +23,7 @@ export function confirmPaper(message: string, owner: HTMLDialogElement): Promise
     const finish = (accepted: boolean): void => {
       if (finished) return; finished = true;
       owner.removeEventListener('close', cancel);
-      if (dialog.open) dialog.close(); dialog.remove(); resolve(accepted && owner.open);
+      if (dialog.open) dialog.close(); dialog.remove(); resolve(accepted && active());
     };
     const cancel = (): void => finish(false);
     owner.addEventListener('close', cancel, {once:true});

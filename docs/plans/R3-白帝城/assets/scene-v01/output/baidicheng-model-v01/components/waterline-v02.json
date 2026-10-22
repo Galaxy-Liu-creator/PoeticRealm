@@ -1,0 +1,30 @@
+{
+  "geometryUnchanged": true,
+  "checks": [
+    {
+      "node": "src_cliff_right_near",
+      "wetFaces": 364,
+      "boundaryMeters": 0.22
+    },
+    {
+      "node": "src_cliff_left_near",
+      "wetFaces": 354,
+      "boundaryMeters": 0.22
+    },
+    {
+      "node": "src_cliff_left_far",
+      "wetFaces": 324,
+      "boundaryMeters": 0.22
+    },
+    {
+      "node": "src_cliff_right_far",
+      "wetFaces": 324,
+      "boundaryMeters": 0.22
+    },
+    {
+      "node": "src_city_promontory",
+      "wetFaces": 129,
+      "boundaryMeters": 0.22
+    }
+  ]
+}

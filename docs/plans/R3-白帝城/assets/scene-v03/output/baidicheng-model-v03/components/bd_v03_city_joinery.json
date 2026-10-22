@@ -1,0 +1,160 @@
+{
+  "component": "bd_v03_city_joinery",
+  "meshes": [
+    {
+      "object": "src_city_joinery_detail_v03",
+      "vertices": 1552,
+      "triangles": 2328,
+      "nonmanifoldEdges": 0,
+      "volume": 10.396048679048834
+    },
+    {
+      "object": "src_city_joinery_coarse_v03",
+      "vertices": 192,
+      "triangles": 288,
+      "nonmanifoldEdges": 0,
+      "volume": 9.067997272180763
+    }
+  ],
+  "checks": {
+    "windows": [
+      {
+        "center": [
+          47.26,
+          113.94,
+          67.212
+        ],
+        "size": [
+          2.42,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          54.74,
+          113.94,
+          67.212
+        ],
+        "size": [
+          2.42,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          63.28,
+          115.94,
+          66.652
+        ],
+        "size": [
+          1.76,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          68.72,
+          115.94,
+          66.652
+        ],
+        "size": [
+          1.76,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          34.28,
+          117.94,
+          66.652
+        ],
+        "size": [
+          1.76,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          39.72,
+          117.94,
+          66.652
+        ],
+        "size": [
+          1.76,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          47.24,
+          126.44,
+          67.716
+        ],
+        "size": [
+          2.7,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          56.76,
+          126.44,
+          67.716
+        ],
+        "size": [
+          2.7,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          35.62,
+          131.94,
+          66.596
+        ],
+        "size": [
+          1.54,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          40.38,
+          131.94,
+          66.596
+        ],
+        "size": [
+          1.54,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          64.62,
+          132.94,
+          66.596
+        ],
+        "size": [
+          1.54,
+          1.9
+        ]
+      },
+      {
+        "center": [
+          69.38,
+          132.94,
+          66.596
+        ],
+        "size": [
+          1.54,
+          1.9
+        ]
+      }
+    ],
+    "frontOffsetMeters": 0.06,
+    "mullionWidthMeters": 0.045,
+    "halls": 6,
+    "doors": "plain paired boards in existing openings",
+    "gateClearWidthMeters": 3.9
+  }
+}

@@ -1,0 +1,1169 @@
+{
+  "phase": "core",
+  "assetSHA256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5",
+  "contract": {
+    "scope": "quality-sample",
+    "nodes": 151,
+    "meshes": 55,
+    "materials": 19,
+    "skins": 1,
+    "maskCalibration": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "hull": {
+      "triangles": 1184,
+      "nonmanifoldEdges": 0,
+      "weldTolerance": 0.00001
+    },
+    "canyon": {
+      "bands": [
+        {
+          "name": "cliff_right_near",
+          "triangles": 13306
+        },
+        {
+          "name": "cliff_left_near",
+          "triangles": 15506
+        },
+        {
+          "name": "cliff_left_far",
+          "triangles": 10226
+        },
+        {
+          "name": "cliff_right_far",
+          "triangles": 11546
+        },
+        {
+          "name": "city_promontory",
+          "triangles": 3808
+        },
+        {
+          "name": "cliff_right_near_lod_mesh",
+          "triangles": 3844
+        },
+        {
+          "name": "cliff_left_near_lod_mesh",
+          "triangles": 4486
+        },
+        {
+          "name": "cliff_left_far_lod_mesh",
+          "triangles": 2972
+        },
+        {
+          "name": "cliff_right_far_lod_mesh",
+          "triangles": 3292
+        }
+      ],
+      "routeSamples": 257,
+      "minimumHorizontalShoreDistanceMeters": 10.30255475644479
+    }
+  },
+  "budget": {
+    "distributedBytes": 15402916,
+    "modelBytes": 13651084,
+    "environmentBytes": 0,
+    "terrainBytes": 1751832,
+    "audioFileBytes": 0,
+    "triangles": 199455,
+    "mainPassPrimitives": 73,
+    "estimatedTextureBytesWithMipmaps": 70953652,
+    "images": [
+      {
+        "name": "tatami_mat_nor_gl",
+        "width": 512,
+        "height": 512,
+        "bytes": 287946
+      },
+      {
+        "name": "tatami_mat_Diffuse",
+        "width": 512,
+        "height": 512,
+        "bytes": 49955
+      },
+      {
+        "name": "tatami_mat_Rough",
+        "width": 512,
+        "height": 512,
+        "bytes": 59098
+      },
+      {
+        "name": "wood_planks_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1305804
+      },
+      {
+        "name": "wood_planks_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 216542
+      },
+      {
+        "name": "wood_planks_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 273484
+      },
+      {
+        "name": "linen_normal",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1766830
+      },
+      {
+        "name": "linen_work_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 315013
+      },
+      {
+        "name": "linen_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 88
+      },
+      {
+        "name": "rock_01_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1885170
+      },
+      {
+        "name": "dry_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 637113
+      },
+      {
+        "name": "dry_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 666650
+      },
+      {
+        "name": "wet_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 518211
+      },
+      {
+        "name": "wet_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 480958
+      }
+    ],
+    "note": "完整分发包含高度图与元数据；白帝城建模候选尚未接入音频；实际多 pass 与 fps 由浏览器测量"
+  },
+  "errors": [],
+  "expectedErrors": [],
+  "warnings": [
+    "THREE.WebGLRenderer: KHR_parallel_shader_compile extension not supported.",
+    "[.WebGL-0x195c00fdfe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x195c00fdfe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x195c00fdfe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x195c00fdfe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "release": [],
+  "navigation": [
+    {
+      "time": 0,
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.1482979876521404,
+        0,
+        -0.9889427217277681
+      ],
+      "position": [
+        10,
+        -0.30592150526965284,
+        28
+      ],
+      "quaternion": [
+        0.0003970766126192676,
+        0.757726084680832,
+        -0.00010156882082428377,
+        0.652572610985318
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    {
+      "time": 8,
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.1350699012111395,
+        0,
+        -0.9908360721061851
+      ],
+      "position": [
+        7.069905118413161,
+        -0.29960466732591895,
+        5.792910246382211
+      ],
+      "quaternion": [
+        0.002472232482559902,
+        0.753344702283283,
+        -0.0006354376938372834,
+        0.6576208967385396
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    {
+      "time": 23,
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.3248344506642194,
+        0,
+        -0.9457708917394715
+      ],
+      "position": [
+        -3.2110890226940394,
+        -0.3049703924903482,
+        -34.81178552670837
+      ],
+      "quaternion": [
+        0.0012402724330031444,
+        0.8138890520759778,
+        -0.0002913544351364162,
+        0.5810189220221242
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    {
+      "time": 32,
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.14662235896376175,
+        0,
+        -0.9891925413446576
+      ],
+      "position": [
+        -9.195567124937796,
+        -0.301031589871736,
+        -59.24128195814959
+      ],
+      "quaternion": [
+        -0.0024278849243036353,
+        0.7571688482730462,
+        0.00062140986942806,
+        0.6532144015784079
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    {
+      "time": 90,
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        0.19051421860615803,
+        0,
+        -0.981684436317947
+      ],
+      "position": [
+        21.773583163132468,
+        -0.3009838083030411,
+        -216.75694101347952
+      ],
+      "quaternion": [
+        -0.002624657103802281,
+        0.6361896249237394,
+        0.0008222571501943981,
+        0.7715278324258031
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    {
+      "time": 300,
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        0.21079895650319463,
+        0,
+        -0.9775294368647751
+      ],
+      "position": [
+        26,
+        -0.29773699621646565,
+        -238
+      ],
+      "quaternion": [
+        -0.0024637962468172336,
+        0.6281685106372211,
+        0.0007878557760559095,
+        0.7780730243589903
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    {
+      "time": 10000,
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        0.21079895650319463,
+        0,
+        -0.9775294368647751
+      ],
+      "position": [
+        26,
+        -0.2942284332752564,
+        -238
+      ],
+      "quaternion": [
+        0.000727049089610605,
+        0.6281720305252524,
+        -0.00023249196354714068,
+        0.7780741079183199
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    }
+  ],
+  "badWaterlineRejected": true,
+  "badFarWaterlineRejected": true,
+  "badLodTransformRejected": true,
+  "badManifests": [
+    "missing-camera",
+    "wrong-terrain",
+    "mixed-revision",
+    "wrong-model",
+    "wrong-scope",
+    "bad-route",
+    "missing-lod",
+    "bad-lod-distance",
+    "missing-city-detail"
+  ],
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "initialViewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "renderer": {
+    "backend": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+  },
+  "rowing": {
+    "samples": 97,
+    "maxGrip": 1.1302273845179703e-7,
+    "maxSkinHand": 0.02993735431964497,
+    "maxFoot": 0.000001279747718913721,
+    "maxTether": 1.9984014443252818e-15,
+    "highestBlade": -0.4132757420263411,
+    "intersections": 0,
+    "poses": [
+      {
+        "t": 0,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.041666666666666664,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.08333333333333333,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.125,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.16666666666666666,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 0.20833333333333334,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.25,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.2916666666666667,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.3333333333333333,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.375,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 0.4166666666666667,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.4583333333333333,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.5,
+        "intersections": 0,
+        "candidatePairs": 563,
+        "examples": []
+      },
+      {
+        "t": 0.5416666666666666,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 0.5833333333333334,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.625,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.6666666666666666,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 0.7083333333333334,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 0.75,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 0.7916666666666666,
+        "intersections": 0,
+        "candidatePairs": 549,
+        "examples": []
+      },
+      {
+        "t": 0.8333333333333334,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 0.875,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 0.9166666666666666,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 0.9583333333333334,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.0416666666666667,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 1.0833333333333333,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.125,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.1666666666666667,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 1.2083333333333333,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.25,
+        "intersections": 0,
+        "candidatePairs": 564,
+        "examples": []
+      },
+      {
+        "t": 1.2916666666666667,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 1.3333333333333333,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.375,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.4166666666666667,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.4583333333333333,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.5,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.5416666666666667,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.5833333333333333,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.625,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 1.6666666666666667,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 1.7083333333333333,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 1.75,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 1.7916666666666667,
+        "intersections": 0,
+        "candidatePairs": 558,
+        "examples": []
+      },
+      {
+        "t": 1.8333333333333333,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 1.875,
+        "intersections": 0,
+        "candidatePairs": 553,
+        "examples": []
+      },
+      {
+        "t": 1.9166666666666667,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 1.9583333333333333,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.0416666666666665,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.0833333333333335,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.125,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.1666666666666665,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.2083333333333335,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 2.25,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 2.2916666666666665,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.3333333333333335,
+        "intersections": 0,
+        "candidatePairs": 552,
+        "examples": []
+      },
+      {
+        "t": 2.375,
+        "intersections": 0,
+        "candidatePairs": 548,
+        "examples": []
+      },
+      {
+        "t": 2.4166666666666665,
+        "intersections": 0,
+        "candidatePairs": 545,
+        "examples": []
+      },
+      {
+        "t": 2.4583333333333335,
+        "intersections": 0,
+        "candidatePairs": 551,
+        "examples": []
+      },
+      {
+        "t": 2.5,
+        "intersections": 0,
+        "candidatePairs": 557,
+        "examples": []
+      },
+      {
+        "t": 2.5416666666666665,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 2.5833333333333335,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 2.625,
+        "intersections": 0,
+        "candidatePairs": 561,
+        "examples": []
+      },
+      {
+        "t": 2.6666666666666665,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 2.7083333333333335,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 2.75,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 2.7916666666666665,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 2.8333333333333335,
+        "intersections": 0,
+        "candidatePairs": 569,
+        "examples": []
+      },
+      {
+        "t": 2.875,
+        "intersections": 0,
+        "candidatePairs": 565,
+        "examples": []
+      },
+      {
+        "t": 2.9166666666666665,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 2.9583333333333335,
+        "intersections": 0,
+        "candidatePairs": 562,
+        "examples": []
+      },
+      {
+        "t": 3,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.0416666666666665,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.0833333333333335,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      },
+      {
+        "t": 3.125,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.1666666666666665,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.2083333333333335,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.25,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.2916666666666665,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.3333333333333335,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.375,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.4166666666666665,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.4583333333333335,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.5,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 3.5416666666666665,
+        "intersections": 0,
+        "candidatePairs": 555,
+        "examples": []
+      },
+      {
+        "t": 3.5833333333333335,
+        "intersections": 0,
+        "candidatePairs": 559,
+        "examples": []
+      },
+      {
+        "t": 3.625,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.6666666666666665,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.7083333333333335,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.75,
+        "intersections": 0,
+        "candidatePairs": 560,
+        "examples": []
+      },
+      {
+        "t": 3.7916666666666665,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.8333333333333335,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.875,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 3.9166666666666665,
+        "intersections": 0,
+        "candidatePairs": 554,
+        "examples": []
+      },
+      {
+        "t": 3.9583333333333335,
+        "intersections": 0,
+        "candidatePairs": 550,
+        "examples": []
+      },
+      {
+        "t": 4,
+        "intersections": 0,
+        "candidatePairs": 556,
+        "examples": []
+      }
+    ]
+  },
+  "follow": true,
+  "seekHashes": [
+    "22a4041462c2fb09f52b8443b1c9d0b27be176731528fcb6ef484a645b5d6be5",
+    "1c4cde52fba01e9c13d239d928d5649e09eb8b0e4270c620f0e02ea83a836ad0",
+    "22a4041462c2fb09f52b8443b1c9d0b27be176731528fcb6ef484a645b5d6be5"
+  ],
+  "orbit": true,
+  "finalRelease": {
+    "scene": "baidicheng",
+    "revision": "03",
+    "view": "CAM_enter",
+    "time": 8,
+    "playing": false,
+    "fps": 0,
+    "calls": 167,
+    "triangles": 520032,
+    "navigation": {
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.1350699012111395,
+        0,
+        -0.9908360721061851
+      ],
+      "position": [
+        7.069905118413161,
+        -0.29960466732591895,
+        5.792910246382211
+      ],
+      "quaternion": [
+        0.002472232482559902,
+        0.753344702283283,
+        -0.0006354376938372834,
+        0.6576208967385396
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    "lods": [
+      {
+        "near": "forest_bark_right_near",
+        "far": "forest_bark_right_near_lod",
+        "distance": 160,
+        "center": [
+          82.00546264648438,
+          99.60451889038086,
+          85.53459167480469
+        ],
+        "cameraDistance": 105.8927374458167,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_leaves_right_near",
+        "far": "forest_leaves_right_near_lod",
+        "distance": 160,
+        "center": [
+          81.68559646606445,
+          101.62310028076172,
+          85.84123229980469
+        ],
+        "cameraDistance": 106.01132741148685,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_bark_left_near",
+        "far": "forest_bark_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.99219703674316,
+          101.43073654174805,
+          51.824790954589844
+        ],
+        "cameraDistance": 144.6332544782433,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_leaves_left_near",
+        "far": "forest_leaves_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.50600242614746,
+          104.71992111206055,
+          52.15628433227539
+        ],
+        "cameraDistance": 144.7785605474748,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_near",
+        "far": "cliff_right_near_lod",
+        "distance": 190,
+        "center": [
+          74.07235717773438,
+          67.43255615234375,
+          83
+        ],
+        "cameraDistance": 98.50666292530201,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_left_near",
+        "far": "cliff_left_near_lod",
+        "distance": 190,
+        "center": [
+          -77.23818588256836,
+          62.72236633300781,
+          52
+        ],
+        "cameraDistance": 133.3834564226203,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_left_far",
+        "far": "cliff_left_far_lod",
+        "distance": 190,
+        "center": [
+          -100.4301528930664,
+          79.82073974609375,
+          -192.5
+        ],
+        "cameraDistance": 363.8112858623324,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_far",
+        "far": "cliff_right_far_lod",
+        "distance": 190,
+        "center": [
+          90.51280784606934,
+          62.86320495605469,
+          -152.5
+        ],
+        "cameraDistance": 318.7696975843368,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "city_detail",
+        "far": "city_detail_lod",
+        "distance": 180,
+        "center": [
+          51.75,
+          68.67293930053711,
+          -116
+        ],
+        "cameraDistance": 274.6900650422179,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      }
+    ],
+    "terrainLod": {
+      "enabled": true,
+      "mode": "auto",
+      "level": "near",
+      "distance": 161.25551010639657,
+      "threshold": 280,
+      "nearTriangles": 32768,
+      "farTriangles": 8192
+    },
+    "camera": [
+      -157.25326936035378,
+      140.6095181722031,
+      72.04797497356455
+    ],
+    "cameraQuaternion": [
+      -0.20801345080287847,
+      -0.35272587832013236,
+      -0.08074068079968742,
+      0.9087330749523604
+    ],
+    "target": [
+      0,
+      28.000000000000004,
+      -100
+    ],
+    "followsBoat": false,
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "contextLost": true,
+    "disposed": true,
+    "reducedMotion": false
+  },
+  "functionalPass": true
+}

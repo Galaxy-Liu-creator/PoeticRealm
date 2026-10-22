@@ -1,0 +1,42 @@
+{
+  "geometryUnchanged": true,
+  "rootSpace": "explicit matrix_basis for parentless source objects, including hidden source collections",
+  "nodes": [
+    {
+      "node": "cliff_right_near",
+      "wetFaces": 364
+    },
+    {
+      "node": "cliff_left_near",
+      "wetFaces": 354
+    },
+    {
+      "node": "cliff_left_far",
+      "wetFaces": 324
+    },
+    {
+      "node": "cliff_right_far",
+      "wetFaces": 324
+    },
+    {
+      "node": "city_promontory",
+      "wetFaces": 190
+    },
+    {
+      "node": "src_cliff_right_near_shoulder",
+      "wetFaces": 364
+    },
+    {
+      "node": "src_cliff_left_near_shoulder",
+      "wetFaces": 354
+    },
+    {
+      "node": "src_cliff_left_far_shoulder",
+      "wetFaces": 324
+    },
+    {
+      "node": "src_cliff_right_far_shoulder",
+      "wetFaces": 324
+    }
+  ]
+}

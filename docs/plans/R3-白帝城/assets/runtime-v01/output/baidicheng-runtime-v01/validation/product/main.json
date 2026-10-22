@@ -1,0 +1,423 @@
+{
+  "phase": "main",
+  "errors": [],
+  "expectedErrors": [],
+  "checks": [
+    "Overview enters the real v03 scene with default overview and white-emperor audio profile",
+    "Four vertical right-to-left lines reveal from the scene clock",
+    "Four line buttons use authored city/follow/gorge/exit cameras; moving view bypasses the cache",
+    "seek8→23→8 is pixel-stable; favorite redraw retains the canvas and camera; notes open and close",
+    "Three desktop sizes, native cache dimensions, close views, mouse orbit, replay and reduced motion pass",
+    "Page-return transition releases all resources",
+    "Ordinary refresh returns to the account curtain"
+  ],
+  "layouts": [
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "scroll": [
+        1920,
+        1080
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080,
+        "right": 1920,
+        "bottom": 1080
+      },
+      "reading": {
+        "x": 76.796875,
+        "y": 90,
+        "width": 336.609375,
+        "height": 284.90625,
+        "right": 413.40625,
+        "bottom": 374.90625
+      },
+      "toolbar": {
+        "x": 76.796875,
+        "y": 962,
+        "width": 363.703125,
+        "height": 44,
+        "right": 440.5,
+        "bottom": 1006
+      },
+      "controls": {
+        "x": 1439.546875,
+        "y": 962,
+        "width": 403.65625,
+        "height": 44,
+        "right": 1843.203125,
+        "bottom": 1006
+      },
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 122,
+        "misses": 7,
+        "width": 1920,
+        "height": 1080,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "scroll": [
+        1440,
+        900
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "right": 1440,
+        "bottom": 900
+      },
+      "reading": {
+        "x": 57.59375,
+        "y": 90,
+        "width": 332.21875,
+        "height": 283.90625,
+        "right": 389.8125,
+        "bottom": 373.90625
+      },
+      "toolbar": {
+        "x": 57.59375,
+        "y": 782,
+        "width": 363.703125,
+        "height": 44,
+        "right": 421.296875,
+        "bottom": 826
+      },
+      "controls": {
+        "x": 978.75,
+        "y": 782,
+        "width": 403.65625,
+        "height": 44,
+        "right": 1382.40625,
+        "bottom": 826
+      },
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 123,
+        "misses": 8,
+        "width": 1440,
+        "height": 900,
+        "staticMeshes": 59
+      }
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "scroll": [
+        1280,
+        720
+      ],
+      "canvas": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720,
+        "right": 1280,
+        "bottom": 720
+      },
+      "reading": {
+        "x": 51.1875,
+        "y": 90,
+        "width": 285.5625,
+        "height": 237.078125,
+        "right": 336.75,
+        "bottom": 327.078125
+      },
+      "toolbar": {
+        "x": 51.1875,
+        "y": 602,
+        "width": 363.703125,
+        "height": 44,
+        "right": 414.890625,
+        "bottom": 646
+      },
+      "controls": {
+        "x": 825.15625,
+        "y": 602,
+        "width": 403.65625,
+        "height": 44,
+        "right": 1228.8125,
+        "bottom": 646
+      },
+      "cache": {
+        "enabled": true,
+        "bypassed": false,
+        "valid": true,
+        "hits": 124,
+        "misses": 9,
+        "width": 1280,
+        "height": 720,
+        "staticMeshes": 59
+      }
+    }
+  ],
+  "initial": {
+    "scene": "baidicheng",
+    "revision": "03",
+    "view": {
+      "name": "CAM_enter",
+      "camera": [
+        6.999999999999999,
+        72,
+        155
+      ],
+      "target": [
+        0,
+        28,
+        -100
+      ],
+      "followsBoat": false
+    },
+    "time": 11.099999999999977,
+    "playing": false,
+    "fps": 3.442335860556813,
+    "calls": 168,
+    "triangles": 374641,
+    "navigation": {
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.16496744367657198,
+        0,
+        -0.9862990127374239
+      ],
+      "position": [
+        5.781712425293701,
+        -0.30024501370825146,
+        -2.79062602397456
+      ],
+      "quaternion": [
+        -0.0024409892553150375,
+        0.763201853726557,
+        0.0006205804633642003,
+        0.6461552343823355
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    "lods": [
+      {
+        "near": "forest_bark_right_near",
+        "far": "forest_bark_right_near_lod",
+        "distance": 160,
+        "center": [
+          82.00546264648438,
+          99.60451889038086,
+          85.53459167480469
+        ],
+        "cameraDistance": 105.8927374458167,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": false
+      },
+      {
+        "near": "forest_leaves_right_near",
+        "far": "forest_leaves_right_near_lod",
+        "distance": 160,
+        "center": [
+          81.68559646606445,
+          101.62310028076172,
+          85.84123229980469
+        ],
+        "cameraDistance": 106.01132741148685,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": false
+      },
+      {
+        "near": "forest_bark_left_near",
+        "far": "forest_bark_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.99219703674316,
+          101.43073654174805,
+          51.824790954589844
+        ],
+        "cameraDistance": 144.6332544782433,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": false
+      },
+      {
+        "near": "forest_leaves_left_near",
+        "far": "forest_leaves_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.50600242614746,
+          104.71992111206055,
+          52.15628433227539
+        ],
+        "cameraDistance": 144.7785605474748,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": false
+      },
+      {
+        "near": "cliff_right_near",
+        "far": "cliff_right_near_lod",
+        "distance": 190,
+        "center": [
+          74.07235717773438,
+          67.43255615234375,
+          83
+        ],
+        "cameraDistance": 98.50666292530201,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": false
+      },
+      {
+        "near": "cliff_left_near",
+        "far": "cliff_left_near_lod",
+        "distance": 190,
+        "center": [
+          -77.23818588256836,
+          62.72236633300781,
+          52
+        ],
+        "cameraDistance": 133.3834564226203,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": false
+      },
+      {
+        "near": "cliff_left_far",
+        "far": "cliff_left_far_lod",
+        "distance": 190,
+        "center": [
+          -100.4301528930664,
+          79.82073974609375,
+          -192.5
+        ],
+        "cameraDistance": 363.8112858623324,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_far",
+        "far": "cliff_right_far_lod",
+        "distance": 190,
+        "center": [
+          90.51280784606934,
+          62.86320495605469,
+          -152.5
+        ],
+        "cameraDistance": 318.7696975843368,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      },
+      {
+        "near": "city_detail",
+        "far": "city_detail_lod",
+        "distance": 180,
+        "center": [
+          51.75,
+          68.67293930053711,
+          -116
+        ],
+        "cameraDistance": 274.6900650422179,
+        "level": "far",
+        "nearVisible": false,
+        "farVisible": true
+      }
+    ],
+    "terrainLod": {
+      "enabled": true,
+      "mode": "auto",
+      "level": "near",
+      "distance": 161.25551010639657,
+      "threshold": 280,
+      "nearTriangles": 32768,
+      "farTriangles": 8192
+    },
+    "renderCache": {
+      "enabled": true,
+      "bypassed": false,
+      "valid": true,
+      "hits": 113,
+      "misses": 1,
+      "width": 1440,
+      "height": 900,
+      "staticMeshes": 59
+    },
+    "camera": [
+      6.999999999999999,
+      72,
+      155
+    ],
+    "cameraQuaternion": [
+      -0.08528987535943373,
+      0.013671608995709673,
+      0.0011704266370133544,
+      0.996261689703198
+    ],
+    "target": [
+      0,
+      28,
+      -100
+    ],
+    "followsBoat": false,
+    "memory": {
+      "geometries": 78,
+      "textures": 22
+    },
+    "contextLost": false,
+    "disposed": false,
+    "reducedMotion": false,
+    "loadMs": 44572.10000000056,
+    "model": "models/baidicheng/scene_v03.glb",
+    "terrain": "baidicheng-v03",
+    "audio": {
+      "state": "running",
+      "muted": false,
+      "voices": 2,
+      "loops": 2,
+      "events": [],
+      "tracks": [
+        "environment",
+        "effects",
+        "voice",
+        "music"
+      ],
+      "profile": "baidicheng",
+      "sounds": [
+        "wind",
+        "water"
+      ]
+    }
+  },
+  "seekHashes": [
+    "c5e0356f2d19360166a9694087cee083b96f9815add5eb8339a73bb7cb9c10e3",
+    "dfc095cf206ac1164d3cec45fe98b1b4621ee69918ab912b9aa0a7524d4d1766",
+    "c5e0356f2d19360166a9694087cee083b96f9815add5eb8339a73bb7cb9c10e3"
+  ],
+  "release": {
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    }
+  },
+  "pass": true
+}

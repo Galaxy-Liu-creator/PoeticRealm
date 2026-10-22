@@ -1,0 +1,26 @@
+{
+  "comparison": "fixed t0 / CAM_enter / 1440x900 before and after forest spatial partition",
+  "meanAbsoluteRGBDelta0To255": [
+    0.0012137345679012347,
+    0.0014243827160493826,
+    0.0007554012345679012
+  ],
+  "maxChannelDelta": [
+    [
+      0,
+      29
+    ],
+    [
+      0,
+      31
+    ],
+    [
+      0,
+      18
+    ]
+  ],
+  "size": [
+    1440,
+    900
+  ]
+}

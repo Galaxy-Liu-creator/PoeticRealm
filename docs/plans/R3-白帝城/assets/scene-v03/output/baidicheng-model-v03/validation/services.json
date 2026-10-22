@@ -1,0 +1,10 @@
+[
+  {
+    "url": "http://127.0.0.1:5187/?scene=baidicheng&lab=baidicheng&t=0",
+    "httpStatus": 200
+  },
+  {
+    "url": "http://127.0.0.1:5187/api/v1/auth/csrf",
+    "httpStatus": 200
+  }
+]

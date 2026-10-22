@@ -1,0 +1,39 @@
+{
+  "component": "bd_v02_city_support",
+  "meshes": [
+    {
+      "object": "src_city_promontory_fractured_v02",
+      "vertices": 1794,
+      "triangles": 3584,
+      "nonmanifoldEdges": 0,
+      "volume": 367225.7072258228
+    }
+  ],
+  "checks": {
+    "terraceSupportPoints": [
+      [
+        26.5,
+        92.5,
+        63.0
+      ],
+      [
+        26.5,
+        143.5,
+        63.0
+      ],
+      [
+        77.5,
+        92.5,
+        63.0
+      ],
+      [
+        77.5,
+        143.5,
+        63.0
+      ]
+    ],
+    "waterlineMeters": 0.22,
+    "layers": 16,
+    "radialSegments": 112
+  }
+}

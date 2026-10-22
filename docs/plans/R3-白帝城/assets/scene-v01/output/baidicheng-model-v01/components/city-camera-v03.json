@@ -1,0 +1,27 @@
+{
+  "before": {
+    "camera": [
+      -10.0,
+      -25.0,
+      48.0
+    ],
+    "focus": [
+      52.0,
+      126.0,
+      71.0
+    ],
+    "lens": 28.0
+  },
+  "camera": [
+    -5.0,
+    -3.0,
+    56.0
+  ],
+  "focus": [
+    52.0,
+    128.0,
+    73.0
+  ],
+  "lens": 42,
+  "scope": "camera only, published geometry and route unchanged"
+}

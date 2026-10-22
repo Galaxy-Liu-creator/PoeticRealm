@@ -1,0 +1,17 @@
+{
+  "scope": "full-scene",
+  "nodes": 147,
+  "meshes": 48,
+  "materials": 18,
+  "skins": 1,
+  "maskCalibration": [
+    0,
+    0.502891584649424,
+    1
+  ],
+  "hull": {
+    "triangles": 1184,
+    "nonmanifoldEdges": 0,
+    "weldTolerance": 0.00001
+  }
+}

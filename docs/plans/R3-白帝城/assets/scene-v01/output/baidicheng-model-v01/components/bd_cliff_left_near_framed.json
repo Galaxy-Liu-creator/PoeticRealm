@@ -1,0 +1,26 @@
+{
+  "component": "bd_cliff_left_near_framed",
+  "meshes": [
+    {
+      "object": "src_cliff_left_near_framed",
+      "vertices": 9372,
+      "triangles": 18740,
+      "nonmanifoldEdges": 0,
+      "volume": 1583932.5846125865
+    }
+  ],
+  "checks": {
+    "section": "left_near",
+    "parameters": [
+      -1,
+      -210,
+      106,
+      84,
+      64,
+      1.7,
+      70
+    ],
+    "purpose": "put the geological end cap behind the overview camera",
+    "publishedNode": "cliff_left_near"
+  }
+}

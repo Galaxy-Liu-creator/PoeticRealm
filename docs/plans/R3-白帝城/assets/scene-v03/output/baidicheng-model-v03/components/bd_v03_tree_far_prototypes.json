@@ -1,0 +1,58 @@
+{
+  "component": "bd_v03_tree_far_prototypes",
+  "meshes": [
+    {
+      "object": "src_tree_bark_far_v03_00",
+      "vertices": 28,
+      "triangles": 44,
+      "nonmanifoldEdges": 0,
+      "volume": 0.177196158748882
+    },
+    {
+      "object": "src_tree_leaves_far_v03_00",
+      "vertices": 30,
+      "triangles": 40,
+      "nonmanifoldEdges": 0,
+      "volume": 9.97222181652159
+    },
+    {
+      "object": "src_tree_bark_far_v03_01",
+      "vertices": 28,
+      "triangles": 44,
+      "nonmanifoldEdges": 0,
+      "volume": 0.256923521125769
+    },
+    {
+      "object": "src_tree_leaves_far_v03_01",
+      "vertices": 30,
+      "triangles": 40,
+      "nonmanifoldEdges": 0,
+      "volume": 16.08359050377849
+    },
+    {
+      "object": "src_tree_bark_far_v03_02",
+      "vertices": 28,
+      "triangles": 44,
+      "nonmanifoldEdges": 0,
+      "volume": 0.35754119574825705
+    },
+    {
+      "object": "src_tree_leaves_far_v03_02",
+      "vertices": 30,
+      "triangles": 40,
+      "nonmanifoldEdges": 0,
+      "volume": 24.288406421996253
+    }
+  ],
+  "checks": {
+    "variants": 3,
+    "trianglesPerTree": 84,
+    "crownLobes": 5,
+    "baseHeightsMeters": [
+      5.5,
+      6.45,
+      7.4
+    ],
+    "root": "same [0,0,0] authored coordinate system as v02"
+  }
+}

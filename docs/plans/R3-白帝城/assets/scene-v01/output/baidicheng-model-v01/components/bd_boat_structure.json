@@ -1,0 +1,143 @@
+{
+  "component": "bd_boat_structure",
+  "meshes": [
+    {
+      "object": "boat_hull_closed",
+      "vertices": 594,
+      "triangles": 1184,
+      "nonmanifoldEdges": 0,
+      "volume": 0.779024618503798
+    },
+    {
+      "object": "rower_worklinen",
+      "vertices": 2977,
+      "triangles": 5702,
+      "nonmanifoldEdges": 248,
+      "volume": 0.08799773427885353
+    },
+    {
+      "object": "boat_wood_aged",
+      "vertices": 4592,
+      "triangles": 9064,
+      "nonmanifoldEdges": 0,
+      "volume": 1.2424900479353531
+    },
+    {
+      "object": "boat_cloth_reed",
+      "vertices": 232,
+      "triangles": 364,
+      "nonmanifoldEdges": 0,
+      "volume": 0.08745160164520788
+    },
+    {
+      "object": "boat_metal_iron",
+      "vertices": 536,
+      "triangles": 1028,
+      "nonmanifoldEdges": 0,
+      "volume": 0.0012287869795222126
+    },
+    {
+      "object": "rowing_oar_blade",
+      "vertices": 144,
+      "triangles": 284,
+      "nonmanifoldEdges": 0,
+      "volume": 0.005158300324296051
+    },
+    {
+      "object": "rowing_oar_shaft",
+      "vertices": 120,
+      "triangles": 236,
+      "nonmanifoldEdges": 0,
+      "volume": 0.0061863982571670525
+    },
+    {
+      "object": "rower_worktrousers",
+      "vertices": 1122,
+      "triangles": 2048,
+      "nonmanifoldEdges": 188,
+      "volume": 0.0138707795689019
+    },
+    {
+      "object": "fishfire_flame",
+      "vertices": 36,
+      "triangles": 54,
+      "nonmanifoldEdges": 18,
+      "volume": 0.0032176943326195926
+    },
+    {
+      "object": "rowing_oar_handle",
+      "vertices": 144,
+      "triangles": 284,
+      "nonmanifoldEdges": 0,
+      "volume": 0.003742325775252997
+    },
+    {
+      "object": "rower_eyes",
+      "vertices": 144,
+      "triangles": 280,
+      "nonmanifoldEdges": 0,
+      "volume": 3.0790823706158256e-05
+    },
+    {
+      "object": "rower_weathered",
+      "vertices": 7575,
+      "triangles": 15042,
+      "nonmanifoldEdges": 102,
+      "volume": 0.006675971002322743
+    },
+    {
+      "object": "rowing_oar_binding",
+      "vertices": 168,
+      "triangles": 332,
+      "nonmanifoldEdges": 0,
+      "volume": 0.00044723936811763326
+    },
+    {
+      "object": "rower_worncollar",
+      "vertices": 260,
+      "triangles": 456,
+      "nonmanifoldEdges": 52,
+      "volume": 0.003271228321303571
+    },
+    {
+      "object": "rower_reed",
+      "vertices": 320,
+      "triangles": 636,
+      "nonmanifoldEdges": 0,
+      "volume": 0.022325496484420938
+    },
+    {
+      "object": "rowing_oar_pin",
+      "vertices": 96,
+      "triangles": 188,
+      "nonmanifoldEdges": 0,
+      "volume": 0.0013670153084256568
+    },
+    {
+      "object": "mask_probe",
+      "vertices": 3,
+      "triangles": 1,
+      "nonmanifoldEdges": 3,
+      "volume": 0.0
+    }
+  ],
+  "checks": {
+    "source": "fengqiao-scene-v02.blend/glb_scene_v02",
+    "rigBones": 53,
+    "hull": {
+      "object": "boat_hull_closed",
+      "vertices": 594,
+      "triangles": 1184,
+      "nonmanifoldEdges": 0,
+      "volume": 0.779024618503798
+    },
+    "hullBottomMeters": -0.252998948097229,
+    "disabledNightMarkers": [
+      "LIGHT_fishfire_01"
+    ],
+    "pathStart": [
+      10.0,
+      -28.0
+    ]
+  }
+}

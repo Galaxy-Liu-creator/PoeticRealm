@@ -1,0 +1,35 @@
+{
+  "component": "bd_v02_foliage_fringe",
+  "meshes": [
+    {
+      "object": "src_tree_leaves_fringe_v02_00",
+      "vertices": 274,
+      "triangles": 324,
+      "nonmanifoldEdges": 120,
+      "volume": 24.776567618662646
+    },
+    {
+      "object": "src_tree_leaves_fringe_v02_01",
+      "vertices": 274,
+      "triangles": 324,
+      "nonmanifoldEdges": 120,
+      "volume": 37.51905939595129
+    },
+    {
+      "object": "src_tree_leaves_fringe_v02_02",
+      "vertices": 274,
+      "triangles": 324,
+      "nonmanifoldEdges": 120,
+      "volume": 63.3492963197614
+    }
+  ],
+  "checks": {
+    "variants": 3,
+    "perimeterSpraysPerTree": 30,
+    "sprayHalfLengthMeters": [
+      0.16,
+      0.31
+    ],
+    "leafMask": "static zero wind weight"
+  }
+}

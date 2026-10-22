@@ -1,0 +1,26 @@
+{
+  "component": "bd_v02_forest",
+  "meshes": [
+    {
+      "object": "src_forest_bark_v02",
+      "vertices": 14260,
+      "triangles": 23000,
+      "nonmanifoldEdges": 0,
+      "volume": 86.85731890833503
+    },
+    {
+      "object": "src_forest_leaves_v02",
+      "vertices": 63020,
+      "triangles": 74520,
+      "nonmanifoldEdges": 27600,
+      "volume": 25396.03666303769
+    }
+  ],
+  "checks": {
+    "count": 230,
+    "rootEmbeddedMeters": 0.05,
+    "support": "actual v02 published banks",
+    "minimumPlanSpacingMeters": 3.605551275463989,
+    "assembly": "checked v02 crown/fringe and branch prototypes only"
+  }
+}

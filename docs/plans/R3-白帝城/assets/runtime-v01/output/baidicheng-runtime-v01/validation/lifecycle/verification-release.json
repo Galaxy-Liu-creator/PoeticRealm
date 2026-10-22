@@ -1,0 +1,554 @@
+{
+  "phase": "release",
+  "assetSHA256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5",
+  "contract": {
+    "scope": "quality-sample",
+    "nodes": 151,
+    "meshes": 55,
+    "materials": 19,
+    "skins": 1,
+    "maskCalibration": [
+      0,
+      0.502891584649424,
+      1
+    ],
+    "hull": {
+      "triangles": 1184,
+      "nonmanifoldEdges": 0,
+      "weldTolerance": 0.00001
+    },
+    "canyon": {
+      "bands": [
+        {
+          "name": "cliff_right_near",
+          "triangles": 13306
+        },
+        {
+          "name": "cliff_left_near",
+          "triangles": 15506
+        },
+        {
+          "name": "cliff_left_far",
+          "triangles": 10226
+        },
+        {
+          "name": "cliff_right_far",
+          "triangles": 11546
+        },
+        {
+          "name": "city_promontory",
+          "triangles": 3808
+        },
+        {
+          "name": "cliff_right_near_lod_mesh",
+          "triangles": 3844
+        },
+        {
+          "name": "cliff_left_near_lod_mesh",
+          "triangles": 4486
+        },
+        {
+          "name": "cliff_left_far_lod_mesh",
+          "triangles": 2972
+        },
+        {
+          "name": "cliff_right_far_lod_mesh",
+          "triangles": 3292
+        }
+      ],
+      "routeSamples": 257,
+      "minimumHorizontalShoreDistanceMeters": 10.30255475644479
+    }
+  },
+  "budget": {
+    "distributedBytes": 15402916,
+    "modelBytes": 13651084,
+    "environmentBytes": 0,
+    "terrainBytes": 1751832,
+    "audioFileBytes": 0,
+    "triangles": 199455,
+    "mainPassPrimitives": 73,
+    "estimatedTextureBytesWithMipmaps": 70953652,
+    "images": [
+      {
+        "name": "tatami_mat_nor_gl",
+        "width": 512,
+        "height": 512,
+        "bytes": 287946
+      },
+      {
+        "name": "tatami_mat_Diffuse",
+        "width": 512,
+        "height": 512,
+        "bytes": 49955
+      },
+      {
+        "name": "tatami_mat_Rough",
+        "width": 512,
+        "height": 512,
+        "bytes": 59098
+      },
+      {
+        "name": "wood_planks_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1305804
+      },
+      {
+        "name": "wood_planks_Diffuse",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 216542
+      },
+      {
+        "name": "wood_planks_Rough",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 273484
+      },
+      {
+        "name": "linen_normal",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1766830
+      },
+      {
+        "name": "linen_work_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 315013
+      },
+      {
+        "name": "linen_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 88
+      },
+      {
+        "name": "rock_01_nor_gl",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 1885170
+      },
+      {
+        "name": "dry_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 637113
+      },
+      {
+        "name": "dry_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 666650
+      },
+      {
+        "name": "wet_basecolor",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 518211
+      },
+      {
+        "name": "wet_roughness",
+        "width": 1024,
+        "height": 1024,
+        "bytes": 480958
+      }
+    ],
+    "note": "完整分发包含高度图与元数据；正式白帝城入口复用程序风/水声，无外部音频文件；实际多 pass 与 fps 由浏览器测量"
+  },
+  "errors": [],
+  "expectedErrors": [],
+  "warnings": [
+    "THREE.WebGLRenderer: KHR_parallel_shader_compile extension not supported.",
+    "[.WebGL-0x364c01067e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x364c01067e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x364c01069c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x364c01069c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "release": [
+    {
+      "cycle": 1,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 2,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 3,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 4,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 5,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 6,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 7,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 8,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 9,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    },
+    {
+      "cycle": 10,
+      "before": {
+        "geometries": 78,
+        "textures": 22
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "restored": {
+        "geometries": 78,
+        "textures": 22
+      }
+    }
+  ],
+  "navigation": [],
+  "badWaterlineRejected": true,
+  "badFarWaterlineRejected": true,
+  "badLodTransformRejected": true,
+  "badManifests": [
+    "missing-camera",
+    "wrong-terrain",
+    "mixed-revision",
+    "wrong-model",
+    "wrong-scope",
+    "bad-route",
+    "missing-lod",
+    "bad-lod-distance",
+    "missing-city-detail"
+  ],
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "initialViewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "renderer": {
+    "backend": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"
+  },
+  "finalRelease": {
+    "scene": "baidicheng",
+    "revision": "03",
+    "view": "CAM_enter",
+    "time": 0,
+    "playing": false,
+    "fps": 0,
+    "calls": 114,
+    "triangles": 224849,
+    "navigation": {
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.1482979876521404,
+        0,
+        -0.9889427217277681
+      ],
+      "position": [
+        10,
+        -0.30592150526965284,
+        28
+      ],
+      "quaternion": [
+        0.0003970766126192676,
+        0.757726084680832,
+        -0.00010156882082428377,
+        0.652572610985318
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    "lods": [
+      {
+        "near": "forest_bark_right_near",
+        "far": "forest_bark_right_near_lod",
+        "distance": 160,
+        "center": [
+          82.00546264648438,
+          99.60451889038086,
+          85.53459167480469
+        ],
+        "cameraDistance": 105.8927374458167,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_leaves_right_near",
+        "far": "forest_leaves_right_near_lod",
+        "distance": 160,
+        "center": [
+          81.68559646606445,
+          101.62310028076172,
+          85.84123229980469
+        ],
+        "cameraDistance": 106.01132741148685,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_bark_left_near",
+        "far": "forest_bark_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.99219703674316,
+          101.43073654174805,
+          51.824790954589844
+        ],
+        "cameraDistance": 144.6332544782433,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_leaves_left_near",
+        "far": "forest_leaves_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.50600242614746,
+          104.71992111206055,
+          52.15628433227539
+        ],
+        "cameraDistance": 144.7785605474748,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_near",
+        "far": "cliff_right_near_lod",
+        "distance": 190,
+        "center": [
+          74.07235717773438,
+          67.43255615234375,
+          83
+        ],
+        "cameraDistance": 98.50666292530201,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_left_near",
+        "far": "cliff_left_near_lod",
+        "distance": 190,
+        "center": [
+          -77.23818588256836,
+          62.72236633300781,
+          52
+        ],
+        "cameraDistance": 133.3834564226203,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_left_far",
+        "far": "cliff_left_far_lod",
+        "distance": 190,
+        "center": [
+          -100.4301528930664,
+          79.82073974609375,
+          -192.5
+        ],
+        "cameraDistance": 363.8112858623324,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_far",
+        "far": "cliff_right_far_lod",
+        "distance": 190,
+        "center": [
+          90.51280784606934,
+          62.86320495605469,
+          -152.5
+        ],
+        "cameraDistance": 318.7696975843368,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "city_detail",
+        "far": "city_detail_lod",
+        "distance": 180,
+        "center": [
+          51.75,
+          68.67293930053711,
+          -116
+        ],
+        "cameraDistance": 274.6900650422179,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      }
+    ],
+    "terrainLod": {
+      "enabled": true,
+      "mode": "auto",
+      "level": "near",
+      "distance": 161.25551010639657,
+      "threshold": 280,
+      "nearTriangles": 32768,
+      "farTriangles": 8192
+    },
+    "renderCache": {
+      "enabled": true,
+      "bypassed": false,
+      "valid": true,
+      "hits": 1,
+      "misses": 1,
+      "width": 1440,
+      "height": 900,
+      "staticMeshes": 59
+    },
+    "camera": [
+      6.999999999999999,
+      72,
+      155
+    ],
+    "cameraQuaternion": [
+      -0.08528987535943373,
+      0.013671608995709673,
+      0.0011704266370133544,
+      0.996261689703198
+    ],
+    "target": [
+      0,
+      28,
+      -100
+    ],
+    "followsBoat": false,
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "contextLost": true,
+    "disposed": true,
+    "reducedMotion": false
+  },
+  "functionalPass": true
+}

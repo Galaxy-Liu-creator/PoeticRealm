@@ -1,0 +1,38 @@
+{
+  "component": "bd_v02_city_rim",
+  "meshes": [
+    {
+      "object": "src_city_promontory_rim_v02",
+      "vertices": 1906,
+      "triangles": 3808,
+      "nonmanifoldEdges": 0,
+      "volume": 374716.4889579839
+    }
+  ],
+  "checks": {
+    "terraceSupportPoints": [
+      [
+        26.5,
+        92.5,
+        63.0
+      ],
+      [
+        26.5,
+        143.5,
+        63.0
+      ],
+      [
+        77.5,
+        92.5,
+        63.0
+      ],
+      [
+        77.5,
+        143.5,
+        63.0
+      ]
+    ],
+    "flatSupportRadiusMeters": 37.5,
+    "rim": "non-circular jointed radius, variable outer rim elevation, inner terrace support plane at63m"
+  }
+}

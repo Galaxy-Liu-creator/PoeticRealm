@@ -1,0 +1,110 @@
+{
+  "contractVersion": "0.2",
+  "scene": "baidicheng",
+  "scope": "quality-sample",
+  "model": "models/baidicheng/scene_v01.glb",
+  "terrain": "baidicheng-v01",
+  "waterLevel": 0.0,
+  "requiredNodes": [
+    "CAM_enter",
+    "FOCUS_enter",
+    "CAM_city",
+    "FOCUS_city",
+    "CAM_follow",
+    "FOCUS_follow",
+    "CAM_gorge",
+    "FOCUS_gorge",
+    "CAM_exit",
+    "FOCUS_exit",
+    "CAM_boat",
+    "FOCUS_boat",
+    "CAM_rower",
+    "FOCUS_rower",
+    "SFX_ape_left",
+    "SFX_ape_right",
+    "ANCHOR_seg_in",
+    "ANCHOR_seg_out",
+    "ANCHOR_oar_blade",
+    "boat_hull_closed",
+    "rower_worklinen",
+    "boat_wood_aged",
+    "boat_cloth_reed",
+    "ANCHOR_boat_tether",
+    "boat_metal_iron",
+    "ANCHOR_oar_tether",
+    "rowing_oar_blade",
+    "rowing_oar_shaft",
+    "rower_rig",
+    "rower_worktrousers",
+    "ANCHOR_rower_foot_left",
+    "rowing_oar_handle",
+    "rower_eyes",
+    "rower_weathered",
+    "rowing_oar_binding",
+    "ANCHOR_rower_foot_right",
+    "rower_worncollar",
+    "ANCHOR_rower_palm_left",
+    "rower_reed",
+    "rowing_oar_pin",
+    "SFX_boat",
+    "oar_pivot",
+    "ANCHOR_rower_palm_right",
+    "ANCHOR_oar_hand_left",
+    "mask_probe",
+    "boat_guest",
+    "ANCHOR_oar_hand_right",
+    "cliff_right_near",
+    "cliff_left_near",
+    "cliff_left_far",
+    "cliff_right_far",
+    "city_promontory",
+    "city_terrace",
+    "city_wall",
+    "city_timber",
+    "city_enclosure",
+    "city_roof_00",
+    "city_roof_01",
+    "city_roof_02",
+    "city_roof_03",
+    "city_roof_04",
+    "city_roof_05",
+    "city_roof_06",
+    "city_ridges",
+    "forest_bark",
+    "forest_leaves"
+  ],
+  "boatNavigation": {
+    "path": [
+      [
+        10.0,
+        28.0
+      ],
+      [
+        4.0,
+        -12.0
+      ],
+      [
+        -8.0,
+        -52.0
+      ],
+      [
+        -11.0,
+        -96.0
+      ],
+      [
+        -2.0,
+        -140.0
+      ],
+      [
+        15.0,
+        -187.0
+      ],
+      [
+        26.0,
+        -238.0
+      ]
+    ],
+    "speed": 2.8,
+    "brakingDistance": 12.0
+  }
+}

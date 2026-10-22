@@ -1,0 +1,18 @@
+{
+  "component": "bd_cliff_sample_detail",
+  "meshes": [
+    {
+      "object": "src_cliff_near_right_detail",
+      "vertices": 6468,
+      "triangles": 12932,
+      "nonmanifoldEdges": 0,
+      "volume": 356336.36990391434
+    }
+  ],
+  "checks": {
+    "wetLineMeters": 0.22,
+    "verticalRings": 66,
+    "strata": "real submeter ledges, longitudinal buttress fractures",
+    "cap": "matched cross-channel strips"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "productionSources": [
+    {
+      "path": "frontend/src/systems/audio/AudioEngine.ts",
+      "bytes": 8650,
+      "sha256": "11665ac2df6c57af638cc25846641488fe529067afd38b730400379bb8606d65"
+    },
+    {
+      "path": "frontend/src/systems/audio/baidichengSound.ts",
+      "bytes": 2494,
+      "sha256": "72b7fbc03136e4cd92035bfdf46ef4b97ad495e34126ec78488da074e264b156"
+    },
+    {
+      "path": "frontend/src/scenes/BaidichengScene.ts",
+      "bytes": 12544,
+      "sha256": "6857558f769ce697c2b7196e37d1ce7bbc8effc57867713edbf14bf35cc9c3ad"
+    },
+    {
+      "path": "frontend/public/assets/models/baidicheng/scene_v03.glb",
+      "bytes": 13651084,
+      "sha256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5"
+    }
+  ]
+}

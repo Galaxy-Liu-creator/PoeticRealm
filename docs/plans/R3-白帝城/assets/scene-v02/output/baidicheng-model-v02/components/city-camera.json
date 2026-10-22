@@ -1,0 +1,14 @@
+{
+  "camera": [
+    -8.0,
+    20.0,
+    68.0
+  ],
+  "focus": [
+    52.0,
+    125.0,
+    70.0
+  ],
+  "lens": 36,
+  "reason": "clear the foreground wall so the existing roof group can be read, retain slight upward gao view"
+}

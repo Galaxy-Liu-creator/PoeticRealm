@@ -1,0 +1,1574 @@
+{
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLRenderer: KHR_parallel_shader_compile extension not supported.",
+    "[.WebGL-0x17bc01019600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x17bc01019600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x17bc01019600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+    "[.WebGL-0x17bc01019600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+  ],
+  "views": [
+    {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_enter",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 113,
+      "triangles": 368832,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 105.8927374458167,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 106.01132741148685,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 144.6332544782433,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 144.7785605474748,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 98.50666292530201,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 133.3834564226203,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 363.8112858623324,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 318.7696975843368,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.64906692504883,
+            -116
+          ],
+          "cameraDistance": 274.69035522288146,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 161.25551010639657,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "camera": [
+        6.999999999999999,
+        72,
+        155
+      ],
+      "cameraQuaternion": [
+        -0.08528987535943373,
+        0.013671608995709673,
+        0.0011704266370133544,
+        0.996261689703198
+      ],
+      "target": [
+        0,
+        28,
+        -100
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 77,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_city",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 65,
+      "triangles": 265712,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 142.25814198304394,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 142.7458774911035,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 114.01374968093283,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 114.88302923672963,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 131.70115339369602,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 100.02889483260353,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 196.05946305134196,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 165.1890128702272,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.64906692504883,
+            -116
+          ],
+          "cameraDistance": 113.077335429666,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 52.54268285506329,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "camera": [
+        -7.999999999999996,
+        68,
+        -19.999999999999982
+      ],
+      "cameraQuaternion": [
+        0.0079912007584074,
+        -0.25665919246557556,
+        0.0021221555258114084,
+        0.9664666037118752
+      ],
+      "target": [
+        52,
+        70,
+        -125
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 77,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_follow",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 104,
+      "triangles": 353800,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 120.27812910517235,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 121.80837594211374,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 146.7764807931397,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 148.59854723822093,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 91.40379448856194,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 113.96950473367853,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 273.3443221594054,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 213.32595872921553,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.64906692504883,
+            -116
+          ],
+          "cameraDistance": 171.81283575407136,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 119.18622190719756,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "camera": [
+        20.999442066839173,
+        5.9999999999999964,
+        41.00047175112427
+      ],
+      "cameraQuaternion": [
+        -0.07910724572482954,
+        0.24483041763584493,
+        0.02004692111622632,
+        0.9661253703468543
+      ],
+      "target": [
+        8.000471983890835,
+        1.5,
+        16.99991436108543
+      ],
+      "followsBoat": true,
+      "memory": {
+        "geometries": 77,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_gorge",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 70,
+      "triangles": 304014,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 181.28988446678323,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 182.28476172358208,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 150.85169434939655,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 152.70150097319333,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 162.59692033521262,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 125.88884149520291,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 183.4372611069783,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 155.7603471723093,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.64906692504883,
+            -116
+          ],
+          "cameraDistance": 108.98158903263555,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 110.24452497400713,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "camera": [
+        -11.999999999999996,
+        16.000000000000007,
+        -45
+      ],
+      "cameraQuaternion": [
+        0.0980356266324066,
+        -0.04546913156517501,
+        0.004483900522435489,
+        0.9941335265556857
+      ],
+      "target": [
+        -1,
+        40,
+        -165
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 77,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_exit",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 33,
+      "triangles": 168864,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 296.777901667202,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 297.54968697685837,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 282.1401157203918,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 283.2030542324107,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 285.8152860943424,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 268.68088529397636,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 136.27146891844052,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 90.84882595860644,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.64906692504883,
+            -116
+          ],
+          "cameraDistance": 96.62191372912187,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 217.53496570623048,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "camera": [
+        22.00000000000003,
+        20.00000000000002,
+        -193.99999999999997
+      ],
+      "cameraQuaternion": [
+        0.044232790770398864,
+        0.03755449617840217,
+        -0.001663941125771221,
+        0.9983137539559983
+      ],
+      "target": [
+        11,
+        33,
+        -340
+      ],
+      "followsBoat": false,
+      "memory": {
+        "geometries": 77,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_boat",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 74,
+      "triangles": 320256,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 127.364313701058,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 128.85868641833977,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 146.26029846963493,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 148.17525768283352,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 99.22005928092129,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 112.9117907472107,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 265.4525025890759,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 208.1790478691228,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.64906692504883,
+            -116
+          ],
+          "cameraDistance": 166.2921159123657,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 118.39435797288719,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "camera": [
+        16.999785367350462,
+        3.4999999999999987,
+        33.00030025604633
+      ],
+      "cameraQuaternion": [
+        -0.11993512815820107,
+        0.4141805495484714,
+        0.055159259083882244,
+        0.9005706488388652
+      ],
+      "target": [
+        10.000042722116028,
+        0.9999999403953552,
+        27.000000081984375
+      ],
+      "followsBoat": true,
+      "memory": {
+        "geometries": 77,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    },
+    {
+      "scene": "baidicheng",
+      "revision": "03",
+      "view": "CAM_rower",
+      "time": 0,
+      "playing": false,
+      "fps": 0,
+      "calls": 57,
+      "triangles": 304164,
+      "navigation": {
+        "speed": 2.8,
+        "length": 273.6598617455433,
+        "forward": [
+          -0.1482979876521404,
+          0,
+          -0.9889427217277681
+        ],
+        "position": [
+          10,
+          -0.30592150526965284,
+          28
+        ],
+        "quaternion": [
+          0.0003970766126192676,
+          0.757726084680832,
+          -0.00010156882082428377,
+          0.652572610985318
+        ],
+        "end": [
+          26,
+          -238
+        ]
+      },
+      "lods": [
+        {
+          "near": "forest_bark_right_near",
+          "far": "forest_bark_right_near_lod",
+          "distance": 160,
+          "center": [
+            82.00546264648438,
+            99.60451889038086,
+            85.53459167480469
+          ],
+          "cameraDistance": 131.08965548477906,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_right_near",
+          "far": "forest_leaves_right_near_lod",
+          "distance": 160,
+          "center": [
+            81.68559646606445,
+            101.62310028076172,
+            85.84123229980469
+          ],
+          "cameraDistance": 132.55375931271718,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_bark_left_near",
+          "far": "forest_bark_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.99219703674316,
+            101.43073654174805,
+            51.824790954589844
+          ],
+          "cameraDistance": 144.388778816744,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "forest_leaves_left_near",
+          "far": "forest_leaves_left_near_lod",
+          "distance": 160,
+          "center": [
+            -89.50600242614746,
+            104.71992111206055,
+            52.15628433227539
+          ],
+          "cameraDistance": 146.37077336415516,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_right_near",
+          "far": "cliff_right_near_lod",
+          "distance": 190,
+          "center": [
+            74.07235717773438,
+            67.43255615234375,
+            83
+          ],
+          "cameraDistance": 103.26213490237235,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_near",
+          "far": "cliff_left_near_lod",
+          "distance": 190,
+          "center": [
+            -77.23818588256836,
+            62.72236633300781,
+            52
+          ],
+          "cameraDistance": 110.55627262871843,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        },
+        {
+          "near": "cliff_left_far",
+          "far": "cliff_left_far_lod",
+          "distance": 190,
+          "center": [
+            -100.4301528930664,
+            79.82073974609375,
+            -192.5
+          ],
+          "cameraDistance": 262.3216514457483,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "cliff_right_far",
+          "far": "cliff_right_far_lod",
+          "distance": 190,
+          "center": [
+            90.51280784606934,
+            62.86320495605469,
+            -152.5
+          ],
+          "cameraDistance": 208.17384971363217,
+          "level": "far",
+          "nearVisible": false,
+          "farVisible": true
+        },
+        {
+          "near": "city_detail",
+          "far": "city_detail_lod",
+          "distance": 180,
+          "center": [
+            51.75,
+            68.64906692504883,
+            -116
+          ],
+          "cameraDistance": 165.82988018799006,
+          "level": "near",
+          "nearVisible": true,
+          "farVisible": false
+        }
+      ],
+      "terrainLod": {
+        "enabled": true,
+        "mode": "auto",
+        "level": "near",
+        "distance": 118.39661918028341,
+        "threshold": 280,
+        "nearTriangles": 32768,
+        "farTriangles": 8192
+      },
+      "camera": [
+        12.999871239031604,
+        2.4000000953674334,
+        31.00012866786177
+      ],
+      "cameraQuaternion": [
+        -0.12374946580222125,
+        0.5778503121290904,
+        0.08918949167936699,
+        0.8017607629935541
+      ],
+      "target": [
+        9.999913995810816,
+        1.4000000357627869,
+        29.999999317289443
+      ],
+      "followsBoat": true,
+      "memory": {
+        "geometries": 77,
+        "textures": 19
+      },
+      "contextLost": false,
+      "disposed": false,
+      "reducedMotion": false
+    }
+  ],
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "release": {
+    "scene": "baidicheng",
+    "revision": "03",
+    "view": "CAM_enter",
+    "time": 0,
+    "playing": false,
+    "fps": 0,
+    "calls": 113,
+    "triangles": 368832,
+    "navigation": {
+      "speed": 2.8,
+      "length": 273.6598617455433,
+      "forward": [
+        -0.1482979876521404,
+        0,
+        -0.9889427217277681
+      ],
+      "position": [
+        10,
+        -0.30592150526965284,
+        28
+      ],
+      "quaternion": [
+        0.0003970766126192676,
+        0.757726084680832,
+        -0.00010156882082428377,
+        0.652572610985318
+      ],
+      "end": [
+        26,
+        -238
+      ]
+    },
+    "lods": [
+      {
+        "near": "forest_bark_right_near",
+        "far": "forest_bark_right_near_lod",
+        "distance": 160,
+        "center": [
+          82.00546264648438,
+          99.60451889038086,
+          85.53459167480469
+        ],
+        "cameraDistance": 105.8927374458167,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_leaves_right_near",
+        "far": "forest_leaves_right_near_lod",
+        "distance": 160,
+        "center": [
+          81.68559646606445,
+          101.62310028076172,
+          85.84123229980469
+        ],
+        "cameraDistance": 106.01132741148685,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_bark_left_near",
+        "far": "forest_bark_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.99219703674316,
+          101.43073654174805,
+          51.824790954589844
+        ],
+        "cameraDistance": 144.6332544782433,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "forest_leaves_left_near",
+        "far": "forest_leaves_left_near_lod",
+        "distance": 160,
+        "center": [
+          -89.50600242614746,
+          104.71992111206055,
+          52.15628433227539
+        ],
+        "cameraDistance": 144.7785605474748,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_near",
+        "far": "cliff_right_near_lod",
+        "distance": 190,
+        "center": [
+          74.07235717773438,
+          67.43255615234375,
+          83
+        ],
+        "cameraDistance": 98.50666292530201,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_left_near",
+        "far": "cliff_left_near_lod",
+        "distance": 190,
+        "center": [
+          -77.23818588256836,
+          62.72236633300781,
+          52
+        ],
+        "cameraDistance": 133.3834564226203,
+        "level": "near",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_left_far",
+        "far": "cliff_left_far_lod",
+        "distance": 190,
+        "center": [
+          -100.4301528930664,
+          79.82073974609375,
+          -192.5
+        ],
+        "cameraDistance": 363.8112858623324,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "cliff_right_far",
+        "far": "cliff_right_far_lod",
+        "distance": 190,
+        "center": [
+          90.51280784606934,
+          62.86320495605469,
+          -152.5
+        ],
+        "cameraDistance": 318.7696975843368,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      },
+      {
+        "near": "city_detail",
+        "far": "city_detail_lod",
+        "distance": 180,
+        "center": [
+          51.75,
+          68.64906692504883,
+          -116
+        ],
+        "cameraDistance": 274.69035522288146,
+        "level": "far",
+        "nearVisible": true,
+        "farVisible": true
+      }
+    ],
+    "terrainLod": {
+      "enabled": true,
+      "mode": "auto",
+      "level": "near",
+      "distance": 161.25551010639657,
+      "threshold": 280,
+      "nearTriangles": 32768,
+      "farTriangles": 8192
+    },
+    "camera": [
+      6.999999999999999,
+      72,
+      155
+    ],
+    "cameraQuaternion": [
+      -0.08528987535943373,
+      0.013671608995709673,
+      0.0011704266370133544,
+      0.996261689703198
+    ],
+    "target": [
+      0,
+      28,
+      -100
+    ],
+    "followsBoat": false,
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "contextLost": true,
+    "disposed": true,
+    "reducedMotion": false
+  },
+  "pass": true
+}

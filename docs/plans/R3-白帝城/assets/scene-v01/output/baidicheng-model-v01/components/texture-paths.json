@@ -1,0 +1,17 @@
+{
+  "revisionLocalRelocations": [
+    {
+      "image": "linen_normal.png",
+      "local": "art/textures/fengqiao-v03/linen_normal.png"
+    },
+    {
+      "image": "linen_roughness.png",
+      "local": "art/textures/fengqiao-v03/linen_roughness.png"
+    },
+    {
+      "image": "linen_work_basecolor.jpg",
+      "local": "art/textures/fengqiao-v03/linen_work_basecolor.jpg"
+    }
+  ],
+  "historicalSourcesUnchanged": true
+}

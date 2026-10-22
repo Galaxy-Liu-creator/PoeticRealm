@@ -1,0 +1,30 @@
+{
+  "component": "bd_cliff_right_near_shoulder",
+  "meshes": [
+    {
+      "object": "src_cliff_right_near_shoulder",
+      "vertices": 9636,
+      "triangles": 19268,
+      "nonmanifoldEdges": 0,
+      "volume": 1270936.2804458693
+    }
+  ],
+  "checks": {
+    "section": "right_near",
+    "parameters": [
+      1,
+      -210,
+      44,
+      94,
+      48,
+      0.6,
+      72
+    ],
+    "outerShoulderRiseMeters": [
+      17,
+      53
+    ],
+    "strata": "irregular phases and reduced repetitive ledges",
+    "publishedNode": "cliff_right_near"
+  }
+}

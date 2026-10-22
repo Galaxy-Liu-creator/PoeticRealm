@@ -1,0 +1,22 @@
+[
+  {
+    "path": "models/baidicheng/scene_v01.glb",
+    "sha256": "bda727daebf8972f208c30d274fbcbec5a63fd6f5a60d02d15362597946ebdb7",
+    "distExact": true
+  },
+  {
+    "path": "scenes/baidicheng.scene-v01.json",
+    "sha256": "aaea17a52cec0b6ad5f4f4e2d3df9889f71a7766a81129586e0e73d31f086ad6",
+    "distExact": true
+  },
+  {
+    "path": "terrain/baidicheng-v01.height.png",
+    "sha256": "f25d256ea2251f9db01d753e060b9cceec746d60b71da3701481707cfe42f5bc",
+    "distExact": true
+  },
+  {
+    "path": "terrain/baidicheng-v01.height.json",
+    "sha256": "1aa65fbe6f4a885abde919d47903f26201a0e137c1d52da685dd1e4b6ee42b8d",
+    "distExact": true
+  }
+]

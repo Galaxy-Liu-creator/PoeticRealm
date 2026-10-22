@@ -16,4 +16,12 @@ export const poemBackgrounds: Record<string, {sections: string[]; source: string
     ],
     source: 'https://www.gushiwen.cn/shiwenv_6fb73f607ad3.aspx',
   },
+  baidicheng: {
+    sections: [
+      '此诗通常被认为写于李白遇赦东归途中。诗人乘舟离开白帝城，顺江返回江陵。',
+      '晨光中辞别彩云间的白帝城，轻舟顺流而下。两岸猿声尚在耳畔，重重山峦已被抛在身后。',
+      '“轻”既写行舟之快，也写心头之轻。猿声与山影之间，尽是遇赦东归的欣喜与畅快。',
+    ],
+    source: 'https://www.gushiwen.cn/shiwenv_0f81015a040c.aspx',
+  },
 };

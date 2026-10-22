@@ -1,0 +1,1479 @@
+{
+  "revision": "03",
+  "files": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 168523,
+      "sha256": "56016728c98c9f1a063d1cd3c23b8d80bd51e1504d58bc06129b1a0ece2697d6"
+    },
+    {
+      "path": "art/scripts/archive_baidicheng_model_v03.py",
+      "bytes": 3347,
+      "sha256": "a19089c44e575ad1f19d44227301072024f5b2f24db0dae4aba35bc589dee155"
+    },
+    {
+      "path": "art/scripts/bake_terrain.py",
+      "bytes": 7918,
+      "sha256": "9b627ab2998b67a4796bc5fc06dd223c4eb59a8ce5d8dd03b25e5a8aa30b9a18"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/city_assemble_detail.py",
+      "bytes": 1241,
+      "sha256": "ce26198d6a7983fbd9279260b932529631cff4b22190f0b75a7f7b0cd8873af0"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/city_joinery_detail.py",
+      "bytes": 2201,
+      "sha256": "aeefab6038f1c0a10add242da09c613b1c53c34df8f83de418d80d2a0e7ddcc1"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/city_roof_detail.py",
+      "bytes": 1627,
+      "sha256": "2bae307279b4f4db7aabe5c786bcbce65727df2549b1082b88c07512b783da6e"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/city_roof_ribs_refine.py",
+      "bytes": 2847,
+      "sha256": "ab1dff95964bb1a7ce94e929eae497b1045181239b2e4569c0e244d6193eb8f7"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/city_roof_ribs_seat.py",
+      "bytes": 3037,
+      "sha256": "cd484c159b9223aef23f58329cf32cefc71b70cc48e0f8b2816e3b3f849af979"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/city_support_detail.py",
+      "bytes": 2641,
+      "sha256": "e4a64300d86717317fc8a066d918241b007e526ae9fcbd12b23f620a99156ec0"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/cliff_far.py",
+      "bytes": 2523,
+      "sha256": "a6a140a540ab0b2eeaaa1591d39b78bf382c36834a69201ee686669180140955"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/cliff_far_rim.py",
+      "bytes": 2844,
+      "sha256": "f7568ee30dc26c77d9d9b8a76fed7b328feb172c0fc1ac8af1d68b17c8b62463"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/cliff_far_support.py",
+      "bytes": 3749,
+      "sha256": "2d062ad73bfa2ceb3174e5d42be84e9946880f2f1e695a918f5c5e1710c13453"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/common.py",
+      "bytes": 6316,
+      "sha256": "f915cfbf8a688b7277c99f6b8d48d5d3cbb9c3f174ae4f4d56974ab3782e30d2"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/export_prepare.py",
+      "bytes": 1170,
+      "sha256": "313df8dfa0b65e9bb8351973d14129e7ccf69018d100ba7260f60259ffa13331"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/export_ready.py",
+      "bytes": 1629,
+      "sha256": "c7b0b0a4dc8555272b085ab9a7532e8d1b6cd74bde832f0f7551207094381278"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/foliage_far_bark.py",
+      "bytes": 1649,
+      "sha256": "c30d1baa35673dfc922759e6cff18476b258491fc9cc81c03417a355596d51ff"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/foliage_far_crowns.py",
+      "bytes": 2622,
+      "sha256": "a7042fb97e8f832e7cce8b2a816b3625cb424a80f27de95071f39d3638fafd87"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/foliage_far_prototypes.py",
+      "bytes": 1626,
+      "sha256": "ec4882b228624d92e17c3ac5dd19a40623dd5c01b44ffa7ae3098e340ca307a2"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/foliage_far_scatter.py",
+      "bytes": 1918,
+      "sha256": "096349a8f59526f1bcd150b8a21e56d15529f2c4e568e8b946cceb39331367ca"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/geology.py",
+      "bytes": 6265,
+      "sha256": "f91898f0b16ee1b44cffd9e2f31fb9e86cb420cece5d800a080db5c1906528b3"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/preview_lods.py",
+      "bytes": 832,
+      "sha256": "d70fd1fc3c3f5c04f09481a1d10d8cf9570c753b4a2eddf112cebd4cc74af1f8"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/run_component.py",
+      "bytes": 514,
+      "sha256": "6f8ec1c30db1b41b4a58ee03aa2c949e41e8e278d5bd6d0d572e33e576b16ef3"
+    },
+    {
+      "path": "art/scripts/components/baidicheng/v03/verify_saved.py",
+      "bytes": 4081,
+      "sha256": "62d4c75bdb947355cff96e5033543c6649b2a00612954283b24c32087bd5698d"
+    },
+    {
+      "path": "art/scripts/export_glb.py",
+      "bytes": 3311,
+      "sha256": "7eca2968e4e90e92d702015b0afd89a3db87b4cc71589cfea7f47411c616f953"
+    },
+    {
+      "path": "art/scripts/validate.py",
+      "bytes": 15446,
+      "sha256": "c580008a390b9d633325c8be837033e0097360ca4b5f1f3501a90170f2c2f224"
+    },
+    {
+      "path": "docs/CONTRACT.md",
+      "bytes": 49566,
+      "sha256": "0af5af62181309e3d68e71f5f6e92d522d40b5f55d3d0d1dde8a5070330be6f7"
+    },
+    {
+      "path": "docs/CREDITS.md",
+      "bytes": 33401,
+      "sha256": "1bb5a5937a53182e1a9e039724d5ff3eda9dfbed2094438607fb885528694a1d"
+    },
+    {
+      "path": "docs/plans/R3-白帝城/plan.md",
+      "bytes": 8896,
+      "sha256": "c16724ac55a2215103652af9d503a55c242be3f22b263ae86ec5a1f26b995894"
+    },
+    {
+      "path": "frontend/public/assets/scenes/baidicheng.scene-v03.json",
+      "bytes": 4027,
+      "sha256": "9ac1a293d87164a898aecf18f66d1c2a02a45123b33ea7255a2472aa7333f3d9"
+    },
+    {
+      "path": "frontend/public/assets/terrain/baidicheng-v03.height.json",
+      "bytes": 258,
+      "sha256": "79956f56dbf8f485f7bc5252387e7a389ad880b3c4e5e277c556f843acd7c1b4"
+    },
+    {
+      "path": "frontend/public/assets/terrain/baidicheng-v03.height.png",
+      "bytes": 1751574,
+      "sha256": "39ae3b1ddbb561ee3e2f37262b4afa7c83eb4fd8ce8113b716d9dafd8a1bdde6"
+    },
+    {
+      "path": "frontend/src/labs/baidicheng.ts",
+      "bytes": 3650,
+      "sha256": "8a41322735e20d9bb4e7566832f18851361aeea1163e577f0d8e391bb0d0526c"
+    },
+    {
+      "path": "frontend/src/scenes/BaidichengScene.ts",
+      "bytes": 11019,
+      "sha256": "9961ddea92eb1b56f0b91b18ce2ff9a90b49309174ce4ebb2e86ad28429e00cc"
+    },
+    {
+      "path": "frontend/src/scenes/baidicheng/canyon.ts",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/scenes/baidicheng/config.ts",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/scenes/baidicheng/index.ts",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/scenes/baidicheng/manifest.test.ts",
+      "bytes": 3540,
+      "sha256": "25c3f46670a399fac76cc3b6af8892b7c5e2d21e8135df02dbbca65f1c79ce46"
+    },
+    {
+      "path": "frontend/src/scenes/baidicheng/manifest.ts",
+      "bytes": 2798,
+      "sha256": "8ebde316f80d25dd8ea253de98ec43825340373f11be3492630cda03a9af8c0a"
+    },
+    {
+      "path": "frontend/src/scenes/baidicheng/timeline.ts",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "frontend/src/systems/lod/DistanceLods.test.ts",
+      "bytes": 2513,
+      "sha256": "4a2c5b0ad82203b07ec807f42b3d4a116126aa1d80ffa927d3f97400a0f46cd3"
+    },
+    {
+      "path": "frontend/src/systems/lod/DistanceLods.ts",
+      "bytes": 3718,
+      "sha256": "2e53bd7e685a7dc947192f8bb92bd5f1bf0476f7c7882c829e6ead1a91bcf5f0"
+    },
+    {
+      "path": "frontend/src/systems/nature/CanyonCover.ts",
+      "bytes": 1898,
+      "sha256": "59cccd6aa33a7d1bcdadb550f560783a313f579883fc0a85964a29ed926e864d"
+    },
+    {
+      "path": "frontend/src/systems/nature/CanyonTerrain.test.ts",
+      "bytes": 3064,
+      "sha256": "2c5ba77cbb005d2d6765bc049b45587176acd27fa4a6846062fd5b51ac1605cd"
+    },
+    {
+      "path": "frontend/src/systems/nature/CanyonTerrain.ts",
+      "bytes": 3578,
+      "sha256": "2e9ef5b6d9b1c2a34412b67749f198add63259520a534d7550c7a46b66d8cef3"
+    },
+    {
+      "path": "frontend/src/systems/nature/DawnDaylight.ts",
+      "bytes": 2609,
+      "sha256": "68af335eca1530b031f73c31f854e86247efedf191d8e82583117648715881f3"
+    },
+    {
+      "path": "frontend/tools/asset-contract.mjs",
+      "bytes": 8408,
+      "sha256": "51b9f31ae3003719cd376fa25a7490e497bb5df170b9a2a0f48254ba8eb0c9b9"
+    },
+    {
+      "path": "frontend/tools/baidicheng-contract.mjs",
+      "bytes": 2729,
+      "sha256": "2d1640035bc9d6dc59cd6dd1358ca9c0ed102390871a505d6caaa181181248aa"
+    },
+    {
+      "path": "frontend/tools/capture-baidicheng-model.mjs",
+      "bytes": 4945,
+      "sha256": "5483a171ab45ee3aec6ecc5e8cff5cdc3e152f92079301570b8248a540e475c6"
+    },
+    {
+      "path": "frontend/tools/check-budget.mjs",
+      "bytes": 2378,
+      "sha256": "19b630a804073c7de0670e953bbafcc5cea147db197fdba545e74fed69c53d0b"
+    },
+    {
+      "path": "frontend/tools/check-contract.mjs",
+      "bytes": 11852,
+      "sha256": "3f5f69388640a0dfb67d900e65b8e94365e1aa5745c4dfff7c53148970fa1204"
+    },
+    {
+      "path": "frontend/tools/inspect-baidicheng-video.mjs",
+      "bytes": 2511,
+      "sha256": "8e88eebd294f77a68447ebb0626375732e3484d4d1af4f82fabf490b55bd492b"
+    },
+    {
+      "path": "frontend/tools/meshopt-exact.mjs",
+      "bytes": 2670,
+      "sha256": "8cb19a13bdc22a5355d174524aeb8e24a83bd5e07128c42db707aa48eebd40be"
+    },
+    {
+      "path": "frontend/tools/optimize-assets.mjs",
+      "bytes": 8249,
+      "sha256": "5f25d4d1da6e87e8d1490cecf5efa48353abe54a3dc76c49e5fa7d05dfbaa481"
+    },
+    {
+      "path": "frontend/tools/verify-baidicheng-model.mjs",
+      "bytes": 13985,
+      "sha256": "86e72d262b2f440ad2d20dc3cec5934c8ca2e0c0afe2db3cdba49c4b0693ffe5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_city_joinery.json",
+      "bytes": 2507,
+      "sha256": "e0c7272b4a1e0136f0244adfbe48d6d65de93d4f7e455dcc9f5fa21face1c5a4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_city_roof_detail.json",
+      "bytes": 1021,
+      "sha256": "909b4828749b96b95ab1ab2575ff28a46e87df5a7ebee7819a6c9fa6391554f7"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_city_roof_ribs_refined.json",
+      "bytes": 1327,
+      "sha256": "fd2b2508fde8d3862a3919c9100a622598a5f41c903321afa20bb21beb04b4e8"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_city_roof_ribs_seated.json",
+      "bytes": 1451,
+      "sha256": "555835d9f1f73b17176928bdf42117dcf81a4eb35b1aeb9ebc5bd36842b5d5c9"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_city_support.json",
+      "bytes": 7476,
+      "sha256": "85fb95fc3ad03a04421f9ba275cab412afd8f5d80ac27bce43bf1050c5e7e0cc"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_left_far.json",
+      "bytes": 584,
+      "sha256": "046d2e317b5bac97a508fa454ee69a8c4b494d7f213cbf6b191da0d6b76bf487"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_left_near.json",
+      "bytes": 587,
+      "sha256": "f9602f5529607c31aa509cd0e5034da4c0a2d76c999c3ca97c93115eec7bfca4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_right_far.json",
+      "bytes": 588,
+      "sha256": "dea10ff88cb75759e4e06e447c7566bcbcee66072af0ba762234c4ccd4577366"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_right_near.json",
+      "bytes": 591,
+      "sha256": "3e5a96f797b0fb14f2ddcf6a8de84c899ea305e8e82227488e7554d7b23d4fdd"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_rim_left_far.json",
+      "bytes": 593,
+      "sha256": "744c8e0e2869a3b3be616e8bf48bc431481d48daa631748a3aff872ea3e4ffc9"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_rim_left_near.json",
+      "bytes": 596,
+      "sha256": "3f3c2113642388c8e9ba2c4d0d5b7e0ba3b32ab1056b412d713f6faffb50cd65"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_rim_right_far.json",
+      "bytes": 596,
+      "sha256": "cb74315852c08e8f1cc87386be3bc27d65be7bb26a51c1aca400b08606c0e48e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_rim_right_near.json",
+      "bytes": 599,
+      "sha256": "ca26c6a65697af383c6595986f8fb8d767ac6dfc005175f3c47331acd6806bc4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_support_left_far.json",
+      "bytes": 707,
+      "sha256": "8093b7120364d43628e47335c502bd0907b957760d6ec3499898a6759ce327f3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_support_left_near.json",
+      "bytes": 709,
+      "sha256": "7760378232686bbe9241e56e4f43a80cdf4ea0c34878e4e8d5a0478b0307aa6b"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_support_right_far.json",
+      "bytes": 677,
+      "sha256": "ff71da1c742827cf8cf7b572ae7fd4a7d203933ffee30fae99eb1ab5d51d3240"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_cliff_far_support_right_near.json",
+      "bytes": 713,
+      "sha256": "1c3e1ee68d85fb2271a45db358625dbfb072be219e59add89c746b7bd2479fa6"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_forest_far.json",
+      "bytes": 2684,
+      "sha256": "ae3f55ce3e861b66c09876b7e78d00d73293cef4d8d75bb4dd61259aa87451ba"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_tree_far_bark.json",
+      "bytes": 1472,
+      "sha256": "17327865f0c7d58d0e7813fa7c25e4fd2d517420b242e0650917e831cf04e06c"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_tree_far_prototypes.json",
+      "bytes": 1279,
+      "sha256": "79682c8b65469418b8ebc79521d28eefb66e1df50f03eb87349187e6601e476f"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/bd_v03_tree_far_round.json",
+      "bytes": 1562,
+      "sha256": "cd5e90086a2c3f34b1b8f77aee3291ed919eace6dc7af1f1f278a2abf1a70b98"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/city-detail-assembly.json",
+      "bytes": 235,
+      "sha256": "794f9badcb10ff844b18a44abdb1cf070ee95900df8535ea17925805e1464f93"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/export-preparation.json",
+      "bytes": 5658,
+      "sha256": "30d195abb22df24b0c07e8b43069d162c632244eb6be0d20202544a1a601c5b4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/components/lod-authoring-visibility.json",
+      "bytes": 1130,
+      "sha256": "84d6b3abf53daba750c5578d6b781ab3ef276afc8f17b5eb3fd32201304bb970"
+    },
+    {
+      "path": "output/baidicheng-model-v03/placements.json",
+      "bytes": 63074,
+      "sha256": "6c358d54ad249f9a264dc6fcf149750719d2ea7a3ad8e0f97b13080116e7a11e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/CAM_boat-1440.png",
+      "bytes": 842252,
+      "sha256": "88613a6e190e000bcbd2e236e1fb2a1112aabe057c7e7d2a5c66dd9dbc522e39"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/CAM_city-1440.png",
+      "bytes": 1177762,
+      "sha256": "14a3f89e029809634f31c85b7de5e5fcbb771d58e4ea3efe28d7c61f1d6a982d"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/CAM_enter-1440.png",
+      "bytes": 1342893,
+      "sha256": "0c86480d3269bc1aab24826714f9e43b3311f3583e18912c5454f6c8c923dc6f"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/CAM_exit-1440.png",
+      "bytes": 1219847,
+      "sha256": "0203cd45c2a15e42a95e5db0a19c15e7f2e6c19c98e4f10d227067921f707236"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/CAM_follow-1440.png",
+      "bytes": 854973,
+      "sha256": "0b9ca4a6529c6406e94cf0d5d06f7db01cc9884764a52187939e0adc6e3c5e02"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/CAM_gorge-1440.png",
+      "bytes": 1254239,
+      "sha256": "b9d0e8b9a7581e06d95db8a1d75be867cea982ce32278d62412fdaa03ba5c6e3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/CAM_rower-1440.png",
+      "bytes": 1115757,
+      "sha256": "06e3c3a748fbdf2f8f8db9781c8276fcd88e6a719ee5403039f62794739398db"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/capture.json",
+      "bytes": 41024,
+      "sha256": "30672dbfec62fc807886b3f0e3319d0961aedfafa8d069e12855c6a197ffeabf"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/inspection.webm",
+      "bytes": 112965,
+      "sha256": "68872a439919f9a29b22d200a2c07218e42a0ddc868d94d7c6db973244b2197a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/review-main.png",
+      "bytes": 1332909,
+      "sha256": "2fed59d6916fb5482d00967389c3a9a20c0b435fbb22bf34bdf0c490da8d7714"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/video-decoding.json",
+      "bytes": 300,
+      "sha256": "927809f445b39ad5eea03a2fea68809f449e74308acda6494473a743bb42eb3c"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/video-frame-1.png",
+      "bytes": 183851,
+      "sha256": "d3897dba78aee3ae871edaaa8394f862cab7d01c1f92fb6a24df1e5f3ce2641a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/video-frame-2.png",
+      "bytes": 134523,
+      "sha256": "491aeb511952e6d0ac854b37ba3873d6cce2ac4fc4c994604fa7f704627a5ee9"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/accepted/video-frame-3.png",
+      "bytes": 192675,
+      "sha256": "071dcbf46366191a0b126f4f618768f19131ec47494028b472b26e3537353c77"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/blender-contract.json",
+      "bytes": 37,
+      "sha256": "e0c2924b0cf38903b5cc04c6b7491eb4acbcdfb846f4563bd1fe20d4953aff75"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/budget.json",
+      "bytes": 1945,
+      "sha256": "7000e4ca0e17d1f7cb4200cdc351590909d4f4453cf09dd2e8029cf165d1e4e5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/build-code.log",
+      "bytes": 3277,
+      "sha256": "59cefef7603149510b23861e15e2ec0823181bf08771136855ad610d7c732a63"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/build-final.log",
+      "bytes": 3277,
+      "sha256": "71d55ef4e961855f114f68d7b0d556b8cb74c39b2b3c1430867bfa8eb616c52f"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/build-initial.log",
+      "bytes": 3277,
+      "sha256": "56e0a027b4524bfc40acf68bb5b71282fe59b7cbf1087d59fd5dd554692787a2"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/capture-accepted.log",
+      "bytes": 24321,
+      "sha256": "cf1b34d40178a40471bce1b4267c132bd313c9511bd99dec5e386da860040e5c"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/capture-final.log",
+      "bytes": 24234,
+      "sha256": "7178fc2f25ff6e63b5d813d0ee0e354b2c6033c113ee07940d67821746c86b2d"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/capture-seated.log",
+      "bytes": 24347,
+      "sha256": "94e507a17b5c4a181fb4eea916c7152da85a9408f341fe0d668bb49a3eb13dc8"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/city-support.log",
+      "bytes": 4608,
+      "sha256": "62ee9b906c066634e2dcb5fec9ae3ce63673a3d830c9348a9036f24ff7bca35a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/city_assemble_detail.log",
+      "bytes": 372,
+      "sha256": "248d2faf90678622c6222d26a7ebe7cc54b37fa79e97cb7be0ae7c05e6fd8af4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/city_joinery_detail.log",
+      "bytes": 1773,
+      "sha256": "f1ecf639a82d84175f8ea3a2ab7c476edae0228ccabc043c262e790c80a3c096"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/city_roof_detail.log",
+      "bytes": 1261,
+      "sha256": "c880d3eb448caaa11f1a8cdce57014998f333320d590fc6e44fce22d14b0f25b"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-far-left_far.log",
+      "bytes": 1036,
+      "sha256": "dc5b7cb6a982dd0d64655ce59f2e6cc26c78bef9b38b3cb9dc6e31662a424620"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-far-left_near.log",
+      "bytes": 1040,
+      "sha256": "010c81ae7f7f6fa59c6f0efa1bb7c700a3c873e55964dbbe9d00468ba67a96d4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-far-right-near.log",
+      "bytes": 1045,
+      "sha256": "32475b55ba3334d36506fcb5f1515af3e083dda63836696f09c965e1e65b5627"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-far-right_far.log",
+      "bytes": 1041,
+      "sha256": "2a95831dfd23e17097b8ef536fa7258d7cdd66f06d508d13ce5760d990c0757a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-rim-left_far.log",
+      "bytes": 1049,
+      "sha256": "bc4e062762543fd6e4fe6011d934af8ffef9c3fc642a9b76823d813d420f6225"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-rim-left_near.log",
+      "bytes": 1053,
+      "sha256": "03a7d6fccccd03af6d01aa602b34f571929b47f1858d076e2057d6ce6cec94bb"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-rim-right_far.log",
+      "bytes": 1053,
+      "sha256": "74b5e671afa89775432255fb8a94d87cba17833e6a9a5002e4b9cd65ed223322"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-rim-right_near.log",
+      "bytes": 1057,
+      "sha256": "7c40c2ddbc74e45d3f08ace6f9754808c66d225abcc8b56e122e2febabb37048"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-support-left_far.log",
+      "bytes": 1121,
+      "sha256": "0d644f1dbdb89e3647d5efa3143ea5c628721a783fdbed0dc763e7567cf68a9e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-support-left_near.log",
+      "bytes": 1124,
+      "sha256": "5d83009041c2022326d3ccdbf877d53e1446121fbd0cdf3acfa6938d72b1a1b6"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-support-right_far.log",
+      "bytes": 1110,
+      "sha256": "7856b6aa8c420abad7ce2f8bc3e4a36f8b6a6801fc67c3d8decce502dd0667df"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/cliff-support-right_near.log",
+      "bytes": 1129,
+      "sha256": "938670d06501a35a87314eb2ad185aa74ba787f02fbcc8a1058e5d6fbfc0dad6"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/contract.json",
+      "bytes": 1126,
+      "sha256": "76b499538f1c25fa9e74357e4f46bf8e91c1aca168781aa86eae94c5a9db55b2"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/core-final.log",
+      "bytes": 126,
+      "sha256": "3039e365b92fa369109e39e406fa2329012f03087bf7b1ed67e5f249b30a309e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/core-seated.log",
+      "bytes": 126,
+      "sha256": "3039e365b92fa369109e39e406fa2329012f03087bf7b1ed67e5f249b30a309e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/dist-assets.json",
+      "bytes": 714,
+      "sha256": "3c3b234c7698d399b27bcfef8ab6157cbe4c6a8ce9ffe2253809a1cb262410c7"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/export-final.log",
+      "bytes": 7137,
+      "sha256": "86f7cecac0958f07eb8319890718e1fe2ad240166f450949985dc8f66d0a9fde"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/export-prepare-final.log",
+      "bytes": 416,
+      "sha256": "136cbb3d2edfa9c72084a435a56e811b1c93052a7560aae76b08fcf86233d6d8"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/export-prepare-roof.log",
+      "bytes": 416,
+      "sha256": "bacaa67193b1c12bbf38c28ca19a2fdd0fe59f56c53fb8d9f65b0904fc31da80"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/export-prepare-seated.log",
+      "bytes": 418,
+      "sha256": "f57b33c82ce12499d3e00a4312fc7f3940608977306bff1e9b8558a24c7c075d"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/export-prepare.log",
+      "bytes": 416,
+      "sha256": "e60967ef52bea186352d20d9eace8b555979d7b1cf93a273b7245f4663ff1b9f"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/export-roof.log",
+      "bytes": 7144,
+      "sha256": "e37429e57c98abb0cc6e60ad68cc3ca023126f58ca20aed85d4f5b57a7c51558"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/export-seated.log",
+      "bytes": 7144,
+      "sha256": "ef82a8448477f011d1b7714b937b221c71db67052d87f819354ab58611f31fe6"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/export.log",
+      "bytes": 7097,
+      "sha256": "2fd2c9114cc612c4472483f2d095df7a0e082163c0695a3eeae8846654592011"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-capture.log",
+      "bytes": 23552,
+      "sha256": "2f73cfd59c46427c63c5fb6ed55c2bf34944742a584175f7188b8df075b340b1"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/CAM_boat-1440.png",
+      "bytes": 842419,
+      "sha256": "c101a88724bc0ecf8513de6815068dfc12f1cbbb277178cdb4740f5041d9c1f3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/CAM_city-1440.png",
+      "bytes": 1176108,
+      "sha256": "e78377fb9e29c52809d60f26ed00492d1ccb842f47da861090069e278972020c"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/CAM_enter-1440.png",
+      "bytes": 1342533,
+      "sha256": "53ae8a3c2816f8761961629b7f1b11956f3132ed3cb342a49acef6c46475d5a4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/CAM_exit-1440.png",
+      "bytes": 1219847,
+      "sha256": "0203cd45c2a15e42a95e5db0a19c15e7f2e6c19c98e4f10d227067921f707236"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/CAM_follow-1440.png",
+      "bytes": 855030,
+      "sha256": "49d416fc6e8d3a6e0555c91495e39b926bc9346468dc649ccc77d34f1a0b3d0e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/CAM_gorge-1440.png",
+      "bytes": 1254239,
+      "sha256": "b9d0e8b9a7581e06d95db8a1d75be867cea982ce32278d62412fdaa03ba5c6e3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/CAM_rower-1440.png",
+      "bytes": 1115757,
+      "sha256": "06e3c3a748fbdf2f8f8db9781c8276fcd88e6a719ee5403039f62794739398db"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/capture.json",
+      "bytes": 39907,
+      "sha256": "770de3efec6ee7f81761366473afee0def70a1ce1939620041d48a2ad4f05c59"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/first-look/review-main.png",
+      "bytes": 1332575,
+      "sha256": "c5fb63a1173b509fcc360c81ff00dd14ae08ffefde84eb3f08b0f075b341bcbf"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/foliage-prototypes.log",
+      "bytes": 1578,
+      "sha256": "1001faae5e84a6c37ac997997928d2e7a192207dacdf03ff2ee3b4cf2afc6d2a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/forest-far-bark.log",
+      "bytes": 1749,
+      "sha256": "1d76b833c5b1183ece3be6e5d89bdc2992b1404648e4e2d16894792f0e0f5cca"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/forest-far-round.log",
+      "bytes": 1832,
+      "sha256": "090fd78bf126f683048b2981f86837d57a041dad457bddcc24281680a991004d"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/forest-far.log",
+      "bytes": 2544,
+      "sha256": "bf77ef7354b6b425d4a9317a6e55bd8f510a82a10015bd8a243c7dfa6fda9766"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/history-preserved.json",
+      "bytes": 379,
+      "sha256": "c8b01596c3b3605a1b9f17c497fa308530f2321f2a5c63ff8c14c75488b586a5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/city-far.png",
+      "bytes": 1867263,
+      "sha256": "0a66a3ad4ce606984bb27cdf0badaec64540fb149c18a491101bce7cb2332302"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/city-near.png",
+      "bytes": 1870010,
+      "sha256": "f5854fd896e0032c2b0ea519efd98cd0a5d82c5190c34de70f2da32f2b63b93a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/failed-lod.json",
+      "bytes": 4267,
+      "sha256": "03d2321bb7ddc74a2e5ae7f59608617837dde82c8167ea57d62e2e8aa4434334"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/failed-recovery.json",
+      "bytes": 4393,
+      "sha256": "2051901f123b9aa2f5d6836eff9964e81821d091b88382c794f9afd39e43bed9"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/overview-1920.png",
+      "bytes": 2182596,
+      "sha256": "22a4041462c2fb09f52b8443b1c9d0b27be176731528fcb6ef484a645b5d6be5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/verification-core.json",
+      "bytes": 25790,
+      "sha256": "9fb9097e6aa8fed3d7c84484dc8a20f3b5a71b492fb9909c9e2dabe7f5eeacf0"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/verification-lod.json",
+      "bytes": 68379,
+      "sha256": "d536bc455622b72744333b895e959e97f84548fc086d4e5473b40e916355b500"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/verification-performance.json",
+      "bytes": 14688,
+      "sha256": "9815cf3760bc3387c24ac1232b86ce1b22362dbe5cfb3b6b5120514f6e23db9d"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/verification-recovery.json",
+      "bytes": 9586,
+      "sha256": "d3c0ab4bc77d156f1b9feff967c39072ca0c9fada8e846a55787daaea5ac3374"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/verification-release.json",
+      "bytes": 12038,
+      "sha256": "9d3385ba1b88ab8184102b272f220ee6bc2863d89856d7a535dfc7a4b1d395a5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/verification-release.partial.json",
+      "bytes": 7497,
+      "sha256": "bf1f9a2fe743d43063e044130301a2b7e7520f84143af256258e7dae67aa8cae"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lifecycle/verification.json",
+      "bytes": 94548,
+      "sha256": "872ec2199c6d4e31b43244224e13b750d3895583848f6c70ca49eff75c195ea7"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lod-final-2.log",
+      "bytes": 126,
+      "sha256": "36007951ca153a87cd08e3d1875c68de582ea5d41da539cd5291589ca8b81e21"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lod-final.log",
+      "bytes": 278,
+      "sha256": "ff1f7f630dacdf8a361a04a1c5cd3f713a4fcb757f02427e47a80ed2f12845b4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/lod-seated.log",
+      "bytes": 126,
+      "sha256": "36007951ca153a87cd08e3d1875c68de582ea5d41da539cd5291589ca8b81e21"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/optimization-final.log",
+      "bytes": 2892,
+      "sha256": "8de251174b0803b9d75c3475caf254c127437981f4ab5b2d80e7c3f7b47e7d69"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/optimization-roof.log",
+      "bytes": 2892,
+      "sha256": "a39646fa957c55b1fb3e711f6fc95287d7f5f621eacc16b80d76569792f5d7d4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/optimization-seated.log",
+      "bytes": 2892,
+      "sha256": "0e54da70b63d68c37329b70f8024815d0dcbe85968592904c63ad8ca9eb8cfba"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/optimization.json",
+      "bytes": 95114,
+      "sha256": "ce50004b5c0d045c259264b9fcfd29b395f4adbfbeb5048194aa2e1563099480"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/optimization.log",
+      "bytes": 2892,
+      "sha256": "714e1af072e35019b01f244ed54e6f6115a318928b9d69211c9b178d64679194"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/performance-final.log",
+      "bytes": 3115,
+      "sha256": "788bc9d2b72c7d1ee7fb8279aa40fef14117a14c16535f5296d5f3c5209f1d4d"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/performance-seated.log",
+      "bytes": 3099,
+      "sha256": "a0891b5dc4e2cf96215bfdd2daccb6fffce01bc1dab4baa1e2e6d31a6b85d088"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/preview-lods.log",
+      "bytes": 372,
+      "sha256": "785618f4998e7943fee54e39663c8155d656893186e8aeefeede12980892505e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/protected-before.json",
+      "bytes": 15566,
+      "sha256": "9dc6d16fe3b6d454d53dd936b62682596d2454453b17c33e9174bf9f10daffb7"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/recovery-final.log",
+      "bytes": 55,
+      "sha256": "ed4592408d4b6aa505a997c42f8ea26bf6d9ae905ffd092def2dade38c4da888"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/recovery-restored.log",
+      "bytes": 55,
+      "sha256": "ed4592408d4b6aa505a997c42f8ea26bf6d9ae905ffd092def2dade38c4da888"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/recovery-seated.log",
+      "bytes": 671,
+      "sha256": "49cd579b6fdb3ff3b14af7e7a149c0d73859a770a7d4cf8ff0a244f818bd8548"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/regression-assets.json",
+      "bytes": 21979,
+      "sha256": "6ce7bf47d2736648db7c2d752a640e0f94049eb7c49b387c02cbb4eb122af16a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/release-final.log",
+      "bytes": 216,
+      "sha256": "d5be839c201c42c86565e5dd0eaab4ab21ee1b0492986138f9fc569673e335de"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/release-seated.log",
+      "bytes": 216,
+      "sha256": "d5be839c201c42c86565e5dd0eaab4ab21ee1b0492986138f9fc569673e335de"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/reopen-final.log",
+      "bytes": 225,
+      "sha256": "a98c64491ba513dff19a1ad8466fbaeb6ebf2c3432f2a8591b06b881d3d427cc"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/reopen-rim.log",
+      "bytes": 1097,
+      "sha256": "9bd25a264a3840e996dc0976a5e67d7b18b28d2e54986d223a98cd57fc637dd7"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/reopen-roof.log",
+      "bytes": 225,
+      "sha256": "ce7694798c99b557f63262f5861dfe0213b5fbf4d270f3a6d6d31956812680c3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/reopen-seated.log",
+      "bytes": 225,
+      "sha256": "906ab073945c6309f0f477899df3303778a0d72e5a8cbe94ff4f74baee5238a9"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/reopen-seating-audit.log",
+      "bytes": 225,
+      "sha256": "1fc613488e7779626ae84e2b277eff1249fe000db52727d196f98aa3cf6cf351"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/reopen-support.log",
+      "bytes": 225,
+      "sha256": "d2032a557b671ec45b62b5c6f8be8dd87f7f846a5b34d7cd3469a97d34ca35a9"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/reopen.log",
+      "bytes": 1097,
+      "sha256": "7a2c495ebf2cebc4a249838faea8b5168e546ff6e33c1a2a9c0a680b6810abf3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/reopened-source.json",
+      "bytes": 8648,
+      "sha256": "113d82794345b51d92946c63e40df4333a2b9e115bd03644780ebd2c8da0fd41"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/roof-clearance-audit.log",
+      "bytes": 638,
+      "sha256": "d5755418a79106206322d7fb6589306c22a7e836db48347842f25ff2efde2baf"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/roof-refine-final.log",
+      "bytes": 1557,
+      "sha256": "e383aa6e1960c8be0e28344b257e2698865a65cf82c1013225b3090e3e4867f7"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/roof-refine.log",
+      "bytes": 1149,
+      "sha256": "a8dd49a2ff9be6f4c76f02e40217e931b693db8fa4b7093a83be87e93500f3b9"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/roof-seat.log",
+      "bytes": 1676,
+      "sha256": "dfff3aedf72e7a3e9a87bdcf92265c0dc4c9658be50e40d0187ad241f5cccbbe"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/services.json",
+      "bytes": 191,
+      "sha256": "08abbf20184292772d28b96fd5a19812a0974947597699dc5ccde75b7d20b71c"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/source-syntax.json",
+      "bytes": 61,
+      "sha256": "777c9e56a7a2d06626980b67d5958ea7d92e6e0c9b865bd39929649c49d9f75d"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/tests.log",
+      "bytes": 522,
+      "sha256": "62f105f7ee64fc8237d8d079c0aaefc3497fdbf874e6fa9150305102c71b74cb"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/video-final.log",
+      "bytes": 202,
+      "sha256": "53875d33135b2e93c7933f08004219a17ad5fd7c4e4c374580860351981d3a2a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/video-first-review.log",
+      "bytes": 202,
+      "sha256": "9b5169afb75c9b6b0d5a7641b36933b8845d62b3cc09a608c3c56d1a911afb78"
+    },
+    {
+      "path": "output/baidicheng-model-v03/validation/video-seated.log",
+      "bytes": 202,
+      "sha256": "0195002375666782aa6f7cc81057c77c6d66a14b125cbed326cb11d65e8b15fd"
+    }
+  ],
+  "localModels": [
+    {
+      "path": "art/blender/baidicheng-scene-v03.blend",
+      "bytes": 39859908,
+      "sha256": "59fb628fe1a5a8b5ad45e73be79037fcfb060f5fbf7e21e858437c06a272ef8d"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_city_joinery.blend",
+      "bytes": 328473,
+      "sha256": "da8d1908e3d6cc7b5d857e49bb3fd142eff7caf6c38a486359487062d223e2e7"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_city_roof_detail.blend",
+      "bytes": 303320,
+      "sha256": "ee47be00751a9eca69ce262b6c50f2efada06ad5f176e1bb4b0da2764e3b7551"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_city_roof_ribs_refined.blend",
+      "bytes": 265913,
+      "sha256": "e9936d36d996ca52646534310a466886a748674b48a46fef6d7ba983141987df"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_city_roof_ribs_seated.blend",
+      "bytes": 265913,
+      "sha256": "590b5574cd1fed2bfcd806ceca1a7720d31e27f348b6a9c554caff82dba62e58"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_city_support.blend",
+      "bytes": 575994,
+      "sha256": "934a6854a520ed72663e5b3293f7923ac20624e866c40fabaf79371c91cddf3f"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_left_far.blend",
+      "bytes": 7720860,
+      "sha256": "1e370bec68b0342a9d0031cc8f52d5d59bee5ec51f8298b95d98dd5925784fc2"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_left_near.blend",
+      "bytes": 7800764,
+      "sha256": "9e0a01d76771c159b4f4838daa97dca7a3fd933639de5f4b893d5e327776baa4"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_right_far.blend",
+      "bytes": 7740836,
+      "sha256": "20e11b2779a1442606bb63f8a48408038f2a1db23aef3c9270a3990fbd7a94f5"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_right_near.blend",
+      "bytes": 7767283,
+      "sha256": "74991dd77b153420737d101835a352021d89bfa550d30cd8de1e0f6e0e4b075e"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_rim_left_far.blend",
+      "bytes": 7720860,
+      "sha256": "d0cdc6ad1b722e6b8873523d08d0376ed752378ffaa4e90b26324cc78185113b"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_rim_left_near.blend",
+      "bytes": 7800764,
+      "sha256": "6e3bf951ddba80eb2ed6772f9bf916884265855567cff63d8a5dd9198d0eb032"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_rim_right_far.blend",
+      "bytes": 7740836,
+      "sha256": "7cbc18e15d0e10f2c120cee450d4aa5224e23cdd3b8dbb6531eb1a407a09f1cc"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_rim_right_near.blend",
+      "bytes": 7767283,
+      "sha256": "cd6b9696e759bda9bd63d10eebcc4c75a2dfe2b3bb19a913e21313289620c89e"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_support_left_far.blend",
+      "bytes": 7721081,
+      "sha256": "13d0380b20e53aa2cd14b3829c477cdf7b40ced7116de94a4e40ef9a7f899a57"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_support_left_near.blend",
+      "bytes": 7800304,
+      "sha256": "5ed8b9d9ba321f9d4c3fe6b2b3ac91629d37a504c000ca2fe02fca79284c5212"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_support_right_far.blend",
+      "bytes": 7737744,
+      "sha256": "05bd178d4b12785dc3aafec382f0017ebc55f97bb68629c69cee493688b683c8"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_cliff_far_support_right_near.blend",
+      "bytes": 7766631,
+      "sha256": "a8987f6aa0000fae74d080cd78f61c8c772eaa1b939394f1a2e6a5d8c921867a"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_forest_far.blend",
+      "bytes": 1497000,
+      "sha256": "de0a76f479250b8b756b8f9460001a7ad70cdcb985f7a57e782488cbb889764a"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_tree_far_bark.blend",
+      "bytes": 546225,
+      "sha256": "eb7eaea9b95e2a26baca3d1776ca927baaf69f8fcd4791567c6f4a602b98a776"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_tree_far_prototypes.blend",
+      "bytes": 251571,
+      "sha256": "dfe2e561eed3834d45ef868f382a4f72203501ff9ed21a2f8e14752f76e5de4a"
+    },
+    {
+      "path": "art/blender/components/baidicheng-v03/bd_v03_tree_far_round.blend",
+      "bytes": 966297,
+      "sha256": "d455e775c8b58eeff9ae6d89ccab048763a3448f73c90745ff9c9392844941d2"
+    },
+    {
+      "path": "frontend/public/assets/models/baidicheng/scene_v03.glb",
+      "bytes": 13651084,
+      "sha256": "b564b71584dcfb3ea11bcb8b568dd9ee05fb8c5db780ba950b62904e54b9f4f5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/raw/scene_v03.glb",
+      "bytes": 19276272,
+      "sha256": "8e355bc09c58fdece0e26d70fdf15ae2e7da31232fb29f7b276845593069375d"
+    }
+  ],
+  "retainedLocalAttempts": [
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-rounded-crowns/optimization.json",
+      "bytes": 95111,
+      "sha256": "eaecae4908567a6bc0ac9240b745e09f2cba2ec5c466cd936cd8dfc701601ae4"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-rounded-crowns/raw-scene_v03.glb",
+      "bytes": 19314172,
+      "sha256": "a308b71836891566e0c0a812fb4666ba203e8fe01bfafad202f5f26503fef1d8"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-rounded-crowns/scene_v03.glb",
+      "bytes": 13663796,
+      "sha256": "0af7f0f60c5bf1ac9bc86fcdd89966257027ac9de3fa33542b0e737bfd2da3b3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/CAM_boat-1440.png",
+      "bytes": 842252,
+      "sha256": "88613a6e190e000bcbd2e236e1fb2a1112aabe057c7e7d2a5c66dd9dbc522e39"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/CAM_city-1440.png",
+      "bytes": 1177254,
+      "sha256": "4cd1cff0aa24f26fc1228da87fa7017493cd8b76368670741cbb73bb8dda3754"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/CAM_enter-1440.png",
+      "bytes": 1342893,
+      "sha256": "0c86480d3269bc1aab24826714f9e43b3311f3583e18912c5454f6c8c923dc6f"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/CAM_exit-1440.png",
+      "bytes": 1219847,
+      "sha256": "0203cd45c2a15e42a95e5db0a19c15e7f2e6c19c98e4f10d227067921f707236"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/CAM_follow-1440.png",
+      "bytes": 854973,
+      "sha256": "0b9ca4a6529c6406e94cf0d5d06f7db01cc9884764a52187939e0adc6e3c5e02"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/CAM_gorge-1440.png",
+      "bytes": 1254239,
+      "sha256": "b9d0e8b9a7581e06d95db8a1d75be867cea982ce32278d62412fdaa03ba5c6e3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/CAM_rower-1440.png",
+      "bytes": 1115757,
+      "sha256": "06e3c3a748fbdf2f8f8db9781c8276fcd88e6a719ee5403039f62794739398db"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/capture.json",
+      "bytes": 40998,
+      "sha256": "b934eca60d57094626b3118ba7a3afef182d5784d002de1f4a94fddbf54b97b6"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/inspection.webm",
+      "bytes": 112604,
+      "sha256": "4cba6c80024e1ba014fe6192521435a3868b87dde20c08dd39daf5d4c00ea0ec"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/review-main.png",
+      "bytes": 1332909,
+      "sha256": "2fed59d6916fb5482d00967389c3a9a20c0b435fbb22bf34bdf0c490da8d7714"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/video-decoding.json",
+      "bytes": 300,
+      "sha256": "e83771f11a847ee1df847e28963d6c0ff4bbdcaac4c104fde9afc261738ffb99"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/video-frame-1.png",
+      "bytes": 183851,
+      "sha256": "d3897dba78aee3ae871edaaa8394f862cab7d01c1f92fb6a24df1e5f3ce2641a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/video-frame-2.png",
+      "bytes": 136713,
+      "sha256": "34120df120599162c1c4d6f995d635e16f2f96a90681e19eed91a786c0ffa421"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/accepted/video-frame-3.png",
+      "bytes": 196292,
+      "sha256": "6651067a67ee85b7571fe5c6b2b00bd490b6281185a476fb08d30ee0353ea971"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/city-far.png",
+      "bytes": 1867263,
+      "sha256": "0a66a3ad4ce606984bb27cdf0badaec64540fb149c18a491101bce7cb2332302"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/city-near.png",
+      "bytes": 1869605,
+      "sha256": "e682fb7b7fc148c7b773f9ad697052fb667a0c4fc08d4cff549dfd18f855e1a0"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/failed-lod.json",
+      "bytes": 4267,
+      "sha256": "03d2321bb7ddc74a2e5ae7f59608617837dde82c8167ea57d62e2e8aa4434334"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/overview-1920.png",
+      "bytes": 2182596,
+      "sha256": "22a4041462c2fb09f52b8443b1c9d0b27be176731528fcb6ef484a645b5d6be5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/verification-core.json",
+      "bytes": 25790,
+      "sha256": "38a8ca5a8c7412e4d76d11f9751e88ba56241aae7ccc3890c9c7df98cc53405e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/verification-lod.json",
+      "bytes": 68379,
+      "sha256": "3602bd32e4dfc4f21ee82c6cce570ac4bd96121a3115f5d2846159e286e2eff7"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/verification-performance.json",
+      "bytes": 14724,
+      "sha256": "066d461e70f5e663f69c10d274d3ee2050c4bf339ab8232e4da3005ae6ee7f36"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/verification-recovery.json",
+      "bytes": 9586,
+      "sha256": "b86f12399c372faed8374824481c01cfd5bde4438fc5b1a25491381cf5d725cd"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/verification-release.json",
+      "bytes": 12038,
+      "sha256": "8ab0333dfc844142efda93cbbd50ef1de4262870c1cd15b9e71cf92a4891568c"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/verification-release.partial.json",
+      "bytes": 7497,
+      "sha256": "fea6b9454ccd9c5fff4e88c1d4371346b0f33c0d3683169e25bd087b074f1d2c"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/lifecycle/verification.json",
+      "bytes": 94566,
+      "sha256": "f1ee10ac969241a66c8f6fce88a42adcb158bfdd91138627d7bd12f401788a3a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/optimization.json",
+      "bytes": 95114,
+      "sha256": "5a3ff0bccd2aaf290e0de3cfd5b7e7475c63292c52a16d3d287ee570d3fa2e0a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/published-scene_v03.glb",
+      "bytes": 13630952,
+      "sha256": "8633c76f5f939492ab84bc56ac2209de90f423807b2fa20e3ce972853c942030"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/before-seated-ribs/raw-scene_v03.glb",
+      "bytes": 19276276,
+      "sha256": "87cb79116d3f738c6719cec685c7d045ad5e58141f867986020dd73f8fdf50ab"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/failure-index.json",
+      "bytes": 2647,
+      "sha256": "66d4e4372cd79c48da4086e1e802e12dc9d09aa316e84b0365b15d1e2e994461"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/first-export/optimization.json",
+      "bytes": 95111,
+      "sha256": "95817c0721b17b84dd68598a3613c9e79fdcbd39808a3f4965e6cd40c058c4fa"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/first-export/raw-scene_v03.glb",
+      "bytes": 19304556,
+      "sha256": "cbbfb15061cd87f9c33e9d098b2a22410366d0e4c815f77a693665e8cf8eebdc"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/first-export/reopen.log",
+      "bytes": 1097,
+      "sha256": "7a2c495ebf2cebc4a249838faea8b5168e546ff6e33c1a2a9c0a680b6810abf3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/first-export/scene_v03.glb",
+      "bytes": 13661500,
+      "sha256": "97a0b87d83b8f01b6e72ec3ab85c333dde235e07ca520289d08b375709b455bc"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/foliage-far-prototypes-84tri.py",
+      "bytes": 1626,
+      "sha256": "ec4882b228624d92e17c3ac5dd19a40623dd5c01b44ffa7ae3098e340ca307a2"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/CAM_boat-1440.png",
+      "bytes": 842252,
+      "sha256": "88613a6e190e000bcbd2e236e1fb2a1112aabe057c7e7d2a5c66dd9dbc522e39"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/CAM_city-1440.png",
+      "bytes": 1177137,
+      "sha256": "dac2c1ff27371a617b84cfdbae00cbe06ad8a0f84950bebb2a8a2ca83e502f06"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/CAM_enter-1440.png",
+      "bytes": 1342893,
+      "sha256": "0c86480d3269bc1aab24826714f9e43b3311f3583e18912c5454f6c8c923dc6f"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/CAM_exit-1440.png",
+      "bytes": 1219847,
+      "sha256": "0203cd45c2a15e42a95e5db0a19c15e7f2e6c19c98e4f10d227067921f707236"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/CAM_follow-1440.png",
+      "bytes": 854973,
+      "sha256": "0b9ca4a6529c6406e94cf0d5d06f7db01cc9884764a52187939e0adc6e3c5e02"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/CAM_gorge-1440.png",
+      "bytes": 1254239,
+      "sha256": "b9d0e8b9a7581e06d95db8a1d75be867cea982ce32278d62412fdaa03ba5c6e3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/CAM_rower-1440.png",
+      "bytes": 1115757,
+      "sha256": "06e3c3a748fbdf2f8f8db9781c8276fcd88e6a719ee5403039f62794739398db"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/capture.json",
+      "bytes": 40907,
+      "sha256": "bea1a4d91766e9bf270fe6500deb530ee5462c21a4caa58b73a87146a2ee17e7"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/inspection.webm",
+      "bytes": 107038,
+      "sha256": "8a8bb268aabf1176cfcbd373fe58ffe90955e3e69cbf6cf1f58317b96a2b6560"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/review-main.png",
+      "bytes": 1332909,
+      "sha256": "2fed59d6916fb5482d00967389c3a9a20c0b435fbb22bf34bdf0c490da8d7714"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/video-decoding.json",
+      "bytes": 300,
+      "sha256": "8214771de91c6b0314a00a49bec4a15c897d4b33312a241348ce4fc930125d87"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/video-frame-1.png",
+      "bytes": 183851,
+      "sha256": "d3897dba78aee3ae871edaaa8394f862cab7d01c1f92fb6a24df1e5f3ce2641a"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/video-frame-2.png",
+      "bytes": 134775,
+      "sha256": "ee1e8c81871145fd4f1eac74adb28f46d3de263424701471f53b1764108b3355"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/accepted/video-frame-3.png",
+      "bytes": 204117,
+      "sha256": "2e6df015115430863d3e6d88ef76bec2eed46c6af698a55c6352091e18159c6f"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/optimization.json",
+      "bytes": 95114,
+      "sha256": "cfdd072e55d09713062056f1da58414309c2ca13811692e3144571df904f0d64"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/published-scene_v03.glb",
+      "bytes": 13683288,
+      "sha256": "9c1644db47dee4ea97fb28dc1387af0acc46d585ef37ca18d09d3d43b437c4c0"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/raw-scene_v03.glb",
+      "bytes": 19325224,
+      "sha256": "3c3518932dc7caa34627ec7ef9122e0c922c7b2c85584096b2b765b8e7db1f96"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/roof-review/roof-clearance-audit.py",
+      "bytes": 1031,
+      "sha256": "8db4f9fa676ff0794752a9296205928bf63dff51ead3a9f28eea6f6b5818fea9"
+    },
+    {
+      "path": "output/baidicheng-model-v03/attempts/services-initial-path.json",
+      "bytes": 210,
+      "sha256": "fa4368dbfb42ad8139fa741990c615db06f4006003094d9fa6dd363ea427a8f5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_city_joinery.blend",
+      "bytes": 37988313,
+      "sha256": "ba9208fba5304f5b0bbcfe4a324311d6b2c961fe07087ba472c7ddad78d8fc04"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_city_roof_detail.blend",
+      "bytes": 38080129,
+      "sha256": "49ffea2efe15fabbeb12a5e445393e9608321c840d99fa946767b62bb06d8ac3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_city_roof_ribs_refined.blend",
+      "bytes": 39853335,
+      "sha256": "ab5e85c3d1cdc3466c67e622b630a63d5ed3dc93cb9548228ebb287a783e0e08"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_city_roof_ribs_seated.blend",
+      "bytes": 39862543,
+      "sha256": "88e34158dda48b9804da8b9b6c9a37ac4e0e0e3e1d9201df61efceefc08797bb"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_city_support.blend",
+      "bytes": 38243910,
+      "sha256": "8d6e240c652725dd49c577852f1b6e9e1c504a80541f5f04fc96ad94517b67b3"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_left_far.blend",
+      "bytes": 37977142,
+      "sha256": "dba4acf4a024971f69811c78e9d5718597ce86d474bf8c1acc9cf12486909667"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_left_near.blend",
+      "bytes": 38086241,
+      "sha256": "e5fbec68edb8a981a77a28134d6b8d4e0ef32e80d24285174fb76cf3773192b5"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_right_far.blend",
+      "bytes": 38181062,
+      "sha256": "2ce0a03e87d56a998e89c99533fefc4427922e7cffca5f3620775e8f7cacc77e"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_right_near.blend",
+      "bytes": 38381821,
+      "sha256": "420002112957a6f4e3454aa39140c348fefd345f03407bad8277ddd7562f68b6"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_rim_left_far.blend",
+      "bytes": 38849315,
+      "sha256": "f5fb73fa2c2ffe12f623823187e66e25fdaa90bb4708663dfb531f7dbef33801"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_rim_left_near.blend",
+      "bytes": 38824526,
+      "sha256": "6bb428ef7ce180063b53c33a65604cafac9d3d1a0e2df3a36b54ec2526189f75"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_rim_right_far.blend",
+      "bytes": 38860273,
+      "sha256": "a17670d9366c14b23753225eaa5b7a7bce77fb2086634452c64f1dca43937694"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_rim_right_near.blend",
+      "bytes": 38832202,
+      "sha256": "b84fa449955ad1026fc9c9bf6b7ac36949df5d9872650c7cf00c00fccf8ff870"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_support_left_far.blend",
+      "bytes": 39298319,
+      "sha256": "4e215ddbc4b4620987c530c48a233d76e776ecf462849d1c2c4fed7a50938bcb"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_support_left_near.blend",
+      "bytes": 39199333,
+      "sha256": "28f39f4ee1e35f90f67ce4c461f493f8d9949423b3eb28437eae2b84819bb35c"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_support_right_far.blend",
+      "bytes": 39554929,
+      "sha256": "379af7f2aa7b0bff53067151e823899120dfad9c221f0898277bda104654d4b2"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_cliff_far_support_right_near.blend",
+      "bytes": 38900365,
+      "sha256": "2f77064d57a6c59a1209f9480475962a53f3133059582db74ed376dcf1451c52"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_forest_far.blend",
+      "bytes": 37914545,
+      "sha256": "4432f9373b719f72b93a8765c3ec9f3d347a2845e371fdd41ba18a704d93b47f"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_tree_far_bark.blend",
+      "bytes": 39187331,
+      "sha256": "fe1e65c0e9a0e1318b016d746200d2ce4b4aaac78c6dc1a89fa833edd073f795"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_tree_far_prototypes.blend",
+      "bytes": 37760332,
+      "sha256": "3d850faa7d5ac2d9e39fcf6bb1efcb5944cf41b9e5306f84f5745bd1627b799b"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/bd_v03_tree_far_round.blend",
+      "bytes": 39805552,
+      "sha256": "d1fc250b76d8a7d8950511def4330a0e4edc9231f4136f435db3d21398fd7819"
+    },
+    {
+      "path": "output/baidicheng-model-v03/checkpoints/city-review.blend",
+      "bytes": 39167884,
+      "sha256": "b283fd5b3705588d077c0eb24b54a11c424a5d3a08aef04b63ed6779e0c11e06"
+    }
+  ]
+}

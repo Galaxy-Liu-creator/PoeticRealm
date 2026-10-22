@@ -1,0 +1,26 @@
+{
+  "component": "bd_foliage_shoulders",
+  "meshes": [
+    {
+      "object": "src_forest_bark_shoulders",
+      "vertices": 17280,
+      "triangles": 27840,
+      "nonmanifoldEdges": 0,
+      "volume": 113.71307533007192
+    },
+    {
+      "object": "src_forest_leaves_shoulders",
+      "vertices": 50400,
+      "triangles": 40320,
+      "nonmanifoldEdges": 40320,
+      "volume": 91060.03046354858
+    }
+  ],
+  "checks": {
+    "count": 240,
+    "reprojected": 180,
+    "addedForeground": 60,
+    "rootEmbeddedMeters": 0.05,
+    "support": "actual revised shoulder geometry"
+  }
+}

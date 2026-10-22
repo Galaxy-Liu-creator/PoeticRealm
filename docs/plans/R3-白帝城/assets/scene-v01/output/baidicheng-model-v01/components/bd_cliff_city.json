@@ -1,0 +1,18 @@
+{
+  "component": "bd_cliff_city",
+  "meshes": [
+    {
+      "object": "src_city_promontory",
+      "vertices": 704,
+      "triangles": 1404,
+      "nonmanifoldEdges": 0,
+      "volume": 190775.18510222092
+    }
+  ],
+  "checks": {
+    "section": "city",
+    "parameters": null,
+    "wetLineMeters": 0.22,
+    "prototype": "bd_cliff_sample_detail"
+  }
+}

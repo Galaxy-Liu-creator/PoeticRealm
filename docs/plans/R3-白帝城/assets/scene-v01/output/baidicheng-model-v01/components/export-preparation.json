@@ -1,0 +1,50 @@
+{
+  "triangulatedNgons": [
+    {
+      "node": "city_promontory",
+      "triangles": 1404
+    },
+    {
+      "node": "city_timber",
+      "triangles": 2604
+    },
+    {
+      "node": "city_roof_00",
+      "triangles": 108
+    },
+    {
+      "node": "city_roof_01",
+      "triangles": 108
+    },
+    {
+      "node": "city_roof_02",
+      "triangles": 108
+    },
+    {
+      "node": "city_roof_03",
+      "triangles": 108
+    },
+    {
+      "node": "city_roof_04",
+      "triangles": 108
+    },
+    {
+      "node": "city_roof_05",
+      "triangles": 108
+    },
+    {
+      "node": "city_roof_06",
+      "triangles": 108
+    },
+    {
+      "node": "city_ridges",
+      "triangles": 588
+    },
+    {
+      "node": "forest_bark",
+      "triangles": 20880
+    }
+  ],
+  "editableSourceComponentsRetained": true,
+  "dynamicBoatNodes": 30
+}

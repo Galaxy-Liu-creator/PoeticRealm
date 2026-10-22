@@ -1,0 +1,67 @@
+{
+  "component": "bd_city_roofs",
+  "meshes": [
+    {
+      "object": "src_city_roof_00",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 147.26145811010366
+    },
+    {
+      "object": "src_city_roof_01",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 73.59506360871629
+    },
+    {
+      "object": "src_city_roof_02",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 73.59506819460354
+    },
+    {
+      "object": "src_city_roof_03",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 216.53322316955914
+    },
+    {
+      "object": "src_city_roof_04",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 65.61062968850706
+    },
+    {
+      "object": "src_city_roof_05",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 65.61062883737506
+    },
+    {
+      "object": "src_city_roof_06",
+      "vertices": 56,
+      "triangles": 108,
+      "nonmanifoldEdges": 0,
+      "volume": 39.81132507742093
+    },
+    {
+      "object": "src_city_ridges",
+      "vertices": 336,
+      "triangles": 588,
+      "nonmanifoldEdges": 0,
+      "volume": 0.8753850377983052
+    }
+  ],
+  "checks": {
+    "roofs": 7,
+    "eaveThicknessMeters": 0.18,
+    "shape": "broad shallow four-slope roofs; eave curve and hip outlines remain geometry",
+    "framework": "bd_city_timber"
+  }
+}

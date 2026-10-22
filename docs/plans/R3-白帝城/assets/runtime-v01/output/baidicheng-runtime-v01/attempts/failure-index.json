@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "path": "cache-manual-shadow.ts",
+      "resolution": "直接调用shadowMap.render缺少渲染器上下文；改为在标准render中保留完整阴影通道。"
+    },
+    {
+      "path": "cache-before-fog-fix.ts",
+      "resolution": "线性HDR缓存的雾和颜色变换顺序导致亮度差；最终改为复制原生显示字节。"
+    },
+    {
+      "path": "cache-linear-hdr-fog-correct.ts",
+      "resolution": "雾修正后的中间方案，最终显示字节复制提供更小像素误差。"
+    },
+    {
+      "path": "product-floating-entry.json",
+      "resolution": "自动工具等待浮动卡片稳定超时；入口验证改用键盘Enter。"
+    },
+    {
+      "path": "product-resize-observer-timing.json",
+      "resolution": "停止引擎的验证窗口需先等待ResizeObserver更新画布尺寸再seek。"
+    },
+    {
+      "path": "product-parallel-hmr-reload.json",
+      "resolution": "共用工作区资料页编辑触发Vite全页刷新；验证窗口只过滤热更新，连接与业务请求保持。"
+    },
+    {
+      "path": "product-45s-startup-timeout.json",
+      "resolution": "原45秒准备上限接近CPU着色器冷编译时间；正式白帝城单独使用90秒取消/重试上限。"
+    },
+    {
+      "path": "product-replay-accessible-label.json",
+      "resolution": "重看按钮无障碍名为重新观看诗境，验证改为按钮的稳定data属性。"
+    },
+    {
+      "path": "camera-matrix-test-before.log",
+      "resolution": "移除测试预先更新相机矩阵后暴露失效漏判；缓存现在先updateWorldMatrix再比较。"
+    },
+    {
+      "path": "before-camera-matrix-refresh",
+      "resolution": "最终相机边界修复前的六阶段通过报告与源快照。"
+    }
+  ],
+  "interruptions": "服务与验证在会话中断后恢复；本地Vite现在用独立进程组运行。"
+}

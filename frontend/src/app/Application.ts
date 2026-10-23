@@ -404,6 +404,13 @@ export class Application {
     }
     const height=header.getBoundingClientRect().height;
     target.style.setProperty('--scene-header-height',height+'px');
+    const reading=target.querySelector<HTMLElement>('.poem-reading');
+    const fullscreen=target.querySelector<HTMLElement>('[data-fullscreen]');
+    if(reading&&fullscreen){
+      // The scroll shares the toolbar's right edge across window and text sizes.
+      const scrollWidth=Math.max(0,fullscreen.getBoundingClientRect().right-reading.getBoundingClientRect().left);
+      reading.style.setProperty('--poem-scroll-max-width',scrollWidth+'px');
+    }
     const brand=header.querySelector('.brand-group')!.getBoundingClientRect();
     const links=header.querySelector('nav')!.getBoundingClientRect();
     // Reserve the actual free space between brand and links, including cloud ornaments.

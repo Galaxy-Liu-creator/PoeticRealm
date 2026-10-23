@@ -9,7 +9,8 @@
 .poem-scroll {
   --scroll-header:54px;--scroll-closed-width:58px;--scroll-paper:#f0e3c9;--scroll-ink:#382f25;--scroll-rule:#c9b58e;
   position:relative;z-index:2;container-type:size;isolation:isolate;
-  width:100%;flex:1;min-height:64px;max-height:430px;margin-top:26px;color:var(--scroll-ink);
+  /* The wooden end caps extend 9px beyond the scroll's right edge. */
+  width:100%;max-width:calc(var(--poem-scroll-max-width,100%) - 9px);flex:1;min-height:64px;max-height:430px;margin-top:26px;color:var(--scroll-ink);
 }
 .poem-scroll-paper {
   position:absolute;inset:0 7px;display:flex;flex-direction:column;pointer-events:auto;
@@ -65,4 +66,8 @@
   .poem-scroll-section {grid-template-columns:28px minmax(0,1fr);gap:10px;}
   .poem-scroll-icon {width:28px;height:28px;}.poem-scroll-icon svg {width:23px;height:23px;}
   .poem-scroll-section p {font-size:16px;}
+}
+@container (max-width:340px) {
+  .poem-scroll h2 button {padding-inline:14px;gap:8px;}
+  .poem-scroll .poem-scroll-action,.poem-scroll [aria-expanded] .poem-scroll-read-hint {display:none;}
 }
